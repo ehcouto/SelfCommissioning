@@ -1,0 +1,2314 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:28
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        ThermalModelCoreBPM.obj -l ..\listings\ThermalModelCoreBPM.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c
+#    List file    =  ..\listings\ThermalModelCoreBPM.lst
+#    Object file  =  ThermalModelCoreBPM.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c
+      1          /*
+      2           * File: ThermalModelCore.c
+      3           *
+      4           * Code generated for Simulink model 'ThermalModelCore'.
+      5           *
+      6           * Model version                  : 1.12
+      7           * Simulink Coder version         : 8.11 (R2016b) 25-Aug-2016
+      8           * C/C++ source code generated on : Thu Nov 30 10:43:35 2017
+      9           *
+     10           * Target selection: ert.tlc
+     11           * Embedded hardware selection: Intel->x86-64 (Windows64)
+     12           * Code generation objectives: Unspecified
+     13           * Validation result: Not run
+     14           */
+     15          
+     16          #include "ThermalModelCoreBPM.h"
+     17          
+     18          #include "ThermalModelCore_private.h"
+     19          #include <math.h>
+     20          #define TIMESTEP                       2.500000e-02f
+     21          #define EVTITER                        10
+     22          #define EVTHYST                        1.000000e-06f
+     23          #define NDIFF                          7
+     24          #define NDFA                           7
+     25          #define NEQ                            54
+     26          #define NPAR                           51
+     27          #define NDPAR                          2
+     28          #define NINP                           5
+     29          #define NDISC                          4
+     30          #define NIX1                           43
+     31          #define NOUT                           8
+     32          #define NCON                           0
+     33          #define NEVT                           2
+     34          #ifdef EVTHYST
+     35          #define NZC                            2*NEVT
+     36          #else
+     37          #define NZC                            NEVT
+     38          #endif
+     39          
+     40          #define INIDREF                        (2*NEVT+2*NZC)
+     41          #define sin                            sinf
+     42          #define cos                            cosf
+     43          #define tan                            tanf
+     44          #define asin                           asinf
+     45          #define acos                           acosf
+     46          #define atan                           atanf
+     47          #define atan2                          atan2f
+     48          #define sinh                           sinhf
+     49          #define cosh                           coshf
+     50          #define tanh                           tanhf
+     51          #define pow                            fastpow
+     52          #define exp                            expf
+     53          #define log                            logf
+     54          #define log10                          log10f
+     55          #define sqrt                           sqrtf
+     56          #define ceil                           ceilf
+     57          #define floor                          floorf
+     58          
+     59          //static real32_T dsn_zero= 0.0f;
+     60          //static unsigned char dsn_undefC[4] = { 0, 0, 0xC0, 0x7F };
+     61          
+     62          //static real32_T *dsn_undef = (real32_T *)&dsn_undefC;
+     63          //static unsigned char dsn_posinfC[4] = { 0, 0, 0x80, 0x7F };
+     64          
+     65          //static real32_T *dsn_posinf = (real32_T *)&dsn_posinfC;
+     66          //static unsigned char dsn_neginfC[4] = { 0, 0, 0x80, 0xFF };
+     67          //
+     68          //static real32_T *dsn_neginf = (real32_T *)&dsn_neginfC;
+     69          
+     70          #define trunc(v)                       ( (v>0.0f) ? floor(v) : ceil(v) )
+     71          //#define IS_UNDEF(a)                    (a-a!=0.f || (a!=0.f && a-2.f*a==0.f))
+     72          
+
+   \                                 In section .bss, align 4
+     73          static real32_T TimeStep = 0.0f;
+     74          
+     75          OTE2_PARAMS_BPM_TYPE* ThermalModelCoreBPM_Params;
+     76          
+     77          /* Block signals (auto storage) */
+     78          B_ThermalModelCoreBPM_T ThermalModelCoreBPM_B;
+     79          
+     80          /* Block states (auto storage) */
+     81          DW_ThermalModelCoreBPM_T ThermalModelCoreBPM_DW;
+     82          
+     83          /* External inputs (root inport signals with auto storage) */
+     84          ExtU_ThermalModelCoreBPM_T ThermalModelCoreBPM_U;
+   \                     ThermalModelCoreBPM_U:
+   \   00000000                      DS8 20
+     85          
+     86          /* External outputs (root outports fed by signals with auto storage) */
+     87          ExtY_ThermalModelCoreBPM_T ThermalModelCoreBPM_Y;
+   \                     ThermalModelCoreBPM_Y:
+   \   00000014                      DS8 32
+   \   00000034                      DS8 4
+   \                     ThermalModelCoreBPM_Params:
+   \   00000038                      DS8 4
+
+   \                                 In section .bss, align 4
+   \                     ThermalModelCoreBPM_B:
+   \   00000000                      DS8 32
+
+   \                                 In section .bss, align 8
+   \                     ThermalModelCoreBPM_DW:
+   \   00000000                      DS8 792
+     88          
+     89          
+
+   \                                 In section .text, align 4, keep-with-next
+     90          float fastpow (float x,float p)
+     91          {
+   \                     fastpow: (+1)
+   \   00000000   0xB082             SUB      SP,SP,#+8
+     92            union {
+     93              float f;
+     94              unsigned int i;
+     95            } vx = { x };
+     96          
+     97            union {
+     98              unsigned int i;
+     99              float f;
+    100            } mx = { (vx.i & 0x007FFFFF) | (0x7e << 23) };
+    101          
+    102            float y = vx.i;
+    103            y *= 1.0 / (1 << 23);
+    104            y= y - 124.22544637f - 1.498030302f * mx.f - 1.72587999f / (0.3520887068f +
+    105              mx.f);
+   \   00000002   0xED9F 0x....      VLDR.W   S2,??DataTable0  ;; 0xc2f8736e
+   \   00000006   0xED8D 0x0A01      VSTR     S0,[SP, #+4]
+   \   0000000A   0xEEBB 0x0AE4      VCVT.F32.U32 S0,S0,#+23
+   \   0000000E   0x9801             LDR      R0,[SP, #+4]
+   \   00000010   0x0240             LSLS     R0,R0,#+9
+   \   00000012   0x0A40             LSRS     R0,R0,#+9
+   \   00000014   0xF040 0x507C      ORR      R0,R0,#0x3F000000
+   \   00000018   0x9000             STR      R0,[SP, #+0]
+   \   0000001A   0xEE30 0x0A01      VADD.F32 S0,S0,S2
+   \   0000001E   0xED9D 0x1A00      VLDR     S2,[SP, #+0]
+   \   00000022   0xEDDF 0x....      VLDR.W   S3,??DataTable0_1  ;; 0x3fbfbf75
+   \   00000026   0xEE01 0x0A61      VMLS.F32 S0,S2,S3
+   \   0000002A   0xEDDF 0x....      VLDR.W   S3,??DataTable0_2  ;; 0x3eb444f9
+   \   0000002E   0xEE31 0x1A21      VADD.F32 S2,S2,S3
+   \   00000032   0xEDDF 0x....      VLDR.W   S3,??DataTable0_3  ;; 0x3fdce9a3
+   \   00000036   0xEE81 0x1A81      VDIV.F32 S2,S3,S2
+   \   0000003A   0xEE30 0x0A41      VSUB.F32 S0,S0,S2
+    106          
+    107            //exp2_part
+    108            union {
+    109              float f;
+    110              unsigned int i;
+    111            } vp = { p*y };
+   \   0000003E   0xEE20 0x0A80      VMUL.F32 S0,S1,S0
+   \   00000042   0xED8D 0x0A00      VSTR     S0,[SP, #+0]
+    112          
+    113            int sign = (vp.i >> 31);
+    114            int w = p*y;
+                           ^
+Warning[Pa093]: implicit conversion from floating point to integer
+    115            float z = p*y - w + sign;
+   \   00000046   0xEEFD 0x0AC0      VCVT.S32.F32 S1,S0
+   \   0000004A   0x9800             LDR      R0,[SP, #+0]
+   \   0000004C   0x0FC0             LSRS     R0,R0,#+31
+   \   0000004E   0xEEF8 0x0AE0      VCVT.F32.S32 S1,S1
+   \   00000052   0xEE01 0x0A10      VMOV     S2,R0
+   \   00000056   0xEE70 0x0A60      VSUB.F32 S1,S0,S1
+   \   0000005A   0xEEB8 0x1AC1      VCVT.F32.S32 S2,S2
+   \   0000005E   0xEE70 0x0A81      VADD.F32 S1,S1,S2
+    116            union {
+    117              unsigned int i;
+    118              float f;
+    119            } v = { (1 << 23) * (p*y + 121.2740838f + 27.7280233f / (4.84252568f - z) -
+                           ^
+Warning[Pa093]: implicit conversion from floating point to integer
+    120                                 1.49012907f * z) };
+   \   00000062   0xED9F 0x....      VLDR.W   S2,??DataTable0_4  ;; 0x42f28c55
+   \   00000066   0xEE30 0x0A01      VADD.F32 S0,S0,S2
+   \   0000006A   0xED9F 0x....      VLDR.W   S2,??DataTable0_5  ;; 0x409af5f8
+   \   0000006E   0xEE31 0x1A60      VSUB.F32 S2,S2,S1
+   \   00000072   0xEDDF 0x....      VLDR.W   S3,??DataTable0_6  ;; 0x41ddd2fe
+   \   00000076   0xEE81 0x1A81      VDIV.F32 S2,S3,S2
+   \   0000007A   0xEE30 0x0A01      VADD.F32 S0,S0,S2
+   \   0000007E   0xED9F 0x....      VLDR.W   S2,??DataTable0_7  ;; 0x3fbebc8d
+   \   00000082   0xEE00 0x0AC1      VMLS.F32 S0,S1,S2
+   \   00000086   0xEEBF 0x0AE4      VCVT.U32.F32 S0,S0,#+23
+   \   0000008A   0xED8D 0x0A00      VSTR     S0,[SP, #+0]
+    121          
+    122            return v.f;
+   \   0000008E   0xB002             ADD      SP,SP,#+8
+   \   00000090   0x4770             BX       LR               ;; return
+    123          }
+    124          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    125          static void fp(int_T N, real32_T T, real32_T *Y, real32_T *YP)
+                                      ^
+Remark[Pe826]: parameter "N" was never referenced
+
+  static void fp(int_T N, real32_T T, real32_T *Y, real32_T *YP)
+                                   ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c",125  Remark[Pe826]: 
+          parameter "T" was never referenced
+    126          {
+   \                     fp: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x460C             MOV      R4,R1
+   \   00000004   0xED2D 0x8B06      VPUSH    {D8-D10}
+    127            real32_T Z[4];
+    128            if (Y[49]>=0.f )
+   \   00000008   0xED94 0x0A31      VLDR     S0,[R4, #+196]
+   \   0000000C   0xEEB5 0x0A40      VCMP.F32 S0,#0.0
+   \   00000010   0x4615             MOV      R5,R2
+   \   00000012   0xEEF1 0xFA10      FMSTAT   
+   \   00000016   0xBFB8             IT       LT 
+    129              Y[32] = Y[49];
+    130            else
+    131              Y[32] = -Y[49];
+   \   00000018   0xEEB1 0x0A40      VNEGLT.F32 S0,S0
+   \   0000001C   0xED84 0x0A20      VSTR     S0,[R4, #+128]
+    132            Z[0] = (Y[6]-Y[0])*Y[69];
+   \   00000020   0xED94 0x0A00      VLDR     S0,[R4, #0]
+   \   00000024   0xEDD4 0x0A06      VLDR     S1,[R4, #+24]
+   \   00000028   0xED94 0x1A45      VLDR     S2,[R4, #+276]
+   \   0000002C   0xEE70 0x0AC0      VSUB.F32 S1,S1,S0
+   \   00000030   0xEE20 0x8A81      VMUL.F32 S16,S1,S2
+    133            Z[1] = (Y[4]-Y[0])*Y[71];
+   \   00000034   0xEDD4 0x0A04      VLDR     S1,[R4, #+16]
+    134            YP[0] = (Z[1]+Z[0])/Y[59];
+   \   00000038   0xED94 0x1A3B      VLDR     S2,[R4, #+236]
+   \   0000003C   0xEE30 0x0AC0      VSUB.F32 S0,S1,S0
+   \   00000040   0xEDD4 0x0A47      VLDR     S1,[R4, #+284]
+   \   00000044   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000048   0xEE70 0x0A08      VADD.F32 S1,S0,S16
+   \   0000004C   0xEEC0 0x0A81      VDIV.F32 S1,S1,S2
+   \   00000050   0xEDC5 0x0A00      VSTR     S1,[R5, #0]
+    135            Y[17] = Y[97]+(Y[32]*Y[99]+Y[98])*Y[32];
+   \   00000054   0xEDD4 0x0A20      VLDR     S1,[R4, #+128]
+   \   00000058   0xED94 0x1A63      VLDR     S2,[R4, #+396]
+   \   0000005C   0xEDD4 0x1A62      VLDR     S3,[R4, #+392]
+   \   00000060   0xEE40 0x1A81      VMLA.F32 S3,S1,S2
+   \   00000064   0xED94 0x1A61      VLDR     S2,[R4, #+388]
+   \   00000068   0xEE01 0x1AA0      VMLA.F32 S2,S3,S1
+   \   0000006C   0xED84 0x1A11      VSTR     S2,[R4, #+68]
+    136            Y[16] = Y[91]+(Y[32]*Y[93]+Y[92])*Y[32];
+   \   00000070   0xEDD4 0x1A5D      VLDR     S3,[R4, #+372]
+   \   00000074   0xED94 0x2A5C      VLDR     S4,[R4, #+368]
+   \   00000078   0xEE00 0x2AA1      VMLA.F32 S4,S1,S3
+   \   0000007C   0xEDD4 0x1A5B      VLDR     S3,[R4, #+364]
+   \   00000080   0xEE42 0x1A20      VMLA.F32 S3,S4,S1
+   \   00000084   0xEDC4 0x1A10      VSTR     S3,[R4, #+64]
+    137            Y[18] = 1e-06f*Y[58]*Y[17]*(Y[3]-Y[2]);
+   \   00000088   0xED9F 0x....      VLDR.W   S6,??DataTable1  ;; 0x358637bd
+   \   0000008C   0xEDD4 0x2A3A      VLDR     S5,[R4, #+232]
+   \   00000090   0xED94 0x2A02      VLDR     S4,[R4, #+8]
+   \   00000094   0xEE62 0x2A83      VMUL.F32 S5,S5,S6
+   \   00000098   0xEE22 0x1A81      VMUL.F32 S2,S5,S2
+   \   0000009C   0xEDD4 0x2A03      VLDR     S5,[R4, #+12]
+   \   000000A0   0xEE72 0x2AC2      VSUB.F32 S5,S5,S4
+   \   000000A4   0xEE21 0x1A22      VMUL.F32 S2,S2,S5
+   \   000000A8   0xED84 0x1A12      VSTR     S2,[R4, #+72]
+    138            Z[2] = (Y[4]-Y[5])*Y[74];
+   \   000000AC   0xEDD4 0x2A05      VLDR     S5,[R4, #+20]
+   \   000000B0   0xED94 0x3A04      VLDR     S6,[R4, #+16]
+   \   000000B4   0xED94 0x4A4A      VLDR     S8,[R4, #+296]
+   \   000000B8   0xEE73 0x3A62      VSUB.F32 S7,S6,S5
+   \   000000BC   0xEE63 0x3A84      VMUL.F32 S7,S7,S8
+    139            Y[34] = Z[2]-Y[54]*Y[16]*(Y[5]-Y[2]);
+   \   000000C0   0xED94 0x4A36      VLDR     S8,[R4, #+216]
+   \   000000C4   0xEE24 0x4A21      VMUL.F32 S8,S8,S3
+   \   000000C8   0xEE72 0x2A62      VSUB.F32 S5,S4,S5
+   \   000000CC   0xEEF0 0x1A63      VMOV.F32 S3,S7
+   \   000000D0   0xEE44 0x1A22      VMLA.F32 S3,S8,S5
+   \   000000D4   0xEDC4 0x1A22      VSTR     S3,[R4, #+136]
+    140            Y[15] = Y[94]+(Y[32]*Y[96]+Y[95])*Y[32];
+   \   000000D8   0xEDD4 0x2A60      VLDR     S5,[R4, #+384]
+   \   000000DC   0xED94 0x4A5F      VLDR     S8,[R4, #+380]
+   \   000000E0   0xEE00 0x4AA2      VMLA.F32 S8,S1,S5
+   \   000000E4   0xEDD4 0x2A5E      VLDR     S5,[R4, #+376]
+   \   000000E8   0xEE44 0x2A20      VMLA.F32 S5,S8,S1
+   \   000000EC   0xEDC4 0x2A0F      VSTR     S5,[R4, #+60]
+    141            Z[3] = (Y[4]-Y[2])*Y[70];
+   \   000000F0   0xEE73 0x0A42      VSUB.F32 S1,S6,S4
+   \   000000F4   0xED94 0x2A46      VLDR     S4,[R4, #+280]
+   \   000000F8   0xEE60 0x0A82      VMUL.F32 S1,S1,S4
+    142            YP[2] = (Z[2]+Z[3]+Y[18]-Y[34])/Y[62];
+   \   000000FC   0xEE33 0x2AA0      VADD.F32 S4,S7,S1
+   \   00000100   0xEE32 0x1A01      VADD.F32 S2,S4,S2
+   \   00000104   0xEE31 0x1A61      VSUB.F32 S2,S2,S3
+   \   00000108   0xEDD4 0x1A3E      VLDR     S3,[R4, #+248]
+   \   0000010C   0xEE81 0x1A21      VDIV.F32 S2,S2,S3
+   \   00000110   0xED85 0x1A02      VSTR     S2,[R5, #+8]
+    143            Y[19] = (Y[3]-Y[4])*Y[15]*Y[57]-Z[2]-Z[1]-Z[3];
+   \   00000114   0xED94 0x1A04      VLDR     S2,[R4, #+16]
+   \   00000118   0xEDD4 0x1A03      VLDR     S3,[R4, #+12]
+   \   0000011C   0xED94 0x2A0F      VLDR     S4,[R4, #+60]
+   \   00000120   0xEE71 0x1AC1      VSUB.F32 S3,S3,S2
+   \   00000124   0xEE61 0x1A82      VMUL.F32 S3,S3,S4
+   \   00000128   0xED94 0x2A39      VLDR     S4,[R4, #+228]
+   \   0000012C   0xEE61 0x1A82      VMUL.F32 S3,S3,S4
+   \   00000130   0xEE71 0x1AE3      VSUB.F32 S3,S3,S7
+   \   00000134   0xEE31 0x0AC0      VSUB.F32 S0,S3,S0
+   \   00000138   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   0000013C   0xED84 0x0A13      VSTR     S0,[R4, #+76]
+    144            Z[1] = Y[51];
+    145            Z[2] = 0.5f;
+    146            Y[27] = Z[2]*(Z[1]+Y[4])-136.575f;
+   \   00000140   0xEEF6 0x1A00      VMOV.F32 S3,#0.5
+   \   00000144   0xEDD4 0x8A33      VLDR     S17,[R4, #+204]
+   \   00000148   0xEE78 0x0A81      VADD.F32 S1,S17,S2
+   \   0000014C   0xED9F 0x....      VLDR.W   S0,??DataTable2  ;; 0xc3089333
+   \   00000150   0xEE00 0x0AA1      VMLA.F32 S0,S1,S3
+   \   00000154   0xED84 0x0A1B      VSTR     S0,[R4, #+108]
+    147            Z[2] = Y[27]+273.15f;
+    148            Z[2] = 1.0f/Z[2];
+    149            Y[24] = Z[2];
+   \   00000158   0xED9F 0x....      VLDR.W   S18,??DataTable2_1  ;; 0x43889333
+   \   0000015C   0xEE30 0x0A09      VADD.F32 S0,S0,S18
+   \   00000160   0xEEF7 0x0A00      VMOV.F32 S1,#1.0
+   \   00000164   0xEE80 0x0A80      VDIV.F32 S0,S1,S0
+    150            Z[2] = Z[1]-Y[4]+273.15f;
+   \   00000168   0xEE78 0x0AC1      VSUB.F32 S1,S17,S2
+   \   0000016C   0xEE30 0xAA89      VADD.F32 S20,S1,S18
+    151            Y[28] = fabsf(Z[2])+0.01f;
+   \   00000170   0xEDDF 0x....      VLDR.W   S19,??DataTable2_2  ;; 0x3c23d70a
+   \   00000174   0xEEF0 0x0ACA      VABS.F32 S1,S20
+   \   00000178   0xED84 0x0A18      VSTR     S0,[R4, #+96]
+   \   0000017C   0xEE70 0x0AA9      VADD.F32 S1,S1,S19
+   \   00000180   0xEDC4 0x0A1C      VSTR     S1,[R4, #+112]
+    152            Y[26] = Y[24]*Y[28]*Y[80];
+   \   00000184   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000188   0xEDD4 0x0A50      VLDR     S1,[R4, #+320]
+   \   0000018C   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000190   0xED84 0x0A1A      VSTR     S0,[R4, #+104]
+    153          //  if (Y[26]<0.f ) {
+    154          //    YP[0] = (*dsn_undef);
+    155          //    return;
+    156          //  }
+    157          
+    158            Y[25] = 0.387f*pow(Y[26],0.1666666666666666667f);
+   \   00000194   0xEDDF 0x....      VLDR.W   S1,??DataTable2_3  ;; 0x3e2aaaab
+   \   00000198   0x.... 0x....      BL       fastpow
+   \   0000019C   0xEDDF 0x....      VLDR.W   S1,??DataTable2_4  ;; 0x3ec624dd
+   \   000001A0   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000001A4   0xED84 0x0A19      VSTR     S0,[R4, #+100]
+    159            Z[2] = -Z[2];
+   \   000001A8   0xEEF1 0x0A4A      VNEG.F32 S1,S20
+    160            Y[20] = Z[2];
+   \   000001AC   0xEDC4 0x0A14      VSTR     S1,[R4, #+80]
+    161            Z[3] = 0.6f+0.8292569616863719f*Y[25];
+   \   000001B0   0xEDDF 0x....      VLDR.W   S3,??DataTable2_5  ;; 0x3f544a2f
+   \   000001B4   0xED94 0x1A19      VLDR     S2,[R4, #+100]
+   \   000001B8   0xED9F 0x....      VLDR.W   S0,??DataTable2_6  ;; 0x3f19999a
+   \   000001BC   0xEE01 0x0A21      VMLA.F32 S0,S2,S3
+    162            Y[29] = Z[3]*Z[3]*Y[89]*Y[56];
+   \   000001C0   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   000001C4   0xEDD4 0x1A59      VLDR     S3,[R4, #+356]
+   \   000001C8   0xED94 0x1A38      VLDR     S2,[R4, #+224]
+   \   000001CC   0xEE20 0x0A21      VMUL.F32 S0,S0,S3
+   \   000001D0   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+   \   000001D4   0xED84 0x0A1D      VSTR     S0,[R4, #+116]
+    163            Y[21] = Y[29]*Y[20];
+   \   000001D8   0xEE60 0x1A20      VMUL.F32 S3,S0,S1
+   \   000001DC   0xEDC4 0x1A15      VSTR     S3,[R4, #+84]
+    164            Y[22] = Z[2];
+   \   000001E0   0xEDC4 0x0A16      VSTR     S1,[R4, #+88]
+    165            Y[30] = Y[32]*(Y[32]*Y[104]+Y[103])*Y[56];
+   \   000001E4   0xED94 0x0A20      VLDR     S0,[R4, #+128]
+   \   000001E8   0xED94 0x2A68      VLDR     S4,[R4, #+416]
+   \   000001EC   0xEDD4 0x2A67      VLDR     S5,[R4, #+412]
+   \   000001F0   0xEE40 0x2A02      VMLA.F32 S5,S0,S4
+   \   000001F4   0xEE22 0x2A80      VMUL.F32 S4,S5,S0
+   \   000001F8   0xEE22 0x2A01      VMUL.F32 S4,S4,S2
+   \   000001FC   0xED84 0x2A1E      VSTR     S4,[R4, #+120]
+    166            Y[23] = Y[30]*Y[22];
+   \   00000200   0xEE62 0x0A20      VMUL.F32 S1,S4,S1
+   \   00000204   0xEDC4 0x0A17      VSTR     S1,[R4, #+92]
+    167            Z[1] = Z[1]+273.15f;
+    168            Z[2] = Y[4]*Y[4];
+    169            Z[1] = Z[1]*Z[1];
+    170            Y[31] = Y[21]+Y[23]+5.670367000000000514e-08f*Y[85]*Y[56]*(Z[2]*Z[2]-Z[1]*Z[1]);
+   \   00000208   0xEE71 0x0AA0      VADD.F32 S1,S3,S1
+   \   0000020C   0xEDD4 0x1A55      VLDR     S3,[R4, #+340]
+   \   00000210   0xEDD4 0x2A04      VLDR     S5,[R4, #+16]
+   \   00000214   0xED9F 0x....      VLDR.W   S6,??DataTable2_7  ;; 0x33738a58
+   \   00000218   0xEE61 0x1A83      VMUL.F32 S3,S3,S6
+   \   0000021C   0xEE38 0x2A89      VADD.F32 S4,S17,S18
+   \   00000220   0xEE62 0x2AA2      VMUL.F32 S5,S5,S5
+   \   00000224   0xEE21 0x1A81      VMUL.F32 S2,S3,S2
+   \   00000228   0xEE22 0x2A02      VMUL.F32 S4,S4,S4
+   \   0000022C   0xEE62 0x1AA2      VMUL.F32 S3,S5,S5
+   \   00000230   0xEE42 0x1A42      VMLS.F32 S3,S4,S4
+   \   00000234   0xEE41 0x0A21      VMLA.F32 S1,S2,S3
+   \   00000238   0xEDC4 0x0A1F      VSTR     S1,[R4, #+124]
+    171            Z[1] = Y[6]+Y[3];
+    172            Z[1] = 1.0f/Z[1];
+    173            Y[8] = 2.f*Z[1];
+   \   0000023C   0xED94 0x1A03      VLDR     S2,[R4, #+12]
+   \   00000240   0xEDD4 0x1A06      VLDR     S3,[R4, #+24]
+   \   00000244   0xEE31 0x2A81      VADD.F32 S4,S3,S2
+   \   00000248   0xEEF7 0x2A00      VMOV.F32 S5,#1.0
+   \   0000024C   0xEE82 0x2A82      VDIV.F32 S4,S5,S4
+   \   00000250   0xEEF0 0x2A00      VMOV.F32 S5,#2.0
+    174            Z[1] = Y[6]-Y[3];
+   \   00000254   0xEE71 0x8AC1      VSUB.F32 S17,S3,S2
+   \   00000258   0xEE22 0x2A22      VMUL.F32 S4,S4,S5
+    175            Y[11] = fabsf(Z[1]+0.01f);
+   \   0000025C   0xEE38 0x1AA9      VADD.F32 S2,S17,S19
+   \   00000260   0xED84 0x2A08      VSTR     S4,[R4, #+32]
+   \   00000264   0xEEB0 0x1AC1      VABS.F32 S2,S2
+   \   00000268   0xED84 0x1A0B      VSTR     S2,[R4, #+44]
+    176            Y[13] = Y[100]+(Y[32]*Y[102]+Y[101])*Y[32];
+   \   0000026C   0xED94 0x1A66      VLDR     S2,[R4, #+408]
+   \   00000270   0xEDD4 0x1A65      VLDR     S3,[R4, #+404]
+   \   00000274   0xEE40 0x1A01      VMLA.F32 S3,S0,S2
+   \   00000278   0xED94 0x1A64      VLDR     S2,[R4, #+400]
+   \   0000027C   0xEE01 0x1A80      VMLA.F32 S2,S3,S0
+   \   00000280   0xED84 0x1A0D      VSTR     S2,[R4, #+52]
+    177            YP[4] = (Y[19]-Y[31])/Y[63];
+   \   00000284   0xED94 0x0A13      VLDR     S0,[R4, #+76]
+   \   00000288   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   0000028C   0xEDD4 0x0A3F      VLDR     S1,[R4, #+252]
+   \   00000290   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   00000294   0xED85 0x0A04      VSTR     S0,[R5, #+16]
+    178            Y[10] = Y[81]*Y[8]*Y[11];
+   \   00000298   0xED94 0x0A51      VLDR     S0,[R4, #+324]
+   \   0000029C   0xEDD4 0x0A08      VLDR     S1,[R4, #+32]
+   \   000002A0   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000002A4   0xEDD4 0x0A0B      VLDR     S1,[R4, #+44]
+   \   000002A8   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000002AC   0xED84 0x0A0A      VSTR     S0,[R4, #+40]
+    179          //  if (Y[10]<0.f ) {
+    180          //    YP[0] = (*dsn_undef);
+    181          //    return;
+    182          //  }
+    183          
+    184            Y[9] = 0.324074819988109413f*pow(Y[10],0.1667f)+0.825000000000000002f;
+   \   000002B0   0xEDDF 0x....      VLDR.W   S1,??DataTable3  ;; 0x3e2ab368
+   \   000002B4   0x.... 0x....      BL       fastpow
+   \   000002B8   0xEDDF 0x....      VLDR.W   S1,??DataTable3_1  ;; 0x3ea5ed23
+   \   000002BC   0xED9F 0x....      VLDR.W   S2,??DataTable3_2  ;; 0x3f533333
+   \   000002C0   0xEE00 0x1A20      VMLA.F32 S2,S0,S1
+   \   000002C4   0xED84 0x1A09      VSTR     S2,[R4, #+36]
+    185            Y[12] = Y[9]*Y[9]*Y[90];
+   \   000002C8   0xED94 0x0A09      VLDR     S0,[R4, #+36]
+   \   000002CC   0xEDD4 0x0A5A      VLDR     S1,[R4, #+360]
+   \   000002D0   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   000002D4   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000002D8   0xED84 0x0A0C      VSTR     S0,[R4, #+48]
+    186            Z[2] = Y[13]*Y[13];
+    187            Z[3] = Y[12]*Y[12];
+   \   000002DC   0xEE20 0x1A00      VMUL.F32 S2,S0,S0
+   \   000002E0   0xEDD4 0x0A0D      VLDR     S1,[R4, #+52]
+   \   000002E4   0xEE60 0x0AA0      VMUL.F32 S1,S1,S1
+    188            Y[7] = Z[2]*Z[2]+Z[3]*Z[3];
+   \   000002E8   0xEE20 0x0AA0      VMUL.F32 S0,S1,S1
+   \   000002EC   0xEE01 0x0A01      VMLA.F32 S0,S2,S2
+   \   000002F0   0xED84 0x0A07      VSTR     S0,[R4, #+28]
+    189          //  if (Y[7]<0.f ) {
+    190          //    YP[0] = (*dsn_undef);
+    191          //    return;
+    192          //  }
+    193          
+    194            Y[14] = Y[55]*pow(Y[7],0.25f);
+   \   000002F4   0xEEF5 0x0A00      VMOV.F32 S1,#0.25
+   \   000002F8   0x.... 0x....      BL       fastpow
+   \   000002FC   0xEDD4 0x0A37      VLDR     S1,[R4, #+220]
+   \   00000300   0xEE60 0x0A80      VMUL.F32 S1,S1,S0
+   \   00000304   0xEDC4 0x0A0E      VSTR     S1,[R4, #+56]
+    195            Z[2] = (Y[6]-Y[1])*Y[73];
+   \   00000308   0xED94 0x1A01      VLDR     S2,[R4, #+4]
+   \   0000030C   0xEDD4 0x1A06      VLDR     S3,[R4, #+24]
+   \   00000310   0xED94 0x2A49      VLDR     S4,[R4, #+292]
+   \   00000314   0xEE31 0x0AC1      VSUB.F32 S0,S3,S2
+   \   00000318   0xEE20 0x0A02      VMUL.F32 S0,S0,S4
+    196            Y[35] = -(Z[1]*Y[14]+Z[0]+Z[2]);
+   \   0000031C   0xEE08 0x8AA0      VMLA.F32 S16,S17,S1
+   \   00000320   0xEE78 0x0A00      VADD.F32 S1,S16,S0
+   \   00000324   0xEEF1 0x0A60      VNEG.F32 S1,S1
+   \   00000328   0xEDC4 0x0A23      VSTR     S1,[R4, #+140]
+    197            Z[0] = Y[48];
+    198            Z[0] = Z[0]*Z[0]*Y[82];
+    199            Y[36] = 3.f*Z[0]*(1.f+(Y[6]-Y[83])*Y[84])-819.45f*Z[0]*Y[84];
+   \   0000032C   0xEEF0 0x2A08      VMOV.F32 S5,#3.0
+   \   00000330   0xEDD4 0x0A30      VLDR     S1,[R4, #+192]
+   \   00000334   0xED94 0x2A52      VLDR     S4,[R4, #+328]
+   \   00000338   0xED94 0x3A53      VLDR     S6,[R4, #+332]
+   \   0000033C   0xEE60 0x0AA0      VMUL.F32 S1,S1,S1
+   \   00000340   0xEE60 0x0A82      VMUL.F32 S1,S1,S4
+   \   00000344   0xEE71 0x1AC3      VSUB.F32 S3,S3,S6
+   \   00000348   0xED94 0x2A54      VLDR     S4,[R4, #+336]
+   \   0000034C   0xEEB7 0x3A00      VMOV.F32 S6,#1.0
+   \   00000350   0xEE60 0x2AA2      VMUL.F32 S5,S1,S5
+   \   00000354   0xEE01 0x3A82      VMLA.F32 S6,S3,S4
+   \   00000358   0xEE62 0x1A83      VMUL.F32 S3,S5,S6
+   \   0000035C   0xEDDF 0x....      VLDR.W   S5,??DataTable3_3  ;; 0x444cdccd
+   \   00000360   0xEE60 0x0AA2      VMUL.F32 S1,S1,S5
+   \   00000364   0xEE40 0x1AC2      VMLS.F32 S3,S1,S4
+   \   00000368   0xEDC4 0x1A24      VSTR     S3,[R4, #+144]
+    200            Z[0] = (Y[5]-Y[1])*Y[72];
+   \   0000036C   0xEDD4 0x0A05      VLDR     S1,[R4, #+20]
+    201            YP[1] = (Z[2]+Z[0])/Y[61];
+   \   00000370   0xEDD4 0x1A3D      VLDR     S3,[R4, #+244]
+   \   00000374   0xEE70 0x0AC1      VSUB.F32 S1,S1,S2
+   \   00000378   0xED94 0x1A48      VLDR     S2,[R4, #+288]
+   \   0000037C   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   00000380   0xEE30 0x1A20      VADD.F32 S2,S0,S1
+   \   00000384   0xEE81 0x1A21      VDIV.F32 S2,S2,S3
+   \   00000388   0xED85 0x1A01      VSTR     S2,[R5, #+4]
+    202            YP[6] = (Y[35]+Y[36])/Y[65];
+   \   0000038C   0xED94 0x1A23      VLDR     S2,[R4, #+140]
+   \   00000390   0xEDD4 0x1A24      VLDR     S3,[R4, #+144]
+   \   00000394   0xEE31 0x1A21      VADD.F32 S2,S2,S3
+   \   00000398   0xEDD4 0x1A41      VLDR     S3,[R4, #+260]
+   \   0000039C   0xEE81 0x1A21      VDIV.F32 S2,S2,S3
+   \   000003A0   0xED85 0x1A06      VSTR     S2,[R5, #+24]
+    203            Y[33] = (Y[76]+(Y[77]+(Y[32]*Y[79]+Y[78])*Y[32])*Y[32])*Y[32];
+   \   000003A4   0xED94 0x1A20      VLDR     S2,[R4, #+128]
+   \   000003A8   0xEDD4 0x1A4F      VLDR     S3,[R4, #+316]
+   \   000003AC   0xED94 0x2A4E      VLDR     S4,[R4, #+312]
+   \   000003B0   0xEE01 0x2A21      VMLA.F32 S4,S2,S3
+   \   000003B4   0xEDD4 0x1A4D      VLDR     S3,[R4, #+308]
+   \   000003B8   0xEE42 0x1A01      VMLA.F32 S3,S4,S2
+   \   000003BC   0xED94 0x2A4C      VLDR     S4,[R4, #+304]
+   \   000003C0   0xEE01 0x2A81      VMLA.F32 S4,S3,S2
+   \   000003C4   0xEE22 0x1A01      VMUL.F32 S2,S4,S2
+   \   000003C8   0xED84 0x1A21      VSTR     S2,[R4, #+132]
+    204            YP[3] = (1.f*(Y[70]*Y[2]+Y[74]*Y[5]-Y[69]*Y[6]-(-(Y[71]+Y[69]))*Y[0]-(Y[71]+Y
+    205                       [70]+Y[74])*Y[4]-Y[18]-Y[19]-Y[35]-Z[2]))/Y[60];
+   \   000003CC   0xEDD4 0x2A46      VLDR     S5,[R4, #+280]
+   \   000003D0   0xED94 0x3A02      VLDR     S6,[R4, #+8]
+   \   000003D4   0xED94 0x2A4A      VLDR     S4,[R4, #+296]
+   \   000003D8   0xEDD4 0x3A05      VLDR     S7,[R4, #+20]
+   \   000003DC   0xED94 0x1A47      VLDR     S2,[R4, #+284]
+   \   000003E0   0xEDD4 0x1A45      VLDR     S3,[R4, #+276]
+   \   000003E4   0xEE22 0x3A83      VMUL.F32 S6,S5,S6
+   \   000003E8   0xEE02 0x3A23      VMLA.F32 S6,S4,S7
+   \   000003EC   0xEDD4 0x3A06      VLDR     S7,[R4, #+24]
+   \   000003F0   0xEE01 0x3AE3      VMLS.F32 S6,S3,S7
+   \   000003F4   0xEE71 0x1A21      VADD.F32 S3,S2,S3
+   \   000003F8   0xEDD4 0x3A00      VLDR     S7,[R4, #0]
+   \   000003FC   0xEE01 0x3AA3      VMLA.F32 S6,S3,S7
+   \   00000400   0xEE31 0x1A22      VADD.F32 S2,S2,S5
+   \   00000404   0xEE31 0x1A02      VADD.F32 S2,S2,S4
+   \   00000408   0xEDD4 0x1A04      VLDR     S3,[R4, #+16]
+   \   0000040C   0xEE01 0x3A61      VMLS.F32 S6,S2,S3
+   \   00000410   0xED94 0x1A12      VLDR     S2,[R4, #+72]
+   \   00000414   0xEDD4 0x1A13      VLDR     S3,[R4, #+76]
+   \   00000418   0xEE33 0x1A41      VSUB.F32 S2,S6,S2
+   \   0000041C   0xEE31 0x1A61      VSUB.F32 S2,S2,S3
+   \   00000420   0xEDD4 0x1A23      VLDR     S3,[R4, #+140]
+   \   00000424   0xEE31 0x1A61      VSUB.F32 S2,S2,S3
+   \   00000428   0xEE31 0x0A40      VSUB.F32 S0,S2,S0
+   \   0000042C   0xED94 0x1A3C      VLDR     S2,[R4, #+240]
+   \   00000430   0xEE80 0x0A01      VDIV.F32 S0,S0,S2
+   \   00000434   0xED85 0x0A03      VSTR     S0,[R5, #+12]
+    206            YP[5] = (Y[33]+Y[34]-Z[0])/Y[64];
+   \   00000438   0xED94 0x0A21      VLDR     S0,[R4, #+132]
+   \   0000043C   0xED94 0x1A22      VLDR     S2,[R4, #+136]
+   \   00000440   0xEE30 0x0A01      VADD.F32 S0,S0,S2
+   \   00000444   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000448   0xEDD4 0x0A40      VLDR     S1,[R4, #+256]
+   \   0000044C   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   00000450   0xED85 0x0A05      VSTR     S0,[R5, #+20]
+    207          
+    208          }
+   \   00000454   0xECBD 0x8B06      VPOP     {D8-D10}
+   \   00000458   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    209          //#pragma optimize=size no_inline no_unroll
+    210          //static void otp(real32_T T, real32_T *Y, real32_T *YP)
+    211          //{
+    212          //  Y[37] = Y[1]-273.15f;
+    213          //  Y[38] = Y[3]-273.15f;
+    214          //  Y[39] = Y[2]-273.15f;
+    215          //  Y[40] = Y[4]-273.15f;
+    216          //  Y[41] = Y[5]-273.15f;
+    217          //  Y[42] = Y[6]-273.15f;
+    218          //  Y[43] = Y[51];
+    219          //  Y[44] = Y[50];
+    220          //}
+    221          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    222          static void eev(real32_T T, real32_T *Y, real32_T *Ypre, real32_T *EA)
+                                          ^
+Remark[Pe826]: parameter "T" was never referenced
+
+  static void eev(real32_T T, real32_T *Y, real32_T *Ypre, real32_T *EA)
+                                                     ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c",222  Remark[Pe826]: 
+          parameter "Ypre" was never referenced
+    223          {
+    224            EA[0] = Y[46]-0.1f;
+   \                     eev: (+1)
+   \   00000000   0xED9F 0x....      VLDR.W   S0,??DataTable4  ;; 0xbdcccccd
+   \   00000004   0xEDD0 0x0A2E      VLDR     S1,[R0, #+184]
+   \   00000008   0xEE70 0x0A80      VADD.F32 S1,S1,S0
+   \   0000000C   0xEDC2 0x0A00      VSTR     S1,[R2, #0]
+    225            EA[1] = Y[47]-0.1f;
+   \   00000010   0xEDD0 0x0A2F      VLDR     S1,[R0, #+188]
+   \   00000014   0xEE30 0x0A80      VADD.F32 S0,S1,S0
+   \   00000018   0xED82 0x0A01      VSTR     S0,[R2, #+4]
+    226          }
+   \   0000001C   0x4770             BX       LR               ;; return
+    227          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    228          static int_T eex(int_T N, real32_T T, real32_T *Y, real32_T *Ypre)
+                                                    ^
+Remark[Pe826]: parameter "T" was never referenced
+    229          {
+    230            real32_T Z[3]; //, td1;
+    231            if (N==1 )
+   \                     eex: (+1)
+   \   00000000   0x2801             CMP      R0,#+1
+   \   00000002   0xD108             BNE.N    ??eex_0
+    232              Y[52] = 1.f-Y[52];
+   \   00000004   0xEEB7 0x0A00      VMOV.F32 S0,#1.0
+   \   00000008   0xEDD1 0x0A34      VLDR     S1,[R1, #+208]
+   \   0000000C   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000010   0xED81 0x0A34      VSTR     S0,[R1, #+208]
+   \   00000014   0xE0BE             B.N      ??eex_1
+    233            else if (N==2 )
+   \                     ??eex_0: (+1)
+   \   00000016   0x2802             CMP      R0,#+2
+   \   00000018   0xD108             BNE.N    ??eex_2
+    234              Y[53] = 1.f-Y[53];
+   \   0000001A   0xEEB7 0x0A00      VMOV.F32 S0,#1.0
+   \   0000001E   0xEDD1 0x0A35      VLDR     S1,[R1, #+212]
+   \   00000022   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000026   0xED81 0x0A35      VSTR     S0,[R1, #+212]
+   \                     ??eex_3: (+1)
+   \   0000002A   0xE0B3             B.N      ??eex_1
+    235            else if (N==3 ) {
+   \                     ??eex_2: (+1)
+   \   0000002C   0x2803             CMP      R0,#+3
+   \   0000002E   0xD1FC             BNE.N    ??eex_3
+    236          //    Z[0] = Y[45]; //input temperature
+    237              if (Y[45]<Y[75] )
+   \   00000030   0xED91 0x0A4B      VLDR     S0,[R1, #+300]
+   \   00000034   0xEDD1 0x0A2D      VLDR     S1,[R1, #+180]
+   \   00000038   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   0000003C   0xED9F 0x....      VLDR.W   S2,??DataTable4_1  ;; 0x43889333
+   \   00000040   0xEEF1 0xFA10      FMSTAT   
+   \   00000044   0xBF4C             ITE      MI 
+    238                Z[2] = Y[45]+273.15f; //td1 = Y[45];
+   \   00000046   0xEE30 0x0A81      VADDMI.F32 S0,S1,S2
+    239              else
+    240                Z[2] = Y[75]+273.15f; //td1 = Y[75];
+   \   0000004A   0xEE30 0x0A01      VADDPL.F32 S0,S0,S2
+    241           //   Z[1] = td1+273.15f;
+    242           //   Z[2] = Z[1];
+    243              if ((Y[53]==1.f) && (Y[53]!=Ypre[53]) ) { //reset flag
+   \   0000004E   0xED91 0x2A35      VLDR     S4,[R1, #+212]
+   \   00000052   0xEEF7 0x2A00      VMOV.F32 S5,#1.0
+   \   00000056   0xEEB4 0x2A62      VCMP.F32 S4,S5
+   \   0000005A   0xF102 0x00CC      ADD      R0,R2,#+204
+   \   0000005E   0xEDDF 0x....      VLDR.W   S3,??DataTable4_2  ;; 0xc3889333
+   \   00000062   0xEEF1 0xFA10      FMSTAT   
+   \   00000066   0xD145             BNE.N    ??eex_4
+   \   00000068   0xED90 0x2A02      VLDR     S4,[R0, #+8]
+   \   0000006C   0xEEB4 0x2A62      VCMP.F32 S4,S5
+   \   00000070   0xEEF1 0xFA10      FMSTAT   
+   \   00000074   0xD03E             BEQ.N    ??eex_4
+    244                Y[50] = 0.f;
+   \   00000076   0x2000             MOVS     R0,#+0
+   \   00000078   0xF8C1 0x00C8      STR      R0,[R1, #+200]
+    245          //      if (Z[0]<Y[75] )
+    246          //        Y[51] = Z[0];
+    247          //      else
+    248          //        Y[51] = Y[75];
+    249                Y[51] = Z[2]-273.15f;
+   \   0000007C   0xEE70 0x1A21      VADD.F32 S3,S0,S3
+   \   00000080   0xEDC1 0x1A33      VSTR     S3,[R1, #+204]
+    250          
+    251                Y[6] = Y[45]+273.15f;			// winding temperature
+   \   00000084   0xEE70 0x1A81      VADD.F32 S3,S1,S2
+   \   00000088   0xEDC1 0x1A06      VSTR     S3,[R1, #+24]
+    252                if (Z[2]<Y[45]-Y[68]+273.15f )
+   \   0000008C   0xEDD1 0x1A44      VLDR     S3,[R1, #+272]
+   \   00000090   0xEE70 0x1AE1      VSUB.F32 S3,S1,S3
+   \   00000094   0xEE71 0x1A81      VADD.F32 S3,S3,S2
+   \   00000098   0xEEB4 0x0A61      VCMP.F32 S0,S3
+   \   0000009C   0xEEF1 0xFA10      FMSTAT   
+   \   000000A0   0xBF58             IT       PL 
+    253                  Z[0] /*Y[5]*/ = Y[45]-Y[68]+273.15f; //stator lamination temperature
+    254                else
+    255                  Z[0] /*Y[5]*/ = Z[2];
+   \   000000A2   0xEEF0 0x1A40      VMOVPL.F32 S3,S0
+    256                Y[5] = Z[0];
+   \   000000A6   0xEDC1 0x1A05      VSTR     S3,[R1, #+20]
+    257                Y[1] = Z[0];
+   \   000000AA   0xEDC1 0x1A01      VSTR     S3,[R1, #+4]
+    258                Y[0] = Z[0];
+   \   000000AE   0xEDC1 0x1A00      VSTR     S3,[R1, #0]
+    259          //      if (Z[2]<Y[45]-Y[68]+273.15f )
+    260          //        Y[1] = Y[45]-Y[68]+273.15f; //stator insulation temperature
+    261          //      else
+    262          //        Y[1] = Z[2];
+    263          //      if (Z[2]<Y[45]-Y[68]+273.15f )
+    264          //        Y[0] = Y[45]-Y[68]+273.15f; //bmc insulation temperature
+    265          //      else
+    266          //        Y[0] = Z[2];
+    267                if (Z[2]<Y[45]-Y[66]+273.15f )
+   \   000000B2   0xEDD1 0x1A42      VLDR     S3,[R1, #+264]
+   \   000000B6   0xEE70 0x1AE1      VSUB.F32 S3,S1,S3
+   \   000000BA   0xEE71 0x1A81      VADD.F32 S3,S3,S2
+   \   000000BE   0xEEB4 0x0A61      VCMP.F32 S0,S3
+   \   000000C2   0xEEF1 0xFA10      FMSTAT   
+   \   000000C6   0xBF58             IT       PL 
+    268                  Z[0]/*Y[2]*/ = Y[45]-Y[66]+273.15f;//rotor temperature
+    269                else
+    270                  Z[0]/*Y[2]*/ = Z[2];
+   \   000000C8   0xEEF0 0x1A40      VMOVPL.F32 S3,S0
+    271                Y[2] = Z[0];
+   \   000000CC   0xEDC1 0x1A02      VSTR     S3,[R1, #+8]
+    272                Y[3] = Z[0];
+   \   000000D0   0xEDC1 0x1A03      VSTR     S3,[R1, #+12]
+    273          //      if (Z[2]<Y[45]-Y[66]+273.15f )
+    274          //        Y[3] = Y[45]-Y[66]+273.15f; //internal ambient temperature
+    275          //      else
+    276          //        Y[3] = Z[2];
+    277                if (Z[2]<Y[45]-Y[67]+273.15f )
+   \   000000D4   0xEDD1 0x1A43      VLDR     S3,[R1, #+268]
+   \   000000D8   0xEE70 0x0AE1      VSUB.F32 S1,S1,S3
+   \   000000DC   0xEE70 0x0A81      VADD.F32 S1,S1,S2
+   \   000000E0   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   000000E4   0xEEF1 0xFA10      FMSTAT   
+   \   000000E8   0xBF54             ITE      PL 
+    278                  Y[4] = Y[45]-Y[67]+273.15f; // shell temperature
+    279                else
+    280                  Y[4] = Z[2];
+   \   000000EA   0xED81 0x0A04      VSTRPL   S0,[R1, #+16]
+   \   000000EE   0xEDC1 0x0A04      VSTRMI   S1,[R1, #+16]
+   \   000000F2   0xE04F             B.N      ??eex_1
+    281              } else if ((Y[52]==1.f) && (Y[52]!=Ypre[52]) ) { //drift flag
+   \                     ??eex_4: (+1)
+   \   000000F4   0xED91 0x0A34      VLDR     S0,[R1, #+208]
+   \   000000F8   0xEEB7 0x2A00      VMOV.F32 S4,#1.0
+   \   000000FC   0xEEB4 0x0A42      VCMP.F32 S0,S4
+   \   00000100   0xEEF1 0xFA10      FMSTAT   
+   \   00000104   0xD146             BNE.N    ??eex_1
+   \   00000106   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   0000010A   0xEEB4 0x0A42      VCMP.F32 S0,S4
+   \   0000010E   0xEEF1 0xFA10      FMSTAT   
+   \   00000112   0xD03F             BEQ.N    ??eex_1
+    282                Y[50] = Y[6]-Y[45]-273.15f;
+   \   00000114   0xED91 0x0A06      VLDR     S0,[R1, #+24]
+   \   00000118   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   0000011C   0xEE30 0x0A21      VADD.F32 S0,S0,S3
+   \   00000120   0xED81 0x0A32      VSTR     S0,[R1, #+200]
+    283                Y[6] = Y[45]+273.15f;
+   \   00000124   0xEE70 0x0A81      VADD.F32 S1,S1,S2
+   \   00000128   0xEDC1 0x0A06      VSTR     S1,[R1, #+24]
+    284                Y[5] = Y[5]-Y[50]*Y[88];
+   \   0000012C   0xEDD1 0x0A58      VLDR     S1,[R1, #+352]
+   \   00000130   0xED91 0x1A05      VLDR     S2,[R1, #+20]
+   \   00000134   0xEE60 0x0A20      VMUL.F32 S1,S0,S1
+   \   00000138   0xEE31 0x1A60      VSUB.F32 S2,S2,S1
+   \   0000013C   0xED81 0x1A05      VSTR     S2,[R1, #+20]
+    285                Y[1] = Y[1]-Y[50]*Y[88];
+   \   00000140   0xED91 0x1A01      VLDR     S2,[R1, #+4]
+   \   00000144   0xEE31 0x1A60      VSUB.F32 S2,S2,S1
+   \   00000148   0xED81 0x1A01      VSTR     S2,[R1, #+4]
+    286                Y[0] = Y[0]-Y[50]*Y[88];
+   \   0000014C   0xED91 0x1A00      VLDR     S2,[R1, #0]
+   \   00000150   0xEE71 0x0A60      VSUB.F32 S1,S2,S1
+   \   00000154   0xEDC1 0x0A00      VSTR     S1,[R1, #0]
+    287                Y[2] = Y[2]-Y[50]*Y[86];
+   \   00000158   0xEDD1 0x0A56      VLDR     S1,[R1, #+344]
+   \   0000015C   0xED91 0x1A02      VLDR     S2,[R1, #+8]
+   \   00000160   0xEE60 0x0A20      VMUL.F32 S1,S0,S1
+   \   00000164   0xEE31 0x1A60      VSUB.F32 S2,S2,S1
+   \   00000168   0xED81 0x1A02      VSTR     S2,[R1, #+8]
+    288                Y[3] = Y[3]-Y[50]*Y[86];
+   \   0000016C   0xED91 0x1A03      VLDR     S2,[R1, #+12]
+   \   00000170   0xEE71 0x0A60      VSUB.F32 S1,S2,S1
+   \   00000174   0xEDC1 0x0A03      VSTR     S1,[R1, #+12]
+    289                Y[4] = Y[4]-Y[50]*Y[87];
+   \   00000178   0xEDD1 0x0A57      VLDR     S1,[R1, #+348]
+   \   0000017C   0xED91 0x1A04      VLDR     S2,[R1, #+16]
+   \   00000180   0xEE00 0x1A60      VMLS.F32 S2,S0,S1
+   \   00000184   0xED81 0x1A04      VSTR     S2,[R1, #+16]
+    290                Y[51] = Ypre[51]-Y[50];
+   \   00000188   0xEDD2 0x0A33      VLDR     S1,[R2, #+204]
+   \   0000018C   0xEE30 0x0AC0      VSUB.F32 S0,S1,S0
+   \   00000190   0xED81 0x0A33      VSTR     S0,[R1, #+204]
+    291              }
+    292            }
+    293          
+    294            return(0);
+   \                     ??eex_1: (+1)
+   \   00000194   0x2000             MOVS     R0,#+0
+   \   00000196   0x4770             BX       LR               ;; return
+    295          }
+    296          //#pragma optimize=size no_inline no_unroll
+    297          //static int_T cpr(real32_T T, real32_T *Y)
+    298          //{
+    299          //  real32_T v;
+    300          //  int_T k;
+    301          //  k = 0;
+    302          //  if (Y[46]>=0.1f )//DriftCorrection
+    303          //    v = 1.f;
+    304          //  else
+    305          //    v = 0.f;
+    306          //  if (Y[52]!=v ) {
+    307          //    Y[52] = v;
+    308          //    k = 1;
+    309          //  }
+    310          //
+    311          //  if (Y[47]>=0.1f )//Reset
+    312          //    v = 1.f;
+    313          //  else
+    314          //    v = 0.f;
+    315          //  if (Y[53]!=v ) {
+    316          //    Y[53] = v;
+    317          //    k = 1;
+    318          //  }
+    319          //
+    320          //  return(k);
+    321          //}
+
+   \                                 In section .text, align 4, keep-with-next
+    322          static int savespace(real32_T *w, int_T *modes)
+    323          {
+   \                     savespace: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4603             MOV      R3,R0
+   \   00000006   0x460E             MOV      R6,R1
+    324          	real32_T t,*y,*yp,*ypre,*tval;
+    325          	int_T *oldmodes,*inc,*req;
+    326          	t= w[0];
+    327          	y= &w[1];
+   \   00000008   0xF103 0x0804      ADD      R8,R3,#+4
+    328          	yp= &y[NEQ+NPAR];
+    329          	ypre= &yp[NDFA];
+   \   0000000C   0xF508 0x71E0      ADD      R1,R8,#+448
+    330          	tval= &ypre[NEQ];
+   \   00000010   0xF101 0x04D8      ADD      R4,R1,#+216
+    331          	oldmodes= &modes[NZC];
+   \   00000014   0xF106 0x0710      ADD      R7,R6,#+16
+    332          	inc= &oldmodes[NZC];
+   \   00000018   0xF107 0x0510      ADD      R5,R7,#+16
+    333          	req= &inc[NEVT];
+    334          	int i,flag;
+    335          	eev(t,y,ypre,tval);			//tval either -0.1 or 0.9
+   \   0000001C   0x4622             MOV      R2,R4
+   \   0000001E   0x4640             MOV      R0,R8
+   \   00000020   0xED93 0x0A00      VLDR     S0,[R3, #0]
+   \   00000024   0x.... 0x....      BL       eev
+    336          	flag= 0;
+   \   00000028   0x2000             MOVS     R0,#+0
+    337          	for (i=0;i<NEVT;i++) {
+   \   0000002A   0xF105 0x0108      ADD      R1,R5,#+8
+   \   0000002E   0x2202             MOVS     R2,#+2
+   \   00000030   0xED9F 0x....      VLDR.W   S0,??DataTable5  ;; 0xb58637bd
+   \   00000034   0xEDDF 0x....      VLDR.W   S1,??DataTable5_1  ;; 0xb58637bc
+   \   00000038   0xED9F 0x....      VLDR.W   S2,??DataTable5_2  ;; 0x358637bd
+   \   0000003C   0xEDDF 0x....      VLDR.W   S3,??DataTable5_3  ;; 0x358637be
+    338          	  if (tval[i]>EVTHYST && modes[2*i]==0 ) {
+   \                     ??savespace_0: (+1)
+   \   00000040   0xED94 0x2A00      VLDR     S4,[R4, #0]
+   \   00000044   0xEEB4 0x2A61      VCMP.F32 S4,S3
+   \   00000048   0xEEF1 0xFA10      FMSTAT   
+   \   0000004C   0xDB16             BLT.N    ??savespace_1
+   \   0000004E   0x6833             LDR      R3,[R6, #+0]
+   \   00000050   0xB9A3             CBNZ.N   R3,??savespace_1
+    339          		modes[2*i]= 1;
+   \   00000052   0x2301             MOVS     R3,#+1
+   \   00000054   0x6033             STR      R3,[R6, #+0]
+    340          		if (req[i]>0 && y[req[i]-1]==1.0f)
+   \   00000056   0x680B             LDR      R3,[R1, #+0]
+   \   00000058   0x2B01             CMP      R3,#+1
+   \   0000005A   0xDB0D             BLT.N    ??savespace_2
+   \   0000005C   0xEB08 0x0383      ADD      R3,R8,R3, LSL #+2
+   \   00000060   0x1F1B             SUBS     R3,R3,#+4
+   \   00000062   0xEEF7 0x2A00      VMOV.F32 S5,#1.0
+   \   00000066   0xED93 0x2A00      VLDR     S4,[R3, #0]
+   \   0000006A   0xEEB4 0x2A62      VCMP.F32 S4,S5
+   \   0000006E   0xEEF1 0xFA10      FMSTAT   
+   \   00000072   0xBF08             IT       EQ 
+    341          		  oldmodes[2*i]= 1;
+   \   00000074   0x2301             MOVEQ    R3,#+1
+   \   00000076   0xD00B             BEQ.N    ??savespace_3
+    342          		else
+    343          		  flag= 1;
+   \                     ??savespace_2: (+1)
+   \   00000078   0x2001             MOVS     R0,#+1
+   \   0000007A   0xE00A             B.N      ??savespace_4
+    344          	  } else if (tval[i]<EVTHYST && modes[2*i]==1 ) {
+   \                     ??savespace_1: (+1)
+   \   0000007C   0xEEB4 0x2A41      VCMP.F32 S4,S2
+   \   00000080   0xEEF1 0xFA10      FMSTAT   
+   \   00000084   0xD505             BPL.N    ??savespace_4
+   \   00000086   0x6833             LDR      R3,[R6, #+0]
+   \   00000088   0x2B01             CMP      R3,#+1
+   \   0000008A   0xD102             BNE.N    ??savespace_4
+    345          		modes[2*i]= 0;
+   \   0000008C   0x2300             MOVS     R3,#+0
+   \   0000008E   0x6033             STR      R3,[R6, #+0]
+    346          		oldmodes[2*i]= 0;
+   \                     ??savespace_3: (+1)
+   \   00000090   0x603B             STR      R3,[R7, #+0]
+    347          	  }
+    348          
+    349          	  if (tval[i]>-EVTHYST && modes[2*i+1]==0) {
+   \                     ??savespace_4: (+1)
+   \   00000092   0xED94 0x2A00      VLDR     S4,[R4, #0]
+   \   00000096   0xEEB4 0x2A60      VCMP.F32 S4,S1
+   \   0000009A   0xEEF1 0xFA10      FMSTAT   
+   \   0000009E   0xDB05             BLT.N    ??savespace_5
+   \   000000A0   0x6873             LDR      R3,[R6, #+4]
+   \   000000A2   0xB91B             CBNZ.N   R3,??savespace_5
+    350          		modes[2*i+1]= 1;
+   \   000000A4   0x2301             MOVS     R3,#+1
+   \   000000A6   0x6073             STR      R3,[R6, #+4]
+    351          		oldmodes[2*i+1]= 1;
+   \   000000A8   0x607B             STR      R3,[R7, #+4]
+   \   000000AA   0xE01C             B.N      ??savespace_6
+    352          	  } else if (tval[i]<-EVTHYST && modes[2*i+1]==1 ) {
+   \                     ??savespace_5: (+1)
+   \   000000AC   0xEEB4 0x2A40      VCMP.F32 S4,S0
+   \   000000B0   0xEEF1 0xFA10      FMSTAT   
+   \   000000B4   0xD517             BPL.N    ??savespace_6
+   \   000000B6   0x6873             LDR      R3,[R6, #+4]
+   \   000000B8   0x2B01             CMP      R3,#+1
+   \   000000BA   0xD114             BNE.N    ??savespace_6
+    353          		modes[2*i+1]= 0;
+   \   000000BC   0x2300             MOVS     R3,#+0
+   \   000000BE   0x6073             STR      R3,[R6, #+4]
+    354          		if (inc[i] || (req[i]>0 && y[req[i]-1]==0.0f))
+   \   000000C0   0x682B             LDR      R3,[R5, #+0]
+   \   000000C2   0xB963             CBNZ.N   R3,??savespace_7
+   \   000000C4   0x680B             LDR      R3,[R1, #+0]
+   \   000000C6   0x2B01             CMP      R3,#+1
+   \   000000C8   0xDB0C             BLT.N    ??savespace_8
+   \   000000CA   0xEB08 0x0383      ADD      R3,R8,R3, LSL #+2
+   \   000000CE   0x1F1B             SUBS     R3,R3,#+4
+   \   000000D0   0xED93 0x2A00      VLDR     S4,[R3, #0]
+   \   000000D4   0xEEB5 0x2A40      VCMP.F32 S4,#0.0
+   \   000000D8   0xEEF1 0xFA10      FMSTAT   
+   \   000000DC   0xD102             BNE.N    ??savespace_8
+    355          		  oldmodes[2*i+1]= 0;
+   \                     ??savespace_7: (+1)
+   \   000000DE   0x2300             MOVS     R3,#+0
+   \   000000E0   0x607B             STR      R3,[R7, #+4]
+   \   000000E2   0xE000             B.N      ??savespace_6
+    356          		else
+    357          		  flag= 1;
+   \                     ??savespace_8: (+1)
+   \   000000E4   0x2001             MOVS     R0,#+1
+    358          	  }
+    359          	}
+   \                     ??savespace_6: (+1)
+   \   000000E6   0x3708             ADDS     R7,R7,#+8
+   \   000000E8   0x3608             ADDS     R6,R6,#+8
+   \   000000EA   0x1D2D             ADDS     R5,R5,#+4
+   \   000000EC   0x1D09             ADDS     R1,R1,#+4
+   \   000000EE   0x1D24             ADDS     R4,R4,#+4
+   \   000000F0   0x1E52             SUBS     R2,R2,#+1
+   \   000000F2   0xD1A5             BNE.N    ??savespace_0
+    360          	return flag;
+   \   000000F4   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    361          }
+    362          
+    363          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 2, keep-with-next
+    364          static int_T RunEvents(real32_T *w, int_T *modes, int_T first, int_T termvar, int_T maxiter)
+                                                                                      ^
+Remark[Pe826]: parameter "termvar" was never referenced
+
+  static int_T RunEvents(real32_T *w, int_T *modes, int_T first, int_T termvar, int_T maxiter)
+                                                                                      ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c",364  Remark[Pe826]: 
+          parameter "maxiter" was never referenced
+    365          {
+   \                     RunEvents: (+1)
+   \   00000000   0xE92D 0x4FF5      PUSH     {R0,R2,R4-R11,LR}
+   \   00000004   0xB081             SUB      SP,SP,#+4
+    366            real32_T t,*y,*yp,*ypre,*tval;
+                                            ^
+Warning[Pe550]: variable "tval" was set but never used
+    367            int_T *m= NULL,*oldmodes,*inc,*req;
+                          ^
+Warning[Pe177]: variable "m" was declared but never referenced
+
+    int_T *m= NULL,*oldmodes,*inc,*req;
+                                   ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\Category\Application\ThermalModel\ThermalModelCore_sBPM\ThermalModelCoreBPM.c",367  Warning[Pe550]: 
+          variable "req" was set but never used
+    368            int_T i,flag,iter,evt,rc,failskip;
+                                         ^
+Warning[Pe550]: variable "rc" was set but never used
+    369            t= w[0];
+    370            y= &w[1];
+   \   00000006   0xF100 0x0904      ADD      R9,R0,#+4
+   \   0000000A   0xED2D 0x8B02      VPUSH    {D8}
+   \   0000000E   0xB082             SUB      SP,SP,#+8
+   \   00000010   0xED90 0x8A00      VLDR     S16,[R0, #0]
+    371            yp= &y[NEQ+NPAR];
+   \   00000014   0xF509 0x70D2      ADD      R0,R9,#+420
+   \   00000018   0x9001             STR      R0,[SP, #+4]
+   \   0000001A   0x4688             MOV      R8,R1
+    372            ypre= &yp[NDFA];
+   \   0000001C   0xF100 0x0A1C      ADD      R10,R0,#+28
+    373            tval= &ypre[NEQ];
+    374            oldmodes= &modes[NZC];
+   \   00000020   0xF108 0x0010      ADD      R0,R8,#+16
+   \   00000024   0x9000             STR      R0,[SP, #+0]
+    375            inc= &oldmodes[NZC];
+    376            req= &inc[NEVT];
+    377          //  for (i=0;i<NEQ;i++)
+    378          //    if (IS_UNDEF(y[i])) {
+    379          //      return(-3);
+    380          //    }
+    381          
+    382            for (i=0;i<NZC;i++)
+   \   00000026   0x2000             MOVS     R0,#+0
+    383              oldmodes[i]= modes[i];
+   \                     ??RunEvents_0: (+1)
+   \   00000028   0x9A00             LDR      R2,[SP, #+0]
+   \   0000002A   0xF858 0x1020      LDR      R1,[R8, R0, LSL #+2]
+   \   0000002E   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+   \   00000032   0x1C40             ADDS     R0,R0,#+1
+   \   00000034   0x2804             CMP      R0,#+4
+   \   00000036   0xDBF7             BLT.N    ??RunEvents_0
+    384            for (i=0;i<NEQ;i++)
+   \   00000038   0x.... 0x....      BL       ?Subroutine0
+    385              ypre[i]= y[i];
+    386            if (!first) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \   0000003C   0x9806             LDR      R0,[SP, #+24]
+   \   0000003E   0xB928             CBNZ.N   R0,??RunEvents_1
+    387          	  flag = savespace(w,modes);
+    388          //    eev(t,y,ypre,tval);			//tval either -0.1 or 0.9
+    389          //    flag= 0;
+    390          //    for (i=0;i<NEVT;i++) {
+    391          //      if (tval[i]>EVTHYST && modes[2*i]==0 ) {
+    392          //        modes[2*i]= 1;
+    393          //        if (req[i]>0 && y[req[i]-1]==1.0f)
+    394          //          oldmodes[2*i]= 1;
+    395          //        else
+    396          //          flag= 1;
+    397          //      } else if (tval[i]<EVTHYST && modes[2*i]==1 ) {
+    398          //        modes[2*i]= 0;
+    399          //        oldmodes[2*i]= 0;
+    400          //      }
+    401          //
+    402          //      if (tval[i]>-EVTHYST && modes[2*i+1]==0) {
+    403          //        modes[2*i+1]= 1;
+    404          //        oldmodes[2*i+1]= 1;
+    405          //      } else if (tval[i]<-EVTHYST && modes[2*i+1]==1 ) {
+    406          //        modes[2*i+1]= 0;
+    407          //        if (inc[i] || (req[i]>0 && y[req[i]-1]==0.0f))
+    408          //          oldmodes[2*i+1]= 0;
+    409          //        else
+    410          //          flag= 1;
+    411          //      }
+    412          //    }
+    413          
+    414              if (!flag) {
+   \   00000040   0x9805             LDR      R0,[SP, #+20]
+   \   00000042   0x4641             MOV      R1,R8
+   \   00000044   0x.... 0x....      BL       savespace
+   \   00000048   0x2800             CMP      R0,#+0
+   \   0000004A   0xD051             BEQ.N    ??RunEvents_2
+    415          //      if (m)
+    416          //        for (i=0;i<NZC;i++)
+    417          //          m[i]= modes[i];
+    418                return(0);
+    419              }
+    420            }
+    421          
+    422            failskip= 0;
+    423            for (iter=0;;iter++) {
+   \                     ??RunEvents_1: (+1)
+   \   0000004C   0x2700             MOVS     R7,#+0
+   \   0000004E   0xE00D             B.N      ??RunEvents_3
+    424              if (!first || iter>0 )
+    425                for (evt=0;evt<NEVT;evt++)
+    426                  if (modes[2*evt]!=oldmodes[2*evt] || modes[2*evt+1]!=oldmodes[2*evt+1])
+    427                  {
+    428                    rc= eex(evt+1,t,y,ypre);
+    429                    oldmodes[2*evt]= modes[2*evt];
+    430                    oldmodes[2*evt+1]= modes[2*evt+1];
+    431                  }
+    432          
+    433              rc= eex(NEVT+1,t,y,ypre);
+    434          //    if (rc==8 && !failskip) {
+    435          //      failskip= 1;
+    436          //      iter--;
+    437          //      if (termvar>=0)
+    438          //        y[termvar]= 0.0f;
+    439          //    } else
+    440                failskip= 0;
+    441              for (i=0;i<NEQ;i++)
+    442                if (y[i]!=ypre[i])
+    443                  break;
+    444              if (!failskip && i==NEQ ) {
+    445          //      if (m)
+    446          //        for (i=0;i<NZC;i++)
+    447          //          m[i]= modes[i];
+    448                return(0);
+    449              }
+    450          
+    451          //    if (iter>=maxiter ) {
+    452          //      return(-1);
+    453          //    }
+    454          
+    455              if (!failskip && NIX1>0) {
+    456                fp(NEQ,t,y,yp);
+   \                     ??RunEvents_4: (+1)
+   \   00000050   0x9A01             LDR      R2,[SP, #+4]
+   \   00000052   0x4649             MOV      R1,R9
+   \   00000054   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \   00000058   0x2036             MOVS     R0,#+54
+   \   0000005A   0x.... 0x....      BL       fp
+    457              }
+    458          
+    459          //    for (i=0;i<NEQ;i++)
+    460          //      if (IS_UNDEF(y[i])) {
+    461          //        return(-4);
+    462          //      }
+    463          
+    464              for (i=0;i<NEQ;i++)
+   \   0000005E   0x.... 0x....      BL       ?Subroutine0
+    465                ypre[i]= y[i];
+    466          //    if (failskip)
+    467          //      continue;
+    468              savespace(w,modes);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \   00000062   0x9805             LDR      R0,[SP, #+20]
+   \   00000064   0x4641             MOV      R1,R8
+   \   00000066   0x.... 0x....      BL       savespace
+   \   0000006A   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??RunEvents_3: (+1)
+   \   0000006C   0x9806             LDR      R0,[SP, #+24]
+   \   0000006E   0xB108             CBZ.N    R0,??RunEvents_5
+   \   00000070   0x2F01             CMP      R7,#+1
+   \   00000072   0xDB23             BLT.N    ??RunEvents_6
+   \                     ??RunEvents_5: (+1)
+   \   00000074   0x2400             MOVS     R4,#+0
+   \                     ??RunEvents_7: (+1)
+   \   00000076   0x9800             LDR      R0,[SP, #+0]
+   \   00000078   0x9900             LDR      R1,[SP, #+0]
+   \   0000007A   0xF851 0x1034      LDR      R1,[R1, R4, LSL #+3]
+   \   0000007E   0xEB00 0x05C4      ADD      R5,R0,R4, LSL #+3
+   \   00000082   0xF858 0x0034      LDR      R0,[R8, R4, LSL #+3]
+   \   00000086   0xEB08 0x06C4      ADD      R6,R8,R4, LSL #+3
+   \   0000008A   0xF104 0x0B01      ADD      R11,R4,#+1
+   \   0000008E   0x4288             CMP      R0,R1
+   \   00000090   0xBF02             ITTT     EQ 
+   \   00000092   0x6870             LDREQ    R0,[R6, #+4]
+   \   00000094   0x6869             LDREQ    R1,[R5, #+4]
+   \   00000096   0x4288             CMPEQ    R0,R1
+   \   00000098   0xD00D             BEQ.N    ??RunEvents_8
+   \   0000009A   0x4652             MOV      R2,R10
+   \   0000009C   0x4649             MOV      R1,R9
+   \   0000009E   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \   000000A2   0x4658             MOV      R0,R11
+   \   000000A4   0x.... 0x....      BL       eex
+   \   000000A8   0x9900             LDR      R1,[SP, #+0]
+   \   000000AA   0xF858 0x0034      LDR      R0,[R8, R4, LSL #+3]
+   \   000000AE   0xF841 0x0034      STR      R0,[R1, R4, LSL #+3]
+   \   000000B2   0x6870             LDR      R0,[R6, #+4]
+   \   000000B4   0x6068             STR      R0,[R5, #+4]
+   \                     ??RunEvents_8: (+1)
+   \   000000B6   0x465C             MOV      R4,R11
+   \   000000B8   0x2C02             CMP      R4,#+2
+   \   000000BA   0xDBDC             BLT.N    ??RunEvents_7
+   \                     ??RunEvents_6: (+1)
+   \   000000BC   0x4652             MOV      R2,R10
+   \   000000BE   0x4649             MOV      R1,R9
+   \   000000C0   0xEEB0 0x0A48      VMOV.F32 S0,S16
+   \   000000C4   0x2003             MOVS     R0,#+3
+   \   000000C6   0x.... 0x....      BL       eex
+   \   000000CA   0x2000             MOVS     R0,#+0
+   \                     ??RunEvents_9: (+1)
+   \   000000CC   0xEB09 0x0180      ADD      R1,R9,R0, LSL #+2
+   \   000000D0   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   000000D4   0xEB0A 0x0180      ADD      R1,R10,R0, LSL #+2
+   \   000000D8   0xEDD1 0x0A00      VLDR     S1,[R1, #0]
+   \   000000DC   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   000000E0   0xEEF1 0xFA10      FMSTAT   
+   \   000000E4   0xD102             BNE.N    ??RunEvents_10
+   \   000000E6   0x1C40             ADDS     R0,R0,#+1
+   \   000000E8   0x2836             CMP      R0,#+54
+   \   000000EA   0xDBEF             BLT.N    ??RunEvents_9
+   \                     ??RunEvents_10: (+1)
+   \   000000EC   0x2836             CMP      R0,#+54
+   \   000000EE   0xD1AF             BNE.N    ??RunEvents_4
+   \                     ??RunEvents_2: (+1)
+   \   000000F0   0xB002             ADD      SP,SP,#+8
+   \   000000F2   0x2000             MOVS     R0,#+0
+   \   000000F4   0xECBD 0x8B02      VPOP     {D8}
+   \   000000F8   0xE8BD 0x8FFE      POP      {R1-R11,PC}      ;; return
+    469          //    eev(t,y,ypre,tval);
+    470          //    for (i=0;i<NEVT;i++) {
+    471          //      if (tval[i]>EVTHYST && modes[2*i]==0 ) {
+    472          //        modes[2*i]= 1;
+    473          //        if (req[i]>0 && y[req[i]-1]==1.0f)
+    474          //          oldmodes[2*i]= 1;
+    475          //      } else if (tval[i]<EVTHYST && modes[2*i]==1 ) {
+    476          //        modes[2*i]= 0;
+    477          //        oldmodes[2*i]= 0;
+    478          //      }
+    479          //
+    480          //      if (tval[i]>-EVTHYST && modes[2*i+1]==0) {
+    481          //        modes[2*i+1]= 1;
+    482          //        oldmodes[2*i+1]= 1;
+    483          //      } else if (tval[i]<-EVTHYST && modes[2*i+1]==1 ) {
+    484          //        modes[2*i+1]= 0;
+    485          //        if (inc[i] || (req[i]>0 && y[req[i]-1]==0.0f))
+    486          //          oldmodes[2*i+1]= 0;
+    487          //      }
+    488          //    }
+    489          
+    490            }
+    491          
+    492            //return(0);
+    493          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \                     ??Subroutine0_0: (+1)
+   \   00000002   0xF859 0x1020      LDR      R1,[R9, R0, LSL #+2]
+   \   00000006   0xF84A 0x1020      STR      R1,[R10, R0, LSL #+2]
+   \   0000000A   0x1C40             ADDS     R0,R0,#+1
+   \   0000000C   0x2836             CMP      R0,#+54
+   \   0000000E   0xDBF8             BLT.N    ??Subroutine0_0
+   \   00000010   0x4770             BX       LR
+    494          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    495          static void InitializeConditions()
+    496          {
+   \                     InitializeConditions: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+    497            real32_T *w = (real32_T *)&ThermalModelCoreBPM_DW.sfn_RWORK[0];
+    498            int_T *iw = (int_T*)&ThermalModelCoreBPM_DW.sfn_IWORK[0];
+    499            real32_T *x = (real32_T*)&ThermalModelCoreBPM_DW.sfn_DSTATE[0];
+    500          //  real32_T* i[NINP];
+    501          //  i[0] = (real32_T*)&ThermalModelCoreBPM_U.Temperature;
+    502          //  i[1] = (real32_T*)&ThermalModelCoreBPM_U.DriftCorrection;
+    503          //  i[2] = (real32_T*)&ThermalModelCoreBPM_U.Reset;
+    504          //  i[3] = (real32_T*)&ThermalModelCoreBPM_U.Current;
+    505          //  i[4] = (real32_T*)&ThermalModelCoreBPM_U.Speed;
+    506          //  real32_T* p[NPAR];
+    507          //  for (int n = 0; n < NPAR; n++) {
+    508          //      p[n] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[n];
+    509          //    }
+    510          //  p[0] = (real32_T*)ThermalModelCoreBPM_ConstP.MapleSimParameters_Value;
+    511          //  p[1] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[1];
+    512          //  p[2] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[2];
+    513          //  p[3] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[3];
+    514          //  p[4] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[4];
+    515          //  p[5] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[5];
+    516          //  p[6] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[6];
+    517          //  p[7] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[7];
+    518          //  p[8] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[8];
+    519          //  p[9] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[9];
+    520          //  p[10] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[10];
+    521          //  p[11] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[11];
+    522          //  p[12] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[12];
+    523          //  p[13] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[13];
+    524          //  p[14] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[14];
+    525          //  p[15] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[15];
+    526          //  p[16] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[16];
+    527          //  p[17] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[17];
+    528          //  p[18] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[18];
+    529          //  p[19] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[19];
+    530          //  p[20] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[20];
+    531          //  p[21] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[21];
+    532          //  p[22] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[22];
+    533          //  p[23] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[23];
+    534          //  p[24] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[24];
+    535          //  p[25] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[25];
+    536          //  p[26] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[26];
+    537          //  p[27] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[27];
+    538          //  p[28] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[28];
+    539          //  p[29] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[29];
+    540          //  p[30] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[30];
+    541          //  p[31] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[31];
+    542          //  p[32] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[32];
+    543          //  p[33] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[33];
+    544          //  p[34] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[34];
+    545          //  p[35] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[35];
+    546          //  p[36] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[36];
+    547          //  p[37] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[37];
+    548          //  p[38] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[38];
+    549          //  p[39] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[39];
+    550          //  p[40] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[40];
+    551          //  p[41] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[41];
+    552          //  p[42] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[42];
+    553          //  p[43] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[43];
+    554          //  p[44] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[44];
+    555          //  p[45] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[45];
+    556          //  p[46] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[46];
+    557          //  p[47] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[47];
+    558          //  p[48] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[48];
+    559          //  p[49] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[49];
+    560          //  p[50] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[50];
+    561            int_T j;
+    562            w[0] = 0.0f;
+   \   00000002   0x....             LDR.N    R4,??DataTable9_4
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x63A0             STR      R0,[R4, #+56]
+    563          //  w[1] = 2.98149999999999980e+02f;
+    564          //  w[2] = 2.98149999999999980e+02f;
+    565          //  w[3] = 2.98149999999999980e+02f;
+    566          //  w[4] = 2.98149999999999980e+02f;
+    567          //  w[5] = 2.98149999999999980e+02f;
+    568          //  w[6] = 2.98149999999999980e+02f;
+    569          //  w[7] = 2.98149999999999980e+02f;
+    570          //  w[8] = 1.77190390364524430e+02f;
+    571          //  w[9] = 3.35401643468053030e-03f;
+    572          //  w[10] = 1.16945363247448840e+00f;
+    573          //  w[11] = 1.44172061043099120e+00f;
+    574          //  w[12] = 1.00000000000000000e-02f;
+    575          //  w[13] = 2.73524359701555180e+00f;
+    576          //  w[14] = 3.31810865000000010e+00f;
+    577          //  w[15] = 3.64846379735259480e-16f;
+    578          //  w[16] = 3.63434577499999990e+00f;
+    579          //  w[17] = 2.24229160000000020e+00f;
+    580          //  w[18] = 4.62228520000000030e+00f;
+    581          //  w[19] = -0.00000000000000000e+00f;
+    582          //  w[20] = 0.00000000000000000e+00f;
+    583          //  w[21] = -0.00000000000000000e+00f;
+    584          //  w[22] = -0.00000000000000000e+00f;
+    585          //  w[23] = -0.00000000000000000e+00f;
+    586          //  w[24] = -0.00000000000000000e+00f;
+    587          //  w[25] = 3.35401643468053030e-03f;
+    588          //  w[26] = 1.16099286887889000e+00f;
+    589          //  w[27] = 7.28973134328358240e+02f;
+    590          //  w[28] = 2.50000000000000000e+01f;
+    591          //  w[29] = 1.00000000000000000e-02f;
+    592          //  w[30] = 4.10246751041957600e-02f;
+    593          //  w[31] = 3.34569899999999980e-04f;
+    594          //  w[32] = -0.00000000000000000e+00f;
+    595          //  w[33] = 5.00000000000000000e+02f;
+    596          //  w[34] = 2.28802559749999990e+00f;
+    597          //  w[35] = 0.00000000000000000e+00f;
+    598          //  w[36] = 0.00000000000000000e+00f;
+    599          //  w[37] = 8.60999999999999770e+00f;
+    600          //  w[38] = 2.50000000000000000e+01f;
+    601          //  w[39] = 2.50000000000000000e+01f;
+    602          //  w[40] = 2.50000000000000000e+01f;
+    603          //  w[41] = 2.50000000000000000e+01f;
+    604          //  w[42] = 2.50000000000000000e+01f;
+    605          //  w[43] = 2.50000000000000000e+01f;
+    606          //  w[44] = 2.50000000000000000e+01f;
+    607          //  w[45] = 0.00000000000000000e+00f;
+    608          //  w[46] = 3.50000000000000000e+01f;
+    609          //  w[47] = 0.00000000000000000e+00f;
+    610          //  w[48] = 0.00000000000000000e+00f;
+    611          //  w[49] = 1.00000000000000000e+00f;
+    612          //  w[50] = 5.00000000000000000e+02f;
+    613          //  w[51] = 0.00000000000000000e+00f;
+    614            w[52] = 2.50000000000000000e+01f;
+   \   00000008   0xF104 0x06F0      ADD      R6,R4,#+240
+   \   0000000C   0x....             LDR.N    R0,??DataTable9_5  ;; 0x41c80000
+   \   0000000E   0x61B0             STR      R0,[R6, #+24]
+    615          //  w[53] = 0.00000000000000000e+00f;
+    616          //  w[54] = 0.00000000000000000e+00f;
+    617          //  w[55] = 5.40000000000000030e-03f;
+    618          //  w[56] = 9.99999999999999980e-17f;
+    619          //  w[57] = 6.69139799999999980e-02f;
+    620          //  w[58] = 1.00000000000000000e-02f;
+    621          //  w[59] = 1.54083180000000010e-02f;
+    622          //  w[60] = 8.12000000000000000e+02f;
+    623          //  w[61] = 2.50000000000000000e+01f;
+    624          //  w[62] = 3.50000000000000000e+01f;
+    625          //  w[63] = 3.54060000000000000e+02f;
+    626          //  w[64] = 1.01500000000000000e+03f;
+    627          //  w[65] = 3.28500000000000000e+02f;
+    628          //  w[66] = 9.99599999999999940e+01f;
+    629          //  w[67] = 1.50000000000000000e+01f;
+    630          //  w[68] = 1.00000000000000000e+01f;
+    631          //  w[69] = 5.00000000000000000e+00f;
+    632          //  w[70] = 8.94079999999999940e+00f;
+    633          //  w[71] = 2.00000000000000010e-01f;
+    634          //  w[72] = 8.94079999999999940e+00f;
+    635          //  w[73] = 2.93299999999999980e+00f;
+    636          //  w[74] = 3.50349999999999980e+00f;
+    637          //  w[75] = 2.88799999999999990e+01f;
+    638          //  w[76] = 3.50000000000000000e+01f;
+    639          //  w[77] = 4.08263000000000030e-03f;
+    640          //  w[78] = 1.06600000000000000e-06f;
+    641          //  w[79] = -1.61367000000000010e-10f;
+    642          //  w[80] = 6.10356000000000010e-15f;
+    643          //  w[81] = 2.17343340000000000e+07f;
+    644          //  w[82] = 4.29849000000000010e+04f;
+    645          //  w[83] = 2.87000000000000010e+00f;
+    646          //  w[84] = 2.50000000000000000e+01f;
+    647          //  w[85] = 4.30800000000000020e-03f;
+    648          //  w[86] = 8.00000000000000040e-01f;
+    649          //  w[87] = 1.00000000000000000e+00f;
+    650          //  w[88] = 1.00000000000000000e+00f;
+    651          //  w[89] = 1.00000000000000000e+00f;
+    652          //  w[90] = 2.51039999999999990e-01f;
+    653          //  w[91] = 2.00000000000000000e+00f;
+    654          //  w[92] = 2.00000000000000000e+00f;
+    655          //  w[93] = 4.76354999999999980e-04f;
+    656          //  w[94] = 1.64564000000000000e-08f;
+    657          //  w[95] = 2.00000000000000000e+00f;
+    658          //  w[96] = 3.30519000000000000e-03f;
+    659          //  w[97] = -7.29968999999999960e-08f;
+    660          //  w[98] = 2.00000000000000000e+00f;
+    661          //  w[99] = 5.27068999999999980e-03f;
+    662          //  w[100] = -5.22392000000000000e-08f;
+    663          //  w[101] = 2.00000000000000000e+00f;
+    664          //  w[102] = 2.66796000000000000e-03f;
+    665          //  w[103] = -6.34853999999999980e-08f;
+    666          //  w[104] = 0.00000000000000000e+00f;
+    667          //  w[105] = 2.00000000000000000e-08f;
+    668            iw[2*NZC+0] = 0;			//iw[8]
+   \   00000010   0xF504 0x7538      ADD      R5,R4,#+736
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x6228             STR      R0,[R5, #+32]
+    669            iw[2*NZC+NEVT+0] = 53;	//iw[10]
+    670            iw[2*NZC+1] = 0;			//iw[9]
+    671            iw[2*NZC+NEVT+1] = 54;	//iw[11]
+    672            eev(w[0],&w[1],&w[1],&w[2*NEQ+NPAR+NDFA+1]);
+   \   00000018   0xF504 0x7735      ADD      R7,R4,#+724
+   \   0000001C   0x2035             MOVS     R0,#+53
+   \   0000001E   0x62A8             STR      R0,[R5, #+40]
+   \   00000020   0x463A             MOV      R2,R7
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x6268             STR      R0,[R5, #+36]
+   \   00000026   0xF104 0x013C      ADD      R1,R4,#+60
+   \   0000002A   0x2036             MOVS     R0,#+54
+   \   0000002C   0x62E8             STR      R0,[R5, #+44]
+   \   0000002E   0xED9F 0x....      VLDR.W   S0,??DataTable9  ;; 0x0
+   \   00000032   0xF104 0x003C      ADD      R0,R4,#+60
+   \   00000036   0x.... 0x....      BL       eev
+    673          //  for (j=0;j<NEVT;j++) {
+    674          //    if (iw[2*NZC+NEVT+j]>0) {
+    675          //      if (w[iw[2*NZC+NEVT+j]]==0.0f) {
+    676          
+    677          //        iw[2*j]= 0;			//iw[0],iw[2]
+    678          //        iw[2*j+1]= 0;		//iw[1],iw[3]
+    679                  iw[0] = 0;
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0xF8C4 0x02E0      STR      R0,[R4, #+736]
+    680                  iw[1] = 0;
+   \   00000040   0x6068             STR      R0,[R5, #+4]
+    681                  iw[2] = 0;
+   \   00000042   0x60A8             STR      R0,[R5, #+8]
+    682                  iw[3] = 0;
+   \   00000044   0x60E8             STR      R0,[R5, #+12]
+    683          
+    684          //      } else {
+    685          //        iw[2*j]= 1;
+    686          //        iw[2*j+1]= 1;
+    687          //      }
+    688          //    } else {
+    689          //      iw[2*j]= (w[2*NEQ+NPAR+NDFA+1+j]>EVTHYST ? 1 : 0);	//w[167],w[168] - tval
+    690          //      iw[2*j+1]= (w[2*NEQ+NPAR+NDFA+1+j]>-EVTHYST ? 1 : 0);	//w[167],w[168] - tval
+    691          //    }
+    692          //  }
+    693          
+    694          //  for (j=0;j<NDIFF;j++)
+    695          //    w[NEQ+NPAR+j+1]= 0.0f;
+    696          // for (j=0;j<NINP;j++)
+    697          //    w[j+NDIFF+NIX1-NINP+1]= i[j][0];
+    698          	w[0+NDIFF+NIX1-NINP+1]  =  ThermalModelCoreBPM_U.Temperature;
+   \   00000046   0x....             LDR.N    R0,??DataTable9_6
+   \   00000048   0x6801             LDR      R1,[R0, #+0]
+   \   0000004A   0xF8C4 0x10F0      STR      R1,[R4, #+240]
+    699          	w[1+NDIFF+NIX1-NINP+1]  =  ThermalModelCoreBPM_U.DriftCorrection;
+   \   0000004E   0x6841             LDR      R1,[R0, #+4]
+   \   00000050   0x6071             STR      R1,[R6, #+4]
+    700          	w[2+NDIFF+NIX1-NINP+1]  =  ThermalModelCoreBPM_U.Reset;
+   \   00000052   0x6881             LDR      R1,[R0, #+8]
+   \   00000054   0x60B1             STR      R1,[R6, #+8]
+    701          	w[3+NDIFF+NIX1-NINP+1]  =  ThermalModelCoreBPM_U.Current;
+   \   00000056   0x68C1             LDR      R1,[R0, #+12]
+   \   00000058   0x60F1             STR      R1,[R6, #+12]
+    702          	w[4+NDIFF+NIX1-NINP+1]  =  ThermalModelCoreBPM_U.Speed;
+   \   0000005A   0x6901             LDR      R1,[R0, #+16]
+   \   0000005C   0x6131             STR      R1,[R6, #+16]
+    703          
+    704            for (j=0;j<NDIFF;j++)
+   \   0000005E   0x2100             MOVS     R1,#+0
+    705              w[j+1]= x[j];
+   \                     ??InitializeConditions_0: (+1)
+   \   00000060   0xF854 0x3021      LDR      R3,[R4, R1, LSL #+2]
+   \   00000064   0xEB04 0x0281      ADD      R2,R4,R1, LSL #+2
+   \   00000068   0x1C49             ADDS     R1,R1,#+1
+   \   0000006A   0x63D3             STR      R3,[R2, #+60]
+   \   0000006C   0x2907             CMP      R1,#+7
+   \   0000006E   0xDBF7             BLT.N    ??InitializeConditions_0
+    706            for (j=0;j<NPAR;j++)
+   \   00000070   0x2100             MOVS     R1,#+0
+    707              w[j+NEQ+1]= (*ThermalModelCoreBPM_Params)[j];//ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[j];//p[j][0];
+   \                     ??InitializeConditions_1: (+1)
+   \   00000072   0x6B82             LDR      R2,[R0, #+56]
+   \   00000074   0xF852 0x2021      LDR      R2,[R2, R1, LSL #+2]
+   \   00000078   0xEB04 0x0381      ADD      R3,R4,R1, LSL #+2
+   \   0000007C   0x1C49             ADDS     R1,R1,#+1
+   \   0000007E   0xF8C3 0x2114      STR      R2,[R3, #+276]
+   \   00000082   0x2933             CMP      R1,#+51
+   \   00000084   0xDBF5             BLT.N    ??InitializeConditions_1
+    708            w[NEQ+NPAR+1]= 0.0f;
+   \   00000086   0x2000             MOVS     R0,#+0
+   \   00000088   0xF8C4 0x01E0      STR      R0,[R4, #+480]
+    709            if (NIX1>0) {
+    710              fp(NEQ,w[0],&w[1],&w[NEQ+NPAR+1]);
+   \   0000008C   0x.... 0x....      BL       ?Subroutine1
+    711            }
+    712          
+    713            /*if (*/RunEvents(w,iw,1,-1,EVTITER)/*)*/
+    714            /*  return*/;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \   00000090   0x200A             MOVS     R0,#+10
+   \   00000092   0x9000             STR      R0,[SP, #+0]
+   \   00000094   0xF04F 0x33FF      MOV      R3,#-1
+   \   00000098   0x2201             MOVS     R2,#+1
+   \   0000009A   0x.... 0x....      BL       ?Subroutine2
+    715            j= 0; //cpr(w[0],&w[1]);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \   0000009E   0x2600             MOVS     R6,#+0
+    716          //  if (j>0 && NIX1>0) {
+    717          //    fp(NEQ,w[0],&w[1],&w[NEQ+NPAR+1]);
+    718          //  }
+    719          
+    720            eev(w[0],&w[1],&w[1],&w[2*NEQ+NPAR+NDFA+1]);
+   \   000000A0   0x463A             MOV      R2,R7
+   \   000000A2   0xF104 0x013C      ADD      R1,R4,#+60
+   \   000000A6   0xF104 0x003C      ADD      R0,R4,#+60
+   \   000000AA   0xED94 0x0A0E      VLDR     S0,[R4, #+56]
+   \   000000AE   0x.... 0x....      BL       eev
+    721            /*if (*/RunEvents(w,iw,0,-1,EVTITER)/*)*/
+    722              /*  return*/;
+   \   000000B2   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \   000000B6   0x.... 0x....      BL       ?Subroutine2
+    723            for (j=0;j<NDIFF;j++)
+    724              x[j]= w[j+1];
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \   000000BA   0xEB04 0x0086      ADD      R0,R4,R6, LSL #+2
+   \   000000BE   0x6BC0             LDR      R0,[R0, #+60]
+   \   000000C0   0xF844 0x0026      STR      R0,[R4, R6, LSL #+2]
+   \   000000C4   0x1C76             ADDS     R6,R6,#+1
+   \   000000C6   0x2E07             CMP      R6,#+7
+   \   000000C8   0xDBF7             BLT.N    ??CrossCallReturnLabel_4
+    725          }
+   \   000000CA   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \   00000000   0x4629             MOV      R1,R5
+   \   00000002   0xF104 0x0038      ADD      R0,R4,#+56
+   \   00000006   0x....             B.N      RunEvents
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \   00000000   0xF504 0x72F0      ADD      R2,R4,#+480
+   \   00000004   0xF104 0x013C      ADD      R1,R4,#+60
+   \   00000008   0xED94 0x0A0E      VLDR     S0,[R4, #+56]
+   \   0000000C   0x2036             MOVS     R0,#+54
+   \   0000000E   0x.... 0x....      B.W      fp
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \   00000000   0x200A             MOVS     R0,#+10
+   \   00000002   0x9000             STR      R0,[SP, #+0]
+   \   00000004   0xF04F 0x33FF      MOV      R3,#-1
+   \   00000008   0x2200             MOVS     R2,#+0
+   \   0000000A   0x4770             BX       LR
+    726          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    727          static real32_T *GetUpdatedWork(int_T getnofeed)
+                                                       ^
+Remark[Pe826]: parameter "getnofeed" was never referenced
+    728          {
+   \                     GetUpdatedWork: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    729            int_T j,flag;
+    730            real32_T *w = (real32_T *)&ThermalModelCoreBPM_DW.sfn_RWORK[0];
+    731            real32_T t = TimeStep;
+   \   00000002   0x....             LDR.N    R0,??DataTable9_6
+    732            real32_T *x = (real32_T*)&ThermalModelCoreBPM_DW.sfn_DSTATE[0];
+    733            real32_T *i[NINP];
+    734          //  real32_T* p[NPAR];
+    735          //  for (int n = 0; n < NPAR; n++) {
+    736          //        p[n] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[n];
+    737          //      }
+    738          //  p[0] = (real32_T*)ThermalModelCoreBPM_ConstP.MapleSimParameters_Value;
+    739          //  p[1] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[1];
+    740          //  p[2] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[2];
+    741          //  p[3] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[3];
+    742          //  p[4] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[4];
+    743          //  p[5] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[5];
+    744          //  p[6] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[6];
+    745          //  p[7] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[7];
+    746          //  p[8] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[8];
+    747          //  p[9] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[9];
+    748          //  p[10] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[10];
+    749          //  p[11] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[11];
+    750          //  p[12] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[12];
+    751          //  p[13] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[13];
+    752          //  p[14] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[14];
+    753          //  p[15] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[15];
+    754          //  p[16] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[16];
+    755          //  p[17] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[17];
+    756          //  p[18] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[18];
+    757          //  p[19] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[19];
+    758          //  p[20] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[20];
+    759          //  p[21] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[21];
+    760          //  p[22] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[22];
+    761          //  p[23] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[23];
+    762          //  p[24] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[24];
+    763          //  p[25] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[25];
+    764          //  p[26] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[26];
+    765          //  p[27] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[27];
+    766          //  p[28] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[28];
+    767          //  p[29] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[29];
+    768          //  p[30] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[30];
+    769          //  p[31] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[31];
+    770          //  p[32] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[32];
+    771          //  p[33] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[33];
+    772          //  p[34] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[34];
+    773          //  p[35] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[35];
+    774          //  p[36] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[36];
+    775          //  p[37] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[37];
+    776          //  p[38] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[38];
+    777          //  p[39] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[39];
+    778          //  p[40] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[40];
+    779          //  p[41] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[41];
+    780          //  p[42] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[42];
+    781          //  p[43] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[43];
+    782          //  p[44] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[44];
+    783          //  p[45] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[45];
+    784          //  p[46] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[46];
+    785          //  p[47] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[47];
+    786          //  p[48] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[48];
+    787          //  p[49] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[49];
+    788          //  p[50] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[50];
+    789            flag= 0;
+    790            if (fabsf(w[0]-t)>1e-6f*TIMESTEP )
+   \   00000004   0x....             LDR.N    R4,??DataTable9_4
+   \   00000006   0xED90 0x0A0D      VLDR     S0,[R0, #+52]
+   \   0000000A   0xEDD4 0x0A0E      VLDR     S1,[R4, #+56]
+   \   0000000E   0xEE70 0x0AC0      VSUB.F32 S1,S1,S0
+   \   00000012   0xEEF0 0x0AE0      VABS.F32 S1,S1
+   \   00000016   0xED9F 0x....      VLDR.W   S2,??DataTable9_1  ;; 0x32d6bf96
+   \   0000001A   0x2100             MOVS     R1,#+0
+   \   0000001C   0xEEF4 0x0A41      VCMP.F32 S1,S2
+   \   00000020   0xB085             SUB      SP,SP,#+20
+   \   00000022   0xEEF1 0xFA10      FMSTAT   
+   \   00000026   0xBFA8             IT       GE 
+    791              flag= 1;
+   \   00000028   0x2101             MOVGE    R1,#+1
+    792            w[0]= t;
+   \   0000002A   0xED84 0x0A0E      VSTR     S0,[R4, #+56]
+    793            for (j=0;j<NDIFF;j++)
+   \   0000002E   0x2200             MOVS     R2,#+0
+    794              if (w[j+1]!=x[j] ) {
+   \                     ??GetUpdatedWork_0: (+1)
+   \   00000030   0xF854 0x3022      LDR      R3,[R4, R2, LSL #+2]
+   \   00000034   0xEE00 0x3A10      VMOV     S0,R3
+   \   00000038   0xEB04 0x0382      ADD      R3,R4,R2, LSL #+2
+   \   0000003C   0xEDD3 0x0A0F      VLDR     S1,[R3, #+60]
+   \   00000040   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000044   0xEEF1 0xFA10      FMSTAT   
+   \   00000048   0xBF1C             ITT      NE 
+    795                flag= 1;
+   \   0000004A   0x2101             MOVNE    R1,#+1
+    796                w[j+1]= x[j];
+   \   0000004C   0xED83 0x0A0F      VSTRNE   S0,[R3, #+60]
+    797              }
+   \   00000050   0x1C52             ADDS     R2,R2,#+1
+   \   00000052   0x2A07             CMP      R2,#+7
+   \   00000054   0xDBEC             BLT.N    ??GetUpdatedWork_0
+    798          
+    799            i[0] = (real32_T*)&ThermalModelCoreBPM_U.Temperature;
+    800            i[1] = (real32_T*)&ThermalModelCoreBPM_U.DriftCorrection;
+   \   00000056   0xAA00             ADD      R2,SP,#+0
+   \   00000058   0x1D03             ADDS     R3,R0,#+4
+   \   0000005A   0x6053             STR      R3,[R2, #+4]
+   \   0000005C   0x9000             STR      R0,[SP, #+0]
+    801            i[2] = (real32_T*)&ThermalModelCoreBPM_U.Reset;
+   \   0000005E   0xF100 0x0308      ADD      R3,R0,#+8
+   \   00000062   0x6093             STR      R3,[R2, #+8]
+    802            i[3] = (real32_T*)&ThermalModelCoreBPM_U.Current;
+   \   00000064   0xF100 0x030C      ADD      R3,R0,#+12
+   \   00000068   0x60D3             STR      R3,[R2, #+12]
+    803            i[4] = (real32_T*)&ThermalModelCoreBPM_U.Speed;
+   \   0000006A   0xF100 0x0310      ADD      R3,R0,#+16
+   \   0000006E   0x6113             STR      R3,[R2, #+16]
+    804            for (j=0;j<NINP;j++)
+   \   00000070   0x2300             MOVS     R3,#+0
+    805              if (w[j+NDIFF+NIX1-NINP+1]!=i[j][0] ) {
+   \                     ??GetUpdatedWork_1: (+1)
+   \   00000072   0xF852 0x5023      LDR      R5,[R2, R3, LSL #+2]
+   \   00000076   0xED95 0x0A00      VLDR     S0,[R5, #0]
+   \   0000007A   0xEB04 0x0583      ADD      R5,R4,R3, LSL #+2
+   \   0000007E   0xEDD5 0x0A3C      VLDR     S1,[R5, #+240]
+   \   00000082   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000086   0xEEF1 0xFA10      FMSTAT   
+   \   0000008A   0xBF1C             ITT      NE 
+    806                flag= 1;
+   \   0000008C   0x2101             MOVNE    R1,#+1
+    807                w[j+NDIFF+NIX1-NINP+1]= i[j][0];
+   \   0000008E   0xED85 0x0A3C      VSTRNE   S0,[R5, #+240]
+    808              }
+   \   00000092   0x1C5B             ADDS     R3,R3,#+1
+   \   00000094   0x2B05             CMP      R3,#+5
+   \   00000096   0xDBEC             BLT.N    ??GetUpdatedWork_1
+    809          
+    810            for (j=0;j<NPAR;j++)
+   \   00000098   0x2200             MOVS     R2,#+0
+   \                     ??GetUpdatedWork_2: (+1)
+   \   0000009A   0x6B83             LDR      R3,[R0, #+56]
+   \   0000009C   0xF853 0x3022      LDR      R3,[R3, R2, LSL #+2]
+   \   000000A0   0xEE00 0x3A10      VMOV     S0,R3
+   \   000000A4   0xEB04 0x0382      ADD      R3,R4,R2, LSL #+2
+   \   000000A8   0xEDD3 0x0A45      VLDR     S1,[R3, #+276]
+   \   000000AC   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   000000B0   0xEEF1 0xFA10      FMSTAT   
+   \   000000B4   0xBF1C             ITT      NE 
+    811              if (w[j+NEQ+1]!= (*ThermalModelCoreBPM_Params)[j]/*ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[j]*/ ) {
+    812                flag= 1;
+   \   000000B6   0x2101             MOVNE    R1,#+1
+    813                w[j+NEQ+1]= (*ThermalModelCoreBPM_Params)[j];//ThermalModelCoreBPM_ConstP.MapleSimParameters_Value[j];
+   \   000000B8   0xED83 0x0A45      VSTRNE   S0,[R3, #+276]
+    814              }
+   \   000000BC   0x1C52             ADDS     R2,R2,#+1
+   \   000000BE   0x2A33             CMP      R2,#+51
+   \   000000C0   0xDBEB             BLT.N    ??GetUpdatedWork_2
+    815          
+    816            if (flag) {
+   \   000000C2   0xB109             CBZ.N    R1,??CrossCallReturnLabel_2
+    817              fp(NEQ,w[0],&w[1],&w[NEQ+NPAR+1]);
+   \   000000C4   0x.... 0x....      BL       ?Subroutine1
+    818            }
+    819          
+    820            return(w);
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \   000000C8   0xF104 0x0038      ADD      R0,R4,#+56
+   \   000000CC   0xB005             ADD      SP,SP,#+20
+   \   000000CE   0xBD30             POP      {R4,R5,PC}       ;; return
+    821          }
+    822          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    823          static void EulerStep(real32_T *w)
+    824          {
+    825            int_T i;
+    826            w[0]+=TIMESTEP;
+   \                     EulerStep: (+1)
+   \   00000000   0xED9F 0x....      VLDR.W   S0,??DataTable9_2  ;; 0x3ccccccd
+   \   00000004   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   00000008   0xEE70 0x0A80      VADD.F32 S1,S1,S0
+   \   0000000C   0xEDC0 0x0A00      VSTR     S1,[R0, #0]
+    827            for (i=1;i<=NDIFF;i++)
+   \   00000010   0x2101             MOVS     R1,#+1
+    828              w[i]+=TIMESTEP*w[NEQ+NPAR+i];
+   \                     ??EulerStep_0: (+1)
+   \   00000012   0xEB00 0x0281      ADD      R2,R0,R1, LSL #+2
+   \   00000016   0xEDD2 0x0A69      VLDR     S1,[R2, #+420]
+   \   0000001A   0xED92 0x1A00      VLDR     S2,[R2, #0]
+   \   0000001E   0xEE00 0x1A80      VMLA.F32 S2,S1,S0
+   \   00000022   0x1C49             ADDS     R1,R1,#+1
+   \   00000024   0xED82 0x1A00      VSTR     S2,[R2, #0]
+   \   00000028   0x2908             CMP      R1,#+8
+   \   0000002A   0xDBF2             BLT.N    ??EulerStep_0
+    829          }
+   \   0000002C   0x4770             BX       LR               ;; return
+    830          
+    831          /* Model step function */
+    832          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 4, keep-with-next
+    833          void ThermalModelCoreBPM_step(void)
+    834          {
+   \                     ThermalModelCoreBPM_step: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    835            /* S-Function (csBPM_final_code): '<S1>/sfn'
+    836             *
+    837             * Block description for '<S1>/sfn':
+    838             *   Generated by MapleSim
+    839             */
+    840            real32_T *w;//, *y = (real32_T*)&ThermalModelCoreBPM_B.sfn[0];
+    841            int_T *iw = (int_T*)&ThermalModelCoreBPM_DW.sfn_IWORK[0];
+    842            int_T i;
+    843            real32_T *x;
+    844            if (!iw[INIDREF]) {
+   \   00000002   0x....             LDR.N    R4,??DataTable9_4
+   \   00000004   0xF8D4 0x0310      LDR      R0,[R4, #+784]
+   \   00000008   0xB082             SUB      SP,SP,#+8
+   \   0000000A   0xB920             CBNZ.N   R0,??ThermalModelCoreBPM_step_0
+    845              InitializeConditions();
+   \   0000000C   0x.... 0x....      BL       InitializeConditions
+    846              iw[INIDREF]= 1;			//iw[12]
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0xF8C4 0x0310      STR      R0,[R4, #+784]
+    847            }
+    848          
+    849            w= GetUpdatedWork(0);
+   \                     ??ThermalModelCoreBPM_step_0: (+1)
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x.... 0x....      BL       GetUpdatedWork
+   \   0000001C   0x4605             MOV      R5,R0
+    850          
+    851            {
+    852          	  /*if (*/RunEvents(w,iw,0,-1,EVTITER)/*)*/
+    853          	    /*  return*/;
+   \   0000001E   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \   00000022   0xF504 0x7138      ADD      R1,R4,#+736
+   \   00000026   0x4628             MOV      R0,R5
+   \   00000028   0x.... 0x....      BL       RunEvents
+    854              x= (real32_T*)&ThermalModelCoreBPM_DW.sfn_DSTATE[0];
+    855              for (i=0;i<NDIFF;i++)
+   \   0000002C   0x2000             MOVS     R0,#+0
+    856                x[i]= w[i+1];
+   \                     ??ThermalModelCoreBPM_step_1: (+1)
+   \   0000002E   0xEB05 0x0180      ADD      R1,R5,R0, LSL #+2
+   \   00000032   0x6849             LDR      R1,[R1, #+4]
+   \   00000034   0xF844 0x1020      STR      R1,[R4, R0, LSL #+2]
+   \   00000038   0x1C40             ADDS     R0,R0,#+1
+   \   0000003A   0x2807             CMP      R0,#+7
+   \   0000003C   0xDBF7             BLT.N    ??ThermalModelCoreBPM_step_1
+    857            }
+    858          
+    859          //  otp(w[0],&w[1],&w[NEQ+NPAR+1]);
+    860          //  y[ 0]= w[38];
+    861          //  y[ 1]= w[39];
+    862          //  y[ 2]= w[40];
+    863          //  y[ 3]= w[41];
+    864          //  y[ 4]= w[42];
+    865          //  y[ 5]= w[43];
+    866          //  y[ 6]= w[44];
+    867          //  y[ 7]= w[45];
+    868          
+    869            /* Outport: '<Root>/MagnetTemperature' */
+    870          //  ThermalModelCoreBPM_Y.MagnetTemperature = w[3]-273.15f; //w[40];//ThermalModelCoreBPM_B.sfn[2];
+    871          
+    872            /* Outport: '<Root>/StatorTempareture' */
+    873          //  ThermalModelCoreBPM_Y.StatorTempareture = w[6]-273.15f; //w[42];//ThermalModelCoreBPM_B.sfn[4];
+    874          
+    875            /* Outport: '<Root>/WindingTemperature' */
+    876            ThermalModelCoreBPM_Y.WindingTemperature = w[7]-273.15f; //w[43];//ThermalModelCoreBPM_B.sfn[5];
+   \   0000003E   0x....             LDR.N    R6,??DataTable9_6
+   \   00000040   0xED95 0x0A07      VLDR     S0,[R5, #+28]
+   \   00000044   0xEDDF 0x....      VLDR.W   S1,??DataTable9_3  ;; 0xc3889333
+   \   00000048   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   0000004C   0xED86 0x0A07      VSTR     S0,[R6, #+28]
+    877          
+    878            /* Outport: '<Root>/AmbientTemperature' */
+    879          //  ThermalModelCoreBPM_Y.AmbientTemperature = w[52]; //w[44];//ThermalModelCoreBPM_B.sfn[6];
+    880          
+    881            /* Outport: '<Root>/error' */
+    882           // ThermalModelCoreBPM_Y.error = w[51]; //w[45];//ThermalModelCoreBPM_B.sfn[7];
+    883          
+    884            /* Outport: '<Root>/InsulationTemperature' */
+    885           // ThermalModelCoreBPM_Y.InsulationTemperature = w[2]-273.15f; //w[38];//ThermalModelCoreBPM_B.sfn[0];
+    886          
+    887            /* Outport: '<Root>/InternalAmbTemperature' */
+    888          //  ThermalModelCoreBPM_Y.InternalAmbTemperature = w[4]-273.15f; //w[39];//ThermalModelCoreBPM_B.sfn[1];
+    889          
+    890            /* Outport: '<Root>/ShellTemperature' */
+    891          //  ThermalModelCoreBPM_Y.ShellTemperature = w[5]-273.15f; //w[41];//ThermalModelCoreBPM_B.sfn[3];
+    892          
+    893            /* Update for S-Function (csBPM_final_code): '<S1>/sfn' */
+    894            w= GetUpdatedWork(1);
+   \   00000050   0x2001             MOVS     R0,#+1
+   \   00000052   0x.... 0x....      BL       GetUpdatedWork
+   \   00000056   0x4605             MOV      R5,R0
+    895            EulerStep(w);
+   \   00000058   0x.... 0x....      BL       EulerStep
+    896            fp(NEQ,w[0],&w[1],&w[NEQ+NPAR+1]);
+   \   0000005C   0xF505 0x72D4      ADD      R2,R5,#+424
+   \   00000060   0x1D29             ADDS     R1,R5,#+4
+   \   00000062   0xED95 0x0A00      VLDR     S0,[R5, #0]
+   \   00000066   0x2036             MOVS     R0,#+54
+   \   00000068   0x.... 0x....      BL       fp
+    897            for (i=0;i<NDIFF;i++)
+   \   0000006C   0x2000             MOVS     R0,#+0
+    898              x[i]= w[i+1];
+   \                     ??ThermalModelCoreBPM_step_2: (+1)
+   \   0000006E   0xEB05 0x0180      ADD      R1,R5,R0, LSL #+2
+   \   00000072   0x6849             LDR      R1,[R1, #+4]
+   \   00000074   0xF844 0x1020      STR      R1,[R4, R0, LSL #+2]
+   \   00000078   0x1C40             ADDS     R0,R0,#+1
+   \   0000007A   0x2807             CMP      R0,#+7
+   \   0000007C   0xDBF7             BLT.N    ??ThermalModelCoreBPM_step_2
+    899            TimeStep = TimeStep + TIMESTEP;
+   \   0000007E   0xED96 0x0A0D      VLDR     S0,[R6, #+52]
+   \   00000082   0xEDDF 0x....      VLDR.W   S1,??DataTable9_2  ;; 0x3ccccccd
+   \   00000086   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   0000008A   0xED86 0x0A0D      VSTR     S0,[R6, #+52]
+    900          }
+   \   0000008E   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+    901          
+    902          /* Model initialize function */
+    903          #pragma optimize=size no_inline no_unroll
+
+   \                                 In section .text, align 2, keep-with-next
+    904          void ThermalModelCoreBPM_initialize(void)
+    905          {
+    906            /* Registration code */
+    907          
+    908            /* block I/O */
+    909          //  (void) memset(((void *) &ThermalModelCoreBPM_B), 0,
+    910          //                sizeof(B_ThermalModelCoreBPM_T));
+    911          //
+    912          //  /* states (dwork) */
+    913          //  (void) memset((void *)&ThermalModelCoreBPM_DW, 0,
+    914          //                sizeof(DW_ThermalModelCoreBPM_T));
+    915          //
+    916          //  /* external inputs */
+    917          //  (void)memset((void *)&ThermalModelCoreBPM_U, 0, sizeof(ExtU_ThermalModelCoreBPM_T));
+    918          //
+    919          //  /* external outputs */
+    920          //  (void) memset((void *)&ThermalModelCoreBPM_Y, 0,
+    921          //                sizeof(ExtY_ThermalModelCoreBPM_T));
+    922          
+    923            /* InitializeConditions for S-Function (csBPM_final_code): '<S1>/sfn' */
+    924          //  real32_T* ic[NDIFF];
+    925          //  for(int n = 0; n < NDIFF; n++)
+    926          //    {
+    927          //      ic[n] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[n];
+    928          //    }
+    929          //  ic[0] = (real32_T*)ThermalModelCoreBPM_ConstP.MapleSimICs_Value;
+    930          //  ic[1] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[1];
+    931          //  ic[2] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[2];
+    932          //  ic[3] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[3];
+    933          //  ic[4] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[4];
+    934          //  ic[5] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[5];
+    935          //  ic[6] = (real32_T*)&ThermalModelCoreBPM_ConstP.MapleSimICs_Value[6];
+    936            real32_T *x = (real32_T*)&ThermalModelCoreBPM_DW.sfn_DSTATE[0];
+    937            int_T * iw = (int_T*)&ThermalModelCoreBPM_DW.sfn_IWORK[0];
+    938            int_T j;
+    939            iw[INIDREF]= 0;
+   \                     ThermalModelCoreBPM_initialize: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable9_4
+    940            for (j=0;j<NDIFF;j++)
+   \   00000002   0x....             LDR.N    R2,??DataTable9_7  ;; 0x43951333
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0xF8C0 0x1310      STR      R1,[R0, #+784]
+    941              x[j]= 298.15F;//ThermalModelCoreBPM_ConstP.MapleSimICs_Value[j];//ic[j][0];
+   \                     ??ThermalModelCoreBPM_initialize_0: (+1)
+   \   0000000A   0xF840 0x2021      STR      R2,[R0, R1, LSL #+2]
+   \   0000000E   0x1C49             ADDS     R1,R1,#+1
+   \   00000010   0x2907             CMP      R1,#+7
+   \   00000012   0xDBFA             BLT.N    ??ThermalModelCoreBPM_initialize_0
+    942          }
+   \   00000014   0x4770             BX       LR               ;; return
+    943          
+    944          /* Model terminate function */
+
+   \                                 In section .text, align 2, keep-with-next
+    945          void ThermalModelCoreBPM_terminate(void)
+    946          {
+    947            /* (no terminate code required) */
+    948          }
+   \                     ThermalModelCoreBPM_terminate: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0xC2F8736E         DC32     0xc2f8736e
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   0x3FBFBF75         DC32     0x3fbfbf75
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_2:
+   \   00000000   0x3EB444F9         DC32     0x3eb444f9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_3:
+   \   00000000   0x3FDCE9A3         DC32     0x3fdce9a3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_4:
+   \   00000000   0x42F28C55         DC32     0x42f28c55
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_5:
+   \   00000000   0x409AF5F8         DC32     0x409af5f8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_6:
+   \   00000000   0x41DDD2FE         DC32     0x41ddd2fe
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_7:
+   \   00000000   0x3FBEBC8D         DC32     0x3fbebc8d
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x358637BD         DC32     0x358637bd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0xC3089333         DC32     0xc3089333
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x43889333         DC32     0x43889333
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x3C23D70A         DC32     0x3c23d70a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x3E2AAAAB         DC32     0x3e2aaaab
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \   00000000   0x3EC624DD         DC32     0x3ec624dd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \   00000000   0x3F544A2F         DC32     0x3f544a2f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \   00000000   0x3F19999A         DC32     0x3f19999a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \   00000000   0x33738A58         DC32     0x33738a58
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x3E2AB368         DC32     0x3e2ab368
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x3EA5ED23         DC32     0x3ea5ed23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x3F533333         DC32     0x3f533333
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x444CDCCD         DC32     0x444cdccd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0xBDCCCCCD         DC32     0xbdcccccd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x43889333         DC32     0x43889333
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0xC3889333         DC32     0xc3889333
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0xB58637BD         DC32     0xb58637bd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0xB58637BC         DC32     0xb58637bc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0x358637BD         DC32     0x358637bd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0x358637BE         DC32     0x358637be
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \   00000000   0x00000000         DC32     0x0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \   00000000   0x32D6BF96         DC32     0x32d6bf96
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \   00000000   0x3CCCCCCD         DC32     0x3ccccccd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \   00000000   0xC3889333         DC32     0xc3889333
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \   00000000   0x........         DC32     ThermalModelCoreBPM_DW
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \   00000000   0x41C80000         DC32     0x41c80000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \   00000000   0x........         DC32     ThermalModelCoreBPM_U
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_7:
+   \   00000000   0x43951333         DC32     0x43951333
+    949          
+    950          /*
+    951           * File trailer for generated code.
+    952           *
+    953           * [EOF]
+    954           */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EulerStep
+      32   GetUpdatedWork
+        32   -> fp
+      24   InitializeConditions
+        24   -> RunEvents
+        24   -> eev
+        24   -> fp
+      64   RunEvents
+        64   -> eex
+        64   -> fp
+        64   -> savespace
+       0   ThermalModelCoreBPM_initialize
+      24   ThermalModelCoreBPM_step
+        24   -> EulerStep
+        24   -> GetUpdatedWork
+        24   -> InitializeConditions
+        24   -> RunEvents
+        24   -> fp
+       0   ThermalModelCoreBPM_terminate
+       0   eev
+       0   eex
+       8   fastpow
+      40   fp
+        40   -> fastpow
+      24   savespace
+        24   -> eev
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       4  ??DataTable0_2
+       4  ??DataTable0_3
+       4  ??DataTable0_4
+       4  ??DataTable0_5
+       4  ??DataTable0_6
+       4  ??DataTable0_7
+       4  ??DataTable1
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+      18  ?Subroutine0
+      18  ?Subroutine1
+       8  ?Subroutine2
+      12  ?Subroutine3
+      46  EulerStep
+     208  GetUpdatedWork
+     204  InitializeConditions
+     252  RunEvents
+      32  ThermalModelCoreBPM_B
+     792  ThermalModelCoreBPM_DW
+      60  ThermalModelCoreBPM_U
+          ThermalModelCoreBPM_Y
+          TimeStep
+          ThermalModelCoreBPM_Params
+      22  ThermalModelCoreBPM_initialize
+     144  ThermalModelCoreBPM_step
+       2  ThermalModelCoreBPM_terminate
+      30  eev
+     408  eex
+     146  fastpow
+    1114  fp
+     248  savespace
+
+ 
+   884 bytes in section .bss
+ 3 024 bytes in section .text
+ 
+ 3 024 bytes of CODE memory
+   884 bytes of DATA memory
+
+Errors: none
+Warnings: 6

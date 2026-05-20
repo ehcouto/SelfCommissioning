@@ -1,0 +1,2571 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:44
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API007Data\API007Data.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o API007Data.obj
+#        -l ..\listings\API007Data.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API007Data\API007Data.c
+#    List file    =  ..\listings\API007Data.lst
+#    Object file  =  API007Data.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API007Data\API007Data.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      API007Data Module implementation
+      5           *
+      6           *  @details    This module implements the code to handle the API007Data GDM for bulk data transfer using REVEAL
+      7           *
+      8           *  @section    Applicable_Documents
+      9           *                  List here all the applicable documents if needed. <tr>
+     10           *
+     11           *
+     12           *  @copyright  Copyright 2012-$Date: 2015/07/09 10:13:32EDT $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     13           */
+     14          //---------------------------------------------------------------------------------------------------------------------
+     15          //---------------------------------------------------------------------------------------------------------------------
+     16          
+     17          //-------------------------------------- Include Files ----------------------------------------------------------------
+     18          #include "C_Extensions.h"
+     19          #include "Utilities.h"
+     20          #include "API007Data.h"
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SettingFile\SettingFile.h",39  Remark[Pe082]: 
+          storage class is not first
+     21          #include "Reveal.h"
+     22          #include "String.h"
+     23          #include "Mode.h"
+     24          #include "SFUpdater.h"
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater_defs.h",30  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater.h",35  Remark[Pe082]: 
+          storage class is not first
+     25          #include "Flash.h"
+     26          #include "Crc16.h"
+     27          
+     28          #if (API007DATA_BULK_DATA_FEATURE == ENABLED)
+     29              #include "API007BulkData.h"
+     30          #endif
+     31          
+     32          #ifndef API007DATA_USE_SRTASKMONITOR_SUSPEND
+     33          	#define	API007DATA_USE_SRTASKMONITOR_SUSPEND		ENABLED
+     34          #endif
+     35          
+     36          #if (API007DATA_USE_SRTASKMONITOR_SUSPEND == ENABLED)
+     37          	#include "SRTaskMonitor.h"
+     38          	#define		SUSPEND_TASK_MONITORING()		SRTaskMonitor__Suspend()
+     39          	#define		RESUME_TASK_MONITORING()		SRTaskMonitor__Resume()
+     40          #else
+     41          	#define		SUSPEND_TASK_MONITORING()
+     42          	#define		RESUME_TASK_MONITORING()
+     43          #endif
+     44          
+     45          
+     46          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     47          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     48          
+     49          #define  API007DATA_MAX_PAYLOAD     REVEAL_PAYLOAD_SIZE
+     50          
+     51          #define API007DATA_SF_UI_TABLE_SIZE()                       ((0x60 ) * 2) // this number should be replaced by the address just before the address pointed by the pointer 0xA
+     52          
+     53          #ifndef API007DATA_WRITE_RAMDATA
+     54              #define API007DATA_WRITE_RAMDATA       DISABLED
+     55          #endif
+     56          
+     57          #ifndef API007DATA_USE_PRIORITY_QUEUE
+     58              #define API007DATA_USE_PRIORITY_QUEUE   DISABLED
+     59          #endif
+     60          
+     61          /**
+     62           * API007_OP_SEGMENT_LIST \n
+     63           * cmd:  payload:  no payload
+     64           * fdb:  payload contains a list of segment ID
+     65           *
+     66           * API007_OP_SEGMENT_INFO \n
+     67           * cmd:  payload: byte[0] = segment id\n
+     68           *
+     69           */
+     70          typedef enum
+     71          {
+     72              API007_OP_MEM_WRITE_RAM_24BIT = 1,                   //Opcode 1-4 supports API007 backward compatibility
+     73              API007_OP_MEM_WRITE_RAM_32BIT = 3,                   //RAM memory variables for debugging
+     74          
+     75              API007_OP_SEGMENT_LIST = 5,
+     76              API007_OP_SEGMENT_INFO = 6,
+     77              API007_OP_SEND_SEGMENT_DATA = 7,
+     78              API007_OP_GET_SEGMENT_ALL_DATA = 8,
+     79              API007_OP_CLIENT_WRITE_COMPLETE = 9,
+     80              API007_OP_SERVER_TRANSMISSION_COMPLETE = 10,
+     81          
+     82              API007_OP_REQ_PUB_SETTING_FILE_INFO = 11,
+     83              API007_OP_REQ_PUB_SETTING_FILE_DATA = 12,
+     84          
+     85              API007_OP_ERASE_FLASH = 15,
+     86              API007_OP_WRITE_FLASH = 16,
+     87              API007_OP_FLASH_PROCESS_DONE = 17,
+     88              API007_OP_REQ_PUB_FLASH_ALIGNMENT = 18,
+     89          
+     90              API007_OP_REQ_PUB_SETTING_FILE_ID_INFO = 19,
+     91              API007_OP_REQ_PUB_SETTING_FILE_ID_DATA = 20,
+     92          
+     93              API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO = 21,
+     94              API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA = 22,
+     95          
+     96              API007_OP_DEBUG = 30,
+     97              API007_OP_ERROR = 31
+     98          } API007DATA_OP_TYPE;
+     99          
+    100          #define API007DATA_INVALID_SEGMENT_INDEX       255
+    101          
+    102          #ifndef REVEAL_MMP_BIT
+    103          	#define REVEAL_MMP_BIT          ((uint8)0x80)        //reveal more message pending
+    104          #endif
+    105          
+    106          #ifndef API007DATA_SETTINGFILE_INFO_TIMEOUT_MS
+    107              #define API007DATA_SETTINGFILE_INFO_TIMEOUT_MS      500
+    108          #endif
+    109          
+    110          #if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    111          	// This variable holds the information weather the setting file information is received or not
+    112          	// API007 uses the High Priority queue. After the Hot Plug the API007_OP_REQ_PUB_SETTING_FILE_INFO message is prepared first in the Reveal Priority Queue.
+    113          	// As ACU did not listed in the Active Node list the message is dropped and the Setting File information is not communicated
+    114          	// This varable will check weather the Setting File Information is been communicated to the board or not.
+    115          	// If the Setting file information is missed during the power up then the API007Data__Handler() will initiate the request once the ACU is alive
+
+   \                                 In section .bss, align 2
+    116          	static BOOL_TYPE SettingFile_Info_Received;
+   \                     SettingFile_Info_Received:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+   \   00000002                      DS8 2
+    117          	static uint16 SettingFile_Info_Timer;
+    118          #endif
+    119          
+    120          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    121          static BOOL_TYPE PublishSettingFileInfo(uint8 address);
+    122          static BOOL_TYPE PublishUISettingFileData(uint8 address, uint32 index, uint8 size);
+    123          static BOOL_TYPE PublishSettingFileIDInfo(uint8 address, SF_ID_TYPE sf_id);
+    124          static BOOL_TYPE PublishSettingFileIDData(uint8 address, SF_ID_TYPE sf_id, uint16 data_index, uint8 size);
+    125          static BOOL_TYPE PublishSettingFileDisplacementInfo(uint8 address, SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement);
+    126          static BOOL_TYPE PublishSettingFileDisplacementData(uint8 address, SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement, uint16 data_index, uint8 size);
+    127          
+    128          #if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    129          	static void RequestSFInfo(void);
+    130          #endif
+    131          
+    132          #if (API007DATA_BULK_DATA_FEATURE == ENABLED)
+    133          static void PublishSegmentInfo(uint8 address ,API007APP_SEGMENT_ID segment_id);
+    134          static void PublishSegmentList(uint8 address );
+    135          #endif
+    136          
+    137          //=====================================================================================================================
+    138          //-------------------------------------- Public Functions -------------------------------------------------------------
+    139          //=====================================================================================================================
+    140          
+    141          //---------------------------------------------------------------------------------------------------------------------
+    142          /**
+    143           * @brief      It Initializes the module API007Data and its variables
+    144           *
+    145           */
+
+   \                                 In section .text, align 2, keep-with-next
+    146          void API007Data__Initialize(void)
+    147          {
+   \                     API007Data__Initialize: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    148          	#if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    149          		SettingFile_Info_Received = FALSE;
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable2
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0xB081             SUB      SP,SP,#+4
+   \   0000000A   0x7020             STRB     R0,[R4, #+0]
+    150          	#endif
+    151          
+    152              Flash__Initialize();
+   \   0000000C   0x.... 0x....      BL       Flash__Initialize
+    153          
+    154          	#if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    155              	RequestSFInfo();
+   \   00000010   0x2301             MOVS     R3,#+1
+   \   00000012   0x2201             MOVS     R2,#+1
+   \   00000014   0x2113             MOVS     R1,#+19
+   \   00000016   0x2007             MOVS     R0,#+7
+   \   00000018   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   0000001C   0x0005             MOVS     R5,R0
+   \   0000001E   0xD005             BEQ.N    ??API007Data__Initialize_0
+   \   00000020   0x2102             MOVS     R1,#+2
+   \   00000022   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000026   0x4628             MOV      R0,R5
+   \   00000028   0x.... 0x....      BL       Reveal__QueueCommand
+   \                     ??API007Data__Initialize_0: (+1)
+   \   0000002C   0x.... 0x....      BL       SFUpdater__ValidateFlashDisplacementData
+   \   00000030   0x2064             MOVS     R0,#+100
+   \   00000032   0x8060             STRH     R0,[R4, #+2]
+    156              #else
+    157                  PublishSettingFileInfo(REVEAL_BROADCAST_NODE);
+    158          
+    159                  // Broadcast the setting file ID
+    160                  SF_ID_TYPE section_ids[SF_MAX_SECTIONS];
+    161                  uint8 section_count = SettingFile__GetSectionIDs(section_ids);
+    162                  for (uint8 section = 0; section < section_count; section++)
+    163                  {
+    164                      SF_ID_TYPE sf_id = section_ids[section];
+    165                      if (sf_id != SF_ID_END)
+    166                      {
+    167                          PublishSettingFileIDInfo(WIN_BROADCAST, sf_id);
+    168                      }
+    169                  }
+    170              #endif
+    171          
+    172              #if(API007DATA_BULK_DATA_FEATURE == ENABLED)
+    173                  API007BulkDataMgr__Initialize();
+   \   00000034   0xB001             ADD      SP,SP,#+4
+   \   00000036   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \   0000003A   0x.... 0x....      B.W      API007BulkDataMgr__Initialize
+    174              #endif
+    175          }
+    176          
+    177          //----------------------------------------------------------------------------------------------------------
+    178          /**
+    179           * @brief This API is called every 5ms from the communication thread
+    180           *
+    181           */
+
+   \                                 In section .text, align 2, keep-with-next
+    182          void API007Data__Handler(void)
+    183          {
+   \                     API007Data__Handler: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+    184              #if(API007DATA_BULK_DATA_FEATURE == ENABLED)
+    185                  API007BulkDataMgr__Handler();
+   \   00000004   0x.... 0x....      BL       API007BulkDataMgr__Handler
+    186              #endif
+    187          
+    188          	#if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    189                  if (SettingFile_Info_Received == FALSE)
+   \   00000008   0x.... 0x....      LDR.W    R4,??DataTable2
+   \   0000000C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000000E   0xB9C8             CBNZ.N   R0,??API007Data__Handler_0
+    190                  {
+    191                      //Check is the ACU is alive
+    192                      if(SettingFile_Info_Timer > 0)
+   \   00000010   0x8860             LDRH     R0,[R4, #+2]
+   \   00000012   0xB108             CBZ.N    R0,??API007Data__Handler_1
+    193                      {
+    194                          SettingFile_Info_Timer--;
+   \   00000014   0x1E40             SUBS     R0,R0,#+1
+   \   00000016   0xE014             B.N      ??API007Data__Handler_2
+    195                      }
+    196                      else if ((Reveal__GetNodestatus() & (1 << WIN_ACU_ADDRESS) ) != 0)
+   \                     ??API007Data__Handler_1: (+1)
+   \   00000018   0x.... 0x....      BL       Reveal__GetNodestatus
+   \   0000001C   0x0780             LSLS     R0,R0,#+30
+   \   0000001E   0xD511             BPL.N    ??API007Data__Handler_0
+    197                  	{
+    198                  		RequestSFInfo();
+   \   00000020   0x2301             MOVS     R3,#+1
+   \   00000022   0x2201             MOVS     R2,#+1
+   \   00000024   0x2113             MOVS     R1,#+19
+   \   00000026   0x2007             MOVS     R0,#+7
+   \   00000028   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   0000002C   0x0005             MOVS     R5,R0
+   \   0000002E   0xD005             BEQ.N    ??API007Data__Handler_3
+   \   00000030   0x2102             MOVS     R1,#+2
+   \   00000032   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000036   0x4628             MOV      R0,R5
+   \   00000038   0x.... 0x....      BL       Reveal__QueueCommand
+   \                     ??API007Data__Handler_3: (+1)
+   \   0000003C   0x.... 0x....      BL       SFUpdater__ValidateFlashDisplacementData
+   \   00000040   0x2064             MOVS     R0,#+100
+   \                     ??API007Data__Handler_2: (+1)
+   \   00000042   0x8060             STRH     R0,[R4, #+2]
+    199                  	}
+    200                  }
+    201          	#endif
+    202          }
+   \                     ??API007Data__Handler_0: (+1)
+   \   00000044   0xB001             ADD      SP,SP,#+4
+   \   00000046   0xBD30             POP      {R4,R5,PC}       ;; return
+    203          
+    204          //----------------------------------------------------------------------------------------------------------
+    205          /**
+    206           * @brief This method parses messages target to the API017 sent to a broadcast or exclusively to this node for Reveal 4.x.
+    207           * @param buffer contains the Wide package that contains the message
+    208           * @return REVEAL_RECIPE_STATUS_TYPE that express the result of the parsing.
+    209           */
+
+   \                                 In section .text, align 4, keep-with-next
+    210          REVEAL_RECIPE_STATUS_TYPE API007Data__CommandParser(REVEAL_MSG_TYPE * buffer )
+    211          {
+   \                     API007Data__CommandParser: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0x4606             MOV      R6,R0
+   \   00000006   0xB083             SUB      SP,SP,#+12
+    212              REVEAL_RECIPE_STATUS_TYPE retval;
+    213              uint8 * data;
+    214              uint32 address_start;
+    215              uint32 address_end;
+    216          
+    217              retval = NVO_RS_READY;
+    218              data = buffer->payload;
+    219          
+    220              // data is a pointer that points to the payload
+    221              switch ((API007DATA_OP_TYPE) buffer->op_code)
+   \   00000008   0x7930             LDRB     R0,[R6, #+4]
+   \   0000000A   0xF000 0x001F      AND      R0,R0,#0x1F
+   \   0000000E   0x2400             MOVS     R4,#+0
+   \   00000010   0x1D75             ADDS     R5,R6,#+5
+   \   00000012   0x1E40             SUBS     R0,R0,#+1
+   \   00000014   0x281D             CMP      R0,#+29
+   \   00000016   0xF200 0x822F      BHI.W    ??API007Data__CommandParser_1
+   \   0000001A   0xE8DF 0xF010      TBH      [PC, R0, LSL #+1]
+   \                     ??API007Data__CommandParser_0:
+   \   0000001E   0x001E 0x022D      DC16     0x1E,0x22D,0x25,0x22D
+   \              0x0025 0x022D
+   \   00000026   0x0053 0x0059      DC16     0x53,0x59,0xAE,0x8A
+   \              0x00AE 0x008A
+   \   0000002E   0x00C1 0x0097      DC16     0xC1,0x97,0xC9,0x10B
+   \              0x00C9 0x010B
+   \   00000036   0x022D 0x022D      DC16     0x22D,0x22D,0x1E6,0x1FF
+   \              0x01E6 0x01FF
+   \   0000003E   0x022D 0x021F      DC16     0x22D,0x21F,0x12C,0x149
+   \              0x012C 0x0149
+   \   00000046   0x016F 0x01A6      DC16     0x16F,0x1A6,0x22D,0x22D
+   \              0x022D 0x022D
+   \   0000004E   0x022D 0x022D      DC16     0x22D,0x22D,0x22D,0x22D
+   \              0x022D 0x022D
+   \   00000056   0x022D 0x009F      DC16     0x22D,0x9F
+    222              {
+    223                  #if(API007DATA_WRITE_RAMDATA_ONLY_REQUIRED == ENABLED)
+    224                      case API007_OP_MEM_WRITE_RAM_24BIT:
+    225                          //writes RAM data to 24bit RAM addressed memory received from the external node.
+    226                          memcpy((uint8*)Utilities__ConvertArrayTo24bits(data), data +3 , buffer->sdu_length - 5);
+   \                     ??API007Data__CommandParser_2: (+1)
+   \   0000005A   0x4628             MOV      R0,R5
+   \   0000005C   0x.... 0x....      BL       Utilities__ConvertArrayTo24bits
+   \   00000060   0x7871             LDRB     R1,[R6, #+1]
+   \   00000062   0x1F4A             SUBS     R2,R1,#+5
+   \   00000064   0x1CE9             ADDS     R1,R5,#+3
+   \   00000066   0xE005             B.N      ??API007Data__CommandParser_3
+    227                          break;
+    228          
+    229                      case API007_OP_MEM_WRITE_RAM_32BIT:
+    230                          //writes RAM data to 32bit RAM addressed memory received from the external node.
+    231                          memcpy((uint8*)Utilities__ConvertArrayTo32bits(data), data +4 , buffer->sdu_length - 6);
+   \                     ??API007Data__CommandParser_4: (+1)
+   \   00000068   0x4628             MOV      R0,R5
+   \   0000006A   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   0000006E   0x7871             LDRB     R1,[R6, #+1]
+   \   00000070   0x1F8A             SUBS     R2,R1,#+6
+   \   00000072   0x1D29             ADDS     R1,R5,#+4
+   \                     ??API007Data__CommandParser_3: (+1)
+   \   00000074   0x.... 0x....      BL       __aeabi_memcpy
+    232          
+    233                          break;
+    234                  #endif  //API007DATA_WRITE_RAMDATA_ONLY_REQUIRED
+    235          
+    236                  #if(API007DATA_BULK_DATA_FEATURE == ENABLED)
+    237                          case API007_OP_SEGMENT_LIST:
+    238                              //Publish list of segment ID's.
+    239                              PublishSegmentList(REVEAL_BROADCAST_NODE);
+    240                              break;
+    241          
+    242                          case API007_OP_SEGMENT_INFO:
+    243                              //Publish segment detailed info for the requested segment id from this node.
+    244                              PublishSegmentInfo(REVEAL_BROADCAST_NODE, (API007APP_SEGMENT_ID)data[0]);
+    245                              break;
+    246          
+    247                          case API007_OP_GET_SEGMENT_ALL_DATA:
+    248                              //Publish segment data for requested segment ID node.
+    249                              if (API007BulkDataMgr__GetSegmentData(buffer->node_id, (API007APP_SEGMENT_ID)data[0]) == FALSE)
+    250                              {
+    251                                  retval = NVO_RS_BUSY;
+    252                              }
+    253                              break;
+    254          
+    255                          case API007_OP_SERVER_TRANSMISSION_COMPLETE:
+    256                              //Received End of Transmission command from external node segment (server) ID side.
+    257                              API007BulkDataMgr__ReceivedTransmissionCompleted(buffer->node_id);
+    258                              break;
+    259          
+    260                          case API007_OP_DEBUG:
+    261                              API007__RequestGetDataSegment(buffer->node_id,data[0]);
+    262                              break;
+    263          
+    264                          case API007_OP_SEND_SEGMENT_DATA:// receive data from the other side
+    265                              // Write this Received data to the destination and then reply with write completed command message.
+    266                              API007BulkDataMgr__WriteSegmentData(buffer->node_id, (API007APP_SEGMENT_ID)data[0],Utilities__Merg2BytesTo16bits(data[1],data[2]),&data[3],buffer->sdu_length-5);
+    267                              break;
+    268          
+    269                          case API007_OP_CLIENT_WRITE_COMPLETE:
+    270                              //Received command message as "ACK" from the external node for each successful segment (index) data write to the client side.
+    271                              API007BulkDataMgr__ReceivedWriteCompleted(buffer->node_id);
+    272                              break;
+    273                  #endif //API007DATA_BULK_DATA_FEATURE
+    274          
+    275                  case API007_OP_REQ_PUB_SETTING_FILE_INFO:
+    276                      PublishSettingFileInfo(buffer->node_id);
+    277                      break;
+    278          
+    279                  case API007_OP_REQ_PUB_SETTING_FILE_DATA:
+    280                  	if (PublishUISettingFileData(buffer->node_id,Utilities__ConvertArrayTo32bits(data), data[4]) == FALSE)
+    281                      {
+    282          				retval = NVO_RS_UNSUP_OUT_OF_MEMORY;
+    283          			}
+    284                      break;
+    285          
+    286                  case API007_OP_REQ_PUB_SETTING_FILE_ID_INFO:
+    287                      PublishSettingFileIDInfo(buffer->node_id, (SF_ID_TYPE)buffer->payload[0]);
+    288                      break;
+    289          
+    290                  case API007_OP_REQ_PUB_SETTING_FILE_ID_DATA:
+    291                      /*
+    292                       * Data[0]   - SF_ID
+    293                       * Data[1-2] - Data_Index
+    294                       * Data[3]   - SF_ID_Size
+    295                       */
+    296                      if (PublishSettingFileIDData(buffer->node_id, (SF_ID_TYPE)data[0], Utilities__ConvertArrayTo16bits(&data[1]), data[3]) == FALSE)
+    297                      {
+    298                      	retval = NVO_RS_UNSUP_OUT_OF_MEMORY;
+    299                      }
+    300                      break;
+    301          
+    302                  case API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO:
+    303                      /*
+    304                       * Data[0-1] - SF_POINTER_ID
+    305                       * Data[2-3] - SF_DISPLACEMENT
+    306                       */
+    307          
+    308                      PublishSettingFileDisplacementInfo(buffer->node_id, (SETTINGFILE_OFFSET_TYPE)Utilities__ConvertArrayTo16bits(&data[0]), (SETTINGFILE_OFFSET_TYPE)Utilities__ConvertArrayTo16bits(&data[2]));
+    309                      break;
+    310          
+    311                  case API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA:
+    312                      /*
+    313                       * Data[0-1] - SF_POINTER_ID
+    314                       * Data[2-3] - SF_DISPLACEMENT
+    315                       * Data[4-5] - Data_Index
+    316                       * Data[6]   - Size
+    317                       */
+    318                      if (PublishSettingFileDisplacementData(buffer->node_id, (SETTINGFILE_OFFSET_TYPE)Utilities__ConvertArrayTo16bits(&data[0]), Utilities__ConvertArrayTo16bits(&data[2]), Utilities__ConvertArrayTo16bits(&data[4]), data[6]) == FALSE)
+    319                      {
+    320                      	retval = NVO_RS_UNSUP_OUT_OF_MEMORY;
+    321                      }
+    322                      break;
+    323          
+    324                  case API007_OP_ERASE_FLASH:
+    325                      if (Mode__IsProgrammingEngaged() == TRUE)
+    326                      {
+    327                          address_start = Utilities__ConvertArrayTo32bits(buffer->payload);
+    328                          address_end   = Utilities__ConvertArrayTo32bits(&buffer->payload[4]);
+    329          
+    330                          SUSPEND_TASK_MONITORING();
+    331                          if (Flash__Format(address_start,address_end) == FLASH_RESPONSE_DONE)
+    332                          {
+    333                              Reveal__QueueMessageU8(API007DATA_NUM,API007_OP_FLASH_PROCESS_DONE,buffer->node_id,FALSE,FALSE,API007_OP_ERASE_FLASH);
+    334                          }
+    335                          else
+    336                          {
+    337                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    338                          }
+    339                          RESUME_TASK_MONITORING();
+    340                      }
+    341                      else
+    342                      {
+    343                          retval = NVO_RS_REJECTED;
+    344                      }
+    345                      break;
+    346                  case API007_OP_WRITE_FLASH:
+    347                      if (Mode__IsProgrammingEngaged() == TRUE)
+    348                      {
+    349                          if (Flash__Write(Utilities__ConvertArrayTo32bits(data),&data[4],(uint32)buffer->size-4) == FLASH_RESPONSE_DONE)
+    350                          {
+    351                              Reveal__QueueMessageU8(API007DATA_NUM,API007_OP_FLASH_PROCESS_DONE,buffer->node_id,FALSE,FALSE,API007_OP_WRITE_FLASH);
+    352                          }
+    353                          else
+    354                          {
+    355                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    356                          }
+    357                      }
+    358                      else
+    359                      {
+    360                          retval = NVO_RS_REJECTED;
+    361                      }
+    362                      break;
+    363                  case API007_OP_REQ_PUB_FLASH_ALIGNMENT:
+    364                      Reveal__QueueMessageU8(API007DATA_NUM,API007_OP_REQ_PUB_FLASH_ALIGNMENT,buffer->node_id,FALSE,FALSE,FLASH_ALIGNMENT);
+    365                      break;
+    366          
+    367                  default:
+    368                      retval = NVO_RS_UNSUP_OP_CODE;
+    369                      break;
+    370              }
+    371          
+    372              return (retval);
+   \   00000078   0x4620             MOV      R0,R4
+   \   0000007A   0xB003             ADD      SP,SP,#+12
+   \   0000007C   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_5: (+1)
+   \   00000080   0x.... 0x....      BL       API007BulkDataMgr__GetSegmentListSize
+   \   00000084   0x4605             MOV      R5,R0
+   \                     ??API007Data__CommandParser_6: (+1)
+   \   00000086   0x462B             MOV      R3,R5
+   \   00000088   0x220F             MOVS     R2,#+15
+   \   0000008A   0x2105             MOVS     R1,#+5
+   \   0000008C   0x2007             MOVS     R0,#+7
+   \   0000008E   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   00000092   0x0006             MOVS     R6,R0
+   \   00000094   0xF000 0x81F1      BEQ.W    ??API007Data__CommandParser_7
+   \   00000098   0x.... 0x....      BL       API007BulkDataMgr__GetSegmentList
+   \   0000009C   0x4601             MOV      R1,R0
+   \   0000009E   0x462A             MOV      R2,R5
+   \   000000A0   0x4630             MOV      R0,R6
+   \   000000A2   0x.... 0x....      BL       Reveal__AddDataU8Buffer
+   \   000000A6   0x.... 0x....      BL       API007BulkDataMgr__GetSegmentListSize
+   \   000000AA   0x1B40             SUBS     R0,R0,R5
+   \   000000AC   0x2801             CMP      R0,#+1
+   \   000000AE   0xDB03             BLT.N    ??API007Data__CommandParser_8
+   \   000000B0   0x7870             LDRB     R0,[R6, #+1]
+   \   000000B2   0xF040 0x0080      ORR      R0,R0,#0x80
+   \   000000B6   0x7070             STRB     R0,[R6, #+1]
+   \                     ??API007Data__CommandParser_8: (+1)
+   \   000000B8   0x4630             MOV      R0,R6
+   \   000000BA   0x.... 0x....      BL       Reveal__QueueCommand
+   \   000000BE   0x2D00             CMP      R5,#+0
+   \   000000C0   0xF040 0x81DB      BNE.W    ??API007Data__CommandParser_7
+   \                     ??API007Data__CommandParser_9: (+1)
+   \   000000C4   0x.... 0x....      BL       API007BulkDataMgr__GetSegmentListSize
+   \   000000C8   0x2842             CMP      R0,#+66
+   \   000000CA   0xDBD9             BLT.N    ??API007Data__CommandParser_5
+   \   000000CC   0x2541             MOVS     R5,#+65
+   \   000000CE   0xE7DA             B.N      ??API007Data__CommandParser_6
+   \                     ??API007Data__CommandParser_10: (+1)
+   \   000000D0   0x782D             LDRB     R5,[R5, #+0]
+   \   000000D2   0x4628             MOV      R0,R5
+   \   000000D4   0x.... 0x....      BL       API007BulkDataMgr__GetSegmentInfo
+   \   000000D8   0x0006             MOVS     R6,R0
+   \   000000DA   0xD110             BNE.N    ??API007Data__CommandParser_11
+   \   000000DC   0x2302             MOVS     R3,#+2
+   \   000000DE   0x220F             MOVS     R2,#+15
+   \   000000E0   0x211F             MOVS     R1,#+31
+   \   000000E2   0x2007             MOVS     R0,#+7
+   \   000000E4   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   000000E8   0x0006             MOVS     R6,R0
+   \   000000EA   0xF000 0x81C6      BEQ.W    ??API007Data__CommandParser_7
+   \   000000EE   0x4629             MOV      R1,R5
+   \   000000F0   0x.... 0x....      BL       Reveal__AddDataU8
+   \   000000F4   0x2105             MOVS     R1,#+5
+   \   000000F6   0x4630             MOV      R0,R6
+   \   000000F8   0x.... 0x....      BL       Reveal__AddDataU8
+   \   000000FC   0xE169             B.N      ??API007Data__CommandParser_12
+   \                     ??API007Data__CommandParser_11: (+1)
+   \   000000FE   0x2306             MOVS     R3,#+6
+   \   00000100   0x220F             MOVS     R2,#+15
+   \   00000102   0x2106             MOVS     R1,#+6
+   \   00000104   0x2007             MOVS     R0,#+7
+   \   00000106   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   0000010A   0x0007             MOVS     R7,R0
+   \   0000010C   0xF000 0x81B5      BEQ.W    ??API007Data__CommandParser_7
+   \   00000110   0x4629             MOV      R1,R5
+   \   00000112   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000116   0x8871             LDRH     R1,[R6, #+2]
+   \   00000118   0x4638             MOV      R0,R7
+   \   0000011A   0x.... 0x....      BL       Reveal__AddDataU16
+   \   0000011E   0x7931             LDRB     R1,[R6, #+4]
+   \   00000120   0x4638             MOV      R0,R7
+   \   00000122   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000126   0x8831             LDRH     R1,[R6, #+0]
+   \   00000128   0x4638             MOV      R0,R7
+   \   0000012A   0x.... 0x....      BL       Reveal__AddDataU16
+   \   0000012E   0x4638             MOV      R0,R7
+   \   00000130   0xE150             B.N      ??API007Data__CommandParser_13
+   \                     ??API007Data__CommandParser_14: (+1)
+   \   00000132   0x7830             LDRB     R0,[R6, #+0]
+   \   00000134   0x7829             LDRB     R1,[R5, #+0]
+   \   00000136   0x0900             LSRS     R0,R0,#+4
+   \   00000138   0x.... 0x....      BL       API007BulkDataMgr__GetSegmentData
+   \   0000013C   0x2800             CMP      R0,#+0
+   \   0000013E   0xF040 0x819C      BNE.W    ??API007Data__CommandParser_7
+   \   00000142   0x2401             MOVS     R4,#+1
+   \   00000144   0x4620             MOV      R0,R4
+   \   00000146   0xB003             ADD      SP,SP,#+12
+   \   00000148   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_15: (+1)
+   \   0000014C   0x7830             LDRB     R0,[R6, #+0]
+   \   0000014E   0x0900             LSRS     R0,R0,#+4
+   \   00000150   0x.... 0x....      BL       API007BulkDataMgr__ReceivedTransmissionCompleted
+   \   00000154   0x4620             MOV      R0,R4
+   \   00000156   0xB003             ADD      SP,SP,#+12
+   \   00000158   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_16: (+1)
+   \   0000015C   0x7830             LDRB     R0,[R6, #+0]
+   \   0000015E   0x782D             LDRB     R5,[R5, #+0]
+   \   00000160   0x0902             LSRS     R2,R0,#+4
+   \   00000162   0x2301             MOVS     R3,#+1
+   \   00000164   0x2108             MOVS     R1,#+8
+   \   00000166   0x2007             MOVS     R0,#+7
+   \   00000168   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   0000016C   0x0006             MOVS     R6,R0
+   \   0000016E   0xF000 0x8184      BEQ.W    ??API007Data__CommandParser_7
+   \   00000172   0x4629             MOV      R1,R5
+   \   00000174   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000178   0xE12B             B.N      ??API007Data__CommandParser_12
+   \                     ??API007Data__CommandParser_17: (+1)
+   \   0000017A   0x78A9             LDRB     R1,[R5, #+2]
+   \   0000017C   0x7868             LDRB     R0,[R5, #+1]
+   \   0000017E   0x.... 0x....      BL       Utilities__Merg2BytesTo16bits
+   \   00000182   0x4602             MOV      R2,R0
+   \   00000184   0x7870             LDRB     R0,[R6, #+1]
+   \   00000186   0x1F40             SUBS     R0,R0,#+5
+   \   00000188   0xB2C0             UXTB     R0,R0
+   \   0000018A   0x9000             STR      R0,[SP, #+0]
+   \   0000018C   0x1CEB             ADDS     R3,R5,#+3
+   \   0000018E   0x7830             LDRB     R0,[R6, #+0]
+   \   00000190   0x7829             LDRB     R1,[R5, #+0]
+   \   00000192   0x0900             LSRS     R0,R0,#+4
+   \   00000194   0x.... 0x....      BL       API007BulkDataMgr__WriteSegmentData
+   \   00000198   0x4620             MOV      R0,R4
+   \   0000019A   0xB003             ADD      SP,SP,#+12
+   \   0000019C   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_18: (+1)
+   \   000001A0   0x7830             LDRB     R0,[R6, #+0]
+   \   000001A2   0x0900             LSRS     R0,R0,#+4
+   \   000001A4   0x.... 0x....      BL       API007BulkDataMgr__ReceivedWriteCompleted
+   \   000001A8   0x4620             MOV      R0,R4
+   \   000001AA   0xB003             ADD      SP,SP,#+12
+   \   000001AC   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_19: (+1)
+   \   000001B0   0x7830             LDRB     R0,[R6, #+0]
+   \   000001B2   0x0902             LSRS     R2,R0,#+4
+   \   000001B4   0x2314             MOVS     R3,#+20
+   \   000001B6   0x210B             MOVS     R1,#+11
+   \   000001B8   0x2007             MOVS     R0,#+7
+   \   000001BA   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   000001BE   0x0005             MOVS     R5,R0
+   \   000001C0   0xF000 0x815B      BEQ.W    ??API007Data__CommandParser_7
+   \   000001C4   0x2000             MOVS     R0,#+0
+   \   000001C6   0x.... 0x....      BL       SettingFile__GetSettingFileCRC
+   \   000001CA   0x4601             MOV      R1,R0
+   \   000001CC   0x4628             MOV      R0,R5
+   \   000001CE   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000001D2   0x4620             MOV      R0,R4
+   \   000001D4   0x.... 0x....      BL       SettingFile__GetSettingFileStart
+   \   000001D8   0x4601             MOV      R1,R0
+   \   000001DA   0x4628             MOV      R0,R5
+   \   000001DC   0x.... 0x....      BL       Reveal__AddDataU32
+   \   000001E0   0x4620             MOV      R0,R4
+   \   000001E2   0x.... 0x....      BL       SettingFile__GetSettingFileSize
+   \   000001E6   0x4601             MOV      R1,R0
+   \   000001E8   0x4628             MOV      R0,R5
+   \   000001EA   0x.... 0x....      BL       Reveal__AddDataU32
+   \   000001EE   0x2001             MOVS     R0,#+1
+   \   000001F0   0x.... 0x....      BL       SettingFile__GetSettingFileCRC
+   \   000001F4   0x4601             MOV      R1,R0
+   \   000001F6   0x4628             MOV      R0,R5
+   \   000001F8   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000001FC   0x2001             MOVS     R0,#+1
+   \   000001FE   0x.... 0x....      BL       SettingFile__GetSettingFileStart
+   \   00000202   0x4601             MOV      R1,R0
+   \   00000204   0x4628             MOV      R0,R5
+   \   00000206   0x.... 0x....      BL       Reveal__AddDataU32
+   \   0000020A   0x2001             MOVS     R0,#+1
+   \   0000020C   0x.... 0x....      BL       SettingFile__GetSettingFileSize
+   \   00000210   0x4601             MOV      R1,R0
+   \   00000212   0x4628             MOV      R0,R5
+   \   00000214   0x.... 0x....      BL       Reveal__AddDataU32
+   \   00000218   0x.... 0x....      BL       SettingFile__GetMemorySectionStart
+   \   0000021C   0x4601             MOV      R1,R0
+   \   0000021E   0x4628             MOV      R0,R5
+   \   00000220   0x.... 0x....      BL       Reveal__AddDataU32
+   \   00000224   0x.... 0x....      BL       SettingFile__GetMemorySectionSize
+   \   00000228   0x4601             MOV      R1,R0
+   \   0000022A   0x4628             MOV      R0,R5
+   \   0000022C   0x.... 0x....      BL       Reveal__AddDataU32
+   \   00000230   0x4628             MOV      R0,R5
+   \   00000232   0xE0CF             B.N      ??API007Data__CommandParser_13
+   \                     ??API007Data__CommandParser_20: (+1)
+   \   00000234   0x4628             MOV      R0,R5
+   \   00000236   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   0000023A   0x4680             MOV      R8,R0
+   \   0000023C   0x7830             LDRB     R0,[R6, #+0]
+   \   0000023E   0x792D             LDRB     R5,[R5, #+4]
+   \   00000240   0x0906             LSRS     R6,R0,#+4
+   \   00000242   0x4641             MOV      R1,R8
+   \   00000244   0x2001             MOVS     R0,#+1
+   \   00000246   0x.... 0x....      BL       SettingFile__GetSettingFilePointerByIndex
+   \   0000024A   0x0007             MOVS     R7,R0
+   \   0000024C   0xF000 0x80C8      BEQ.W    ??API007Data__CommandParser_21
+   \   00000250   0x2D3E             CMP      R5,#+62
+   \   00000252   0xBFA8             IT       GE 
+   \   00000254   0x253D             MOVGE    R5,#+61
+   \   00000256   0x1D2B             ADDS     R3,R5,#+4
+   \   00000258   0xB2DB             UXTB     R3,R3
+   \   0000025A   0x4632             MOV      R2,R6
+   \   0000025C   0x210C             MOVS     R1,#+12
+   \   0000025E   0x2007             MOVS     R0,#+7
+   \   00000260   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   00000264   0x0006             MOVS     R6,R0
+   \   00000266   0xF000 0x80BB      BEQ.W    ??API007Data__CommandParser_21
+   \   0000026A   0x4641             MOV      R1,R8
+   \   0000026C   0x.... 0x....      BL       Reveal__AddDataU32
+   \   00000270   0x462A             MOV      R2,R5
+   \   00000272   0x4639             MOV      R1,R7
+   \   00000274   0xE0AA             B.N      ??API007Data__CommandParser_22
+   \                     ??API007Data__CommandParser_23: (+1)
+   \   00000276   0x7830             LDRB     R0,[R6, #+0]
+   \   00000278   0x7975             LDRB     R5,[R6, #+5]
+   \   0000027A   0x0902             LSRS     R2,R0,#+4
+   \   0000027C   0x2305             MOVS     R3,#+5
+   \   0000027E   0x2113             MOVS     R1,#+19
+   \   00000280   0x2007             MOVS     R0,#+7
+   \   00000282   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   00000286   0x0006             MOVS     R6,R0
+   \   00000288   0xF000 0x80F7      BEQ.W    ??API007Data__CommandParser_7
+   \   0000028C   0x4629             MOV      R1,R5
+   \   0000028E   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000292   0x4628             MOV      R0,R5
+   \   00000294   0x.... 0x....      BL       SettingFile__GetSettingFileCRC
+   \   00000298   0x4601             MOV      R1,R0
+   \   0000029A   0x4630             MOV      R0,R6
+   \   0000029C   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000002A0   0x4628             MOV      R0,R5
+   \   000002A2   0x.... 0x....      BL       SettingFile__GetSettingFileSize
+   \   000002A6   0xB281             UXTH     R1,R0
+   \   000002A8   0x4630             MOV      R0,R6
+   \   000002AA   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000002AE   0xE090             B.N      ??API007Data__CommandParser_12
+   \                     ??API007Data__CommandParser_24: (+1)
+   \   000002B0   0x1C68             ADDS     R0,R5,#+1
+   \   000002B2   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   000002B6   0x4680             MOV      R8,R0
+   \   000002B8   0x78EF             LDRB     R7,[R5, #+3]
+   \   000002BA   0x7830             LDRB     R0,[R6, #+0]
+   \   000002BC   0x782D             LDRB     R5,[R5, #+0]
+   \   000002BE   0x0906             LSRS     R6,R0,#+4
+   \   000002C0   0x4641             MOV      R1,R8
+   \   000002C2   0x4628             MOV      R0,R5
+   \   000002C4   0x.... 0x....      BL       SettingFile__GetSettingFilePointerByIndex
+   \   000002C8   0xEA5F 0x0900      MOVS     R9,R0
+   \   000002CC   0xF000 0x8088      BEQ.W    ??API007Data__CommandParser_21
+   \   000002D0   0x2F3D             CMP      R7,#+61
+   \   000002D2   0xBFA8             IT       GE 
+   \   000002D4   0x273C             MOVGE    R7,#+60
+   \   000002D6   0x1CFB             ADDS     R3,R7,#+3
+   \   000002D8   0xB2DB             UXTB     R3,R3
+   \   000002DA   0x4632             MOV      R2,R6
+   \   000002DC   0x2114             MOVS     R1,#+20
+   \   000002DE   0x2007             MOVS     R0,#+7
+   \   000002E0   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   000002E4   0x0006             MOVS     R6,R0
+   \   000002E6   0xD07B             BEQ.N    ??API007Data__CommandParser_21
+   \   000002E8   0x4629             MOV      R1,R5
+   \   000002EA   0x.... 0x....      BL       Reveal__AddDataU8
+   \   000002EE   0x4641             MOV      R1,R8
+   \   000002F0   0x4630             MOV      R0,R6
+   \   000002F2   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000002F6   0x463A             MOV      R2,R7
+   \   000002F8   0x4649             MOV      R1,R9
+   \   000002FA   0xE067             B.N      ??API007Data__CommandParser_22
+   \                     ??API007Data__CommandParser_25: (+1)
+   \   000002FC   0x1CA8             ADDS     R0,R5,#+2
+   \   000002FE   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000302   0x4607             MOV      R7,R0
+   \   00000304   0x4628             MOV      R0,R5
+   \   00000306   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   0000030A   0x4605             MOV      R5,R0
+   \   0000030C   0x7830             LDRB     R0,[R6, #+0]
+   \   0000030E   0x0902             LSRS     R2,R0,#+4
+   \   00000310   0x2308             MOVS     R3,#+8
+   \   00000312   0x2115             MOVS     R1,#+21
+   \   00000314   0x2007             MOVS     R0,#+7
+   \   00000316   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   0000031A   0x0006             MOVS     R6,R0
+   \   0000031C   0xF000 0x80AD      BEQ.W    ??API007Data__CommandParser_7
+   \   00000320   0x4629             MOV      R1,R5
+   \   00000322   0x.... 0x....      BL       Reveal__AddDataU16
+   \   00000326   0x4639             MOV      R1,R7
+   \   00000328   0x4630             MOV      R0,R6
+   \   0000032A   0x.... 0x....      BL       Reveal__AddDataU16
+   \   0000032E   0xAA00             ADD      R2,SP,#+0
+   \   00000330   0x4639             MOV      R1,R7
+   \   00000332   0x4628             MOV      R0,R5
+   \   00000334   0x.... 0x....      BL       SettingFile__BasicLoader
+   \   00000338   0x2801             CMP      R0,#+1
+   \   0000033A   0xD10D             BNE.N    ??API007Data__CommandParser_26
+   \   0000033C   0xF8BD 0x2004      LDRH     R2,[SP, #+4]
+   \   00000340   0x9800             LDR      R0,[SP, #+0]
+   \   00000342   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000346   0x.... 0x....      BL       Crc16__ConstRangeProcess
+   \   0000034A   0x4601             MOV      R1,R0
+   \   0000034C   0x4630             MOV      R0,R6
+   \   0000034E   0x.... 0x....      BL       Reveal__AddDataU16
+   \   00000352   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \   00000356   0xE004             B.N      ??API007Data__CommandParser_27
+   \                     ??API007Data__CommandParser_26: (+1)
+   \   00000358   0x2100             MOVS     R1,#+0
+   \   0000035A   0x4630             MOV      R0,R6
+   \   0000035C   0x.... 0x....      BL       Reveal__AddDataU16
+   \   00000360   0x4621             MOV      R1,R4
+   \                     ??API007Data__CommandParser_27: (+1)
+   \   00000362   0x4630             MOV      R0,R6
+   \   00000364   0x.... 0x....      BL       Reveal__AddDataU16
+   \   00000368   0xE033             B.N      ??API007Data__CommandParser_12
+   \                     ??API007Data__CommandParser_28: (+1)
+   \   0000036A   0x1D28             ADDS     R0,R5,#+4
+   \   0000036C   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000370   0x4680             MOV      R8,R0
+   \   00000372   0x1CA8             ADDS     R0,R5,#+2
+   \   00000374   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000378   0x4607             MOV      R7,R0
+   \   0000037A   0x4628             MOV      R0,R5
+   \   0000037C   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000380   0x4681             MOV      R9,R0
+   \   00000382   0x7830             LDRB     R0,[R6, #+0]
+   \   00000384   0x79AD             LDRB     R5,[R5, #+6]
+   \   00000386   0x0906             LSRS     R6,R0,#+4
+   \   00000388   0xAA00             ADD      R2,SP,#+0
+   \   0000038A   0x4639             MOV      R1,R7
+   \   0000038C   0x4648             MOV      R0,R9
+   \   0000038E   0x.... 0x....      BL       SettingFile__BasicLoader
+   \   00000392   0x2801             CMP      R0,#+1
+   \   00000394   0xD124             BNE.N    ??API007Data__CommandParser_21
+   \   00000396   0x2D3C             CMP      R5,#+60
+   \   00000398   0xBFA8             IT       GE 
+   \   0000039A   0x253B             MOVGE    R5,#+59
+   \   0000039C   0x1DAB             ADDS     R3,R5,#+6
+   \   0000039E   0xB2DB             UXTB     R3,R3
+   \   000003A0   0x4632             MOV      R2,R6
+   \   000003A2   0x2116             MOVS     R1,#+22
+   \   000003A4   0x2007             MOVS     R0,#+7
+   \   000003A6   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   000003AA   0x0006             MOVS     R6,R0
+   \   000003AC   0xD018             BEQ.N    ??API007Data__CommandParser_21
+   \   000003AE   0x4649             MOV      R1,R9
+   \   000003B0   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000003B4   0x4639             MOV      R1,R7
+   \   000003B6   0x4630             MOV      R0,R6
+   \   000003B8   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000003BC   0x4641             MOV      R1,R8
+   \   000003BE   0x4630             MOV      R0,R6
+   \   000003C0   0x.... 0x....      BL       Reveal__AddDataU16
+   \   000003C4   0x9800             LDR      R0,[SP, #+0]
+   \   000003C6   0x462A             MOV      R2,R5
+   \   000003C8   0xEB08 0x0100      ADD      R1,R8,R0
+   \                     ??API007Data__CommandParser_22: (+1)
+   \   000003CC   0x4630             MOV      R0,R6
+   \   000003CE   0x.... 0x....      BL       Reveal__AddDataU8Buffer
+   \                     ??API007Data__CommandParser_12: (+1)
+   \   000003D2   0x4630             MOV      R0,R6
+   \                     ??API007Data__CommandParser_13: (+1)
+   \   000003D4   0x.... 0x....      BL       Reveal__QueueCommand
+   \   000003D8   0x4620             MOV      R0,R4
+   \   000003DA   0xB003             ADD      SP,SP,#+12
+   \   000003DC   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_21: (+1)
+   \   000003E0   0x2408             MOVS     R4,#+8
+   \   000003E2   0x4620             MOV      R0,R4
+   \   000003E4   0xB003             ADD      SP,SP,#+12
+   \   000003E6   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_29: (+1)
+   \   000003EA   0x.... 0x....      BL       Mode__IsProgrammingEngaged
+   \   000003EE   0x2801             CMP      R0,#+1
+   \   000003F0   0xD12F             BNE.N    ??API007Data__CommandParser_30
+   \   000003F2   0x4628             MOV      R0,R5
+   \   000003F4   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   000003F8   0x4605             MOV      R5,R0
+   \   000003FA   0xF106 0x0009      ADD      R0,R6,#+9
+   \   000003FE   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   00000402   0x4601             MOV      R1,R0
+   \   00000404   0x4628             MOV      R0,R5
+   \   00000406   0x.... 0x....      BL       Flash__Format
+   \   0000040A   0xB9E8             CBNZ.N   R0,??API007Data__CommandParser_31
+   \   0000040C   0x200F             MOVS     R0,#+15
+   \   0000040E   0x9001             STR      R0,[SP, #+4]
+   \   00000410   0x9400             STR      R4,[SP, #+0]
+   \   00000412   0x2300             MOVS     R3,#+0
+   \   00000414   0x7830             LDRB     R0,[R6, #+0]
+   \   00000416   0x0902             LSRS     R2,R0,#+4
+   \   00000418   0x2111             MOVS     R1,#+17
+   \   0000041A   0xE026             B.N      ??API007Data__CommandParser_32
+   \                     ??API007Data__CommandParser_33: (+1)
+   \   0000041C   0x.... 0x....      BL       Mode__IsProgrammingEngaged
+   \   00000420   0x2801             CMP      R0,#+1
+   \   00000422   0xD116             BNE.N    ??API007Data__CommandParser_30
+   \   00000424   0x4628             MOV      R0,R5
+   \   00000426   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   0000042A   0xF896 0x1048      LDRB     R1,[R6, #+72]
+   \   0000042E   0x1F0A             SUBS     R2,R1,#+4
+   \   00000430   0x1D29             ADDS     R1,R5,#+4
+   \   00000432   0x.... 0x....      BL       Flash__Write
+   \   00000436   0xB938             CBNZ.N   R0,??API007Data__CommandParser_31
+   \   00000438   0x2010             MOVS     R0,#+16
+   \   0000043A   0x9001             STR      R0,[SP, #+4]
+   \   0000043C   0x9400             STR      R4,[SP, #+0]
+   \   0000043E   0x2300             MOVS     R3,#+0
+   \   00000440   0x7830             LDRB     R0,[R6, #+0]
+   \   00000442   0x0902             LSRS     R2,R0,#+4
+   \   00000444   0x2111             MOVS     R1,#+17
+   \   00000446   0xE010             B.N      ??API007Data__CommandParser_32
+   \                     ??API007Data__CommandParser_31: (+1)
+   \   00000448   0x2406             MOVS     R4,#+6
+   \   0000044A   0x4620             MOV      R0,R4
+   \   0000044C   0xB003             ADD      SP,SP,#+12
+   \   0000044E   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_30: (+1)
+   \   00000452   0x2402             MOVS     R4,#+2
+   \   00000454   0x4620             MOV      R0,R4
+   \   00000456   0xB003             ADD      SP,SP,#+12
+   \   00000458   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_34: (+1)
+   \   0000045C   0x2004             MOVS     R0,#+4
+   \   0000045E   0x9001             STR      R0,[SP, #+4]
+   \   00000460   0x9400             STR      R4,[SP, #+0]
+   \   00000462   0x2300             MOVS     R3,#+0
+   \   00000464   0x7830             LDRB     R0,[R6, #+0]
+   \   00000466   0x0902             LSRS     R2,R0,#+4
+   \   00000468   0x2112             MOVS     R1,#+18
+   \                     ??API007Data__CommandParser_32: (+1)
+   \   0000046A   0x2007             MOVS     R0,#+7
+   \   0000046C   0x.... 0x....      BL       Reveal__QueueMessageU8
+   \   00000470   0x4620             MOV      R0,R4
+   \   00000472   0xB003             ADD      SP,SP,#+12
+   \   00000474   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??API007Data__CommandParser_1: (+1)
+   \   00000478   0x2405             MOVS     R4,#+5
+   \                     ??API007Data__CommandParser_7: (+1)
+   \   0000047A   0x4620             MOV      R0,R4
+   \   0000047C   0xB003             ADD      SP,SP,#+12
+   \   0000047E   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    373          }
+    374          
+    375          //----------------------------------------------------------------------------------------------------------
+    376          /**
+    377           * @brief This method parses feedbacks to the API007Data sent to a broadcast or exclusively to this node.
+    378           * @param buffer contains the Wide package that contains the message
+    379           */
+
+   \                                 In section .text, align 4, keep-with-next
+    380          void API007Data__FeedbackParser(REVEAL_MSG_TYPE * buffer)
+    381          {
+   \                     API007Data__FeedbackParser: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0xB081             SUB      SP,SP,#+4
+    382              SF_ID_TYPE sf_id;
+    383              #if (API007DATA_BULK_DATA_FEATURE == ENABLED)
+    384              uint8 * data;
+    385              data = buffer->payload;
+    386              #endif
+    387          
+    388              switch (buffer->op_code)
+   \   00000006   0x7920             LDRB     R0,[R4, #+4]
+   \   00000008   0xF000 0x001F      AND      R0,R0,#0x1F
+   \   0000000C   0x1D65             ADDS     R5,R4,#+5
+   \   0000000E   0x1F40             SUBS     R0,R0,#+5
+   \   00000010   0x281A             CMP      R0,#+26
+   \   00000012   0xF200 0x80B2      BHI.W    ??API007Data__FeedbackParser_1
+   \   00000016   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??API007Data__FeedbackParser_0:
+   \   0000001A   0x0E 0x17          DC8      0xE,0x17,0xB0,0xB0
+   \              0xB0 0xB0    
+   \   0000001E   0x31 0xB0          DC8      0x31,0xB0,0x38,0x50
+   \              0x38 0x50    
+   \   00000022   0xB0 0xB0          DC8      0xB0,0xB0,0xB0,0xB0
+   \              0xB0 0xB0    
+   \   00000026   0xB0 0xB0          DC8      0xB0,0xB0,0x5A,0x6F
+   \              0x5A 0x6F    
+   \   0000002A   0x80 0x99          DC8      0x80,0x99,0xB0,0xB0
+   \              0xB0 0xB0    
+   \   0000002E   0xB0 0xB0          DC8      0xB0,0xB0,0xB0,0xB0
+   \              0xB0 0xB0    
+   \   00000032   0xB0 0xB0          DC8      0xB0,0xB0,0x28,0x0
+   \              0x28 0x00    
+    389              {
+    390                  #if (API007DATA_BULK_DATA_FEATURE == ENABLED)
+    391                      case API007_OP_SEGMENT_LIST:
+    392                          //Write received list of segment ID's for this node.
+    393                          API007BulkDataMgr__WriteSegmentList(buffer->node_id,&buffer->payload[0],buffer->sdu_length);
+   \                     ??API007Data__FeedbackParser_2: (+1)
+   \   00000036   0x7862             LDRB     R2,[R4, #+1]
+   \   00000038   0x7820             LDRB     R0,[R4, #+0]
+   \   0000003A   0x4629             MOV      R1,R5
+   \   0000003C   0xB001             ADD      SP,SP,#+4
+   \   0000003E   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000042   0x0900             LSRS     R0,R0,#+4
+   \   00000044   0x.... 0x....      B.W      API007BulkDataMgr__WriteSegmentList
+    394                          break;
+    395          
+    396                      case API007_OP_SEGMENT_INFO:
+    397                          //DATA[0]               - API007APP_SEGMENT_ID
+    398                          //DATA[1] - DATA[2]     - Segment Size
+    399                          //DATA[3]               - API007_SEGMENT_ROLE_TYPE
+    400                          //DATA[4] - DATA[5]     - CRC
+    401          
+    402                          //Write received segment detailed info for this node.
+    403                          API007BulkDataMgr__WriteDetailInfo(buffer->node_id, (API007APP_SEGMENT_ID)data[0], (API007_SEGMENT_ROLE_TYPE)data[3], Utilities__ConvertArrayTo16bits(&data[1]), Utilities__ConvertArrayTo16bits(&data[4]));
+   \                     ??API007Data__FeedbackParser_3: (+1)
+   \   00000048   0x1D28             ADDS     R0,R5,#+4
+   \   0000004A   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   0000004E   0x4606             MOV      R6,R0
+   \   00000050   0x1C68             ADDS     R0,R5,#+1
+   \   00000052   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000056   0x9600             STR      R6,[SP, #+0]
+   \   00000058   0x4603             MOV      R3,R0
+   \   0000005A   0x7820             LDRB     R0,[R4, #+0]
+   \   0000005C   0x78EA             LDRB     R2,[R5, #+3]
+   \   0000005E   0x7829             LDRB     R1,[R5, #+0]
+   \   00000060   0x0900             LSRS     R0,R0,#+4
+   \   00000062   0x.... 0x....      BL       API007BulkDataMgr__WriteDetailInfo
+    404                          break;
+    405          
+    406                      case API007_OP_ERROR:
+    407                          //Write received Error type for this node.
+    408                          API007BulkDataMgr__WriteErrorType(buffer->node_id, (API007APP_SEGMENT_ID)data[0], (API007DATA_ERROR_TYPE)data[1]);
+    409                          break;
+    410          
+    411                      case API007_OP_CLIENT_WRITE_COMPLETE:
+    412                          //Write received Error type for this node.
+    413                          API007BulkDataMgr__AckWriteComplete(buffer->node_id);
+    414                          break;
+    415                  #endif //API007DATA_BULK_DATA_FEATURE
+    416          
+    417                  case API007_OP_REQ_PUB_SETTING_FILE_INFO:
+    418                          sf_id = SF_ID_END;
+    419          
+    420                          // uint16 Section CRC
+    421                          // uint32 Section Size
+    422                          if (buffer->node_id == WIN_UI_ADDRESS)
+    423                          {
+    424                              sf_id = SF_ID_HMI;
+    425                          }
+    426                          else if (buffer->node_id == WIN_ACU_ADDRESS)
+    427                          {
+    428                              sf_id = SF_ID_ACU;
+    429                          }
+    430                          else if (buffer->node_id == WIN_MCU_ADDRESS)
+    431                          {
+    432                              sf_id = SF_ID_MCU;
+    433                          }
+    434          
+    435                          if (sf_id != SF_ID_END)
+    436                          {
+    437                              SFUpdater__RxSFInfo(buffer->node_id, sf_id, Utilities__ConvertArrayTo16bits(buffer->payload), (uint16)Utilities__ConvertArrayTo32bits(&buffer->payload[2]));
+    438                          }
+    439                      break;
+    440          
+    441                  case API007_OP_REQ_PUB_SETTING_FILE_DATA:
+    442                      SFUpdater__RxSFData(buffer->node_id,buffer->size-4, (uint16)Utilities__ConvertArrayTo32bits(buffer->payload), &buffer->payload[4]);
+    443                      break;
+    444          
+    445          
+    446                  case API007_OP_REQ_PUB_SETTING_FILE_ID_INFO:
+    447                      /*
+    448                       * Data[0]   - SF_ID
+    449                       * Data[1-2] - SF_ID_Crc
+    450                       * Data[3-4] - SF_ID_Size
+    451                       */
+    452          			#if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    453                  		SettingFile_Info_Received = TRUE;
+    454          			#endif
+    455          
+    456                      SFUpdater__RxSFInfo(buffer->node_id, (SF_ID_TYPE)buffer->payload[0], Utilities__ConvertArrayTo16bits(&buffer->payload[1]), Utilities__ConvertArrayTo16bits(&buffer->payload[3]));
+    457                      break;
+    458          
+    459                  case API007_OP_REQ_PUB_SETTING_FILE_ID_DATA:
+    460                      /*
+    461                       * Data[0]   - SF_ID
+    462                       * Data[1-2] - Data_Index
+    463                       * Data[3]   - Data[Data_Index]
+    464                       */
+    465                      SFUpdater__RxSFData(buffer->node_id, buffer->size-3, Utilities__ConvertArrayTo16bits(&buffer->payload[1]), &buffer->payload[3]);
+    466                      break;
+    467          
+    468                  case API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO:
+    469                      /*
+    470                       * Data[0-1] - SF_POINTER_ID
+    471                       * Data[2-3] - SF_Displacement
+    472                       * Data[4-5] - Displacement CRC
+    473                       * Data[6-7] - Displacement Size
+    474                       */
+    475          
+    476                  	#if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+    477          				#if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+                 				     ^
+Remark[Pe193]: zero used for undefined preprocessing identifier
+          "SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH"
+    478                  			SettingFile_Info_Received = TRUE;
+    479          				#endif
+    480          			#endif
+    481          
+    482                      SFUpdater__RxSFDisplacementInfo((SETTINGFILE_OFFSET_TYPE)Utilities__ConvertArrayTo16bits(&buffer->payload[0]), Utilities__ConvertArrayTo16bits(&buffer->payload[2]), Utilities__ConvertArrayTo16bits(&buffer->payload[4]), Utilities__ConvertArrayTo16bits(&buffer->payload[6]));
+    483                      break;
+    484          
+    485                  case API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA:
+    486                      /*
+    487                       * Data[0-1] - SF_POINTER_ID
+    488                       * Data[2-3] - SF_DISPLACEMENT
+    489                       * Data[4-5] - Data_Index
+    490                       * Data[6-Size]   - Data[0]
+    491                       */
+    492                      SFUpdater__RxSFDisplacementData((SETTINGFILE_OFFSET_TYPE)Utilities__ConvertArrayTo16bits(&buffer->payload[0]), Utilities__ConvertArrayTo16bits(&buffer->payload[2]), Utilities__ConvertArrayTo16bits(&buffer->payload[4]), buffer->size - 6, &buffer->payload[6]);
+    493                      break;
+    494          
+    495                  default:
+    496                      break;
+    497              }
+    498          }
+   \   00000066   0xB001             ADD      SP,SP,#+4
+   \   00000068   0xBDF0             POP      {R4-R7,PC}
+   \                     ??API007Data__FeedbackParser_4: (+1)
+   \   0000006A   0x786A             LDRB     R2,[R5, #+1]
+   \   0000006C   0x7829             LDRB     R1,[R5, #+0]
+   \   0000006E   0x7820             LDRB     R0,[R4, #+0]
+   \   00000070   0xB001             ADD      SP,SP,#+4
+   \   00000072   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000076   0x0900             LSRS     R0,R0,#+4
+   \   00000078   0x.... 0x....      B.W      API007BulkDataMgr__WriteErrorType
+   \                     ??API007Data__FeedbackParser_5: (+1)
+   \   0000007C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000007E   0xB001             ADD      SP,SP,#+4
+   \   00000080   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000084   0x0900             LSRS     R0,R0,#+4
+   \   00000086   0x.... 0x....      B.W      API007BulkDataMgr__AckWriteComplete
+   \                     ??API007Data__FeedbackParser_6: (+1)
+   \   0000008A   0x7820             LDRB     R0,[R4, #+0]
+   \   0000008C   0x0900             LSRS     R0,R0,#+4
+   \   0000008E   0x2804             CMP      R0,#+4
+   \   00000090   0xBF08             IT       EQ 
+   \   00000092   0x2601             MOVEQ    R6,#+1
+   \   00000094   0xD006             BEQ.N    ??API007Data__FeedbackParser_7
+   \   00000096   0x2801             CMP      R0,#+1
+   \   00000098   0xBF08             IT       EQ 
+   \   0000009A   0x2600             MOVEQ    R6,#+0
+   \   0000009C   0xD002             BEQ.N    ??API007Data__FeedbackParser_7
+   \   0000009E   0x2800             CMP      R0,#+0
+   \   000000A0   0xD16B             BNE.N    ??API007Data__FeedbackParser_1
+   \   000000A2   0x2602             MOVS     R6,#+2
+   \                     ??API007Data__FeedbackParser_7: (+1)
+   \   000000A4   0x1DE0             ADDS     R0,R4,#+7
+   \   000000A6   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   000000AA   0x4607             MOV      R7,R0
+   \   000000AC   0x4628             MOV      R0,R5
+   \   000000AE   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   000000B2   0x4602             MOV      R2,R0
+   \   000000B4   0xB2BB             UXTH     R3,R7
+   \   000000B6   0x4631             MOV      R1,R6
+   \   000000B8   0xE017             B.N      ??API007Data__FeedbackParser_8
+   \                     ??API007Data__FeedbackParser_9: (+1)
+   \   000000BA   0x4628             MOV      R0,R5
+   \   000000BC   0x.... 0x....      BL       Utilities__ConvertArrayTo32bits
+   \   000000C0   0xB282             UXTH     R2,R0
+   \   000000C2   0xF894 0x0048      LDRB     R0,[R4, #+72]
+   \   000000C6   0xF104 0x0309      ADD      R3,R4,#+9
+   \   000000CA   0x1F01             SUBS     R1,R0,#+4
+   \   000000CC   0xE01D             B.N      ??API007Data__FeedbackParser_10
+   \                     ??API007Data__FeedbackParser_11: (+1)
+   \   000000CE   0x....             LDR.N    R1,??DataTable2
+   \   000000D0   0x2001             MOVS     R0,#+1
+   \   000000D2   0x7008             STRB     R0,[R1, #+0]
+   \   000000D4   0xF104 0x0008      ADD      R0,R4,#+8
+   \   000000D8   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   000000DC   0x4605             MOV      R5,R0
+   \   000000DE   0x1DA0             ADDS     R0,R4,#+6
+   \   000000E0   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   000000E4   0x7961             LDRB     R1,[R4, #+5]
+   \   000000E6   0x462B             MOV      R3,R5
+   \   000000E8   0x4602             MOV      R2,R0
+   \                     ??API007Data__FeedbackParser_8: (+1)
+   \   000000EA   0x7820             LDRB     R0,[R4, #+0]
+   \   000000EC   0xB001             ADD      SP,SP,#+4
+   \   000000EE   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   000000F2   0x0900             LSRS     R0,R0,#+4
+   \   000000F4   0x.... 0x....      B.W      SFUpdater__RxSFInfo
+   \                     ??API007Data__FeedbackParser_12: (+1)
+   \   000000F8   0x1DA0             ADDS     R0,R4,#+6
+   \   000000FA   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   000000FE   0x4602             MOV      R2,R0
+   \   00000100   0xF894 0x0048      LDRB     R0,[R4, #+72]
+   \   00000104   0xF104 0x0308      ADD      R3,R4,#+8
+   \   00000108   0x1EC1             SUBS     R1,R0,#+3
+   \                     ??API007Data__FeedbackParser_10: (+1)
+   \   0000010A   0x7820             LDRB     R0,[R4, #+0]
+   \   0000010C   0xB001             ADD      SP,SP,#+4
+   \   0000010E   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000112   0xB2C9             UXTB     R1,R1
+   \   00000114   0x0900             LSRS     R0,R0,#+4
+   \   00000116   0x.... 0x....      B.W      SFUpdater__RxSFData
+   \                     ??API007Data__FeedbackParser_13: (+1)
+   \   0000011A   0xF104 0x000B      ADD      R0,R4,#+11
+   \   0000011E   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000122   0x4606             MOV      R6,R0
+   \   00000124   0xF104 0x0009      ADD      R0,R4,#+9
+   \   00000128   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   0000012C   0x4607             MOV      R7,R0
+   \   0000012E   0x1DE0             ADDS     R0,R4,#+7
+   \   00000130   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000134   0x4604             MOV      R4,R0
+   \   00000136   0x4628             MOV      R0,R5
+   \   00000138   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   0000013C   0xB2F3             UXTB     R3,R6
+   \   0000013E   0x463A             MOV      R2,R7
+   \   00000140   0x4621             MOV      R1,R4
+   \   00000142   0xB001             ADD      SP,SP,#+4
+   \   00000144   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000148   0x.... 0x....      B.W      SFUpdater__RxSFDisplacementInfo
+   \                     ??API007Data__FeedbackParser_14: (+1)
+   \   0000014C   0xF104 0x0009      ADD      R0,R4,#+9
+   \   00000150   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000154   0x4606             MOV      R6,R0
+   \   00000156   0x1DE0             ADDS     R0,R4,#+7
+   \   00000158   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   0000015C   0x4607             MOV      R7,R0
+   \   0000015E   0x4628             MOV      R0,R5
+   \   00000160   0x.... 0x....      BL       Utilities__ConvertArrayTo16bits
+   \   00000164   0xF104 0x010B      ADD      R1,R4,#+11
+   \   00000168   0x9100             STR      R1,[SP, #+0]
+   \   0000016A   0x4632             MOV      R2,R6
+   \   0000016C   0xF894 0x1048      LDRB     R1,[R4, #+72]
+   \   00000170   0x1F8B             SUBS     R3,R1,#+6
+   \   00000172   0xB2DB             UXTB     R3,R3
+   \   00000174   0x4639             MOV      R1,R7
+   \   00000176   0x.... 0x....      BL       SFUpdater__RxSFDisplacementData
+   \                     ??API007Data__FeedbackParser_1: (+1)
+   \   0000017A   0xB001             ADD      SP,SP,#+4
+   \   0000017C   0xBDF0             POP      {R4-R7,PC}       ;; return
+    499          
+    500          
+    501          //----------------------------------------------------------------------------------------------------------
+    502          /**
+    503           * @brief This method handles call backs from Reveal when and ACK is received for this API
+    504           * @param address
+    505           * @param api
+    506           * @param opcode
+    507           * @param reasoncode
+    508           */
+
+   \                                 In section .text, align 2, keep-with-next
+    509          void API007Data__AckParser(uint8 address ,uint8 api ,uint8 opcode ,REVEAL_RECIPE_STATUS_TYPE reasoncode )
+                                                  ^
+Remark[Pe826]: parameter "address" was never referenced
+
+  void API007Data__AckParser(uint8 address ,uint8 api ,uint8 opcode ,REVEAL_RECIPE_STATUS_TYPE reasoncode )
+                                                  ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API007Data\API007Data.c",509  Remark[Pe826]: 
+          parameter "api" was never referenced
+
+  void API007Data__AckParser(uint8 address ,uint8 api ,uint8 opcode ,REVEAL_RECIPE_STATUS_TYPE reasoncode )
+                                                             ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API007Data\API007Data.c",509  Remark[Pe826]: 
+          parameter "opcode" was never referenced
+    510          {
+    511              switch (reasoncode)
+    512              {
+    513                  case NVO_RS_READY:
+    514                      break;
+    515                  case NVO_RS_BUSY:
+    516                      break;
+    517                  case NVO_RS_REJECTED:
+    518                      break;
+    519                      //...
+    520                  default:
+    521                      break;
+    522              }
+    523          }
+   \                     API007Data__AckParser: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    524          
+    525          //---------------------------------------------------------------------------------------------------------------------
+    526          /**
+    527           *
+    528           * @param address
+    529           * @return
+    530           */
+
+   \                                 In section .text, align 2, keep-with-next
+    531          BOOL_TYPE API007Data__RequestSettingFileInfo(uint8 address)
+    532          {
+   \                     API007Data__RequestSettingFileInfo: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0x4604             MOV      R4,R0
+   \   00000004   0xB081             SUB      SP,SP,#+4
+    533              REVEAL_COMMAND_TYPE * ptr;
+    534              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    535                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_INFO,address,1);
+   \   00000006   0x2301             MOVS     R3,#+1
+   \   00000008   0x4622             MOV      R2,R4
+   \   0000000A   0x210B             MOVS     R1,#+11
+   \   0000000C   0x2007             MOVS     R0,#+7
+   \   0000000E   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000012   0x0005             MOVS     R5,R0
+    536              #else
+    537                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_INFO,address,1);
+    538              #endif
+    539              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000014   0xD00B             BEQ.N    ??API007Data__RequestSettingFileInfo_0
+    540              {
+    541                  if (address == WIN_UI_ADDRESS)
+   \   00000016   0x2C04             CMP      R4,#+4
+   \   00000018   0xBF0C             ITE      EQ 
+    542                  {
+    543                      Reveal__AddDataU8(ptr, SF_ID_HMI);
+   \   0000001A   0x2101             MOVEQ    R1,#+1
+    544                  }
+    545                  else
+    546                  {
+    547                      Reveal__AddDataU8(ptr, SF_ID_MCU);
+   \   0000001C   0x2102             MOVNE    R1,#+2
+   \   0000001E   0x.... 0x....      BL       Reveal__AddDataU8
+    548                  }
+    549          
+    550                  Reveal__QueueCommand(ptr);
+   \   00000022   0x4628             MOV      R0,R5
+   \   00000024   0x.... 0x....      BL       Reveal__QueueCommand
+    551                  return (TRUE);
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0xB001             ADD      SP,SP,#+4
+   \   0000002C   0xBD30             POP      {R4,R5,PC}
+    552              }
+    553              else
+    554              {
+    555                  return (FALSE);
+   \                     ??API007Data__RequestSettingFileInfo_0: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0xB001             ADD      SP,SP,#+4
+   \   00000032   0xBD30             POP      {R4,R5,PC}       ;; return
+    556              }
+    557          }
+    558          
+    559          //---------------------------------------------------------------------------------------------------------------------
+    560          /**
+    561           * @details
+    562           * @param address
+    563           * @param section
+    564           * @return
+    565           */
+
+   \                                 In section .text, align 2, keep-with-next
+    566          BOOL_TYPE API007Data__RequestSettingFileIDInfo(uint8 address, SF_ID_TYPE sf_id)
+    567          {
+   \                     API007Data__RequestSettingFileIDInfo: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x460C             MOV      R4,R1
+    568              REVEAL_COMMAND_TYPE * ptr;
+    569              BOOL_TYPE result;
+    570          
+    571              result = FALSE;
+   \   00000004   0x2500             MOVS     R5,#+0
+    572          
+    573              if (sf_id != SF_ID_END)
+   \   00000006   0x2CFF             CMP      R4,#+255
+   \   00000008   0xD00E             BEQ.N    ??API007Data__RequestSettingFileIDInfo_0
+    574              {
+    575                  #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    576                      ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_INFO,address,1);
+   \   0000000A   0x4602             MOV      R2,R0
+   \   0000000C   0x2301             MOVS     R3,#+1
+   \   0000000E   0x2113             MOVS     R1,#+19
+   \   00000010   0x2007             MOVS     R0,#+7
+   \   00000012   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000016   0x0006             MOVS     R6,R0
+    577                  #else
+    578                      ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_INFO, address, 1);
+    579                  #endif
+    580          
+    581                  if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000018   0xD006             BEQ.N    ??API007Data__RequestSettingFileIDInfo_0
+    582                  {
+    583                      Reveal__AddDataU8(ptr, sf_id);
+   \   0000001A   0x4621             MOV      R1,R4
+   \   0000001C   0x.... 0x....      BL       Reveal__AddDataU8
+    584                      Reveal__QueueCommand(ptr);
+   \   00000020   0x4630             MOV      R0,R6
+   \   00000022   0x.... 0x....      BL       Reveal__QueueCommand
+    585                      result = TRUE;
+   \   00000026   0x2501             MOVS     R5,#+1
+    586                  }
+    587              }
+    588          
+    589              return result;
+   \                     ??API007Data__RequestSettingFileIDInfo_0: (+1)
+   \   00000028   0x4628             MOV      R0,R5
+   \   0000002A   0xBD70             POP      {R4-R6,PC}       ;; return
+    590          }
+    591          
+    592          //---------------------------------------------------------------------------------------------------------------------
+    593          /**
+    594           * @details
+    595           * @param address
+    596           * @param sf_id
+    597           * @param index
+    598           * @param size
+    599           * @return
+    600           */
+
+   \                                 In section .text, align 2, keep-with-next
+    601          BOOL_TYPE API007Data__RequestSettingFileIDData(uint8 address, SF_ID_TYPE sf_id, uint16 data_index, uint8 size)
+    602          {
+   \                     API007Data__RequestSettingFileIDData: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0x4615             MOV      R5,R2
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0x461E             MOV      R6,R3
+    603              REVEAL_COMMAND_TYPE * ptr;
+    604              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    605                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_DATA,address,4);
+   \   00000008   0x4602             MOV      R2,R0
+   \   0000000A   0xB081             SUB      SP,SP,#+4
+   \   0000000C   0x2304             MOVS     R3,#+4
+   \   0000000E   0x2114             MOVS     R1,#+20
+   \   00000010   0x2007             MOVS     R0,#+7
+   \   00000012   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000016   0x0007             MOVS     R7,R0
+    606              #else
+    607                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_DATA,address,4);
+    608              #endif
+    609          
+    610              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000018   0xD010             BEQ.N    ??API007Data__RequestSettingFileIDData_0
+    611              {
+    612                  Reveal__AddDataU8(ptr, sf_id);
+   \   0000001A   0x4621             MOV      R1,R4
+   \   0000001C   0x.... 0x....      BL       Reveal__AddDataU8
+    613                  Reveal__AddDataU16(ptr,data_index);
+   \   00000020   0x4629             MOV      R1,R5
+   \   00000022   0x4638             MOV      R0,R7
+   \   00000024   0x.... 0x....      BL       Reveal__AddDataU16
+    614                  Reveal__AddDataU8(ptr,size);
+   \   00000028   0x4631             MOV      R1,R6
+   \   0000002A   0x4638             MOV      R0,R7
+   \   0000002C   0x.... 0x....      BL       Reveal__AddDataU8
+    615                  Reveal__QueueCommand(ptr);
+   \   00000030   0x4638             MOV      R0,R7
+   \   00000032   0x.... 0x....      BL       Reveal__QueueCommand
+    616                  return (TRUE);
+   \   00000036   0x2001             MOVS     R0,#+1
+   \   00000038   0xB001             ADD      SP,SP,#+4
+   \   0000003A   0xBDF0             POP      {R4-R7,PC}
+    617              }
+    618              else
+    619              {
+    620                  return (FALSE);
+   \                     ??API007Data__RequestSettingFileIDData_0: (+1)
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0xB001             ADD      SP,SP,#+4
+   \   00000040   0xBDF0             POP      {R4-R7,PC}       ;; return
+    621              }
+    622          }
+    623          
+    624          
+    625          //---------------------------------------------------------------------------------------------------------------------
+    626          /**
+    627           * @details
+    628           * @param address
+    629           * @param sf_id
+    630           * @param sf_pointer_id
+    631           * @return
+    632           */
+
+   \                                 In section .text, align 2, keep-with-next
+    633          BOOL_TYPE API007Data__RequestSettingFileDisplacementInfo(uint8 address, SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement)
+    634          {
+   \                     API007Data__RequestSettingFileDisplacementInfo: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0x4615             MOV      R5,R2
+   \   00000004   0x460C             MOV      R4,R1
+    635              REVEAL_COMMAND_TYPE * ptr;
+    636              BOOL_TYPE result;
+    637          
+    638              result = FALSE;
+    639          
+    640              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    641                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO,address,4);
+   \   00000006   0x4602             MOV      R2,R0
+   \   00000008   0xB081             SUB      SP,SP,#+4
+   \   0000000A   0x2600             MOVS     R6,#+0
+   \   0000000C   0x2304             MOVS     R3,#+4
+   \   0000000E   0x2115             MOVS     R1,#+21
+   \   00000010   0x2007             MOVS     R0,#+7
+   \   00000012   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000016   0x0007             MOVS     R7,R0
+    642              #else
+    643                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO, address, 4);
+    644              #endif
+    645          
+    646              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000018   0xD00A             BEQ.N    ??API007Data__RequestSettingFileDisplacementInf_0
+    647              {
+    648                  Reveal__AddDataU16(ptr, sf_pointer_id);
+   \   0000001A   0x4621             MOV      R1,R4
+   \   0000001C   0x.... 0x....      BL       Reveal__AddDataU16
+    649                  Reveal__AddDataU16(ptr, sf_displacement);
+   \   00000020   0x4629             MOV      R1,R5
+   \   00000022   0x4638             MOV      R0,R7
+   \   00000024   0x.... 0x....      BL       Reveal__AddDataU16
+    650          
+    651                  Reveal__QueueCommand(ptr);
+   \   00000028   0x4638             MOV      R0,R7
+   \   0000002A   0x.... 0x....      BL       Reveal__QueueCommand
+    652                  result = TRUE;
+   \   0000002E   0x2601             MOVS     R6,#+1
+    653              }
+    654          
+    655              return result;
+   \                     ??API007Data__RequestSettingFileDisplacementInf_0: (+1)
+   \   00000030   0x4630             MOV      R0,R6
+   \   00000032   0xB001             ADD      SP,SP,#+4
+   \   00000034   0xBDF0             POP      {R4-R7,PC}       ;; return
+    656          }
+    657          
+    658          //---------------------------------------------------------------------------------------------------------------------
+    659          /**
+    660           * @details
+    661           * @param address
+    662           * @param sf_pointer_id
+    663           * @param displacement
+    664           * @param index
+    665           * @param size
+    666           * @return
+    667           */
+
+   \                                 In section .text, align 2, keep-with-next
+    668          BOOL_TYPE API007Data__RequestSettingFileDisplacementData(uint8 address, SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement, uint16 data_index, uint8 size)
+    669          {
+   \                     API007Data__RequestSettingFileDisplacementData: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0x4615             MOV      R5,R2
+   \   00000004   0x460C             MOV      R4,R1
+   \   00000006   0x461E             MOV      R6,R3
+    670              REVEAL_COMMAND_TYPE * ptr;
+    671              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    672                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA,address,7);
+   \   00000008   0x4602             MOV      R2,R0
+   \   0000000A   0xB081             SUB      SP,SP,#+4
+   \   0000000C   0x2307             MOVS     R3,#+7
+   \   0000000E   0x2116             MOVS     R1,#+22
+   \   00000010   0x2007             MOVS     R0,#+7
+   \   00000012   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000016   0x0007             MOVS     R7,R0
+    673              #else
+    674                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA,address,7);
+    675              #endif
+    676          
+    677              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000018   0xD014             BEQ.N    ??API007Data__RequestSettingFileDisplacementDat_0
+    678              {
+    679                  Reveal__AddDataU16(ptr, sf_pointer_id);
+   \   0000001A   0x4621             MOV      R1,R4
+   \   0000001C   0x.... 0x....      BL       Reveal__AddDataU16
+    680                  Reveal__AddDataU16(ptr, sf_displacement);
+   \   00000020   0x4629             MOV      R1,R5
+   \   00000022   0x4638             MOV      R0,R7
+   \   00000024   0x.... 0x....      BL       Reveal__AddDataU16
+    681                  Reveal__AddDataU16(ptr,data_index);
+   \   00000028   0x4631             MOV      R1,R6
+   \   0000002A   0x4638             MOV      R0,R7
+   \   0000002C   0x.... 0x....      BL       Reveal__AddDataU16
+    682                  Reveal__AddDataU8(ptr,size);
+   \   00000030   0x9906             LDR      R1,[SP, #+24]
+   \   00000032   0x4638             MOV      R0,R7
+   \   00000034   0x.... 0x....      BL       Reveal__AddDataU8
+    683                  Reveal__QueueCommand(ptr);
+   \   00000038   0x4638             MOV      R0,R7
+   \   0000003A   0x.... 0x....      BL       Reveal__QueueCommand
+    684                  return (TRUE);
+   \   0000003E   0x2001             MOVS     R0,#+1
+   \   00000040   0xB001             ADD      SP,SP,#+4
+   \   00000042   0xBDF0             POP      {R4-R7,PC}
+    685              }
+    686              else
+    687              {
+    688                  return (FALSE);
+   \                     ??API007Data__RequestSettingFileDisplacementDat_0: (+1)
+   \   00000044   0x2000             MOVS     R0,#+0
+   \   00000046   0xB001             ADD      SP,SP,#+4
+   \   00000048   0xBDF0             POP      {R4-R7,PC}       ;; return
+    689              }
+    690          }
+    691          //---------------------------------------------------------------------------------------------------------------------
+    692          /**
+    693           *
+    694           * @param address
+    695           * @param index
+    696           * @param size
+    697           * @return
+    698           */
+
+   \                                 In section .text, align 2, keep-with-next
+    699          BOOL_TYPE API007Data__RequestSettingData(uint8 address,uint32 data_index, uint8 size)
+    700          {
+   \                     API007Data__RequestSettingData: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4615             MOV      R5,R2
+   \   00000004   0x460C             MOV      R4,R1
+    701              REVEAL_COMMAND_TYPE * ptr;
+    702              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    703                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DATA,address,5);
+   \   00000006   0x4602             MOV      R2,R0
+   \   00000008   0x2305             MOVS     R3,#+5
+   \   0000000A   0x210C             MOVS     R1,#+12
+   \   0000000C   0x2007             MOVS     R0,#+7
+   \   0000000E   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000012   0x0006             MOVS     R6,R0
+    704              #else
+    705                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DATA,address,5);
+    706              #endif
+    707              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000014   0xD00B             BEQ.N    ??API007Data__RequestSettingData_0
+    708              {
+    709                  Reveal__AddDataU32(ptr,data_index);
+   \   00000016   0x4621             MOV      R1,R4
+   \   00000018   0x.... 0x....      BL       Reveal__AddDataU32
+    710                  Reveal__AddDataU8(ptr,size);
+   \   0000001C   0x4629             MOV      R1,R5
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0x.... 0x....      BL       Reveal__AddDataU8
+    711                  Reveal__QueueCommand(ptr);
+   \   00000024   0x4630             MOV      R0,R6
+   \   00000026   0x.... 0x....      BL       Reveal__QueueCommand
+    712                  return (TRUE);
+   \   0000002A   0x2001             MOVS     R0,#+1
+   \   0000002C   0xBD70             POP      {R4-R6,PC}
+    713              }
+    714              else
+    715              {
+    716                  return (FALSE);
+   \                     ??API007Data__RequestSettingData_0: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0xBD70             POP      {R4-R6,PC}       ;; return
+    717              }
+    718          }
+    719          
+    720          
+    721          #if (API007DATA_BULK_DATA_FEATURE == ENABLED)
+    722          
+    723          //----------------------------------------------------------------------------------------------------------
+    724          /**
+    725           * @brief This method send the request of list of segments to receiver node.
+    726           * @param address receiver.
+    727           * @return BOOL_TYPE ret_val that express the result of function.
+    728           */
+
+   \                                 In section .text, align 2, keep-with-next
+    729          BOOL_TYPE API007__RequestSegmentsList(uint8 address)
+    730          {
+   \                     API007__RequestSegmentsList: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    731              BOOL_TYPE ret_val = FALSE;
+    732          
+    733              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    734                  REVEAL_COMMAND_TYPE *ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_SEGMENT_LIST,address, 0);
+   \   00000002   0x4602             MOV      R2,R0
+   \   00000004   0x2400             MOVS     R4,#+0
+   \   00000006   0x2300             MOVS     R3,#+0
+   \   00000008   0x2105             MOVS     R1,#+5
+   \   0000000A   0x2007             MOVS     R0,#+7
+   \   0000000C   0x.... 0x....      BL       Reveal__PriorityNewCommand
+    735              #else
+    736                  REVEAL_COMMAND_TYPE *ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_SEGMENT_LIST,address, 0);
+    737              #endif
+    738          
+    739              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000010   0xB110             CBZ.N    R0,??API007__RequestSegmentsList_0
+    740              {
+    741                  ret_val = (BOOL_TYPE)Reveal__QueueCommand(ptr);
+   \   00000012   0x.... 0x....      BL       Reveal__QueueCommand
+   \   00000016   0x4604             MOV      R4,R0
+    742              }
+    743          
+    744              return (ret_val);
+   \                     ??API007__RequestSegmentsList_0: (+1)
+   \   00000018   0x4620             MOV      R0,R4
+   \   0000001A   0xBD10             POP      {R4,PC}          ;; return
+    745          }
+    746          
+    747          //----------------------------------------------------------------------------------------------------------
+    748          /**
+    749           * @brief This method send the request of segments informations to receiver Node.
+    750           * @param address receiver, segment identification of segment requested.
+    751           * @return BOOL_TYPE ret_val that express the result of function.
+    752           */
+
+   \                                 In section .text, align 2, keep-with-next
+    753          BOOL_TYPE API007__RequestInfoSegment(uint8 address, uint8 segment)
+    754          {
+   \                     API007__RequestInfoSegment: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x460C             MOV      R4,R1
+    755              BOOL_TYPE ret_val = FALSE;
+    756          
+    757              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    758                  REVEAL_COMMAND_TYPE * ptr  = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_SEGMENT_INFO,address, 1);
+   \   00000004   0x4602             MOV      R2,R0
+   \   00000006   0x2500             MOVS     R5,#+0
+   \   00000008   0x2301             MOVS     R3,#+1
+   \   0000000A   0x2106             MOVS     R1,#+6
+   \   0000000C   0x2007             MOVS     R0,#+7
+   \   0000000E   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000012   0x0006             MOVS     R6,R0
+    759              #else
+    760                  REVEAL_COMMAND_TYPE * ptr  = Reveal__NewCommand(API007DATA_NUM, API007_OP_SEGMENT_INFO,address, 1);
+    761              #endif
+    762          
+    763              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000014   0xD008             BEQ.N    ??API007__RequestInfoSegment_0
+    764              {
+    765                  ret_val = (BOOL_TYPE)Reveal__AddDataU8(ptr, segment);
+   \   00000016   0x4621             MOV      R1,R4
+   \   00000018   0x.... 0x....      BL       Reveal__AddDataU8
+   \   0000001C   0x4604             MOV      R4,R0
+    766                  ret_val &= (BOOL_TYPE)Reveal__QueueCommand(ptr);
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0x.... 0x....      BL       Reveal__QueueCommand
+   \   00000024   0xEA00 0x0504      AND      R5,R0,R4
+    767              }
+    768          
+    769              return (ret_val);
+   \                     ??API007__RequestInfoSegment_0: (+1)
+   \   00000028   0x4628             MOV      R0,R5
+   \   0000002A   0xBD70             POP      {R4-R6,PC}       ;; return
+    770          }
+    771          
+    772          //----------------------------------------------------------------------------------------------------------
+    773          /**
+    774           * @brief This method send the request of data to receiver node.
+    775           * @param node receiver, segment identification of segment requested.
+    776           * @return BOOL_TYPE ret_val that express the result of function.
+    777           */
+
+   \                                 In section .text, align 2, keep-with-next
+    778          BOOL_TYPE API007__RequestGetDataSegment(uint8 address, uint8 segment)
+    779          {
+   \                     API007__RequestGetDataSegment: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x460C             MOV      R4,R1
+    780              BOOL_TYPE ret_val = FALSE;
+    781          
+    782              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    783                  REVEAL_COMMAND_TYPE * ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_GET_SEGMENT_ALL_DATA,address, 1);
+   \   00000004   0x4602             MOV      R2,R0
+   \   00000006   0x2500             MOVS     R5,#+0
+   \   00000008   0x2301             MOVS     R3,#+1
+   \   0000000A   0x2108             MOVS     R1,#+8
+   \   0000000C   0x2007             MOVS     R0,#+7
+   \   0000000E   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   00000012   0x0006             MOVS     R6,R0
+    784              #else
+    785                  REVEAL_COMMAND_TYPE * ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_GET_SEGMENT_ALL_DATA,address, 1);
+    786              #endif
+    787          
+    788              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000014   0xD008             BEQ.N    ??API007__RequestGetDataSegment_0
+    789              {
+    790                  ret_val = (BOOL_TYPE)Reveal__AddDataU8(ptr, segment);
+   \   00000016   0x4621             MOV      R1,R4
+   \   00000018   0x.... 0x....      BL       Reveal__AddDataU8
+   \   0000001C   0x4604             MOV      R4,R0
+    791                  ret_val &= (BOOL_TYPE)Reveal__QueueCommand(ptr);
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0x.... 0x....      BL       Reveal__QueueCommand
+   \   00000024   0xEA00 0x0504      AND      R5,R0,R4
+    792              }
+    793          
+    794              return (ret_val);
+   \                     ??API007__RequestGetDataSegment_0: (+1)
+   \   00000028   0x4628             MOV      R0,R5
+   \   0000002A   0xBD70             POP      {R4-R6,PC}       ;; return
+    795          }
+    796          
+    797          //----------------------------------------------------------------------------------------------------------
+    798          /**
+    799           * @brief Publish segment data to the external node for requested segment ID.
+    800           * @param address    Node address who send data.
+    801           * @param segment    Segment ID for a single logical block of data.
+    802           * @param index      Index identify which part of the data belongs to segment.
+    803           * @param data       Pointer to the data source.
+    804           * @param size       Size of the data source.
+    805           * @return
+    806           */
+
+   \                                 In section .text, align 2, keep-with-next
+    807          BOOL_TYPE API007Data__PublishSegmentData(uint8 address,uint8 segment, uint16 index, uint8 * data, uint8 size)
+    808          {
+   \                     API007Data__PublishSegmentData: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0xB081             SUB      SP,SP,#+4
+   \   00000006   0x4616             MOV      R6,R2
+    809              REVEAL_COMMAND_TYPE * ptr;
+    810              BOOL_TYPE ret_value = FALSE;
+   \   00000008   0x9C08             LDR      R4,[SP, #+32]
+   \   0000000A   0x4698             MOV      R8,R3
+   \   0000000C   0x460D             MOV      R5,R1
+    811          
+    812              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    813                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_SEND_SEGMENT_DATA, address, (size+3));
+   \   0000000E   0x1CE3             ADDS     R3,R4,#+3
+   \   00000010   0x4602             MOV      R2,R0
+   \   00000012   0x2700             MOVS     R7,#+0
+   \   00000014   0xB2DB             UXTB     R3,R3
+   \   00000016   0x2107             MOVS     R1,#+7
+   \   00000018   0x2007             MOVS     R0,#+7
+   \   0000001A   0x.... 0x....      BL       Reveal__PriorityNewCommand
+   \   0000001E   0xEA5F 0x0900      MOVS     R9,R0
+    814              #else
+    815                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_SEND_SEGMENT_DATA, address, (size+3));
+    816              #endif
+    817          
+    818              if (ptr !=(REVEAL_COMMAND_TYPE *) NULL)
+   \   00000022   0xD00F             BEQ.N    ??API007Data__PublishSegmentData_0
+    819              {
+    820                  Reveal__AddDataU8(ptr, segment);
+   \   00000024   0x4629             MOV      R1,R5
+   \   00000026   0x.... 0x....      BL       Reveal__AddDataU8
+    821                  Reveal__AddDataU16(ptr, index);
+   \   0000002A   0x4631             MOV      R1,R6
+   \   0000002C   0x4648             MOV      R0,R9
+   \   0000002E   0x.... 0x....      BL       Reveal__AddDataU16
+    822                  Reveal__AddDataU8Buffer(ptr, data, size);
+   \   00000032   0x4622             MOV      R2,R4
+   \   00000034   0x4641             MOV      R1,R8
+   \   00000036   0x4648             MOV      R0,R9
+   \   00000038   0x.... 0x....      BL       Reveal__AddDataU8Buffer
+    823          
+    824                  Reveal__QueueCommand(ptr);
+   \   0000003C   0x4648             MOV      R0,R9
+   \   0000003E   0x.... 0x....      BL       Reveal__QueueCommand
+    825          
+    826                  ret_value = TRUE;
+   \   00000042   0x2701             MOVS     R7,#+1
+    827              }
+    828          
+    829              return ret_value;
+   \                     ??API007Data__PublishSegmentData_0: (+1)
+   \   00000044   0x4638             MOV      R0,R7
+   \   00000046   0xB001             ADD      SP,SP,#+4
+   \   00000048   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    830          }
+    831          
+    832          //---------------------------------------------------------------------------------------------------------------------
+    833          /**
+    834           * @brief Send command End of transmission for to the external node.
+    835           * @param address   Node address who send data
+    836           */
+
+   \                                 In section .text, align 2, keep-with-next
+    837          void API007Data__SendTransmissionComplete(uint8 address)
+    838          {
+   \                     API007Data__SendTransmissionComplete: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+    839              REVEAL_COMMAND_TYPE * ptr;
+    840              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    841                  ptr = Reveal__PriorityNewCommand(API007DATA_NUM, API007_OP_SERVER_TRANSMISSION_COMPLETE,address,0);
+   \   00000002   0x4602             MOV      R2,R0
+   \   00000004   0xB081             SUB      SP,SP,#+4
+   \   00000006   0x2300             MOVS     R3,#+0
+   \   00000008   0x210A             MOVS     R1,#+10
+   \   0000000A   0x2007             MOVS     R0,#+7
+   \   0000000C   0x.... 0x....      BL       Reveal__PriorityNewCommand
+    842              #else
+    843                  ptr = Reveal__NewCommand(API007DATA_NUM, API007_OP_SERVER_TRANSMISSION_COMPLETE,address,0);
+    844              #endif
+    845              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000010   0xB120             CBZ.N    R0,??API007Data__SendTransmissionComplete_0
+    846              {
+    847                  Reveal__QueueCommand(ptr);
+   \   00000012   0xB001             ADD      SP,SP,#+4
+   \   00000014   0xF85D 0xEB04      POP      {LR}
+   \   00000018   0x.... 0x....      B.W      Reveal__QueueCommand
+    848              }
+    849          }
+   \                     ??API007Data__SendTransmissionComplete_0: (+1)
+   \   0000001C   0xB001             ADD      SP,SP,#+4
+   \   0000001E   0xBD00             POP      {PC}             ;; return
+    850          
+    851          //---------------------------------------------------------------------------------------------------------------------
+    852          /**
+    853           * @brief Publish error type to the external node.
+    854           * @param address         Node address who sends data
+    855           * @param segment_id      Segment ID for a single logical block of data.
+    856           * @param error
+    857           */
+
+   \                                 In section .text, align 2, keep-with-next
+    858          void API007Data__SendError(uint8 address ,uint8 segment_id, API007DATA_ERROR_TYPE error)
+    859          {
+   \                     API007Data__SendError: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4615             MOV      R5,R2
+   \   00000004   0x460C             MOV      R4,R1
+    860              REVEAL_COMMAND_TYPE * ptr;
+    861              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    862                  ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_ERROR,address,2);
+   \   00000006   0x4602             MOV      R2,R0
+   \   00000008   0x2302             MOVS     R3,#+2
+   \   0000000A   0x211F             MOVS     R1,#+31
+   \   0000000C   0x2007             MOVS     R0,#+7
+   \   0000000E   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+   \   00000012   0x0006             MOVS     R6,R0
+    863              #else
+    864                  ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_ERROR,address,2);
+    865              #endif
+    866              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000014   0xD00B             BEQ.N    ??API007Data__SendError_0
+    867              {
+    868                  Reveal__AddDataU8(ptr, segment_id);
+   \   00000016   0x4621             MOV      R1,R4
+   \   00000018   0x.... 0x....      BL       Reveal__AddDataU8
+    869                  Reveal__AddDataU8(ptr, error);
+   \   0000001C   0x4629             MOV      R1,R5
+   \   0000001E   0x4630             MOV      R0,R6
+   \   00000020   0x.... 0x....      BL       Reveal__AddDataU8
+    870                  Reveal__QueueCommand(ptr);
+   \   00000024   0x4630             MOV      R0,R6
+   \   00000026   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \   0000002A   0x.... 0x....      B.W      Reveal__QueueCommand
+    871              }
+    872          }
+   \                     ??API007Data__SendError_0: (+1)
+   \   0000002E   0xBD70             POP      {R4-R6,PC}       ;; return
+    873          
+    874          /**
+    875           *
+    876           * @param address
+    877           */
+
+   \                                 In section .text, align 2, keep-with-next
+    878          void API007Data__WriteRequestCompleted(uint8 address)
+    879          {
+   \                     API007Data__WriteRequestCompleted: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+    880              REVEAL_COMMAND_TYPE * ptr;
+    881              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    882                  ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_CLIENT_WRITE_COMPLETE,address,0);
+   \   00000002   0x4602             MOV      R2,R0
+   \   00000004   0xB081             SUB      SP,SP,#+4
+   \   00000006   0x2300             MOVS     R3,#+0
+   \   00000008   0x2109             MOVS     R1,#+9
+   \   0000000A   0x2007             MOVS     R0,#+7
+   \   0000000C   0x.... 0x....      BL       Reveal__PriorityNewFeedback
+    883              #else
+    884                  ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_CLIENT_WRITE_COMPLETE,address,0);
+    885              #endif
+    886              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   \   00000010   0xB120             CBZ.N    R0,??API007Data__WriteRequestCompleted_0
+    887              {
+    888                  Reveal__QueueCommand(ptr);
+   \   00000012   0xB001             ADD      SP,SP,#+4
+   \   00000014   0xF85D 0xEB04      POP      {LR}
+   \   00000018   0x.... 0x....      B.W      Reveal__QueueCommand
+    889              }
+    890          }
+   \                     ??API007Data__WriteRequestCompleted_0: (+1)
+   \   0000001C   0xB001             ADD      SP,SP,#+4
+   \   0000001E   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     SettingFile_Info_Received
+    891          
+    892          #endif
+    893          
+    894          
+    895          
+    896          
+    897          //=====================================================================================================================
+    898          //-------------------------------------- Private Functions ------------------------------------------------------------
+    899          //=====================================================================================================================
+    900          
+    901          #if (API007DATA_BULK_DATA_FEATURE == ENABLED)
+    902          //---------------------------------------------------------------------------------------------------------------------
+    903          /**
+    904           * @brief Publish list of segment ID's to the external node.
+    905           * @param address   Node address who send data
+    906           */
+    907          static void PublishSegmentList(uint8 address )
+    908          {
+    909              uint8 index = 0;
+    910              REVEAL_COMMAND_TYPE * ptr = NULL;
+    911              uint8 size = 0;
+    912          
+    913              index = 0;
+    914          
+    915              while (index < sizeof(API007BulkDataMgr__GetSegmentListSize()))
+    916              {
+    917                  if ((API007BulkDataMgr__GetSegmentListSize() - index) > API007DATA_MAX_PAYLOAD)
+    918                  {
+    919                      size = API007DATA_MAX_PAYLOAD;
+    920          
+    921                  }
+    922                  else
+    923                  {
+    924                      size = API007BulkDataMgr__GetSegmentListSize() - index;
+    925                  }
+    926          
+    927          
+    928                  #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    929                  ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_SEGMENT_LIST,address, size);
+    930                  #else
+    931                  ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_SEGMENT_LIST, address, size);
+    932                  #endif
+    933                  if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+    934                  {
+    935                      Reveal__AddDataU8Buffer(ptr, (void *) &(API007BulkDataMgr__GetSegmentList()[index]), size);
+    936          
+    937                      index += size;
+    938          
+    939                      //Check is their required to send more then one messages
+    940                      if ((API007BulkDataMgr__GetSegmentListSize() - index) > 0)
+    941                      {
+    942                          //set the MMP(More message Pending) bit if their are more than one message needs to be send
+    943                          ptr->opcode |= REVEAL_MMP_BIT;
+    944                      }
+    945          
+    946                      Reveal__QueueCommand(ptr);
+    947                  }
+    948                  else
+    949                  {
+    950                      break;
+    951                  }
+    952              }
+    953          }
+    954          
+    955          //---------------------------------------------------------------------------------------------------------------------
+    956          /**
+    957           * @brief Publish segment ID detailed information to the external node for requested segment ID.
+    958           * @param address        Node address who send data.
+    959           * @param segment_id     Segment ID for a single logical block of data.
+    960           */
+    961          static void PublishSegmentInfo(uint8 address, API007APP_SEGMENT_ID segment_id)
+    962          {
+    963              REVEAL_COMMAND_TYPE * ptr;
+    964              API007_SEGMENT_INFO_TYPE * info;
+    965          
+    966              info = API007BulkDataMgr__GetSegmentInfo(segment_id);
+    967          
+    968              if (info == NULL)
+    969              {
+    970                  API007Data__SendError(address, segment_id,API007_ERROR_SEGMENT_NOT_FOUND);
+    971              }
+    972              else
+    973              {
+    974                  #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+    975                      ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_SEGMENT_INFO, address ,6);
+    976                  #else
+    977                      ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_SEGMENT_INFO, address, 6);
+    978                  #endif
+    979                  if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+    980                  {
+    981                      Reveal__AddDataU8(ptr, segment_id);
+    982                      Reveal__AddDataU16(ptr, info->size);
+    983                      Reveal__AddDataU8(ptr, info->segment_role);
+    984                      Reveal__AddDataU16(ptr, info->crc);
+    985                      Reveal__QueueCommand(ptr);
+    986                  }
+    987              }
+    988          }
+    989          
+    990          #endif
+    991          
+    992          
+    993          //---------------------------------------------------------------------------------------------------------------------
+    994          /**
+    995           * @brief Publish the Setting information (ACU Checksum, UI Checksum and Size)
+    996           * @param address
+    997           * @return
+    998           */
+    999          static BOOL_TYPE PublishSettingFileInfo(uint8 address)
+   1000          {
+   1001              BOOL_TYPE retval;
+   1002              REVEAL_COMMAND_TYPE * ptr;
+   1003              retval = FALSE;
+   1004              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+   1005                  ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_INFO, address,20);
+   1006              #else
+   1007                  ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_INFO, address,28);
+   1008              #endif
+   1009              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   1010              {
+   1011                  Reveal__AddDataU16(ptr, SettingFile__GetSettingFileCRC(SF_ID_ACU));
+   1012                  Reveal__AddDataU32(ptr, (uint32)SettingFile__GetSettingFileStart(SF_ID_ACU));   //lint !e923 Suppress Info: cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   1013                  Reveal__AddDataU32(ptr, SettingFile__GetSettingFileSize(SF_ID_ACU));
+   1014                  Reveal__AddDataU16(ptr, SettingFile__GetSettingFileCRC(SF_ID_HMI));
+   1015                  Reveal__AddDataU32(ptr, (uint32)SettingFile__GetSettingFileStart(SF_ID_HMI));   //lint !e923 Suppress Info: cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   1016                  Reveal__AddDataU32(ptr, SettingFile__GetSettingFileSize(SF_ID_HMI));
+   1017          
+   1018                  Reveal__AddDataU32(ptr, (uint32)SettingFile__GetMemorySectionStart());          //lint !e923 Suppress Info: cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   1019                  Reveal__AddDataU32(ptr, SettingFile__GetMemorySectionSize());
+   1020          
+   1021                  Reveal__QueueCommand(ptr);
+   1022                  retval = TRUE;
+   1023              }
+   1024              return (retval);
+   1025          }
+   1026          
+   1027          //---------------------------------------------------------------------------------------------------------------------
+   1028          /**
+   1029           * @details
+   1030           * @param address
+   1031           * @param section
+   1032           * @return
+   1033           */
+   1034          static BOOL_TYPE PublishSettingFileIDInfo(uint8 address, SF_ID_TYPE sf_id)
+   1035          {
+   1036              BOOL_TYPE retval;
+   1037              REVEAL_COMMAND_TYPE * ptr;
+   1038          
+   1039              retval = FALSE;
+   1040          
+   1041              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+   1042                  ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_INFO, address,5);
+   1043              #else
+   1044                  ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_INFO, address,5);
+   1045              #endif
+   1046          
+   1047              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   1048              {
+   1049                  Reveal__AddDataU8(ptr, sf_id);
+   1050                  Reveal__AddDataU16(ptr, SettingFile__GetSettingFileCRC(sf_id));
+   1051                  Reveal__AddDataU16(ptr, (uint16)SettingFile__GetSettingFileSize(sf_id));
+   1052          
+   1053                  Reveal__QueueCommand(ptr);
+   1054                  retval = TRUE;
+   1055              }
+   1056              return (retval);
+   1057          }
+   1058          
+   1059          //---------------------------------------------------------------------------------------------------------------------
+   1060          /**
+   1061           * @details
+   1062           * @param address
+   1063           * @param sf_id
+   1064           * @param index
+   1065           * @param size
+   1066           * @return
+   1067           */
+   1068          static BOOL_TYPE PublishSettingFileIDData(uint8 address, SF_ID_TYPE sf_id, uint16 data_index, uint8 size)
+   1069          {
+   1070              BOOL_TYPE retval = FALSE;
+   1071          
+   1072              void * sf_pointer = SettingFile__GetSettingFilePointerByIndex(sf_id, data_index);
+   1073          
+   1074              if (sf_pointer != NULL)
+   1075              {
+   1076                  if (size > API007DATA_MAX_PAYLOAD - 5)
+   1077                  {
+   1078                      size = API007DATA_MAX_PAYLOAD - 5;
+   1079                  }
+   1080          
+   1081                  #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+   1082                  	REVEAL_COMMAND_TYPE * ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_DATA, address, size+3);
+   1083                  #else
+   1084                  	REVEAL_COMMAND_TYPE * ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_ID_DATA, address, size+3);
+   1085                  #endif
+   1086          
+   1087                  if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   1088                  {
+   1089                      Reveal__AddDataU8(ptr, sf_id);
+   1090                      Reveal__AddDataU16(ptr, data_index);
+   1091                      Reveal__AddDataU8Buffer(ptr,(uint8 *)sf_pointer, size);
+   1092                      Reveal__QueueCommand(ptr);
+   1093                      retval = TRUE;
+   1094                  }
+   1095              }
+   1096              return (retval);
+   1097          }
+   1098          
+   1099          //---------------------------------------------------------------------------------------------------------------------
+   1100          /**
+   1101           * @details
+   1102           * @param address
+   1103           * @param sf_id
+   1104           * @param sf_pointer_id
+   1105           * @return
+   1106           */
+   1107          static BOOL_TYPE PublishSettingFileDisplacementInfo(uint8 address, SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement)
+   1108          {
+   1109              BOOL_TYPE retval;
+   1110              REVEAL_COMMAND_TYPE * ptr;
+   1111              SETTINGFILE_LOADER_TYPE pointer_data_out;
+   1112          
+   1113              retval = FALSE;
+   1114          
+   1115              #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+   1116                  ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO, address,8);
+   1117              #else
+   1118                  ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_INFO, address,8);
+   1119              #endif
+   1120          
+   1121              if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   1122              {
+   1123                  Reveal__AddDataU16(ptr, sf_pointer_id);
+   1124                  Reveal__AddDataU16(ptr, sf_displacement);
+   1125          
+   1126                  if (SettingFile__BasicLoader(sf_pointer_id, sf_displacement, &pointer_data_out) == PASS)
+   1127                  {
+   1128                      Reveal__AddDataU16(ptr, Crc16__ConstRangeProcess(pointer_data_out.Data, 0xFFFF , pointer_data_out.Length));
+   1129                      Reveal__AddDataU16(ptr, pointer_data_out.Length);
+   1130                  }
+   1131                  else
+   1132                  {
+   1133                      Reveal__AddDataU16(ptr, 0);
+   1134                      Reveal__AddDataU16(ptr, 0);
+   1135                  }
+   1136          
+   1137                  Reveal__QueueCommand(ptr);
+   1138                  retval = TRUE;
+   1139              }
+   1140              return (retval);
+   1141          }
+   1142          
+   1143          //---------------------------------------------------------------------------------------------------------------------
+   1144          /**
+   1145           *
+   1146           * @param address
+   1147           * @param sf_pointer_id
+   1148           * @param sf_displacement
+   1149           * @param index
+   1150           * @param size
+   1151           * @return
+   1152           */
+   1153          static BOOL_TYPE PublishSettingFileDisplacementData(uint8 address, SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement, uint16 data_index, uint8 size)
+   1154          {
+   1155              BOOL_TYPE retval = FALSE;
+   1156              SETTINGFILE_LOADER_TYPE pointer_data_out;
+   1157          
+   1158              if (SettingFile__BasicLoader(sf_pointer_id, sf_displacement, &pointer_data_out) == PASS)
+   1159              {
+   1160                  if (size > API007DATA_MAX_PAYLOAD - 6)
+   1161                  {
+   1162                      size = API007DATA_MAX_PAYLOAD - 6;
+   1163                  }
+   1164          
+   1165                  #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+   1166                  	REVEAL_COMMAND_TYPE * ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA, address, size + 6);
+   1167                  #else
+   1168                  	REVEAL_COMMAND_TYPE * ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DISPLACEMENT_DATA, address, size + 6);
+   1169                  #endif
+   1170          
+   1171                  if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   1172                  {
+   1173                      Reveal__AddDataU16(ptr, sf_pointer_id);
+   1174                      Reveal__AddDataU16(ptr, sf_displacement);
+   1175                      Reveal__AddDataU16(ptr, data_index);
+   1176          
+   1177                      Reveal__AddDataU8Buffer(ptr, &pointer_data_out.Data[data_index],size);
+   1178                      Reveal__QueueCommand(ptr);
+   1179                      retval = TRUE;
+   1180                  }
+   1181              }
+   1182          
+   1183              return (retval);
+   1184          }
+   1185          
+   1186          //---------------------------------------------------------------------------------------------------------------------
+   1187          /**
+   1188           *
+   1189           * @param address
+   1190           * @param index
+   1191           * @param size
+   1192           * @return
+   1193           */
+   1194          static BOOL_TYPE PublishUISettingFileData(uint8 address,uint32 index, uint8 size)
+   1195          {
+   1196             BOOL_TYPE retval = FALSE;
+   1197          
+   1198             void * sf_pointer = SettingFile__GetSettingFilePointerByIndex(SF_ID_HMI,index);
+   1199          
+   1200             if (sf_pointer != NULL)
+   1201             {
+   1202          	   if (size > API007DATA_MAX_PAYLOAD - 4)
+   1203          	   {
+   1204          	       size = API007DATA_MAX_PAYLOAD - 4;
+   1205          	   }
+   1206          	   #if (API007DATA_USE_PRIORITY_QUEUE == ENABLED)
+   1207          	   	   REVEAL_COMMAND_TYPE * ptr = Reveal__PriorityNewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DATA, address,size+4);
+   1208          	   #else
+   1209          	   	   REVEAL_COMMAND_TYPE * ptr = Reveal__NewFeedback(API007DATA_NUM, API007_OP_REQ_PUB_SETTING_FILE_DATA, address,size+4);
+   1210          	   #endif
+   1211          
+   1212          	   if (ptr != (REVEAL_COMMAND_TYPE *) NULL)
+   1213          	   {
+   1214          	       Reveal__AddDataU32(ptr, index);
+   1215          	       Reveal__AddDataU8Buffer(ptr, (uint8 *)sf_pointer, size);
+   1216          	       Reveal__QueueCommand(ptr);
+   1217          	       retval = TRUE;
+   1218          	   }
+   1219             }
+   1220             return (retval);
+   1221          }
+   1222          
+   1223          //---------------------------------------------------------------------------------------------------------------------
+   1224          /**
+   1225           * @brief This function Request for the Setting File information for the board which have SETTINGFILE_MASTER_FILE_FEATURE is DISABLED
+   1226           * @details
+   1227           *
+   1228           */
+   1229          #if (SETTINGFILE_MASTER_FILE_FEATURE == DISABLED)
+   1230          static void RequestSFInfo(void)
+   1231          {
+   1232          	#ifdef SFUPDATER_ACU_SECTION_ID
+   1233          		API007Data__RequestSettingFileIDInfo(WIN_ACU_ADDRESS, SFUPDATER_ACU_SECTION_ID);
+   1234          	#endif
+   1235          	#ifdef SFUPDATER_HMI_SECTION_ID
+   1236          		API007Data__RequestSettingFileIDInfo(WIN_ACU_ADDRESS, SFUPDATER_HMI_SECTION_ID);
+   1237          	#endif
+   1238          	#ifdef SFUPDATER_MCU_SECTION_ID
+   1239          		API007Data__RequestSettingFileIDInfo(WIN_ACU_ADDRESS, SFUPDATER_MCU_SECTION_ID);
+   1240          	#endif
+   1241          
+   1242          	SFUpdater__ValidateFlashDisplacementData();
+   1243          	SettingFile_Info_Timer = API007DATA_SETTINGFILE_INFO_TIMEOUT_MS / COMMUNICATION_THREAD_CALL_RATE_MS;
+   1244          }
+   1245          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   API007Data__AckParser
+      40   API007Data__CommandParser
+        40   -> API007BulkDataMgr__GetSegmentData
+        40   -> API007BulkDataMgr__GetSegmentInfo
+        40   -> API007BulkDataMgr__GetSegmentList
+        40   -> API007BulkDataMgr__GetSegmentListSize
+        40   -> API007BulkDataMgr__ReceivedTransmissionCompleted
+        40   -> API007BulkDataMgr__ReceivedWriteCompleted
+        40   -> API007BulkDataMgr__WriteSegmentData
+        40   -> Crc16__ConstRangeProcess
+        40   -> Flash__Format
+        40   -> Flash__Write
+        40   -> Mode__IsProgrammingEngaged
+        40   -> Reveal__AddDataU16
+        40   -> Reveal__AddDataU32
+        40   -> Reveal__AddDataU8
+        40   -> Reveal__AddDataU8Buffer
+        40   -> Reveal__PriorityNewCommand
+        40   -> Reveal__PriorityNewFeedback
+        40   -> Reveal__QueueCommand
+        40   -> Reveal__QueueMessageU8
+        40   -> SettingFile__BasicLoader
+        40   -> SettingFile__GetMemorySectionSize
+        40   -> SettingFile__GetMemorySectionStart
+        40   -> SettingFile__GetSettingFileCRC
+        40   -> SettingFile__GetSettingFilePointerByIndex
+        40   -> SettingFile__GetSettingFileSize
+        40   -> SettingFile__GetSettingFileStart
+        40   -> Utilities__ConvertArrayTo16bits
+        40   -> Utilities__ConvertArrayTo24bits
+        40   -> Utilities__ConvertArrayTo32bits
+        40   -> Utilities__Merg2BytesTo16bits
+        40   -> __aeabi_memcpy
+      24   API007Data__FeedbackParser
+         0   -> API007BulkDataMgr__AckWriteComplete
+        24   -> API007BulkDataMgr__WriteDetailInfo
+         0   -> API007BulkDataMgr__WriteErrorType
+         0   -> API007BulkDataMgr__WriteSegmentList
+         0   -> SFUpdater__RxSFData
+        24   -> SFUpdater__RxSFDisplacementData
+         0   -> SFUpdater__RxSFDisplacementInfo
+         0   -> SFUpdater__RxSFInfo
+        24   -> Utilities__ConvertArrayTo16bits
+        24   -> Utilities__ConvertArrayTo32bits
+      16   API007Data__Handler
+        16   -> API007BulkDataMgr__Handler
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__GetNodestatus
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+        16   -> SFUpdater__ValidateFlashDisplacementData
+      16   API007Data__Initialize
+         0   -> API007BulkDataMgr__Initialize
+        16   -> Flash__Initialize
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+        16   -> SFUpdater__ValidateFlashDisplacementData
+      32   API007Data__PublishSegmentData
+        32   -> Reveal__AddDataU16
+        32   -> Reveal__AddDataU8
+        32   -> Reveal__AddDataU8Buffer
+        32   -> Reveal__PriorityNewCommand
+        32   -> Reveal__QueueCommand
+      16   API007Data__RequestSettingData
+        16   -> Reveal__AddDataU32
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+      24   API007Data__RequestSettingFileDisplacementData
+        24   -> Reveal__AddDataU16
+        24   -> Reveal__AddDataU8
+        24   -> Reveal__PriorityNewCommand
+        24   -> Reveal__QueueCommand
+      24   API007Data__RequestSettingFileDisplacementInfo
+        24   -> Reveal__AddDataU16
+        24   -> Reveal__PriorityNewCommand
+        24   -> Reveal__QueueCommand
+      24   API007Data__RequestSettingFileIDData
+        24   -> Reveal__AddDataU16
+        24   -> Reveal__AddDataU8
+        24   -> Reveal__PriorityNewCommand
+        24   -> Reveal__QueueCommand
+      16   API007Data__RequestSettingFileIDInfo
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+      16   API007Data__RequestSettingFileInfo
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+      16   API007Data__SendError
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewFeedback
+         0   -> Reveal__QueueCommand
+       8   API007Data__SendTransmissionComplete
+         8   -> Reveal__PriorityNewCommand
+         0   -> Reveal__QueueCommand
+       8   API007Data__WriteRequestCompleted
+         8   -> Reveal__PriorityNewFeedback
+         0   -> Reveal__QueueCommand
+      16   API007__RequestGetDataSegment
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+      16   API007__RequestInfoSegment
+        16   -> Reveal__AddDataU8
+        16   -> Reveal__PriorityNewCommand
+        16   -> Reveal__QueueCommand
+       8   API007__RequestSegmentsList
+         8   -> Reveal__PriorityNewCommand
+         8   -> Reveal__QueueCommand
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       2  API007Data__AckParser
+    1154  API007Data__CommandParser
+     382  API007Data__FeedbackParser
+      72  API007Data__Handler
+      62  API007Data__Initialize
+      76  API007Data__PublishSegmentData
+      50  API007Data__RequestSettingData
+      74  API007Data__RequestSettingFileDisplacementData
+      54  API007Data__RequestSettingFileDisplacementInfo
+      66  API007Data__RequestSettingFileIDData
+      44  API007Data__RequestSettingFileIDInfo
+      52  API007Data__RequestSettingFileInfo
+      48  API007Data__SendError
+      32  API007Data__SendTransmissionComplete
+      32  API007Data__WriteRequestCompleted
+      44  API007__RequestGetDataSegment
+      44  API007__RequestInfoSegment
+      28  API007__RequestSegmentsList
+       4  SettingFile_Info_Received
+          SettingFile_Info_Timer
+
+ 
+     4 bytes in section .bss
+ 2 320 bytes in section .text
+ 
+ 2 320 bytes of CODE memory
+     4 bytes of DATA memory
+
+Errors: none
+Warnings: none

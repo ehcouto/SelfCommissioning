@@ -1,0 +1,150 @@
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 1
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 2
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Sc_IAmpl = 1.981262445449829
+Sc_VAmpl = 13.62704849243164
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 1
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 13.74639892578125
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 11.738984107971191
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 10.493128776550293
+Sc_IAmpl = 2.0289413928985596
+Sc_VAmpl = 12.7402982711792
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 12.777267456054688
+Sc_IAmpl = 2.0088939666748047
+Sc_VAmpl = 12.782393455505371
+Sc_IAmpl = 2.0289413928985596
+Sc_VAmpl = 13.306629180908203
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 12.326825141906738
+Sc_IAmpl = 2.0209219455718994
+Sc_VAmpl = 12.76826286315918
+Rs[0] = 6.279747734223847
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Step 1
+Voltage: 37.777778
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 2
+Voltage: 45.555556
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 3
+Voltage: 53.333333
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 4
+Voltage: 61.111111
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 5
+Voltage: 68.888889
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 6
+Voltage: 76.666667
+Frequency: 300.000000
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 7
+Voltage: 84.444444
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 8
+Voltage: 92.222222
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 9
+Voltage: 100.000000
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 0
+Speed: 1000.000000
+Error while writing tuple: (Sc_Master_Cmd_Force,)
+Retries: 1
+Error while writing tuple: (Sc_Master_Cmd_Force,)
+Retries: 1
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Step 1
+Speed: 1333.333333
+Error while writing tuple: (Sc_Master_Cmd_Speed,)
+Retries: 1
+Error while reading tuple: (Sc_IO_Data.Speed_Rot_Ref,)
+Retries: 1
+Step 2
+Speed: 1666.666667
+Step 3
+Speed: 2000.000000
+Step 4
+Speed: 2333.333333
+Error while reading tuple: (Sc_IO_Data.Speed_Rot_Ref,)
+Retries: 1
+Error while writing tuple: (Sc_Master_Cmd_Force,)
+Retries: 1
+Step 5
+Speed: 2666.666667
+Error while writing tuple: (Sc_Master_Cmd_Force,)
+Retries: 1
+Step 6
+Speed: 3000.000000
+Step 7
+Speed: 3333.333333
+Error while reading tuple: (Sc_IO_Data.Speed_Rot_Ref,)
+Retries: 1
+Step 8
+Speed: 3666.666667
+Error while writing tuple: (Sc_Master_Cmd_Speed,)
+Retries: 1
+Step 9
+Speed: 4000.000000

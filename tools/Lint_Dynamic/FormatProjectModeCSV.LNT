@@ -1,0 +1,10 @@
+// Format of the output
+
+
+-v
+-width(0,0)
+-hF1
+-"format=%f,Line %l,Error %n,%m"
+
+
+

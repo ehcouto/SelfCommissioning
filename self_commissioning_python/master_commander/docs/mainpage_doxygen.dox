@@ -1,0 +1,157 @@
+/*! @mainpage Master&Commander Documentation
+* 
+* @tableofcontents
+*
+* @section intro_sec 1. Introduction
+* 
+* This is the documentation of Master&Commander, the vendor-independent communication tool. \n
+* Master&Commander is a serial communication protocol developed with the purpose to allow efficient 
+* read and write access to the RAM variables of a target MCU.
+*
+* The tool is composed by two parts: 
+*
+* - The MCU C code which runs on the target microcontroller. Currently supported platforms are Freescale
+* DSC 56F827xx, Renesas RX62T, NXP KV3x;
+* - The Python code which runs on the PC allowing easy integration with custom applications.
+*
+* The Python code itself is made by two files:
+* 
+* - <c> master_commander.py </c>: This is the core script of Master&Commander, which defines the MasterCommander class.
+* - <c> dwarf_parser.py </c>: It is used by the MasterCommander class in order to allow the user to read and write RAM variables
+* by simply writing the variable names. See the @ref basic_usage "Basic Usage" section for a simple example on how this can be 
+* accomplished.
+* 
+*
+* @section sw_requirements 2. SW Requirements
+*
+* The communication scripts are written in <b> Python v. 2.7 </b>. \n
+* You can download the correct version of Python from @ref <a href="https://www.python.org/downloads/"> here</a>. \n
+* 
+* 
+* @section hw_requirements 3. HW Requirements
+* 
+* The HW communication standard used is RS232, so it is needed a serial connection between the PC and the target MCU. \n
+* If you use a serial to USB converter, make sure that the drivers are correctly installed on the O.S. and take note of the COM port number. \n
+* Before starting the communication you also need to know the baud rate setting of the target MCU.
+*
+* @section basic_usage 4. Basic Usage
+*
+* This section shows a simple example on how to use the Master&Commander Python module in order to read and write variables
+* from and to the target MCU RAM.
+*
+* First copy the master_commander.py and dwarf_parser.py files to the directory in which your script will be run. \n
+* Then create the new empty script and copy the following code:
+* 
+* ~~~~~~~~~~~~~{.py}
+* from master_commander import *
+*   
+* # First we specify the Architecture of the target MCU
+* arch = EnumArch.FREESCALE_DSC
+*   
+* # Create the DwarfParser object
+* sym = dwarf_parser.DwarfParser('./56F82748_Build.elf')
+*   
+* # Define the serial communication settings
+* comport = 10
+* baudrate = 115200
+*   
+* # Create the MasterCommander object with the specified settings
+* mc = MasterCommander(comport, baudrate, 0.2, arch, 35)
+*   
+* # Write example
+* sym.f_activate.value = 1
+* mc.write_var(sym.f_activate)
+*   
+* # Read example
+* mc.read_var(sym.counter)
+* print(sym.counter.value) 
+*
+* # Multiple write example
+* sym.inputs.f16A.value = 1
+* sym.inputs.f16B.value = 2
+* sym.inputs.f16C.value = 3
+* mc.write_multiple((sym.inputs.f16A, sym.inputs.f16B, sym.inputs.f16C))
+* sym.f_activate.value = 1
+* mc.write_var(sym.f_activate)
+*
+* # Multiple read example
+* mc.read_multiple((sym.outputs.f16Alpha, sym.outputs.f16Beta))
+* print(sym.f16Alpha.value)
+* print(sym.f16Beta.value)
+* ~~~~~~~~~~~~~
+* 
+* After importing the master_commander.py module, you need to specify the architecture of the target MCU. The supported architectures
+* are defined in the EnumArch enumeration class.
+*
+*      arch = EnumArch.FREESCALE_DSC
+* 
+* In this example we want to communicate with a Freescale DSC processor. 
+* 
+* The following line creates an instance of the @c sym object. 
+* 
+*      sym = dwarf_parser.DwarfParser('./56F82748_Build.elf')
+* 
+* The DwarfParser constructor is used, which only needs the relative path
+* of the ELF file (with DWARF debug info included, of course) loaded on the target MCU. If everything is OK, the @c sym object has a map
+* of the variables which are loaded on the target's RAM. See the @ref dwarf_parser::DwarfParser "DwarfParser" documentation for more information.
+*
+* The following two lines define the settings which will be used to insance the serial communication.
+*
+*      comport = 10
+*      baudrate = 115200
+*
+* In the example we want to communicate with a target processor having a baud rate setting of 115200 baud per second and the COM port
+* number is 10, corresponding to Windows COM11. In general, if COMx is the COM port name, you should assign (x - 1) to the variable 
+* comport.
+* 
+* The next line creates the MasterCommander object. 
+*
+*      mc = MasterCommander(comport, baudrate, 0.2, arch, 35)
+*
+* As can be seen, we need to specify the COM port number and the baud rate that will be used. Then we specify the time out of the serial
+* read operation, which can be safely set to 0.2 (corresponding to 200 milliseconds) and the @c arch variable previously created. The last
+* parameter that we need to specify is the size of the microcontroller receiving buffer. A typical value is 35.
+*
+* The following two lines of code show how to write a value to a variable in the MCU RAM. 
+*
+*      sym.f_activate.value = 1
+*      mc.write_var(sym.f_activate)
+*
+* Here we want to write to the @c f_activate variable. Thanks to the dwarf_parser.py module you don't need to worry about the variable type.
+* Just assign the value to write to the @c value field of the dwarf_parser::Symbol object, then call the write_var method passing the symbol
+* you want to write. It is also possible to assign all the values of a structure's fields with a single write request packet. See @ref 
+* master_commander::MasterCommander "MasterCommander" documentation for more information about this.
+*
+* The following lines show how to read and print a variable value from the MCU RAM. 
+*
+*      mc.read_var(sym.counter)
+*      print(sym.counter.value) 
+*
+* The use of the @c read_var method is very similar to the @c write_var. Just pass the symbol to the method, without worrying about the size and
+* type of it. The method build the packet and sends the request to the MCU. The value is used to populate the @c value field of the symbol.
+* It is possible to read an entire structure just passing the structure name to the method. It will try to populate all the field's values.
+*
+* The latest API introduces the multiple read and write requests. These methods try to compute the optimum number of read or write packet requests.
+* The following lines show how to use the read_multi_sparse method:
+*
+*      sym.inputs.f16A.value = 1
+*      sym.inputs.f16B.value = 2
+*      sym.inputs.f16C.value = 3
+*      mc.write_multi_sparse((sym.inputs.f16A, sym.inputs.f16B, sym.inputs.f16C))
+*      sym.f_activate.value = 1
+*      mc.write_var(sym.f_activate)	
+* 
+* After writing the @c value fields of the variables that you want to write (it doesn't have to belong to the same C structure), you provide the
+* symbols to the write_multiple method as a tuple. So it works in a very similar way as write_var. \n 
+* Note that you can also pass a single variable, but it has to be in the form of a tuple (e.g. (sym.var,)). \n  
+*
+* Then we use the read_multi_sparse method to perform a high-level read request, as shown below:
+*
+*      mc.read_multi_sparse((sym.outputs.f16Alpha, sym.outputs.f16Beta))
+*      print(sym.f16Alpha.value)
+*      print(sym.f16Beta.value)
+*
+* read_multi_sparse accepts a arbitrary number of variables to read from the MCU RAM. They must be packed as a tuple, just like the write_multi_sparse method.
+* The method populates the @c value fields of the provided symbols.
+*
+*/

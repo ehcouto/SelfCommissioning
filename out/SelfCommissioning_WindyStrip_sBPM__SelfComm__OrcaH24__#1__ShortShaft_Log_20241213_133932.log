@@ -1,0 +1,20 @@
+Waiting for reset...
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+Error while reading tuple: (SR_Motor_Flags,)
+Retries: 1
+Error while reading tuple: (SR_Motor_Flags,)
+Retries: 2
+Error while reading tuple: (SR_Motor_Flags,)
+Retries: 3
+Error while reading tuple: (SR_Motor_Flags,)
+Retries: 4
+Error while reading tuple: (SR_Motor_Flags,)
+Retries: 5

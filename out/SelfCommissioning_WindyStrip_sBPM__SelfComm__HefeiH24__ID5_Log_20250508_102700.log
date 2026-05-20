@@ -1,0 +1,100 @@
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 1
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 2
+Step 0
+Current: 3.500000
+Frequency: 0.000000
+Sc_IAmpl = 3.5129940509796143
+Sc_VAmpl = 6.5928239822387695
+Sc_IAmpl = 3.4725680351257324
+Sc_VAmpl = 12.27391242980957
+Sc_IAmpl = 3.5125577449798584
+Sc_VAmpl = 12.907267570495605
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 1
+Sc_IAmpl = 3.5085458755493164
+Sc_VAmpl = 12.384092330932617
+Sc_IAmpl = 3.4965155124664307
+Sc_VAmpl = 13.657405853271484
+Sc_IAmpl = 3.5085458755493164
+Sc_VAmpl = 13.17092227935791
+Sc_IAmpl = 3.456421136856079
+Sc_VAmpl = 13.372945785522461
+Sc_IAmpl = 3.4804766178131104
+Sc_VAmpl = 11.599617958068848
+Sc_IAmpl = 3.5085458755493164
+Sc_VAmpl = 12.928430557250977
+Sc_IAmpl = 3.5085458755493164
+Sc_VAmpl = 11.620043754577637
+Rs[0] = 3.017454602954264
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Step 1
+Voltage: 38.888889
+Frequency: 300.000000
+Step 2
+Voltage: 47.777778
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 3
+Voltage: 56.666667
+Frequency: 300.000000
+Step 4
+Voltage: 65.555556
+Frequency: 300.000000
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 5
+Voltage: 74.444444
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 6
+Voltage: 83.333333
+Frequency: 300.000000
+Step 7
+Voltage: 92.222222
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 8
+Voltage: 101.111111
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 9
+Voltage: 110.000000
+Frequency: 300.000000
+Step 0
+Speed: 1000.000000
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Zero value for OmegaEst found! Discarding...
+Zero value for Bemf_Ampl found! Discarding...
+Step 1
+Speed: 1333.333333

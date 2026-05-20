@@ -1,0 +1,573 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:24
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\ClrkPark\ClrkPark.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o ClrkPark.obj -l
+#        ..\listings\ClrkPark.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\ClrkPark\ClrkPark.c
+#    List file    =  ..\listings\ClrkPark.lst
+#    Object file  =  ClrkPark.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\ClrkPark\ClrkPark.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      Basic description of file contents
+      5           *
+      6           *  @details    Direct and Inverse Clark and Park Transformation functions using MathCalc that works for the Fixed Point and floating point version.
+      7           *
+      8           *  @section    Applicable_Documents
+      9           *					List here all the applicable documents if needed. <tr>
+     10           *
+     11           *  $Header: $
+     12           *
+     13           *  @copyright  Copyright 2015-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     14           */
+     15          //---------------------------------------------------------------------------------------------------------------------
+     16          //---------------------------------------------------------------------------------------------------------------------
+     17          
+     18          //-------------------------------------- Include Files ----------------------------------------------------------------
+     19          
+     20          
+     21          #include "ClrkPark.h"
+     22          #include "McMathCalc_macros.h"
+     23          
+     24          
+     25          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     26          
+     27          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     28          
+     29          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     30          
+     31          //=====================================================================================================================
+     32          //-------------------------------------- Public Functions -------------------------------------------------------------
+     33          //=====================================================================================================================
+     34          
+     35          
+     36          
+     37          //---------------------------------------------------------------------------------------------------------------------
+     38          /**
+     39           *  @brief      Calculate Clarke transforms.
+     40           *
+     41           *  @details   Clarke transformation is given by:
+     42           *   \f[
+     43           *      \begin{align}
+     44           *         & out_{\alpha} = in_a - \frac{in_a + in_b + in_c}{3} \\
+     45           *         & out_{\beta} = \frac{in_b - in_c}{\sqrt{3}} \\
+     46           *         & out_0 = \frac{in_a + in_b + in_c}{3}
+     47           *      \end{align}
+     48           *    \f]
+     49           *
+     50           *  @param[in]  input   = a-b-c components
+     51           *  @param[out] output  = alpha-beta-zero components
+     52           *
+     53           */
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void ClrkPark__DirectClarke(ABC_COOR_SYST_TYPE *input , ALPHA_BETA_COOR_SYST_TYPE *output)
+     55          {
+     56          	output->ZeroSequence = MC_MULT((input->A + input->B + input->C) , MC_ONE_OVER_THREE, IQ15, IQ15, IQ15);
+   \                     ClrkPark__DirectClarke: (+1)
+   \   00000000   0x6802             LDR      R2,[R0, #+0]
+   \   00000002   0x6843             LDR      R3,[R0, #+4]
+   \   00000004   0x189A             ADDS     R2,R3,R2
+   \   00000006   0x6883             LDR      R3,[R0, #+8]
+   \   00000008   0x189A             ADDS     R2,R3,R2
+   \   0000000A   0xF642 0x23AB      MOVW     R3,#+10923
+   \   0000000E   0x435A             MULS     R2,R2,R3
+   \   00000010   0x13D2             ASRS     R2,R2,#+15
+   \   00000012   0x600A             STR      R2,[R1, #+0]
+     57          	output->Alpha = input->A - output->ZeroSequence;
+   \   00000014   0x6803             LDR      R3,[R0, #+0]
+   \   00000016   0x1A9A             SUBS     R2,R3,R2
+   \   00000018   0x604A             STR      R2,[R1, #+4]
+     58          	output->Beta = MC_MULT((input->B - input->C), MC_SQRT3_INV, IQ15, IQ15, IQ15);
+   \   0000001A   0x6842             LDR      R2,[R0, #+4]
+   \   0000001C   0x6880             LDR      R0,[R0, #+8]
+   \   0000001E   0x1A10             SUBS     R0,R2,R0
+   \   00000020   0xF644 0x12E7      MOVW     R2,#+18919
+   \   00000024   0x4350             MULS     R0,R0,R2
+   \   00000026   0x13C0             ASRS     R0,R0,#+15
+   \   00000028   0x6088             STR      R0,[R1, #+8]
+     59          }
+   \   0000002A   0x4770             BX       LR               ;; return
+     60          
+     61          
+     62          
+     63          /**
+     64           *  @brief      Calculate Inverse Clarke transforms.
+     65           *
+     66           *  @details  Inverse Clarke transformation is given by:
+     67           *
+     68           *     \f[
+     69           *         \begin{aligned}
+     70           *          & out_a = in_{\alpha} + in_0 \\
+     71           *          & out_b = -\frac{in_{\alpha}}{2} + \frac{in_{\beta}  \cdot \sqrt(3)}{2} + in_0 \\
+     72           *          & out_c = -\frac{in_{\alpha}}{2} - \frac{in_{\beta}  \cdot \sqrt(3)}{2} + in_0
+     73           *         \end{aligned}
+     74           *     \f]
+     75           *
+     76           *  @param[in]    input     = alpha-beta-zero components
+     77           *  @param[out]   output    = a-b-c components
+     78           *
+     79           */
+
+   \                                 In section .text, align 2, keep-with-next
+     80          void ClrkPark__InverseClarke(ALPHA_BETA_COOR_SYST_TYPE *input, ABC_COOR_SYST_TYPE *output)
+     81          {
+     82              output->A = input->Alpha+input->ZeroSequence;
+   \                     ClrkPark__InverseClarke: (+1)
+   \   00000000   0x6842             LDR      R2,[R0, #+4]
+   \   00000002   0x6803             LDR      R3,[R0, #+0]
+   \   00000004   0x189A             ADDS     R2,R3,R2
+   \   00000006   0x600A             STR      R2,[R1, #+0]
+     83              output->B = (-input->Alpha*MC_ONE_OVER_TWO + MC_SQRT3_OVER_TWO * input->Beta);
+   \   00000008   0xF646 0x62DA      MOVW     R2,#+28378
+   \   0000000C   0x6843             LDR      R3,[R0, #+4]
+   \   0000000E   0xF8D0 0xC008      LDR      R12,[R0, #+8]
+   \   00000012   0x425B             RSBS     R3,R3,#+0
+   \   00000014   0x039B             LSLS     R3,R3,#+14
+   \   00000016   0xFB02 0x330C      MLA      R3,R2,R12,R3
+   \   0000001A   0x604B             STR      R3,[R1, #+4]
+     84              output->B = MC_SCALE(output->B, IQ30, IQ15)+input->ZeroSequence ; //No Effect in floating point
+   \   0000001C   0xF8D0 0xC000      LDR      R12,[R0, #+0]
+   \   00000020   0xEB0C 0x33E3      ADD      R3,R12,R3, ASR #+15
+   \   00000024   0x604B             STR      R3,[R1, #+4]
+     85              output->C = (-input->Alpha*MC_ONE_OVER_TWO - MC_SQRT3_OVER_TWO * input->Beta);
+   \   00000026   0x6843             LDR      R3,[R0, #+4]
+   \   00000028   0xF8D0 0xC008      LDR      R12,[R0, #+8]
+   \   0000002C   0x425B             RSBS     R3,R3,#+0
+   \   0000002E   0x039B             LSLS     R3,R3,#+14
+   \   00000030   0xFB02 0x321C      MLS      R2,R2,R12,R3
+   \   00000034   0x608A             STR      R2,[R1, #+8]
+     86              output->C = MC_SCALE(output->C, IQ30, IQ15)+input->ZeroSequence ; //No Effect in floating point
+   \   00000036   0x6800             LDR      R0,[R0, #+0]
+   \   00000038   0xEB00 0x30E2      ADD      R0,R0,R2, ASR #+15
+   \   0000003C   0x6088             STR      R0,[R1, #+8]
+     87          }
+   \   0000003E   0x4770             BX       LR               ;; return
+     88          
+     89          
+     90          
+     91          /**
+     92           *  @brief      Calculate the Direct Park Transformation and phase advance
+     93           *
+     94           *  @details Park transformation is given by:
+     95           *			 \f[
+     96           * 				\begin{aligned}
+     97           * 				& out_d = in_{\alpha} * cos(\theta) + in_{\beta} * sin(\theta) \\
+     98           *     			& out_q = -in_{\alpha} * sin(\theta) + in_{\beta} * cos(\theta) \\
+     99           *     			& out_0 = in_0
+    100           * 				\end{aligned}
+    101           * 			\f]
+    102           *
+    103           *  @param[in]  input   = alpha-beta-zero components
+    104           *  @param[in]  sincos  = sine and cosine rotating reference
+    105           *  @param[out] output  = d-q-zero components
+    106           */
+
+   \                                 In section .text, align 2, keep-with-next
+    107          void ClrkPark__DirectPark(ALPHA_BETA_COOR_SYST_TYPE *input ,DQ_COOR_SYST_TYPE *output ,SIN_COS_TYPE *sincos)
+    108          {
+   \                     ClrkPark__DirectPark: (+1)
+   \   00000000   0xB470             PUSH     {R4-R6}
+    109              mc_sint32 tmpD;
+    110              mc_sint32 tmpQ;
+    111              tmpD = input->Alpha * sincos->Cos + input->Beta * sincos->Sin;
+    112              tmpQ = -input->Alpha * sincos->Sin + input->Beta * sincos->Cos;
+   \   00000002   0x6854             LDR      R4,[R2, #+4]
+   \   00000004   0x6885             LDR      R5,[R0, #+8]
+   \   00000006   0x6843             LDR      R3,[R0, #+4]
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0xFB04 0xF605      MUL      R6,R4,R5
+   \   0000000E   0xFB02 0x6613      MLS      R6,R2,R3,R6
+    113              output->D = MC_SCALE(tmpD, IQ30, IQ15);
+   \   00000012   0x436A             MULS     R2,R2,R5
+   \   00000014   0xFB04 0x2203      MLA      R2,R4,R3,R2
+   \   00000018   0x13D2             ASRS     R2,R2,#+15
+   \   0000001A   0x604A             STR      R2,[R1, #+4]
+    114              output->Q = MC_SCALE(tmpQ, IQ30, IQ15);
+   \   0000001C   0x13F2             ASRS     R2,R6,#+15
+   \   0000001E   0x608A             STR      R2,[R1, #+8]
+    115              output->ZeroSequence =  input->ZeroSequence;
+   \   00000020   0x6800             LDR      R0,[R0, #+0]
+   \   00000022   0x6008             STR      R0,[R1, #+0]
+    116          }
+   \   00000024   0xBC70             POP      {R4-R6}
+   \   00000026   0x4770             BX       LR               ;; return
+    117          
+    118          
+    119          
+    120          /**
+    121           *  @brief      Calculate the Inverse Park Transformation
+    122           *
+    123           *  @details 	Inverse Park Transformation is given by
+    124           *       	\f[
+    125           * 				\begin{aligned}
+    126           * 				& out_{\alpha} = in_d * cos(\theta) - in_q * sin(\theta) \\
+    127           *      		& out_{\beta} = in_d * sin(\theta) + in_q * cos(\theta) \\
+    128           *      		& out_0 = in_0
+    129           * 				\end{aligned}
+    130           * 			\f]
+    131           *  @param[in]  input   = d-q-zero components
+    132           *  @param[in]  sincos  = sine and cosine rotating reference
+    133           *  @param[out] output  = alpha-beta-zero components
+    134           */
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void ClrkPark__InversePark(DQ_COOR_SYST_TYPE *input ,ALPHA_BETA_COOR_SYST_TYPE *output ,SIN_COS_TYPE *sincos)
+    136          {
+   \                     ClrkPark__InversePark: (+1)
+   \   00000000   0xB470             PUSH     {R4-R6}
+    137              mc_sint32 tmpD;
+    138              mc_sint32 tmpQ;
+    139              tmpD = input->D * sincos->Cos - input->Q * sincos->Sin;
+    140              tmpQ = input->D * sincos->Sin + input->Q * sincos->Cos;
+   \   00000002   0x6853             LDR      R3,[R2, #+4]
+   \   00000004   0x6884             LDR      R4,[R0, #+8]
+   \   00000006   0x6845             LDR      R5,[R0, #+4]
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0xFB03 0xF604      MUL      R6,R3,R4
+   \   0000000E   0xFB02 0x6605      MLA      R6,R2,R5,R6
+    141              output->Alpha = MC_SCALE(tmpD, IQ30, IQ15);
+   \   00000012   0x436B             MULS     R3,R3,R5
+   \   00000014   0xFB02 0x3214      MLS      R2,R2,R4,R3
+   \   00000018   0x13D2             ASRS     R2,R2,#+15
+   \   0000001A   0x604A             STR      R2,[R1, #+4]
+    142              output->Beta = MC_SCALE(tmpQ, IQ30, IQ15);
+   \   0000001C   0x13F2             ASRS     R2,R6,#+15
+   \   0000001E   0x608A             STR      R2,[R1, #+8]
+    143              output->ZeroSequence =  input->ZeroSequence;
+   \   00000020   0x6800             LDR      R0,[R0, #+0]
+   \   00000022   0x6008             STR      R0,[R1, #+0]
+    144          }
+   \   00000024   0xBC70             POP      {R4-R6}
+   \   00000026   0x4770             BX       LR               ;; return
+    145          
+    146          
+    147          //---------------------------------------------------------------------------------------------------------------------
+    148          /**
+    149           *  @brief      Calculate Clarke transforms.
+    150           *
+    151           *  @details   Clarke transformation is given by:
+    152           *   \f[
+    153           *      \begin{align}
+    154           *         & out_{\alpha} = in_a - \frac{in_a + in_b + in_c}{3} \\
+    155           *         & out_{\beta} = \frac{in_b - in_c}{\sqrt{3}} \\
+    156           *         & out_0 = \frac{in_a + in_b + in_c}{3}
+    157           *      \end{align}
+    158           *    \f]
+    159           *
+    160           *  @param[in]  input   = a-b-c components
+    161           *  @param[out] output  = alpha-beta-zero components
+    162           *
+    163           */
+
+   \                                 In section .text, align 4, keep-with-next
+    164          void ClrkPark__DirectClarkeF(ABC_COOR_SYST_F_TYPE *input, ALPHA_BETA_COOR_SYST_F_TYPE *output)
+    165          {
+    166              output->ZeroSequence = (input->A + input->B + input->C) * (1.0f/3.0f);
+   \                     ClrkPark__DirectClarkeF: (+1)
+   \   00000000   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000004   0xEDD0 0x0A01      VLDR     S1,[R0, #+4]
+   \   00000008   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   0000000C   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   00000010   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   00000014   0xEDDF 0x....      VLDR.W   S1,??DataTable1  ;; 0x3eaaaaab
+   \   00000018   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000001C   0xED81 0x0A00      VSTR     S0,[R1, #0]
+    167              output->Alpha = input->A - output->ZeroSequence;
+   \   00000020   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   00000024   0xEE30 0x0AC0      VSUB.F32 S0,S1,S0
+   \   00000028   0xED81 0x0A01      VSTR     S0,[R1, #+4]
+    168              output->Beta = (input->B - input->C)*(1.0f/1.732050807f);
+   \   0000002C   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000030   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   00000034   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000038   0xEDDF 0x....      VLDR.W   S1,??DataTable1_1  ;; 0x3f13cd3a
+   \   0000003C   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000040   0xED81 0x0A02      VSTR     S0,[R1, #+8]
+    169          }
+   \   00000044   0x4770             BX       LR               ;; return
+    170          
+    171          
+    172          
+    173          /**
+    174           *  @brief      Calculate Inverse Clarke transforms.
+    175           *
+    176           *  @details  Inverse Clarke transformation is given by:
+    177           *
+    178           *     \f[
+    179           *         \begin{aligned}
+    180           *          & out_a = in_{\alpha} + in_0 \\
+    181           *          & out_b = -\frac{in_{\alpha}}{2} + \frac{in_{\beta}  \cdot \sqrt(3)}{2} + in_0 \\
+    182           *          & out_c = -\frac{in_{\alpha}}{2} - \frac{in_{\beta}  \cdot \sqrt(3)}{2} + in_0
+    183           *         \end{aligned}
+    184           *     \f]
+    185           *
+    186           *  @param[in]    input     = alpha-beta-zero components
+    187           *  @param[out]   output    = a-b-c components
+    188           *
+    189           */
+
+   \                                 In section .text, align 4, keep-with-next
+    190          void ClrkPark__InverseClarkeF(ALPHA_BETA_COOR_SYST_F_TYPE *input, ABC_COOR_SYST_F_TYPE *output)
+    191          {
+    192              output->A = input->Alpha+input->ZeroSequence;
+   \                     ClrkPark__InverseClarkeF: (+1)
+   \   00000000   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000004   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   00000008   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   0000000C   0xED81 0x0A00      VSTR     S0,[R1, #0]
+    193              output->B = (-input->Alpha/(2.0f) + input->Beta*(1.732050807f/2.0f)) + input->ZeroSequence;
+   \   00000010   0xEEFE 0x0A00      VMOV.F32 S1,#-0.5
+   \   00000014   0xED90 0x1A01      VLDR     S2,[R0, #+4]
+   \   00000018   0xEDD0 0x1A02      VLDR     S3,[R0, #+8]
+   \   0000001C   0xED9F 0x....      VLDR.W   S0,??DataTable1_2  ;; 0x3f5db3d7
+   \   00000020   0xEE21 0x1A20      VMUL.F32 S2,S2,S1
+   \   00000024   0xEE01 0x1A80      VMLA.F32 S2,S3,S0
+   \   00000028   0xEDD0 0x1A00      VLDR     S3,[R0, #0]
+   \   0000002C   0xEE31 0x1A21      VADD.F32 S2,S2,S3
+   \   00000030   0xED81 0x1A01      VSTR     S2,[R1, #+4]
+    194              output->C = (-input->Alpha/(2.0f) - input->Beta*(1.732050807f/2.0f)) + input->ZeroSequence;
+   \   00000034   0xED90 0x1A01      VLDR     S2,[R0, #+4]
+   \   00000038   0xEE61 0x0A20      VMUL.F32 S1,S2,S1
+   \   0000003C   0xED90 0x1A02      VLDR     S2,[R0, #+8]
+   \   00000040   0xEE41 0x0A40      VMLS.F32 S1,S2,S0
+   \   00000044   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000048   0xEE30 0x0A80      VADD.F32 S0,S1,S0
+   \   0000004C   0xED81 0x0A02      VSTR     S0,[R1, #+8]
+    195          }
+   \   00000050   0x4770             BX       LR               ;; return
+    196          
+    197          
+    198          
+    199          /**
+    200           *  @brief      Calculate the Direct Park Transformation and phase advance
+    201           *
+    202           *  @details Park transformation is given by:
+    203           *           \f[
+    204           *              \begin{aligned}
+    205           *              & out_d = in_{\alpha} * cos(\theta) + in_{\beta} * sin(\theta) \\
+    206           *              & out_q = -in_{\alpha} * sin(\theta) + in_{\beta} * cos(\theta) \\
+    207           *              & out_0 = in_0
+    208           *              \end{aligned}
+    209           *          \f]
+    210           *
+    211           *  @param[in]  input   = alpha-beta-zero components
+    212           *  @param[in]  sincos  = sine and cosine rotating reference
+    213           *  @param[out] output  = d-q-zero components
+    214           */
+
+   \                                 In section .text, align 2, keep-with-next
+    215          void ClrkPark__DirectParkF(ALPHA_BETA_COOR_SYST_F_TYPE *input, DQ_COOR_SYST_F_TYPE *output, SIN_COS_F_TYPE *sincos)
+    216          {
+    217              output->D = input->Alpha * sincos->Cos + input->Beta * sincos->Sin;
+   \                     ClrkPark__DirectParkF: (+1)
+   \   00000000   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000004   0xEDD2 0x0A01      VLDR     S1,[R2, #+4]
+   \   00000008   0xED92 0x1A00      VLDR     S2,[R2, #0]
+   \   0000000C   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000010   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   00000014   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \   00000018   0xED81 0x0A01      VSTR     S0,[R1, #+4]
+    218              output->Q = -input->Alpha * sincos->Sin + input->Beta * sincos->Cos;
+   \   0000001C   0xED90 0x0A02      VLDR     S0,[R0, #+8]
+   \   00000020   0xEDD2 0x0A01      VLDR     S1,[R2, #+4]
+   \   00000024   0xED92 0x1A00      VLDR     S2,[R2, #0]
+   \   00000028   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000002C   0xEDD0 0x0A01      VLDR     S1,[R0, #+4]
+   \   00000030   0xEE00 0x0AC1      VMLS.F32 S0,S1,S2
+   \   00000034   0xED81 0x0A02      VSTR     S0,[R1, #+8]
+    219              output->ZeroSequence =  input->ZeroSequence;
+   \   00000038   0x6800             LDR      R0,[R0, #+0]
+   \   0000003A   0x6008             STR      R0,[R1, #+0]
+    220          }
+   \   0000003C   0x4770             BX       LR               ;; return
+    221          
+    222          
+    223          
+    224          /**
+    225           *  @brief      Calculate the Inverse Park Transformation
+    226           *
+    227           *  @details    Inverse Park Transformation is given by
+    228           *          \f[
+    229           *              \begin{aligned}
+    230           *              & out_{\alpha} = in_d * cos(\theta) - in_q * sin(\theta) \\
+    231           *              & out_{\beta} = in_d * sin(\theta) + in_q * cos(\theta) \\
+    232           *              & out_0 = in_0
+    233           *              \end{aligned}
+    234           *          \f]
+    235           *  @param[in]  input   = d-q-zero components
+    236           *  @param[in]  sincos  = sine and cosine rotating reference
+    237           *  @param[out] output  = alpha-beta-zero components
+    238           */
+
+   \                                 In section .text, align 2, keep-with-next
+    239          void ClrkPark__InverseParkF(DQ_COOR_SYST_F_TYPE *input, ALPHA_BETA_COOR_SYST_F_TYPE *output, SIN_COS_F_TYPE *sincos)
+    240          {
+    241              output->Alpha = input->D * sincos->Cos - input->Q * sincos->Sin;
+   \                     ClrkPark__InverseParkF: (+1)
+   \   00000000   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000004   0xEDD2 0x0A01      VLDR     S1,[R2, #+4]
+   \   00000008   0xED92 0x1A00      VLDR     S2,[R2, #0]
+   \   0000000C   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000010   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   00000014   0xEE00 0x0AC1      VMLS.F32 S0,S1,S2
+   \   00000018   0xED81 0x0A01      VSTR     S0,[R1, #+4]
+    242              output->Beta = input->D * sincos->Sin + input->Q * sincos->Cos;
+   \   0000001C   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000020   0xEDD2 0x0A00      VLDR     S1,[R2, #0]
+   \   00000024   0xED92 0x1A01      VLDR     S2,[R2, #+4]
+   \   00000028   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000002C   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   00000030   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \   00000034   0xED81 0x0A02      VSTR     S0,[R1, #+8]
+    243              output->ZeroSequence =  input->ZeroSequence;
+   \   00000038   0x6800             LDR      R0,[R0, #+0]
+   \   0000003A   0x6008             STR      R0,[R1, #+0]
+    244          }
+   \   0000003C   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x3EAAAAAB         DC32     0x3eaaaaab
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x3F13CD3A         DC32     0x3f13cd3a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0x3F5DB3D7         DC32     0x3f5db3d7
+    245          
+    246          //=====================================================================================================================
+    247          //-------------------------------------- Private Functions ------------------------------------------------------------
+    248          //=====================================================================================================================
+    249          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ClrkPark__DirectClarke
+       0   ClrkPark__DirectClarkeF
+      12   ClrkPark__DirectPark
+       0   ClrkPark__DirectParkF
+       0   ClrkPark__InverseClarke
+       0   ClrkPark__InverseClarkeF
+      12   ClrkPark__InversePark
+       0   ClrkPark__InverseParkF
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      44  ClrkPark__DirectClarke
+      70  ClrkPark__DirectClarkeF
+      40  ClrkPark__DirectPark
+      62  ClrkPark__DirectParkF
+      64  ClrkPark__InverseClarke
+      82  ClrkPark__InverseClarkeF
+      40  ClrkPark__InversePark
+      62  ClrkPark__InverseParkF
+
+ 
+ 476 bytes in section .text
+ 
+ 476 bytes of CODE memory
+
+Errors: none
+Warnings: none

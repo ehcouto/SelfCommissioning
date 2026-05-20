@@ -1,0 +1,36 @@
+@startuml
+
+package "MCI2.0"  {
+    InverterTemp :
+    SpeedRefGen :
+    SurgeRelay :
+    VoltsAmpsSensor :
+    
+    package "Mcl" {
+        package "MicroBlocks" {
+            ClrkPark :
+            Filters :
+            Injection :
+            Math :
+            ObserverPmsm :
+            Pi :
+            PwmModulation : 
+            FluxEstimator :       
+        }
+
+    package "MacroBlocks" {
+            MclDqCtrl :
+            MclDqRef :            
+            MclObserver :
+            MclPwm :
+            MclSpeedCtrl :
+            MclInputProc :
+        }
+    Mcl : 
+    Mcl ..> MacroBlocks    
+        
+    }    
+}
+
+ MacroBlocks ..> MicroBlocks
+@enduml

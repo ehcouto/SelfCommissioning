@@ -1,0 +1,394 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:42
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API004Debug\API004Debug.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o API004Debug.obj
+#        -l ..\listings\API004Debug.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API004Debug\API004Debug.c
+#    List file    =  ..\listings\API004Debug.lst
+#    Object file  =  API004Debug.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API004Debug\API004Debug.c
+      1          /**
+      2           *  @file       
+      3           *
+      4           *  @brief      Allows to interact with your project allowing to debug your system at different levels
+      5           *
+      6           *  @details    EXECUTE METHOD APIS:
+      7           *              The API004Debug module provides commands to execute global methods of your projects
+      8           *              and allows to receive feedbacks , if any, from the method itself, such as the
+      9           *              return value of the function.
+     10           *              The methods have to be listed in a table described in the prv file and , for each
+     11           *              method, you need to insert a label (a string to mark the method), the pointer to the method
+     12           *              and a Signature value that contains the information of the data types for the input and ouput
+     13           *              of the method.
+     14           *              The Api uses 2 opcodes for this purpose: one to publish the information of all the listed methods
+     15           *              and another one to execute the method with the required input parameter values.
+     16           *              If the executed method has a return value, the value will be published in the feedback packet
+     17           *
+     18           *              To Enable this module you have to use the SystemConfig_prm file since the definition value is also
+     19           *              used by the "Reveal_prv" file to allow to correct use of the parser functionalities
+     20           *  @copyright  Copyright 2021 Whirlpool Corporation.  All rights reserved - CONFIDENTIAL.
+     21           */
+     22          //---------------------------------------------------------------------------------------------------------------------
+     23          //---------------------------------------------------------------------------------------------------------------------
+     24          
+     25          
+     26          //-------------------------------------- Include Files ----------------------------------------------------------------
+     27          // -- This Module --
+     28          #include "SystemConfig.h"
+     29          #if (API004DEBUG_FEATURE == ENABLED)
+                      ^
+Remark[Pe193]: zero used for undefined preprocessing identifier
+          "API004DEBUG_FEATURE"
+     30          #include "API004Debug_defs.h"
+     31          #include "API004Debug_prv.h"
+     32          #include "API004Debug.h"
+     33          
+     34          // -- Other Modules
+     35          #include "Utilities.h"
+     36          #include <string.h>
+     37          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     38          
+     39          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     40          
+     41          //! maximum number of function input parameters allowed
+     42          #define MAX_PARAMETERS_NUMBER   (sizeof(uint32)*2)-1
+     43          
+     44          //!Reveal more message pending value
+     45          #define REVEAL_MMP_BIT  ((uint8)0x80)
+     46          
+     47          //!Maximum length of the label describing the method
+     48          #define LABEL_MAX_LENGTH    40
+     49          
+     50          //!Value of the wrong index to address the execution of a method
+     51          #define WRONG_FUNCTION_INDEX    0xFF
+     52          
+     53          //!Bit mask value to match the data type information of the return value inside the Signature variable
+     54          #define RETURN_VALUE_POSITION_MASK  0x0000000F
+     55          
+     56          //! API's opcodes enumeration
+     57          typedef enum
+     58          {
+     59              API004_CMD_EXECUTE_FUNCTION = 1, //!< API004_CMD_EXECUTE_FUNCTION
+     60              API004_FBK_CONFIRM_EXECUTION = 1,//!< API004_FBK_CONFIRM_EXECUTION
+     61              API004_CMD_REQUEST_FUNCTIONS_INFO = 2,//!< API004_CMD_REQUEST_FUNCTIONS_INFO
+     62              API004_FBK_FUNCTIONS_INFO = 2//!< API004_FBK_FUNCTIONS_INFO
+     63          }API004DEBUG_OPCODES_TYPE;
+     64          
+     65          #ifdef DEBUG_APIS_LIST
+     66          //! The data type applied to the function pointer without a return value
+     67          typedef void (*DEBUG_FUNCTION_HANDLER_TYPE)();
+     68          
+     69          //! The data type applied to the function pointer with a return value
+     70          typedef sint32 (*DEBUG_FUNCTION_WITH_RETURN_HANDLER_TYPE)();
+     71          
+     72          //! Array containing the Functions info
+     73          static const DEBUG_FUNCTION_TYPE DEBUG_FUNCTIONS_LIST[] = DEBUG_APIS_LIST;
+     74          
+     75          //!Number of functions in the DEBUG_FUNCTIONS_LIST
+     76          #define NUMBER_OF_FUNCTIONS sizeof(DEBUG_FUNCTIONS_LIST)/sizeof(DEBUG_FUNCTION_TYPE)
+     77          // The NUMBER_OF_FUNCTIONS must be smaller than 255
+     78          CT_ASSERT(NUMBER_OF_FUNCTIONS < 0xFF);
+     79          #endif
+     80          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     81          
+     82          #ifdef DEBUG_APIS_LIST
+     83          static REVEAL_RECIPE_STATUS_TYPE ExecuteFunction(sint32 array[],uint8 function_position,uint8 node_id,BOOL_TYPE return_value_function);
+     84          static BOOL_TYPE PrintOnReveal(uint8 function_id, char* str, uint32 sign,BOOL_TYPE mmp_enabled, uint8 node_id);
+     85          #endif
+     86          //=====================================================================================================================
+     87          //-------------------------------------- Public Functions -------------------------------------------------------------
+     88          //=====================================================================================================================
+     89          
+     90          /**
+     91           * This method parses API004Debug commands sent to this node.
+     92           * @param buffer = Pointer to the received command message.
+     93           * @return REVEAL_RECIPE_STATUS_TYPE that expresses the result of the parsing.
+     94           */
+     95          REVEAL_RECIPE_STATUS_TYPE API004Debug__CommandParser(REVEAL_MSG_TYPE * buffer)
+     96          {
+     97              REVEAL_RECIPE_STATUS_TYPE retval = NVO_RS_READY;
+     98              #ifdef DEBUG_APIS_LIST
+     99              uint8 index;
+    100              uint8 current_index;
+    101              BOOL_TYPE function_with_return_value;
+    102              sint32 input_parameters_list[MAX_PARAMETERS_NUMBER] = {0};
+    103              DATATYPE_TYPE param_array[MAX_PARAMETERS_NUMBER] ={DATATYPE_INVALID,DATATYPE_INVALID,DATATYPE_INVALID,DATATYPE_INVALID,DATATYPE_INVALID,DATATYPE_INVALID,DATATYPE_INVALID};
+    104          
+    105              current_index = 0;
+    106              function_with_return_value = TRUE;
+    107              #endif // #ifdef DEBUG_APIS_LIST
+    108          
+    109              switch (buffer->op_code)
+    110              {
+    111                  #ifdef DEBUG_APIS_LIST
+    112                  case API004_CMD_EXECUTE_FUNCTION:
+    113                      if ( (buffer->payload[0] < NUMBER_OF_FUNCTIONS) &&
+    114                           ((DEBUG_FUNCTIONS_LIST[buffer->payload[0]].Pointer) != NULL)
+    115                          )
+    116                      {
+    117                          /*collect the information about the data type of the input parameter if any*/
+    118                          for(index = 0; index < MAX_PARAMETERS_NUMBER ; index++)
+    119                          {
+    120                              param_array[index]= (DATATYPE_TYPE)(((DEBUG_FUNCTIONS_LIST[buffer->payload[0]].Signature) & ((uint32)ELEMENT_MASK<<((index+1)* ELEMENT_BITS)))/(uint32)(16<<(index*ELEMENT_BITS)));
+    121                              if(param_array[index]== DATATYPE_INVALID)
+    122                              {
+    123                                break;
+    124                              }
+    125                          }
+    126          
+    127                          /*store the value of the input parameters to pass to the function*/
+    128                          for(uint8 param_index=0; param_index<index;param_index++)
+    129                          {
+    130                              switch(param_array[param_index])
+    131                              {
+    132                                  case DATATYPE_UINT8:
+    133                                      input_parameters_list[param_index] = buffer->payload[current_index+1];
+    134                                      current_index = current_index+sizeof(uint8);
+    135                                      break;
+    136                                  case DATATYPE_SINT8:
+    137                                      input_parameters_list[param_index] = (sint8)(buffer->payload[current_index+1]);
+    138                                      current_index = current_index+sizeof(sint8);
+    139                                      break;
+    140                                  case DATATYPE_UINT16:
+    141                                      input_parameters_list[param_index] = Utilities__ConvertArrayTo16bits(&(buffer->payload[current_index+1]));
+    142                                      current_index = current_index+sizeof(uint16);
+    143                                      break;
+    144                                  case DATATYPE_SINT16:
+    145                                      input_parameters_list[param_index] = (sint16)(Utilities__ConvertArrayTo16bits(&(buffer->payload[current_index+1])));
+    146                                      current_index = current_index+sizeof(sint16);
+    147                                      break;
+    148                                  case DATATYPE_UINT32:
+    149                                  case DATATYPE_SINT32:
+    150                                      input_parameters_list[param_index] =Utilities__ConvertArrayTo32bits(&(buffer->payload[current_index+1]));
+    151                                      current_index = current_index+sizeof(uint32);
+    152                                      break;
+    153                                  default:
+    154                                      break;
+    155                              }
+    156                          }
+    157          
+    158                          if( ((DEBUG_FUNCTIONS_LIST[buffer->payload[0]].Signature) & RETURN_VALUE_POSITION_MASK) == DATATYPE_VOID)
+    159                          {
+    160                              function_with_return_value = FALSE;
+    161                          }
+    162          
+    163                          retval = ExecuteFunction(input_parameters_list,buffer->payload[0],buffer->node_id,function_with_return_value);
+    164                      }
+    165                      else
+    166                      {
+    167                          retval = NVO_RS_UNSUP_INVALID_PARAM;
+    168                      }
+    169                      break;
+    170          
+    171                 case API004_CMD_REQUEST_FUNCTIONS_INFO:
+    172                      /*scroll the Functions name list to publish the Functions information*/
+    173                      for(uint8 function_position=0; function_position<NUMBER_OF_FUNCTIONS;function_position++)
+    174                      {
+    175                          BOOL_TYPE mmp = ( (function_position == (NUMBER_OF_FUNCTIONS-1)) ? FALSE:TRUE);
+    176          
+    177                          if (PrintOnReveal(function_position,DEBUG_FUNCTIONS_LIST[function_position].Name,DEBUG_FUNCTIONS_LIST[function_position].Signature,mmp,buffer->node_id) == FALSE)
+    178                          {
+    179                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    180                          }
+    181                      }
+    182                     break;
+    183                  #endif // #ifdef DEBUG_APIS_LIST
+    184                  default:
+    185                      retval = NVO_RS_UNSUP_OP_CODE;
+    186                      break;
+    187              }
+    188          
+    189              return (retval);
+    190          }
+    191          
+    192          //=====================================================================================================================
+    193          //-------------------------------------- Private Functions ------------------------------------------------------------
+    194          //=====================================================================================================================
+    195          
+    196          #ifdef DEBUG_APIS_LIST
+    197          /**
+    198           * Call the function to be executed based on the parameters
+    199           * @param element_list: it is the array containing the values of the input parameters to pass to the function
+    200           * @param function_position:index of the function inside the list
+    201           * @param node_id: the value of the node requesting the function execution
+    202           * @param return_value_function: flag informing if the function has a return value or not
+    203           * @return REVEAL_RECIPE_STATUS_TYPE that expresses the result of the parsing.
+    204           */
+    205          
+    206          static REVEAL_RECIPE_STATUS_TYPE ExecuteFunction(sint32 element_list[],uint8 function_position,uint8 node_id,BOOL_TYPE return_value_function)
+    207          {
+    208              #define INPUT_PARAMETERS element_list[0],element_list[1],element_list[2],element_list[3],element_list[4],element_list[5],element_list[6]
+    209              REVEAL_RECIPE_STATUS_TYPE retval;
+    210              retval = NVO_RS_READY;
+    211          
+    212              if (return_value_function == FALSE)
+    213              {
+    214                  /*Execute the function with no return value*/
+    215                  ((DEBUG_FUNCTION_HANDLER_TYPE)DEBUG_FUNCTIONS_LIST[function_position].Pointer)(INPUT_PARAMETERS);
+    216          
+    217                  /*Publish the feedback with only the function index information*/
+    218                  Reveal__QueueMessageU8(API004DEBUG_NUM,API004_FBK_CONFIRM_EXECUTION,node_id,FALSE,FALSE,function_position);
+    219              }
+    220              else
+    221              {
+    222                  sint32 return_value;
+    223                  uint8 return_value_data_type;
+    224                  REVEAL_COMMAND_TYPE* rev_feedback = Reveal__NewFeedback(API004DEBUG_NUM, API004_FBK_CONFIRM_EXECUTION, node_id, sizeof(function_position)+sizeof(return_value));
+    225                  /*Execute the function with a return value*/
+    226                  return_value = ((DEBUG_FUNCTION_WITH_RETURN_HANDLER_TYPE)DEBUG_FUNCTIONS_LIST[function_position].Pointer)(INPUT_PARAMETERS);
+    227                  return_value_data_type = (uint8)(DEBUG_FUNCTIONS_LIST[function_position].Signature & RETURN_VALUE_POSITION_MASK);
+    228                  /*Publish the feedback with the return value information*/
+    229                  if( (Reveal__AddDataU8(rev_feedback, function_position)== FAIL) ||
+    230                      (Reveal__AddDataU32(rev_feedback, return_value)== FAIL) ||
+    231                      (Reveal__AddDataU8(rev_feedback, return_value_data_type)== FAIL) ||
+    232                      (Reveal__QueueCommand(rev_feedback)== FALSE)
+    233                      )
+    234                  {
+    235                      retval = NVO_RS_BUSY;
+    236                  }
+    237              }
+    238          
+    239              return(retval);
+    240          }
+    241          
+    242          /**
+    243           * Publish on the Bus the information about the functions present in the List
+    244           * @param function_id: index of the function inside the list
+    245           * @param str: ASCII characters label describing the function name
+    246           * @param sign: Signature Information of the function
+    247           * @param mmp_enabled: flag used in case of multiple packets; 1 means another packet has to be sent, 0 means that is the last packet
+    248           * @param node_id: the node to address the information
+    249           * @return TRUE if data to publish is consistent, FALSE if not
+    250           */
+    251          static BOOL_TYPE PrintOnReveal(uint8 function_id,char* str,uint32 sign,BOOL_TYPE mmp_enabled,uint8 node_id)
+    252          {
+    253              uint8 message_size;
+    254              BOOL_TYPE result;
+    255          
+    256              message_size = 0;
+    257              result = FALSE;
+    258          
+    259              message_size = strlen(str);
+    260              if (message_size > LABEL_MAX_LENGTH)
+    261              {
+    262                  message_size = LABEL_MAX_LENGTH;
+    263              }
+    264          
+    265              if(message_size > 0)
+    266              {
+    267                  REVEAL_COMMAND_TYPE* rev_feedback = Reveal__NewFeedback(API004DEBUG_NUM, API004_FBK_FUNCTIONS_INFO, node_id, 1+sizeof(sign)+message_size);
+    268                  if(mmp_enabled == TRUE)  /*if Multi Message Packet is requested, the MMP bit is set*/
+    269                  {
+    270                      rev_feedback->opcode |= REVEAL_MMP_BIT;
+    271                  }
+    272          
+    273                  result = (BOOL_TYPE)((Reveal__AddDataU8(rev_feedback, function_id)== PASS) &&
+    274                                      (Reveal__AddDataU8(rev_feedback, 4+message_size)== PASS) &&
+    275                                      (Reveal__AddDataU32(rev_feedback, sign)== PASS) &&
+    276                                      (Reveal__AddDataU8Buffer(rev_feedback, (uint8*)str, message_size)== PASS) &&
+    277                                      (Reveal__QueueCommand(rev_feedback)== TRUE));
+    278          
+    279              }
+    280              return result;
+    281          }
+    282          #endif// #ifdef DEBUG_APIS_LIST
+    283          #endif//#if (API004DEBUG_FEATURE == ENABLED)
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

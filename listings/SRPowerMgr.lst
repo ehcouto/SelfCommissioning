@@ -1,0 +1,754 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:02
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRPowerMgr\SRPowerMgr.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o SRPowerMgr.obj
+#        -l ..\listings\SRPowerMgr.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRPowerMgr\SRPowerMgr.c
+#    List file    =  ..\listings\SRPowerMgr.lst
+#    Object file  =  SRPowerMgr.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRPowerMgr\SRPowerMgr.c
+      1          /**
+      2           *  @file       
+      3           *  @defgroup   CLASS_B
+      4           *  @brief      Basic description of file contents
+      5           *
+      6           *  @details    Detailed description of the file contents
+      7           *
+      8           *  @section    Applicable_Documents
+      9           *					List here all the applicable documents if needed. <tr>	
+     10           *
+     11           *  $Header: $
+     12           *
+     13           *  @copyright  Copyright 2015-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     14           */
+     15          //---------------------------------------------------------------------------------------------------------------------
+     16          //---------------------------------------------------------------------------------------------------------------------
+     17          
+     18          
+     19          //-------------------------------------- Include Files ----------------------------------------------------------------
+     20          #include "SRPowerMgr.h" 
+     21          
+     22          #if (LOW_POWER_FEATURE == ENABLED)
+     23          #include "Micro.h"
+     24          #include "TimerInterrupt.h"
+     25          #include "API009System.h"
+     26          #include "Win.h"
+     27          #include "Reveal.h"
+     28          #include "Mode.h"
+     29          #include "ExtInterrupt.h"
+     30          #include "SRPowerMgr_prv.h"
+     31          #include "SRData.h"
+     32          #include "SRException.h"
+     33          #include "SystemConfig.h"
+     34          
+     35          #if (SYSTEM_ACU_HANDLING == ENABLED)
+     36              #include "NVData.h"
+     37          #endif
+     38          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     39          
+     40          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     41          #ifndef SRPOWERMGR_LOWPOWER_MODE
+     42              #define SRPOWERMGR_LOWPOWER_MODE    0
+     43          #endif
+     44          
+     45          #ifndef SRPOWERMGR_INITIALIZE
+     46              #define SRPOWERMGR_INITIALIZE()
+     47          #endif
+     48          
+     49          #ifndef SRPOWERMGR_WAKEUP_SEQUENCE_COMPLETE
+     50              #define SRPOWERMGR_WAKEUP_SEQUENCE_COMPLETE();
+     51          #endif
+     52          
+     53          #ifndef SRPOWERMGR__GO_LOW_POWER_RECEIVED
+     54              #define SRPOWERMGR__GO_LOW_POWER_RECEIVED()
+     55          #endif
+     56          
+     57          #ifndef MICRO_SRPOWERMGR_FEATURE
+     58              #define MICRO_SRPOWERMGR_FEATURE    DISABLED
+     59          #endif
+     60          
+     61          #ifndef SRPOWERMGR_FAILED_TO_WAKEUP_NETWORK
+     62              #define SRPOWERMGR_FAILED_TO_WAKEUP_NETWORK()
+     63          #endif
+     64          
+     65          //---------------------------------------------------------------------------------------------------------------------
+     66          /**
+     67           *    @brief  - Time the Master node executes the wake up sequence defined for each node in the SRPOWERMGR_WAKEUP_LIST[] list
+     68           *              which could be either by sending WIN Break Signal, Asserting GPIO pin to wake up the other node or
+     69           *              applying project specific method
+     70           *
+     71           *              Modifies this time only if your board requires longer time of assertion
+     72           *    @details- Resolution 10, value can not be 0
+     73           */
+     74          #ifndef SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_MS
+     75              #define SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_MS                150
+     76          #elif (SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_MS == 0)
+     77              #error: "SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_MS shall be non zero value with resolution of 10"
+     78          #endif
+     79          
+     80          
+     81          //---------------------------------------------------------------------------------------------------------------------
+     82          /**
+     83           *    @brief  - Node response/communication/activation time after performing the wake up sequence(WIN Break Signal,
+     84           *              GPIO Pin assertion or project specific  function call) to communicate over the network
+     85           *
+     86           *              This depends on the boot up time of the individual node.
+     87           *
+     88           *              If one of the node failed to response then the module try the wake up sequence for 3 times
+     89           *    @details- Resolution 10, value can not be 0
+     90           */
+     91          #ifndef SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_MS
+     92              #define SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_MS                1000
+     93          #elif (SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_MS == 0)
+     94              #error: "SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_MS shall be non zero value with resolution of 10"
+     95          #endif
+     96          
+     97          
+     98          //---------------------------------------------------------------------------------------------------------------------
+     99          /**
+    100           *    @brief  - After coming from low power to the normal power mode the communication line shall be idle within
+    101           *              SRPOWERMGR_COM_CHECK_TIMEOUT_IN_MS time to determine the
+    102           *    @details- Resolution 10, value can not be 0
+    103           */
+    104          #ifndef SRPOWERMGR_COM_CHECK_TIMEOUT_IN_MS
+    105              #define SRPOWERMGR_COM_CHECK_TIMEOUT_IN_MS                2000
+    106          #elif (SRPOWERMGR_COM_CHECK_TIMEOUT_IN_MS == 0)
+    107              #error: "SRPOWERMGR_COM_CHECK_TIMEOUT_IN_MS shall be non zero value with resolution of 10"
+    108          #endif
+    109          
+    110          
+    111          //---------------------------------------------------------------------------------------------------------------------
+    112          /**
+    113           *    @brief  - Node to send the feedback for the Command message within SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_IN_MS timeout
+    114           *    @details- Resolution 10, value can not be 0
+    115           */
+    116          #ifndef SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_IN_MS
+    117              #define SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_IN_MS                2000
+    118          #elif (SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_IN_MS == 0)
+    119              #error: "SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_IN_MS shall be non zero value with resolution of 10"
+    120          #endif
+    121          
+    122          //---------------------------------------------------------------------------------------------------------------------
+    123          /**
+    124           *    @brief  - Applies only for AUTO WAKEUP scheme node
+    125           *              SRPOWERMGR_AUTO_WAKEUP_HW_PORT_NOP_DELAY number of NOP instructions are executed after deactivating the power.
+    126           *              Expectation is micro to die while executing the delay instructions
+    127           *
+    128           *              These number needs to be adjusted based on the hold up circuitry
+    129           *
+    130           *    @details- Resolution 10, value can not be 0
+    131           */
+    132          
+    133          #ifndef SRPOWERMGR_AUTO_WAKEUP_HW_PORT_NOP_DELAY
+    134              #define SRPOWERMGR_AUTO_WAKEUP_HW_PORT_NOP_DELAY    10000
+    135          #endif
+    136          
+    137          #define SRPOWERMGR_INVALID_WAKEUP_NODE              0xFF
+    138          #define SRPOWERMGR_MAIN_THREAD_INTERVAL             10
+    139          
+    140          #define SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_COUNT                         (SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_MS/SRPOWERMGR_MAIN_THREAD_INTERVAL)
+    141          #define SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_COUNT     (SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_MS/SRPOWERMGR_MAIN_THREAD_INTERVAL)
+    142          #define SRPOWERMGR_COM_CHECK_TIMEOUT_IN_COUNT                               (SRPOWERMGR_COM_CHECK_TIMEOUT_IN_MS/SRPOWERMGR_MAIN_THREAD_INTERVAL)
+    143          #define SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_COUNT                           (SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_IN_MS/SRPOWERMGR_MAIN_THREAD_INTERVAL)
+    144          
+    145          
+    146          typedef enum
+    147          {
+    148              SRPOWERMGR_STATE_IDLE,
+    149              SRPOWERMGR_STATE_WAKEUP_ITSELF,
+    150              SRPOWERMGR_STATE_CHECK_COM_STATUS,
+    151              SRPOWERMGR_STATE_REQUEST_WAKEUPSOURCCE,
+    152              SRPOWERMGR_STATE_CHECK_WAKEUPSOURCCE,
+    153              SRPOWERMGR_STATE_CHECK_NETWORK_STATUS,
+    154              SRPOWERMGR_STATE_WAKEUP_OTHERS_SEQ1,
+    155              SRPOWERMGR_STATE_WAKEUP_OTHERS_SEQ2,
+    156              SRPOWERMGR_STATE_CHECK_OTHER_NODES,
+    157              SRPOWERMGR_STATE_FAILED_TO_WAKEUP_NETWORK
+    158          }SRPOWERMGR_STATE_TYPE;
+    159          
+    160          typedef enum
+    161          {
+    162              SRPOWERMGR_WAKEUP_TRIG_EXTERNAL,
+    163              SRPOWERMGR_WAKEUP_TRIG_INTERNAL
+    164          }SRPOWERMGR_WAKEUP_TRIG_TYPE;
+    165          
+    166          #if (SRPOWERMGR_LOWPOWER_MODE != 0)
+    167              static SRPOWERMGR_MODE SRPowerMgr_Mode;
+    168          
+    169              #if (SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED)
+    170                  static uint16 SRPowerMgr_Timeout;
+    171                  static SRPOWERMGR_STATE_TYPE SRPowerMgr_State;
+    172                  static BOOL_TYPE SRPowerMgr_IsThisWakeUpSource;
+    173                  static uint8 SRPowerMgr__ReceivedWakeUpNode;
+    174                  static uint8 SRPowerMgr_WakeUpRetry;
+    175                  static SRPOWERMGR_WAKEUP_TRIG_TYPE SRPowerMgr_WakeUpTrig;
+    176              #endif
+    177          #endif
+    178          
+    179          #if (MICRO_SR_FEATURE_TEST == ENABLED)
+    180              #if (MICRO_SRPOWERMGR_FEATURE == ENABLED)
+    181                  extern MICRO_FLOW_TYPE Micro_Flow;
+    182                  extern MICRO_FLOW_TYPE N_Micro_Flow;
+    183              #endif
+    184          #endif
+    185          
+    186          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    187          
+    188          
+    189          //=====================================================================================================================
+    190          //-------------------------------------- Public Functions -------------------------------------------------------------
+    191          //=====================================================================================================================
+    192          
+    193          //---------------------------------------------------------------------------------------------------------------------
+    194          /**
+    195           *  @brief      It Initializes the module SRPowerMgr and its variables
+    196           *
+    197           */
+    198          void SRPowerMgr__Initialize(void)
+    199          {
+    200              #if (MICRO_SR_FEATURE_TEST == ENABLED)
+    201                  #if (MICRO_SRPOWERMGR_FEATURE == ENABLED)
+    202                      if ((Micro_Flow != MICRO_FLOW_SRPOWERMGR_INIT) &&
+    203                          (N_Micro_Flow != SRDATA__COMPLEMENT(MICRO_FLOW_SRPOWERMGR_INIT)))
+    204                      {
+    205                          Micro__Trap();
+    206                      }
+    207                  #endif
+    208              #endif
+    209          
+    210              #if (SRPOWERMGR_LOWPOWER_MODE != 0)
+    211                  SRPOWERMGR_INITIALIZE();
+    212          
+    213                  #if (SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED)
+    214                      SRPowerMgr_Timeout = 0;
+    215                      SRPowerMgr_IsThisWakeUpSource = FALSE;
+    216                      SRPowerMgr__ReceivedWakeUpNode  = SRPOWERMGR_INVALID_WAKEUP_NODE;
+    217                      SRPowerMgr_WakeUpRetry = 0;
+    218          
+    219                      if (Micro__GetResetMode() == MICRO_RESET_MODE_COLD)
+    220                      {
+    221                          SRPowerMgr_State      = SRPOWERMGR_STATE_IDLE;
+    222                          SRPowerMgr_WakeUpTrig = SRPOWERMGR_WAKEUP_TRIG_EXTERNAL;
+    223                      }
+    224                  #endif
+    225          
+    226                  #if (SRPOWERMGR_LOWPOWER_MODE == 3)
+    227                      MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+    228                  #endif
+    229          
+    230                  #if (SRPOWERMGR_LOWPOWER_MODE == 1)
+    231                      if (Mode__GetMode() == MODE_LOWPOWER)
+    232                      {
+    233                          //SRPOWERMGR_DEEP_SLEEP_MODE
+    234                          Micro__DisableWarmResetAction(MICRO_WARM_RESET_ACTION_ENTER_LOWPOWER);
+    235                          DISABLE_INTERRUPTS();
+    236                          Gpio__Initialize();
+    237                          ExtInterrupt__Initialize();
+    238                          ExtInterrupt__Config(SRPOWERMGR_DEEP_SLEEP_EXTERNAL_INTERRUPT_CHANNEL,
+    239                                               SRPOWERMGR_DEEP_SLEEP_EXTERNAL_INTERRUPT_PORT,
+    240                                               SRPOWERMGR_DEEP_SLEEP_EXTERNAL_INTERRUPT_PIN,
+    241                                               SRPOWERMGR_DEEP_SLEEP_EXTERNAL_INTERRUPT_PIN_REMAP,
+    242                                               SRPOWERMGR_DEEP_SLEEP_EXTERNAL_INTERRUPT_TRIGGER_MODE);
+    243                          ENABLE_INTERRUPTS();
+    244                          DEEP_SLEEP_MODE();
+    245                          DISABLE_INTERRUPTS();
+    246                      }
+    247                  #elif (SRPOWERMGR_LOWPOWER_MODE == 2)
+    248                      if (Mode__GetMode() == MODE_LOWPOWER)
+    249                      {
+    250                          #if (SYSTEM_ACU_HANDLING == ENABLED)
+    251                              //backup the NVData
+    252                              NVData__Store();
+    253                          #endif
+    254          
+    255                          //retry for 3 times
+    256                          for (uint8 count = 0; count < 3; count++)
+    257                          {
+    258                              //SRPOWERMGR_AUTO_WAKEUP_MODE
+    259                              //this condition because if the micro is reset and running due to LVD
+    260                              Gpio__Initialize();
+    261                              Gpio__PinWrite(SRPOWERMGR_AUTO_WAKEUP_HW_PORT, SRPOWERMGR_AUTO_WAKEUP_HW_PIN, (BOOL_TYPE)(~SRPOWERMGR_AUTO_WAKEUP_HW_PIN_DRIVE & 0x01));
+    262                              Gpio__PinConfig(SRPOWERMGR_AUTO_WAKEUP_HW_PORT, SRPOWERMGR_AUTO_WAKEUP_HW_PIN, OUTPUT_PUSHPULL);
+    263          
+    264                              //add a delay to die the power
+    265                              Micro__DelayNumNops(SRPOWERMGR_AUTO_WAKEUP_HW_PORT_NOP_DELAY);
+    266                          }
+    267          
+    268                          //cold reset if it fails to put the micro in sleep mode
+    269                          Micro__ForceReset(MICRO_RESET_MODE_COLD);
+    270                      }
+    271                      else
+    272                      {
+    273                          //SRPOWERMGR_AUTO_WAKEUP_MODE
+    274                          Micro__DisableWarmResetAction(MICRO_WARM_RESET_ACTION_ENTER_LOWPOWER);
+    275          
+    276                          Gpio__Initialize();
+    277                          Gpio__PinWrite(SRPOWERMGR_AUTO_WAKEUP_HW_PORT, SRPOWERMGR_AUTO_WAKEUP_HW_PIN, (BOOL_TYPE)(SRPOWERMGR_AUTO_WAKEUP_HW_PIN_DRIVE & 0x01));
+    278                          Gpio__PinConfig(SRPOWERMGR_AUTO_WAKEUP_HW_PORT, SRPOWERMGR_AUTO_WAKEUP_HW_PIN, OUTPUT_PUSHPULL);
+    279          
+    280                          SRPowerMgr_Mode = SRPOWERMGR_NORMAL_SPEED_MODE;
+    281                      }
+    282          
+    283                  #elif (SRPOWERMGR_LOWPOWER_MODE == 3)
+    284                      if (Mode__GetMode() == MODE_LOWPOWER)
+    285                      {
+    286                          //SRPOWERMGR_LOW_SPEED_MODE
+    287                          MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();
+    288                          Micro__SetLowSpeedMode();                     // This change the speed of the micro controller to the LowSpeed mode
+    289                          TimerInterrupt__SetLongInterval();
+    290                          MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();
+    291          
+    292                          SRPowerMgr_Mode = SRPOWERMGR_LOW_SPEED_MODE;
+    293                      }
+    294                      else
+    295                      {
+    296                          #if (SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED)
+    297                              if (SRPowerMgr_State != SRPOWERMGR_STATE_WAKEUP_ITSELF)
+    298                              {
+    299                                  SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_NETWORK_STATUS;
+    300                              }
+    301                          #endif
+    302                          SRPowerMgr_Mode = SRPOWERMGR_NORMAL_SPEED_MODE;
+    303                      }
+    304                  #else
+    305                      SRPowerMgr_Mode = SRPOWERMGR_NORMAL_SPEED_MODE;
+    306                  #endif
+    307              #endif
+    308          }
+    309          
+    310          //---------------------------------------------------------------------------------------------------------------------
+    311          /**
+    312           *
+    313           * @param mode
+    314           * @return
+    315           */
+    316          
+    317          
+    318          BOOL_TYPE SRPowerMgr__GoLowPowerMode(void)
+    319          {
+    320              BOOL_TYPE result;
+    321          
+    322              result = TRUE;
+    323          
+    324              SRPOWERMGR__GO_LOW_POWER_RECEIVED();
+    325          
+    326              #if (SRPOWERMGR_LOWPOWER_MODE == 1)
+    327                  //SRPOWERMGR_DEEP_SLEEP_MODE
+    328                  SRPowerMgr_Mode = SRPOWERMGR_DEEP_SLEEP_MODE;
+    329                  Micro__EnableWarmResetAction(MICRO_WARM_RESET_ACTION_ENTER_LOWPOWER);
+    330                  Micro__GoSleep();
+    331              #elif (SRPOWERMGR_LOWPOWER_MODE == 2)
+    332                  //SRPOWERMGR_AUTO_WAKEUP_MODE
+    333                  SRPowerMgr_Mode = SRPOWERMGR_AUTO_WAKEUP_MODE;
+    334                  Micro__EnableWarmResetAction(MICRO_WARM_RESET_ACTION_ENTER_LOWPOWER);
+    335                  Mode__SetMode(MODE_LOWPOWER);
+    336              #elif (SRPOWERMGR_LOWPOWER_MODE == 3)
+    337                  SRPowerMgr_Mode = SRPOWERMGR_LOW_SPEED_MODE;
+    338                  Micro__EnableWarmResetAction(MICRO_WARM_RESET_ACTION_ENTER_LOWPOWER);
+    339                  Mode__SetMode(MODE_LOWPOWER);
+    340              #else
+    341                  result = FALSE;
+    342              #endif
+    343          
+    344              return result;
+    345          }
+    346          
+    347          //---------------------------------------------------------------------------------------------------------------------
+    348          /**
+    349           *  @brief      It Initializes the module SRPowerMgr and its variables
+    350           *
+    351           */
+    352          void SRPowerMgr__GoNormalMode(void)
+    353          {
+    354              #if (SRPOWERMGR_LOWPOWER_MODE != 0)
+    355          
+    356                  SRPowerMgr_Mode = SRPOWERMGR_NORMAL_SPEED_MODE;
+    357                  Micro__DisableWarmResetAction(MICRO_WARM_RESET_ACTION_ENTER_LOWPOWER);
+    358          
+    359                  #if (SRPOWERMGR_IS_THIS_IS_INTERNAL_WAKEUP() == ENABLED)
+    360                      SRPowerMgr_WakeUpTrig = SRPOWERMGR_WAKEUP_TRIG_INTERNAL;
+    361                  #endif
+    362          
+    363                  #if (SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED)
+    364                      SRPowerMgr_State = SRPOWERMGR_STATE_WAKEUP_ITSELF;
+    365                  #else
+    366                      Mode__SetMode(MODE_NORMAL);
+    367                  #endif
+    368              #endif
+    369          }
+    370          
+    371          //---------------------------------------------------------------------------------------------------------------------
+    372          /**
+    373           *  @brief      It Initializes the module SRPowerMgr and its variables
+    374           * @return
+    375           */
+    376          SRPOWERMGR_MODE SRPowerMgr__GetMode(void)
+    377          {
+    378              #if (SRPOWERMGR_LOWPOWER_MODE != 0)
+    379                  return SRPowerMgr_Mode;
+    380              #else
+    381                  return (SRPOWERMGR_NORMAL_SPEED_MODE);
+    382              #endif
+    383          }
+    384          
+    385          //---------------------------------------------------------------------------------------------------------------------
+    386          /**
+    387           *  @brief      It Initializes the module SRPowerMgr and its variables
+    388           *
+    389           * @return
+    390           */
+    391          //---------------------------------------------------------------------------------------------------------------------
+    392          /**
+    393           * @brief This API is called to check if this node was the source of the wake-up signal
+    394           * @details This function should return FALSE if the wake-up wasn't generated in this board and TRUE is it was generated in this board
+    395           */
+    396          
+    397          BOOL_TYPE SRPowerMgr__IsThisNodeWakeUpSource(void)
+    398          {
+    399              #if ((SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED) && (SRPOWERMGR_LOWPOWER_MODE != 0))
+    400                  return (SRPowerMgr_IsThisWakeUpSource);
+    401              #else
+    402                      return(FALSE);
+    403              #endif
+    404          }
+    405          
+    406          //---------------------------------------------------------------------------------------------------------------------
+    407          /**
+    408           * @brief This function is called once another node publish a message letting the other nodes know that it generated the wake-up
+    409           * @param node the parameter is the source of the wake-up signal
+    410           */
+    411          void SRPowerMgr__ReceivedWakeUpNodeID(uint8 node)
+    412          {
+    413              #if ((SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED) && (SRPOWERMGR_LOWPOWER_MODE != 0))
+    414                  SRPowerMgr__ReceivedWakeUpNode = node;
+    415              #endif
+    416          }
+    417          
+    418          //---------------------------------------------------------------------------------------------------------------------
+    419          /**
+    420           *  @brief      It Initializes the module SRPowerMgr and its variables
+    421           */
+    422          void SRPowerMgr__Handler(void)
+    423          {
+    424              #if (SRPOWERMGR_LOWPOWER_MODE != 0)
+    425          
+    426                  uint16 node_status;
+    427                  uint8 aux;
+    428                  BOOL_TYPE network_status;
+    429          
+    430                  if (Mode__GetMode() == MODE_LOWPOWER)
+    431                  {
+    432                      #if (SRPOWERMGR_LOWPOWER_MODE == 1)
+    433                          //SRPOWERMGR_DEEP_SLEEP_MODE
+    434                      #elif (SRPOWERMGR_LOWPOWER_MODE == 2)
+    435                          //SRPOWERMGR_AUTO_WAKEUP_MODE
+    436                      #elif (SRPOWERMGR_LOWPOWER_MODE == 3)
+    437                          //SRPOWERMGR_LOW_SPEED_MODE
+    438                          if (SRPOWERMGR_LOW_SPEED_MODE_IS_READY_TO_WAKEUP() != 0)
+    439                          {
+    440                              SRPowerMgr__GoNormalMode();
+    441                          }
+    442                      #else
+    443                      #endif
+    444                  }
+    445          
+    446                  #if (SRPOWERMGR_WAKEUP_SEQUENCE_GENERATOR == ENABLED)
+    447                      SRPowerMgr_Timeout++;
+    448          
+    449                      switch(SRPowerMgr_State)
+    450                      {
+    451                          case SRPOWERMGR_STATE_IDLE:
+    452                              if (Mode__GetMode() == MODE_NORMAL)
+    453                              {
+    454                                  node_status = Reveal__GetNodestatus();
+    455                                  network_status = TRUE;
+    456          
+    457                                  for (aux = 0; aux < sizeof(SRPOWERMGR_WAKEUP_LIST)/sizeof(SRPOWERMGR_WAKEUP_TYPE); aux++)
+    458                                  {
+    459                                      if(BIT_TEST(node_status, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Node) == 0)
+    460                                      {
+    461                                          network_status = FALSE;
+    462                                          break;
+    463                                      }
+    464                                  }
+    465          
+    466                                  if (network_status == FALSE)
+    467                                  {
+    468                                      SRPowerMgr_Timeout = 0;
+    469                                      SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_NETWORK_STATUS;
+    470                                  }
+    471                              }
+    472                              break;
+    473          
+    474                          case SRPOWERMGR_STATE_WAKEUP_ITSELF:
+    475                              if (Mode__GetMode() == MODE_LOWPOWER)
+    476                              {
+    477                                  Mode__SetMode(MODE_NORMAL);
+    478                              }
+    479                              else
+    480                              {
+    481                                  SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_COM_STATUS;
+    482                              }
+    483          
+    484                              SRPowerMgr_Timeout = 0;
+    485                              break;
+    486          
+    487                          case SRPOWERMGR_STATE_CHECK_COM_STATUS:
+    488                              if (Win__GetBusStatus(WIN_BUS_STATUS_RX_PIN) == TRUE)
+    489                              {
+    490                                  if (SRPowerMgr_WakeUpTrig == SRPOWERMGR_WAKEUP_TRIG_INTERNAL)
+    491                                  {
+    492                                      SRPowerMgr_Timeout = SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_COUNT;
+    493                                      SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_NETWORK_STATUS;
+    494                                  }
+    495                                  else
+    496                                  {
+    497                                      SRPowerMgr_State = SRPOWERMGR_STATE_REQUEST_WAKEUPSOURCCE;
+    498                                  }
+    499                              }
+    500                              else
+    501                              {
+    502                                  if (SRPowerMgr_Timeout > SRPOWERMGR_COM_CHECK_TIMEOUT_IN_COUNT)
+    503                                  {
+    504                                      SRPowerMgr_State = SRPOWERMGR_STATE_IDLE;
+    505                                  }
+    506                              }
+    507                              break;
+    508          
+    509                          case SRPOWERMGR_STATE_REQUEST_WAKEUPSOURCCE:
+    510                              API009System__RequestWakeUpSource();
+    511                              SRPowerMgr_Timeout = 0;
+    512                              SRPowerMgr__ReceivedWakeUpNode  = SRPOWERMGR_INVALID_WAKEUP_NODE;
+    513                              SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_WAKEUPSOURCCE;
+    514                              break;
+    515          
+    516                          case SRPOWERMGR_STATE_CHECK_WAKEUPSOURCCE:
+    517                              if (SRPowerMgr_Timeout < SRPOWERMGR_FEEDBACK_MESSAGE_TIMEOUT_COUNT)
+    518                              {
+    519                                  if (SRPowerMgr__ReceivedWakeUpNode  != SRPOWERMGR_INVALID_WAKEUP_NODE)
+    520                                  {
+    521                                      //found the wakeup source
+    522                                      SRPowerMgr_State = SRPOWERMGR_STATE_IDLE;
+    523                                  }
+    524                              }
+    525                              else
+    526                              {
+    527                                  //I am the wakeup source
+    528                                  if (SRPOWERMGR_IS_WAKEUP_CONDITION_MET())
+    529                                  {
+    530                                      SRPowerMgr_IsThisWakeUpSource = TRUE;
+    531                                      SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_NETWORK_STATUS;
+    532                                  }
+    533                                  else
+    534                                  {
+    535                                      //then its an error
+    536                                      SRPowerMgr_State = SRPOWERMGR_STATE_IDLE;
+    537                                      SRPowerMgr__GoLowPowerMode();
+    538                                  }
+    539                              }
+    540          
+    541                              SRPowerMgr_WakeUpRetry = 0;
+    542                              break;
+    543          
+    544                          case SRPOWERMGR_STATE_CHECK_NETWORK_STATUS:
+    545                              //This time is to wakeup the other nodes after the Wakeup sequence
+    546                              node_status = Reveal__GetNodestatus();
+    547                              network_status = TRUE;
+    548          
+    549                              for (aux = 0; aux < sizeof(SRPOWERMGR_WAKEUP_LIST)/sizeof(SRPOWERMGR_WAKEUP_TYPE); aux++)
+    550                              {
+    551                                  if(BIT_TEST(node_status, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Node) == 0)
+    552                                  {
+    553                                      network_status = FALSE;
+    554                                      break;
+    555                                  }
+    556                              }
+    557          
+    558                              if (network_status == TRUE)
+    559                              {
+    560                                  //All are alive
+    561                                  SRPOWERMGR_WAKEUP_SEQUENCE_COMPLETE();
+    562                                  SRPowerMgr_State = SRPOWERMGR_STATE_IDLE;
+    563                              }
+    564                              else if (SRPowerMgr_Timeout > SRPOWERMGR_NODE_RESPONSE_TIMEOUT_AFTER_WAKEUP_SEQUENCE_IN_COUNT)
+    565                              {
+    566                                  SRPowerMgr_State = SRPOWERMGR_STATE_WAKEUP_OTHERS_SEQ1;
+    567                              }
+    568          
+    569                              break;
+    570          
+    571                          case SRPOWERMGR_STATE_WAKEUP_OTHERS_SEQ1:
+    572                              for (aux = 0; aux < sizeof(SRPOWERMGR_WAKEUP_LIST)/sizeof(SRPOWERMGR_WAKEUP_TYPE); aux++)
+    573                              {
+    574                                  if (Win__GetBusStatus(WIN_BUS_STATUS_BREAK_OUT) == FALSE)
+    575                                  {
+    576                                      Win__SendBreak();
+    577                                  }
+    578          
+    579                                  if (SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port != PORT_NULL)
+    580                                  {
+    581                                      //De assert
+    582                                      Gpio__PinWrite(SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Pin, (BOOL_TYPE)((SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Value ^ 0x01) & 0x01));
+    583          
+    584                                      Gpio__PinConfig(SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Pin, OUTPUT_PUSHPULL);
+    585          
+    586                                      //assert
+    587                                      Gpio__PinWrite(SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Pin, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Value);
+    588                                  }
+    589          
+    590                                  if (SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Func != SRPOWER_ACTIVATION_FUNC_NULL)
+    591                                  {
+    592                                      SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Func();
+    593                                  }
+    594                              }
+    595          
+    596                              SRPowerMgr_Timeout  = 0;
+    597                              SRPowerMgr_State = SRPOWERMGR_STATE_WAKEUP_OTHERS_SEQ2;
+    598          
+    599                              break;
+    600          
+    601                          case SRPOWERMGR_STATE_WAKEUP_OTHERS_SEQ2:
+    602                              if (SRPowerMgr_Timeout > SRPOWERMGR_EXECUTE_WAKEUP_SEQUENCE_IN_COUNT)
+    603                              {
+    604                                  Win__StopBreak();
+    605          
+    606                                  for (aux = 0; aux < sizeof(SRPOWERMGR_WAKEUP_LIST)/sizeof(SRPOWERMGR_WAKEUP_TYPE); aux++)
+    607                                  {
+    608                                      if (SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port != PORT_NULL)
+    609                                      {
+    610                                          //De assert
+    611                                          Gpio__PinWrite(SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Pin, (BOOL_TYPE)((SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Value ^ 0x01) & 0x01));
+    612                                          Gpio__PinConfig(SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Port, SRPOWERMGR_WAKEUP_LIST[aux].WakeUp_Pin, OUTPUT_PUSHPULL);
+    613                                      }
+    614                                  }
+    615          
+    616                                  SRPowerMgr_WakeUpRetry++;
+    617                                  if (SRPowerMgr_WakeUpRetry >= SRPOWERMGR_WAKEUP_RETRY)
+    618                                  {
+    619                                      //Failed to wakeup the network
+    620                                      SRPOWERMGR_FAILED_TO_WAKEUP_NETWORK();
+    621          
+    622                                      SRPowerMgr_State = SRPOWERMGR_STATE_FAILED_TO_WAKEUP_NETWORK;
+    623                                  }
+    624                                  else
+    625                                  {
+    626                                      SRPowerMgr_Timeout = 0;
+    627                                      SRPowerMgr_State = SRPOWERMGR_STATE_CHECK_NETWORK_STATUS;
+    628                                  }
+    629                              }
+    630                              break;
+    631          
+    632                          case SRPOWERMGR_STATE_FAILED_TO_WAKEUP_NETWORK:
+    633                              break;
+    634          
+    635                          default:
+    636                              SRPowerMgr_State = SRPOWERMGR_STATE_IDLE;
+    637                              break;
+    638                      }
+    639                  #endif
+    640              #endif
+    641          }
+    642          
+    643          //=====================================================================================================================
+    644          //-------------------------------------- Private Functions ------------------------------------------------------------
+    645          //=====================================================================================================================
+    646          #endif  //LOW_POWER_FEATURE
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

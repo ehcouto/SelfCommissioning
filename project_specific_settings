@@ -1,0 +1,104 @@
+.INCLUDEDIRS : $(PROJECT_DIR)
+.INCLUDE : LintPath
+
+
+CC = ..\CX\ICCARM
+AS = ..\CX\IASMARM
+LINK = .\CX\ILINKARM
+ELFTOOL = .\CX\IELFTOOL
+
+
+# Set macros for build program options (compiler and assembler)
+
+#This commented out line includes the -i which shows the include files in the listings. Removed because it makes the listings very large.
+#CFLAGS = $(INCLUDE_PATH) --remarks --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --use_c++_inline --only_stdout --dlib_config ..\cx\inc\DLib_Config_Normal.h -r -e --silent --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o $(<:b).obj -l ..\listings\$(<:b).lst
+
+# CFLAGS RECOMMENDED FOR PRODUCTION
+CFLAGS = $(INCLUDE_PATH) --remarks --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config ..\cx\inc\DLib_Config_Normal.h -r $(DBUG_OPTION)  -D ARM_MATH_CM4  -e --silent --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o $(<:b).obj -l ..\listings\$(<:b).lst
+
+# CFLAGS RECOMMENDED FOR PRODUCTION - Optimized for size
+CFLAGS_SIZE = $(INCLUDE_PATH) --remarks --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config ..\cx\inc\DLib_Config_Normal.h -r $(DBUG_OPTION)  -D ARM_MATH_CM4 -e --silent --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohz -o $(<:b).obj -l ..\listings\$(<:b).lst
+
+# CFLAGS FOR MULTI FILE COMPILATION - Optimized for Speed
+CFLAGS_MFC = $(INCLUDE_PATH) --remarks --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config ..\cx\inc\DLib_Config_Normal.h -r $(DBUG_OPTION)  -D ARM_MATH_CM4  -e --silent --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs
+
+# CFLAGS FOR MULTI FILE COMPILATION - Optimized for Size
+CFLAGS_MFC_SIZE = $(INCLUDE_PATH) --remarks --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config ..\cx\inc\DLib_Config_Normal.h -r $(DBUG_OPTION)  -D ARM_MATH_CM4  -e --silent --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohz
+
+#--remarks
+#--no_cse 
+#--no_unroll 
+#--no_inline 
+#--no_code_motion
+#--no_tbaa 
+#--no_clustering 
+#--no_scheduling 
+#--debug 
+#--use_c++_inline
+#--require_prototypes 
+
+
+ 
+
+
+
+AFLAGS = -r -S -o ..\obj\$(<:b).obj --cpu Cortex-M4 --fpu VFPv4_sp -l ..\listings\$(<:b).lst
+#-s+
+#-M<>
+#-w+
+#-t8
+
+
+# Add compilers, linkers, etc. to the path that recipes are run with
+
+PATH := C:\lint;$(PATH)
+
+
+PROJ_NAME = Self_Commissioning_BPM
+
+
+
+# Source files used for MFC 
+
+MCI_SRC = XCategory\Hbl\Mci\Mci.c \
+XCategory\Hbl\Mci\Mcl\Mcl.c \
+XCategory\Hbl\Mci\Mcl\Braking\Braking.c \
+XCategory\Hbl\Mci\Mcl\MacroBlocks\MclDqCtrl.c \
+XCategory\Hbl\Mci\Mcl\MacroBlocks\MclDqRef.c \
+XCategory\Hbl\Mci\Mcl\MacroBlocks\MclInputProc.c \
+XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c \
+XCategory\Hbl\Mci\Mcl\MacroBlocks\MclPwm.c \
+XCategory\Hbl\Mci\Mcl\MacroBlocks\MclSpeedCtrl.c \
+XCategory\Hbl\Mci\Mcl\MclFvt\MclFvt.c \
+XCategory\Hbl\Mci\Mcl\MicroBlocks\ClrkPark\ClrkPark.c \
+XCategory\Hbl\Mci\Mcl\MicroBlocks\Filters\Filters.c \
+XCategory\Hbl\Mci\Mcl\MicroBlocks\Math\MathCalc.c \
+XCategory\Hbl\Mci\Mcl\MicroBlocks\Pi\Pi.c \
+XCategory\Hbl\Mci\Mcl\MicroBlocks\PwmModulation\PwmModulation.c \
+XCategory\Hbl\Mci\Mcl\ResistanceEstimation\ResistanceEstimation.c \
+XCategory\Hbl\Mci\SpeedRefGen\SpeedRefGen.c \
+XCategory\Hbl\Mci\SurgeRelay\SurgeRelay.c \
+XCategory\Driver\SRMCAtod\SRMCAtod.c \
+XCategory\Driver\SRMCInputCapture\SRMCInputCapture.c \
+XCategory\Driver\SRMCPwm\SRMCPwm.c \
+XCategory\Hbl\SRMotorSafetyMgr\SRMotorSafetyMgr.c \
+
+
+
+
+APIS_SRC=XCategory/Application/Reveal_APIs\API003Disc\API003Disc.c \
+XCategory/Application/Reveal_APIs\API005LowLevel\API005LowLevel.c \
+XCategory/Application/Reveal_APIs\API007Data\API007BulkData.c \
+XCategory/Application/Reveal_APIs\API007Data\API007Data.c \
+XCategory/Application/Reveal_APIs\API009System\API009System.c \
+XCategory/Application/Reveal_APIs\API010PollVar\API010PollVar.c \
+XCategory/Application/Reveal_APIs\API011AppCtr\API011AppCtrl.c \
+XCategory/Application/Reveal_APIs\API013RemoteFunction\API013RemoteFunction.c \
+XCategory/Application/Reveal_APIs\API018Diagnostic\API018Diagnostic.c \
+XCategory/Application/Reveal_APIs\API019ProductInfo\API019ProductInfo.c \
+XCategory/Application/Reveal_APIs\API220MotorControl\APIMotorControl.c \
+XCategory/Application/Reveal_APIs\API221MotionCtrl\API221MotionCtrl.c \
+XCategory/Application/Reveal_APIs\SRAPI020Safety\SRAPI020Safety.c \
+ProjectSpecific/Application/API007App/Api007App.c \
+
+

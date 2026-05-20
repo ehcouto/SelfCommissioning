@@ -1,0 +1,672 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V7.20.5.7591/W32 for ARM 06/Aug/2024  13:42:36            #
+#     Copyright 1999-2014 IAR Systems AB.                                     #
+#                                                                             #
+#           Source file   =  C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Micro\cortexm4_macro.s37#
+#           List file     =  C:\Data\Python\Self_Commissioning_Bpm\listings\cortexm4_macro.lst#
+#           Object file   =  C:\Data\Python\Self_Commissioning_Bpm\obj\cortexm4_macro.obj#
+#           Command line  =  -r -S -o ..\obj\cortexm4_macro.obj --cpu         #
+#                            Cortex-M4 --fpu VFPv4_sp -l                      #
+#                            ..\listings\cortexm4_macro.lst                   #
+#                            C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Micro\cortexm4_macro.s37 #
+#                                                                             #
+###############################################################################
+
+                                        MOV R13, #0xAAA8    ; Test is
+                        different (SP is word aligned)
+                                ------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",428 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+                                        MOVT R13, #0xAAAA   ; Load in two
+                        times and 2 least significant bits cleared
+                                -------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",429 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+                                        MOV R13, #0x5554
+                                ------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",434 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+                                        MOVT R13, #0x5555
+                                -------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",435 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+
+
+    1                           ;/**
+    2                           ; *  @file
+    3                           ; *  @brief      consists of API defination to
+                                 access the Cortex-M4F4 core.
+    4                           ; *
+    5                           ; *  $Header: cortexm4_macro.s37 1.1
+                                 2015/06/30 16:53:03EDT Natak Rahul (NATAKRB)
+                                 Exp  $
+    6                           ; *
+    7                           ; *  @copyright  Copyright 2012-$Date:
+                                 2015/06/30 16:53:03EDT $. Whirlpool Corporatio
+                                n. All rights reserved - CONFIDENTIAL
+    8                           ; */
+    9                           ;//-------------------------------------------
+                                -----------------------------------------------
+                                ---------------------------
+   10                             
+   11                             SECTION .bss:DATA
+   12                             PUBLIC 
+   13                           
+   14                             SECTION .text:CODE(2)
+   15                             
+   16                             EXPORT __MSR_MSP
+   17                             ; Exported functions
+   18                             EXPORT __WFI
+   19                             EXPORT __WFE
+   20                             EXPORT __SEV
+   21                             EXPORT __ISB
+   22                             EXPORT __DSB
+   23                             EXPORT __DMB
+   24                             EXPORT __SVC
+   25                             EXPORT __MSR_CONTROL
+   26                             EXPORT __MRS_PSP
+   27                             EXPORT __MSR_PSP
+   28                             EXPORT __MRS_MSP
+   29                             EXPORT __RESETPRIMASK
+   30                             EXPORT __REV_HalfWord
+   31                             EXPORT __REV_Word  
+   32                             EXPORT __StartupRegisterTest
+   33                             EXPORT __RunRegisterTest
+   34                             
+   35                           ;*********************************************
+                                **********************************
+   36                           ; Function Name  : __WFI
+   37                           ; Description    : Assembler function for the
+                                 WFI instruction.
+   38                           ; Input          : None
+   39                           ; Return         : None
+   40                           ;*********************************************
+                                **********************************
+   41                           __WFI 
+   42                            
+   43    00000000 30BF              WFI
+   44    00000002 7047              BX r14
+   45                           
+   46                           ;*********************************************
+                                **********************************
+   47                           ; Function Name  : __WFE
+   48                           ; Description    : Assembler function for the
+                                 WFE instruction.
+   49                           ; Input          : None
+   50                           ; Return         : None
+   51                           ;*********************************************
+                                **********************************
+   52                           __WFE
+   53                           
+   54    00000004 20BF              WFE
+   55    00000006 7047              BX r14
+   56                           
+   57                           ;*********************************************
+                                **********************************
+   58                           ; Function Name  : __SEV
+   59                           ; Description    : Assembler function for the
+                                 SEV instruction.
+   60                           ; Input          : None
+   61                           ; Return         : None
+   62                           ;*********************************************
+                                **********************************
+   63                           __SEV
+   64                           
+   65    00000008 40BF              SEV
+   66    0000000A 7047              BX r14
+   67                           
+   68                           ;*********************************************
+                                **********************************
+   69                           ; Function Name  : __ISB
+   70                           ; Description    : Assembler function for the
+                                 ISB instruction.
+   71                           ; Input          : None
+   72                           ; Return         : None
+   73                           ;*********************************************
+                                **********************************
+   74                           __ISB
+   75                           
+   76    0000000C BFF36F8F          ISB
+   77    00000010 7047              BX r14
+   78                           
+   79                           ;*********************************************
+                                **********************************
+   80                           ; Function Name  : __DSB
+   81                           ; Description    : Assembler function for the
+                                 DSB instruction.
+   82                           ; Input          : None
+   83                           ; Return         : None
+   84                           ;*********************************************
+                                **********************************
+   85                           __DSB
+   86                           
+   87    00000012 BFF34F8F          DSB
+   88    00000016 7047              BX r14
+   89                           
+   90                           ;*********************************************
+                                **********************************
+   91                           ; Function Name  : __DMB
+   92                           ; Description    : Assembler function for the
+                                 DMB instruction.
+   93                           ; Input          : None
+   94                           ; Return         : None
+   95                           ;*********************************************
+                                **********************************
+   96                           __DMB
+   97                           
+   98    00000018 BFF35F8F          DMB
+   99    0000001C 7047              BX r14
+  100                           
+  101                           ;*********************************************
+                                **********************************
+  102                           ; Function Name  : __SVC
+  103                           ; Description    : Assembler function for the
+                                 SVC instruction.
+  104                           ; Input          : None
+  105                           ; Return         : None
+  106                           ;*********************************************
+                                **********************************
+  107                           __SVC
+  108                           
+  109    0000001E 01DF              SVC 0x01
+  110    00000020 7047              BX r14
+  111                           
+  112                           ;*********************************************
+                                **********************************
+  113                           ; Function Name  : __MSR_CONTROL
+  114                           ; Description    : Assembler function for the
+                                 MSR instruction.
+  115                           ; Input          : - r0 : Cortex-M0 CONTROL
+                                 register new value.  
+  116                           ; Return         : None
+  117                           ;*********************************************
+                                **********************************
+  118                           __MSR_CONTROL
+  119                           
+  120    00000022 80F31488        MSR CONTROL, r0
+  121    00000026 BFF36F8F        ISB
+  122    0000002A 7047            BX r14
+  123                           
+  124                           ;*********************************************
+                                **********************************
+  125                           ; Function Name  : __MRS_PSP
+  126                           ; Description    : Assembler function for the
+                                 MRS instruction.
+  127                           ; Input          : None
+  128                           ; Return         : - r0 : Process Stack
+                                 value.
+  129                           ;*********************************************
+                                **********************************
+  130                           __MRS_PSP
+  131                           
+  132    0000002C EFF30980        MRS r0, PSP
+  133    00000030 7047            BX r14
+  134                           
+  135                           ;*********************************************
+                                **********************************
+  136                           ; Function Name  : __MSR_PSP
+  137                           ; Description    : Assembler function for the
+                                 MSR instruction.
+  138                           ; Input          : - r0 : Process Stack new
+                                 value.  
+  139                           ; Return         : None
+  140                           ;*********************************************
+                                **********************************
+  141                           __MSR_PSP 
+  142                            
+  143    00000032 80F30988          MSR PSP, r0 ; set Process Stack value
+  144    00000036 7047              BX r14
+  145                           
+  146                           ;*********************************************
+                                **********************************
+  147                           ; Function Name  : __MRS_MSP
+  148                           ; Description    : Assembler function for the
+                                 MRS instruction.
+  149                           ; Input          : None
+  150                           ; Return         : - r0 : Main Stack
+                                 value.
+  151                           ;*********************************************
+                                **********************************
+  152                           __MRS_MSP
+  153                           
+  154    00000038 EFF30880        MRS r0, MSP
+  155    0000003C 7047            BX r14
+  156                           
+  157                           ;*********************************************
+                                **********************************
+  158                           ; Function Name  : __MSR_MSP
+  159                           ; Description    : Assembler function for the
+                                 MSR instruction.
+  160                           ; Input          : - r0 : Main Stack new
+                                 value.  
+  161                           ; Return         : None
+  162                           ;*********************************************
+                                **********************************
+  163                           __MSR_MSP 
+  164                            
+  165    0000003E 80F30888          MSR MSP, r0 ; set Main Stack value
+  166    00000042 7047              BX r14
+  167                                       
+  168                           ;*********************************************
+                                **********************************
+  169                           ; Function Name  : __RESETPRIMASK
+  170                           ; Description    : Assembler function to reset
+                                 the PRIMASK.
+  171                           ; Input          : None 
+  172                           ; Return         : None
+  173                           ;*********************************************
+                                **********************************
+  174                           __RESETPRIMASK
+  175                           
+  176    00000044 62B6            CPSIE i
+  177    00000046 7047            BX r14
+  178                           
+  179                           ;*********************************************
+                                **********************************
+  180                           ; Function Name  : __REV_HalfWord
+  181                           ; Description    : Reverses the byte order in
+                                 HalfWord(16-bit) input variable.
+  182                           ; Input          : - r0 : specifies the input
+                                 variable
+  183                           ; Return         : - r0 : holds tve variable
+                                 value after byte reversing.
+  184                           ;*********************************************
+                                **********************************
+  185                           __REV_HalfWord 
+  186                            
+  187    00000048 40BA            REV16 r0, r0
+  188    0000004A 7047            BX r14
+  189                           
+  190                           ;*********************************************
+                                **********************************
+  191                           ; Function Name  : __REV_Word
+  192                           ; Description    : Reverses the byte order in
+                                 Word(32-bit) input variable.
+  193                           ; Input          : - r0 : specifies the input
+                                 variable
+  194                           ; Return         : - r0 : holds tve variable
+                                 value after byte reversing.
+  195                           ;*********************************************
+                                **********************************
+  196                           __REV_Word 
+  197                            
+  198    0000004C 00BA            REV r0, r0
+  199    0000004E 7047            BX r14
+  200                             
+  201                           
+  202                           ;*********************************************
+                                **********************************
+  203                           ; Function Name  : StartupRegisterTest
+  204                           ; Description    : Full Cortex-M0 CPU test at
+                                 start-up
+  205                           ;                  Note: when possible, BRANCH
+                                 are 16-bit only (depending on
+  206                           ;                  relative offset to final BL
+                                 instruction)
+  207                           ; Input          : None.
+  208                           ; Output         : Branch directly to a Fail
+                                 Safe routine in case of failure
+  209                           ; Return         : TRUE (=1)
+  210                           ;*********************************************
+                                **********************************/
+  211                           __StartupRegisterTest:
+  212                                   ;save the register value to be
+                                 tested
+  213    00000050 2DE9FE5F              PUSH {R1-R12, LR}
+  214    00000054 0020              MOVS R0, #0x00000000                ; Set
+                                          Z(ero) Flag
+  215    00000056 15D1              BNE srt_fail                        ; Fails
+                                          if Z clear
+  216    00000058 0138              SUBS R0,#1                          ; Set
+                                          N(egative) Flag
+  217    0000005A 13D5              BPL srt_fail                        ; Fails
+                                          if N clear
+  218    0000005C 0230              ADDS R0,#2                          ; Set
+                                          C(arry) Flag and do not set
+                                          Z
+  219    0000005E 11D3              BCC srt_fail                        ; Fails
+                                          if C clear
+  220    00000060 4FF00040          LDR.W R0,=0x80000000                       
+                                         ; Prepares Overflow test
+  221    00000064 0018              ADDS R0, R0, R0                     ; Set
+                                          V(overflow) Flag
+  222    00000066 0DD7              BVC srt_fail                               
+                                          ; Fails if V clear
+  223    00000068 5FF0FF30              MOVS R0, #0xFFFFFFFF                   
+                                              ; Prepares Saturation test
+  224    0000006C 80F30A01              USAT R1,#10,R0                         
+                                              ; Set Q(saturation) Flag
+  225    00000070 EFF30080          MRS R0, APSR                        ; Get
+                                         Status register
+  226    00000074 B0F1384F              CMP R0, #0xB8000000                    
+                                             ; Verifies that N=C=V=Q=1
+  227    00000078 04D1              BNE srt_fail                               
+                                          ; Fails if Q+N+C=V clear
+  228                               
+  229                               srt_pass:
+  230    0000007A 00F007F8          BL __RunRegisterTest
+  231                               ;restore the register value
+  232    0000007E BDE8FE5F              POP {R1-R12, LR}
+  233    00000082 7047              BX LR               ; return to the
+                                                         caller
+  234                           
+  235                               srt_fail:
+  236                               ;restore the register value
+  237    00000084 BDE8FE5F              POP {R1-R12, LR}
+  238                                   
+  239    00000088 0020                  MOVS R0, #0x0
+  240    0000008A 7047                  BX LR               ; return to the
+                                                             caller
+  241                                   
+  242                           ;*********************************************
+                                **********************************
+  243                           ; Function Name  : RunRegisterTest
+  244                           ; Description    : Full Cortex-M0 CPU test
+                                 during run-time
+  245                           ;                  Note: when possible, BRANCH
+                                 are 16-bit only (depending on
+  246                           ;                  relative offset to final BL
+                                 instruction)
+  247                           ; Input          : None.
+  248                           ; Output         : Branch directly to a Fail
+                                 Safe routine in case of failure
+  249                           ; Return         : TRUE (=1) if test is
+                                 ok
+  250                           ;*********************************************
+                                **********************************/
+  251                           __RunRegisterTest:
+  252                           
+  253                                   ;save the register value to be
+                                 tested
+  254    0000008C 2DE9FE5F              PUSH {R1-R12, LR}
+  255                               
+  256    00000090 5FF0AA30              MOVS R0,#0xAAAAAAAA
+  257    00000094 B0F1AA3F              CMP R0, #0xAAAAAAAA
+  258    00000098 40F00581              BNE.W rrt_fail
+  259    0000009C 5FF05530              MOVS R0, #0x55555555
+  260    000000A0 B0F1553F              CMP R0, #0x55555555
+  261    000000A4 40F0FF80              BNE.W rrt_fail
+  262                           
+  263                                   ; Link register (Register R14)
+  264    000000A8 5FEA0E00              MOVS R0, R14              ; Contains
+                                                                   the return
+                                                                   address and
+                                                                   must be
+                                                                   saved
+  265    000000AC 5FF0AA3E              MOVS R14, #0xAAAAAAAA
+  266    000000B0 BEF1AA3F              CMP R14, #0xAAAAAAAA
+  267    000000B4 40F0F780              BNE.W rrt_fail
+  268    000000B8 5FF0553E              MOVS R14, #0x55555555
+  269    000000BC BEF1553F              CMP R14, #0x55555555
+  270    000000C0 40F0F180              BNE.W rrt_fail
+  271    000000C4 5FEA000E              MOVS R14, R0
+  272    000000C8 0020                  MOVS R0, #0x0             ; For ramp
+                                                                   test
+  273                           
+  274                                   ; Register R1
+  275    000000CA 5FF0AA31              MOVS R1, #0xAAAAAAAA
+  276    000000CE B1F1AA3F              CMP R1, #0xAAAAAAAA
+  277    000000D2 40F0E880              BNE.W rrt_fail
+  278    000000D6 5FF05531              MOVS R1, #0x55555555
+  279    000000DA B1F1553F              CMP R1, #0x55555555
+  280    000000DE 40F0E280              BNE.W rrt_fail
+  281    000000E2 0121                  MOVS R1, #0x01            ; For ramp
+                                                                   test
+  282                           
+  283                                   ; Register R2
+  284    000000E4 5FF0AA32              MOVS R2, #0xAAAAAAAA
+  285    000000E8 B2F1AA3F              CMP R2, #0xAAAAAAAA
+  286    000000EC 40F0DB80              BNE.W rrt_fail
+  287    000000F0 5FF05532              MOVS R2, #0x55555555
+  288    000000F4 B2F1553F              CMP R2, #0x55555555
+  289    000000F8 40F0D580              BNE.W rrt_fail
+  290    000000FC 0222                  MOVS R2, #0x02            ; For ramp
+                                                                   test
+  291                                   
+  292                                   ; Register R3
+  293    000000FE 5FF0AA33              MOVS R3, #0xAAAAAAAA
+  294    00000102 B3F1AA3F              CMP R3, #0xAAAAAAAA
+  295    00000106 40F0CE80              BNE.W rrt_fail
+  296    0000010A 5FF05533              MOVS R3, #0x55555555
+  297    0000010E B3F1553F              CMP R3, #0x55555555
+  298    00000112 40F0C880              BNE.W rrt_fail
+  299    00000116 0323                  MOVS R3, #0x03            ; For ramp
+                                                                   test
+  300                                   
+  301                                   ; Register R4
+  302    00000118 5FF0AA34              MOVS R4, #0xAAAAAAAA
+  303    0000011C B4F1AA3F              CMP R4, #0xAAAAAAAA
+  304    00000120 40F0C180              BNE.W rrt_fail
+  305    00000124 5FF05534              MOVS R4, #0x55555555
+  306    00000128 B4F1553F              CMP R4, #0x55555555
+  307    0000012C 40F0BB80              BNE.W rrt_fail
+  308    00000130 0424                  MOVS R4, #0x04            ; For ramp
+                                                                   test
+  309                                   
+  310                                   ; Register R5
+  311    00000132 5FF0AA35              MOVS R5, #0xAAAAAAAA
+  312    00000136 B5F1AA3F              CMP R5, #0xAAAAAAAA
+  313    0000013A 40F0B480              BNE.W rrt_fail
+  314    0000013E 5FF05535              MOVS R5, #0x55555555
+  315    00000142 B5F1553F              CMP R5, #0x55555555
+  316    00000146 40F0AE80              BNE.W rrt_fail
+  317    0000014A 0525                  MOVS R5, #0x05            ; For ramp
+                                                                   test
+  318                                   
+  319                                   ; Register R6
+  320    0000014C 5FF0AA36              MOVS R6, #0xAAAAAAAA
+  321    00000150 B6F1AA3F              CMP R6, #0xAAAAAAAA
+  322    00000154 40F0A780              BNE.W rrt_fail
+  323    00000158 5FF05536              MOVS R6, #0x55555555
+  324    0000015C B6F1553F              CMP R6, #0x55555555
+  325    00000160 40F0A180              BNE.W rrt_fail
+  326    00000164 0626                  MOVS R6, #0x06            ; For ramp
+                                                                   test
+  327                                   
+  328                                   ; Register R7
+  329    00000166 5FF0AA37              MOVS R7, #0xAAAAAAAA
+  330    0000016A B7F1AA3F              CMP R7, #0xAAAAAAAA
+  331    0000016E 40F09A80              BNE.W rrt_fail
+  332    00000172 5FF05537              MOVS R7, #0x55555555
+  333    00000176 B7F1553F              CMP R7, #0x55555555
+  334    0000017A 40F09480              BNE.W rrt_fail
+  335    0000017E 0727                  MOVS R7, #0x07            ; For ramp
+                                                                   test
+  336                                   
+  337                                   ; Register R8
+  338    00000180 5FF0AA38              MOVS R8, #0xAAAAAAAA
+  339    00000184 B8F1AA3F              CMP R8, #0xAAAAAAAA
+  340    00000188 40F08D80              BNE.W rrt_fail
+  341    0000018C 5FF05538              MOVS R8, #0x55555555
+  342    00000190 B8F1553F              CMP R8, #0x55555555
+  343    00000194 40F08780              BNE.W rrt_fail
+  344    00000198 5FF00808              MOVS R8, #0x08            ; For ramp
+                                                                   test
+  345                                   
+  346                                   ; Register R9
+  347    0000019C 5FF0AA39              MOVS R9, #0xAAAAAAAA
+  348    000001A0 B9F1AA3F              CMP R9, #0xAAAAAAAA
+  349    000001A4 40F07F80              BNE.W rrt_fail
+  350    000001A8 5FF05539              MOVS R9, #0x55555555
+  351    000001AC B9F1553F              CMP R9, #0x55555555
+  352    000001B0 40F07980              BNE.W rrt_fail
+  353    000001B4 5FF00909              MOVS R9, #0x09            ; For ramp
+                                                                   test
+  354                                   
+  355                                   ; Register R10
+  356    000001B8 5FF0AA3A              MOVS R10, #0xAAAAAAAA
+  357    000001BC BAF1AA3F              CMP R10, #0xAAAAAAAA
+  358    000001C0 71D1                  BNE rrt_fail
+  359    000001C2 5FF0553A              MOVS R10, #0x55555555
+  360    000001C6 BAF1553F              CMP R10, #0x55555555
+  361    000001CA 6CD1                  BNE rrt_fail
+  362    000001CC 5FF00A0A              MOVS R10, #0x0A           ; For ramp
+                                                                   test
+  363                                   
+  364                                   ; Register R11
+  365    000001D0 5FF0AA3B              MOVS R11, #0xAAAAAAAA
+  366    000001D4 BBF1AA3F              CMP R11, #0xAAAAAAAA
+  367    000001D8 65D1                  BNE rrt_fail
+  368    000001DA 5FF0553B              MOVS R11, #0x55555555
+  369    000001DE BBF1553F              CMP R11, #0x55555555
+  370    000001E2 60D1                  BNE rrt_fail
+  371    000001E4 5FF00B0B              MOVS R11, #0x0B           ; For ramp
+                                                                   test
+  372                                   
+  373                                   ; Register R12
+  374    000001E8 5FF0AA3C              MOVS R12, #0xAAAAAAAA
+  375    000001EC BCF1AA3F              CMP R12, #0xAAAAAAAA
+  376    000001F0 59D1                  BNE rrt_fail
+  377    000001F2 5FF0553C              MOVS R12, #0x55555555
+  378    000001F6 BCF1553F              CMP R12, #0x55555555
+  379    000001FA 54D1                  BNE rrt_fail
+  380    000001FC 5FF00C0C              MOVS R12, #0x0C           ; For ramp
+                                                                   test
+  381                           
+  382                               ; Ramp pattern verification
+  383    00000200 0028                  CMP R0, #0x00
+  384    00000202 50D1                  BNE rrt_fail
+  385    00000204 0129                  CMP R1, #0x01
+  386    00000206 4ED1                  BNE rrt_fail
+  387    00000208 022A                  CMP R2, #0x02
+  388    0000020A 4CD1                  BNE rrt_fail
+  389    0000020C 032B                  CMP R3, #0x03
+  390    0000020E 4AD1                  BNE rrt_fail
+  391    00000210 042C                  CMP R4, #0x04
+  392    00000212 48D1                  BNE rrt_fail
+  393    00000214 052D                  CMP R5, #0x05
+  394    00000216 46D1                  BNE rrt_fail
+  395    00000218 062E                  CMP R6, #0x06
+  396    0000021A 44D1                  BNE rrt_fail
+  397    0000021C 072F                  CMP R7, #0x07
+  398    0000021E 42D1                  BNE rrt_fail
+  399    00000220 B8F1080F              CMP R8, #0x08
+  400    00000224 3FD1                  BNE rrt_fail
+  401    00000226 B9F1090F              CMP R9, #0x09
+  402    0000022A 3CD1                  BNE rrt_fail
+  403    0000022C BAF10A0F              CMP R10, #0x0A
+  404    00000230 39D1                  BNE rrt_fail
+  405    00000232 BBF10B0F              CMP R11, #0x0B
+  406    00000236 36D1                  BNE rrt_fail
+  407    00000238 BCF10C0F              CMP R12, #0x0C
+  408    0000023C 33D1                  BNE rrt_fail
+  409                           
+  410                                   ; Process Stack pointer (banked
+                                 Register R13)
+  411    0000023E EFF30980              MRS R0, PSP         ; Save process
+                                                             stack value
+  412    00000242 4AF6A821              MOV R1, #0xAAA8     ; Test is different
+                                                             (PSP is word
+                                                             aligned)
+  413    00000246 CAF6AA21              MOVT R1, #0xAAAA    ; Load in two times
+                                                             and 2 least
+                                                             significant bits
+                                                             cleared
+  414    0000024A 81F30988              MSR PSP, R1         ; load process
+                                                             stack value
+  415    0000024E EFF30982              MRS R2, PSP         ; Get back process
+                                                             stack value
+  416    00000252 8A42                  CMP R2, R1          ; Verify value
+  417    00000254 27D1                  BNE rrt_fail
+  418    00000256 45F25451              MOV R1, #0x5554     ; Test is different
+                                                             (PSP is word
+                                                             aligned)
+  419    0000025A C5F25551              MOVT R1, #0x5555    ; Load in two times
+                                                             and 2 least
+                                                             significant bits
+                                                             cleared
+  420    0000025E 81F30988              MSR PSP, R1         ; load process
+                                                             stack value
+  421    00000262 EFF30982              MRS R2, PSP         ; Get back process
+                                                             stack value
+  422    00000266 8A42                  CMP R2, R1          ; Verify value
+  423    00000268 1DD1                  BNE rrt_fail
+  424    0000026A 80F30988              MSR PSP, R0         ; Restore process
+                                                             stack value
+  425                                   
+  426                                   ; Stack pointer (Register R13)
+  427    0000026E 5FEA0D0C              MOVS R12, R13       ; Contains the
+                                                             return address and
+                                                             must be saved
+  428    00000272 4AF6A82D              MOV R13, #0xAAA8    ; Test is different
+                                                             (SP is word
+                                                             aligned)
+                                        MOV R13, #0xAAA8    ; Test is
+                        different (SP is word aligned)
+                                ------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",428 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+  429    00000276 CAF6AA2D              MOVT R13, #0xAAAA   ; Load in two times
+                                                             and 2 least
+                                                             significant bits
+                                                             cleared
+                                        MOVT R13, #0xAAAA   ; Load in two
+                        times and 2 least significant bits cleared
+                                -------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",429 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+  430    0000027A 4AF6A821              MOV R1, #0xAAA8     ; It must be loaded
+                                                             half-word by
+                                                             half-word
+  431    0000027E CAF6AA21              MOVT R1, #0xAAAA    ; and compared with
+                                                             another register
+  432    00000282 8D45                  CMP R13, R1
+  433    00000284 0FD1                  BNE rrt_fail
+  434    00000286 45F2545D              MOV R13, #0x5554
+                                        MOV R13, #0x5554
+                                ------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",434 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+  435    0000028A C5F2555D              MOVT R13, #0x5555
+                                        MOVT R13, #0x5555
+                                -------------^
+                                "C:\Data\Python\Self_Commissioning_Bpm\source\
+                       XCategory\Driver\Micro\cortexm4_macro.s37",435 
+                        Warning[419]: SP as destinati
+                                on register is unpredictable
+  436    0000028E 45F25451              MOV R1, #0x5554
+  437    00000292 C5F25551              MOVT R1, #0x5555
+  438    00000296 8D45                  CMP R13, R1
+  439    00000298 05D1                  BNE rrt_fail
+  440    0000029A 5FEA0C0D              MOVS R13, R12
+  441                           
+  442                               ;restore the register value
+  443    0000029E BDE8FE5F              POP {R1-R12, LR}
+  444                           
+  445    000002A2 0120              rrt_pass:   MOVS R0, #0x1       
+  446    000002A4 7047                          BX LR                          
+                                                    ; return to the caller     
+                                                    
+  447                           
+  448    000002A6 0020              rrt_fail:   MOVS R0, #0x0       
+  449    000002A8 7047                          BX LR                          
+                                                    ; return to the caller 
+                                                    
+  450                           
+  451                           
+  452                            END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 4         #
+#         Bytes: 682         #
+##############################
+
+
+
+

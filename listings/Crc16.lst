@@ -1,0 +1,659 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:53
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Crc16\Crc16.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o Crc16.obj -l
+#        ..\listings\Crc16.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Crc16\Crc16.c
+#    List file    =  ..\listings\Crc16.lst
+#    Object file  =  Crc16.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Crc16\Crc16.c
+      1          /**
+      2           *  @file       
+      3           *
+      4           *  @defgroup CLASS_B
+      5           *
+      6           *  @brief      THis module calculates CRC 16 bits using CCITT polynomial
+      7           *
+      8           *  @copyright  Copyright 2015-2017. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      9           */
+     10          //---------------------------------------------------------------------------------------------------------------------
+     11          //---------------------------------------------------------------------------------------------------------------------
+     12          
+     13          
+     14          //-------------------------------------- Include Files ----------------------------------------------------------------
+     15          #include "C_Extensions.h"
+     16          #include "Crc16.h" 
+     17          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     18          #if (MICRO_IS_LITTLE_ENDIAN == 0)
+     19              #define CRC_LOW     0
+     20              #define CRC_HIGH    1
+     21          #elif (MICRO_IS_LITTLE_ENDIAN == 1)
+     22              #define CRC_LOW     1
+     23              #define CRC_HIGH    0
+     24          #endif
+     25          
+
+   \                                 In section .text, align 4, keep-with-next
+     26          const uint8 Tab_Crc16_Hi[256] = {
+   \                     Tab_Crc16_Hi:
+   \   00000000   0x00 0x10          DC8 0, 16, 32, 48, 64, 80, 96, 112, 129, 145, 161, 177, 193, 209, 225
+   \              0x20 0x30    
+   \              0x40 0x50    
+   \              0x60 0x70    
+   \              0x81 0x91    
+   \              0xA1 0xB1    
+   \              0xC1 0xD1    
+   \              0xE1         
+   \   0000000F   0xF1 0x12          DC8 241, 18, 2, 50, 34, 82, 66, 114, 98, 147, 131, 179, 163, 211, 195
+   \              0x02 0x32    
+   \              0x22 0x52    
+   \              0x42 0x72    
+   \              0x62 0x93    
+   \              0x83 0xB3    
+   \              0xA3 0xD3    
+   \              0xC3         
+   \   0000001E   0xF3 0xE3          DC8 243, 227, 36, 52, 4, 20, 100, 116, 68, 84, 165, 181, 133, 149, 229
+   \              0x24 0x34    
+   \              0x04 0x14    
+   \              0x64 0x74    
+   \              0x44 0x54    
+   \              0xA5 0xB5    
+   \              0x85 0x95    
+   \              0xE5         
+   \   0000002D   0xF5 0xC5          DC8 245, 197, 213, 54, 38, 22, 6, 118, 102, 86, 70, 183, 167, 151, 135
+   \              0xD5 0x36    
+   \              0x26 0x16    
+   \              0x06 0x76    
+   \              0x66 0x56    
+   \              0x46 0xB7    
+   \              0xA7 0x97    
+   \              0x87         
+   \   0000003C   0xF7 0xE7          DC8 247, 231, 215, 199, 72, 88, 104, 120, 8, 24, 40, 56, 201, 217, 233
+   \              0xD7 0xC7    
+   \              0x48 0x58    
+   \              0x68 0x78    
+   \              0x08 0x18    
+   \              0x28 0x38    
+   \              0xC9 0xD9    
+   \              0xE9         
+   \   0000004B   0xF9 0x89          DC8 249, 137, 153, 169, 185, 90, 74, 122, 106, 26, 10, 58, 42, 219, 203
+   \              0x99 0xA9    
+   \              0xB9 0x5A    
+   \              0x4A 0x7A    
+   \              0x6A 0x1A    
+   \              0x0A 0x3A    
+   \              0x2A 0xDB    
+   \              0xCB         
+   \   0000005A   0xFB 0xEB          DC8 251, 235, 155, 139, 187, 171, 108, 124, 76, 92, 44, 60, 12, 28, 237
+   \              0x9B 0x8B    
+   \              0xBB 0xAB    
+   \              0x6C 0x7C    
+   \              0x4C 0x5C    
+   \              0x2C 0x3C    
+   \              0x0C 0x1C    
+   \              0xED         
+   \   00000069   0xFD 0xCD          DC8 253, 205, 221, 173, 189, 141, 157, 126, 110, 94, 78, 62, 46, 30, 14
+   \              0xDD 0xAD    
+   \              0xBD 0x8D    
+   \              0x9D 0x7E    
+   \              0x6E 0x5E    
+   \              0x4E 0x3E    
+   \              0x2E 0x1E    
+   \              0x0E         
+   \   00000078   0xFF 0xEF          DC8 255, 239, 223, 207, 191, 175, 159, 143, 145, 129, 177, 161, 209
+   \              0xDF 0xCF    
+   \              0xBF 0xAF    
+   \              0x9F 0x8F    
+   \              0x91 0x81    
+   \              0xB1 0xA1    
+   \              0xD1         
+   \   00000085   0xC1 0xF1          DC8 193, 241, 225, 16, 0, 48, 32, 80, 64, 112, 96, 131, 147, 163, 179
+   \              0xE1 0x10    
+   \              0x00 0x30    
+   \              0x20 0x50    
+   \              0x40 0x70    
+   \              0x60 0x83    
+   \              0x93 0xA3    
+   \              0xB3         
+   \   00000094   0xC3 0xD3          DC8 195, 211, 227, 243, 2, 18, 34, 50, 66, 82, 98, 114, 181, 165, 149
+   \              0xE3 0xF3    
+   \              0x02 0x12    
+   \              0x22 0x32    
+   \              0x42 0x52    
+   \              0x62 0x72    
+   \              0xB5 0xA5    
+   \              0x95         
+   \   000000A3   0x85 0xF5          DC8 133, 245, 229, 213, 197, 52, 36, 20, 4, 116, 100, 84, 68, 167, 183
+   \              0xE5 0xD5    
+   \              0xC5 0x34    
+   \              0x24 0x14    
+   \              0x04 0x74    
+   \              0x64 0x54    
+   \              0x44 0xA7    
+   \              0xB7         
+   \   000000B2   0x87 0x97          DC8 135, 151, 231, 247, 199, 215, 38, 54, 6, 22, 102, 118, 70, 86, 217
+   \              0xE7 0xF7    
+   \              0xC7 0xD7    
+   \              0x26 0x36    
+   \              0x06 0x16    
+   \              0x66 0x76    
+   \              0x46 0x56    
+   \              0xD9         
+   \   000000C1   0xC9 0xF9          DC8 201, 249, 233, 153, 137, 185, 169, 88, 72, 120, 104, 24, 8, 56, 40
+   \              0xE9 0x99    
+   \              0x89 0xB9    
+   \              0xA9 0x58    
+   \              0x48 0x78    
+   \              0x68 0x18    
+   \              0x08 0x38    
+   \              0x28         
+   \   000000D0   0xCB 0xDB          DC8 203, 219, 235, 251, 139, 155, 171, 187, 74, 90, 106, 122, 10, 26
+   \              0xEB 0xFB    
+   \              0x8B 0x9B    
+   \              0xAB 0xBB    
+   \              0x4A 0x5A    
+   \              0x6A 0x7A    
+   \              0x0A 0x1A    
+   \   000000DE   0x2A 0x3A          DC8 42, 58, 253, 237, 221, 205, 189, 173, 157, 141, 124, 108, 92, 76
+   \              0xFD 0xED    
+   \              0xDD 0xCD    
+   \              0xBD 0xAD    
+   \              0x9D 0x8D    
+   \              0x7C 0x6C    
+   \              0x5C 0x4C    
+   \   000000EC   0x3C 0x2C          DC8 60, 44, 28, 12, 239, 255, 207, 223, 175, 191, 143, 159, 110, 126
+   \              0x1C 0x0C    
+   \              0xEF 0xFF    
+   \              0xCF 0xDF    
+   \              0xAF 0xBF    
+   \              0x8F 0x9F    
+   \              0x6E 0x7E    
+   \   000000FA   0x4E 0x5E          DC8 78, 94, 46, 62, 14, 30
+   \              0x2E 0x3E    
+   \              0x0E 0x1E    
+     27                  0x00,0x10,0x20,0x30,0x40,0x50,0x60,0x70,0x81,0x91,0xA1,0xB1,0xC1,0xD1,0xE1,0xF1,
+     28                  0x12,0x02,0x32,0x22,0x52,0x42,0x72,0x62,0x93,0x83,0xB3,0xA3,0xD3,0xC3,0xF3,0xE3,
+     29                  0x24,0x34,0x04,0x14,0x64,0x74,0x44,0x54,0xA5,0xB5,0x85,0x95,0xE5,0xF5,0xC5,0xD5,
+     30                  0x36,0x26,0x16,0x06,0x76,0x66,0x56,0x46,0xB7,0xA7,0x97,0x87,0xF7,0xE7,0xD7,0xC7,
+     31                  0x48,0x58,0x68,0x78,0x08,0x18,0x28,0x38,0xC9,0xD9,0xE9,0xF9,0x89,0x99,0xA9,0xB9,
+     32                  0x5A,0x4A,0x7A,0x6A,0x1A,0x0A,0x3A,0x2A,0xDB,0xCB,0xFB,0xEB,0x9B,0x8B,0xBB,0xAB,
+     33                  0x6C,0x7C,0x4C,0x5C,0x2C,0x3C,0x0C,0x1C,0xED,0xFD,0xCD,0xDD,0xAD,0xBD,0x8D,0x9D,
+     34                  0x7E,0x6E,0x5E,0x4E,0x3E,0x2E,0x1E,0x0E,0xFF,0xEF,0xDF,0xCF,0xBF,0xAF,0x9F,0x8F,
+     35                  0x91,0x81,0xB1,0xA1,0xD1,0xC1,0xF1,0xE1,0x10,0x00,0x30,0x20,0x50,0x40,0x70,0x60,
+     36                  0x83,0x93,0xA3,0xB3,0xC3,0xD3,0xE3,0xF3,0x02,0x12,0x22,0x32,0x42,0x52,0x62,0x72,
+     37                  0xB5,0xA5,0x95,0x85,0xF5,0xE5,0xD5,0xC5,0x34,0x24,0x14,0x04,0x74,0x64,0x54,0x44,
+     38                  0xA7,0xB7,0x87,0x97,0xE7,0xF7,0xC7,0xD7,0x26,0x36,0x06,0x16,0x66,0x76,0x46,0x56,
+     39                  0xD9,0xC9,0xF9,0xE9,0x99,0x89,0xB9,0xA9,0x58,0x48,0x78,0x68,0x18,0x08,0x38,0x28,
+     40                  0xCB,0xDB,0xEB,0xFB,0x8B,0x9B,0xAB,0xBB,0x4A,0x5A,0x6A,0x7A,0x0A,0x1A,0x2A,0x3A,
+     41                  0xFD,0xED,0xDD,0xCD,0xBD,0xAD,0x9D,0x8D,0x7C,0x6C,0x5C,0x4C,0x3C,0x2C,0x1C,0x0C,
+     42                  0xEF,0xFF,0xCF,0xDF,0xAF,0xBF,0x8F,0x9F,0x6E,0x7E,0x4E,0x5E,0x2E,0x3E,0x0E,0x1E};
+
+   \                                 In section .text, align 4, keep-with-next
+     43              const uint8 Tab_Crc16_Lo[256] = {
+   \                     Tab_Crc16_Lo:
+   \   00000000   0x00 0x21          DC8 0, 33, 66, 99, 132, 165, 198, 231, 8, 41, 74, 107, 140, 173, 206
+   \              0x42 0x63    
+   \              0x84 0xA5    
+   \              0xC6 0xE7    
+   \              0x08 0x29    
+   \              0x4A 0x6B    
+   \              0x8C 0xAD    
+   \              0xCE         
+   \   0000000F   0xEF 0x31          DC8 239, 49, 16, 115, 82, 181, 148, 247, 214, 57, 24, 123, 90, 189, 156
+   \              0x10 0x73    
+   \              0x52 0xB5    
+   \              0x94 0xF7    
+   \              0xD6 0x39    
+   \              0x18 0x7B    
+   \              0x5A 0xBD    
+   \              0x9C         
+   \   0000001E   0xFF 0xDE          DC8 255, 222, 98, 67, 32, 1, 230, 199, 164, 133, 106, 75, 40, 9, 238
+   \              0x62 0x43    
+   \              0x20 0x01    
+   \              0xE6 0xC7    
+   \              0xA4 0x85    
+   \              0x6A 0x4B    
+   \              0x28 0x09    
+   \              0xEE         
+   \   0000002D   0xCF 0xAC          DC8 207, 172, 141, 83, 114, 17, 48, 215, 246, 149, 180, 91, 122, 25, 56
+   \              0x8D 0x53    
+   \              0x72 0x11    
+   \              0x30 0xD7    
+   \              0xF6 0x95    
+   \              0xB4 0x5B    
+   \              0x7A 0x19    
+   \              0x38         
+   \   0000003C   0xDF 0xFE          DC8 223, 254, 157, 188, 196, 229, 134, 167, 64, 97, 2, 35, 204, 237
+   \              0x9D 0xBC    
+   \              0xC4 0xE5    
+   \              0x86 0xA7    
+   \              0x40 0x61    
+   \              0x02 0x23    
+   \              0xCC 0xED    
+   \   0000004A   0x8E 0xAF          DC8 142, 175, 72, 105, 10, 43, 245, 212, 183, 150, 113, 80, 51, 18, 253
+   \              0x48 0x69    
+   \              0x0A 0x2B    
+   \              0xF5 0xD4    
+   \              0xB7 0x96    
+   \              0x71 0x50    
+   \              0x33 0x12    
+   \              0xFD         
+   \   00000059   0xDC 0xBF          DC8 220, 191, 158, 121, 88, 59, 26, 166, 135, 228, 197, 34, 3, 96, 65
+   \              0x9E 0x79    
+   \              0x58 0x3B    
+   \              0x1A 0xA6    
+   \              0x87 0xE4    
+   \              0xC5 0x22    
+   \              0x03 0x60    
+   \              0x41         
+   \   00000068   0xAE 0x8F          DC8 174, 143, 236, 205, 42, 11, 104, 73, 151, 182, 213, 244, 19, 50, 81
+   \              0xEC 0xCD    
+   \              0x2A 0x0B    
+   \              0x68 0x49    
+   \              0x97 0xB6    
+   \              0xD5 0xF4    
+   \              0x13 0x32    
+   \              0x51         
+   \   00000077   0x70 0x9F          DC8 112, 159, 190, 221, 252, 27, 58, 89, 120, 136, 169, 202, 235, 12
+   \              0xBE 0xDD    
+   \              0xFC 0x1B    
+   \              0x3A 0x59    
+   \              0x78 0x88    
+   \              0xA9 0xCA    
+   \              0xEB 0x0C    
+   \   00000085   0x2D 0x4E          DC8 45, 78, 111, 128, 161, 194, 227, 4, 37, 70, 103, 185, 152, 251, 218
+   \              0x6F 0x80    
+   \              0xA1 0xC2    
+   \              0xE3 0x04    
+   \              0x25 0x46    
+   \              0x67 0xB9    
+   \              0x98 0xFB    
+   \              0xDA         
+   \   00000094   0x3D 0x1C          DC8 61, 28, 127, 94, 177, 144, 243, 210, 53, 20, 119, 86, 234, 203, 168
+   \              0x7F 0x5E    
+   \              0xB1 0x90    
+   \              0xF3 0xD2    
+   \              0x35 0x14    
+   \              0x77 0x56    
+   \              0xEA 0xCB    
+   \              0xA8         
+   \   000000A3   0x89 0x6E          DC8 137, 110, 79, 44, 13, 226, 195, 160, 129, 102, 71, 36, 5, 219, 250
+   \              0x4F 0x2C    
+   \              0x0D 0xE2    
+   \              0xC3 0xA0    
+   \              0x81 0x66    
+   \              0x47 0x24    
+   \              0x05 0xDB    
+   \              0xFA         
+   \   000000B2   0x99 0xB8          DC8 153, 184, 95, 126, 29, 60, 211, 242, 145, 176, 87, 118, 21, 52, 76
+   \              0x5F 0x7E    
+   \              0x1D 0x3C    
+   \              0xD3 0xF2    
+   \              0x91 0xB0    
+   \              0x57 0x76    
+   \              0x15 0x34    
+   \              0x4C         
+   \   000000C1   0x6D 0x0E          DC8 109, 14, 47, 200, 233, 138, 171, 68, 101, 6, 39, 192, 225, 130, 163
+   \              0x2F 0xC8    
+   \              0xE9 0x8A    
+   \              0xAB 0x44    
+   \              0x65 0x06    
+   \              0x27 0xC0    
+   \              0xE1 0x82    
+   \              0xA3         
+   \   000000D0   0x7D 0x5C          DC8 125, 92, 63, 30, 249, 216, 187, 154, 117, 84, 55, 22, 241, 208, 179
+   \              0x3F 0x1E    
+   \              0xF9 0xD8    
+   \              0xBB 0x9A    
+   \              0x75 0x54    
+   \              0x37 0x16    
+   \              0xF1 0xD0    
+   \              0xB3         
+   \   000000DF   0x92 0x2E          DC8 146, 46, 15, 108, 77, 170, 139, 232, 201, 38, 7, 100, 69, 162, 131
+   \              0x0F 0x6C    
+   \              0x4D 0xAA    
+   \              0x8B 0xE8    
+   \              0xC9 0x26    
+   \              0x07 0x64    
+   \              0x45 0xA2    
+   \              0x83         
+   \   000000EE   0xE0 0xC1          DC8 224, 193, 31, 62, 93, 124, 155, 186, 217, 248, 23, 54, 85, 116, 147
+   \              0x1F 0x3E    
+   \              0x5D 0x7C    
+   \              0x9B 0xBA    
+   \              0xD9 0xF8    
+   \              0x17 0x36    
+   \              0x55 0x74    
+   \              0x93         
+   \   000000FD   0xB2 0xD1          DC8 178, 209, 240
+   \              0xF0         
+     44                  0x00,0x21,0x42,0x63,0x84,0xA5,0xC6,0xE7,0x08,0x29,0x4A,0x6B,0x8C,0xAD,0xCE,0xEF,
+     45                  0x31,0x10,0x73,0x52,0xB5,0x94,0xF7,0xD6,0x39,0x18,0x7B,0x5A,0xBD,0x9C,0xFF,0xDE,
+     46                  0x62,0x43,0x20,0x01,0xE6,0xC7,0xA4,0x85,0x6A,0x4B,0x28,0x09,0xEE,0xCF,0xAC,0x8D,
+     47                  0x53,0x72,0x11,0x30,0xD7,0xF6,0x95,0xB4,0x5B,0x7A,0x19,0x38,0xDF,0xFE,0x9D,0xBC,
+     48                  0xC4,0xE5,0x86,0xA7,0x40,0x61,0x02,0x23,0xCC,0xED,0x8E,0xAF,0x48,0x69,0x0A,0x2B,
+     49                  0xF5,0xD4,0xB7,0x96,0x71,0x50,0x33,0x12,0xFD,0xDC,0xBF,0x9E,0x79,0x58,0x3B,0x1A,
+     50                  0xA6,0x87,0xE4,0xC5,0x22,0x03,0x60,0x41,0xAE,0x8F,0xEC,0xCD,0x2A,0x0B,0x68,0x49,
+     51                  0x97,0xB6,0xD5,0xF4,0x13,0x32,0x51,0x70,0x9F,0xBE,0xDD,0xFC,0x1B,0x3A,0x59,0x78,
+     52                  0x88,0xA9,0xCA,0xEB,0x0C,0x2D,0x4E,0x6F,0x80,0xA1,0xC2,0xE3,0x04,0x25,0x46,0x67,
+     53                  0xB9,0x98,0xFB,0xDA,0x3D,0x1C,0x7F,0x5E,0xB1,0x90,0xF3,0xD2,0x35,0x14,0x77,0x56,
+     54                  0xEA,0xCB,0xA8,0x89,0x6E,0x4F,0x2C,0x0D,0xE2,0xC3,0xA0,0x81,0x66,0x47,0x24,0x05,
+     55                  0xDB,0xFA,0x99,0xB8,0x5F,0x7E,0x1D,0x3C,0xD3,0xF2,0x91,0xB0,0x57,0x76,0x15,0x34,
+     56                  0x4C,0x6D,0x0E,0x2F,0xC8,0xE9,0x8A,0xAB,0x44,0x65,0x06,0x27,0xC0,0xE1,0x82,0xA3,
+     57                  0x7D,0x5C,0x3F,0x1E,0xF9,0xD8,0xBB,0x9A,0x75,0x54,0x37,0x16,0xF1,0xD0,0xB3,0x92,
+     58                  0x2E,0x0F,0x6C,0x4D,0xAA,0x8B,0xE8,0xC9,0x26,0x07,0x64,0x45,0xA2,0x83,0xE0,0xC1,
+     59                  0x1F,0x3E,0x5D,0x7C,0x9B,0xBA,0xD9,0xF8,0x17,0x36,0x55,0x74,0x93,0xB2,0xD1,0xF0};
+     60          
+     61          typedef union
+     62          {
+     63              uint16 integer;
+     64              uint8 byte[2];
+     65          } INT_BYTE_FIELD_CRC;
+     66          
+     67          
+     68          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     69          
+     70          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     71          
+     72          
+     73          //=====================================================================================================================
+     74          //-------------------------------------- Public Functions -------------------------------------------------------------
+     75          //=====================================================================================================================
+     76          
+
+   \                                 In section .text, align 2, keep-with-next
+     77          uint16 Crc16__ByteProcess(uint16 crc_accum , uint8 data_byte)
+     78          {
+   \                     Crc16__ByteProcess: (+1)
+   \   00000000   0xB081             SUB      SP,SP,#+4
+     79          
+     80          //Here's the old code first
+     81          //    data_byte = (((crc_accum >> 8) & 0x00FF) ^ data_byte);
+     82          //    crc_accum = ((crc_accum << 8) ^ tabCrc16[data_byte]);
+     83          //    return crc_accum;
+     84          
+     85              INT_BYTE_FIELD_CRC reg;
+     86          
+     87              reg.integer = crc_accum;
+     88              data_byte ^= reg.byte[CRC_LOW];
+     89              reg.byte[CRC_LOW] = reg.byte[CRC_HIGH] ^ Tab_Crc16_Hi[data_byte];
+   \   00000002   0x.... 0x....      ADR.W    R2,Tab_Crc16_Hi
+   \   00000006   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   0000000A   0xF89D 0x0001      LDRB     R0,[SP, #+1]
+   \   0000000E   0x4048             EORS     R0,R0,R1
+   \   00000010   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \   00000014   0x5C82             LDRB     R2,[R0, R2]
+   \   00000016   0x4051             EORS     R1,R2,R1
+   \   00000018   0xF88D 0x1001      STRB     R1,[SP, #+1]
+     90              reg.byte[CRC_HIGH] = Tab_Crc16_Lo[data_byte];
+   \   0000001C   0x.... 0x....      ADR.W    R1,Tab_Crc16_Lo
+   \   00000020   0x5C40             LDRB     R0,[R0, R1]
+   \   00000022   0xF88D 0x0000      STRB     R0,[SP, #+0]
+     91              return (reg.integer);
+   \   00000026   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   0000002A   0xB001             ADD      SP,SP,#+4
+   \   0000002C   0x4770             BX       LR               ;; return
+     92          }
+     93          
+     94          
+     95          
+
+   \                                 In section .text, align 4, keep-with-next
+     96          uint16 Crc16__RangeProcess(uint8 *buf, uint16 crc, uint16 size)
+     97          {
+   \                     Crc16__RangeProcess: (+1)
+   \   00000000   0x4603             MOV      R3,R0
+   \   00000002   0x4608             MOV      R0,R1
+     98              uint16 i;
+     99              for (i = 0; i < size; i++)
+   \   00000004   0xB902             CBNZ.N   R2,??Crc16__RangeProcess_0
+   \   00000006   0x4770             BX       LR
+   \                     ??Crc16__RangeProcess_0: (+1)
+   \   00000008   0xB470             PUSH     {R4-R6}
+   \   0000000A   0xB082             SUB      SP,SP,#+8
+   \   0000000C   0x.... 0x....      ADR.W    R1,Tab_Crc16_Lo
+   \   00000010   0x.... 0x....      ADR.W    R4,Tab_Crc16_Hi
+   \   00000014   0x07D5             LSLS     R5,R2,#+31
+   \   00000016   0xD511             BPL.N    ??Crc16__RangeProcess_1
+    100              {
+    101                  crc = Crc16__ByteProcess(crc, *buf);             // Add in he CRC for this byte
+   \   00000018   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   0000001C   0xF89D 0x5001      LDRB     R5,[SP, #+1]
+   \   00000020   0xF813 0x0B01      LDRB     R0,[R3], #+1
+   \   00000024   0x4068             EORS     R0,R5,R0
+   \   00000026   0xF89D 0x5000      LDRB     R5,[SP, #+0]
+   \   0000002A   0x5D06             LDRB     R6,[R0, R4]
+   \   0000002C   0x4075             EORS     R5,R6,R5
+   \   0000002E   0xF88D 0x5001      STRB     R5,[SP, #+1]
+   \   00000032   0x5C40             LDRB     R0,[R0, R1]
+   \   00000034   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \   00000038   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+    102                  buf++;                                      // Point to next byte
+   \                     ??Crc16__RangeProcess_1: (+1)
+   \   0000003C   0x0852             LSRS     R2,R2,#+1
+   \   0000003E   0xD025             BEQ.N    ??Crc16__RangeProcess_2
+   \                     ??Crc16__RangeProcess_3: (+1)
+   \   00000040   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   00000044   0xF89D 0x5001      LDRB     R5,[SP, #+1]
+   \   00000048   0xF813 0x0B01      LDRB     R0,[R3], #+1
+   \   0000004C   0x4068             EORS     R0,R5,R0
+   \   0000004E   0xF89D 0x5000      LDRB     R5,[SP, #+0]
+   \   00000052   0x5D06             LDRB     R6,[R0, R4]
+   \   00000054   0x4075             EORS     R5,R6,R5
+   \   00000056   0xF88D 0x5001      STRB     R5,[SP, #+1]
+   \   0000005A   0x5C40             LDRB     R0,[R0, R1]
+   \   0000005C   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \   00000060   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000064   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+   \   00000068   0xF89D 0x5005      LDRB     R5,[SP, #+5]
+   \   0000006C   0xF813 0x0B01      LDRB     R0,[R3], #+1
+   \   00000070   0x4068             EORS     R0,R5,R0
+   \   00000072   0xF89D 0x5004      LDRB     R5,[SP, #+4]
+   \   00000076   0x5D06             LDRB     R6,[R0, R4]
+   \   00000078   0x4075             EORS     R5,R6,R5
+   \   0000007A   0xF88D 0x5005      STRB     R5,[SP, #+5]
+    103              }
+   \   0000007E   0x1E52             SUBS     R2,R2,#+1
+   \   00000080   0x5C40             LDRB     R0,[R0, R1]
+   \   00000082   0xF88D 0x0004      STRB     R0,[SP, #+4]
+   \   00000086   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \   0000008A   0xD1D9             BNE.N    ??Crc16__RangeProcess_3
+    104              return (crc);
+   \                     ??Crc16__RangeProcess_2: (+1)
+   \   0000008C   0xB002             ADD      SP,SP,#+8
+   \   0000008E   0xBC70             POP      {R4-R6}
+   \   00000090   0x4770             BX       LR               ;; return
+    105          }
+    106          
+    107          
+
+   \                                 In section .text, align 4, keep-with-next
+    108          uint16 Crc16__ConstRangeProcess(uint8 const FAR *buf, uint16 crc, uint16 size)
+    109          {
+   \                     Crc16__ConstRangeProcess: (+1)
+   \   00000000   0x4603             MOV      R3,R0
+   \   00000002   0x4608             MOV      R0,R1
+    110              uint16 i;
+    111          
+    112              for (i = 0; i < size; i++)
+   \   00000004   0xB902             CBNZ.N   R2,??Crc16__ConstRangeProcess_0
+   \   00000006   0x4770             BX       LR
+   \                     ??Crc16__ConstRangeProcess_0: (+1)
+   \   00000008   0xB470             PUSH     {R4-R6}
+   \   0000000A   0xB082             SUB      SP,SP,#+8
+   \   0000000C   0x.... 0x....      ADR.W    R1,Tab_Crc16_Lo
+   \   00000010   0x.... 0x....      ADR.W    R4,Tab_Crc16_Hi
+   \   00000014   0x07D5             LSLS     R5,R2,#+31
+   \   00000016   0xD511             BPL.N    ??Crc16__ConstRangeProcess_1
+    113              {
+    114                  crc = Crc16__ByteProcess(crc, *buf);             // Add in he CRC for this byte
+   \   00000018   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   0000001C   0xF89D 0x5001      LDRB     R5,[SP, #+1]
+   \   00000020   0xF813 0x0B01      LDRB     R0,[R3], #+1
+   \   00000024   0x4068             EORS     R0,R5,R0
+   \   00000026   0xF89D 0x5000      LDRB     R5,[SP, #+0]
+   \   0000002A   0x5D06             LDRB     R6,[R0, R4]
+   \   0000002C   0x4075             EORS     R5,R6,R5
+   \   0000002E   0xF88D 0x5001      STRB     R5,[SP, #+1]
+   \   00000032   0x5C40             LDRB     R0,[R0, R1]
+   \   00000034   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \   00000038   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+    115                  buf++;                                      // Point to next byte
+   \                     ??Crc16__ConstRangeProcess_1: (+1)
+   \   0000003C   0x0852             LSRS     R2,R2,#+1
+   \   0000003E   0xD025             BEQ.N    ??Crc16__ConstRangeProcess_2
+   \                     ??Crc16__ConstRangeProcess_3: (+1)
+   \   00000040   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+   \   00000044   0xF89D 0x5001      LDRB     R5,[SP, #+1]
+   \   00000048   0xF813 0x0B01      LDRB     R0,[R3], #+1
+   \   0000004C   0x4068             EORS     R0,R5,R0
+   \   0000004E   0xF89D 0x5000      LDRB     R5,[SP, #+0]
+   \   00000052   0x5D06             LDRB     R6,[R0, R4]
+   \   00000054   0x4075             EORS     R5,R6,R5
+   \   00000056   0xF88D 0x5001      STRB     R5,[SP, #+1]
+   \   0000005A   0x5C40             LDRB     R0,[R0, R1]
+   \   0000005C   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \   00000060   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000064   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+   \   00000068   0xF89D 0x5005      LDRB     R5,[SP, #+5]
+   \   0000006C   0xF813 0x0B01      LDRB     R0,[R3], #+1
+   \   00000070   0x4068             EORS     R0,R5,R0
+   \   00000072   0xF89D 0x5004      LDRB     R5,[SP, #+4]
+   \   00000076   0x5D06             LDRB     R6,[R0, R4]
+   \   00000078   0x4075             EORS     R5,R6,R5
+   \   0000007A   0xF88D 0x5005      STRB     R5,[SP, #+5]
+    116              }
+   \   0000007E   0x1E52             SUBS     R2,R2,#+1
+   \   00000080   0x5C40             LDRB     R0,[R0, R1]
+   \   00000082   0xF88D 0x0004      STRB     R0,[SP, #+4]
+   \   00000086   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \   0000008A   0xD1D9             BNE.N    ??Crc16__ConstRangeProcess_3
+    117          
+    118              return crc;
+   \                     ??Crc16__ConstRangeProcess_2: (+1)
+   \   0000008C   0xB002             ADD      SP,SP,#+8
+   \   0000008E   0xBC70             POP      {R4-R6}
+   \   00000090   0x4770             BX       LR               ;; return
+    119          }
+    120          //=====================================================================================================================
+    121          //-------------------------------------- Private Functions ------------------------------------------------------------
+    122          //=====================================================================================================================
+    123          
+    124          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   Crc16__ByteProcess
+      20   Crc16__ConstRangeProcess
+      20   Crc16__RangeProcess
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      46  Crc16__ByteProcess
+     146  Crc16__ConstRangeProcess
+     146  Crc16__RangeProcess
+     256  Tab_Crc16_Hi
+     256  Tab_Crc16_Lo
+
+ 
+ 850 bytes in section .text
+ 
+ 850 bytes of CODE memory
+
+Errors: none
+Warnings: none

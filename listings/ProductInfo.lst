@@ -1,0 +1,557 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:38
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o ProductInfo.obj
+#        -l ..\listings\ProductInfo.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c
+#    List file    =  ..\listings\ProductInfo.lst
+#    Object file  =  ProductInfo.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      Define the project specific API019 product information.
+      5           *              Template - APII019 ProductInfo implementation.
+      6           *
+      7           *  @copyright  Copyright 2015-2017 Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      8           */
+      9          
+     10          //  --- Include Files -------------------------------------------------------------------------------------------------
+     11          #include "SystemConfig.h"
+     12          #include "ProductInfo.h" 
+
+  PACKED typedef struct API019_APPLIANCE_DATA_STRUCT
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API019ProductInfo\API019ProductInfo_Defs.h",42  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct API019_BOARD_DATA_STRUCT
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API019ProductInfo\API019ProductInfo_Defs.h",50  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct API019_TEST_DATA_STRUCT
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API019ProductInfo\API019ProductInfo_Defs.h",143  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct API019_SERVICE_DATA_STRUCT
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API019ProductInfo\API019ProductInfo_Defs.h",152  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct API019_PROJECT_DATA_STRUCT
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API019ProductInfo\API019ProductInfo_Defs.h",188  Remark[Pe082]: 
+          storage class is not first
+     13          #include "Log.h"
+     14          
+     15          #include <string.h>
+     16          
+     17          //  --- Private Declarations ------------------------------------------------------------------------------------------
+     18          // Structure for board SW project information for each board.
+     19          typedef struct
+     20          {
+     21              uint8                               Num_Of_Projects;        // define the number of projects in the board
+     22              const API019_PROJECT_DATA_TYPE *    Project_Data;           // define the location of the board project data array
+     23          } API019_BOARD_PROJECT_TYPE;
+     24          
+     25          //! Externally defined class B CRC
+     26          extern uint16 MICRO_FLASH_CRC;
+     27          
+     28          //! Structure to temporarily hold API019 SW project data for publishing.
+
+   \                                 In section .bss, align 4
+     29          static API019_PROJECT_DATA_TYPE Temp_Data;
+   \                     Temp_Data:
+   \   00000000                      DS8 52
+     30          
+     31          //  --- Private Definitions -------------------------------------------------------------------------------------------
+     32          //! Define the number of SW projects on the main board.
+     33          #define API019_BOARD_MAIN_NUM_PROJECTS     1
+     34          
+     35          //! Define a constant to hold main board SW project types
+
+   \                                 In section .bss, align 1
+     36          static API019_PROJECT_TYPE API019_BOARD_MAIN_PROJECTS[API019_BOARD_MAIN_NUM_PROJECTS] = {API019_PROJECT_FIRMWARE };
+   \                     API019_BOARD_MAIN_PROJECTS:
+   \   00000000                      DS8 1
+     37          
+     38          //! Define each set of project data for main board (Do NOT add data for the setting file).
+
+   \                                 In section .text, align 4, keep-with-next
+     39          static const API019_PROJECT_DATA_TYPE PRODUCTINFO_BOARD_MAIN_PROJECT_DATA[] =
+   \                     PRODUCTINFO_BOARD_MAIN_PROJECT_DATA:
+   \   00000000   0x57 0x69          DC8 57H, 69H, 6EH, 64H, 79H, 20H, 42H, 6CH
+   \              0x6E 0x64    
+   \              0x79 0x20    
+   \              0x42 0x6C    
+   \   00000008   0x65 0x6E          DC8 65H, 6EH
+   \   0000000A   0x30 0x30          DC8 30H, 30H, 30H, 30H, 30H, 30H, 30H, 30H
+   \              0x30 0x30    
+   \              0x30 0x30    
+   \              0x30 0x30    
+   \   00000012   0x30 0x30          DC8 30H, 30H
+   \   00000014   0x32 0x30          DC8 32H, 30H, 31H, 39H, 31H, 32H, 31H, 37H
+   \              0x31 0x39    
+   \              0x31 0x32    
+   \              0x31 0x37    
+   \   0000001C   0x00 0x00          DC8 0, 0, 2, 3, 3, 0, 2, 1, 0
+   \              0x02 0x03    
+   \              0x03 0x00    
+   \              0x02 0x01    
+   \              0x00         
+   \   00000025   0x00000000         DC32 0
+   \   00000029   0x20 0x20          DC8 20H, 20H, 20H, 20H, 20H, 20H, 20H, 20H
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \              0x20 0x20    
+   \   00000031   0x20 0x20          DC8 20H, 20H, 20H
+   \              0x20         
+     40          {
+     41              { // PRODUCTINFO_BOARD_ACU_PROJECT_FIRMWARE
+     42              "Windy Blen",                  	/* char Project_Name[10];*/             \
+     43              "0000000000",                   /* char Project_Release_Number[10];*/   \
+     44              "20191217",                     /* char Project_Release_Date[8];*/      \
+     45              { 0, 0, 2},                    /* uint8 Project_Release_Version[3];*/  \
+     46              API019_MICRO_VENDOR_NXP,        /* uint8 Micro_Vendor;*/                \
+     47          	API019_MICRO_NXP_MKV31xxx,      /* uint8 Micro_Specific;*/              \
+     48          	API019_PLATFORM_HA_WASHER,      /* uint8 Platform_Type;*/               \
+     49              API019_DEVICE_MCU,              /* uint8 Device_Type;*/                \
+     50          	MICRO_IS_LITTLE_ENDIAN,         /* uint8 Product_Cfg1;*/                \
+     51              0,                              /* uint8 Product_Type;*/                \
+     52              0,                              /* uint32 ClassB_CRC;*/                 \
+     53              "           "                   /* char Project_ClassB_Id[8];*/         \
+     54              }
+     55          };
+     56          
+     57          // For each board listed in API019_BOARD_TYPE, define API019_BOARD_PROJECT_TYPE(s).
+     58          static const API019_BOARD_PROJECT_TYPE API019_BOARD_PROJECT_INFO[] =
+     59          {
+     60              {   // PRODUCTINFO_BOARD_MAIN
+     61                  API019_BOARD_MAIN_NUM_PROJECTS,
+     62                  PRODUCTINFO_BOARD_MAIN_PROJECT_DATA
+     63              }
+     64          };
+     65          
+     66          // Do not delete this!
+     67          CT_ASSERT(ELEMENTS_IN_ARRAY(API019_BOARD_PROJECT_INFO) == API019_NUM_BOARDS);
+     68          
+     69          ////! Define how many board types from external boards this application can handle
+     70          ////! Board Types from the same WIN address
+     71          //#define PRODUCTINFO_EXTERNAL_BOARDS_NUM             (1)     //eg: API019_BOARD_MAIN from ACU Node
+     72          //
+     73          ////! Define how many PROJECT IDs per board type this application can handle
+     74          //#define PRODUCTINFO_EXTERNAL_BOARD_PROJECTS_NUM     (1)     //eg: FIRMWARE and SETTING_FILE from ACU Node
+     75          //
+     76          //typedef struct
+     77          //{
+     78          //    API019_BOARD_DATA_TYPE Data;
+     79          //    API019_PROJECT_TYPE Project_IDs[PRODUCTINFO_EXTERNAL_BOARD_PROJECTS_NUM];   //!< This is a list with the Project IDs the external board has
+     80          //}PRODUCTINFO_EXTERNAL_BOARD_STRUCT_TYPE;
+     81          //
+     82          ////! Variables with information from other boards
+     83          //PRODUCTINFO_EXTERNAL_BOARD_STRUCT_TYPE External_Board[PRODUCTINFO_EXTERNAL_BOARDS_NUM];
+     84          //
+     85          ////! holds External Boards Project Data
+     86          //API019_PROJECT_DATA_TYPE External_Board_Project_Data[PRODUCTINFO_EXTERNAL_BOARDS_NUM][PRODUCTINFO_EXTERNAL_BOARD_PROJECTS_NUM];
+     87          
+     88          //  --- Log Data ------------------------------------------------------------------------------------------------------
+     89          //! A list of log message IDs that are generated by this module.
+     90          typedef enum
+     91          {
+     92              INVALID_PROJECT_DATA = 0,           //!< data: number of elements in the PROJECT_DATA array
+     93              INVALID_BOARD,                      //!< data: board number
+     94              INVALID_PROJECT                     //!< data: project number
+     95          } MODULE_PRODUCTINFO_LOG_MESSAGE_ID_TYPE;
+     96          #define MODULE_NAME MODULE_PRODUCTINFO  //!< The name of this module for use by the Log module.
+     97          
+     98          //  --- Private Function Prototypes -----------------------------------------------------------------------------------
+     99          
+    100          //=====================================================================================================================
+    101          //-------------------------------------- Public Functions -------------------------------------------------------------
+    102          //=====================================================================================================================
+    103          //---------------------------------------------------------------------------------------------------------------------
+    104          /**
+    105           *  @brief      Gets the project data for board and project.
+    106           *
+    107           *  @param      API019_BOARD_TYPE board - WIN Node can contain multiple boards.
+    108           *  @param      API019_PROJECT_TYPE project - Each board can contain multiple SW projects.
+    109           *
+    110           *  @return     API019_PROJECT_DATA_TYPE * pt
+    111           *  @retval     Pointer to the project data for the specified board and project.
+    112           *  @retval     NULL = invalid board and/or project passed
+    113           */
+
+   \                                 In section .text, align 2, keep-with-next
+    114          API019_PROJECT_DATA_TYPE * ProductInfo__GetProjectData(API019_BOARD_TYPE board, API019_PROJECT_TYPE project)
+    115          {
+   \                     ProductInfo__GetProjectData: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    116              API019_PROJECT_DATA_TYPE * pt = NULL;
+   \   00000002   0x2400             MOVS     R4,#+0
+    117          
+    118              if (board >= API019_NUM_BOARDS)
+   \   00000004   0x2800             CMP      R0,#+0
+   \   00000006   0xBF08             IT       EQ 
+    119              {
+    120                  LOG_ADD_EXCEPTION(INVALID_BOARD, board);
+    121              }
+    122              else if (project >= API019_BOARD_PROJECT_INFO[board].Num_Of_Projects)
+   \   00000008   0x2900             CMPEQ    R1,#+0
+   \   0000000A   0xD10A             BNE.N    ??ProductInfo__GetProjectData_0
+    123              {
+    124                  LOG_ADD_EXCEPTION(INVALID_PROJECT, project);
+    125              }
+    126              else
+    127              {
+    128                  switch (board)
+    129                  {
+    130                      case API019_BOARD_MAIN:
+    131                          switch (project)
+    132                          {
+    133                              case API019_PROJECT_FIRMWARE: // Firmware
+    134                                  memcpy(&Temp_Data,
+    135                                         &PRODUCTINFO_BOARD_MAIN_PROJECT_DATA[project],
+    136                                         sizeof(API019_PROJECT_DATA_TYPE));
+   \   0000000C   0x....             LDR.N    R4,??DataTable2
+   \   0000000E   0x.... 0x....      ADR.W    R1,PRODUCTINFO_BOARD_MAIN_PROJECT_DATA
+   \   00000012   0x2234             MOVS     R2,#+52
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0x.... 0x....      BL       __aeabi_memcpy4
+    137          
+    138                                  Temp_Data.ClassB_CRC = (uint32)MICRO_FLASH_CRC;
+   \   0000001A   0x....             LDR.N    R0,??DataTable2_1
+   \   0000001C   0x8800             LDRH     R0,[R0, #+0]
+   \   0000001E   0xF8C4 0x0025      STR      R0,[R4, #+37]
+    139                                  pt = &Temp_Data;
+    140                                  break;
+    141                              default:
+    142                                  break;
+    143                          }
+    144                          break;
+    145          
+    146                      default:
+    147                          break;
+    148                  }
+    149              }
+    150          
+    151              return (pt);
+   \                     ??ProductInfo__GetProjectData_0: (+1)
+   \   00000022   0x4620             MOV      R0,R4
+   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+    152          }
+    153          
+    154          //---------------------------------------------------------------------------------------------------------------------
+    155          /**
+    156           * @brief   Gets the total number of SW project specified for the passed board.
+    157           *
+    158           * @param   API019_BOARD_TYPE board - The board.
+    159           *
+    160           * @return  uint8 num_projects
+    161           * @retval  > 0 - The total number of SW projects for the specified board.
+    162           * @retval  0 - Invalid board.
+    163           */
+
+   \                                 In section .text, align 2, keep-with-next
+    164          uint8 ProductInfo__GetNumProjects(API019_BOARD_TYPE board)
+    165          {
+    166              uint8 num_projects = 0;
+   \                     ProductInfo__GetNumProjects: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+    167              if (board >= API019_NUM_BOARDS)
+   \   00000002   0xB900             CBNZ.N   R0,??ProductInfo__GetNumProjects_0
+    168              {
+    169                  LOG_ADD_EXCEPTION(INVALID_BOARD, board);
+    170              }
+    171              else
+    172              {
+    173                  num_projects = (API019_BOARD_PROJECT_INFO[board].Num_Of_Projects);
+   \   00000004   0x2101             MOVS     R1,#+1
+    174              }
+    175          
+    176              return (num_projects);
+   \                     ??ProductInfo__GetNumProjects_0: (+1)
+   \   00000006   0x4608             MOV      R0,R1
+   \   00000008   0x4770             BX       LR               ;; return
+    177          }
+    178          
+    179          //---------------------------------------------------------------------------------------------------------------------
+    180          /**
+    181           *  @brief      Returns the SW project IDs for board.
+    182           *
+    183           *  @param      API019_BOARD_TYPE board - board on the WIN Node
+    184           *
+    185           *  @return     API019_PROJECT_TYPE * pt
+    186           *  @retval     Pointer to an array of project IDs on board.
+    187           *  @retval     NULL - Invalid board.
+    188           */
+
+   \                                 In section .text, align 2, keep-with-next
+    189          API019_PROJECT_TYPE *ProductInfo__GetProjectIDs(API019_BOARD_TYPE board)
+    190          {
+    191              API019_PROJECT_TYPE * pt = NULL;
+   \                     ProductInfo__GetProjectIDs: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+    192          
+    193              if (board >= API019_NUM_BOARDS)
+   \   00000002   0xB900             CBNZ.N   R0,??ProductInfo__GetProjectIDs_0
+    194              {
+    195                  LOG_ADD_EXCEPTION(INVALID_BOARD, board);
+    196              }
+    197              else
+    198              {
+    199                  switch (board)
+    200                  {
+    201                      case API019_BOARD_MAIN:
+    202                          pt = API019_BOARD_MAIN_PROJECTS;
+   \   00000004   0x....             LDR.N    R1,??DataTable2_2
+    203                          break;
+    204          
+    205                      default:
+    206                          break;
+    207                  }
+    208              }
+    209          
+    210              return (pt);
+   \                     ??ProductInfo__GetProjectIDs_0: (+1)
+   \   00000006   0x4608             MOV      R0,R1
+   \   00000008   0x4770             BX       LR               ;; return
+    211          }
+    212          
+    213          //---------------------------------------------------------------------------------------------------------------------
+    214          /**
+    215           * @brief Handles opcode API019PRODUCTINFO_OP_REQ_PUB_BOARD_DATA feedback
+    216           * @param node_id
+    217           * @param board
+    218           * @param board_data
+    219           */
+
+   \                                 In section .text, align 2, keep-with-next
+    220          void ProductInfo__BoardDataFeedback(uint8 node_id,uint8 board ,API019_BOARD_DATA_TYPE *board_data, API019_PROJECT_TYPE *project_ids)
+                                                           ^
+Remark[Pe826]: parameter "node_id" was never referenced
+
+  void ProductInfo__BoardDataFeedback(uint8 node_id,uint8 board ,API019_BOARD_DATA_TYPE *board_data, API019_PROJECT_TYPE *project_ids)
+                                                          ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c",220  Remark[Pe826]: 
+          parameter "board" was never referenced
+
+  void ProductInfo__BoardDataFeedback(uint8 node_id,uint8 board ,API019_BOARD_DATA_TYPE *board_data, API019_PROJECT_TYPE *project_ids)
+                                                                                         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c",220  Remark[Pe826]: 
+          parameter "board_data" was never referenced
+
+  void ProductInfo__BoardDataFeedback(uint8 node_id,uint8 board ,API019_BOARD_DATA_TYPE *board_data, API019_PROJECT_TYPE *project_ids)
+                                                                                                                          ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c",220  Remark[Pe826]: 
+          parameter "project_ids" was never referenced
+    221          {
+    222          //    //initialize the Project ID list with invalid IDs
+    223          //    memset(&External_Board[board].Project_IDs, API019_PROJECT_NOT_AVAILABLE, PRODUCTINFO_EXTERNAL_BOARD_PROJECTS_NUM);
+    224          //
+    225          //    if(node_id == WIN_ACU_ADDRESS)
+    226          //    {
+    227          //        if(board < PRODUCTINFO_EXTERNAL_BOARDS_NUM)
+    228          //        {
+    229          //            memcpy(&External_Board[board].Data, board_data, sizeof(API019_BOARD_DATA_TYPE));
+    230          //            if(project_ids != NULL)
+    231          //            {
+    232          //                memcpy(&External_Board[board].Project_IDs, project_ids, External_Board[board].Data.Board_Num_Projects);
+    233          //            }
+    234          //        }
+    235          //    }
+    236          }
+   \                     ProductInfo__BoardDataFeedback: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    237          
+    238          //---------------------------------------------------------------------------------------------------------------------
+    239          /**
+    240           * @brief Handles opcode API019PRODUCTINFO_OP_REQ_PUB_PROJECT_DATA feedback
+    241           * @param node_id
+    242           * @param board
+    243           * @param project
+    244           * @param project_data
+    245           */
+
+   \                                 In section .text, align 2, keep-with-next
+    246          void ProductInfo__ProjectDataFeedback(uint8 node_id,uint8 board,API019_PROJECT_TYPE project,API019_PROJECT_DATA_TYPE *project_data)
+                                                             ^
+Remark[Pe826]: parameter "node_id" was never referenced
+
+  void ProductInfo__ProjectDataFeedback(uint8 node_id,uint8 board,API019_PROJECT_TYPE project,API019_PROJECT_DATA_TYPE *project_data)
+                                                            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c",246  Remark[Pe826]: 
+          parameter "board" was never referenced
+
+  void ProductInfo__ProjectDataFeedback(uint8 node_id,uint8 board,API019_PROJECT_TYPE project,API019_PROJECT_DATA_TYPE *project_data)
+                                                                                      ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c",246  Remark[Pe826]: 
+          parameter "project" was never referenced
+
+  void ProductInfo__ProjectDataFeedback(uint8 node_id,uint8 board,API019_PROJECT_TYPE project,API019_PROJECT_DATA_TYPE *project_data)
+                                                                                                                        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Application\ProductInfo\ProductInfo.c",246  Remark[Pe826]: 
+          parameter "project_data" was never referenced
+    247          {
+    248          //    if(node_id == WIN_ACU_ADDRESS)
+    249          //    {
+    250          //        if(board < PRODUCTINFO_EXTERNAL_BOARDS_NUM)
+    251          //        {
+    252          //            if(project == API019_PROJECT_FIRMWARE)
+    253          //            {
+    254          //                memcpy(&External_Board_Project_Data[board][project], project_data, sizeof(API019_PROJECT_DATA_TYPE));
+    255          //            }
+    256          //            else if(project == API019_PROJECT_SETTINGFILE)
+    257          //            {
+    258          //                memcpy(&External_Board_Project_Data[board][1], project_data, sizeof(API019_PROJECT_DATA_TYPE));
+    259          //            }
+    260          //        }
+    261          //    }
+    262          }
+   \                     ProductInfo__ProjectDataFeedback: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     Temp_Data
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x........         DC32     MICRO_FLASH_CRC
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x........         DC32     API019_BOARD_MAIN_PROJECTS
+    263          
+    264          //=====================================================================================================================
+    265          //-------------------------------------- Private Functions ------------------------------------------------------------
+    266          //=====================================================================================================================
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ProductInfo__BoardDataFeedback
+       0   ProductInfo__GetNumProjects
+       8   ProductInfo__GetProjectData
+         8   -> __aeabi_memcpy4
+       0   ProductInfo__GetProjectIDs
+       0   ProductInfo__ProjectDataFeedback
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       1  API019_BOARD_MAIN_PROJECTS
+      52  PRODUCTINFO_BOARD_MAIN_PROJECT_DATA
+       2  ProductInfo__BoardDataFeedback
+      10  ProductInfo__GetNumProjects
+      38  ProductInfo__GetProjectData
+      10  ProductInfo__GetProjectIDs
+       2  ProductInfo__ProjectDataFeedback
+      52  Temp_Data
+
+ 
+  53 bytes in section .bss
+ 126 bytes in section .text
+ 
+ 126 bytes of CODE memory
+  53 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,413 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:54
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Crc8\Crc8.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o Crc8.obj -l
+#        ..\listings\Crc8.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Crc8\Crc8.c
+#    List file    =  ..\listings\Crc8.lst
+#    Object file  =  Crc8.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Crc8\Crc8.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @defgroup CLASS_B
+      5           *
+      6           *  @brief      This module process CRC8 Maxim 1 wire calculation.
+      7           *  @details    The algorithm used is "X8 + X5 + X4 + 1"
+      8           *
+      9           *
+     10           *  @copyright  Copyright 2007-2017. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     11           */
+     12          //---------------------------------------------------------------------------------------------------------------------
+     13          //---------------------------------------------------------------------------------------------------------------------
+     14          
+     15          //-------------------------------------- Include Files ----------------------------------------------------------------
+     16          #include "Crc8.h" 
+     17          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     18          
+     19          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+
+   \                                 In section .text, align 4, keep-with-next
+     20          unsigned char const CRC8_TABLE[]	=
+   \                     CRC8_TABLE:
+   \   00000000   0x00 0x31          DC8 0, 49, 98, 83, 196, 245, 166, 151, 185, 136, 219, 234, 125, 76, 31
+   \              0x62 0x53    
+   \              0xC4 0xF5    
+   \              0xA6 0x97    
+   \              0xB9 0x88    
+   \              0xDB 0xEA    
+   \              0x7D 0x4C    
+   \              0x1F         
+   \   0000000F   0x2E 0x43          DC8 46, 67, 114, 33, 16, 135, 182, 229, 212, 250, 203, 152, 169, 62, 15
+   \              0x72 0x21    
+   \              0x10 0x87    
+   \              0xB6 0xE5    
+   \              0xD4 0xFA    
+   \              0xCB 0x98    
+   \              0xA9 0x3E    
+   \              0x0F         
+   \   0000001E   0x5C 0x6D          DC8 92, 109, 134, 183, 228, 213, 66, 115, 32, 17, 63, 14, 93, 108, 251
+   \              0x86 0xB7    
+   \              0xE4 0xD5    
+   \              0x42 0x73    
+   \              0x20 0x11    
+   \              0x3F 0x0E    
+   \              0x5D 0x6C    
+   \              0xFB         
+   \   0000002D   0xCA 0x99          DC8 202, 153, 168, 197, 244, 167, 150, 1, 48, 99, 82, 124, 77, 30, 47
+   \              0xA8 0xC5    
+   \              0xF4 0xA7    
+   \              0x96 0x01    
+   \              0x30 0x63    
+   \              0x52 0x7C    
+   \              0x4D 0x1E    
+   \              0x2F         
+   \   0000003C   0xB8 0x89          DC8 184, 137, 218, 235, 61, 12, 95, 110, 249, 200, 155, 170, 132, 181
+   \              0xDA 0xEB    
+   \              0x3D 0x0C    
+   \              0x5F 0x6E    
+   \              0xF9 0xC8    
+   \              0x9B 0xAA    
+   \              0x84 0xB5    
+   \   0000004A   0xE6 0xD7          DC8 230, 215, 64, 113, 34, 19, 126, 79, 28, 45, 186, 139, 216, 233, 199
+   \              0x40 0x71    
+   \              0x22 0x13    
+   \              0x7E 0x4F    
+   \              0x1C 0x2D    
+   \              0xBA 0x8B    
+   \              0xD8 0xE9    
+   \              0xC7         
+   \   00000059   0xF6 0xA5          DC8 246, 165, 148, 3, 50, 97, 80, 187, 138, 217, 232, 127, 78, 29, 44
+   \              0x94 0x03    
+   \              0x32 0x61    
+   \              0x50 0xBB    
+   \              0x8A 0xD9    
+   \              0xE8 0x7F    
+   \              0x4E 0x1D    
+   \              0x2C         
+   \   00000068   0x02 0x33          DC8 2, 51, 96, 81, 198, 247, 164, 149, 248, 201, 154, 171, 60, 13, 94
+   \              0x60 0x51    
+   \              0xC6 0xF7    
+   \              0xA4 0x95    
+   \              0xF8 0xC9    
+   \              0x9A 0xAB    
+   \              0x3C 0x0D    
+   \              0x5E         
+   \   00000077   0x6F 0x41          DC8 111, 65, 112, 35, 18, 133, 180, 231, 214, 122, 75, 24, 41, 190, 143
+   \              0x70 0x23    
+   \              0x12 0x85    
+   \              0xB4 0xE7    
+   \              0xD6 0x7A    
+   \              0x4B 0x18    
+   \              0x29 0xBE    
+   \              0x8F         
+   \   00000086   0xDC 0xED          DC8 220, 237, 195, 242, 161, 144, 7, 54, 101, 84, 57, 8, 91, 106, 253
+   \              0xC3 0xF2    
+   \              0xA1 0x90    
+   \              0x07 0x36    
+   \              0x65 0x54    
+   \              0x39 0x08    
+   \              0x5B 0x6A    
+   \              0xFD         
+   \   00000095   0xCC 0x9F          DC8 204, 159, 174, 128, 177, 226, 211, 68, 117, 38, 23, 252, 205, 158
+   \              0xAE 0x80    
+   \              0xB1 0xE2    
+   \              0xD3 0x44    
+   \              0x75 0x26    
+   \              0x17 0xFC    
+   \              0xCD 0x9E    
+   \   000000A3   0xAF 0x38          DC8 175, 56, 9, 90, 107, 69, 116, 39, 22, 129, 176, 227, 210, 191, 142
+   \              0x09 0x5A    
+   \              0x6B 0x45    
+   \              0x74 0x27    
+   \              0x16 0x81    
+   \              0xB0 0xE3    
+   \              0xD2 0xBF    
+   \              0x8E         
+   \   000000B2   0xDD 0xEC          DC8 221, 236, 123, 74, 25, 40, 6, 55, 100, 85, 194, 243, 160, 145, 71
+   \              0x7B 0x4A    
+   \              0x19 0x28    
+   \              0x06 0x37    
+   \              0x64 0x55    
+   \              0xC2 0xF3    
+   \              0xA0 0x91    
+   \              0x47         
+   \   000000C1   0x76 0x25          DC8 118, 37, 20, 131, 178, 225, 208, 254, 207, 156, 173, 58, 11, 88
+   \              0x14 0x83    
+   \              0xB2 0xE1    
+   \              0xD0 0xFE    
+   \              0xCF 0x9C    
+   \              0xAD 0x3A    
+   \              0x0B 0x58    
+   \   000000CF   0x69 0x04          DC8 105, 4, 53, 102, 87, 192, 241, 162, 147, 189, 140, 223, 238, 121
+   \              0x35 0x66    
+   \              0x57 0xC0    
+   \              0xF1 0xA2    
+   \              0x93 0xBD    
+   \              0x8C 0xDF    
+   \              0xEE 0x79    
+   \   000000DD   0x48 0x1B          DC8 72, 27, 42, 193, 240, 163, 146, 5, 52, 103, 86, 120, 73, 26, 43
+   \              0x2A 0xC1    
+   \              0xF0 0xA3    
+   \              0x92 0x05    
+   \              0x34 0x67    
+   \              0x56 0x78    
+   \              0x49 0x1A    
+   \              0x2B         
+   \   000000EC   0xBC 0x8D          DC8 188, 141, 222, 239, 130, 179, 224, 209, 70, 119, 36, 21, 59, 10, 89
+   \              0xDE 0xEF    
+   \              0x82 0xB3    
+   \              0xE0 0xD1    
+   \              0x46 0x77    
+   \              0x24 0x15    
+   \              0x3B 0x0A    
+   \              0x59         
+   \   000000FB   0x68 0xFF          DC8 104, 255, 206, 157, 172
+   \              0xCE 0x9D    
+   \              0xAC         
+     21          	{
+     22                  0x00, 0x31, 0x62, 0x53, 0xC4, 0xF5, 0xA6, 0x97,
+     23                  0xB9, 0x88, 0xDB, 0xEA, 0x7D, 0x4C, 0x1F, 0x2E,
+     24                  0x43, 0x72, 0x21, 0x10, 0x87, 0xB6, 0xE5, 0xD4,
+     25                  0xFA, 0xCB, 0x98, 0xA9, 0x3E, 0x0F, 0x5C, 0x6D,
+     26                  0x86, 0xB7, 0xE4, 0xD5, 0x42, 0x73, 0x20, 0x11,
+     27                  0x3F, 0x0E, 0x5D, 0x6C, 0xFB, 0xCA, 0x99, 0xA8,
+     28                  0xC5, 0xF4, 0xA7, 0x96, 0x01, 0x30, 0x63, 0x52,
+     29                  0x7C, 0x4D, 0x1E, 0x2F, 0xB8, 0x89, 0xDA, 0xEB,
+     30                  0x3D, 0x0C, 0x5F, 0x6E, 0xF9, 0xC8, 0x9B, 0xAA,
+     31                  0x84, 0xB5, 0xE6, 0xD7, 0x40, 0x71, 0x22, 0x13,
+     32                  0x7E, 0x4F, 0x1C, 0x2D, 0xBA, 0x8B, 0xD8, 0xE9,
+     33                  0xC7, 0xF6, 0xA5, 0x94, 0x03, 0x32, 0x61, 0x50,
+     34                  0xBB, 0x8A, 0xD9, 0xE8, 0x7F, 0x4E, 0x1D, 0x2C,
+     35                  0x02, 0x33, 0x60, 0x51, 0xC6, 0xF7, 0xA4, 0x95,
+     36                  0xF8, 0xC9, 0x9A, 0xAB, 0x3C, 0x0D, 0x5E, 0x6F,
+     37                  0x41, 0x70, 0x23, 0x12, 0x85, 0xB4, 0xE7, 0xD6,
+     38                  0x7A, 0x4B, 0x18, 0x29, 0xBE, 0x8F, 0xDC, 0xED,
+     39                  0xC3, 0xF2, 0xA1, 0x90, 0x07, 0x36, 0x65, 0x54,
+     40                  0x39, 0x08, 0x5B, 0x6A, 0xFD, 0xCC, 0x9F, 0xAE,
+     41                  0x80, 0xB1, 0xE2, 0xD3, 0x44, 0x75, 0x26, 0x17,
+     42                  0xFC, 0xCD, 0x9E, 0xAF, 0x38, 0x09, 0x5A, 0x6B,
+     43                  0x45, 0x74, 0x27, 0x16, 0x81, 0xB0, 0xE3, 0xD2,
+     44                  0xBF, 0x8E, 0xDD, 0xEC, 0x7B, 0x4A, 0x19, 0x28,
+     45                  0x06, 0x37, 0x64, 0x55, 0xC2, 0xF3, 0xA0, 0x91,
+     46                  0x47, 0x76, 0x25, 0x14, 0x83, 0xB2, 0xE1, 0xD0,
+     47                  0xFE, 0xCF, 0x9C, 0xAD, 0x3A, 0x0B, 0x58, 0x69,
+     48                  0x04, 0x35, 0x66, 0x57, 0xC0, 0xF1, 0xA2, 0x93,
+     49                  0xBD, 0x8C, 0xDF, 0xEE, 0x79, 0x48, 0x1B, 0x2A,
+     50                  0xC1, 0xF0, 0xA3, 0x92, 0x05, 0x34, 0x67, 0x56,
+     51                  0x78, 0x49, 0x1A, 0x2B, 0xBC, 0x8D, 0xDE, 0xEF,
+     52                  0x82, 0xB3, 0xE0, 0xD1, 0x46, 0x77, 0x24, 0x15,
+     53                  0x3B, 0x0A, 0x59, 0x68, 0xFF, 0xCE, 0x9D, 0xAC};
+     54          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     55          
+     56          
+     57          //=====================================================================================================================
+     58          //-------------------------------------- Public Functions -------------------------------------------------------------
+     59          //=====================================================================================================================
+     60          
+     61          
+     62          
+     63          //=====================================================================================================================
+     64          //-------------------------------------- Private Functions ------------------------------------------------------------
+     65          //=====================================================================================================================
+     66          
+     67          //---------------------------------------------------------------------------------------------------------------------
+     68          /**
+     69           *  @brief  	This method calculates a CRC8-Maxim 1 Wire based on a data table
+     70           *
+     71           *  @param		init	initial value for the crc
+     72           *  @param		buf		pointer to the data array
+     73           *  @param		size	size of the buffer
+     74           *  @return     unsigned char Result of the calculation
+     75           */
+
+   \                                 In section .text, align 2, keep-with-next
+     76          unsigned char Crc8(unsigned char init,unsigned char * buf, unsigned char size)
+     77          {
+   \                     Crc8: (+1)
+   \   00000000   0xB470             PUSH     {R4-R6}
+     78          	unsigned char crc;
+     79          	unsigned char count;
+     80          	crc = init;
+     81          	for ( count = 0 ; count < size ; count++)
+   \   00000002   0x2400             MOVS     R4,#+0
+   \   00000004   0xB31A             CBZ.N    R2,??Crc8_0
+   \   00000006   0xF012 0x0503      ANDS     R5,R2,#0x3
+   \   0000000A   0x.... 0x....      ADR.W    R3,CRC8_TABLE
+   \   0000000E   0xD006             BEQ.N    ??Crc8_1
+     82          	{
+     83          		crc = CRC8_TABLE[(crc ^buf[count] )];
+   \                     ??Crc8_2: (+1)
+   \   00000010   0xB2E4             UXTB     R4,R4
+   \   00000012   0x5C66             LDRB     R6,[R4, R1]
+   \   00000014   0x4070             EORS     R0,R6,R0
+   \   00000016   0x1C64             ADDS     R4,R4,#+1
+   \   00000018   0x5CC0             LDRB     R0,[R0, R3]
+   \   0000001A   0x1E6D             SUBS     R5,R5,#+1
+   \   0000001C   0xD1F8             BNE.N    ??Crc8_2
+   \                     ??Crc8_1: (+1)
+   \   0000001E   0x0892             LSRS     R2,R2,#+2
+   \   00000020   0xD015             BEQ.N    ??Crc8_0
+   \                     ??Crc8_3: (+1)
+   \   00000022   0xB2E4             UXTB     R4,R4
+   \   00000024   0x5C65             LDRB     R5,[R4, R1]
+   \   00000026   0x1C64             ADDS     R4,R4,#+1
+   \   00000028   0xB2E4             UXTB     R4,R4
+   \   0000002A   0x4068             EORS     R0,R5,R0
+   \   0000002C   0x5C65             LDRB     R5,[R4, R1]
+   \   0000002E   0x5CC0             LDRB     R0,[R0, R3]
+   \   00000030   0x1C64             ADDS     R4,R4,#+1
+   \   00000032   0xB2E4             UXTB     R4,R4
+   \   00000034   0x4068             EORS     R0,R5,R0
+   \   00000036   0x5C65             LDRB     R5,[R4, R1]
+   \   00000038   0x5CC0             LDRB     R0,[R0, R3]
+   \   0000003A   0x1C64             ADDS     R4,R4,#+1
+   \   0000003C   0x4068             EORS     R0,R5,R0
+   \   0000003E   0xB2E4             UXTB     R4,R4
+   \   00000040   0x5CC0             LDRB     R0,[R0, R3]
+   \   00000042   0x5C65             LDRB     R5,[R4, R1]
+   \   00000044   0x4068             EORS     R0,R5,R0
+     84          	}
+   \   00000046   0x1C64             ADDS     R4,R4,#+1
+   \   00000048   0x5CC0             LDRB     R0,[R0, R3]
+   \   0000004A   0x1E52             SUBS     R2,R2,#+1
+   \   0000004C   0xD1E9             BNE.N    ??Crc8_3
+     85          	return (crc);
+   \                     ??Crc8_0: (+1)
+   \   0000004E   0xBC70             POP      {R4-R6}
+   \   00000050   0x4770             BX       LR               ;; return
+     86          }
+     87          
+     88          //---------------------------------------------------------------------------------------------------------------------
+     89          /**
+     90           * @brief This method process one step CRC8-Maxim 1 Wire process
+     91           * @param previews is the previews crc value
+     92           * @param data is the data to be used in the calculation in the crc
+     93           * @return result of the crc computation.
+     94           */
+
+   \                                 In section .text, align 2, keep-with-next
+     95          unsigned char Crc8__ProcessByte(unsigned char previews,unsigned char data)
+     96          {
+     97              return (CRC8_TABLE[(previews ^ data )]);
+   \                     Crc8__ProcessByte: (+1)
+   \   00000000   0x.... 0x....      ADR.W    R2,CRC8_TABLE
+   \   00000004   0x4048             EORS     R0,R1,R0
+   \   00000006   0x5C80             LDRB     R0,[R0, R2]
+   \   00000008   0x4770             BX       LR               ;; return
+     98          }
+     99          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      12   Crc8
+       0   Crc8__ProcessByte
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     256  CRC8_TABLE
+      82  Crc8
+      10  Crc8__ProcessByte
+
+ 
+ 348 bytes in section .text
+ 
+ 348 bytes of CODE memory
+
+Errors: none
+Warnings: none

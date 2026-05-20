@@ -1,0 +1,1069 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:48
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API018Diagnostic\API018Diagnostic.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        API018Diagnostic.obj -l ..\listings\API018Diagnostic.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API018Diagnostic\API018Diagnostic.c
+#    List file    =  ..\listings\API018Diagnostic.lst
+#    Object file  =  API018Diagnostic.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API018Diagnostic\API018Diagnostic.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      API Responsible to Expose Fault Codes and Statistics information.
+      5           *
+      6           *  @copyright  Copyright 2015-2016 Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      7           */
+      8          
+      9          
+     10          //  --- Include Files -------------------------------------------------------------------------------------------------
+     11          
+     12          // -- This Module --
+     13          #include "SystemConfig.h"
+     14          
+     15          #if ((API018_CLIENT_FEATURE == ENABLED) || (API018_SERVER_FEATURE == ENABLED))
+     16          
+     17          #include "API018Diagnostic.h"
+     18          #include "API018Diagnostic_prv.h"
+     19          
+     20          // -- Other Modules --
+     21          #include <limits.h>
+     22          #include <string.h>
+     23          #include "Utilities.h"
+     24          #if (API018_SERVER_FEATURE == ENABLED)
+     25              #include "Statistics.h"
+     26          #endif
+     27          #if (API018_CLIENT_FEATURE == ENABLED)
+     28              #include "HmiFaultMgr.h"
+     29          #endif
+     30          
+     31          
+     32          // -- Compile-Time Assertions --
+     33          
+     34          
+     35          //  --- Private Declarations ------------------------------------------------------------------------------------------
+     36          
+     37          
+     38          // -- Private Constant Declarations --
+     39          
+     40          //! The bit that represents a request for version numbers in the payload of the
+     41          //! API018_CMD_REQUEST_STATISTICS OpCode.
+     42          #define API018_USE_VERSION_NUMBERS 7
+     43          
+     44          #ifndef REVEAL_MMP_BIT
+     45              //! An OpCode bit indicating that more Reveal messages are expected after the current message.
+     46              #define REVEAL_MMP_BIT          ((uint8)0x80)
+     47          #endif
+     48          
+     49          #if (API018_SERVER_FEATURE == DISABLED)
+     50              #ifndef API018_MAX_STORED_FAULTS
+     51                  //! The maximum number of fault error codes that the API018_CLIENT will hold.
+     52                  //! These fault error codes are transferred from the API018_SERVER at run-time.
+     53                  #define API018_MAX_STORED_FAULTS    5
+     54              #endif
+     55          #endif
+     56          
+     57          #ifndef STATISTICS_CROSS_PLATFORM_VERSION
+     58              #define STATISTICS_CROSS_PLATFORM_VERSION 0
+     59          #endif
+     60          #ifndef STATISTICS_PLATFORM_SPECIFIC_VERSION
+     61              #define STATISTICS_PLATFORM_SPECIFIC_VERSION 0
+     62          #endif
+     63          
+     64          
+     65          // -- Private Enumerated Constant Declarations --
+     66          
+     67          //! All the API018 command and feedback OpCodes.
+     68          typedef enum API018DIAGNOSTIC_OPCODE_ENUM
+     69          {
+     70              API018_CMD_REQUEST_STATISITCS_VERSION   = 1,    //!< Request the Statistics version numbers.
+     71              API018_FBK_PUBLISH_STATISTICS_VERSION   = 1,    //!< Publish the Statistics version numbers.
+     72              API018_CMD_GENERATE_FAULT               = 2,    //!< Generate a fault.
+     73              API018_CMD_CLEAR_SAVED_FAULTS           = 3,    //!< Clear all fault information.
+     74              API018_CMD_REMOVE_FAULT                 = 4,    //!< Remove an active fault.
+     75              API018_CMD_REQUEST_FAULT_CODES          = 5,    //!< Request fault codes for all recorded faults.
+     76              API018_FBK_PUBLISH_FAULT_CODES          = 5,    //!< Publish fault codes for all recorded faults.
+     77              API018_CMD_REQUEST_STATISTICS           = 6,    //!< Request statistics data.
+     78              API018_FBK_PUBLISH_STATISTICS           = 6,    //!< Publish statistics data.
+     79              API018_CMD_REQUEST_COMMON_LIFETIME_DATA = 7,    //!< Request cycle data.
+     80              API018_FBK_PUBLISH_COMMON_LIFETIME_DATA = 7,    //!< Publish cycle data.
+     81          
+     82              API018_CMD_REQUEST_DIAGNOSTIC_CONFIG    = 30,   //!< Request diagnostic configuration information.
+     83              API018_FBK_PUBLISH_DIAGNOSTIC_CONFIG    = 30    //!< Publish diagnostic configuration information.
+     84          } API018DIAGNOSTIC_OPCODE_TYPE;
+     85          
+     86          //! Enumerated list of the sections of the Statistics data.
+     87          //! The order of these sections must match the order of the sections in the Statistics structure.
+     88          typedef enum API018_SECTION_ENUM
+     89          {
+     90              API018_INACTIVE                     = 0,
+     91              API018_SECTION_HEADER               = 0,
+     92          
+     93              API018_SECTION_FIRST                = 1,
+     94          
+     95              API018_SECTION_LIFETIME             = 1,
+     96              API018_SECTION_CYCLES               = 2,
+     97              API018_SECTION_FAULTS               = 3,
+     98              API018_SECTION_PRE_FAULTS           = 4,
+     99              API018_SECTION_LAST_CYCLES          = 5,
+    100              API018_SECTION_FAULTS_BLACK_BOX     = 6,
+    101              API018_SECTION_PRE_FAULTS_BLACK_BOX = 7,
+    102          
+    103              API018_SECTION_LAST                 = 7,
+    104          
+    105              API018_SECTION_NONE_REMAINING       = 0x20,
+    106          
+    107              API018_SECTION_ALL                  = 0x40,     //!< Request for all statistics sections.
+    108          } API018_SECTION_TYPE;
+    109          
+    110          
+    111          // -- Private Structure Type Declarations --
+    112          
+    113          //! Data structure for the variables required by the API018Diagnostic module.
+    114          typedef struct API018_DIAGNOSTIC_DATA_STRUCT
+    115          {
+    116              #if (API018_SERVER_FEATURE == ENABLED)
+    117                  //! The offset into the section of the statistics data being sent.
+    118                  //! This value is used to remember at what position (mid structure) the next statistics data packet should start.
+    119                  uint16 Sending_Section_Offset;
+    120          
+    121                  //! The offset into the full set of statistics data being sent.
+    122                  //! This value is used as the 2nd & 3rd bytes (big-endian) of every statistics data packet.
+    123                  uint16 Sending_Total_Offset;
+    124          
+    125                  //! This is the section of the statistics data that was requested.
+    126                  //! A value of 255 indicates that all sections were requested.
+    127                  //! Refer to API018_SECTION_TYPE for section numbers.
+    128                  //! This value is used as the first byte of every statistics data packet.
+    129                  API018_SECTION_TYPE Requested_Sections;
+    130          
+    131                  //! These are the sections of the statistics data that are being published.
+    132                  //! Each bit represents a section. Refer to API018_SECTION_TYPE for bit values.
+    133                  //! As the sections are sent out, the bits are cleared.
+    134                  uint8 Sending_Sections_Mask;
+    135          
+    136                  //! The node that requested the statistics data.
+    137                  uint8 Requesting_Node;
+    138              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    139                  //! An array of error codes that have occurred on the server.
+    140                  API018_ERROR_CODE_TYPE Error_Codes[API018_MAX_STORED_FAULTS];
+    141                  //! A structure that holds the common lifetime data
+    142                  API018_COMMON_LIFETIME_TYPE Common_Lifetime_Data;
+    143              #endif
+    144              #if (API018_CLIENT_FEATURE == ENABLED)
+    145                  //! The number of error codes received and stored in the Error_Codes[] array.
+    146                  uint8 Number_Of_Error_Codes;
+    147              #endif
+    148          } API018_DIAGNOSTIC_DATA_TYPE;
+    149          
+    150          //! The data structure repeated for each statistics section in the header section.
+    151          typedef struct API018_HEADER_ENTRY_STRUCT
+    152          {
+    153              uint8 Number_Of_Elements;
+    154              uint8 Size_Of_Elements;
+    155          } API018_HEADER_ENTRY_TYPE;
+    156          
+    157          
+    158          //  --- Private Definitions -------------------------------------------------------------------------------------------
+    159          
+    160          
+    161          // -- Private Flash-Based Constant Definitions --
+    162          
+    163          #if (API018_SERVER_FEATURE == ENABLED)
+    164          //! A packet that conveys platform-specific information about diagnostic information.
+    165          //! This is the payload of the API018_FBK_PUBLISH_DIAGNOSTIC_CONFIG message.
+    166          static const PACKED API018_HEADER_ENTRY_TYPE API018_HEADER_PACKET[] =
+    167          {
+    168              {
+    169                  1,                                          // Number of lifetime data elements
+    170                  sizeof(STATISTICS_LIFETIME_TYPE)            // Size of each lifetime data element
+    171              },
+    172              {
+    173                  STATISTICS_SAVED_CYCLES,                    // Number of saved cycle data elements
+    174                  #if (STATISTICS_SAVED_CYCLES > 0)
+    175                      sizeof(STATISTICS_CYCLE_TYPE)           // Size of each saved cycle data element
+    176                  #else
+    177                      0
+    178                  #endif
+    179              },
+    180              {
+    181                  STATISTICS_SAVED_FAULTS,                    // Number of fault data elements
+    182                  sizeof(STATISTICS_FAULT_TYPE)               // Size of each fault data element
+    183              },
+    184              {
+    185                  STATISTICS_SAVED_PRE_FAULTS,                // Number of pre-fault data elements
+    186                  sizeof(STATISTICS_FAULT_TYPE)               // Size of each pre-fault data element
+    187              },
+    188              {
+    189                  STATISTICS_SAVED_LAST_CYCLES,               // Number of saved last cycle data elements
+    190                  #if (STATISTICS_SAVED_LAST_CYCLES > 0)
+    191                      sizeof(PLATFORM_LAST_CYCLE_TYPE)        // Size of each saved last cycle data element
+    192                  #else
+    193                      0
+    194                  #endif
+    195              },
+    196              {
+    197                  STATISTICS_SAVED_FAULT_BLACK_BOX,           // Number of black box data elements for faults
+    198                  #if (STATISTICS_SAVED_FAULT_BLACK_BOX > 0)
+    199                      sizeof(PLATFORM_BLACK_BOX_TYPE)         // Size of each saved black box data element
+    200                  #else
+    201                      0
+    202                  #endif
+    203              },
+    204              {
+    205                  STATISTICS_SAVED_PRE_FAULT_BLACK_BOX,       // Number of black box data elements for pre-faults
+    206                  #if (STATISTICS_SAVED_PRE_FAULT_BLACK_BOX > 0)
+    207                      sizeof(PLATFORM_BLACK_BOX_TYPE)         // Size of each saved black box data element
+    208                  #else
+    209                      0
+    210                  #endif
+    211              }
+    212          };
+    213          CT_ASSERT(ELEMENTS_IN_ARRAY(API018_HEADER_PACKET) == (API018_SECTION_LAST - API018_SECTION_FIRST) + 1);
+    214          #endif      // #if (API018_SERVER_FEATURE == ENABLED)
+    215          
+    216          
+    217          // -- Private Variable Definitions --
+    218          
+    219          //! The variables required by the API018Diagnostic module.
+    220          static API018_DIAGNOSTIC_DATA_TYPE Api018;
+    221          
+    222          
+    223          //  --- Private Function Prototypes -----------------------------------------------------------------------------------
+    224          
+    225          #if (API018_SERVER_FEATURE == ENABLED)
+    226              static BOOL_TYPE GenerateFault(uint8 node, API018_FAULT_KEY_TYPE fault_key);
+    227              static API018_SECTION_TYPE GetNextSectionID(uint8 requested);
+    228              static void* GetSectionAddress(API018_SECTION_TYPE requested);
+    229              static uint16 GetSectionSize(API018_SECTION_TYPE section);
+    230              static BOOL_TYPE RemoveFault(uint8 node, API018_FAULT_KEY_TYPE fault_key);
+    231          #endif      // #if (API018_SERVER_FEATURE == ENABLED)
+    232          
+    233          
+    234          //=====================================================================================================================
+    235          //  --- Public Functions ----------------------------------------------------------------------------------------------
+    236          //=====================================================================================================================
+    237          
+    238          
+    239          //---------------------------------------------------------------------------------------------------------------------
+    240          /**
+    241           * Initialize the API018Diagnostic module variables.
+    242           */
+    243          void API018Diagnostic__Initialize(void)
+    244          {
+    245              #if (API018_SERVER_FEATURE == ENABLED)
+    246                  memset(&Api018, 0, sizeof(Api018));
+    247              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    248                  memset(&Api018, UCHAR_MAX, sizeof(Api018));
+    249              #endif
+    250              #if (API018_CLIENT_FEATURE == ENABLED)
+    251                  Api018.Number_Of_Error_Codes = 0;
+    252              #endif
+    253          }
+    254          
+    255          
+    256          //---------------------------------------------------------------------------------------------------------------------
+    257          /**
+    258           * Background function for the API018Diagnostic module.
+    259           */
+    260          void API018Diagnostic__Handler25ms(void)
+    261          {
+    262              #if (API018_SERVER_FEATURE == ENABLED)
+    263                  if (Api018.Requested_Sections != API018_INACTIVE)
+    264                  {
+    265                      // Setup local variables to build the transmission packet.
+    266                      // If any failures are detected, the static variables are unchanged and we can try again after 25ms.
+    267                      uint8  sending_sections       = Api018.Sending_Sections_Mask ;
+    268                      uint16 sending_section_offset = Api018.Sending_Section_Offset;
+    269                      uint16 sending_total_offset   = Api018.Sending_Total_Offset  ;
+    270          
+    271                      // Setup a message packet for transmission with the requested sections and the buffer offset.
+    272                      REVEAL_COMMAND_TYPE* msg = Reveal__NewFeedback(API018DIAGNOSTIC_NUM, API018_FBK_PUBLISH_STATISTICS, Api018.Requesting_Node, REVEAL_PAYLOAD_SIZE);
+    273                      uint8 payload_remaining = REVEAL_PAYLOAD_SIZE;
+    274                      PASS_FAIL_TYPE success = PASS;
+    275                      if (Api018.Sending_Total_Offset == 0)
+    276                      {
+    277                          // This is the first packet. Include the section(s) and the size of the section(s).
+    278                          success = Reveal__AddDataU8(msg, Api018.Requested_Sections);
+    279                          payload_remaining -= sizeof(uint8);
+    280                          BOOL_TYPE use_version_numbers = (BOOL_TYPE)BIT_TEST(Api018.Requested_Sections, API018_USE_VERSION_NUMBERS);
+    281                          if (use_version_numbers)
+    282                          {
+    283                              success &= Reveal__AddDataU8(msg, STATISTICS_CROSS_PLATFORM_VERSION);
+    284                              success &= Reveal__AddDataU8(msg, STATISTICS_PLATFORM_SPECIFIC_VERSION);
+    285                              payload_remaining -= 2 * sizeof(uint8);
+    286                          }
+    287                          API018_SECTION_TYPE section = (API018_SECTION_TYPE)(Api018.Requested_Sections & ~(1 << API018_USE_VERSION_NUMBERS));
+    288                          uint16 total_size = GetSectionSize(section);
+    289                          success &= Reveal__AddDataU16(msg, total_size);
+    290                          payload_remaining -= sizeof(uint16);
+    291                      }
+    292          
+    293                      // Add data to the message until the payload is full or there are no more statistics sections.
+    294                      while ((success == PASS) && (payload_remaining > 0) && (sending_sections > 0))
+    295                      {
+    296                          // Get information on the next section that must be sent.
+    297                          API018_SECTION_TYPE section = GetNextSectionID(sending_sections);
+    298                          uint8* section_address = GetSectionAddress(section);
+    299                          uint16 section_size = 0;
+    300                          if (section != API018_SECTION_NONE_REMAINING)
+    301                          {
+    302                              section_size = API018_HEADER_PACKET[section - 1].Number_Of_Elements * API018_HEADER_PACKET[section - 1].Size_Of_Elements;
+    303                          }
+    304                          if ((section_address == NULL) || (section_size == 0))
+    305                          {
+    306                              // Empty section was passed successfully.
+    307                              BIT_CLR(sending_sections, section);
+    308                          }
+    309                          else
+    310                          {
+    311                              // Determine what part of the section fits in the payload.
+    312                              uint16 section_remaining = section_size - sending_section_offset;
+    313                              uint8 section_transmit = ((section_remaining <= payload_remaining) ? section_remaining : payload_remaining);
+    314          
+    315                              // Send part (or all) of the next section.
+    316                              success = Reveal__AddDataU8Buffer(msg, &section_address[sending_section_offset], section_transmit);
+    317                              if (success == PASS)
+    318                              {
+    319                                  if (section_transmit == section_remaining)
+    320                                  {
+    321                                      // All of the statistics section was sent.
+    322                                      BIT_CLR(sending_sections, section);
+    323                                      sending_section_offset = 0;
+    324                                  }
+    325                                  else
+    326                                  {
+    327                                      // Only part of the statistics section was sent.
+    328                                      sending_section_offset += section_transmit;
+    329                                  }
+    330                                  sending_total_offset += section_transmit;
+    331                              }
+    332                              payload_remaining -= section_transmit;
+    333                          }
+    334                      }
+    335          
+    336                      if (success == PASS)
+    337                      {
+    338                          if (sending_sections > 0)
+    339                          {
+    340                              msg->opcode |= REVEAL_MMP_BIT;
+    341                          }
+    342                          if (Reveal__QueueCommand(msg) == TRUE)
+    343                          {
+    344                              if (sending_sections > 0)
+    345                              {
+    346                                  // Save status for the next statistics data packet.
+    347                                  Api018.Sending_Sections_Mask  = sending_sections      ;
+    348                                  Api018.Sending_Section_Offset = sending_section_offset;
+    349                                  Api018.Sending_Total_Offset   = sending_total_offset  ;
+    350                              }
+    351                              else
+    352                              {
+    353                                  Api018.Requested_Sections = API018_INACTIVE;
+    354                              }
+    355                          }
+    356                      }
+    357                  }
+    358              #endif      // #if (API018_SERVER_FEATURE == ENABLED)
+    359          }
+    360          
+    361          
+    362          //---------------------------------------------------------------------------------------------------------------------
+    363          /**
+    364           * This method parses API018 commands sent to a broadcast node or exclusively to this node.
+    365           * @param cmd = Pointer to the received command message.
+    366           * @return REVEAL_RECIPE_STATUS_TYPE that expresses the result of the parsing.
+    367           */
+    368          REVEAL_RECIPE_STATUS_TYPE API018Diagnostic__CommandParser(REVEAL_MSG_TYPE* cmd)
+    369          {
+    370              REVEAL_RECIPE_STATUS_TYPE reveal_response = NVO_RS_UNSUP_UNAVAILABLE;
+    371          
+    372              switch ((API018DIAGNOSTIC_OPCODE_TYPE)cmd->op_code)
+    373              {
+    374              #if (API018_SERVER_FEATURE == ENABLED)
+    375                  case API018_CMD_REQUEST_STATISITCS_VERSION:
+    376                      // No payload
+    377                      {
+    378                          REVEAL_COMMAND_TYPE* fbk = Reveal__NewFeedback(API018DIAGNOSTIC_NUM, API018_FBK_PUBLISH_STATISTICS_VERSION, cmd->node_id, 2);
+    379                          if ((Reveal__AddDataU8(fbk, STATISTICS_CROSS_PLATFORM_VERSION) == PASS) &&
+    380                              (Reveal__AddDataU8(fbk, STATISTICS_PLATFORM_SPECIFIC_VERSION) == PASS) &&
+    381                              (Reveal__QueueCommand(fbk) == TRUE))
+    382                          {
+    383                              reveal_response = NVO_RS_READY;
+    384                          }
+    385                      }
+    386                      break;
+    387          
+    388                  case API018_CMD_GENERATE_FAULT:
+    389                      // Client Fault Key (U16).
+    390                      if (cmd->size >= 2)
+    391                      {
+    392                          API018_FAULT_KEY_TYPE fault_key = (API018_FAULT_KEY_TYPE)Utilities__ConvertArrayTo16bits(&cmd->payload[0]);
+    393                          if (GenerateFault(cmd->node_id, fault_key) == TRUE)
+    394                          {
+    395                              reveal_response = NVO_RS_READY;
+    396                          }
+    397                      }
+    398                      break;
+    399          
+    400                  case API018_CMD_CLEAR_SAVED_FAULTS:
+    401                      // No payload.
+    402                      Fault__ResetAllObservers();
+    403                      Statistics__ClearFaultData();
+    404                      reveal_response = NVO_RS_READY;
+    405                      break;
+    406          
+    407                  case API018_CMD_REMOVE_FAULT:
+    408                      // Client Fault Key (U16).
+    409                      if (cmd->size >= 2)
+    410                      {
+    411                          API018_FAULT_KEY_TYPE fault_key = (API018_FAULT_KEY_TYPE)Utilities__ConvertArrayTo16bits(&cmd->payload[0]);
+    412                          if (RemoveFault(cmd->node_id, fault_key) == TRUE)
+    413                          {
+    414                              reveal_response = NVO_RS_READY;
+    415                          }
+    416                      }
+    417                      break;
+    418          
+    419                  case API018_CMD_REQUEST_FAULT_CODES:
+    420                      // No payload = Send all fault codes.
+    421                      // Or expect one parameter.
+    422                      //      Fault Index (U8) 0 = Most recently fault, 1 = Next most recent fault, ..., 255 = Send all fault codes.
+    423                      {
+    424                          uint8 index = ((cmd->size >= 1) ? cmd->payload[0] : 255);
+    425                          if (API018Diagnostic__PublishFaultBasic(index) == PASS)
+    426                          {
+    427                              reveal_response = NVO_RS_READY;
+    428                          }
+    429                      }
+    430                      break;
+    431          
+    432                  case API018_CMD_REQUEST_STATISTICS:
+    433                      // No payload = Send all statistics data.
+    434                      // Or expect one parameter with which section should be published.
+    435                      //      Section Number (U8) 1 = Section 1, 2 = Section 2, etc.
+    436                      if (Api018.Requested_Sections == API018_INACTIVE)
+    437                      {
+    438                          // Save the request byte to echo back in the response.
+    439                          // Valid values are [0x01..0x07,0x80..0x87]
+    440                          uint8 requested = ((cmd->size > 0) ? cmd->payload[0] : API018_SECTION_ALL);
+    441          
+    442                          // Determine which section is requested.
+    443                          uint8 section = requested;
+    444                          BIT_CLR(section, API018_USE_VERSION_NUMBERS);
+    445                          section = (section ? section : API018_SECTION_ALL);
+    446          
+    447                          // Validate the request.
+    448                          if (((API018_SECTION_FIRST <= section) && (section <= API018_SECTION_LAST)) ||
+    449                              (section == API018_SECTION_ALL))
+    450                          {
+    451                              Api018.Requesting_Node = cmd->node_id;
+    452                              Api018.Requested_Sections = (API018_SECTION_TYPE)requested;
+    453                              if (section == API018_SECTION_ALL)
+    454                              {
+    455                                  #define API018_SECTION_MASK_ALL ((1 << (API018_SECTION_LAST + 1)) - 2)
+    456                                  Api018.Sending_Sections_Mask = API018_SECTION_MASK_ALL;
+    457                              }
+    458                              else
+    459                              {
+    460                                  Api018.Sending_Sections_Mask = (1 << section);
+    461                              }
+    462                              Api018.Sending_Section_Offset = 0;
+    463                              Api018.Sending_Total_Offset = 0;
+    464                              reveal_response = NVO_RS_READY;
+    465                          }
+    466                      }
+    467                      break;
+    468          
+    469                  case  API018_CMD_REQUEST_COMMON_LIFETIME_DATA:
+    470                      // No payload.
+    471                      {
+    472                          PASS_FAIL_TYPE result = PASS;
+    473                          #if (STATISTICS_SAVED_CYCLES > 0)
+    474                              REVEAL_COMMAND_TYPE* fbk = Reveal__NewFeedback(API018DIAGNOSTIC_NUM, API018_FBK_PUBLISH_COMMON_LIFETIME_DATA, REVEAL_BROADCAST_NODE, 10);
+    475                          #else
+    476                              REVEAL_COMMAND_TYPE* fbk = Reveal__NewFeedback(API018DIAGNOSTIC_NUM, API018_FBK_PUBLISH_COMMON_LIFETIME_DATA, REVEAL_BROADCAST_NODE, 6);
+    477                          #endif
+    478                          STATISTICS_LIFETIME_TYPE* cycle_lifetime_data = Statistics__GetLifetimeData();
+    479                          #if (STATISTICS_SAVED_CYCLES > 0)
+    480                              // Get cycles started if it is available.
+    481                              uint16 cycle_count = cycle_lifetime_data->Cycles_Started;
+    482                          #else
+    483                              // Get cycles completed if cycles started is not available.
+    484                              uint16 cycle_count = cycle_lifetime_data->Cycles_Completed;
+    485                          #endif
+    486                          // Send lifetime seconds and cycle count.
+    487                          if ((Reveal__AddDataU32(fbk, cycle_lifetime_data->Seconds) != PASS) ||
+    488                              (Reveal__AddDataU16(fbk, cycle_count) != PASS))
+    489                          {
+    490                              result = FAIL;
+    491                          }
+    492                          #if (STATISTICS_SAVED_CYCLES > 0)
+    493                              // Send cycle run-time if available.
+    494                              if (Reveal__AddDataU32(fbk, cycle_lifetime_data->Seconds_Running_Cycles) != PASS)
+    495                              {
+    496                                  result = FAIL;
+    497                              }
+    498                          #endif
+    499                          // Transmit the message.
+    500                          if (result == PASS)
+    501                          {
+    502                              if (Reveal__QueueCommand(fbk) == TRUE)
+    503                              {
+    504                                  reveal_response = NVO_RS_READY;
+    505                              }
+    506                          }
+    507                      }
+    508                      break;
+    509          
+    510                  case API018_CMD_REQUEST_DIAGNOSTIC_CONFIG:
+    511                      // No payload.
+    512                      {
+    513                          REVEAL_COMMAND_TYPE* fbk = Reveal__NewFeedback(API018DIAGNOSTIC_NUM, API018_FBK_PUBLISH_DIAGNOSTIC_CONFIG, cmd->node_id, sizeof(API018_HEADER_PACKET));
+    514                          if ((Reveal__AddDataU8Buffer(fbk, (void*)API018_HEADER_PACKET, sizeof(API018_HEADER_PACKET)) == PASS) &&
+    515                              (Reveal__QueueCommand(fbk) == TRUE))
+    516                          {
+    517                              reveal_response = NVO_RS_READY;
+    518                          }
+    519                      }
+    520                      break;
+    521              #endif      // #if (API018_SERVER_FEATURE == ENABLED)
+    522          
+    523                  default:
+    524                      reveal_response = NVO_RS_UNSUP_OP_CODE;
+    525                      break;
+    526              }
+    527          
+    528              return (reveal_response);
+    529          }
+    530          
+    531          
+    532          //---------------------------------------------------------------------------------------------------------------------
+    533          /**
+    534           * This method parses API018 feedbacks sent to a broadcast or exclusively to this node.
+    535           * @param fbk = Pointer to the received feedback message.
+    536           */
+    537          void API018Diagnostic__FeedbackParser(REVEAL_MSG_TYPE * fbk)
+    538          {
+    539              #if ((API018_SERVER_FEATURE == DISABLED) && (API018_CLIENT_FEATURE == ENABLED))
+    540                  switch ((API018DIAGNOSTIC_OPCODE_TYPE)fbk->op_code)
+    541                  {
+    542                      case API018_FBK_PUBLISH_FAULT_CODES:
+    543                          // 4 bytes repeated:
+    544                          //      Fault Index (U8) 0 = Most recently recorded fault, 1 = Next most recently recorded fault, etc.
+    545                          //      Fault Code (U8)
+    546                          //      Fault Sub-Code (U8)
+    547                          //      Engineering Code (U8)
+    548                          Api018.Number_Of_Error_Codes = 0;
+    549                          memset(Api018.Error_Codes, UCHAR_MAX, sizeof(Api018.Error_Codes));
+    550                          for (uint8 i = 0; i < fbk->size; i += 4)
+    551                          {
+    552                              uint8 fault_index = i / 4;
+    553                              if (fault_index < API018_MAX_STORED_FAULTS)
+    554                              {
+    555                                  API018_ERROR_CODE_TYPE* e = &Api018.Error_Codes[fault_index];
+    556                                  e->F_Code = fbk->payload[i + 1];
+    557                                  e->E_Code = fbk->payload[i + 2];
+    558                                  e->Eng_Code = fbk->payload[i + 3];
+    559                                  Api018.Number_Of_Error_Codes++;
+    560                              }
+    561                          }
+    562                          HmiFaultMgr__ReceiveFaultData();
+    563                          break;
+    564          
+    565                      case API018_FBK_PUBLISH_COMMON_LIFETIME_DATA:
+    566                          //Seconds-payload bytes 0 to 3
+    567                          //Cycles_Count-payload bytes 4 to 5
+    568                          //Seconds_Running_Cycle-payload bytes 6 to 9(When STATISTICS_SAVED_CYCLES>0)
+    569                          if (fbk->size >= 6)
+    570                          {
+    571                              Api018.Common_Lifetime_Data.Seconds=Utilities__ConvertArrayTo32bits(&fbk->payload[0]);
+    572                              Api018.Common_Lifetime_Data.Cycle_Count=Utilities__ConvertArrayTo16bits(&fbk->payload[4]);
+    573                              if (fbk->size >= 10)
+    574                              {
+    575                                  Api018.Common_Lifetime_Data.Seconds_Running_Cycles=Utilities__ConvertArrayTo32bits(&fbk->payload[6]);
+    576                              }
+    577                          }
+    578                          break;
+    579          
+    580                      default:
+    581                          break;
+    582                  }
+    583              #endif
+    584          }
+    585          
+    586          
+    587          //---------------------------------------------------------------------------------------------------------------------
+    588          /**
+    589           * Acknowledge parser for API018.
+    590           * @param node = Node address that acknowledged the command message.
+    591           * @param api = The API of the previously sent command message.
+    592           * @param opcode = The OpCode of the previously sent command message.
+    593           * @param reasoncode = The response sent in response to the previously sent command message.
+    594           */
+    595          void API018Diagnostic__AckParser(uint8 node, uint8 api, uint8 op_code, REVEAL_RECIPE_STATUS_TYPE reason_code)
+    596          {
+    597          }
+    598          
+    599          
+    600          #if (API018_SERVER_FEATURE == ENABLED)
+    601          //---------------------------------------------------------------------------------------------------------------------
+    602          /**
+    603           * Publish the fault code for the indexed fault.
+    604           * @param requested_fault_index = Index into the list of stored faults.
+    605           *                                255 indicates that all faults are requested.
+    606           * @return PASS if the message was sent. Otherwise FAIL.
+    607           */
+    608          PASS_FAIL_TYPE API018Diagnostic__PublishFaultBasic(uint8 requested_fault_index)
+    609          {
+    610              PASS_FAIL_TYPE result = FAIL;
+    611          
+    612              // Request a feedback message buffer with the maximum data that may be needed.
+    613              uint8 fault_count = Statistics__ApplyFaultAgeCutoff();
+    614              REVEAL_COMMAND_TYPE* fbk = Reveal__NewFeedback(API018DIAGNOSTIC_NUM, API018_FBK_PUBLISH_FAULT_CODES, REVEAL_BROADCAST_NODE, fault_count * STATISTICS_SAVED_FAULTS);
+    615              if (fbk != NULL)
+    616              {
+    617                  // Iterate through the fault data.
+    618                  result = (PASS_FAIL_TYPE)(requested_fault_index == 255);
+    619                  STATISTICS_FAULT_TYPE* faults = Statistics__GetFaultData(0);
+    620                  for (uint8 fault_index = 0; fault_index < fault_count; fault_index++, faults++)
+    621                  {
+    622                      if ((requested_fault_index >= STATISTICS_SAVED_FAULTS) ||
+    623                          (requested_fault_index == fault_index))
+    624                      {
+    625                          result = PASS;
+    626                          if ((Reveal__AddDataU8(fbk, fault_index) != PASS) ||
+    627                              (Reveal__AddDataU8(fbk, faults->Fault_Code) != PASS) ||
+    628                              (Reveal__AddDataU8(fbk, faults->Fault_Sub_Code) != PASS) ||
+    629                              (Reveal__AddDataU8(fbk, faults->Fault_Eng_Code) != PASS))
+    630                          {
+    631                              // Failed to build the Reveal packet.
+    632                              result = FAIL;
+    633                              break;                              // Break out of the for() loop.
+    634                          }
+    635                      }
+    636                  }
+    637          
+    638                  // Transmit the message.
+    639                  if (result == PASS)
+    640                  {
+    641                      if (Reveal__QueueCommand(fbk) != TRUE)
+    642                      {
+    643                          result = FAIL;
+    644                      }
+    645                  }
+    646              }
+    647          
+    648              return result;
+    649          }
+    650          
+    651          
+    652          #else       // if only API018_CLIENT_FEATURE is ENABLED
+    653          //---------------------------------------------------------------------------------------------------------------------
+    654          /**
+    655           * Called by the client to request lifetime data from the server.
+    656           * @param node = The API018 server node.
+    657           * @return PASS if the request was sent. Otherwise FAIL.
+    658           */
+    659          PASS_FAIL_TYPE API018Diagnostic__RequestCommonLifeTimeData(uint8 node)
+    660          {
+    661              return ((PASS_FAIL_TYPE)Reveal__QueueMessageNoData(API018DIAGNOSTIC_NUM, API018_CMD_REQUEST_COMMON_LIFETIME_DATA, node, TRUE, FALSE));
+    662          }
+    663          
+    664          
+    665          //---------------------------------------------------------------------------------------------------------------------
+    666          /**
+    667           * Called by the client to get lifetime data from the server.
+    668           * @param node = The API018 server node.
+    669           * @return addres if client feature enabled
+    670           */
+    671          API018_COMMON_LIFETIME_TYPE* API018Diagnostic__GetCommonLifeTimeData(void)
+    672          {
+    673              return (&Api018.Common_Lifetime_Data);
+    674          }
+    675          #endif      // #if (API018_SERVER_FEATURE == ENABLED)
+    676          
+    677          
+    678          #if (API018_CLIENT_FEATURE == ENABLED)
+    679          //---------------------------------------------------------------------------------------------------------------------
+    680          /**
+    681           * Called by the client to request that the server clear all fault data.
+    682           * @param node = The API018 server node.
+    683           * @return PASS if the request was sent. Otherwise FAIL.
+    684           */
+    685          PASS_FAIL_TYPE API018Diagnostic__ClearFaults(uint8 node)
+    686          {
+    687              #if (API018_SERVER_FEATURE == ENABLED)
+    688                  Statistics__ClearFaultData();
+    689                  return PASS;
+    690              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    691                  API018Diagnostic__Initialize();
+    692                  return (PASS_FAIL_TYPE)Reveal__QueueMessageNoData(API018DIAGNOSTIC_NUM, API018_CMD_CLEAR_SAVED_FAULTS, node, TRUE, FALSE);
+    693              #endif
+    694          }
+    695          
+    696          
+    697          //---------------------------------------------------------------------------------------------------------------------
+    698          /**
+    699           * Generate a fault on the API018_SERVER.
+    700           * @param fault_key = The unique cross-category fault number.
+    701           * @return PASS if the message was successfully sent to the Main ACU.
+    702           */
+    703          PASS_FAIL_TYPE API018Diagnostic__GenerateFault(API018_FAULT_KEY_TYPE fault_key)
+    704          {
+    705              #if (API018_SERVER_FEATURE == ENABLED)
+    706                  return (PASS_FAIL_TYPE)((GenerateFault(WIN_ACU_ADDRESS, fault_key) == TRUE) ? PASS : FAIL);
+    707              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    708                  return (PASS_FAIL_TYPE)Reveal__QueueMessageU16(API018DIAGNOSTIC_NUM, API018_CMD_GENERATE_FAULT, WIN_ACU_ADDRESS, TRUE, FALSE, fault_key);
+    709              #endif
+    710          }
+    711          
+    712          
+    713          //---------------------------------------------------------------------------------------------------------------------
+    714          /**
+    715           * Get the error code for the specified fault index.
+    716           * @param fault_index = The requested fault index. 0 = most recent fault.
+    717           * @return The error code for the specified fault index.
+    718           *         If there is no error code at the specified fault index, then return Fault Code UCHAR_MAX.
+    719           */
+    720          API018_ERROR_CODE_TYPE Api018Diagnostic__GetErrorCode(uint8 fault_index)
+    721          {
+    722              API018_ERROR_CODE_TYPE e = { UCHAR_MAX, UCHAR_MAX, UCHAR_MAX };
+    723              #if (API018_SERVER_FEATURE == ENABLED)
+    724                  uint8 fault_count = Statistics__ApplyFaultAgeCutoff();
+    725                  if (fault_index < fault_count)
+    726                  {
+    727                      STATISTICS_FAULT_TYPE* fault = Statistics__GetFaultData(fault_index);
+    728                      if ((fault != NULL) && (fault->Fault_Id != FAULT_ID_NONE))
+    729                      {
+    730                          FAULT_CONFIG_TYPE* fault_config = Fault__GetParameters((FAULT_ID_TYPE)fault->Fault_Id);
+    731                          if (fault_config != NULL)
+    732                          {
+    733                              e.F_Code = fault_config->Code;
+    734                              e.E_Code = fault_config->Sub_Code;
+    735                              e.Eng_Code = fault_config->Engineering_Code;
+    736                          }
+    737                      }
+    738                  }
+    739              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    740                  if ((fault_index < API018_MAX_STORED_FAULTS) &&
+    741                      (fault_index < Api018.Number_Of_Error_Codes))
+    742                  {
+    743                      e = Api018.Error_Codes[fault_index];
+    744                  }
+    745              #endif
+    746              return e;
+    747          }
+    748          
+    749          
+    750          //---------------------------------------------------------------------------------------------------------------------
+    751          /**
+    752           * Get the number of faults that have been received from the API018_SERVER.
+    753           * @return The number of faults that have been received from the API018_SERVER.
+    754           */
+    755          uint8 Api018Diagnostic__GetNumberOfErrorCodes(void)
+    756          {
+    757              #if (API018_SERVER_FEATURE == ENABLED)
+    758                  return Statistics__GetFaultCount();
+    759              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    760                  return Api018.Number_Of_Error_Codes;
+    761              #endif
+    762          }
+    763          
+    764          
+    765          //---------------------------------------------------------------------------------------------------------------------
+    766          /**
+    767           * Remove a fault on the API018_SERVER.
+    768           * @param fault_key = The unique cross-category fault number.
+    769           * @return PASS if the message was successfully sent to the Main ACU.
+    770           */
+    771          PASS_FAIL_TYPE API018Diagnostic__RemoveFault(API018_FAULT_KEY_TYPE fault_key)
+    772          {
+    773              #if (API018_SERVER_FEATURE == ENABLED)
+    774                  return (PASS_FAIL_TYPE)((RemoveFault(WIN_ACU_ADDRESS, fault_key) == TRUE) ? PASS : FAIL);
+    775              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    776                  return (PASS_FAIL_TYPE)Reveal__QueueMessageU16(API018DIAGNOSTIC_NUM, API018_CMD_REMOVE_FAULT, WIN_ACU_ADDRESS, TRUE, FALSE, fault_key);
+    777              #endif
+    778          }
+    779          
+    780          
+    781          //---------------------------------------------------------------------------------------------------------------------
+    782          /**
+    783           * Called by the client to request all fault codes from the server.
+    784           * @param node = The API018 server node.
+    785           * @param fault_index = Parameter is ignored. Kept for backward compatibility.
+    786           * @return PASS if the request was sent. Otherwise FAIL.
+    787           */
+    788          PASS_FAIL_TYPE API018Diagnostic__RequestFaultBasic(uint8 node, uint8 fault_index)
+    789          {
+    790              #if (API018_SERVER_FEATURE == ENABLED)
+    791                  return PASS;
+    792              #else   /* if only API018_CLIENT_FEATURE is ENABLED */
+    793                  return ((PASS_FAIL_TYPE)Reveal__QueueMessageNoData(API018DIAGNOSTIC_NUM, API018_CMD_REQUEST_FAULT_CODES, node, TRUE, FALSE));
+    794              #endif
+    795          }
+    796          #endif      // #if (API018_CLIENT_FEATURE == ENABLED)
+    797          
+    798          
+    799          //=====================================================================================================================
+    800          //-------------------------------------- Private Functions ------------------------------------------------------------
+    801          //=====================================================================================================================
+    802          
+    803          
+    804          #if (API018_SERVER_FEATURE == ENABLED)
+    805          //---------------------------------------------------------------------------------------------------------------------
+    806          /**
+    807           * Generate a fault.
+    808           * @param node_id = The communication node that reported the fault.
+    809           * @param fault_key = The unique cross-category fault key to translate to a category-specific fault ID.
+    810           * @return TRUE if the fault was generated; otherwise FALSE.
+    811           */
+    812          static BOOL_TYPE GenerateFault(uint8 node_id, API018_FAULT_KEY_TYPE fault_key)
+    813          {
+    814              for (uint8 i = 0; i < ELEMENTS_IN_ARRAY(MAP_FAULT_KEYS_TO_FAULT_IDS); i++)
+    815              {
+    816                  if ((MAP_FAULT_KEYS_TO_FAULT_IDS[i].Node == node_id) && (MAP_FAULT_KEYS_TO_FAULT_IDS[i].Key == fault_key))
+    817                  {
+    818                      FAULT_ID_TYPE fault_id = MAP_FAULT_KEYS_TO_FAULT_IDS[i].Fault_Id;
+    819                      if (fault_id != FAULT_ID_NONE)
+    820                      {
+    821                          Fault__ConditionDetected(fault_id);
+    822                          return TRUE;
+    823                      }
+    824                  }
+    825              }
+    826              return FALSE;
+    827          }
+    828          
+    829          
+    830          //---------------------------------------------------------------------------------------------------------------------
+    831          /**
+    832           * Get the next statistics section ID based on the specified requested sections.
+    833           * @param requested = The statistics sections that are requested (one for each bit).
+    834           * @return The next statistics section ID based on the specified requested sections.
+    835           */
+    836          static API018_SECTION_TYPE GetNextSectionID(uint8 requested)
+    837          {
+    838              for (API018_SECTION_TYPE section = API018_SECTION_FIRST; section <= API018_SECTION_LAST; section++)
+    839              {
+    840                  if (BIT_TEST(requested, section) == 1)
+    841                  {
+    842                      return section;
+    843                  }
+    844              }
+    845              return API018_SECTION_NONE_REMAINING;
+    846          }
+    847          
+    848          
+    849          //---------------------------------------------------------------------------------------------------------------------
+    850          /**
+    851           * Get a pointer to the requested statistics section.
+    852           * @param requested = The requested statistics section.
+    853           * @return A pointer to the requested statistics section.
+    854           */
+    855          static void* GetSectionAddress(API018_SECTION_TYPE requested)
+    856          {
+    857              switch (requested)
+    858              {
+    859                  case API018_SECTION_HEADER:
+    860                      return (void*)API018_HEADER_PACKET;
+    861          
+    862                  case API018_SECTION_LIFETIME:
+    863                      return Statistics__GetLifetimeData();
+    864          
+    865                  case API018_SECTION_CYCLES:
+    866                      #if (STATISTICS_SAVED_CYCLES > 0)
+    867                          return Statistics__GetCycleData(0);
+    868                      #else
+    869                          return NULL;
+    870                      #endif
+    871          
+    872                  case API018_SECTION_FAULTS:
+    873                      return Statistics__GetFaultData(0);
+    874          
+    875                  case API018_SECTION_PRE_FAULTS:
+    876                      return Statistics__GetPreFaultData(0);
+    877          
+    878                  case API018_SECTION_LAST_CYCLES:
+    879                      #if (STATISTICS_SAVED_LAST_CYCLES > 0)
+    880                          return Statistics__GetLastCycleData(0);
+    881                      #else
+    882                          return NULL;
+    883                      #endif
+    884          
+    885                  case API018_SECTION_FAULTS_BLACK_BOX:
+    886                      #if (STATISTICS_SAVED_FAULT_BLACK_BOX > 0)
+    887                          return Statistics__GetFaultBlackBoxData(0);
+    888                      #else
+    889                          return NULL;
+    890                      #endif
+    891          
+    892                  case API018_SECTION_PRE_FAULTS_BLACK_BOX:
+    893                      #if (STATISTICS_SAVED_PRE_FAULT_BLACK_BOX > 0)
+    894                          return Statistics__GetPreFaultBlackBoxData(0);
+    895                      #else
+    896                          return NULL;
+    897                      #endif
+    898          
+    899                  default:
+    900                      break;
+    901              }
+    902              return NULL;
+    903          }
+    904          
+    905          
+    906          //---------------------------------------------------------------------------------------------------------------------
+    907          /**
+    908           * Get the size of the specified statistics section.
+    909           * @param section = The specified statistics section.
+    910           *                  All sections are assumed if value is not a valid section number.
+    911           * @return The size of the specified statistics section.
+    912           */
+    913          static uint16 GetSectionSize(API018_SECTION_TYPE section)
+    914          {
+    915              uint16 size;
+    916              if ((API018_SECTION_FIRST <= section) && (section <= API018_SECTION_LAST))
+    917              {
+    918                  uint8 index = section - 1;
+    919                  size = API018_HEADER_PACKET[index].Number_Of_Elements * API018_HEADER_PACKET[index].Size_Of_Elements;
+    920              }
+    921              else
+    922              {
+    923                  size = 0;
+    924                  for (uint8 section = API018_SECTION_FIRST; section <= API018_SECTION_LAST; section++)
+    925                  {
+    926                      uint8 index = section - 1;
+    927                      size += API018_HEADER_PACKET[index].Number_Of_Elements * API018_HEADER_PACKET[index].Size_Of_Elements;
+    928                  }
+    929              }
+    930              return size;
+    931          }
+    932          
+    933          
+    934          //---------------------------------------------------------------------------------------------------------------------
+    935          /**
+    936           * Remove a fault.
+    937           * @param node_id = The communication node that is removing the fault.
+    938           * @param fault_key = The unique cross-category fault key to translate to a category-specific fault ID.
+    939           * @return TRUE if the fault was removed; otherwise FALSE.
+    940           */
+    941          static BOOL_TYPE RemoveFault(uint8 node_id, API018_FAULT_KEY_TYPE fault_key)
+    942          {
+    943              for (uint8 i = 0; i < ELEMENTS_IN_ARRAY(MAP_FAULT_KEYS_TO_FAULT_IDS); i++)
+    944              {
+    945                  if ((MAP_FAULT_KEYS_TO_FAULT_IDS[i].Node == node_id) && (MAP_FAULT_KEYS_TO_FAULT_IDS[i].Key == fault_key))
+    946                  {
+    947                      FAULT_ID_TYPE fault_id = MAP_FAULT_KEYS_TO_FAULT_IDS[i].Fault_Id;
+    948                      if (fault_id != FAULT_ID_NONE)
+    949                      {
+    950                          Fault__ConditionRemoved(fault_id);
+    951                          return TRUE;
+    952                      }
+    953                  }
+    954              }
+    955              return FALSE;
+    956          }
+    957          #endif      // #if (API018_SERVER_FEATURE == ENABLED)
+    958          
+    959          
+    960          #endif      // #if ((API018_CLIENT_FEATURE == ENABLED) || (API018_SERVER_FEATURE == ENABLED))
+    961          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

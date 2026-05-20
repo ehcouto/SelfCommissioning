@@ -1,0 +1,226 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:30
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\MasterCommander.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        MasterCommander.obj -l ..\listings\MasterCommander.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\MasterCommander.c
+#    List file    =  ..\listings\MasterCommander.lst
+#    Object file  =  MasterCommander.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\MasterCommander.c
+      1          /**
+      2           *  @file       MasterCommander.c
+      3           *
+      4           *  @brief
+      5           *
+      6           *  @details
+      7           *
+      8           *  @section
+      9           *
+     10           *  @copyright  Copyright 2013-$Date: 2015/10/06 16:02:53CEST $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     11           */
+     12          //---------------------------------------------------------------------------------------------------------------------
+     13          //---------------------------------------------------------------------------------------------------------------------
+     14          
+     15          
+     16          //-------------------------------------- Include Files ----------------------------------------------------------------
+     17          
+     18          #include "Uart.h"
+     19          #include "MasterCommander.h"
+     20          #include "master_commander.h"
+     21          #include "mc_protocol.h"
+     22          
+     23          
+     24          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     25          
+     26          
+     27          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     28          
+     29          
+     30          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     31          
+     32          
+     33          //=====================================================================================================================
+     34          //-------------------------------------- Public Functions -------------------------------------------------------------
+     35          //=====================================================================================================================
+     36          
+     37          
+     38          
+     39          //---------------------------------------------------------------------------------------------------------------------
+     40          /**
+     41           *  @brief      It Initializes the module MasterCommander and its variables
+     42           *
+     43           */
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void MasterCommander__Initialize(void)
+     45          {
+   \                     MasterCommander__Initialize: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+     46              Uart__Initialize(MASTERCOMMANDER_COMPORT, MASTERCOMMANDER_BAUDRATE, UART_STOP_BIT_1, UART_PARITY_NONE);
+   \   00000004   0x2300             MOVS     R3,#+0
+   \   00000006   0x2200             MOVS     R2,#+0
+   \   00000008   0x2105             MOVS     R1,#+5
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0x.... 0x....      BL       Uart__Initialize
+     47          
+     48              MC_Init();
+   \   00000010   0xB001             ADD      SP,SP,#+4
+   \   00000012   0xF85D 0xEB04      POP      {LR}
+   \   00000016   0x.... 0x....      B.W      MC_Init
+     49          }
+     50          
+     51          
+     52          
+     53          
+     54          //---------------------------------------------------------------------------------------------------------------------
+     55          /**
+     56           *  @brief      Pwm handler for MasterCommander. Rate: every 62.5 us
+     57           *
+     58           */
+
+   \                                 In section .text, align 2, keep-with-next
+     59          void MasterCommander__PwmHandler(void)
+     60          {
+     61          	MC_Recorder();
+   \                     MasterCommander__PwmHandler: (+1)
+   \   00000000   0x.... 0x....      B.W      MC_Recorder
+     62          }
+     63          
+     64          
+     65          
+     66          
+     67          //---------------------------------------------------------------------------------------------------------------------
+     68          /**
+     69           *  @brief      Fast handler for MasterCommander. Rate: every 250 us
+     70           *
+     71           */
+
+   \                                 In section .text, align 2, keep-with-next
+     72          void MasterCommander__FastHandler(void)
+     73          {
+     74              MC_Poll();
+   \                     MasterCommander__FastHandler: (+1)
+   \   00000000   0x.... 0x....      B.W      MC_Poll
+     75          }
+     76          
+     77          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   MasterCommander__FastHandler
+         0   -> MC_Poll
+       8   MasterCommander__Initialize
+         0   -> MC_Init
+         8   -> Uart__Initialize
+       0   MasterCommander__PwmHandler
+         0   -> MC_Recorder
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  MasterCommander__FastHandler
+      26  MasterCommander__Initialize
+       4  MasterCommander__PwmHandler
+
+ 
+ 34 bytes in section .text
+ 
+ 34 bytes of CODE memory
+
+Errors: none
+Warnings: none

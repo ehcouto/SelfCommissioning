@@ -1,0 +1,2079 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:21
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o MclObserver.obj
+#        -l ..\listings\MclObserver.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c
+#    List file    =  ..\listings\MclObserver.lst
+#    Object file  =  MclObserver.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c
+      1          /**
+      2           *  @file       MclObserver.c
+      3           *  @brief      Motor Control Loop 3-phase motors: Observer Macro Block.
+      4           *  @details    This module implements the DTC Observer Module.
+      5           *  @author     alessio.beato/luigi.fagnano
+      6           *  $Header:
+      7           *  @copyright  Copyright 2020-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      8          */
+      9          //---------------------------------------------------------------------------------------------------------------------
+     10          //---------------------------------------------------------------------------------------------------------------------
+     11          
+     12          
+     13          //-------------------------------------- Include Files ----------------------------------------------------------------
+     14          #include "MclObserver.h"
+     15          #include "McMathCalc_macros.h"
+     16          #include "ClrkPark.h"
+     17          #include "Filters.h"
+     18          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+     19          #include "InverterComp.h"
+     20          #endif
+     21          #include "Mci_prm.h"
+     22          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     23          
+     24          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     25          #ifndef OBS__SWAP_ANGLE_IN_LOCKED_ROTOR
+     26              #define OBS__SWAP_ANGLE_IN_LOCKED_ROTOR DISABLED
+     27          #endif
+     28          
+     29          //! PLL variables and parameters structure
+     30          typedef struct
+     31          {
+     32              float kp;
+     33              float ki;
+     34              float in_alpha;
+     35              float in_beta;
+     36              float speed;
+     37              float speed_old;
+     38              float integral;
+     39              float angle;
+     40              float alpha;
+     41              float beta;
+     42              float error;
+     43              float error_old;
+     44              float integ_k;                                  //!< Constant for integration
+     45              float speed_2pu;                                //!< pll convert to speed pu
+     46          } XPLL_TYPE;
+     47          
+     48          #ifndef PI
+     49              #define PI  3.1415926535897932384626433832795f
+     50          #endif
+     51          #define  PARAMS_EMF_INT_CONSTANT    0.5f * TSW
+     52          
+     53          
+     54          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+     55          static ALPHA_BETA_COOR_SYST_F_TYPE Inverter_Distortion;
+     56          static INVERTER_COMP_TYPE Inv_Dist_Pointer;
+     57          #endif
+
+   \                                 In section .bss, align 4
+     58          static ALPHA_BETA_COOR_SYST_F_TYPE Stator_Emf;
+     59          static ALPHA_BETA_COOR_SYST_F_TYPE Stator_Emf_Err;
+     60          static ALPHA_BETA_COOR_SYST_F_TYPE Stator_Flux;         //!< [Vs] - stator flux from integrated voltages (emf, losses, etc.)
+     61          static ALPHA_BETA_COOR_SYST_F_TYPE Rotor_Flux;
+     62          static float32 Rotor_Flux_Mod;
+     63          static float32 Sin_Rot_k1;
+     64          static float32 Cos_Rot_k1;
+     65          static float32 EM_Torque;                               //!< [Nm] - instantaneous electromagnetic torque
+     66          static float32 EM_Torque_Filt_Sum;
+     67          
+     68          
+     69          static float32 dLambdas_alpha_old;
+     70          static float32 dLambdas_beta_old;
+     71          static float32 Rotor_Position;
+     72          static float32 Rotor_Mech_Position;
+     73          static float32 Flux_Error;                              //!< [Vs/rad] - flux error to close one loop in the observer stator resistance adaptation
+     74          static XPLL_TYPE Speed_PLL;
+   \                     Speed_PLL:
+   \   00000000                      DS8 56
+   \   00000038                      DS8 12
+   \   00000044                      DS8 12
+   \   00000050                      DS8 12
+   \   0000005C                      DS8 12
+   \   00000068                      DS8 2
+   \   0000006A                      DS8 2
+   \   0000006C                      DS8 4
+   \   00000070                      DS8 4
+   \   00000074                      DS8 4
+   \   00000078                      DS8 4
+   \   0000007C                      DS8 4
+   \   00000080                      DS8 4
+   \   00000084                      DS8 4
+   \   00000088                      DS8 4
+   \   0000008C                      DS8 4
+   \   00000090                      DS8 4
+   \   00000094                      DS8 4
+   \   00000098                      DS8 4
+   \   0000009C                      DS8 4
+   \   000000A0                      DS8 4
+   \   000000A4                      DS8 4
+   \   000000A8                      DS8 4
+   \   000000AC                      DS8 4
+   \   000000B0                      DS8 4
+   \   000000B4                      DS8 4
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+     75          
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+     76          static float32 Obs_Speed_Stator_Flux;
+     77          static float32 Obs_Speed_Rotor_Flux;
+     78          
+     79          static float32 Last_Mech_Rotor_Pos;
+     80          static float32 Mech_Rotor_Pos_Acc_Err;
+     81          
+     82          static float32 Obs_Speed_Rotor_Flux_sum;                //!< Rotor flux speed history
+     83          
+     84          static float32 Error_Flux_Alpha_1;
+     85          static float32 Error_Flux_Beta_1;
+     86          
+     87          static float32 Stator_Resistance_Corr;
+     88          static float32 Err_Lim_Lower;
+     89          static float32 Err_Lim_Upper;
+     90          
+     91          static uint32 Speed_Transition_Counter;
+     92          
+     93          static float32 Rotor_Curr_Id;
+     94          static float32 Rotor_Curr_Iq;
+     95          static float32 Rotor_Curr_Iq_Abs;
+     96          static float32 Rotor_Curr_Id_Abs;
+     97          
+     98          static float32 Pole_Pairs_Inv;
+     99          
+    100          #if (OBS__SWAP_ANGLE_IN_LOCKED_ROTOR == ENABLED)
+    101          static uint16 Swap_Phase_Flag;
+    102          static uint16 Swap_Phase_Cnt;
+    103          #endif
+    104          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    105          #if (OBS__VOLTAGE_PHASE_SHIFT == ENABLED)
+    106          static void Voltage_Phase_Shift(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params);
+    107          #endif
+    108          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+    109          static void InvDistortion_Comp(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params);
+    110          #endif
+    111          static void Resistance_Adaptation(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params);
+    112          static void Emf_Calc(MCL_OBSERVER_IO_F_TYPE *io);
+    113          static void Inductance_Correction(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params);
+    114          static void RotorFlux_Correction(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params);
+    115          static void StatorFlux_Calc(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params);
+    116          static void Speed_PLL_Calc(void);
+    117          static void ElectroMagneticTorqueCalc(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params);
+    118          static void Speed_Selector(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params);
+    119          static void Speed_Selector_Check(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params);
+    120          static void PLL__fReset(XPLL_TYPE *XPLLVars);
+    121          static void PLL__fCalc(XPLL_TYPE *XPLLVars);
+    122          #if (OBS__SWAP_ANGLE_IN_LOCKED_ROTOR == ENABLED)
+    123          static void SwapPhase_Correction(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_ADDITIONAL_PARAMS_TYPE *params);
+    124          #endif
+    125          
+    126          //=====================================================================================================================
+    127          //-------------------------------------- Public Functions -------------------------------------------------------------
+    128          //=====================================================================================================================
+    129          
+    130          //---------------------------------------------------------------------------------------------------------------------
+    131          /**
+    132           *  @brief      Reset all Mcl Observer quantities.
+    133           *  @details    This routine reset all Observer quantities, it has to be called at every time the pwm is switched off (motor stop or free down ramp).
+    134           *
+    135           *
+    136           *  @param[in]     
+    137           *  @param[out]
+    138           *  @return        
+    139           */
+
+   \                                 In section .text, align 2, keep-with-next
+    140          void MclObserver__ResetState(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    141          {
+   \                     MclObserver__ResetState: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4605             MOV      R5,R0
+    142              float32 cmd_flux_level;
+    143              SIN_COS_F_TYPE cmd_sin_cos_pos;
+    144          
+    145          
+    146              // Private variables reset
+    147              dLambdas_alpha_old = 0.0f;
+   \   00000004   0x.... 0x....      LDR.W    R4,??DataTable5_6
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0xB082             SUB      SP,SP,#+8
+   \   0000000C   0x460E             MOV      R6,R1
+   \   0000000E   0x67A0             STR      R0,[R4, #+120]
+    148              dLambdas_beta_old = 0.0f;
+   \   00000010   0x67E0             STR      R0,[R4, #+124]
+    149          
+    150              Stator_Emf.Alpha = 0.0f;
+   \   00000012   0x63E0             STR      R0,[R4, #+60]
+    151              Stator_Emf.Beta = 0.0f;
+   \   00000014   0x6420             STR      R0,[R4, #+64]
+    152              Stator_Emf_Err.Alpha = 0.0f;
+   \   00000016   0x64A0             STR      R0,[R4, #+72]
+    153              Stator_Emf_Err.Beta = 0.0f;
+   \   00000018   0x64E0             STR      R0,[R4, #+76]
+    154          
+    155              // Initialize torque estimator
+    156              EM_Torque = 0.0f;
+    157              EM_Torque_Filt_Sum = 0.0f;
+   \   0000001A   0x6760             STR      R0,[R4, #+116]
+    158          
+    159              PLL__fReset(&Speed_PLL);
+   \   0000001C   0x6120             STR      R0,[R4, #+16]
+   \   0000001E   0x6160             STR      R0,[R4, #+20]
+   \   00000020   0x62A0             STR      R0,[R4, #+40]
+   \   00000022   0x62E0             STR      R0,[R4, #+44]
+   \   00000024   0x61A0             STR      R0,[R4, #+24]
+   \   00000026   0x61E0             STR      R0,[R4, #+28]
+   \   00000028   0x6220             STR      R0,[R4, #+32]
+   \   0000002A   0x6260             STR      R0,[R4, #+36]
+   \   0000002C   0x60A0             STR      R0,[R4, #+8]
+   \   0000002E   0x60E0             STR      R0,[R4, #+12]
+    160          
+    161              Obs_Speed_Stator_Flux = 0.0f;
+    162              Obs_Speed_Rotor_Flux = 0.0f;
+   \   00000030   0xF8C4 0x0084      STR      R0,[R4, #+132]
+    163          
+    164              Rotor_Position = *(io->Ctrl_Specific->DcInjection_Angle);
+    165              MathCalc__SinCosF(Rotor_Position, &cmd_sin_cos_pos);
+   \   00000034   0xA800             ADD      R0,SP,#+0
+   \   00000036   0x6A29             LDR      R1,[R5, #+32]
+   \   00000038   0x6BC9             LDR      R1,[R1, #+60]
+   \   0000003A   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   0000003E   0x.... 0x....      BL       MathCalc__SinCosF
+    166          
+    167              io->Sin_Cos_Position_Flux->Sin = cmd_sin_cos_pos.Sin;
+   \   00000042   0x6928             LDR      R0,[R5, #+16]
+   \   00000044   0x9900             LDR      R1,[SP, #+0]
+   \   00000046   0x6001             STR      R1,[R0, #+0]
+    168              io->Sin_Cos_Position_Flux->Cos = cmd_sin_cos_pos.Cos;
+   \   00000048   0x6928             LDR      R0,[R5, #+16]
+   \   0000004A   0x9901             LDR      R1,[SP, #+4]
+   \   0000004C   0x6041             STR      R1,[R0, #+4]
+    169          
+    170              Sin_Rot_k1 = io->Sin_Cos_Position_Flux->Sin;
+   \   0000004E   0x6928             LDR      R0,[R5, #+16]
+   \   00000050   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000054   0xED84 0x0A1B      VSTR     S0,[R4, #+108]
+    171              Cos_Rot_k1 = io->Sin_Cos_Position_Flux->Cos;
+   \   00000058   0x6928             LDR      R0,[R5, #+16]
+   \   0000005A   0xEDD0 0x0A01      VLDR     S1,[R0, #+4]
+   \   0000005E   0xEDC4 0x0A1C      VSTR     S1,[R4, #+112]
+    172          
+    173              // Calculate the flux magnitude
+    174              cmd_flux_level = *(io->Ctrl_Specific->Rotor_Flux); // + ((io->Ctrl_Specific->Ldq_Ind->D * (*(io->Is_Abs)))>>15);
+   \   00000062   0x6A28             LDR      R0,[R5, #+32]
+   \   00000064   0x6D41             LDR      R1,[R0, #+84]
+    175              *(io->Ctrl_Specific->Stator_Flux_Mag) = cmd_flux_level;
+   \   00000066   0x6B80             LDR      R0,[R0, #+56]
+   \   00000068   0xED91 0x1A00      VLDR     S2,[R1, #0]
+   \   0000006C   0xED80 0x1A00      VSTR     S2,[R0, #0]
+    176              Rotor_Flux_Mod = cmd_flux_level;
+    177          
+    178              // Initialize the stator flux
+    179              Stator_Flux.Alpha  = Cos_Rot_k1 * cmd_flux_level;
+    180              Stator_Flux.Beta   = Sin_Rot_k1 * cmd_flux_level;
+    181          
+    182              // Estimated rotor flux is the same from stator
+    183              Rotor_Flux.Alpha = Stator_Flux.Alpha;
+    184              Rotor_Flux.Beta = Stator_Flux.Beta;
+    185          
+    186          
+    187              Obs_Speed_Rotor_Flux_sum = 0.0f;
+   \   00000070   0x2000             MOVS     R0,#+0
+   \   00000072   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   00000076   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+   \   0000007A   0xF8C4 0x0088      STR      R0,[R4, #+136]
+    188          
+    189              Error_Flux_Alpha_1 = 0.0f;
+   \   0000007E   0xF8C4 0x008C      STR      R0,[R4, #+140]
+    190              Error_Flux_Beta_1 = 0.0f;
+   \   00000082   0xF8C4 0x0090      STR      R0,[R4, #+144]
+    191          
+    192              Err_Lim_Lower = 0.0f;
+   \   00000086   0xF8C4 0x0098      STR      R0,[R4, #+152]
+    193              Err_Lim_Upper = 0.0f;
+   \   0000008A   0xF8C4 0x009C      STR      R0,[R4, #+156]
+   \   0000008E   0xEDC4 0x0A15      VSTR     S1,[R4, #+84]
+   \   00000092   0xED84 0x0A16      VSTR     S0,[R4, #+88]
+   \   00000096   0xEDC4 0x0A18      VSTR     S1,[R4, #+96]
+   \   0000009A   0xED84 0x0A19      VSTR     S0,[R4, #+100]
+    194          
+    195          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+    196              Inv_Dist_Pointer.Is_ABC = io->Is_ABC;
+    197              Inv_Dist_Pointer.Vdc = io->Vdc;
+    198              Inv_Dist_Pointer.distortion = &Inverter_Distortion;
+    199          #endif
+    200          
+    201              Stator_Resistance_Corr = (params->ObsPrm->Resistance_Adapt_Offset);
+   \   0000009E   0x6830             LDR      R0,[R6, #+0]
+   \   000000A0   0x6940             LDR      R0,[R0, #+20]
+   \   000000A2   0xF8C4 0x0094      STR      R0,[R4, #+148]
+    202              Speed_Transition_Counter = 0;
+   \   000000A6   0x2000             MOVS     R0,#+0
+   \   000000A8   0xF8C4 0x00A0      STR      R0,[R4, #+160]
+    203              io->Ctrl_Specific->flags.bit.pll_engaged = 0;
+   \   000000AC   0x6A28             LDR      R0,[R5, #+32]
+   \   000000AE   0x6801             LDR      R1,[R0, #+0]
+   \   000000B0   0xF021 0x0108      BIC      R1,R1,#0x8
+   \   000000B4   0x6001             STR      R1,[R0, #+0]
+    204          #if (OBS__SWAP_ANGLE_IN_LOCKED_ROTOR == ENABLED)
+    205              Swap_Phase_Flag  = 0;
+   \   000000B6   0x2000             MOVS     R0,#+0
+   \   000000B8   0x66A0             STR      R0,[R4, #+104]
+    206              Swap_Phase_Cnt  = 0;
+    207          #endif
+    208          }
+   \   000000BA   0xB002             ADD      SP,SP,#+8
+   \   000000BC   0xBD70             POP      {R4-R6,PC}       ;; return
+    209          
+    210          
+    211          //---------------------------------------------------------------------------------------------------------------------
+    212          /**
+    213           *  @brief      Motor Control Loop Observer initialization.
+    214           *  @details    In this routine are called all initialization functions.
+    215           *
+    216           *
+    217           *  @param[in]     
+    218           *  @param[out]     
+    219           *  @param[in]      
+    220           *  @return        
+    221           */
+
+   \                                 In section .text, align 2, keep-with-next
+    222          void MclObserver__Initialize(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    223          {
+   \                     MclObserver__Initialize: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x4605             MOV      R5,R0
+   \   00000006   0x460C             MOV      R4,R1
+    224              Inductance_Correction(io, params);  // to initialize Mcl_Quantities inductances
+   \   00000008   0x.... 0x....      BL       Inductance_Correction
+    225              *(io->Ctrl_Specific->Rotor_Flux) = params->ObsPrm->Rotor_Flux_Nominal;
+   \   0000000C   0x6A28             LDR      R0,[R5, #+32]
+   \   0000000E   0x6821             LDR      R1,[R4, #+0]
+   \   00000010   0x6D40             LDR      R0,[R0, #+84]
+   \   00000012   0x6989             LDR      R1,[R1, #+24]
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+    226          	MclObserver__ResetState(io, params);
+   \   00000016   0x4628             MOV      R0,R5
+   \   00000018   0x4621             MOV      R1,R4
+   \   0000001A   0x.... 0x....      BL       MclObserver__ResetState
+    227          	Pole_Pairs_Inv = 1.0f/ params->ObsPrm->Pole_Pairs;
+   \   0000001E   0x6821             LDR      R1,[R4, #+0]
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable5_6
+   \   00000024   0xEDD1 0x0A0B      VLDR     S1,[R1, #+44]
+   \   00000028   0xEEB7 0x0A00      VMOV.F32 S0,#1.0
+   \   0000002C   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   00000030   0xED80 0x0A2D      VSTR     S0,[R0, #+180]
+    228              // Init Pll parameters
+    229              Speed_PLL.kp = params->ObsPrm->PLL_Kp;
+   \   00000034   0x6821             LDR      R1,[R4, #+0]
+   \   00000036   0x6B49             LDR      R1,[R1, #+52]
+   \   00000038   0x6001             STR      R1,[R0, #+0]
+    230              Speed_PLL.ki = params->ObsPrm->PLL_Ki;
+   \   0000003A   0x6821             LDR      R1,[R4, #+0]
+   \   0000003C   0x6B89             LDR      R1,[R1, #+56]
+   \   0000003E   0x6041             STR      R1,[R0, #+4]
+    231              Speed_PLL.integ_k = params->ObsPrm->Pll_Integ_K;
+   \   00000040   0x6821             LDR      R1,[R4, #+0]
+   \   00000042   0x6BC9             LDR      R1,[R1, #+60]
+   \   00000044   0x6301             STR      R1,[R0, #+48]
+    232          }
+   \   00000046   0xB001             ADD      SP,SP,#+4
+   \   00000048   0xBD30             POP      {R4,R5,PC}       ;; return
+    233          
+    234          
+    235          
+    236          //---------------------------------------------------------------------------------------------------------------------
+    237          /**
+    238           *  @brief     Observer
+    239           *  @details   Observer:  rotor flux speed estimation
+    240           *                        flux position estimation (FOC: rotor flux, DTC: stator flux)
+    241           *  @param[in]     
+    242           *  @param[out]     
+    243           *  @param[in]      
+    244           *  @return        
+    245           */
+
+   \                                 In section .text, align 4, keep-with-next
+    246          void MclObserver__RunningHandler(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    247          {
+   \                     MclObserver__RunningHandler: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0xED2D 0x8B06      VPUSH    {D8-D10}
+   \   0000000A   0xB090             SUB      SP,SP,#+64
+    248          #if (OBS__VOLTAGE_PHASE_SHIFT == ENABLED)
+    249              //==========================================================================//
+    250              //                                                                          //
+    251              //             Rotate the input voltage according to the speed              //
+    252              //                                                                          //
+    253              //==========================================================================//
+    254              Voltage_Phase_Shift(io, params);
+   \   0000000C   0x6860             LDR      R0,[R4, #+4]
+   \   0000000E   0x6840             LDR      R0,[R0, #+4]
+   \   00000010   0x900E             STR      R0,[SP, #+56]
+   \   00000012   0x460D             MOV      R5,R1
+   \   00000014   0x6860             LDR      R0,[R4, #+4]
+   \   00000016   0x6880             LDR      R0,[R0, #+8]
+   \   00000018   0x900F             STR      R0,[SP, #+60]
+   \   0000001A   0xA907             ADD      R1,SP,#+28
+   \   0000001C   0x6922             LDR      R2,[R4, #+16]
+   \   0000001E   0xA80D             ADD      R0,SP,#+52
+   \   00000020   0x.... 0x....      BL       ClrkPark__DirectParkF
+   \   00000024   0x6A21             LDR      R1,[R4, #+32]
+   \   00000026   0x6889             LDR      R1,[R1, #+8]
+   \   00000028   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   0000002C   0x6869             LDR      R1,[R5, #+4]
+   \   0000002E   0xEDD1 0x0A00      VLDR     S1,[R1, #0]
+   \   00000032   0xA800             ADD      R0,SP,#+0
+   \   00000034   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000038   0x.... 0x....      BL       MathCalc__SinCosF
+   \   0000003C   0xAA00             ADD      R2,SP,#+0
+   \   0000003E   0xA90A             ADD      R1,SP,#+40
+   \   00000040   0xA807             ADD      R0,SP,#+28
+   \   00000042   0x.... 0x....      BL       ClrkPark__InverseParkF
+   \   00000046   0x980B             LDR      R0,[SP, #+44]
+   \   00000048   0x9008             STR      R0,[SP, #+32]
+   \   0000004A   0x980C             LDR      R0,[SP, #+48]
+   \   0000004C   0x9009             STR      R0,[SP, #+36]
+   \   0000004E   0x6922             LDR      R2,[R4, #+16]
+   \   00000050   0x6861             LDR      R1,[R4, #+4]
+   \   00000052   0xA807             ADD      R0,SP,#+28
+   \   00000054   0x.... 0x....      BL       ClrkPark__InverseParkF
+    255          #endif
+    256          
+    257          
+    258          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+    259              //==========================================================================//
+    260              //                                                                          //
+    261              //                     Inverter distortion compensation                     //
+    262              //                                                                          //
+    263              //==========================================================================//
+    264              InvDistortion_Comp(io, params->ObsPrm);
+    265          #endif
+    266          
+    267          
+    268              //==========================================================================//
+    269              //                                                                          //
+    270              //                   Electromotive Force (EMF) calculation                  //
+    271              //                                                                          //
+    272              //==========================================================================//
+    273              Emf_Calc(io);
+   \   00000058   0x6A20             LDR      R0,[R4, #+32]
+   \   0000005A   0x.... 0x....      LDR.W    R6,??DataTable5_6
+   \   0000005E   0x6980             LDR      R0,[R0, #+24]
+   \   00000060   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   00000064   0x6820             LDR      R0,[R4, #+0]
+   \   00000066   0xED90 0x1A01      VLDR     S2,[R0, #+4]
+   \   0000006A   0x6860             LDR      R0,[R4, #+4]
+   \   0000006C   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000070   0xEE00 0x0AC1      VMLS.F32 S0,S1,S2
+   \   00000074   0xED86 0x0A0F      VSTR     S0,[R6, #+60]
+   \   00000078   0x6A20             LDR      R0,[R4, #+32]
+   \   0000007A   0x6980             LDR      R0,[R0, #+24]
+   \   0000007C   0xED90 0x1A00      VLDR     S2,[R0, #0]
+   \   00000080   0x6820             LDR      R0,[R4, #+0]
+   \   00000082   0xEDD0 0x1A02      VLDR     S3,[R0, #+8]
+   \   00000086   0x6860             LDR      R0,[R4, #+4]
+   \   00000088   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   0000008C   0xEE41 0x0A61      VMLS.F32 S1,S2,S3
+   \   00000090   0xEDC6 0x0A10      VSTR     S1,[R6, #+64]
+   \   00000094   0x6820             LDR      R0,[R4, #+0]
+   \   00000096   0xED96 0x1A25      VLDR     S2,[R6, #+148]
+   \   0000009A   0xEDD0 0x1A01      VLDR     S3,[R0, #+4]
+   \   0000009E   0xEE01 0x0A61      VMLS.F32 S0,S2,S3
+   \   000000A2   0xED86 0x0A0F      VSTR     S0,[R6, #+60]
+   \   000000A6   0x6820             LDR      R0,[R4, #+0]
+   \   000000A8   0xEDD0 0x1A02      VLDR     S3,[R0, #+8]
+   \   000000AC   0xEE41 0x0A61      VMLS.F32 S1,S2,S3
+   \   000000B0   0xEDC6 0x0A10      VSTR     S1,[R6, #+64]
+    274          
+    275          
+    276          #if (OBS__SWAP_ANGLE_IN_LOCKED_ROTOR == ENABLED)
+    277              //==========================================================================//
+    278              //                                                                          //
+    279              //                           Swap phase correction                          //
+    280              //                                                                          //
+    281              //==========================================================================//
+    282              SwapPhase_Correction(io, params->ObsAddPrm);
+   \   000000B4   0x6A21             LDR      R1,[R4, #+32]
+   \   000000B6   0x6868             LDR      R0,[R5, #+4]
+   \   000000B8   0x690A             LDR      R2,[R1, #+16]
+   \   000000BA   0xED90 0x1A04      VLDR     S2,[R0, #+16]
+   \   000000BE   0xEDD2 0x1A00      VLDR     S3,[R2, #0]
+   \   000000C2   0xEEB4 0x1A61      VCMP.F32 S2,S3
+   \   000000C6   0xEEF1 0xFA10      FMSTAT   
+   \   000000CA   0xDB66             BLT.N    ??MclObserver__RunningHandler_0
+   \   000000CC   0x6D09             LDR      R1,[R1, #+80]
+   \   000000CE   0xED90 0x1A03      VLDR     S2,[R0, #+12]
+   \   000000D2   0xEDD1 0x1A00      VLDR     S3,[R1, #0]
+   \   000000D6   0xEEB4 0x1A61      VCMP.F32 S2,S3
+   \   000000DA   0xEEF1 0xFA10      FMSTAT   
+   \   000000DE   0xD55C             BPL.N    ??MclObserver__RunningHandler_0
+   \   000000E0   0xF8B6 0x1068      LDRH     R1,[R6, #+104]
+   \   000000E4   0x2900             CMP      R1,#+0
+   \   000000E6   0xD158             BNE.N    ??MclObserver__RunningHandler_0
+   \   000000E8   0xED90 0x1A02      VLDR     S2,[R0, #+8]
+   \   000000EC   0xEEB5 0x1A40      VCMP.F32 S2,#0.0
+   \   000000F0   0xEEF1 0xFA10      FMSTAT   
+   \   000000F4   0xD051             BEQ.N    ??MclObserver__RunningHandler_0
+   \   000000F6   0xF8B6 0x106A      LDRH     R1,[R6, #+106]
+   \   000000FA   0x1C49             ADDS     R1,R1,#+1
+   \   000000FC   0xF8A6 0x106A      STRH     R1,[R6, #+106]
+   \   00000100   0xB289             UXTH     R1,R1
+   \   00000102   0xEE01 0x1A10      VMOV     S2,R1
+   \   00000106   0xEEB8 0x1A41      VCVT.F32.U32 S2,S2
+   \   0000010A   0xEDD0 0x1A02      VLDR     S3,[R0, #+8]
+   \   0000010E   0xEEF4 0x1A41      VCMP.F32 S3,S2
+   \   00000112   0xEEF1 0xFA10      FMSTAT   
+   \   00000116   0xD540             BPL.N    ??MclObserver__RunningHandler_0
+   \   00000118   0x2001             MOVS     R0,#+1
+   \   0000011A   0xF8A6 0x0068      STRH     R0,[R6, #+104]
+   \   0000011E   0xED86 0x0A1E      VSTR     S0,[R6, #+120]
+   \   00000122   0x2000             MOVS     R0,#+0
+   \   00000124   0xF8A6 0x006A      STRH     R0,[R6, #+106]
+   \   00000128   0xEDC6 0x0A1F      VSTR     S1,[R6, #+124]
+   \   0000012C   0x6A20             LDR      R0,[R4, #+32]
+   \   0000012E   0xED96 0x1A18      VLDR     S2,[R6, #+96]
+   \   00000132   0x6A80             LDR      R0,[R0, #+40]
+   \   00000134   0xEDD6 0x1A19      VLDR     S3,[R6, #+100]
+   \   00000138   0xED90 0x3A00      VLDR     S6,[R0, #0]
+   \   0000013C   0xED96 0x2A1C      VLDR     S4,[R6, #+112]
+   \   00000140   0xEDD6 0x2A1B      VLDR     S5,[R6, #+108]
+   \   00000144   0xEEB5 0x3A40      VCMP.F32 S6,#0.0
+   \   00000148   0xEEF1 0xFA10      FMSTAT   
+   \   0000014C   0xBF47             ITTEE    MI 
+   \   0000014E   0xEEB1 0x2A42      VNEGMI.F32 S4,S4
+   \   00000152   0xEEB1 0x1A41      VNEGMI.F32 S2,S2
+   \   00000156   0xEEF1 0x2A62      VNEGPL.F32 S5,S5
+   \   0000015A   0xEEF1 0x1A61      VNEGPL.F32 S3,S3
+   \   0000015E   0xED86 0x1A19      VSTR     S2,[R6, #+100]
+   \   00000162   0xED86 0x2A1B      VSTR     S4,[R6, #+108]
+   \   00000166   0xEDC6 0x2A1C      VSTR     S5,[R6, #+112]
+   \   0000016A   0x6A20             LDR      R0,[R4, #+32]
+   \   0000016C   0x6C40             LDR      R0,[R0, #+68]
+   \   0000016E   0xED90 0x1A02      VLDR     S2,[R0, #+8]
+   \   00000172   0x6820             LDR      R0,[R4, #+0]
+   \   00000174   0xED90 0x2A01      VLDR     S4,[R0, #+4]
+   \   00000178   0xEE41 0x1A02      VMLA.F32 S3,S2,S4
+   \   0000017C   0xEDC6 0x1A15      VSTR     S3,[R6, #+84]
+   \   00000180   0x6A20             LDR      R0,[R4, #+32]
+   \   00000182   0xED96 0x2A19      VLDR     S4,[R6, #+100]
+   \   00000186   0x6C40             LDR      R0,[R0, #+68]
+   \   00000188   0xED90 0x1A02      VLDR     S2,[R0, #+8]
+   \   0000018C   0x6820             LDR      R0,[R4, #+0]
+   \   0000018E   0xEDD0 0x1A02      VLDR     S3,[R0, #+8]
+   \   00000192   0xEE01 0x2A21      VMLA.F32 S4,S2,S3
+   \   00000196   0xED86 0x2A16      VSTR     S4,[R6, #+88]
+    283          #endif
+    284          
+    285              //==========================================================================//
+    286              //                                                                          //
+    287              //                        Stator Flux Observer                              //
+    288              //                                                                          //
+    289              //==========================================================================//
+    290              StatorFlux_Calc(io, params->ObsPrm);
+   \                     ??MclObserver__RunningHandler_0: (+1)
+   \   0000019A   0x682F             LDR      R7,[R5, #+0]
+   \   0000019C   0xED96 0x1A12      VLDR     S2,[R6, #+72]
+   \   000001A0   0xEDD6 0x1A1E      VLDR     S3,[R6, #+120]
+   \   000001A4   0xEE30 0x0A01      VADD.F32 S0,S0,S2
+   \   000001A8   0xEE30 0x2A21      VADD.F32 S4,S0,S3
+   \   000001AC   0xED86 0x0A1E      VSTR     S0,[R6, #+120]
+   \   000001B0   0xED9F 0x1A5A      VLDR.W   S2,??MclObserver__RunningHandler_1  ;; 0x3883126f
+   \   000001B4   0xED96 0x0A13      VLDR     S0,[R6, #+76]
+   \   000001B8   0xEDD6 0x1A15      VLDR     S3,[R6, #+84]
+   \   000001BC   0xEE30 0x0A80      VADD.F32 S0,S1,S0
+   \   000001C0   0xEE42 0x1A01      VMLA.F32 S3,S4,S2
+   \   000001C4   0xEDD6 0x0A1F      VLDR     S1,[R6, #+124]
+   \   000001C8   0xEDC6 0x1A15      VSTR     S3,[R6, #+84]
+   \   000001CC   0xEE30 0x2A20      VADD.F32 S4,S0,S1
+   \   000001D0   0xEDD6 0x0A16      VLDR     S1,[R6, #+88]
+   \   000001D4   0xED86 0x0A1F      VSTR     S0,[R6, #+124]
+   \   000001D8   0xEE42 0x0A01      VMLA.F32 S1,S4,S2
+   \   000001DC   0xEDC6 0x0A16      VSTR     S1,[R6, #+88]
+   \   000001E0   0x6A20             LDR      R0,[R4, #+32]
+   \   000001E2   0x6C40             LDR      R0,[R0, #+68]
+   \   000001E4   0xED90 0x0A02      VLDR     S0,[R0, #+8]
+   \   000001E8   0x6820             LDR      R0,[R4, #+0]
+   \   000001EA   0xED90 0x1A01      VLDR     S2,[R0, #+4]
+   \   000001EE   0xEE40 0x1A41      VMLS.F32 S3,S0,S2
+   \   000001F2   0xEDC6 0x1A18      VSTR     S3,[R6, #+96]
+   \   000001F6   0x6A20             LDR      R0,[R4, #+32]
+   \   000001F8   0x6C40             LDR      R0,[R0, #+68]
+   \   000001FA   0xED90 0x0A02      VLDR     S0,[R0, #+8]
+   \   000001FE   0x6820             LDR      R0,[R4, #+0]
+   \   00000200   0xED90 0x1A02      VLDR     S2,[R0, #+8]
+   \   00000204   0xEE40 0x0A41      VMLS.F32 S1,S0,S2
+   \   00000208   0xEE21 0x0AA1      VMUL.F32 S0,S3,S3
+   \   0000020C   0xEDC6 0x0A19      VSTR     S1,[R6, #+100]
+   \   00000210   0xEE00 0x0AA0      VMLA.F32 S0,S1,S1
+   \   00000214   0x.... 0x....      BL       MathCalc__SqrtF
+   \   00000218   0x6E30             LDR      R0,[R6, #+96]
+   \   0000021A   0x9002             STR      R0,[SP, #+8]
+   \   0000021C   0xED8D 0x0A04      VSTR     S0,[SP, #+16]
+   \   00000220   0x6E70             LDR      R0,[R6, #+100]
+   \   00000222   0x9003             STR      R0,[SP, #+12]
+   \   00000224   0xA802             ADD      R0,SP,#+8
+   \   00000226   0x.... 0x....      BL       MathCalc__GetSinCosF
+   \   0000022A   0x6820             LDR      R0,[R4, #+0]
+   \   0000022C   0xED9D 0x9A06      VLDR     S18,[SP, #+24]
+   \   00000230   0xED9D 0x8A05      VLDR     S16,[SP, #+20]
+   \   00000234   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000238   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   0000023C   0xEEF0 0x9A49      VMOV.F32 S19,S18
+   \   00000240   0xEEF0 0x8A48      VMOV.F32 S17,S16
+   \   00000244   0xEE20 0x0A29      VMUL.F32 S0,S0,S19
+   \   00000248   0xEE00 0x0AA8      VMLA.F32 S0,S1,S17
+   \   0000024C   0xEEF0 0x0AC0      VABS.F32 S1,S0
+   \   00000250   0xED86 0x0A29      VSTR     S0,[R6, #+164]
+   \   00000254   0xEDC6 0x0A2C      VSTR     S1,[R6, #+176]
+   \   00000258   0x6A20             LDR      R0,[R4, #+32]
+   \   0000025A   0x6A40             LDR      R0,[R0, #+36]
+   \   0000025C   0xED80 0x0A00      VSTR     S0,[R0, #0]
+   \   00000260   0x6820             LDR      R0,[R4, #+0]
+   \   00000262   0xED96 0x2A16      VLDR     S4,[R6, #+88]
+   \   00000266   0xEDD0 0x0A02      VLDR     S1,[R0, #+8]
+   \   0000026A   0xED90 0x1A01      VLDR     S2,[R0, #+4]
+   \   0000026E   0xED96 0x4A23      VLDR     S8,[R6, #+140]
+   \   00000272   0xEE60 0x0AA9      VMUL.F32 S1,S1,S19
+   \   00000276   0xEE41 0x0A68      VMLS.F32 S1,S2,S17
+   \   0000027A   0xEEB0 0x1AE0      VABS.F32 S2,S1
+   \   0000027E   0xEDC6 0x0A2A      VSTR     S1,[R6, #+168]
+   \   00000282   0xED86 0x1A2B      VSTR     S2,[R6, #+172]
+   \   00000286   0x6A20             LDR      R0,[R4, #+32]
+   \   00000288   0xED97 0x3A07      VLDR     S6,[R7, #+28]
+   \   0000028C   0x6D42             LDR      R2,[R0, #+84]
+   \   0000028E   0x6C41             LDR      R1,[R0, #+68]
+   \   00000290   0xED92 0xAA00      VLDR     S20,[R2, #0]
+   \   00000294   0x6C82             LDR      R2,[R0, #+72]
+   \   00000296   0xEDD1 0x1A01      VLDR     S3,[R1, #+4]
+   \   0000029A   0x6CC0             LDR      R0,[R0, #+76]
+   \   0000029C   0xEE00 0xAA21      VMLA.F32 S20,S0,S3
+   \   000002A0   0xEDD2 0x1A00      VLDR     S3,[R2, #0]
+   \   000002A4   0xEE01 0xAA61      VMLS.F32 S20,S2,S3
+   \   000002A8   0xED91 0x1A02      VLDR     S2,[R1, #+8]
+   \   000002AC   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   000002B0   0xED90 0x1A00      VLDR     S2,[R0, #0]
+   \   000002B4   0xEE40 0x0A41      VMLS.F32 S1,S0,S2
+   \   000002B8   0xEE2A 0x0A29      VMUL.F32 S0,S20,S19
+   \   000002BC   0xEE2A 0x1A28      VMUL.F32 S2,S20,S17
+   \   000002C0   0xEE00 0x0AE8      VMLS.F32 S0,S1,S17
+   \   000002C4   0xEE00 0x1AA9      VMLA.F32 S2,S1,S19
+   \   000002C8   0xEDD6 0x0A15      VLDR     S1,[R6, #+84]
+   \   000002CC   0xEE70 0x1A60      VSUB.F32 S3,S0,S1
+   \   000002D0   0xEE21 0x3A83      VMUL.F32 S6,S3,S6
+   \   000002D4   0xED86 0x3A12      VSTR     S6,[R6, #+72]
+   \   000002D8   0xEE71 0x2A42      VSUB.F32 S5,S2,S4
+   \   000002DC   0xEDD7 0x3A07      VLDR     S7,[R7, #+28]
+   \   000002E0   0xEE62 0x3AA3      VMUL.F32 S7,S5,S7
+   \   000002E4   0xEDC6 0x3A13      VSTR     S7,[R6, #+76]
+   \   000002E8   0xEDD7 0x4A08      VLDR     S9,[R7, #+32]
+   \   000002EC   0xEE01 0x4AA4      VMLA.F32 S8,S3,S9
+   \   000002F0   0xEDD6 0x1A26      VLDR     S3,[R6, #+152]
+   \   000002F4   0xEDD6 0x4A27      VLDR     S9,[R6, #+156]
+   \   000002F8   0xEEF4 0x4A61      VCMP.F32 S9,S3
+   \   000002FC   0xEEF1 0xFA10      FMSTAT   
+   \   00000300   0xDB0E             BLT.N    ??MclObserver__RunningHandler_2
+   \   00000302   0xEEB4 0x4A64      VCMP.F32 S8,S9
+   \   00000306   0xEEF1 0xFA10      FMSTAT   
+   \   0000030A   0xDA16             BGE.N    ??MclObserver__RunningHandler_3
+   \   0000030C   0xEEF4 0x1A44      VCMP.F32 S3,S8
+   \   00000310   0xEEF1 0xFA10      FMSTAT   
+   \   00000314   0xDB13             BLT.N    ??MclObserver__RunningHandler_4
+   \   00000316   0xEEB0 0x4A61      VMOV.F32 S8,S3
+   \   0000031A   0xE010             B.N      ??MclObserver__RunningHandler_4
+   \                     ??MclObserver__RunningHandler_1:
+   \   0000031C   0x3883126F         DC32     0x3883126f
+   \                     ??MclObserver__RunningHandler_2: (+1)
+   \   00000320   0xEEB4 0x4A61      VCMP.F32 S8,S3
+   \   00000324   0xEEF1 0xFA10      FMSTAT   
+   \   00000328   0xDB02             BLT.N    ??MclObserver__RunningHandler_5
+   \   0000032A   0xEEB0 0x4A61      VMOV.F32 S8,S3
+   \   0000032E   0xE006             B.N      ??MclObserver__RunningHandler_4
+   \                     ??MclObserver__RunningHandler_5: (+1)
+   \   00000330   0xEEF4 0x4A44      VCMP.F32 S9,S8
+   \   00000334   0xEEF1 0xFA10      FMSTAT   
+   \   00000338   0xDB01             BLT.N    ??MclObserver__RunningHandler_4
+   \                     ??MclObserver__RunningHandler_3: (+1)
+   \   0000033A   0xEEB0 0x4A64      VMOV.F32 S8,S9
+   \                     ??MclObserver__RunningHandler_4: (+1)
+   \   0000033E   0xEE33 0x3A04      VADD.F32 S6,S6,S8
+   \   00000342   0xED86 0x4A23      VSTR     S8,[R6, #+140]
+   \   00000346   0xED86 0x3A12      VSTR     S6,[R6, #+72]
+   \   0000034A   0xEEF4 0x4A61      VCMP.F32 S9,S3
+   \   0000034E   0xED97 0x4A08      VLDR     S8,[R7, #+32]
+   \   00000352   0xED96 0x3A24      VLDR     S6,[R6, #+144]
+   \   00000356   0xEE02 0x3A84      VMLA.F32 S6,S5,S8
+   \   0000035A   0xEEF1 0xFA10      FMSTAT   
+   \   0000035E   0xDB0A             BLT.N    ??MclObserver__RunningHandler_6
+   \   00000360   0xEEB4 0x3A64      VCMP.F32 S6,S9
+   \   00000364   0xEEF1 0xFA10      FMSTAT   
+   \   00000368   0xDA0F             BGE.N    ??MclObserver__RunningHandler_7
+   \   0000036A   0xEEF4 0x1A43      VCMP.F32 S3,S6
+   \   0000036E   0xEEF1 0xFA10      FMSTAT   
+   \   00000372   0xDA0F             BGE.N    ??MclObserver__RunningHandler_8
+   \   00000374   0xE00C             B.N      ??MclObserver__RunningHandler_9
+   \                     ??MclObserver__RunningHandler_6: (+1)
+   \   00000376   0xEEB4 0x3A61      VCMP.F32 S6,S3
+   \   0000037A   0xEEF1 0xFA10      FMSTAT   
+   \   0000037E   0xDA09             BGE.N    ??MclObserver__RunningHandler_8
+   \   00000380   0xEEF4 0x4A43      VCMP.F32 S9,S6
+   \   00000384   0xEEF1 0xFA10      FMSTAT   
+   \   00000388   0xDB02             BLT.N    ??MclObserver__RunningHandler_9
+   \                     ??MclObserver__RunningHandler_7: (+1)
+   \   0000038A   0xEEF0 0x1A64      VMOV.F32 S3,S9
+   \   0000038E   0xE001             B.N      ??MclObserver__RunningHandler_8
+   \                     ??MclObserver__RunningHandler_9: (+1)
+   \   00000390   0xEEF0 0x1A43      VMOV.F32 S3,S6
+   \                     ??MclObserver__RunningHandler_8: (+1)
+   \   00000394   0xEDC6 0x1A24      VSTR     S3,[R6, #+144]
+   \   00000398   0xEE73 0x1AA1      VADD.F32 S3,S7,S3
+   \   0000039C   0xEDC6 0x1A13      VSTR     S3,[R6, #+76]
+   \   000003A0   0x6A20             LDR      R0,[R4, #+32]
+   \   000003A2   0x6800             LDR      R0,[R0, #+0]
+   \   000003A4   0xF3C0 0x1080      UBFX     R0,R0,#+6,#+1
+   \   000003A8   0x2800             CMP      R0,#+0
+   \   000003AA   0xBF19             ITTEE    NE 
+   \   000003AC   0xED8D 0x0A02      VSTRNE   S0,[SP, #+8]
+   \   000003B0   0xED8D 0x1A03      VSTRNE   S2,[SP, #+12]
+   \   000003B4   0xEDCD 0x0A02      VSTREQ   S1,[SP, #+8]
+   \   000003B8   0xED8D 0x2A03      VSTREQ   S4,[SP, #+12]
+   \   000003BC   0xED9D 0x0A02      VLDR     S0,[SP, #+8]
+   \   000003C0   0xED9D 0x1A02      VLDR     S2,[SP, #+8]
+   \   000003C4   0xEDDD 0x0A03      VLDR     S1,[SP, #+12]
+   \   000003C8   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+   \   000003CC   0xEE00 0x0AA0      VMLA.F32 S0,S1,S1
+   \   000003D0   0x.... 0x....      BL       MathCalc__SqrtF
+   \   000003D4   0x6A20             LDR      R0,[R4, #+32]
+   \   000003D6   0x6B80             LDR      R0,[R0, #+56]
+   \   000003D8   0xED80 0x0A00      VSTR     S0,[R0, #0]
+   \   000003DC   0x6A20             LDR      R0,[R4, #+32]
+   \   000003DE   0x6B80             LDR      R0,[R0, #+56]
+   \   000003E0   0x6800             LDR      R0,[R0, #+0]
+   \   000003E2   0x9004             STR      R0,[SP, #+16]
+   \   000003E4   0xA802             ADD      R0,SP,#+8
+   \   000003E6   0x.... 0x....      BL       MathCalc__GetSinCosF
+   \   000003EA   0x6920             LDR      R0,[R4, #+16]
+   \   000003EC   0x9905             LDR      R1,[SP, #+20]
+   \   000003EE   0x6001             STR      R1,[R0, #+0]
+   \   000003F0   0x6920             LDR      R0,[R4, #+16]
+   \   000003F2   0x9906             LDR      R1,[SP, #+24]
+   \   000003F4   0x6041             STR      R1,[R0, #+4]
+   \   000003F6   0x6920             LDR      R0,[R4, #+16]
+   \   000003F8   0x6821             LDR      R1,[R4, #+0]
+   \   000003FA   0xEDD0 0x0A01      VLDR     S1,[R0, #+4]
+   \   000003FE   0xED90 0x1A00      VLDR     S2,[R0, #0]
+   \   00000402   0x6A20             LDR      R0,[R4, #+32]
+   \   00000404   0xED91 0x0A01      VLDR     S0,[R1, #+4]
+   \   00000408   0x69C0             LDR      R0,[R0, #+28]
+   \   0000040A   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000040E   0xEDD1 0x0A02      VLDR     S1,[R1, #+8]
+   \   00000412   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \   00000416   0xED80 0x0A00      VSTR     S0,[R0, #0]
+   \   0000041A   0x6920             LDR      R0,[R4, #+16]
+   \   0000041C   0x6821             LDR      R1,[R4, #+0]
+   \   0000041E   0xEDD0 0x0A01      VLDR     S1,[R0, #+4]
+   \   00000422   0xED90 0x1A00      VLDR     S2,[R0, #0]
+   \   00000426   0x6A20             LDR      R0,[R4, #+32]
+   \   00000428   0xED91 0x0A02      VLDR     S0,[R1, #+8]
+   \   0000042C   0x6A00             LDR      R0,[R0, #+32]
+   \   0000042E   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000432   0xEDD1 0x0A01      VLDR     S1,[R1, #+4]
+   \   00000436   0xEE00 0x0AC1      VMLS.F32 S0,S1,S2
+   \   0000043A   0xED80 0x0A00      VSTR     S0,[R0, #0]
+   \   0000043E   0x6920             LDR      R0,[R4, #+16]
+   \   00000440   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000444   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   00000448   0x6A20             LDR      R0,[R4, #+32]
+   \   0000044A   0x6C00             LDR      R0,[R0, #+64]
+   \   0000044C   0xEE20 0x1AA9      VMUL.F32 S2,S1,S19
+   \   00000450   0xEE00 0x1A68      VMLS.F32 S2,S0,S17
+   \   00000454   0xEE20 0x0A29      VMUL.F32 S0,S0,S19
+   \   00000458   0xEE00 0x0AA8      VMLA.F32 S0,S1,S17
+   \   0000045C   0xED80 0x0A01      VSTR     S0,[R0, #+4]
+   \   00000460   0x6A20             LDR      R0,[R4, #+32]
+   \   00000462   0x6C00             LDR      R0,[R0, #+64]
+   \   00000464   0xED80 0x1A00      VSTR     S2,[R0, #0]
+    291          
+    292          
+    293          
+    294              //==========================================================================//
+    295              //                                                                          //
+    296              //                 Phase Locked Loop to calculate speed                     //
+    297              //                                                                          //
+    298              //==========================================================================//
+    299              Speed_PLL_Calc();
+   \   00000468   0xED86 0x9A02      VSTR     S18,[R6, #+8]
+   \   0000046C   0xED86 0x8A03      VSTR     S16,[R6, #+12]
+   \   00000470   0xA800             ADD      R0,SP,#+0
+   \   00000472   0xED96 0x0A15      VLDR     S0,[R6, #+84]
+   \   00000476   0xEDD6 0x0A16      VLDR     S1,[R6, #+88]
+   \   0000047A   0xEE20 0x0A29      VMUL.F32 S0,S0,S19
+   \   0000047E   0xEE00 0x0AA8      VMLA.F32 S0,S1,S17
+   \   00000482   0xEE30 0x0A4A      VSUB.F32 S0,S0,S20
+   \   00000486   0xED86 0x0A20      VSTR     S0,[R6, #+128]
+   \   0000048A   0xED96 0x0A1C      VLDR     S0,[R6, #+112]
+   \   0000048E   0xEDD6 0x0A1B      VLDR     S1,[R6, #+108]
+   \   00000492   0xEDC6 0x8A1B      VSTR     S17,[R6, #+108]
+   \   00000496   0xEE28 0x0A80      VMUL.F32 S0,S17,S0
+   \   0000049A   0xEE00 0x0AE9      VMLS.F32 S0,S1,S19
+   \   0000049E   0xEDDF 0x....      VLDR.W   S1,??DataTable3  ;; 0x45f9ffff
+   \   000004A2   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000004A6   0xED86 0x0A21      VSTR     S0,[R6, #+132]
+   \   000004AA   0xEDC6 0x9A1C      VSTR     S19,[R6, #+112]
+   \   000004AE   0xED96 0x0A07      VLDR     S0,[R6, #+28]
+   \   000004B2   0x.... 0x....      BL       MathCalc__SinCosF
+   \   000004B6   0xEDDD 0x0A00      VLDR     S1,[SP, #+0]
+   \   000004BA   0xED9D 0x0A01      VLDR     S0,[SP, #+4]
+   \   000004BE   0xED96 0x1A02      VLDR     S2,[R6, #+8]
+   \   000004C2   0xEDD6 0x1A01      VLDR     S3,[R6, #+4]
+   \   000004C6   0xED86 0x0A08      VSTR     S0,[R6, #+32]
+   \   000004CA   0xEEF1 0x0A60      VNEG.F32 S1,S1
+   \   000004CE   0xEDC6 0x0A09      VSTR     S1,[R6, #+36]
+   \   000004D2   0xEE61 0x0A20      VMUL.F32 S1,S2,S1
+   \   000004D6   0xED96 0x1A03      VLDR     S2,[R6, #+12]
+   \   000004DA   0xEE41 0x0A00      VMLA.F32 S1,S2,S0
+   \   000004DE   0xED96 0x0A0B      VLDR     S0,[R6, #+44]
+   \   000004E2   0xEDC6 0x0A0A      VSTR     S1,[R6, #+40]
+   \   000004E6   0xEE30 0x1A80      VADD.F32 S2,S1,S0
+   \   000004EA   0xED96 0x0A06      VLDR     S0,[R6, #+24]
+   \   000004EE   0xEDC6 0x0A0B      VSTR     S1,[R6, #+44]
+   \   000004F2   0xEE01 0x0A21      VMLA.F32 S0,S2,S3
+   \   000004F6   0xED86 0x0A06      VSTR     S0,[R6, #+24]
+   \   000004FA   0xED96 0x1A00      VLDR     S2,[R6, #0]
+   \   000004FE   0xEDD6 0x1A0C      VLDR     S3,[R6, #+48]
+   \   00000502   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \   00000506   0xEDD6 0x0A05      VLDR     S1,[R6, #+20]
+   \   0000050A   0xED86 0x0A04      VSTR     S0,[R6, #+16]
+   \   0000050E   0xEE30 0x1A20      VADD.F32 S2,S0,S1
+   \   00000512   0xEDD6 0x0A07      VLDR     S1,[R6, #+28]
+   \   00000516   0xED86 0x0A05      VSTR     S0,[R6, #+20]
+   \   0000051A   0xEE41 0x0A21      VMLA.F32 S1,S2,S3
+   \   0000051E   0xED9F 0x....      VLDR.W   S0,??DataTable5  ;; 0x40490fdc
+   \   00000522   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000526   0xEDC6 0x0A07      VSTR     S1,[R6, #+28]
+   \   0000052A   0xEEF1 0xFA10      FMSTAT   
+   \   0000052E   0xBFA4             ITT      GE 
+   \   00000530   0xED9F 0x....      VLDRGE.W S0,??DataTable5_1  ;; 0xc0c90fdb
+   \   00000534   0xEE70 0x0A80      VADDGE.F32 S1,S1,S0
+   \   00000538   0xED9F 0x....      VLDR.W   S0,??DataTable5_2  ;; 0xc0490fdb
+   \   0000053C   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000540   0xEEF1 0xFA10      FMSTAT   
+   \   00000544   0xBF44             ITT      MI 
+   \   00000546   0xED9F 0x....      VLDRMI.W S0,??DataTable5_3  ;; 0x40c90fdb
+   \   0000054A   0xEE70 0x0A80      VADDMI.F32 S1,S1,S0
+   \   0000054E   0xEDC6 0x0A07      VSTR     S1,[R6, #+28]
+    300          
+    301          
+    302              //==========================================================================//
+    303              //                                                                          //
+    304              //    Algorithm to select which speed shall be used, e.g., from flux PLL    //
+    305              //               rotor flux frame or from stator flux frame.                //
+    306              //                                                                          //
+    307              //==========================================================================//
+    308              Speed_Selector(io, params->ObsPrm);
+   \   00000552   0xEDDF 0x....      VLDR.W   S1,??DataTable5_4  ;; 0x3f7e0000
+   \   00000556   0xED96 0x0A22      VLDR     S0,[R6, #+136]
+   \   0000055A   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000055E   0xEDD6 0x0A21      VLDR     S1,[R6, #+132]
+   \   00000562   0xED9F 0x....      VLDR.W   S2,??DataTable5_5  ;; 0x3c000000
+   \   00000566   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+   \   0000056A   0xED86 0x0A22      VSTR     S0,[R6, #+136]
+   \   0000056E   0x6A20             LDR      R0,[R4, #+32]
+   \   00000570   0x6800             LDR      R0,[R0, #+0]
+   \   00000572   0xF3C0 0x00C0      UBFX     R0,R0,#+3,#+1
+   \   00000576   0xB108             CBZ.N    R0,??MclObserver__RunningHandler_10
+   \   00000578   0xED96 0x0A04      VLDR     S0,[R6, #+16]
+   \                     ??MclObserver__RunningHandler_10: (+1)
+   \   0000057C   0x6960             LDR      R0,[R4, #+20]
+   \   0000057E   0xED80 0x0A00      VSTR     S0,[R0, #0]
+   \   00000582   0x6A20             LDR      R0,[R4, #+32]
+   \   00000584   0xEDD6 0x0A2D      VLDR     S1,[R6, #+180]
+   \   00000588   0x68C0             LDR      R0,[R0, #+12]
+   \   0000058A   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000058E   0xED80 0x0A00      VSTR     S0,[R0, #0]
+   \   00000592   0x6A20             LDR      R0,[R4, #+32]
+   \   00000594   0x68C1             LDR      R1,[R0, #+12]
+   \   00000596   0x6809             LDR      R1,[R1, #+0]
+   \   00000598   0x6900             LDR      R0,[R0, #+16]
+   \   0000059A   0xF021 0x4100      BIC      R1,R1,#0x80000000
+   \   0000059E   0xEE00 0x1A10      VMOV     S0,R1
+   \   000005A2   0xED80 0x0A00      VSTR     S0,[R0, #0]
+    309          
+    310          
+    311              //==========================================================================//
+    312              //                                                                          //
+    313              //                    Electromagnetic Torque calculation                    //
+    314              //                                                                          //
+    315              //==========================================================================//
+    316              ElectroMagneticTorqueCalc(io, params->ObsPrm);
+   \   000005A6   0x6A21             LDR      R1,[R4, #+32]
+   \   000005A8   0x6828             LDR      R0,[R5, #+0]
+   \   000005AA   0x680A             LDR      R2,[R1, #+0]
+   \   000005AC   0xF3C2 0x1280      UBFX     R2,R2,#+6,#+1
+   \   000005B0   0xB96A             CBNZ.N   R2,??MclObserver__RunningHandler_11
+   \   000005B2   0x6821             LDR      R1,[R4, #+0]
+   \   000005B4   0xED96 0x0A15      VLDR     S0,[R6, #+84]
+   \   000005B8   0xEDD1 0x0A02      VLDR     S1,[R1, #+8]
+   \   000005BC   0xED91 0x1A01      VLDR     S2,[R1, #+4]
+   \   000005C0   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000005C4   0xEDD6 0x0A16      VLDR     S1,[R6, #+88]
+   \   000005C8   0xEE00 0x0AC1      VMLS.F32 S0,S1,S2
+   \   000005CC   0xE013             B.N      ??MclObserver__RunningHandler_12
+   \                     ??MclObserver__RunningHandler_11: (+1)
+   \   000005CE   0x6C4A             LDR      R2,[R1, #+68]
+   \   000005D0   0x6D49             LDR      R1,[R1, #+84]
+   \   000005D2   0xED92 0x1A01      VLDR     S2,[R2, #+4]
+   \   000005D6   0xEDD2 0x1A02      VLDR     S3,[R2, #+8]
+   \   000005DA   0xEDD6 0x0A2A      VLDR     S1,[R6, #+168]
+   \   000005DE   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   000005E2   0xEE31 0x1A61      VSUB.F32 S2,S2,S3
+   \   000005E6   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000005EA   0xEDD6 0x1A29      VLDR     S3,[R6, #+164]
+   \   000005EE   0xEE60 0x0AA1      VMUL.F32 S1,S1,S3
+   \   000005F2   0xEE01 0x0A20      VMLA.F32 S0,S2,S1
+   \                     ??MclObserver__RunningHandler_12: (+1)
+   \   000005F6   0xEDD6 0x0A1D      VLDR     S1,[R6, #+116]
+   \   000005FA   0xEEB6 0x1A00      VMOV.F32 S2,#0.5
+   \   000005FE   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   00000602   0xED90 0x1A0B      VLDR     S2,[R0, #+44]
+   \   00000606   0xEEF7 0x1A08      VMOV.F32 S3,#1.5
+   \   0000060A   0xEE21 0x1A21      VMUL.F32 S2,S2,S3
+   \   0000060E   0xEE21 0x0A00      VMUL.F32 S0,S2,S0
+   \   00000612   0xEEB6 0x1A00      VMOV.F32 S2,#0.5
+   \   00000616   0xEE40 0x0A01      VMLA.F32 S1,S0,S2
+   \   0000061A   0xEDC6 0x0A1D      VSTR     S1,[R6, #+116]
+   \   0000061E   0x6A20             LDR      R0,[R4, #+32]
+   \   00000620   0x6A80             LDR      R0,[R0, #+40]
+   \   00000622   0xEDC0 0x0A00      VSTR     S1,[R0, #0]
+    317          
+    318          }
+   \   00000626   0xB010             ADD      SP,SP,#+64
+   \   00000628   0xECBD 0x8B06      VPOP     {D8-D10}
+   \   0000062C   0xB001             ADD      SP,SP,#+4
+   \   0000062E   0xBDF0             POP      {R4-R7,PC}       ;; return
+    319          
+    320          
+    321          //---------------------------------------------------------------------------------------------------------------------
+    322          /**
+    323           *  @brief      Handle MclObserver events of 1ms.
+    324           *
+    325           *  @param      none
+    326           *  @return     none
+    327           */
+
+   \                                 In section .text, align 2, keep-with-next
+    328          void MclObserver__1msHandler(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    329          {
+   \                     MclObserver__1msHandler: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+    330          
+    331              //==========================================================================//
+    332              //                                                                          //
+    333              //                         Inductance calculation                           //
+    334              //                                                                          //
+    335              //==========================================================================//
+    336              Inductance_Correction(io, params);
+   \   00000008   0x.... 0x....      BL       Inductance_Correction
+    337          
+    338              //==========================================================================//
+    339              //                                                                          //
+    340              //                         Rotor Flux calculation                           //
+    341              //                                                                          //
+    342              //==========================================================================//
+    343              if (params->Rotor_Flux_lut.ptr_LUT != NULL)
+   \   0000000C   0x6AE8             LDR      R0,[R5, #+44]
+   \   0000000E   0xB158             CBZ.N    R0,??MclObserver__1msHandler_0
+    344              {
+    345                  RotorFlux_Correction(io,params);
+   \   00000010   0x6A21             LDR      R1,[R4, #+32]
+   \   00000012   0x6D09             LDR      R1,[R1, #+80]
+   \   00000014   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   00000018   0xF105 0x002C      ADD      R0,R5,#+44
+   \   0000001C   0x.... 0x....      BL       MathCalc__GetInterpolationFastF
+   \   00000020   0x6A20             LDR      R0,[R4, #+32]
+   \   00000022   0x6D40             LDR      R0,[R0, #+84]
+   \   00000024   0xED80 0x0A00      VSTR     S0,[R0, #0]
+    346              }
+    347          
+    348              //==========================================================================//
+    349              //                                                                          //
+    350              //                           Resistance adaptation                          //
+    351              //                                                                          //
+    352              //==========================================================================//
+    353              Resistance_Adaptation(io, params);
+   \                     ??MclObserver__1msHandler_0: (+1)
+   \   00000028   0x4629             MOV      R1,R5
+   \   0000002A   0x4620             MOV      R0,R4
+   \   0000002C   0x.... 0x....      BL       Resistance_Adaptation
+    354          
+    355              Speed_Selector_Check(io, params);
+   \   00000030   0x....             LDR.N    R0,??DataTable5_6
+   \   00000032   0x6869             LDR      R1,[R5, #+4]
+   \   00000034   0xED90 0x0A22      VLDR     S0,[R0, #+136]
+   \   00000038   0xED91 0x1A05      VLDR     S2,[R1, #+20]
+   \   0000003C   0xEEF0 0x0AC0      VABS.F32 S1,S0
+   \   00000040   0xEEB4 0x1A60      VCMP.F32 S2,S1
+   \   00000044   0xEEF1 0xFA10      FMSTAT   
+   \   00000048   0xBF4C             ITE      MI 
+   \   0000004A   0x2301             MOVMI    R3,#+1
+   \   0000004C   0x2300             MOVPL    R3,#+0
+   \   0000004E   0xEDD0 0x0A04      VLDR     S1,[R0, #+16]
+   \   00000052   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000056   0xEEB0 0x0AC0      VABS.F32 S0,S0
+   \   0000005A   0xEDD1 0x0A06      VLDR     S1,[R1, #+24]
+   \   0000005E   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   00000062   0xEEF1 0xFA10      FMSTAT   
+   \   00000066   0xBF4C             ITE      MI 
+   \   00000068   0x2601             MOVMI    R6,#+1
+   \   0000006A   0x2600             MOVPL    R6,#+0
+   \   0000006C   0x6A22             LDR      R2,[R4, #+32]
+   \   0000006E   0xF8D0 0x10A0      LDR      R1,[R0, #+160]
+   \   00000072   0x6817             LDR      R7,[R2, #+0]
+   \   00000074   0xF3C7 0x0CC0      UBFX     R12,R7,#+3,#+1
+   \   00000078   0xF1BC 0x0F00      CMP      R12,#+0
+   \   0000007C   0xD112             BNE.N    ??MclObserver__1msHandler_1
+   \   0000007E   0x4233             TST      R3,R6
+   \   00000080   0xD003             BEQ.N    ??MclObserver__1msHandler_2
+   \   00000082   0x077B             LSLS     R3,R7,#+29
+   \   00000084   0xBF58             IT       PL 
+   \   00000086   0x1C49             ADDPL    R1,R1,#+1
+   \   00000088   0xD500             BPL.N    ??MclObserver__1msHandler_3
+   \                     ??MclObserver__1msHandler_2: (+1)
+   \   0000008A   0x2100             MOVS     R1,#+0
+   \                     ??MclObserver__1msHandler_3: (+1)
+   \   0000008C   0x682B             LDR      R3,[R5, #+0]
+   \   0000008E   0x6B1B             LDR      R3,[R3, #+48]
+   \   00000090   0x428B             CMP      R3,R1
+   \   00000092   0xD210             BCS.N    ??MclObserver__1msHandler_4
+   \   00000094   0xF047 0x0308      ORR      R3,R7,#0x8
+   \   00000098   0x6013             STR      R3,[R2, #+0]
+   \   0000009A   0x6A22             LDR      R2,[R4, #+32]
+   \   0000009C   0x6813             LDR      R3,[R2, #+0]
+   \   0000009E   0xF023 0x0310      BIC      R3,R3,#0x10
+   \   000000A2   0xE007             B.N      ??MclObserver__1msHandler_5
+   \                     ??MclObserver__1msHandler_1: (+1)
+   \   000000A4   0xB93B             CBNZ.N   R3,??MclObserver__1msHandler_4
+   \   000000A6   0xF027 0x0308      BIC      R3,R7,#0x8
+   \   000000AA   0x6013             STR      R3,[R2, #+0]
+   \   000000AC   0x6A22             LDR      R2,[R4, #+32]
+   \   000000AE   0x6813             LDR      R3,[R2, #+0]
+   \   000000B0   0xF043 0x0310      ORR      R3,R3,#0x10
+   \                     ??MclObserver__1msHandler_5: (+1)
+   \   000000B4   0x6013             STR      R3,[R2, #+0]
+   \                     ??MclObserver__1msHandler_4: (+1)
+   \   000000B6   0xF8C0 0x10A0      STR      R1,[R0, #+160]
+   \   000000BA   0x6A20             LDR      R0,[R4, #+32]
+   \   000000BC   0x6DC1             LDR      R1,[R0, #+92]
+   \   000000BE   0x7809             LDRB     R1,[R1, #+0]
+   \   000000C0   0xB119             CBZ.N    R1,??MclObserver__1msHandler_6
+   \   000000C2   0x6801             LDR      R1,[R0, #+0]
+   \   000000C4   0xF021 0x0108      BIC      R1,R1,#0x8
+   \   000000C8   0x6001             STR      R1,[R0, #+0]
+    356          
+    357          }
+   \                     ??MclObserver__1msHandler_6: (+1)
+   \   000000CA   0xB001             ADD      SP,SP,#+4
+   \   000000CC   0xBDF0             POP      {R4-R7,PC}       ;; return
+    358          
+    359          
+    360          //=====================================================================================================================
+    361          //-------------------------------------- Private Functions ------------------------------------------------------------
+    362          //=====================================================================================================================
+    363          #if (OBS__VOLTAGE_PHASE_SHIFT == ENABLED)
+    364          //========================================================//
+    365          //          Phase Shift on reconstructed voltage          //
+    366          //========================================================//
+    367          static void Voltage_Phase_Shift(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    368          {
+    369              ALPHA_BETA_COOR_SYST_F_TYPE vs_alpha_beta;
+    370              DQ_COOR_SYST_F_TYPE vs_dq;
+    371              float32 angle_advance;
+    372              SIN_COS_F_TYPE sin_cos_adv;
+    373              ALPHA_BETA_COOR_SYST_F_TYPE tmp_dq_adv;
+    374          
+    375          
+    376              vs_alpha_beta.Alpha = io->Vs_Alpha_Beta->Alpha;
+    377              vs_alpha_beta.Beta  = io->Vs_Alpha_Beta->Beta;
+    378          
+    379              // from vs alpha\beta to vs in dq stator flux reference frame
+    380              ClrkPark__DirectParkF(&vs_alpha_beta,&vs_dq,io->Sin_Cos_Position_Flux);
+    381          
+    382              angle_advance = ( *(io->Ctrl_Specific->Speed_Rotor_Observed) * params->ObsAddPrm->Phase_Advance_Coeff);
+    383          
+    384              MathCalc__SinCosF(angle_advance,  &sin_cos_adv);
+    385          
+    386              ClrkPark__InverseParkF(&vs_dq, &tmp_dq_adv,  &sin_cos_adv);
+    387          
+    388              vs_dq.D = tmp_dq_adv.Alpha;
+    389              vs_dq.Q = tmp_dq_adv.Beta;
+    390          
+    391              //==========================================================================//
+    392              //                Inverse Park transformation (dq-alpha beta)               //
+    393              //==========================================================================//
+    394              ClrkPark__InverseParkF(&vs_dq, io->Vs_Alpha_Beta, io->Sin_Cos_Position_Flux);
+    395          
+    396          }
+    397          #endif
+    398          
+    399          
+    400          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+    401          //==========================================================================//
+    402          //                        Deatime Compensation                              //
+    403          //==========================================================================//
+    404          static void InvDistortion_Comp(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params)
+    405          {
+    406              InverterComp__Calculate(&Inv_Dist_Pointer);
+    407          }
+    408          #endif
+    409          
+    410          
+
+   \                                 In section .text, align 2, keep-with-next
+    411          static void Resistance_Adaptation(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    412          {
+    413              float32 temp;
+    414              float32 lim_lower;
+    415          
+    416              /*! Resistance adaptation is calculated as:
+    417               * \f[
+    418               * \begin{aligned}
+    419               *      & R_s = R_s + R_{correction} \\
+    420               *      & R_{correction} = R_{correction} + R_{gain} * \lambda_{error} \\
+    421               *      & \lambda_{error} = \lambda_{m} - \hat{\lambda_{m}}
+    422               * \end{aligned}
+    423               * \f]
+    424               */
+    425          
+    426              if((*(io->Ctrl_Specific->Speed_Rotor_Observed_Mech_Abs) <= (params->ObsPrm->Resistance_Adapt_Speed_Thr)) || ((io->Ctrl_Specific->flags.bit.wrong_speed_direction)==1))
+   \                     Resistance_Adaptation: (+1)
+   \   00000000   0x6A00             LDR      R0,[R0, #+32]
+   \   00000002   0x....             LDR.N    R3,??DataTable5_6
+   \   00000004   0x6902             LDR      R2,[R0, #+16]
+   \   00000006   0xED92 0x0A00      VLDR     S0,[R2, #0]
+   \   0000000A   0x680A             LDR      R2,[R1, #+0]
+   \   0000000C   0xEDD2 0x0A04      VLDR     S1,[R2, #+16]
+   \   00000010   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000014   0xEEF1 0xFA10      FMSTAT   
+   \   00000018   0xDA06             BGE.N    ??Resistance_Adaptation_0
+   \   0000001A   0xF8D0 0xC000      LDR      R12,[R0, #+0]
+   \   0000001E   0xF3CC 0x0C80      UBFX     R12,R12,#+2,#+1
+   \   00000022   0xF1BC 0x0F00      CMP      R12,#+0
+   \   00000026   0xD03D             BEQ.N    ??Resistance_Adaptation_1
+    427              {
+    428                  if( *(io->Ctrl_Specific->Is_Abs) > (params->ObsPrm->Resistance_Adapt_Current_Thr) )
+   \                     ??Resistance_Adaptation_0: (+1)
+   \   00000028   0xF8D0 0xC050      LDR      R12,[R0, #+80]
+   \   0000002C   0xED92 0x0A03      VLDR     S0,[R2, #+12]
+   \   00000030   0xEDDC 0x0A00      VLDR     S1,[R12, #0]
+   \   00000034   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   00000038   0xEEF1 0xFA10      FMSTAT   
+   \   0000003C   0xD555             BPL.N    ??Resistance_Adaptation_2
+    429                  {
+    430                      temp = Stator_Resistance_Corr + Flux_Error * (params->ObsPrm->Resistance_Adapt_Gain);
+    431                      lim_lower = -params->ObsPrm->Resistance_Adapt_Corr_Limits*(*(io->Ctrl_Specific->Stator_Resistance));
+   \   0000003E   0x6980             LDR      R0,[R0, #+24]
+   \   00000040   0xED93 0x0A20      VLDR     S0,[R3, #+128]
+   \   00000044   0xED92 0x1A02      VLDR     S2,[R2, #+8]
+   \   00000048   0xEDD3 0x0A25      VLDR     S1,[R3, #+148]
+   \   0000004C   0xEE40 0x0A01      VMLA.F32 S1,S0,S2
+   \   00000050   0xED92 0x0A01      VLDR     S0,[R2, #+4]
+   \   00000054   0xED90 0x1A00      VLDR     S2,[R0, #0]
+   \   00000058   0xEE20 0x0A41      VNMUL.F32 S0,S0,S2
+    432                      Stator_Resistance_Corr = MATHCALC__SATURATE(lim_lower, temp, (params->ObsPrm->Resistance_Adapt_Offset));
+   \   0000005C   0xED92 0x1A05      VLDR     S2,[R2, #+20]
+   \   00000060   0xEEB4 0x1A40      VCMP.F32 S2,S0
+   \   00000064   0xEEF1 0xFA10      FMSTAT   
+   \   00000068   0xDB0C             BLT.N    ??Resistance_Adaptation_3
+   \   0000006A   0xEEF4 0x0A41      VCMP.F32 S1,S2
+   \   0000006E   0xEEF1 0xFA10      FMSTAT   
+   \   00000072   0xDA14             BGE.N    ??Resistance_Adaptation_4
+   \   00000074   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   00000078   0xEEF1 0xFA10      FMSTAT   
+   \   0000007C   0xDB33             BLT.N    ??Resistance_Adaptation_5
+   \   0000007E   0xED83 0x0A25      VSTR     S0,[R3, #+148]
+   \   00000082   0xE032             B.N      ??Resistance_Adaptation_2
+   \                     ??Resistance_Adaptation_3: (+1)
+   \   00000084   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000088   0xEEF1 0xFA10      FMSTAT   
+   \   0000008C   0xDB02             BLT.N    ??Resistance_Adaptation_6
+   \   0000008E   0xED83 0x0A25      VSTR     S0,[R3, #+148]
+   \   00000092   0xE02A             B.N      ??Resistance_Adaptation_2
+   \                     ??Resistance_Adaptation_6: (+1)
+   \   00000094   0xEEB4 0x1A60      VCMP.F32 S2,S1
+   \   00000098   0xEEF1 0xFA10      FMSTAT   
+   \   0000009C   0xDB23             BLT.N    ??Resistance_Adaptation_5
+   \                     ??Resistance_Adaptation_4: (+1)
+   \   0000009E   0xED83 0x1A25      VSTR     S2,[R3, #+148]
+   \   000000A2   0xE022             B.N      ??Resistance_Adaptation_2
+    433                  }
+    434              }
+    435              //else if((*(io->Ctrl_Specific->Speed_Rotor_Observed_Mech_Abs) > Resistance_Adapt_Speed_Thr_High) && ((io->Ctrl_Specific->flags.bit.wrong_speed_direction)==0))
+    436              else
+    437              {
+    438                  temp = Stator_Resistance_Corr + params->ObsAddPrm->Resistance_Adapt_Recovery;
+   \                     ??Resistance_Adaptation_1: (+1)
+   \   000000A4   0x6848             LDR      R0,[R1, #+4]
+   \   000000A6   0xEDD3 0x0A25      VLDR     S1,[R3, #+148]
+   \   000000AA   0xED90 0x1A01      VLDR     S2,[R0, #+4]
+   \   000000AE   0xEE70 0x0A81      VADD.F32 S1,S1,S2
+    439                  if (temp>(params->ObsPrm->Resistance_Adapt_Offset))
+   \   000000B2   0xED92 0x1A05      VLDR     S2,[R2, #+20]
+   \   000000B6   0xEEB4 0x1A60      VCMP.F32 S2,S1
+   \   000000BA   0xEEF1 0xFA10      FMSTAT   
+   \   000000BE   0xBF41             ITTTT    MI 
+    440                  {
+    441                      temp = (params->ObsPrm->Resistance_Adapt_Offset);
+   \   000000C0   0xEEF0 0x0A41      VMOVMI.F32 S1,S2
+    442                      if (*(io->Ctrl_Specific->Speed_Rotor_Observed_Mech_Abs) > params->ObsPrm->Observer_G_integ_Spd_Threshold)
+   \   000000C4   0xED92 0x1A0A      VLDRMI   S2,[R2, #+40]
+   \   000000C8   0xEEB4 0x1A40      VCMPMI.F32 S2,S0
+   \   000000CC   0xEEF1 0xFA10      FMSTATMI 
+   \   000000D0   0xD509             BPL.N    ??Resistance_Adaptation_5
+    443                      {
+    444                          Err_Lim_Lower = -(params->ObsPrm->Observer_G_integ_limits);
+   \   000000D2   0xED92 0x0A09      VLDR     S0,[R2, #+36]
+   \   000000D6   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   000000DA   0xED83 0x0A26      VSTR     S0,[R3, #+152]
+    445                          Err_Lim_Upper = params->ObsPrm->Observer_G_integ_limits;
+   \   000000DE   0x6808             LDR      R0,[R1, #+0]
+   \   000000E0   0x6A40             LDR      R0,[R0, #+36]
+   \   000000E2   0xF8C3 0x009C      STR      R0,[R3, #+156]
+    446                      }
+    447                  }
+    448                  Stator_Resistance_Corr = temp;
+   \                     ??Resistance_Adaptation_5: (+1)
+   \   000000E6   0xEDC3 0x0A25      VSTR     S1,[R3, #+148]
+    449              }
+    450          
+    451              if (Stator_Resistance_Corr < (params->ObsPrm->Resistance_Adapt_Offset))
+   \                     ??Resistance_Adaptation_2: (+1)
+   \   000000EA   0x6808             LDR      R0,[R1, #+0]
+   \   000000EC   0xED93 0x0A25      VLDR     S0,[R3, #+148]
+   \   000000F0   0xEDD0 0x0A05      VLDR     S1,[R0, #+20]
+   \   000000F4   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   000000F8   0xEEF1 0xFA10      FMSTAT   
+   \   000000FC   0xD504             BPL.N    ??Resistance_Adaptation_7
+    452              {
+    453                  Err_Lim_Lower = 0.0f;
+   \   000000FE   0x2000             MOVS     R0,#+0
+   \   00000100   0xF8C3 0x0098      STR      R0,[R3, #+152]
+    454                  Err_Lim_Upper = 0.0f;
+   \   00000104   0xF8C3 0x009C      STR      R0,[R3, #+156]
+    455              }
+    456          }
+   \                     ??Resistance_Adaptation_7: (+1)
+   \   00000108   0x4770             BX       LR               ;; return
+    457          
+    458          
+    459          #ifdef __IAR_SYSTEMS_ICC__
+    460          #pragma inline = forced
+    461          #endif
+    462          static void Emf_Calc(MCL_OBSERVER_IO_F_TYPE *io)
+    463          {
+    464              /*! Emf calculation:
+    465               * \f[
+    466               * \begin{aligned}
+    467               *      & Emf_{alpha} = v_{alpha} - R_{s} * i_{alpha} - vdt_{alpha} \\
+    468               *      & Emf_{beta} =  v_{beta}  - R_{s} * i_{beta}  - vdt_{beta} \\
+    469               * \end{aligned}
+    470               * \f]
+    471               */
+    472          
+    473              // EMF Alpha calculation
+    474              Stator_Emf.Alpha  = (io->Vs_Alpha_Beta->Alpha) - (*(io->Ctrl_Specific->Stator_Resistance) * (io->Is_Alpha_Beta->Alpha));
+    475          
+    476              // EMF Beta calculation
+    477              Stator_Emf.Beta   = (io->Vs_Alpha_Beta->Beta)  - (*(io->Ctrl_Specific->Stator_Resistance) * (io->Is_Alpha_Beta->Beta ));
+    478          
+    479          #if (OBS__INVERTER_DISTORSION_COMPENSATION == ENABLED)
+    480              Stator_Emf.Alpha -= Inverter_Distortion.Alpha;
+    481              Stator_Emf.Beta -= Inverter_Distortion.Beta;
+    482          #endif
+    483          
+    484              Stator_Emf.Alpha -= Stator_Resistance_Corr * (io->Is_Alpha_Beta->Alpha);
+    485              Stator_Emf.Beta  -= Stator_Resistance_Corr * (io->Is_Alpha_Beta->Beta );
+    486          
+    487          }
+    488          
+    489          
+
+   \                                 In section .text, align 2, keep-with-next
+    490          static void Inductance_Correction(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    491          {
+   \                     Inductance_Correction: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    492              float32 temp;
+    493          
+    494              temp              = Rotor_Curr_Id_Abs;
+    495              (io->Ctrl_Specific->Ldq_Ind->D)    = MathCalc__GetInterpolationFastF(temp, &params->Ld_lut);
+   \   00000002   0x....             LDR.N    R6,??DataTable5_6
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+   \   00000008   0xF105 0x0008      ADD      R0,R5,#+8
+   \   0000000C   0xED96 0x0A2C      VLDR     S0,[R6, #+176]
+   \   00000010   0x.... 0x....      BL       MathCalc__GetInterpolationFastF
+   \   00000014   0x6A20             LDR      R0,[R4, #+32]
+   \   00000016   0x6C40             LDR      R0,[R0, #+68]
+   \   00000018   0xED80 0x0A01      VSTR     S0,[R0, #+4]
+    496          
+    497              temp              = Rotor_Curr_Iq_Abs;
+    498              (io->Ctrl_Specific->Ldq_Ind->Q)    = MathCalc__GetInterpolationFastF(temp, &params->Lq_lut);
+   \   0000001C   0xF105 0x0014      ADD      R0,R5,#+20
+   \   00000020   0xED96 0x0A2B      VLDR     S0,[R6, #+172]
+   \   00000024   0x.... 0x....      BL       MathCalc__GetInterpolationFastF
+   \   00000028   0x6A20             LDR      R0,[R4, #+32]
+   \   0000002A   0x6C40             LDR      R0,[R0, #+68]
+   \   0000002C   0xED80 0x0A02      VSTR     S0,[R0, #+8]
+    499          
+    500              // Capturing the Ldq term from the table
+    501              temp = Rotor_Curr_Iq_Abs;
+    502              *(io->Ctrl_Specific->Ldq_Cross_Ind) = MathCalc__GetInterpolationFastF(temp, &params->Ldq_lut);
+   \   00000030   0xF105 0x0020      ADD      R0,R5,#+32
+   \   00000034   0xED96 0x0A2B      VLDR     S0,[R6, #+172]
+   \   00000038   0x.... 0x....      BL       MathCalc__GetInterpolationFastF
+   \   0000003C   0x6A20             LDR      R0,[R4, #+32]
+   \   0000003E   0x6C80             LDR      R0,[R0, #+72]
+   \   00000040   0xED80 0x0A00      VSTR     S0,[R0, #0]
+    503          
+    504              // Capturing the Lqd term from the table
+    505              temp = Rotor_Curr_Id_Abs;
+    506              *(io->Ctrl_Specific->Lqd_Cross_Ind) = MathCalc__GetInterpolationFastF(temp, &params->Ldq_lut);
+   \   00000044   0xF105 0x0020      ADD      R0,R5,#+32
+   \   00000048   0xED96 0x0A2C      VLDR     S0,[R6, #+176]
+   \   0000004C   0x.... 0x....      BL       MathCalc__GetInterpolationFastF
+   \   00000050   0x6A20             LDR      R0,[R4, #+32]
+   \   00000052   0x6CC0             LDR      R0,[R0, #+76]
+   \   00000054   0xED80 0x0A00      VSTR     S0,[R0, #0]
+    507          
+    508          }
+   \   00000058   0xBD70             POP      {R4-R6,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x45F9FFFF         DC32     0x45f9ffff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0x40490FDC         DC32     0x40490fdc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0xC0C90FDB         DC32     0xc0c90fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0xC0490FDB         DC32     0xc0490fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0x40C90FDB         DC32     0x40c90fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \   00000000   0x3F7E0000         DC32     0x3f7e0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \   00000000   0x3C000000         DC32     0x3c000000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \   00000000   0x........         DC32     Speed_PLL
+    509          
+    510          
+    511          static void RotorFlux_Correction(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    512          {
+    513              float32 temp;
+    514          
+    515              temp = *(io->Ctrl_Specific->Is_Abs);
+    516              *(io->Ctrl_Specific->Rotor_Flux) = MathCalc__GetInterpolationFastF(temp, &params->Rotor_Flux_lut);
+    517          }
+    518          
+    519          
+    520          #if (OBS__SWAP_ANGLE_IN_LOCKED_ROTOR == ENABLED)
+    521          #ifdef __IAR_SYSTEMS_ICC__
+    522          #pragma inline = forced
+    523          #endif
+    524          static void SwapPhase_Correction(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_ADDITIONAL_PARAMS_TYPE *params)
+    525          {
+    526              float32 temp_1;
+    527          
+    528              if((*(io->Ctrl_Specific->Speed_Rotor_Observed_Mech_Abs) <= (params->Swap_Phase_Speed_Thr))&& \
+    529                 (*(io->Ctrl_Specific->Is_Abs) > (params->Swap_Phase_Current_Thr))&& \
+    530                   (Swap_Phase_Flag == 0)&& \
+    531                   (params->Swap_Phase_Time_Thr != 0))
+    532              {
+    533                  Swap_Phase_Cnt++;
+    534          
+    535                  if(Swap_Phase_Cnt > params->Swap_Phase_Time_Thr)
+    536                  {
+    537                      Swap_Phase_Flag = 1;
+    538                      Swap_Phase_Cnt = 0;
+    539          
+    540                      dLambdas_alpha_old = Stator_Emf.Alpha;
+    541                      dLambdas_beta_old = Stator_Emf.Beta;
+    542          
+    543                      if(*(io->Ctrl_Specific->Torque) < 0.0f)
+    544                      {// park transformation of 90°
+    545                          temp_1 = Cos_Rot_k1;
+    546                          Cos_Rot_k1 = Sin_Rot_k1;
+    547                          Sin_Rot_k1 = -temp_1;
+    548          
+    549                          temp_1 = Rotor_Flux.Alpha;
+    550                          Rotor_Flux.Alpha = Rotor_Flux.Beta;
+    551                          Rotor_Flux.Beta = -temp_1;
+    552                      }
+    553                      else
+    554                      {// park transformation of -90°
+    555                          temp_1 = Cos_Rot_k1;
+    556                          Cos_Rot_k1 = -Sin_Rot_k1;
+    557                          Sin_Rot_k1 = temp_1;
+    558          
+    559                          temp_1 = Rotor_Flux.Alpha;
+    560                          Rotor_Flux.Alpha = -Rotor_Flux.Beta;
+    561                          Rotor_Flux.Beta = temp_1;
+    562                      }
+    563          
+    564                      Stator_Flux.Alpha = Rotor_Flux.Alpha + (io->Ctrl_Specific->Ldq_Ind->Q) * io->Is_Alpha_Beta->Alpha;
+    565                      Stator_Flux.Beta  = Rotor_Flux.Beta  + (io->Ctrl_Specific->Ldq_Ind->Q) * io->Is_Alpha_Beta->Beta;
+    566                  }
+    567              }
+    568          }
+    569          #endif
+    570          
+    571          
+    572          //---------------------------------------------------------------------------------------------------------------------
+    573          /**
+    574           *  @brief      Stator flux observer (Generic) which supports salient motors, it contains more updates from Prof. Radu.
+    575           *
+    576           *  @param      motor phase voltages and phase currents => which will result in stator flux, rotor flux and speed computations.
+    577           *  @return     none.
+    578           */
+    579          #ifdef __IAR_SYSTEMS_ICC__
+    580          #pragma inline = forced
+    581          #endif
+    582          static void StatorFlux_Calc(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params)
+    583          {
+    584              float32 temp_1;
+    585              float32 dLambdas_alpha;
+    586              float32 dLambdas_beta;
+    587              MATHCALC_MOD_SIN_COS_F_TYPE trig_alpha_beta_mod;
+    588          
+    589              float32 sin_rot;
+    590              float32 cos_rot;
+    591          
+    592              float32 stator_flux_fbk_d;
+    593              float32 stator_flux_fbk_q;
+    594              float32 stator_flux_fbk_alpha;
+    595              float32 stator_flux_fbk_beta;
+    596              float32 stator_flux_fbk_d_forward;
+    597              float32 error_flux_alpha;
+    598              float32 error_flux_beta;
+    599          
+    600          
+    601              float32 load_angle_cos;
+    602              float32 load_angle_sin;
+    603          
+    604          #if (OBS__ROTOR_MECH_POSITION  == ENABLED)  // not used
+    605              float32 rotor_pos_delta;
+    606          #endif
+    607          
+    608          
+    609              //******************************************************************//
+    610              //                                                                  //
+    611              //              Integrate the emf to find the stator flux           //
+    612              //                                                                  //
+    613              //******************************************************************//
+    614          
+    615              //// Alpha flux - trapezoidal integration
+    616              dLambdas_alpha  = Stator_Emf.Alpha + Stator_Emf_Err.Alpha;
+    617              Stator_Flux.Alpha += (dLambdas_alpha + dLambdas_alpha_old) * PARAMS_EMF_INT_CONSTANT;
+    618              dLambdas_alpha_old = dLambdas_alpha;
+    619          
+    620          
+    621          
+    622              //// Beta flux - trapezoidal integration
+    623              dLambdas_beta  = Stator_Emf.Beta + Stator_Emf_Err.Beta;
+    624              Stator_Flux.Beta += (dLambdas_beta + dLambdas_beta_old) * PARAMS_EMF_INT_CONSTANT;
+    625              dLambdas_beta_old = dLambdas_beta;
+    626          
+    627          
+    628          
+    629              //******************************************************************//
+    630              //                                                                  //
+    631              //                     Estimate rotor flux                          //
+    632              //                                                                  //
+    633              //******************************************************************//
+    634              // Alpha axis rotor flux
+    635              Rotor_Flux.Alpha = Stator_Flux.Alpha - (io->Ctrl_Specific->Ldq_Ind->Q) * io->Is_Alpha_Beta->Alpha;
+    636              // Beta axis rotor flux
+    637              Rotor_Flux.Beta  = Stator_Flux.Beta  - (io->Ctrl_Specific->Ldq_Ind->Q) * io->Is_Alpha_Beta->Beta;
+    638          
+    639              // Magnitude (modulus) rotor flux
+    640              temp_1 =  Rotor_Flux.Alpha*Rotor_Flux.Alpha + Rotor_Flux.Beta*Rotor_Flux.Beta;
+    641              Rotor_Flux_Mod = MC_SQRT_F(temp_1);  // Result in Q17.15
+    642          
+    643          
+    644          
+    645          
+    646              //******************************************************************//
+    647              //                                                                  //
+    648              //                   ROTOR Sin and Cos calculations                 //
+    649              //                                                                  //
+    650              //******************************************************************//
+    651              trig_alpha_beta_mod.Alpha = Rotor_Flux.Alpha;
+    652              trig_alpha_beta_mod.Beta  = Rotor_Flux.Beta;
+    653              trig_alpha_beta_mod.Mod = Rotor_Flux_Mod;
+    654              MathCalc__GetSinCosF(&trig_alpha_beta_mod);
+    655              sin_rot = trig_alpha_beta_mod.Sin;
+    656              cos_rot = trig_alpha_beta_mod.Cos;
+    657          
+    658          
+    659          
+    660              //******************************************************************//
+    661              //                                                                  //
+    662              //             Id & Iq calculation => Transformation to             //
+    663              //                     the ROTOR reference frame                    //
+    664              //                                                                  //
+    665              //******************************************************************//
+    666              Rotor_Curr_Id = ((io->Is_Alpha_Beta->Alpha) * cos_rot) + ((io->Is_Alpha_Beta->Beta) * sin_rot);
+    667              Rotor_Curr_Id_Abs = MATHCALC__FABS(Rotor_Curr_Id);
+    668              *io->Ctrl_Specific->Id_Rotor_Current = Rotor_Curr_Id;
+    669          
+    670          
+    671              Rotor_Curr_Iq = ((-(io->Is_Alpha_Beta->Alpha)) * sin_rot) + ((io->Is_Alpha_Beta->Beta) * cos_rot);
+    672              Rotor_Curr_Iq_Abs = MATHCALC__FABS(Rotor_Curr_Iq);
+    673          
+    674              // Compute stator flux components in (d,q) frame from magnetic model
+    675              stator_flux_fbk_d  = *(io->Ctrl_Specific->Rotor_Flux) + Rotor_Curr_Id * (io->Ctrl_Specific->Ldq_Ind->D);
+    676              stator_flux_fbk_q  = Rotor_Curr_Iq * (io->Ctrl_Specific->Ldq_Ind->Q);
+    677          
+    678              stator_flux_fbk_d  = stator_flux_fbk_d - (Rotor_Curr_Iq_Abs * (*io->Ctrl_Specific->Ldq_Cross_Ind));
+    679              stator_flux_fbk_q  = stator_flux_fbk_q - (Rotor_Curr_Id * (*io->Ctrl_Specific->Lqd_Cross_Ind));
+    680          
+    681          
+    682          
+    683              //******************************************************************//
+    684              //                                                                  //
+    685              //             Transform fluxes back to stationary frame            //
+    686              //                                                                  //
+    687              //******************************************************************//
+    688              stator_flux_fbk_alpha  = stator_flux_fbk_d * cos_rot - stator_flux_fbk_q * sin_rot;
+    689              stator_flux_fbk_beta   = stator_flux_fbk_d * sin_rot + stator_flux_fbk_q * cos_rot;
+    690          
+    691              // flux error calculation
+    692              error_flux_alpha = stator_flux_fbk_alpha - Stator_Flux.Alpha;
+    693              error_flux_beta  = stator_flux_fbk_beta  - Stator_Flux.Beta;
+    694          
+    695              Stator_Emf_Err.Alpha = error_flux_alpha * (params->Observer_G_gain);
+    696              Stator_Emf_Err.Beta  = error_flux_beta  * (params->Observer_G_gain);
+    697          
+    698          
+    699              // Integral action
+    700              temp_1 = Error_Flux_Alpha_1 + error_flux_alpha * params->Observer_G_integ_gain;
+    701              Error_Flux_Alpha_1 = MATHCALC__SATURATE(Err_Lim_Lower, temp_1, Err_Lim_Upper); // limit the integral
+    702              Stator_Emf_Err.Alpha += Error_Flux_Alpha_1;
+    703          
+    704              temp_1 = Error_Flux_Beta_1 + error_flux_beta *  params->Observer_G_integ_gain;
+    705              Error_Flux_Beta_1 = MATHCALC__SATURATE(Err_Lim_Lower, temp_1, Err_Lim_Upper); // limit the integral
+    706              Stator_Emf_Err.Beta += Error_Flux_Beta_1;
+    707          
+    708              //******************************************************************//
+    709              //                                                                  //
+    710              //      Stator flux magnitude and Angle Sin and Cos calculations    //
+    711              //                                                                  //
+    712              //******************************************************************//
+    713          	if (io->Ctrl_Specific->flags.bit.overflux_active == 1)
+    714              {
+    715          	    // if overflux is active, stator flux angle is calculated from current model data
+    716                  trig_alpha_beta_mod.Alpha = stator_flux_fbk_alpha;
+    717                  trig_alpha_beta_mod.Beta  = stator_flux_fbk_beta;
+    718              }
+    719              else
+    720              {
+    721                  // if overflux is disabled, stator flux angle is calculated from voltage model data
+    722                  trig_alpha_beta_mod.Alpha = Stator_Flux.Alpha;
+    723                  trig_alpha_beta_mod.Beta  = Stator_Flux.Beta;
+    724              }
+    725          
+    726              // Square the stator flux, sum and take the square root.
+    727              temp_1 = trig_alpha_beta_mod.Alpha * trig_alpha_beta_mod.Alpha + trig_alpha_beta_mod.Beta  * trig_alpha_beta_mod.Beta;
+    728          
+    729          	// Stator flux magnitute calculation
+    730              *(io->Ctrl_Specific->Stator_Flux_Mag) = MC_SQRT_F(temp_1);
+    731          
+    732          
+    733              // Stator flux sin cos calculation
+    734              trig_alpha_beta_mod.Mod   = *(io->Ctrl_Specific->Stator_Flux_Mag);
+    735              MathCalc__GetSinCosF(&trig_alpha_beta_mod);
+    736              io->Sin_Cos_Position_Flux->Sin = trig_alpha_beta_mod.Sin;
+    737              io->Sin_Cos_Position_Flux->Cos = trig_alpha_beta_mod.Cos;
+    738          
+    739          
+    740              *(io->Ctrl_Specific->Id_stator_current) =  (io->Is_Alpha_Beta->Alpha) * (io->Sin_Cos_Position_Flux->Cos) + (io->Is_Alpha_Beta->Beta) * (io->Sin_Cos_Position_Flux->Sin);
+    741              *(io->Ctrl_Specific->Iq_stator_current) = -(io->Is_Alpha_Beta->Alpha) * (io->Sin_Cos_Position_Flux->Sin) + (io->Is_Alpha_Beta->Beta) * (io->Sin_Cos_Position_Flux->Cos);
+    742          
+    743          
+    744          #if (OBS__ROTOR_MECH_POSITION  == ENABLED)  // not used
+    745              //******************************************************************//
+    746              //                                                                  //
+    747              //        Calculate accurately the mechanical rotor position        //
+    748              //                                                                  //
+    749              //******************************************************************//
+    750              Rotor_Position = MC_ATAN2_F(cos_rot, sin_rot);
+    751             // rotor_pos_delta = Rotor_Position - Last_Mech_Rotor_Pos;
+    752             // Rotor_Mech_Position += (rotor_pos_delta + Mech_Rotor_Pos_Acc_Err) / (params->Pole_Pairs);
+    753             // Mech_Rotor_Pos_Acc_Err = (rotor_pos_delta + Mech_Rotor_Pos_Acc_Err) % (params->Pole_Pairs);
+    754             // Last_Mech_Rotor_Pos = Rotor_Position;
+    755              *(io->Rotor_Position) = Rotor_Position;
+    756          
+    757          #endif
+    758          
+    759              //******************************************************************//
+    760              //                                                                  //
+    761              //       Compute load angle using the same (d,q) stator flux        //
+    762              //           components, but computed from (alpha,beta)             //
+    763              //                    forward path components                       //
+    764              //                                                                  //
+    765              //******************************************************************//
+    766              load_angle_cos = io->Sin_Cos_Position_Flux->Cos * cos_rot + io->Sin_Cos_Position_Flux->Sin *sin_rot;
+    767              load_angle_sin = io->Sin_Cos_Position_Flux->Sin * cos_rot - io->Sin_Cos_Position_Flux->Cos *sin_rot;
+    768          
+    769              io->Ctrl_Specific->Load_Angle_Sin_Cos->Cos = load_angle_cos;
+    770              io->Ctrl_Specific->Load_Angle_Sin_Cos->Sin = load_angle_sin;
+    771          #if(OBS__LOAD_ANGLE_CALCULATION == ENABLED)  // avoid performing load angle calculation if not needed
+    772                  *(io->Load_Angle) = MC_ATAN2_F((load_angle_cos), (load_angle_sin));
+    773          #endif
+    774          
+    775          
+    776          
+    777              //******************************************************************//
+    778              //                                                                  //
+    779              //              Compute error for stability improvement             //
+    780              //                                                                  //
+    781              //******************************************************************//
+    782          
+    783          
+    784              //This equation helps on steady state stability at low load (rs correction works fine)
+    785              //However the term LdObs*curr_id introduced a big error_flux at starting which may cause failures
+    786              stator_flux_fbk_d_forward  = Stator_Flux.Alpha * cos_rot + Stator_Flux.Beta  * sin_rot;
+    787              Flux_Error  = stator_flux_fbk_d_forward - stator_flux_fbk_d;
+    788          
+    789          
+    790          
+    791              //******************************************************************//
+    792              //                                                                  //
+    793              //     Calculate speed from rotor frame and low pass filter it      //
+    794              //                                                                  //
+    795              //******************************************************************//
+    796              temp_1 = (sin_rot * Cos_Rot_k1) - (Sin_Rot_k1 * cos_rot);
+    797              Obs_Speed_Rotor_Flux = temp_1 * (1.0f/TSW);
+    798          
+    799              // Save the previous rotor sine and cosine
+    800              Sin_Rot_k1 = sin_rot;
+    801              Cos_Rot_k1 = cos_rot;
+    802          }
+    803          
+    804          
+    805          
+    806          
+    807          
+    808          #ifdef __IAR_SYSTEMS_ICC__
+    809          #pragma inline = forced
+    810          #endif
+    811          /*==========================================================================*/
+    812          /*                         Speed Calculation                                */
+    813          /*==========================================================================*/
+    814          static void Speed_PLL_Calc()
+    815          {
+    816              Speed_PLL.in_alpha = Cos_Rot_k1;
+    817              Speed_PLL.in_beta  = Sin_Rot_k1;
+    818          
+    819              PLL__fCalc(&Speed_PLL);
+    820          }
+    821          
+    822          
+    823          #ifdef __IAR_SYSTEMS_ICC__
+    824          #pragma inline = forced
+    825          #endif
+    826          static void PLL__fReset(XPLL_TYPE *XPLLVars)
+    827          {
+    828              XPLLVars->speed = 0.0f;
+    829              XPLLVars->speed_old = 0.0f;
+    830              XPLLVars->error = 0.0f;
+    831              XPLLVars->error_old = 0.0f;
+    832              XPLLVars->integral = 0.0f;
+    833              XPLLVars->angle = 0.0f;
+    834          
+    835              XPLLVars->alpha = 0.0f;
+    836              XPLLVars->beta = 0.0f;
+    837              XPLLVars->in_alpha = 0.0f;
+    838              XPLLVars->in_beta = 0.0f;
+    839          }
+    840          
+    841          
+    842          #ifdef __IAR_SYSTEMS_ICC__
+    843          #pragma inline = forced
+    844          #endif
+    845          static void PLL__fCalc(XPLL_TYPE *XPLLVars)
+    846          {
+    847              SIN_COS_F_TYPE sin_cos;
+    848          
+    849              MathCalc__SinCosF(XPLLVars->angle, &sin_cos);
+    850          
+    851              XPLLVars->alpha =  sin_cos.Cos;
+    852              XPLLVars->beta  = -sin_cos.Sin;
+    853          
+    854              XPLLVars->error =  (XPLLVars->in_alpha * XPLLVars->beta) + (XPLLVars->in_beta * XPLLVars->alpha);
+    855          
+    856              XPLLVars->integral += (XPLLVars->error + XPLLVars->error_old) * (XPLLVars->ki);
+    857              XPLLVars->error_old = XPLLVars->error;
+    858              XPLLVars->speed = XPLLVars->integral + XPLLVars->error * XPLLVars->kp;
+    859              XPLLVars->angle += (XPLLVars->speed + XPLLVars->speed_old) * XPLLVars->integ_k;
+    860              XPLLVars->speed_old = XPLLVars->speed;
+    861          
+    862          #if(OBS__PLL_FILTERED_OMEGA == ENABLED)
+    863          	// use integral + fraction of proportional as filtered speed
+    864          #ifdef OBS__PLL_FILTERED_OMEGA_COEF
+    865              XPLLVars->speed = XPLLVars->integral + OBS__PLL_FILTERED_OMEGA_COEF*XPLLVars->error * XPLLVars->kp; //add this line to reduce speed ripple;
+    866          #else
+    867              XPLLVars->speed = XPLLVars->integral;
+    868          #endif
+    869          #endif
+    870          
+    871              if(XPLLVars->angle > PI)
+    872              {
+    873                  XPLLVars->angle -= (2.0f * PI);
+    874              }
+    875          
+    876              if(XPLLVars->angle < (-PI))
+    877              {
+    878                  XPLLVars->angle += (2.0f * PI);
+    879              }
+    880          }
+    881          
+    882          
+    883          #ifdef __IAR_SYSTEMS_ICC__
+    884          #pragma inline = forced
+    885          #endif
+    886          static void Speed_Selector(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params)
+                                                                                                  ^
+Remark[Pe826]: parameter "params" was never referenced
+
+  static float32 Rotor_Mech_Position;
+                 ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c",72  Warning[Pe177]: 
+          variable "Rotor_Mech_Position" was declared but never referenced
+
+  static float32 Obs_Speed_Stator_Flux;
+                 ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c",76  Warning[Pe550]: 
+          variable "Obs_Speed_Stator_Flux" was set but never used
+
+  static float32 Last_Mech_Rotor_Pos;
+                 ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c",79  Warning[Pe177]: 
+          variable "Last_Mech_Rotor_Pos" was declared but never referenced
+
+  static float32 Mech_Rotor_Pos_Acc_Err;
+                 ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclObserver.c",80  Warning[Pe177]: 
+          variable "Mech_Rotor_Pos_Acc_Err" was declared but never referenced
+    887          {
+    888              float32 temp_speed;
+    889          
+    890              //==========================================================================//
+    891              //                       Low pass filter for speed                          //
+    892              //==========================================================================//
+    893              Obs_Speed_Rotor_Flux_sum = FILTERS__LOWPASSFILTER_F(Obs_Speed_Rotor_Flux_sum,OBS_SPEED_LPF_COEF,Obs_Speed_Rotor_Flux);
+    894          
+    895          
+    896              if(io->Ctrl_Specific->flags.bit.pll_engaged == 1)
+    897              {
+    898                  // Read speed from the flux PLL
+    899                  temp_speed = Speed_PLL.speed;
+    900              }
+    901              else
+    902              {
+    903                  temp_speed = Obs_Speed_Rotor_Flux_sum;
+    904              }
+    905          
+    906          
+    907              // Update the speed variables
+    908              *(io->Speed_Rotor_Observed) = temp_speed;
+    909              *(io->Ctrl_Specific->Speed_Rotor_Observed_Mech) = temp_speed * Pole_Pairs_Inv;
+    910              *(io->Ctrl_Specific->Speed_Rotor_Observed_Mech_Abs) = MATHCALC__FABS(*(io->Ctrl_Specific->Speed_Rotor_Observed_Mech));
+    911          }
+    912          
+    913          
+    914          #ifdef __IAR_SYSTEMS_ICC__
+    915          #pragma inline = forced
+    916          #endif
+    917          static void Speed_Selector_Check(MCL_OBSERVER_IO_F_TYPE *io, MCLOBSERVER_JOINT_PARAMS_TYPE *params)
+    918          {
+    919              BOOL_TYPE speed_cond_1;
+    920              BOOL_TYPE speed_cond_2;
+    921              BOOL_TYPE speed_cond_3;
+    922          
+    923              speed_cond_1 = (BOOL_TYPE) (MATHCALC__FABS(Obs_Speed_Rotor_Flux_sum) > params->ObsAddPrm->Pll_Engage_Speed_Thr);
+    924              speed_cond_2 = (BOOL_TYPE) (MATHCALC__FABS(Obs_Speed_Rotor_Flux_sum-Speed_PLL.speed) < params->ObsAddPrm->Pll_Engage_Speed_Err_Thr);
+    925              speed_cond_3 = (BOOL_TYPE) (io->Ctrl_Specific->flags.bit.wrong_speed_direction == 0);
+    926          
+    927              // condition for speed commutation to pll
+    928              if (io->Ctrl_Specific->flags.bit.pll_engaged == 0)
+    929              {
+    930                  if (speed_cond_1  && speed_cond_2 && speed_cond_3)
+    931                  {
+    932                      Speed_Transition_Counter++;
+    933                  }
+    934                  else
+    935                  {
+    936                      Speed_Transition_Counter = 0;
+    937                  }
+    938                  if( Speed_Transition_Counter > (params->ObsPrm->Pll_Starting_Threshold))
+    939                  {
+    940                      io->Ctrl_Specific->flags.bit.pll_engaged = 1;
+    941                      io->Ctrl_Specific->flags.bit.wait_pll_engagement = 0;
+    942                  }
+    943              }
+    944              else
+    945              {
+    946                  if (speed_cond_1 == FALSE)
+    947                  {
+    948                      io->Ctrl_Specific->flags.bit.pll_engaged = 0;
+    949                      io->Ctrl_Specific->flags.bit.wait_pll_engagement = 1;
+    950                  }
+    951              }
+    952          
+    953          
+    954              if( *(io->Ctrl_Specific->Lowers_On) )
+    955              {
+    956                  // Rotor speed is being used when applying lowers on because since PLL gets lost.
+    957                  io->Ctrl_Specific->flags.bit.pll_engaged = 0;
+    958              }
+    959          
+    960          }
+    961          
+    962          
+    963          //==========================================================================//
+    964          //                       Torque estimator                                   //
+    965          /*! Torque estimation is given by:
+    966           * \f[
+    967           * \begin{aligned}
+    968           *      & \hat{T}_e = \hat{\lambda}_{s_{alpha}} * i_{beta} - \hat{\lambda}_{s_{beta}} * i_{alpha} \\
+    969           * \end{aligned}
+    970           * \f]
+    971           */
+    972          //==========================================================================//
+    973          //uint8 EM_Torque_By_Flux = 1;
+    974          #ifdef __IAR_SYSTEMS_ICC__
+    975          #pragma inline = forced
+    976          #endif
+    977          static void ElectroMagneticTorqueCalc(MCL_OBSERVER_IO_F_TYPE *io, MCL_OBSERVER_PARAMS_TYPE *params)
+    978          {
+    979              float32 tmp_1;
+    980              float32 tmp_2;
+    981          
+    982              if(io->Ctrl_Specific->flags.bit.overflux_active == 0)
+    983              {
+    984              	EM_Torque = Stator_Flux.Alpha * io->Is_Alpha_Beta->Beta - Stator_Flux.Beta * io->Is_Alpha_Beta->Alpha;
+    985              }
+    986              else
+    987              {
+    988          		tmp_1  = *(io->Ctrl_Specific->Rotor_Flux) * Rotor_Curr_Iq;
+    989          		tmp_2 = (Rotor_Curr_Iq*Rotor_Curr_Id);
+    990          		EM_Torque = tmp_1 + ((io->Ctrl_Specific->Ldq_Ind->D - io->Ctrl_Specific->Ldq_Ind->Q)*tmp_2);
+    991              }
+    992          
+    993              // Low pass filter the electromagnetic torque
+    994              EM_Torque = 1.5f * params->Pole_Pairs * EM_Torque;
+    995          
+    996              EM_Torque_Filt_Sum = FILTERS__LOWPASSFILTER_F(EM_Torque_Filt_Sum, EM_TORQUE_LPF_COEF, EM_Torque);
+    997              *(io->Ctrl_Specific->Torque) = EM_Torque_Filt_Sum;
+    998          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   Inductance_Correction
+        16   -> MathCalc__GetInterpolationFastF
+      24   MclObserver__1msHandler
+        24   -> Inductance_Correction
+        24   -> MathCalc__GetInterpolationFastF
+        24   -> Resistance_Adaptation
+      16   MclObserver__Initialize
+        16   -> Inductance_Correction
+        16   -> MclObserver__ResetState
+      24   MclObserver__ResetState
+        24   -> MathCalc__SinCosF
+     112   MclObserver__RunningHandler
+       112   -> ClrkPark__DirectParkF
+       112   -> ClrkPark__InverseParkF
+       112   -> MathCalc__GetSinCosF
+       112   -> MathCalc__SinCosF
+       112   -> MathCalc__SqrtF
+       0   Resistance_Adaptation
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  EM_Torque
+      90  Inductance_Correction
+     206  MclObserver__1msHandler
+      74  MclObserver__Initialize
+     190  MclObserver__ResetState
+    1584  MclObserver__RunningHandler
+       4  Obs_Speed_Stator_Flux
+     266  Resistance_Adaptation
+       4  Rotor_Flux_Mod
+       4  Rotor_Position
+     184  Speed_PLL
+          Stator_Emf
+          Stator_Emf_Err
+          Stator_Flux
+          Rotor_Flux
+          Swap_Phase_Flag
+          Swap_Phase_Cnt
+          Sin_Rot_k1
+          Cos_Rot_k1
+          EM_Torque_Filt_Sum
+          dLambdas_alpha_old
+          dLambdas_beta_old
+          Flux_Error
+          Obs_Speed_Rotor_Flux
+          Obs_Speed_Rotor_Flux_sum
+          Error_Flux_Alpha_1
+          Error_Flux_Beta_1
+          Stator_Resistance_Corr
+          Err_Lim_Lower
+          Err_Lim_Upper
+          Speed_Transition_Counter
+          Rotor_Curr_Id
+          Rotor_Curr_Iq
+          Rotor_Curr_Iq_Abs
+          Rotor_Curr_Id_Abs
+          Pole_Pairs_Inv
+
+ 
+   200 bytes in section .bss
+ 2 442 bytes in section .text
+ 
+ 2 442 bytes of CODE memory
+   200 bytes of DATA memory
+
+Errors: none
+Warnings: 4

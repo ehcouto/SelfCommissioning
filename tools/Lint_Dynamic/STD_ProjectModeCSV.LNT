@@ -1,0 +1,13 @@
+//  Whirlpool Standard lint options
+
+
+-os(..\exe\LintProjectErrors.csv)			//Set output file
+
+-zero					//Force an exit code of zero always so compile does not stop on lint error
+..\tools\Lint_Dynamic\FormatProjectModeCSV.lnt	// output formatting
+..\tools\Lint_Dynamic\Errors.lnt	// error suppression / enabling
+
+
++fdi               			// the search for #include files will start with the directory of the including file
++ppw(asm,endasm)   			// adds PreProcessor Word(s)
+

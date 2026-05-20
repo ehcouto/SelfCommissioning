@@ -1,0 +1,253 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:03
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRTimerReference\SRTimerReference.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        SRTimerReference.obj -l ..\listings\SRTimerReference.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRTimerReference\SRTimerReference.c
+#    List file    =  ..\listings\SRTimerReference.lst
+#    Object file  =  SRTimerReference.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRTimerReference\SRTimerReference.c
+      1          /**
+      2           *  @file       SRTimerReference.c
+      3           *
+      4           *  @brief      Class B Timing reference module
+      5           *
+      6           *  @details    This module provides an 1ms timer Class B compliant
+      7           *
+      8           *  @defgroup   CLASS_B
+      9           *
+     10           *  @section    Applicable_Documents
+     11           *					List here all the applicable documents if needed. <tr>	
+     12           *
+     13           *  $Header: $
+     14           *
+     15           *  @copyright  Copyright 2017-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     16           */
+     17          //---------------------------------------------------------------------------------------------------------------------
+     18          //---------------------------------------------------------------------------------------------------------------------
+     19          
+     20          
+     21          //-------------------------------------- Include Files ----------------------------------------------------------------
+     22          #include "SRSystemConfig.h"
+     23          #include "SRTimerReference.h"
+     24          #include "SRData.h"
+     25          #if (SYSTEM_ENABLE_TASKSEQUENCE == ENABLED)
+     26              #include "SRTaskSequence.h"
+     27          #endif
+     28          
+     29          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     30          
+     31          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+
+   \                                 In section .bss, align 4
+     32          static uint32 SRTimerReference_Counter;
+   \                     SRTimerReference_Counter:
+   \   00000000                      DS8 4
+   \   00000004                      DS8 4
+     33          static uint32 N_SRTimerReference_Counter;
+     34          
+     35          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     36          
+     37          
+     38          //=====================================================================================================================
+     39          //-------------------------------------- Public Functions -------------------------------------------------------------
+     40          //=====================================================================================================================
+     41          
+     42          //---------------------------------------------------------------------------------------------------------------------
+     43          /**
+     44           *  @brief      It Initializes the module SRTimerReference and its variables
+     45           *  @detail     SRTimerReference_Counter is set to 0 at every reset
+     46           */
+
+   \                                 In section .text, align 2, keep-with-next
+     47          void SRTimerReference__Initialize(void)
+     48          {
+     49          	SRData__UpdateLong(&SRTimerReference_Counter, &N_SRTimerReference_Counter, 0);
+   \                     SRTimerReference__Initialize: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2
+   \   00000002   0x2200             MOVS     R2,#+0
+   \   00000004   0x1D01             ADDS     R1,R0,#+4
+   \   00000006   0x.... 0x....      B.W      SRData__UpdateLong
+     50          
+     51              #if (SYSTEM_ENABLE_TASKSEQUENCE == ENABLED)
+     52                  SRTaskSequence__SetSequenceStep(SRTASKSEQUENCE_INIT_PHASE, SRTASKSEQUENCE_INIT_SRTIMERREFERENCE);
+     53              #endif
+     54          }
+     55          
+     56          /**
+     57           *  @brief      SRTimerReference 1ms Handler
+     58           *  @detail     SRTimerReference_Counter integrity is performed, then incremented
+     59           */
+
+   \                                 In section .text, align 2, keep-with-next
+     60          void SRTimerReference__Handler1ms(void)
+     61          {
+   \                     SRTimerReference__Handler1ms: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     62          	if(SRData__CheckLong(&SRTimerReference_Counter, &N_SRTimerReference_Counter) == SRDATA_OK)
+   \   00000002   0x....             LDR.N    R4,??DataTable2
+   \   00000004   0x1D21             ADDS     R1,R4,#+4
+   \   00000006   0x4620             MOV      R0,R4
+   \   00000008   0x.... 0x....      BL       SRData__CheckLong
+   \   0000000C   0xB938             CBNZ.N   R0,??SRTimerReference__Handler1ms_0
+     63          	{
+     64          		SRData__UpdateLong(&SRTimerReference_Counter, &N_SRTimerReference_Counter, SRTimerReference_Counter+1);
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0x1C42             ADDS     R2,R0,#+1
+   \   00000012   0x1D21             ADDS     R1,R4,#+4
+   \   00000014   0x4620             MOV      R0,R4
+   \   00000016   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000001A   0x.... 0x....      B.W      SRData__UpdateLong
+     65          	}
+     66              #if (SYSTEM_ENABLE_TASKSEQUENCE == ENABLED)
+     67                  SRTaskSequence__SetSequenceStep(SRTASKSEQUENCE_TICK_HANDLER, SRTASKSEQUENCE_TICK_SRTIMERREFERENCE);
+     68              #endif
+     69          }
+   \                     ??SRTimerReference__Handler1ms_0: (+1)
+   \   0000001E   0xBD10             POP      {R4,PC}          ;; return
+     70          
+     71          /**
+     72           *  @brief      Get actual Timer reference
+     73           *  @return     current timer reference counter
+     74           */
+
+   \                                 In section .text, align 2, keep-with-next
+     75          uint32 SRTimerReference__GetTimer(void)
+     76          {
+     77          	return(SRTimerReference_Counter);
+   \                     SRTimerReference__GetTimer: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     78          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     SRTimerReference_Counter
+     79          
+     80          //=====================================================================================================================
+     81          //-------------------------------------- Private Functions ------------------------------------------------------------
+     82          //=====================================================================================================================
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SRTimerReference__GetTimer
+       8   SRTimerReference__Handler1ms
+         8   -> SRData__CheckLong
+         0   -> SRData__UpdateLong
+       0   SRTimerReference__Initialize
+         0   -> SRData__UpdateLong
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       8  SRTimerReference_Counter
+          N_SRTimerReference_Counter
+       6  SRTimerReference__GetTimer
+      32  SRTimerReference__Handler1ms
+      10  SRTimerReference__Initialize
+
+ 
+  8 bytes in section .bss
+ 52 bytes in section .text
+ 
+ 52 bytes of CODE memory
+  8 bytes of DATA memory
+
+Errors: none
+Warnings: none

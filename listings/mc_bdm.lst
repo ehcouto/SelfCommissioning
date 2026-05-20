@@ -1,0 +1,198 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:31
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\Source\mc_bdm.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o mc_bdm.obj -l
+#        ..\listings\mc_bdm.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\Source\mc_bdm.c
+#    List file    =  ..\listings\mc_bdm.lst
+#    Object file  =  mc_bdm.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\Source\mc_bdm.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      MasterCommander BDM communication routines
+      5           *
+      6           *
+      7           *  $Header: $
+      8           *
+      9           *  @copyright  Copyright 2016-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     10           */
+     11          //---------------------------------------------------------------------------------------------------------------------
+     12          
+     13          //-------------------------------------- Include Files ----------------------------------------------------------------
+     14          #include "master_commander.h"
+     15          #include "mc_private.h"
+     16          #include "mc_protocol.h"
+     17          
+     18          
+     19          #if (MC_COMM_INTERFACE == MC_INTERFACE_PDBDM)
+     20          #if (MC_PLATFORM_KXX == 0)
+     21          #error BDM interface is only supported for KXX architecture
+     22          #endif /* (MC_PLATFORM_KXX == 0) */
+     23          typedef struct
+     24          {
+     25              MC_U16 buffBorder1;                 // Border code of Packet driven BDM communication buffer
+     26              MC_U8 buffSize;                     // Size of Packet driven BDM communication buffer
+     27              MC_U8 bdmState;                     // State of the Packet driven BDM communication
+     28              MC_BCHR commBuffer[MC_COMM_BUFFER_SIZE+1]; //MasterCommander Packet driven BDM communication buffer (in/out) plus the STS
+     29              MC_U16 buffBorder2;                 // Border code of Packet driven BDM communication buffer
+     30          }MC_PDBDM_COMBUFF;
+     31          
+     32          static MC_PDBDM_COMBUFF pcm_bdm_pCommBuffer; //Packet driven communication buffer
+     33          
+     34          /**************************************************************************//*!
+     35          *
+     36          * @brief    Packet Driven BDM communication initialization
+     37          *
+     38          ******************************************************************************/
+     39          
+     40          void MC_InitPDBdm(void)
+     41          {   
+     42              /* Initialize buffer border and size in communication buffer */
+     43              pcm_bdm_pCommBuffer.buffBorder1 = MC_PDBDM_BUFFBORDER_CODE1;
+     44              pcm_bdm_pCommBuffer.buffSize = MC_COMM_BUFFER_SIZE + 1;
+     45              pcm_bdm_pCommBuffer.buffBorder2 = MC_PDBDM_BUFFBORDER_CODE2;
+     46          
+     47              /* initialize state variables */
+     48              pcm_bdm_pCommBuffer.bdmState = MC_PDBDM_IDLE;
+     49          }
+     50          
+     51          /**************************************************************************//*!
+     52          *
+     53          * @brief    Finalize transmit buffer before transmitting 
+     54          *
+     55          * @param    nLength - response length (1 for status + data length)
+     56          *
+     57          *
+     58          * This Function takes the data already prepared in the transmit buffer 
+     59          * (including the status byte). Change state of BDM driver.
+     60          *
+     61          ******************************************************************************/
+     62          
+     63          void MC_SendResponse(MC_BPTR pResponse, MC_SIZE8 nLength)
+     64          {
+     65              MC_UNUSED(pResponse);
+     66              MC_UNUSED(nLength);
+     67              /* Frame is ready to send */
+     68              pcm_bdm_pCommBuffer.bdmState = MC_PDBDM_FRAME_TO_SEND;
+     69          }
+     70          
+     71          /*******************************************************************************
+     72          *
+     73          * @brief    API: Main "Polling" call from the application main loop
+     74          *
+     75          *******************************************************************************/
+     76          
+     77          void MC_Poll(void)
+     78          { 
+     79              if (pcm_bdm_pCommBuffer.bdmState == MC_PDBDM_RECEIVED_FRAME)
+     80              {
+     81                  /* Packet is received */ 
+     82                  pcm_bdm_pCommBuffer.bdmState = MC_PDBDM_DECODING_FRAME;
+     83                  /* Decode packet and create response */
+     84                  MC_ProtocolDecoder(pcm_bdm_pCommBuffer.commBuffer);
+     85              }
+     86          }
+     87          #else /* (MC_COMM_INTERFACE == MC_INTERFACE_PDBDM) */
+     88          
+     89          #endif /* (MC_COMM_INTERFACE == MC_INTERFACE_PDBDM) */
+     90          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

@@ -1,0 +1,97 @@
+@startuml
+
+package "Application"  {
+    package "Reveal APIs" {
+        package "Reveal Basic APIs" #FF9900 {
+            API003Disc :
+            API007Data :
+            API009System :
+            API010PollVar :
+            API019ProductInfo :  
+            API020Safety :
+        }
+        
+        package "Reveal Application Specific APIs" #FF9900 {
+        
+        }
+        
+        package "Reveal Motor Control API" #00FF00 {
+            API220 :
+        }
+        
+    }    
+}
+
+package "Service (System Layer)" #FF9900 {
+    Reveal ..> Win
+    NVData :
+}
+
+
+package Common {
+    
+    package "Vortex SR System" #0099FF {
+        SRClockMonitor :
+        SRData :
+        SRException :
+        SRFlow :
+    }
+    
+    package "Nucleus Core Basic" #FF9900 {
+        SettingFile :
+        CRC16 :
+    }
+    
+    package "Nucleus Core Class B" #FF9900{
+        SRIsrMonitor :
+        SRSignature :
+        
+    }
+    
+}
+
+package Driver {
+    package "Nucleus Drivers" #FF9900 {    
+        "<<Interface>>\nUart API" <|.. Uart
+        "<<Interface>>\nGpio API" <|.. Gpio   
+        "<<Interface>>\nMicro API" <|.. Micro
+        "<<Interface>>\nTimerInterrupt API" <|.. TimerInterrupt
+        "<<Interface>>\nComparator API" <|.. Comparator
+        "<<Interface>>\nSpi API" <|.. Spi
+        "<<Interface>>\nDma API" <|.. Dma
+        "<<Interface>>\nFlash API" <|.. Flash
+        "<<Interface>>\nDataFlash API" <|.. DataFlash
+    }
+    
+    package MCDrivers #00FF00 {
+        "<<Interface>>\nSRMCAtod API" <|.. SRMCAtod
+        "<<Interface>>\nSRMCPwm API" <|.. SRMCPwm
+    }
+    
+
+}
+
+package Hbl {
+    package MCI2.0 #00FF00 {
+        "<<Interface>>\nMci API" <|.. Mci   
+        "<<Interface>>\nSRMotorSafetyMgr API" <|.. SRMotorSafetyMgr
+    }
+}
+
+"Reveal APIs" .> Reveal
+Application .> Hbl
+Hbl .> Driver
+Application .> Common
+Win ..> "<<Interface>>\nUart API"
+NVData ..> "<<Interface>>\nDataFlash API"
+NVData ..> "<<Interface>>\nFlash API"
+
+note as N1
+  green: Motor Control Modules
+  orange: Nucleus Modules
+  blue: Vortex Modules
+  
+  
+end note
+
+@enduml

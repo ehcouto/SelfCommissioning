@@ -1,0 +1,2084 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.5.7591/W32 for ARM                 06/Aug/2024  13:42:37
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  exe\Self_Commissioning_BPM.out.tmp
+#    Map file     =  exe\Self_Commissioning_BPM.map
+#    Command line =  
+#        -f source\lnkarm_flash.xcl (.\Obj\ThermalModel.obj
+#        .\Obj\ThermalModelCoreDD.obj .\Obj\ThermalModelCoreDD_data.obj
+#        .\Obj\ThermalModelCoreBPM.obj .\Obj\ThermalModelCoreBPM_data.obj
+#        .\Obj\BoardDebugging.obj .\Obj\MasterCommander.obj .\Obj\mc_bdm.obj
+#        .\Obj\mc_llmem.obj .\Obj\mc_protocol.obj .\Obj\mc_rec.obj
+#        .\Obj\mc_scope.obj .\Obj\mc_serial.obj .\Obj\SelfCommissioning.obj
+#        .\Obj\API007App.obj .\Obj\ModeManagement.obj .\Obj\MotorSelector.obj
+#        .\Obj\ProductInfo.obj .\Obj\MciParametersLoader.obj .\Obj\Mode.obj
+#        .\Obj\API003Disc.obj .\Obj\API004Debug.obj .\Obj\API005LowLevel.obj
+#        .\Obj\API007BulkData.obj .\Obj\API007Data.obj .\Obj\API009System.obj
+#        .\Obj\API010PollVar.obj .\Obj\API011AppCtrl.obj
+#        .\Obj\API013RemoteFunction.obj .\Obj\API018Diagnostic.obj
+#        .\Obj\API019ProductInfo.obj .\Obj\APIMotorControl.obj
+#        .\Obj\API221MotionCtrl.obj .\Obj\SRAPI020Safety.obj
+#        .\Obj\SFUpdater.obj .\Obj\Crc16.obj .\Obj\Crc8.obj .\Obj\Log.obj
+#        .\Obj\Millis.obj .\Obj\SettingFile.obj .\Obj\SRClockMonitor.obj
+#        .\Obj\SRData.obj .\Obj\SRException.obj .\Obj\SRFlow.obj
+#        .\Obj\SRIsrMonitor.obj .\Obj\SRMain.obj .\Obj\SRMCUSpeedMonitor.obj
+#        .\Obj\SRPowerMgr.obj .\Obj\SRSignature.obj .\Obj\SRTimerReference.obj
+#        .\Obj\SystemTimers.obj .\Obj\Utilities.obj .\Obj\Comparator.obj
+#        .\Obj\DataFlash.obj .\Obj\Dma.obj .\Obj\Flash.obj .\Obj\Gpio.obj
+#        .\Obj\InterruptVector.obj .\Obj\Micro.obj
+#        .\Obj\MicroExtInterruptJumpTable.obj .\Obj\Spi.obj .\Obj\SRMCAtod.obj
+#        .\Obj\SRMCInputCapture.obj .\Obj\SRMCPwm.obj .\Obj\TimerInterrupt.obj
+#        .\Obj\Uart.obj .\Obj\Mci.obj .\Obj\InverterTemp.obj .\Obj\Mcl.obj
+#        .\Obj\Braking.obj .\Obj\MclDqCtrl.obj .\Obj\MclDqRef.obj
+#        .\Obj\MclInputProc.obj .\Obj\MclObserver.obj .\Obj\MclPwm.obj
+#        .\Obj\MclSpeedCtrl.obj .\Obj\MclFvt.obj .\Obj\ClrkPark.obj
+#        .\Obj\Filters.obj .\Obj\MathCalc.obj .\Obj\ObserverPmsm.obj
+#        .\Obj\Pi.obj .\Obj\PwmModulation.obj .\Obj\ResistanceEstimation.obj
+#        .\Obj\PowerModuleManager.obj .\Obj\SpeedRefGen.obj
+#        .\Obj\SurgeRelay.obj .\Obj\SRMotorSafetyMgr.obj .\Obj\Reveal.obj
+#        .\Obj\Win.obj .\Obj\cortexm4_macro.obj) --config source\config.icf
+#        --semihosting --entry Micro__BootTest -o
+#        exe\Self_Commissioning_BPM.out.tmp --map
+#        exe\Self_Commissioning_BPM.map --place_holder
+#        MICRO_FLASH_CRC,2,.MICRO_CRC_region,4 --keep=MICRO_FLASH_CRC
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"P1":  place in [from 0x1fffe000 to 0x1fffe038] { section .RESET_INFO_HEADER };
+"P2":  place in [from 0x20001fd3 to 0x20001fff] { section .RESET_INFO_FOOTER };
+"A2":  place at end of [0x00000600-0x0001e7ff] { ro section .MICRO_CRC_region };
+"A3":  place at 0x00000000 { ro section Non_Maskable_Jump_interrupt_table };
+"A5":  place at 0x00000600 { ro section .intvec };
+"P3":  place in [from 0x00000600 to 0x0001e7ff] { ro };
+"P4":  place in [from 0x1fffe038 to 0x20001fd3] { rw };
+"A6":  place at end of [0x1fffe038-0x20001fd3] { block HEAP, block STACKS };
+
+  Section                 Kind        Address     Size  Object
+  -------                 ----        -------     ----  ------
+"A3":                                              0x8
+  Non_Maskable_Jump_interrupt_table
+                          const    0x00000000      0x8  MicroExtInterruptJumpTable.obj [1]
+                                 - 0x00000008      0x8
+
+Absolute sections, part 1 of 2:                   0x10
+  .rodata                 const    0x00000400     0x10  Micro.obj [1]
+                                 - 0x00000410     0x10
+
+"A5":                                            0x168
+  .intvec                 const    0x00000600    0x168  InterruptVector.obj [1]
+                                 - 0x00000768    0x168
+
+"P3":                                          0x13717
+  .text                   ro code  0x00000768   0x2188  SRMotorSafetyMgr.obj [1]
+  .text                   ro code  0x000028f0    0x1e8  SRFlow.obj [1]
+  .text                   ro code  0x00002ad8    0x484  SRData.obj [1]
+  .text                   ro code  0x00002f5c    0xd8e  Mci.obj [1]
+  .text                   ro code  0x00003cea     0x22  zero_init3.o [5]
+  .text                   ro code  0x00003d0c    0x548  SRMCAtod.obj [1]
+  .text                   ro code  0x00004254    0x74c  SRMCPwm.obj [1]
+  .text                   ro code  0x000049a0    0x1c0  SRIsrMonitor.obj [1]
+  .text                   ro code  0x00004b60     0x80  SRException.obj [1]
+  .text                   ro code  0x00004be0    0x358  Crc16.obj [1]
+  .text                   ro code  0x00004f38     0x3a  ABImemset48.o [5]
+  .text                   ro code  0x00004f74    0x13c  BoardDebugging.obj [1]
+  .text                   ro code  0x000050b0    0xa3c  SelfCommissioning.obj [1]
+  .text                   ro code  0x00005aec     0xd0  SurgeRelay.obj [1]
+  .text                   ro code  0x00005bbc    0xa30  Mcl.obj [1]
+  .text                   ro code  0x000065ec    0x278  SpeedRefGen.obj [1]
+  .text                   ro code  0x00006864    0x43c  MclFvt.obj [1]
+  .text                   ro code  0x00006ca0    0xefc  Micro.obj [1]
+  .text                   ro code  0x00007b9c    0x188  Comparator.obj [1]
+  .text                   ro code  0x00007d24     0x22  MasterCommander.obj [1]
+  .text                   ro code  0x00007d48     0x36  Filters.obj [1]
+  .text                   ro code  0x00007d80    0x13c  ObserverPmsm.obj [1]
+  .text                   ro code  0x00007ebc    0x94c  MathCalc.obj [1]
+  .text                   ro code  0x00008808    0x136  Pi.obj [1]
+  .text                   ro code  0x00008940     0xcc  ClrkPark.obj [1]
+  .text                   ro code  0x00008a0c    0x410  PwmModulation.obj [1]
+  .text                   ro code  0x00008e1c    0x15c  Gpio.obj [1]
+  .text                   ro code  0x00008f78    0x214  ThermalModel.obj [1]
+  .text                   ro code  0x0000918c    0x14c  ResistanceEstimation.obj [1]
+  .text                   ro code  0x000092d8    0x420  MclInputProc.obj [1]
+  .text                   ro code  0x000096f8    0x340  MclObserver.obj [1]
+  .text                   ro code  0x00009a38    0x204  MclSpeedCtrl.obj [1]
+  .text                   ro code  0x00009c3c     0x78  MclDqRef.obj [1]
+  .text                   ro code  0x00009cb4    0x2e4  MclDqCtrl.obj [1]
+  .text                   ro code  0x00009f98    0x164  MclPwm.obj [1]
+  .text                   ro code  0x0000a0fc      0x6  ABImemclr4.o [5]
+  .text                   ro code  0x0000a104    0x144  SRClockMonitor.obj [1]
+  .text                   ro code  0x0000a248    0x2aa  cortexm4_macro.obj [1]
+  .text                   ro code  0x0000a4f4     0x28  data_init.o [5]
+  .text                   ro code  0x0000a51c     0xa4  Micro.obj [1]
+  .text                   ro code  0x0000a5c0      0xc  cstartup_M.o [5]
+  .text                   ro code  0x0000a5cc    0x298  SRMain.obj [1]
+  .text                   ro code  0x0000a864    0x15c  Crc8.obj [1]
+  .text                   ro code  0x0000a9c0     0x76  ABImemcpy_unaligned.o [5]
+  .text                   ro code  0x0000aa38    0x634  Uart.obj [1]
+  .text                   ro code  0x0000b06c    0x27c  mc_protocol.obj [1]
+  .text                   ro code  0x0000b2e8    0x3ac  mc_rec.obj [1]
+  .text                   ro code  0x0000b694    0x1ea  mc_serial.obj [1]
+  .text                   ro code  0x0000b880     0x6e  atan2f.o [4]
+  .text                   ro code  0x0000b8f0    0x1fc  Mode.obj [1]
+  .text                   ro code  0x0000baec    0x2cc  SettingFile.obj [1]
+  .text                   ro code  0x0000bdb8    0xbdc  ThermalModelCoreBPM.obj [1]
+  .text                   ro code  0x0000c994    0xb18  ThermalModelCoreDD.obj [1]
+  .text                   ro code  0x0000d4ac    0x2bc  Braking.obj [1]
+  .text                   ro code  0x0000d768     0x1a  fpinit_M.o [4]
+  .text                   ro code  0x0000d784     0x1a  cmain.o [5]
+  .text                   ro code  0x0000d7a0     0xb4  mc_scope.obj [1]
+  .text                   ro code  0x0000d854    0x174  mc_llmem.obj [1]
+  .text                   ro code  0x0000d9c8     0xa4  xatanf.o [4]
+  .text                   ro code  0x0000da6c    0x198  SystemTimers.obj [1]
+  .text                   ro code  0x0000dc04    0x10c  API011AppCtrl.obj [1]
+  .text                   ro code  0x0000dd10    0x306  powf.o [4]
+  .text                   ro code  0x0000e018     0x4e  FltToDbl.o [4]
+  .text                   ro code  0x0000e068     0xe8  DblAdd.o [4]
+  .text                   ro code  0x0000e150     0x90  DblToFlt.o [4]
+  .text                   ro code  0x0000e1e0     0x14  memset.o [3]
+  .text                   ro code  0x0000e1f4      0x4  low_level_init.o [3]
+  .text                   ro code  0x0000e1f8      0x4  exit.o [3]
+  .text                   ro code  0x0000e1fc   0x1718  Reveal.obj [1]
+  .text                   ro code  0x0000f914     0x26  xfdnorm.o [4]
+  .text                   ro code  0x0000f93a     0x50  xfdint.o [4]
+  .text                   ro code  0x0000f98c      0xc  errno.o [3]
+  .text                   ro code  0x0000f998     0x28  xflog.o [4]
+  .text                   ro code  0x0000f9c0    0x21c  xfexp.o [4]
+  .text                   ro code  0x0000fbdc    0x16c  DblSub.o [4]
+  .text                   ro code  0x0000fd48     0x66  ABImemset.o [5]
+  .text                   ro code  0x0000fdb0      0xa  cexit.o [5]
+  .text                   ro code  0x0000fdbc    0x688  Win.obj [1]
+  .text                   ro code  0x00010444    0x2e2  SFUpdater.obj [1]
+  .text                   ro code  0x00010726      0x2  xtls.o [3]
+  .text                   ro code  0x00010728     0xc8  xfdscale.o [4]
+  .text                   ro code  0x000107f0     0x14  exit.o [6]
+  .text                   ro code  0x00010804    0x832  API007Data.obj [1]
+  .text                   ro code  0x00011038    0x250  Flash.obj [1]
+  .text                   ro code  0x00011288    0x4ec  API007BulkData.obj [1]
+  .text                   ro code  0x00011774     0x90  Utilities.obj [1]
+  .text                   ro code  0x00011804    0x234  API007App.obj [1]
+  .text                   ro code  0x00011a38    0x688  API010PollVar.obj [1]
+  .text                   ro code  0x000120c0     0x20  Millis.obj [1]
+  .text                   ro code  0x000120e0    0x5b4  API221MotionCtrl.obj [1]
+  .text                   ro code  0x00012694    0x3f0  API019ProductInfo.obj [1]
+  .text                   ro code  0x00012a84     0x7c  ProductInfo.obj [1]
+  .text                   ro code  0x00012b00     0x2c  SRSignature.obj [1]
+  .text                   ro code  0x00012b2c    0x2a4  APIMotorControl.obj [1]
+  .text                   ro code  0x00012dd0    0x254  SRAPI020Safety.obj [1]
+  .text                   ro code  0x00013024     0x34  SRTimerReference.obj [1]
+  .text                   ro code  0x00013058    0x1c8  API003Disc.obj [1]
+  .text                   ro code  0x00013220    0x1c2  lz77_init.o [5]
+  .text                   ro code  0x000133e2      0x6  abort.o [3]
+  .text                   ro code  0x000133e8    0x128  API009System.obj [1]
+  .text                   ro code  0x00013510    0x114  SRMCUSpeedMonitor.obj [1]
+  .rodata                 const    0x00013624     0xac  SRMain.obj [1]
+  .text                   ro code  0x000136d0     0xac  MciParametersLoader.obj [1]
+  .text                   ro code  0x0001377c     0xac  API013RemoteFunction.obj [1]
+  .text                   ro code  0x00013828     0x38  TimerInterrupt.obj [1]
+  .iar.init_table         const    0x00013860     0x3c  - Linker created -
+  .rodata                 const    0x0001389c     0x18  ThermalModelCoreDD_data.obj [1]
+  .text                   ro code  0x000138b4     0x16  MotorSelector.obj [1]
+  .text                   ro code  0x000138cc     0x10  MicroExtInterruptJumpTable.obj [1]
+  .rodata                 const    0x000138dc      0x0  zero_init3.o [5]
+  .rodata                 const    0x000138dc      0x0  lz77_init.o [5]
+  Initializer bytes       ro data  0x000138dc    0x5a3  <for P4 s0>
+                                 - 0x00013e7f  0x13717
+
+"A2":                                              0x2
+  .MICRO_CRC_region       const    0x0001e7fc      0x2  Place holder MICRO_FLASH_CRC
+                                 - 0x0001e7fe      0x2
+
+"P1":                                             0x34
+  .RESET_INFO_HEADER      uninit   0x1fffe000     0x34  Micro.obj [1]
+                                 - 0x1fffe034     0x34
+
+"P4", part 1 of 2:                              0x1dd3
+  .bss                    const    0x1fffe039      0x0  cortexm4_macro.obj [1]
+  .bss                    zero     0x1fffe03c    0x854  mc_rec.obj [1]
+  .bss                    zero     0x1fffe890    0x65c  Reveal.obj [1]
+  .bss                    zero     0x1fffeeec    0x33c  Mcl.obj [1]
+  .bss                    zero     0x1ffff228     0x44  ThermalModelCoreDD.obj [1]
+  .bss                    zero     0x1ffff270    0x318  ThermalModelCoreBPM.obj [1]
+  .bss                    zero     0x1ffff588    0x2a0  ThermalModelCoreDD.obj [1]
+  .bss                    zero     0x1ffff828    0x220  API010PollVar.obj [1]
+  .bss                    zero     0x1ffffa48     0x50  mc_serial.obj [1]
+  .bss                    zero     0x1ffffa98     0x44  MclDqCtrl.obj [1]
+  .bss                    zero     0x1ffffadc     0x3c  ThermalModelCoreBPM.obj [1]
+  .bss                    zero     0x1ffffb18     0x3c  MclFvt.obj [1]
+  .bss                    zero     0x1ffffb54     0x38  ResistanceEstimation.obj [1]
+  .bss                    zero     0x1ffffb8c     0x34  ProductInfo.obj [1]
+  .bss                    zero     0x1ffffbc0     0x34  SFUpdater.obj [1]
+  .bss                    zero     0x1ffffbf4     0x30  SRFlow.obj [1]
+  .bss                    zero     0x1ffffc24     0x30  SRMCPwm.obj [1]
+  .bss                    zero     0x1ffffc54     0x2c  mc_scope.obj [1]
+  .bss                    zero     0x1ffffc80     0x24  SRAPI020Safety.obj [1]
+  .bss                    zero     0x1ffffca4     0x20  MciParametersLoader.obj [1]
+  .bss                    zero     0x1ffffcc4     0x1c  Mci.obj [1]
+  .bss                    zero     0x1ffffce0     0x1c  Braking.obj [1]
+  .bss                    zero     0x1ffffcfc     0x18  ThermalModel.obj [1]
+  .bss                    zero     0x1ffffd14     0x18  Micro.obj [1]
+  .bss                    zero     0x1ffffd2c     0x14  API007App.obj [1]
+  .bss                    zero     0x1ffffd40     0x14  SpeedRefGen.obj [1]
+  .bss                    zero     0x1ffffd54     0x10  API007App.obj [1]
+  .bss                    zero     0x1ffffd64     0x10  API221MotionCtrl.obj [1]
+  .bss                    zero     0x1ffffd74     0x10  SRIsrMonitor.obj [1]
+  .bss                    zero     0x1ffffd84     0x10  Micro.obj [1]
+  .bss                    zero     0x1ffffd94     0x10  MclDqRef.obj [1]
+  .bss                    zero     0x1ffffda4      0xc  SRClockMonitor.obj [1]
+  .bss                    zero     0x1ffffdb0      0xa  SettingFile.obj [1]
+  .bss                    zero     0x1ffffdba      0x6  SRMain.obj [1]
+  .bss                    zero     0x1ffffdc0      0x8  API007App.obj [1]
+  .bss                    zero     0x1ffffdc8      0x8  Mode.obj [1]
+  .bss                    zero     0x1ffffdd0      0x8  API007BulkData.obj [1]
+  .bss                    zero     0x1ffffdd8      0x8  SRTimerReference.obj [1]
+  .bss                    zero     0x1ffffde0      0x8  SRMCAtod.obj [1]
+  .bss                    zero     0x1ffffde8      0x6  SRMCUSpeedMonitor.obj [1]
+  .bss                    zero     0x1ffffdee      0x6  SurgeRelay.obj [1]
+  .bss                    zero     0x1ffffdf4      0x4  API007Data.obj [1]
+  .bss                    zero     0x1ffffdf8      0x4  API009System.obj [1]
+  .bss                    zero     0x1ffffdfc      0x4  API013RemoteFunction.obj [1]
+  .bss                    zero     0x1ffffe00      0x4  Millis.obj [1]
+  .bss                    zero     0x1ffffe04      0x2  MclSpeedCtrl.obj [1]
+  .bss                    zero     0x1ffffe06      0x1  ProductInfo.obj [1]
+  .bss                    zero     0x1ffffe07      0x1  Mode.obj [1]
+  .bss                    zero     0x1ffffe08      0x1  Flash.obj [1]
+                                 - 0x1ffffe09   0x1dd0
+
+Absolute sections, part 2 of 2:                    0x8
+  .bss                    zero     0x1ffffffc      0x4  Micro.obj [1]
+  .bss                    zero     0x20000000      0x4  Micro.obj [1]
+                                 - 0x20000004      0x8
+
+"P4", part 2 of 2:                              0x1344
+  .noinit                 uninit   0x20000004     0x3d  SRException.obj [1]
+  .noinit                 uninit   0x20000041      0x1  SRException.obj [1]
+  P4 s0                            0x20000044    0xc60  <Init block>
+    .data                 inited   0x20000044    0x4e4  MotorSelector.obj [1]
+    .data                 inited   0x20000528    0x4bc  SelfCommissioning.obj [1]
+    .data                 inited   0x200009e4    0x220  MclPwm.obj [1]
+    .data                 inited   0x20000c04     0x48  MclInputProc.obj [1]
+    .data                 inited   0x20000c4c     0x38  MciParametersLoader.obj [1]
+    .data                 inited   0x20000c84     0x1c  BoardDebugging.obj [1]
+    __DLIB_PERTHREAD      inited   0x20000ca0      0x4  errno.o [3]
+  .bss                    zero     0x20000ca4    0x134  SRMotorSafetyMgr.obj [1]
+  _static_cfg_segment     zero     0x20000dd8    0x100  API019ProductInfo.obj [1]
+  .bss                    zero     0x20000ed8     0xdc  APIMotorControl.obj [1]
+  .bss                    zero     0x20000fb4     0xd4  Win.obj [1]
+  .bss                    zero     0x20001088     0xbc  API007BulkData.obj [1]
+  .bss                    zero     0x20001144     0xb8  MclObserver.obj [1]
+  .bss                    zero     0x200011fc     0x9c  Uart.obj [1]
+  .bss                    zero     0x20001298     0x58  SystemTimers.obj [1]
+  .bss                    zero     0x200012f0     0x58  MclSpeedCtrl.obj [1]
+                                 - 0x20001348   0x1344
+
+"A6":                                            0x420
+  STACKS                           0x20001bb0    0x420  <Block>
+    STACK_OVERFLOW_SIGNATURE
+                                   0x20001bb0     0x10  <Block>
+      STACK_OVERFLOW_SIGNATURE
+                          uninit   0x20001bb0     0x10  <Block tail>
+    CSTACK                         0x20001bc0    0x400  <Block>
+      CSTACK              uninit   0x20001bc0    0x400  <Block tail>
+    STACK_UNDERFLOW_SIGNATURE
+                                   0x20001fc0     0x10  <Block>
+      STACK_UNDERFLOW_SIGNATURE
+                          uninit   0x20001fc0     0x10  <Block tail>
+                                 - 0x20001fd0    0x420
+
+"P2":                                             0x2c
+  .RESET_INFO_FOOTER      uninit   0x20001fd4     0x2c  Micro.obj [1]
+                                 - 0x20002000     0x2c
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    3 destination ranges, total size 0x2479:
+          0x1fffe03c  0x1dcd
+          0x1ffffffc     0x8
+          0x20000ca4   0x6a4
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x5a3 (45% of destination):
+          0x000138dc   0x5a3
+    1 destination range, total size 0xc60:
+          0x20000044   0xc60
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                          ro code  ro data  rw data  ro data  rw data
+                                                                (abs)    (abs)
+    ------                          -------  -------  -------  -------  -------
+C:\Data\Python\Self_Commissioning_Bpm\Obj: [1]
+    API003Disc.obj                      456
+    API007App.obj                       564                44
+    API007BulkData.obj                1 260               196
+    API007Data.obj                    2 098                 4
+    API009System.obj                    296                 4
+    API010PollVar.obj                 1 672               544
+    API011AppCtrl.obj                   268
+    API013RemoteFunction.obj            172                 4
+    API019ProductInfo.obj             1 008               256
+    API221MotionCtrl.obj              1 460                16
+    APIMotorControl.obj                 676               220
+    BoardDebugging.obj                  316       13       28
+    Braking.obj                         700                28
+    ClrkPark.obj                        204
+    Comparator.obj                      392
+    Crc16.obj                           856
+    Crc8.obj                            348
+    Filters.obj                          54
+    Flash.obj                           592                 1
+    Gpio.obj                            348
+    InterruptVector.obj                          360
+    MasterCommander.obj                  34
+    MathCalc.obj                      2 380
+    Mci.obj                           3 470                28
+    MciParametersLoader.obj             172       26       88
+    Mcl.obj                           2 608               828
+    MclDqCtrl.obj                       740                68
+    MclDqRef.obj                        120                16
+    MclFvt.obj                        1 084                60
+    MclInputProc.obj                  1 056       32       72
+    MclObserver.obj                     832               184
+    MclPwm.obj                          356      248      544
+    MclSpeedCtrl.obj                    516                90
+    Micro.obj                         4 000               136       16        8
+    MicroExtInterruptJumpTable.obj       16        8
+    Millis.obj                           32                 4
+    Mode.obj                            508                 9
+    MotorSelector.obj                    22      570    1 252
+    ObserverPmsm.obj                    316
+    Pi.obj                              310
+    ProductInfo.obj                     124                53
+    PwmModulation.obj                 1 040
+    ResistanceEstimation.obj            332                56
+    Reveal.obj                        5 912             1 628
+    SFUpdater.obj                       738                52
+    SRAPI020Safety.obj                  596                36
+    SRClockMonitor.obj                  324                12
+    SRData.obj                        1 156
+    SRException.obj                     128                62
+    SRFlow.obj                          488                48
+    SRIsrMonitor.obj                    448                16
+    SRMCAtod.obj                      1 352                 8
+    SRMCPwm.obj                       1 868                48
+    SRMCUSpeedMonitor.obj               276                 6
+    SRMain.obj                          664      172        6
+    SRMotorSafetyMgr.obj              8 584               308
+    SRSignature.obj                      44
+    SRTimerReference.obj                 52                 8
+    SelfCommissioning.obj             2 620      552    1 212
+    SettingFile.obj                     716                10
+    SpeedRefGen.obj                     632                20
+    SurgeRelay.obj                      208                 6
+    SystemTimers.obj                    408                88
+    ThermalModel.obj                    532                24
+    ThermalModelCoreBPM.obj           3 036               852
+    ThermalModelCoreDD.obj            2 840               740
+    ThermalModelCoreDD_data.obj                   24
+    TimerInterrupt.obj                   56
+    Uart.obj                          1 588               156
+    Utilities.obj                       144
+    Win.obj                           1 672               212
+    cortexm4_macro.obj                  682
+    mc_llmem.obj                        372
+    mc_protocol.obj                     636
+    mc_rec.obj                          940             2 132
+    mc_scope.obj                        180                44
+    mc_serial.obj                       490                80
+    ---------------------------------------------------------------------------
+    Total:                           74 190    2 005   12 647       16        8
+
+command line: [2]
+    ---------------------------------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    abort.o                               6
+    errno.o                              12        2        4
+    exit.o                                4
+    low_level_init.o                      4
+    memset.o                             20
+    xtls.o                                2
+    ---------------------------------------------------------------------------
+    Total:                               48        2        4
+
+m7M_tlv.a: [4]
+    DblAdd.o                            232
+    DblSub.o                            364
+    DblToFlt.o                          144
+    FltToDbl.o                           78
+    atan2f.o                            110
+    fpinit_M.o                           26
+    powf.o                              774
+    xatanf.o                            164
+    xfdint.o                             80
+    xfdnorm.o                            38
+    xfdscale.o                          200
+    xfexp.o                             540
+    xflog.o                              40
+    ---------------------------------------------------------------------------
+    Total:                            2 790
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                          6
+    ABImemcpy_unaligned.o               118
+    ABImemset.o                         102
+    ABImemset48.o                        58
+    cexit.o                              10
+    cmain.o                              26
+    cstartup_M.o                         12
+    data_init.o                          40
+    lz77_init.o                         450
+    zero_init3.o                         34
+    ---------------------------------------------------------------------------
+    Total:                              856
+
+shb_l.a: [6]
+    exit.o                               20
+    ---------------------------------------------------------------------------
+    Total:                               20
+
+    Gaps                                 36                 7
+    Linker created                                60    1 056
+-------------------------------------------------------------------------------
+    Grand Total:                     77 940    2 069   13 714       16        8
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x0000d785         Code  Gb  cmain.o [5]
+API003Disc__CommandParser
+                        0x00013081  0x14c  Code  Gb  API003Disc.obj [1]
+API003Disc__FeedbackParser
+                        0x000131cd    0x2  Code  Gb  API003Disc.obj [1]
+API003Disc__Initialize  0x00013059   0x26  Code  Gb  API003Disc.obj [1]
+API003_APIS             0x000131d0   0x50  Data  Lc  API003Disc.obj [1]
+API007APP_Rx_State      0x1ffffd55    0x1  Data  Lc  API007App.obj [1]
+API007App__GetSegmentInfo
+                        0x00011935   0x26  Code  Gb  API007App.obj [1]
+API007App__Handler      0x00011845   0xf0  Code  Gb  API007App.obj [1]
+API007App__Initialize   0x00011805   0x3e  Code  Gb  API007App.obj [1]
+API007App__IsDataReady  0x00011975    0xc  Code  Gb  API007App.obj [1]
+API007App__IsWriteEngineFree
+                        0x0001199d   0x80  Code  Gb  API007App.obj [1]
+API007App__PrepareSegment
+                        0x0001195d   0x18  Code  Gb  API007App.obj [1]
+API007App__ReceivedTransmissionCompleted
+                        0x0001199b    0x2  Code  Gb  API007App.obj [1]
+API007App__ServerwriteCompleted
+                        0x00011a27    0x6  Code  Gb  API007App.obj [1]
+API007App__SetSegmentInfo
+                        0x00011a1d    0xa  Code  Gb  API007App.obj [1]
+API007App__WriteSegmentData
+                        0x00011981   0x1a  Code  Gb  API007App.obj [1]
+API007BULKDATA_SEGMENT_ID
+                        0x0001176c    0x8  Data  Lc  API007BulkData.obj [1]
+API007BulkDataMgr__AckWriteComplete
+                        0x00011519    0x4  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__GetSegmentData
+                        0x00011399   0x90  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__GetSegmentInfo
+                        0x00011395    0x4  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__GetSegmentList
+                        0x0001138b    0x6  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__GetSegmentListSize
+                        0x00011391    0x4  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__Handler
+                        0x0001159d  0x1c4  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__Initialize
+                        0x00011289  0x102  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__ReceivedTransmissionCompleted
+                        0x00011591    0xa  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__ReceivedWriteCompleted
+                        0x00011553   0x3e  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__WriteDetailInfo
+                        0x00011437   0x5e  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__WriteErrorType
+                        0x0001151d   0x36  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__WriteSegmentData
+                        0x00011495   0x84  Code  Gb  API007BulkData.obj [1]
+API007BulkDataMgr__WriteSegmentList
+                        0x00011429    0xe  Code  Gb  API007BulkData.obj [1]
+API007BulkData_Generic_Timeout
+                        0x200010f4    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Info_List
+                        0x20001088   0x2c  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Message_Response_Timer
+                        0x200010f0    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Buffer
+                        0x200010f8   0x44  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Destination
+                        0x200010ee    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_ErrorTypeRecived
+                        0x1ffffdd0    0x8  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Index
+                        0x200010ea    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Segment
+                        0x200010e4    0x1  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Segment_IdDetailInfo
+                        0x200010b4   0x2c  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Segment_ListRecived
+                        0x2000113c    0x8  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_Size  0x200010ec    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Rx_State
+                        0x200010e3    0x1  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Tx_Destination
+                        0x200010e8    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Tx_Index
+                        0x200010e6    0x2  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Tx_Segment
+                        0x200010e1    0x1  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Tx_Segment_Index
+                        0x200010e2    0x1  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Tx_State
+                        0x200010e0    0x1  Data  Lc  API007BulkData.obj [1]
+API007BulkData_Write_Operation_Timeout
+                        0x200010f2    0x2  Data  Lc  API007BulkData.obj [1]
+API007Data__AckParser   0x00010e4d    0x2  Code  Gb  API007Data.obj [1]
+API007Data__CommandParser
+                        0x00010845  0x482  Code  Gb  API007Data.obj [1]
+API007Data__FeedbackParser
+                        0x00010cc9  0x17e  Code  Gb  API007Data.obj [1]
+API007Data__Initialize  0x00010805   0x3e  Code  Gb  API007Data.obj [1]
+API007Data__PublishSegmentData
+                        0x00010f7b   0x4c  Code  Gb  API007Data.obj [1]
+API007Data__RequestSettingFileDisplacementData
+                        0x00010ebd   0x4a  Code  Gb  API007Data.obj [1]
+API007Data__RequestSettingFileIDData
+                        0x00010e7b   0x42  Code  Gb  API007Data.obj [1]
+API007Data__RequestSettingFileIDInfo
+                        0x00010e4f   0x2c  Code  Gb  API007Data.obj [1]
+API007Data__SendError   0x00010fe7   0x30  Code  Gb  API007Data.obj [1]
+API007Data__SendTransmissionComplete
+                        0x00010fc7   0x20  Code  Gb  API007Data.obj [1]
+API007Data__WriteRequestCompleted
+                        0x00011017   0x20  Code  Gb  API007Data.obj [1]
+API007__RequestGetDataSegment
+                        0x00010f4f   0x2c  Code  Gb  API007Data.obj [1]
+API007__RequestInfoSegment
+                        0x00010f23   0x2c  Code  Gb  API007Data.obj [1]
+API007__RequestSegmentsList
+                        0x00010f07   0x1c  Code  Gb  API007Data.obj [1]
+API009System_Reset_Mode
+                        0x1ffffdf8    0x1  Data  Lc  API009System.obj [1]
+API009System_Reset_Timer
+                        0x1ffffdfa    0x2  Data  Lc  API009System.obj [1]
+API009System__AckParser
+                        0x000134d3    0x2  Code  Gb  API009System.obj [1]
+API009System__CommandParser
+                        0x00013427   0xaa  Code  Gb  API009System.obj [1]
+API009System__FeedbackParser
+                        0x000134d1    0x2  Code  Gb  API009System.obj [1]
+API009System__Handler25ms
+                        0x000134d5   0x38  Code  Gb  API009System.obj [1]
+API009System__Initialize
+                        0x000133e9   0x3e  Code  Gb  API009System.obj [1]
+API010PollVar__CommandParser
+                        0x00011bf1  0x3fe  Code  Gb  API010PollVar.obj [1]
+API010PollVar__FastHandler
+                        0x00011bef    0x2  Code  Gb  API010PollVar.obj [1]
+API010PollVar__Initialize
+                        0x00011a39   0x32  Code  Gb  API010PollVar.obj [1]
+API010PollVar__SlowHandler
+                        0x00011a6b  0x184  Code  Gb  API010PollVar.obj [1]
+API011AppCtrl__CommandParser
+                        0x0000dc05   0xb4  Code  Gb  API011AppCtrl.obj [1]
+API011AppCtrl__FeedbackParser
+                        0x0000dcb9   0x20  Code  Gb  API011AppCtrl.obj [1]
+API011AppCtrl__PubMode  0x0000dcd9   0x38  Code  Gb  API011AppCtrl.obj [1]
+API013RemoteFunction__Background
+                        0x00013795   0x2e  Code  Gb  API013RemoteFunction.obj [1]
+API013RemoteFunction__CommandParser
+                        0x000137c3   0x62  Code  Gb  API013RemoteFunction.obj [1]
+API013RemoteFunction__Initialize
+                        0x0001377d   0x18  Code  Gb  API013RemoteFunction.obj [1]
+API019ProductInfo__AckParser
+                        0x00012a79    0x2  Code  Gb  API019ProductInfo.obj [1]
+API019ProductInfo__CommandParser
+                        0x000126ad  0x3a0  Code  Gb  API019ProductInfo.obj [1]
+API019ProductInfo__FeedbackParser
+                        0x00012a4d   0x2c  Code  Gb  API019ProductInfo.obj [1]
+API019ProductInfo__Initialize
+                        0x00012695   0x18  Code  Gb  API019ProductInfo.obj [1]
+API019_Appliance_Data   0x20000e04   0x2c  Data  Lc  API019ProductInfo.obj [1]
+API019_BOARD_MAIN_PROJECTS
+                        0x1ffffe06    0x1  Data  Lc  ProductInfo.obj [1]
+API019_Board_Data       0x20000dd8   0x2c  Data  Lc  API019ProductInfo.obj [1]
+API019_EOL_Test_Data    0x20000e30   0x54  Data  Lc  API019ProductInfo.obj [1]
+API019_FVT_Data         0x20000e84   0x54  Data  Lc  API019ProductInfo.obj [1]
+API020_Door_Lock_RX_Status
+                        0x1ffffc90    0x1  Data  Lc  SRAPI020Safety.obj [1]
+API221MotionCtrl__Background
+                        0x000120f9  0x16e  Code  Gb  API221MotionCtrl.obj [1]
+API221MotionCtrl__CommandParser
+                        0x00012269  0x2a2  Code  Gb  API221MotionCtrl.obj [1]
+API221MotionCtrl__Initialize
+                        0x000120e1   0x18  Code  Gb  API221MotionCtrl.obj [1]
+APIMotorControl__CommandParser
+                        0x00012c8b   0x98  Code  Gb  APIMotorControl.obj [1]
+APIMotorControl__FeedbackParser
+                        0x00012d23    0x2  Code  Gb  APIMotorControl.obj [1]
+APIMotorControl__Initialize
+                        0x00012b2d   0x88  Code  Gb  APIMotorControl.obj [1]
+APIMotorControl__SlowHandler
+                        0x00012bb5   0xd6  Code  Gb  APIMotorControl.obj [1]
+APPL_BLOCK_1_END {Abs}  0x0001e7fb          --   Gb  command line/config [2]
+APPL_BLOCK_1_START {Abs}
+                        0x00000600          --   Gb  command line/config [2]
+All_Timers              0x20001298   0x50  Data  Lc  SystemTimers.obj [1]
+Api010                  0x1ffff828  0x220  Data  Lc  API010PollVar.obj [1]
+Api013                  0x1ffffdfc    0x4  Data  Lc  API013RemoteFunction.obj [1]
+Api020                  0x1ffffc80   0x10  Data  Lc  SRAPI020Safety.obj [1]
+Api220_Fvt_Result_Published
+                        0x20000eda    0x1  Data  Lc  APIMotorControl.obj [1]
+Api220_Per_Analog_Data  0x20000f18   0x9c  Data  Lc  APIMotorControl.obj [1]
+Api221                  0x1ffffd64   0x10  Data  Lc  API221MotionCtrl.obj [1]
+Apply_Default_Accel     0x1ffffd40    0x1  Data  Gb  SpeedRefGen.obj [1]
+Array_StatsExtrData     0x1ffffd2c   0x14  Data  Lc  API007App.obj [1]
+BDRATE                  0x0000b02c   0x34  Data  Lc  Uart.obj [1]
+BD_Level_Rate_x32       0x20000c94    0x4  Data  Lc  BoardDebugging.obj [1]
+BD_Level_x32            0x20000c90    0x4  Data  Lc  BoardDebugging.obj [1]
+BD_Manual_Method        0x20000c87    0x1  Data  Lc  BoardDebugging.obj [1]
+BD_Motor                0x20000c86    0x1  Data  Lc  BoardDebugging.obj [1]
+BD_Param_Rate_x32       0x20000c9c    0x4  Data  Lc  BoardDebugging.obj [1]
+BD_Param_x32            0x20000c98    0x4  Data  Lc  BoardDebugging.obj [1]
+BD_Reset                0x20000c88    0x1  Data  Lc  BoardDebugging.obj [1]
+BD_Select_Method        0x20000c85    0x1  Data  Lc  BoardDebugging.obj [1]
+BD_Target_Accel         0x20000c8c    0x2  Data  Lc  BoardDebugging.obj [1]
+BD_Target_Speed         0x20000c8a    0x2  Data  Lc  BoardDebugging.obj [1]
+BD_Target_Stop          0x20000c8e    0x2  Data  Lc  BoardDebugging.obj [1]
+BD_Update_Cmd           0x20000c84    0x1  Data  Lc  BoardDebugging.obj [1]
+BYTE_SET_MASK           0x000117f4   0x10  Data  Lc  Utilities.obj [1]
+BoardDebugging__250usHandler
+                        0x00004fa9    0x4  Code  Gb  BoardDebugging.obj [1]
+BoardDebugging__25msHandler
+                        0x00004fad   0xd4  Code  Gb  BoardDebugging.obj [1]
+BoardDebugging__Initialize
+                        0x00004f75   0x30  Code  Gb  BoardDebugging.obj [1]
+BoardDebugging__PwmHandler
+                        0x00004fa5    0x4  Code  Gb  BoardDebugging.obj [1]
+Braking_Resistance      0x1ffffcf0    0x4  Data  Lc  Braking.obj [1]
+Braking__DqRefHandler   0x0000d595  0x1c0  Code  Gb  Braking.obj [1]
+Braking__ResetState     0x0000d4ad   0x10  Code  Gb  Braking.obj [1]
+Braking__SpeedCtrlHandler
+                        0x0000d4bd   0xd8  Code  Gb  Braking.obj [1]
+Bus_Voltage             0x1ffffdf0    0x2  Data  Lc  SurgeRelay.obj [1]
+Bus_Voltage_Previous    0x1ffffdf2    0x2  Data  Lc  SurgeRelay.obj [1]
+Bus_Voltage_Timer       0x1ffffdef    0x1  Data  Lc  SurgeRelay.obj [1]
+CLASS_B_SIGNATURE       0x00012b0c   0x20  Data  Lc  SRSignature.obj [1]
+CRC8_TABLE              0x0000a8c0  0x100  Data  Gb  Crc8.obj [1]
+CSTACK$$Base            0x20001bc0          --   Gb  - Linker created -
+CSTACK$$Limit           0x20001fc0          --   Gb  - Linker created -
+CheckForRemovedFailureFlags
+                        0x0001250b  0x172  Code  Lc  API221MotionCtrl.obj [1]
+ClrkPark__DirectClarkeF
+                        0x00008941   0x46  Code  Gb  ClrkPark.obj [1]
+ClrkPark__DirectParkF   0x00008991   0x3e  Code  Gb  ClrkPark.obj [1]
+ClrkPark__InverseParkF  0x000089cf   0x3e  Code  Gb  ClrkPark.obj [1]
+Comparator__Config      0x00007ba9  0x14e  Code  Gb  Comparator.obj [1]
+Comparator__Initialize  0x00007b9d    0xc  Code  Gb  Comparator.obj [1]
+Comparator__SetThr      0x00007cf7   0x1e  Code  Gb  Comparator.obj [1]
+Cos_Rot_k1              0x200011b4    0x4  Data  Lc  MclObserver.obj [1]
+Crc16__ByteProcess      0x00004be1   0x2e  Code  Gb  Crc16.obj [1]
+Crc16__ConstRangeProcess
+                        0x00004ca5   0x92  Code  Gb  Crc16.obj [1]
+Crc16__RangeProcess     0x00004c11   0x92  Code  Gb  Crc16.obj [1]
+Crc8                    0x0000a865   0x52  Code  Gb  Crc8.obj [1]
+Crc8__ProcessByte       0x0000a8b7    0xa  Code  Gb  Crc8.obj [1]
+Cur_Offset_Comp_Factor  0x20000c10    0x4  Data  Lc  MclInputProc.obj [1]
+Cur_Offset_Compensation
+                        0x20000c04    0x1  Data  Lc  MclInputProc.obj [1]
+Cur_Offset_Ia           0x20000c1c    0x4  Data  Lc  MclInputProc.obj [1]
+Cur_Offset_Ib           0x20000c20    0x4  Data  Lc  MclInputProc.obj [1]
+Cur_Offset_Ic           0x20000c24    0x4  Data  Lc  MclInputProc.obj [1]
+CurrentOffSetComp       0x000094db  0x202  Code  Lc  MclInputProc.obj [1]
+Current_1st_Sum         0x1ffffb7c    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Current_2nd_Sum         0x1ffffb84    0x4  Data  Lc  ResistanceEstimation.obj [1]
+DC_Bus_RMS              0x20000c0c    0x4  Data  Lc  MclInputProc.obj [1]
+DC_Bus_RMS_Sum          0x20000c08    0x4  Data  Lc  MclInputProc.obj [1]
+Data_Flow_Check         0x1ffffd5c    0x4  Data  Lc  API007App.obj [1]
+DeadTimeNanosec         0x1ffffc2a    0x2  Data  Lc  SRMCPwm.obj [1]
+Default_Accel           0x1ffffd44    0x4  Data  Gb  SpeedRefGen.obj [1]
+Delta_Current_Nominal   0x1ffffb88    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Delta_Speed_Timer       0x1ffffe04    0x2  Data  Lc  MclSpeedCtrl.obj [1]
+DriftAdjust             0x1ffffd0c    0x4  Data  Gb  ThermalModel.obj [1]
+Dutycycle_By_Current_LUT
+                        0x200009f4  0x208  Data  Gb  MclPwm.obj [1]
+EM_Torque_Filt_Sum      0x200011b8    0x4  Data  Lc  MclObserver.obj [1]
+Err_Lim_Lower           0x200011dc    0x4  Data  Lc  MclObserver.obj [1]
+Err_Lim_Upper           0x200011e0    0x4  Data  Lc  MclObserver.obj [1]
+Error_Flux_Alpha_1      0x200011d0    0x4  Data  Lc  MclObserver.obj [1]
+Error_Flux_Beta_1       0x200011d4    0x4  Data  Lc  MclObserver.obj [1]
+Estimated_Resistance    0x1ffffb68    0x4  Data  Lc  ResistanceEstimation.obj [1]
+EulerStep               0x0000d35d   0x2e  Code  Lc  ThermalModelCoreDD.obj [1]
+EulerStep               0x0000c891   0x2e  Code  Lc  ThermalModelCoreBPM.obj [1]
+EventReqSubModeSupervisor
+                        0x0000baa5   0x38  Code  Lc  Mode.obj [1]
+Every_Interrupt_Tasks   0x0000a848    0xc  Data  Gb  SRMain.obj [1]
+Every_Slot_Tasks        0x0000a824   0x10  Data  Gb  SRMain.obj [1]
+Exception_Buffer        0x20000004   0x3c  Data  Gb  SRException.obj [1]
+Exception_Read          0x20000041    0x1  Data  Gb  SRException.obj [1]
+Exception_Write         0x20000040    0x1  Data  Gb  SRException.obj [1]
+ExtractAbsPointer       0x0000bca9   0x2e  Code  Lc  SettingFile.obj [1]
+FLASH_TOTAL_SIZE {Abs}  0x00020000          --   Gb  command line/config [2]
+Filters__IIR1F          0x00007d51   0x2e  Code  Gb  Filters.obj [1]
+Filters__IIR1InitF      0x00007d49    0x8  Code  Gb  Filters.obj [1]
+FlashProgram1LongWord   0x000111e9   0x84  Code  Lc  Flash.obj [1]
+Flash_Status            0x1ffffe08    0x1  Data  Lc  Flash.obj [1]
+Flash__Format           0x000111a1   0x48  Code  Gb  Flash.obj [1]
+Flash__FormatPage       0x000110e3   0xbe  Code  Gb  Flash.obj [1]
+Flash__Initialize       0x00011039   0x12  Code  Gb  Flash.obj [1]
+Flash__Write            0x0001104b   0x98  Code  Gb  Flash.obj [1]
+Flux_Controller         0x1ffffa98   0x1c  Data  Lc  MclDqCtrl.obj [1]
+Flux_Error              0x200011c4    0x4  Data  Lc  MclObserver.obj [1]
+Flux_M_Braking          0x1ffffda0    0x4  Data  Lc  MclDqRef.obj [1]
+Flux_Min                0x1ffffd9c    0x4  Data  Lc  MclDqRef.obj [1]
+Forced_Gain_Selector    0x20001328    0x1  Data  Lc  MclSpeedCtrl.obj [1]
+Forced_Gain_Timer       0x2000132a    0x2  Data  Lc  MclSpeedCtrl.obj [1]
+GPIO_PORT_LIST          0x00008f50   0x14  Data  Gb  Gpio.obj [1]
+GetDisplacementData     0x0000bcd9   0xd2  Code  Lc  SettingFile.obj [1]
+GetSettingFileStartByID
+                        0x0000bc45   0x64  Code  Lc  SettingFile.obj [1]
+GetUpdatedWork          0x0000d279   0xd0  Code  Lc  ThermalModelCoreDD.obj [1]
+GetUpdatedWork          0x0000c7ad   0xd0  Code  Lc  ThermalModelCoreBPM.obj [1]
+Gpio__Initialize        0x00008e1d    0xa  Code  Gb  Gpio.obj [1]
+Gpio__PinConfig         0x00008e81   0xaa  Code  Gb  Gpio.obj [1]
+Gpio__PinWrite          0x00008f2b   0x24  Code  Gb  Gpio.obj [1]
+Gpio__RefreshConfig     0x00008e27   0x4c  Code  Gb  Gpio.obj [1]
+HandleRequestedSubMode  0x0000ba29   0x7c  Code  Lc  Mode.obj [1]
+Handle_Counter          0x200012ec    0x4  Data  Lc  SystemTimers.obj [1]
+Handle_Reference        0x200012e8    0x1  Data  Lc  SystemTimers.obj [1]
+I1_Rms_Sum              0x1ffff214    0x4  Data  Lc  Mcl.obj [1]
+I2_Rms_Sum              0x1ffff218    0x4  Data  Lc  Mcl.obj [1]
+I3_Rms_Sum              0x1ffff21c    0x4  Data  Lc  Mcl.obj [1]
+IAP_SIZE {Abs}          0x00000600          --   Gb  command line/config [2]
+INTERRUPT_TABLE_SIZE {Abs}
+                        0x00000180          --   Gb  command line/config [2]
+Id_Braking              0x1ffffce0    0x4  Data  Lc  Braking.obj [1]
+Id_Braking              0x1ffffd98    0x4  Data  Lc  MclDqRef.obj [1]
+Id_Braking_Max          0x1ffffce4    0x4  Data  Lc  Braking.obj [1]
+Id_Braking_Target       0x1ffffcf4    0x4  Data  Lc  Braking.obj [1]
+InStream_Read           0x00013221   0x22  Code  Lc  lz77_init.o [5]
+Increment               0x1ffffd48    0x4  Data  Gb  SpeedRefGen.obj [1]
+Inductance_Correction   0x000099db   0x5a  Code  Lc  MclObserver.obj [1]
+Initialization_Tasks    0x0000a7e0   0x44  Data  Gb  SRMain.obj [1]
+InitializeConditions    0x0000d191   0xc4  Code  Lc  ThermalModelCoreDD.obj [1]
+InitializeConditions    0x0000c6c9   0xcc  Code  Lc  ThermalModelCoreBPM.obj [1]
+Interrupt_Slot          0x1ffffdbb    0x1  Data  Lc  SRMain.obj [1]
+Interrupt_Slot0_Tasks   0x000136a8    0xc  Data  Gb  SRMain.obj [1]
+Interrupt_Slot1_Tasks   0x000136b4    0xc  Data  Gb  SRMain.obj [1]
+Interrupt_Slot2_Tasks   0x000136c0    0xc  Data  Gb  SRMain.obj [1]
+Interrupt_Slot3_Tasks   0x000136cc    0x4  Data  Gb  SRMain.obj [1]
+Interrupt_Tasks         0x0000a854   0x10  Data  Gb  SRMain.obj [1]
+Inverter_Compensation_Selector
+                        0x200009e4    0x1  Data  Lc  MclPwm.obj [1]
+IsPendingMessage        0x0000ea95   0x58  Code  Lc  Reveal.obj [1]
+Is_DQ_Injection         0x20000734    0xc  Data  Gb  SelfCommissioning.obj [1]
+Is_Settingfile_Valid    0x1ffffdb0    0x1  Data  Lc  SettingFile.obj [1]
+Isr_Attempt_Cntr        0x1ffffd7a    0x1  Data  Lc  SRIsrMonitor.obj [1]
+Isr_Attempt_Max_Cntr    0x1ffffd7c    0x1  Data  Gb  SRIsrMonitor.obj [1]
+Isr_Attempt_Min_Cntr    0x1ffffd7b    0x1  Data  Gb  SRIsrMonitor.obj [1]
+Isr_Enter_Cntr          0x1ffffd76    0x1  Data  Lc  SRIsrMonitor.obj [1]
+Isr_Exit_Cntr           0x1ffffd77    0x1  Data  Lc  SRIsrMonitor.obj [1]
+Isr_LowSpeed_Mode       0x1ffffd7d    0x1  Data  Lc  SRIsrMonitor.obj [1]
+Isr_Max                 0x1ffffd74    0x1  Data  Lc  SRIsrMonitor.obj [1]
+Isr_Max_Cntr            0x1ffffd79    0x1  Data  Gb  SRIsrMonitor.obj [1]
+Isr_Min                 0x1ffffd75    0x1  Data  Lc  SRIsrMonitor.obj [1]
+Isr_Min_Cntr            0x1ffffd78    0x1  Data  Gb  SRIsrMonitor.obj [1]
+KEY_TO_EVENT            0x00012684   0x10  Data  Lc  API221MotionCtrl.obj [1]
+Last_Analog_Output      0x20000ef8   0x20  Data  Lc  APIMotorControl.obj [1]
+Last_Digital_Output     0x20000ed9    0x1  Data  Lc  APIMotorControl.obj [1]
+Last_Estimated_Resistance
+                        0x1ffffb6c    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Last_Manual_Injection_Level_Target
+                        0x20000ef0    0x4  Data  Lc  APIMotorControl.obj [1]
+Last_Manual_Injection_Method
+                        0x20000ed8    0x1  Data  Lc  APIMotorControl.obj [1]
+Last_Manual_Injection_Parameter
+                        0x20000ef4    0x4  Data  Lc  APIMotorControl.obj [1]
+Last_Ramp_Target        0x20000eec    0x4  Data  Lc  APIMotorControl.obj [1]
+Last_Speed_Target       0x20000ee8    0x4  Data  Lc  APIMotorControl.obj [1]
+Load_Angle_Limiter      0x2000130c   0x1c  Data  Lc  MclSpeedCtrl.obj [1]
+MC_AddressFromBuffer    0x0000d975   0x2c  Code  Gb  mc_llmem.obj [1]
+MC_AddressToBuffer      0x0000d9a1   0x28  Code  Gb  mc_llmem.obj [1]
+MC_Compare16S           0x0000b539   0x18  Code  Lc  mc_rec.obj [1]
+MC_Compare16U           0x0000b551   0x14  Code  Lc  mc_rec.obj [1]
+MC_Compare32S           0x0000b565   0x14  Code  Lc  mc_rec.obj [1]
+MC_Compare32U           0x0000b579   0x12  Code  Lc  mc_rec.obj [1]
+MC_Compare8S            0x0000b50d   0x18  Code  Lc  mc_rec.obj [1]
+MC_Compare8U            0x0000b525   0x14  Code  Lc  mc_rec.obj [1]
+MC_Comparefloat         0x0000b58d   0x1e  Code  Lc  mc_rec.obj [1]
+MC_CopyFromBuffer       0x0000d8d5   0x40  Code  Gb  mc_llmem.obj [1]
+MC_CopyFromBufferWithMask
+                        0x0000d915   0x60  Code  Gb  mc_llmem.obj [1]
+MC_CopyMemory           0x0000d855   0x3e  Code  Gb  mc_llmem.obj [1]
+MC_CopyToBuffer         0x0000d895   0x3e  Code  Gb  mc_llmem.obj [1]
+MC_GetBoardInfo         0x0000b185   0x58  Code  Gb  mc_protocol.obj [1]
+MC_GetRecBuff           0x0000b4c5   0x46  Code  Gb  mc_rec.obj [1]
+MC_GetRecBuffSize       0x0000b4bf    0x6  Code  Gb  mc_rec.obj [1]
+MC_GetRecStatus         0x0000b4a5   0x1a  Code  Gb  mc_rec.obj [1]
+MC_Init                 0x0000b071   0x18  Code  Gb  mc_protocol.obj [1]
+MC_InitRec              0x0000b2e9   0x12  Code  Gb  mc_rec.obj [1]
+MC_InitScope            0x0000d7a1    0x2  Code  Gb  mc_scope.obj [1]
+MC_InitSerial           0x0000b857   0x20  Code  Gb  mc_serial.obj [1]
+MC_Poll                 0x0000b87d    0x2  Code  Gb  mc_serial.obj [1]
+MC_ProcessSCI           0x0000b695   0x72  Code  Gb  mc_serial.obj [1]
+MC_ProtocolDecoder      0x0000b089   0xfc  Code  Gb  mc_protocol.obj [1]
+MC_ReadLF               0x0000b223   0x52  Code  Gb  mc_protocol.obj [1]
+MC_ReadMem              0x0000b1dd   0x46  Code  Gb  mc_protocol.obj [1]
+MC_ReadScope            0x0000d811   0x3e  Code  Gb  mc_scope.obj [1]
+MC_Recorder             0x0000b5ab   0x12  Code  Gb  mc_rec.obj [1]
+MC_Recorder2            0x0000b5bd   0xd2  Code  Lc  mc_rec.obj [1]
+MC_Rx                   0x0000b793   0xc4  Code  Gb  mc_serial.obj [1]
+MC_SendResponse         0x0000b709   0x8a  Code  Gb  mc_serial.obj [1]
+MC_SetUpRec             0x0000b2fd  0x126  Code  Gb  mc_rec.obj [1]
+MC_SetUpScope           0x0000d7a3   0x6e  Code  Gb  mc_scope.obj [1]
+MC_SkipInBuffer         0x0000b06d    0x4  Code  Lc  mc_protocol.obj [1]
+MC_StartRec             0x0000b423   0x4a  Code  Gb  mc_rec.obj [1]
+MC_StopRec              0x0000b46d   0x38  Code  Gb  mc_rec.obj [1]
+MC_WriteLF              0x0000b275   0x3a  Code  Gb  mc_protocol.obj [1]
+MC_WriteLF_Byte         0x0000b2af   0x3a  Code  Gb  mc_protocol.obj [1]
+MICRO_FLASH_CONFIGURATION
+                        0x00000400   0x10  Data  Lc  Micro.obj [1]
+MICRO_FLASH_CRC         0x0001e7fc    0x2  Data  Gb  Place holder MICRO_FLASH_CRC
+MICRO_FLASH_END {Abs}   0x0001e7fb          --   Gb  command line/config [2]
+MICRO_FLASH_START {Abs}
+                        0x00000600          --   Gb  command line/config [2]
+MICRO_RESETINFO_FOOTER  0x00007b70   0x2c  Data  Gb  Micro.obj [1]
+MICRO_RESETINFO_HEADER  0x00007b44   0x2c  Data  Gb  Micro.obj [1]
+Main_Slot               0x1ffffdba    0x1  Data  Lc  SRMain.obj [1]
+Main_Slot0_Tasks        0x00013668   0x20  Data  Gb  SRMain.obj [1]
+Main_Slot1_Tasks        0x00013688    0x8  Data  Gb  SRMain.obj [1]
+Main_Slot2_Tasks        0x00013690    0x8  Data  Gb  SRMain.obj [1]
+Main_Slot3_Tasks        0x00013698    0x4  Data  Gb  SRMain.obj [1]
+Main_Slot4_Tasks        0x0001369c    0xc  Data  Gb  SRMain.obj [1]
+Main_Slot_Timer         0x1ffffdbc    0x1  Data  Lc  SRMain.obj [1]
+Main_Slot_Timer_Diff    0x1ffffdbd    0x1  Data  Lc  SRMain.obj [1]
+Main_Tasks              0x0000a834   0x14  Data  Gb  SRMain.obj [1]
+Manual_Inject_Level     0x1ffff208    0x4  Data  Lc  Mcl.obj [1]
+Manual_Inject_Param     0x1ffff20c    0x4  Data  Lc  Mcl.obj [1]
+Manual_Pos_Reference    0x1ffff210    0x4  Data  Lc  Mcl.obj [1]
+MasterCommander__FastHandler
+                        0x00007d43    0x4  Code  Gb  MasterCommander.obj [1]
+MasterCommander__Initialize
+                        0x00007d25   0x1a  Code  Gb  MasterCommander.obj [1]
+MasterCommander__PwmHandler
+                        0x00007d3f    0x4  Code  Gb  MasterCommander.obj [1]
+MathCalc__Arctan2F      0x00007f4b   0x10  Code  Gb  MathCalc.obj [1]
+MathCalc__GetInterpolationFastF
+                        0x00007ebd   0x76  Code  Gb  MathCalc.obj [1]
+MathCalc__SinCosF       0x00007f5d   0x98  Code  Gb  MathCalc.obj [1]
+MathCalc__SqrtF         0x00007f35   0x16  Code  Gb  MathCalc.obj [1]
+MaxPwm                  0x1ffffc26    0x2  Data  Lc  SRMCPwm.obj [1]
+Max_Design_Motor_Torque
+                        0x20001338    0x4  Data  Lc  MclSpeedCtrl.obj [1]
+Max_Design_Motor_Torque_Appl
+                        0x2000133c    0x4  Data  Lc  MclSpeedCtrl.obj [1]
+Max_Squared_Inv_Current_Appl
+                        0x20001334    0x4  Data  Lc  MclSpeedCtrl.obj [1]
+MciClassAPointerLoading
+                        0x00013703   0x6e  Code  Gb  MciParametersLoader.obj [1]
+MciParametersLoader__25msHandler
+                        0x000136d3   0x30  Code  Gb  MciParametersLoader.obj [1]
+MciParametersLoader__Initialize
+                        0x000136d1    0x2  Code  Gb  MciParametersLoader.obj [1]
+Mci_Control_State       0x1ffffcc5    0x1  Data  Gb  Mci.obj [1]
+Mci_Digital_Error       0x20000ee4    0x4  Data  Lc  APIMotorControl.obj [1]
+Mci_Digital_Inputs      0x20000ee0    0x4  Data  Lc  APIMotorControl.obj [1]
+Mci_Error               0x1ffffcd0    0x4  Data  Gb  Mci.obj [1]
+Mci_Error_Holder        0x1ffffcd4    0x4  Data  Gb  Mci.obj [1]
+Mci_Flow_Control        0x1ffffcd8    0x4  Data  Gb  Mci.obj [1]
+Mci_GP_Timer            0x1ffffcc8    0x2  Data  Gb  Mci.obj [1]
+Mci_Parameters          0x1ffffccc    0x4  Data  Lc  Mci.obj [1]
+Mci_Parameters_Loaded   0x1ffffcc4    0x1  Data  Lc  Mci.obj [1]
+Mci_Sr_SF_Displs        0x20000c4c    0x4  Data  Gb  MciParametersLoader.obj [1]
+Mci_Status_Control      0x1ffffcdc    0x4  Data  Gb  Mci.obj [1]
+Mci__1msHandler         0x0000340b    0x4  Code  Gb  Mci.obj [1]
+Mci__250usHandler       0x000033f9   0x12  Code  Gb  Mci.obj [1]
+Mci__25msHandler        0x00003695   0x1a  Code  Gb  Mci.obj [1]
+Mci__5msHandler         0x0000340f  0x286  Code  Gb  Mci.obj [1]
+Mci__ClearError         0x00003bff   0x1c  Code  Gb  Mci.obj [1]
+Mci__FvtGetStatus       0x00003cd9   0x12  Code  Gb  Mci.obj [1]
+Mci__FvtStart           0x00003c35   0x54  Code  Gb  Mci.obj [1]
+Mci__FvtStop            0x00003c89   0x38  Code  Gb  Mci.obj [1]
+Mci__GetAnalog          0x00003a91  0x11e  Code  Gb  Mci.obj [1]
+Mci__GetDigital         0x00003a3d   0x42  Code  Gb  Mci.obj [1]
+Mci__GetDigitalList     0x00003a7f   0x12  Code  Gb  Mci.obj [1]
+Mci__GetError           0x000038d9  0x152  Code  Gb  Mci.obj [1]
+Mci__GetErrorList       0x00003a2b   0x12  Code  Gb  Mci.obj [1]
+Mci__GetParams          0x00003bb1   0x4e  Code  Gb  Mci.obj [1]
+Mci__Initialize         0x00002f5d   0x46  Code  Gb  Mci.obj [1]
+Mci__Manual_Injection   0x00003755   0xfc  Code  Gb  Mci.obj [1]
+Mci__PwmHandler         0x00002fa5  0x44e  Code  Gb  Mci.obj [1]
+Mci__Run                0x000036af   0xa2  Code  Gb  Mci.obj [1]
+Mci__SetParams          0x00003c21    0xe  Code  Gb  Mci.obj [1]
+Mci__Stop               0x00003851   0x86  Code  Gb  Mci.obj [1]
+MclDqCtrl__25msHandler  0x00009e4d    0x4  Code  Gb  MclDqCtrl.obj [1]
+MclDqCtrl__Initialize   0x00009ceb   0x36  Code  Gb  MclDqCtrl.obj [1]
+MclDqCtrl__OverrideRegGains
+                        0x00009d21   0x14  Code  Gb  MclDqCtrl.obj [1]
+MclDqCtrl__ResetState   0x00009cb5   0x36  Code  Gb  MclDqCtrl.obj [1]
+MclDqCtrl__RunningHandler
+                        0x00009d35  0x118  Code  Gb  MclDqCtrl.obj [1]
+MclDqRef_Params         0x1ffff18c   0x14  Data  Lc  Mcl.obj [1]
+MclDqRef__1msHandler    0x00009c69   0x44  Code  Gb  MclDqRef.obj [1]
+MclDqRef__Initialize    0x00009c67    0x2  Code  Gb  MclDqRef.obj [1]
+MclDqRef__ResetState    0x00009c3d   0x2a  Code  Gb  MclDqRef.obj [1]
+MclFvt_Data_Test_Dc_Current
+                        0x1ffffb18   0x24  Data  Gb  MclFvt.obj [1]
+MclFvt_Error_List       0x1ffffb3f    0x1  Data  Gb  MclFvt.obj [1]
+MclFvt_Generic_Timer    0x1ffffb42    0x2  Data  Gb  MclFvt.obj [1]
+MclFvt_Injection_Inst_Level
+                        0x1ffffb44    0x4  Data  Gb  MclFvt.obj [1]
+MclFvt_Injection_Level  0x1ffffb48    0x4  Data  Gb  MclFvt.obj [1]
+MclFvt_Injection_Level_Rate
+                        0x1ffffb4c    0x4  Data  Gb  MclFvt.obj [1]
+MclFvt_Injection_Position
+                        0x1ffffb50    0x4  Data  Gb  MclFvt.obj [1]
+MclFvt_State            0x1ffffb3d    0x1  Data  Gb  MclFvt.obj [1]
+MclFvt_Status           0x1ffffb3e    0x1  Data  Gb  MclFvt.obj [1]
+MclFvt_Step             0x1ffffb3c    0x1  Data  Gb  MclFvt.obj [1]
+MclFvt__Entry           0x00006865   0x60  Code  Gb  MclFvt.obj [1]
+MclFvt__Exit            0x000068c5    0xc  Code  Gb  MclFvt.obj [1]
+MclFvt__GetResult       0x00006b8d   0xd4  Code  Gb  MclFvt.obj [1]
+MclFvt__GetStatus       0x00006b6d   0x20  Code  Gb  MclFvt.obj [1]
+MclFvt__GuardCondition  0x00006b5d   0x10  Code  Gb  MclFvt.obj [1]
+MclFvt__PwmHandler      0x000068d1  0x28c  Code  Gb  MclFvt.obj [1]
+MclInputProc__1msHandler
+                        0x000093e5   0xf6  Code  Gb  MclInputProc.obj [1]
+MclInputProc__Initialize
+                        0x000092eb   0x42  Code  Gb  MclInputProc.obj [1]
+MclInputProc__ResetState
+                        0x000092d9   0x12  Code  Gb  MclInputProc.obj [1]
+MclInputProc__RunningHandler
+                        0x0000932d   0xb6  Code  Gb  MclInputProc.obj [1]
+MclInput_Params         0x1ffff1bc    0x8  Data  Gb  Mcl.obj [1]
+MclObserver_Params      0x1ffff09c   0x38  Data  Lc  Mcl.obj [1]
+MclObserver__1msHandler
+                        0x00009801   0xce  Code  Gb  MclObserver.obj [1]
+MclObserver__Initialize
+                        0x000097b7   0x4a  Code  Gb  MclObserver.obj [1]
+MclObserver__ResetState
+                        0x000096f9   0xbe  Code  Gb  MclObserver.obj [1]
+MclPwm_Params           0x1ffff1ec   0x1c  Data  Gb  Mcl.obj [1]
+MclPwm__25msHandler     0x0000a0b5   0x38  Code  Gb  MclPwm.obj [1]
+MclPwm__Initialize      0x00009ff1   0x74  Code  Gb  MclPwm.obj [1]
+MclPwm__ResetState      0x00009f99   0x58  Code  Gb  MclPwm.obj [1]
+MclPwm__RunningHandler  0x0000a065   0x50  Code  Gb  MclPwm.obj [1]
+MclSpeedCtrl_Params     0x1ffff178   0x14  Data  Lc  Mcl.obj [1]
+MclSpeedCtrl__1msHandler
+                        0x00009add   0x12  Code  Gb  MclSpeedCtrl.obj [1]
+MclSpeedCtrl__25msHandler
+                        0x00009aef   0x1e  Code  Gb  MclSpeedCtrl.obj [1]
+MclSpeedCtrl__Initialize
+                        0x00009a83   0x58  Code  Gb  MclSpeedCtrl.obj [1]
+MclSpeedCtrl__ResetState
+                        0x00009a39   0x4a  Code  Gb  MclSpeedCtrl.obj [1]
+Mcl_Complete_Params_sBPM_SF
+                        0x2000004c  0x4dc  Data  Gb  MotorSelector.obj [1]
+Mcl_Cs                  0x1fffefe0   0x64  Data  Gb  Mcl.obj [1]
+Mcl_DQ_Ctrl_IO          0x1ffff0d4   0x2c  Data  Gb  Mcl.obj [1]
+Mcl_DQ_Ref_IO           0x1ffff144   0x1c  Data  Lc  Mcl.obj [1]
+Mcl_Flow_Manager        0x1ffff1c5    0x1  Data  Lc  Mcl.obj [1]
+Mcl_IO                  0x1ffff044   0x58  Data  Gb  Mcl.obj [1]
+Mcl_Input_Proc_IO       0x1ffff124   0x20  Data  Gb  Mcl.obj [1]
+Mcl_Observer_IO         0x1ffff100   0x24  Data  Lc  Mcl.obj [1]
+Mcl_Params_Displ1       0x1ffff1d0    0x4  Data  Gb  Mcl.obj [1]
+Mcl_Params_Displ10      0x1ffff1e0    0x4  Data  Lc  Mcl.obj [1]
+Mcl_Params_Displ11      0x1ffff1e4    0x4  Data  Lc  Mcl.obj [1]
+Mcl_Params_Displ13      0x1ffff1e8    0x4  Data  Lc  Mcl.obj [1]
+Mcl_Params_Displ3       0x1ffff1d4    0x4  Data  Lc  Mcl.obj [1]
+Mcl_Params_Displ4       0x1ffff1d8    0x4  Data  Lc  Mcl.obj [1]
+Mcl_Params_Displ9       0x1ffff1dc    0x4  Data  Lc  Mcl.obj [1]
+Mcl_Params_SF           0x20000048    0x4  Data  Gb  MotorSelector.obj [1]
+Mcl_Pwm_IO              0x1ffff160   0x18  Data  Gb  Mcl.obj [1]
+Mcl_Quantities          0x1fffeeec   0xf4  Data  Gb  Mcl.obj [1]
+Mcl_SF_Displs           0x1ffffca4   0x20  Data  Gb  MciParametersLoader.obj [1]
+Mcl_Speed_Ctrl_IO       0x1ffff1a0   0x10  Data  Lc  Mcl.obj [1]
+Mcl_Starting_State      0x1ffff1c4    0x1  Data  Lc  Mcl.obj [1]
+Mcl__1msHandler         0x0000608b   0x6a  Code  Gb  Mcl.obj [1]
+Mcl__250usHandler       0x00005f69  0x122  Code  Gb  Mcl.obj [1]
+Mcl__25msHandler        0x00006225   0xa0  Code  Gb  Mcl.obj [1]
+Mcl__5msHandler         0x000060f5  0x130  Code  Gb  Mcl.obj [1]
+Mcl__GetDigital         0x00006431   0xb4  Code  Gb  Mcl.obj [1]
+Mcl__Initialize         0x00005bbd  0x24a  Code  Gb  Mcl.obj [1]
+Mcl__ParamsInitialize   0x00005e07  0x160  Code  Gb  Mcl.obj [1]
+Mcl__ResetAll           0x0000635d   0xd2  Code  Gb  Mcl.obj [1]
+Mcl__ResetDigital       0x00006559   0x3e  Code  Gb  Mcl.obj [1]
+Mcl__RunningReset       0x000062cd   0x86  Code  Gb  Mcl.obj [1]
+Mcl__SetDigital         0x000064e5   0x6e  Code  Gb  Mcl.obj [1]
+Mcl__SetParams          0x00006597   0x4e  Code  Gb  Mcl.obj [1]
+Mean_Speed_Sum          0x1ffff220    0x4  Data  Lc  Mcl.obj [1]
+Message_Response_Request
+                        0x1ffffd58    0x2  Data  Lc  API007App.obj [1]
+Message_States_Timer    0x1ffffd56    0x2  Data  Lc  API007App.obj [1]
+MicroBootFlashTest      0x0000774d   0x60  Code  Lc  Micro.obj [1]
+MicroBootWatchdogTest   0x000076b5   0x50  Code  Lc  Micro.obj [1]
+MicroClearResetData     0x00007a31   0x70  Code  Lc  Micro.obj [1]
+MicroFailSafe           0x00007743    0xa  Code  Lc  Micro.obj [1]
+MicroGetClocksStatus    0x000075cd   0xa8  Code  Lc  Micro.obj [1]
+MicroHWInit             0x00007679   0x36  Code  Lc  Micro.obj [1]
+MicroInitClk            0x000074cd   0x8a  Code  Lc  Micro.obj [1]
+MicroInitClkLowSpeed    0x00007561   0x2e  Code  Lc  Micro.obj [1]
+MicroJumptoResetHandler
+                        0x000138cd   0x10  Code  Lc  MicroExtInterruptJumpTable.obj [1]
+MicroResetHandling      0x000077d1  0x25a  Code  Lc  Micro.obj [1]
+MicroUpdateResetInfoDataCrc
+                        0x00007ac9   0x16  Code  Lc  Micro.obj [1]
+MicroValidateResetInfoDataCrc
+                        0x00007aa1   0x28  Code  Lc  Micro.obj [1]
+Micro_ClocksStatus      0x1ffffd14   0x18  Data  Lc  Micro.obj [1]
+Micro_Flash_Crc         0x1ffffd84    0x2  Data  Lc  Micro.obj [1]
+Micro_Flash_Crc_Pt      0x1ffffd90    0x4  Data  Lc  Micro.obj [1]
+Micro_ResetInfo         0x1fffe000   0x34  Data  Lc  Micro.obj [1]
+Micro_ResetInfo_Footer  0x20001fd4   0x2c  Data  Lc  Micro.obj [1]
+Micro__BootTest         0x00006ea5  0x308  Code  Gb  Micro.obj [1]
+Micro__ConfigureWDT     0x00007705   0x3e  Code  Gb  Micro.obj [1]
+Micro__EnableWarmResetAction
+                        0x0000a51d   0xa4  Code  Gb  Micro.obj [1]
+Micro__ForceReset       0x00007403   0x1e  Code  Gb  Micro.obj [1]
+Micro__GetClock         0x000073d3    0x6  Code  Gb  Micro.obj [1]
+Micro__GetLastResetstatus
+                        0x000073d9   0x2a  Code  Gb  Micro.obj [1]
+Micro__GetResetMode     0x00007421   0x2a  Code  Gb  Micro.obj [1]
+Micro__Initialize       0x00006ca1  0x17e  Code  Gb  Micro.obj [1]
+Micro__LPTimerInterrupt
+                        0x00006e8f   0x16  Code  Gb  Micro.obj [1]
+Micro__NVICDisableIRQ   0x00006e77   0x18  Code  Gb  Micro.obj [1]
+Micro__NVICEnableIRQ    0x00006e1f   0x58  Code  Gb  Micro.obj [1]
+Micro__SRFlashTest      0x0000744d   0x7a  Code  Gb  Micro.obj [1]
+Micro__SRRamTest        0x000071ad  0x1ca  Code  Gb  Micro.obj [1]
+Micro__ServiceWatchdog  0x000073ab   0x1c  Code  Gb  Micro.obj [1]
+Micro__SetNormalSpeedMode
+                        0x00007377   0x34  Code  Gb  Micro.obj [1]
+Micro__Trap             0x000073c7    0xc  Code  Gb  Micro.obj [1]
+Millis__GetFreeRunningCounter
+                        0x000120d5    0x8  Code  Gb  Millis.obj [1]
+Millis__Handler1ms      0x000120c5    0xe  Code  Gb  Millis.obj [1]
+Millis__Initialize      0x000120c1    0x4  Code  Gb  Millis.obj [1]
+Millis__SlowHandler     0x000120d3    0x2  Code  Gb  Millis.obj [1]
+Milliseconds            0x1ffffe00    0x4  Data  Lc  Millis.obj [1]
+Mode                    0x1ffffdca    0x1  Data  Lc  Mode.obj [1]
+Mode__GetMode           0x0000b969    0x6  Code  Gb  Mode.obj [1]
+Mode__GetSubMode        0x0000b96f    0xc  Code  Gb  Mode.obj [1]
+Mode__Handler           0x0000b97b   0x6c  Code  Gb  Mode.obj [1]
+Mode__Initialize        0x0000b8f1   0x40  Code  Gb  Mode.obj [1]
+Mode__IsProgrammingEngaged
+                        0x0000ba07   0x14  Code  Gb  Mode.obj [1]
+Mode__SaveRemoteMode    0x0000ba1b    0x6  Code  Gb  Mode.obj [1]
+Mode__SaveRemoteSubMode
+                        0x0000ba21    0x6  Code  Gb  Mode.obj [1]
+Mode__SetMode           0x0000b931   0x1a  Code  Gb  Mode.obj [1]
+Mode__SetModeExtended   0x0000b94b   0x1e  Code  Gb  Mode.obj [1]
+Mode__SpecialHeartBeat  0x0000b9e7   0x20  Code  Gb  Mode.obj [1]
+MotorMovingHandlerBpm   0x00002705  0x1da  Code  Lc  SRMotorSafetyMgr.obj [1]
+MotorSelector__Handler  0x000138c9    0x2  Code  Gb  MotorSelector.obj [1]
+MotorSelector__Initialize
+                        0x000138b5    0xe  Code  Gb  MotorSelector.obj [1]
+Motor_Selector_Params_Raady
+                        0x20000044    0x1  Data  Gb  MotorSelector.obj [1]
+Motor_Sr_Params_SF      0x20000c50   0x34  Data  Gb  MciParametersLoader.obj [1]
+Motor_Type              0x1ffffcfd    0x1  Data  Gb  ThermalModel.obj [1]
+Msg_Count               0x2000105f    0x1  Data  Lc  Win.obj [1]
+NON_MASKABLE_JUMP_INTERRUPT_TABLE
+                        0x00000000    0x8  Data  Gb  MicroExtInterruptJumpTable.obj [1]
+NSR_API020_Speed_Monitor_TX_Status
+                        0x1ffffdec    0x1  Data  Gb  SRMCUSpeedMonitor.obj [1]
+NSR_Applied_Duty_A_Sum  0x20000d70    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Applied_Duty_A_Sum_High
+                        0x20000dd4    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Cross_Event     0x20000caa    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Ignored_First
+                        0x20000d80    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Period     0x20000d74    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Period_Cycle_Counter
+                        0x20000d6c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Period_Cycle_Total
+                        0x20000ca9    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Period_High_Threshold
+                        0x20000d5c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Period_Low_Threshold
+                        0x20000d60    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Fund_Period_Time_Counter
+                        0x20000d68    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Avg_Threshold       0x20000d64    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CalibrationCntr     0x20000da4    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Check_Unlock_Door_Speed_Delta_Voltage
+                        0x20000d78    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Check_Unlock_Door_Speed_Timer
+                        0x20000d7c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Curr_Rms_Counter    0x20000dc0    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentA            0x20000cd2    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentB            0x20000cd6    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentC            0x20000cda    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentOffsetA      0x20000cd4    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentOffsetB      0x20000cd8    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentOffsetC      0x20000cdc    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentOffsetHistA  0x20000d8c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentOffsetHistB  0x20000d90    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_CurrentOffsetHistC  0x20000d94    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_DCBus               0x20000ce6    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Fault_Holder        0x1ffffde5    0x1  Data  Lc  SRMCAtod.obj [1]
+NSR_MCPwm_Diag_State    0x1ffffc40    0x1  Data  Lc  SRMCPwm.obj [1]
+NSR_MCPwm_Errors        0x1ffffc41    0x1  Data  Lc  SRMCPwm.obj [1]
+NSR_MCPwm_One_Timeout   0x1ffffc48    0x4  Data  Lc  SRMCPwm.obj [1]
+NSR_MCPwm_Pulse_Active_Level
+                        0x1ffffc4c    0x4  Data  Lc  SRMCPwm.obj [1]
+NSR_MCPwm_Pulse_Default_Level
+                        0x1ffffc50    0x4  Data  Lc  SRMCPwm.obj [1]
+NSR_MCPwm_Zero_Timeout  0x1ffffc44    0x4  Data  Lc  SRMCPwm.obj [1]
+NSR_Motor_Fault         0x20000cce    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Motor_Fault_Holder  0x20000d82    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Motor_Flags         0x20000cd0    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Overload_Counter    0x20000d88    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Overload_Temp       0x20000dc8    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Phase_Lost_Counter  0x20000d86    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_PowerUpTimer        0x20000d84    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Raw_CurrentA        0x20000cde    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Raw_CurrentB        0x20000ce0    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Raw_CurrentC        0x20000ce2    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SafetyMngr_State    0x20000ca5    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Sector              0x20000ce4    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Speed_Monitor_High_Speed_Found
+                        0x1ffffdeb    0x1  Data  Gb  SRMCUSpeedMonitor.obj [1]
+NSR_Speed_Monitor_TX_Handler_Timer
+                        0x1ffffded    0x1  Data  Gb  SRMCUSpeedMonitor.obj [1]
+NSR_SquaredCurrentRmsA  0x20000da8    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SquaredCurrentRmsB  0x20000dac    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SquaredCurrentRmsC  0x20000db0    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SquaredCurrentSumA  0x20000db4    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SquaredCurrentSumB  0x20000db8    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SquaredCurrentSumC  0x20000dbc    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_SquaredCurrentsSum  0x20000da0    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Squared_Current     0x20000dcc    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_State               0x1ffffde4    0x1  Data  Lc  SRMCAtod.obj [1]
+NSR_Threshold           0x1ffffde6    0x2  Data  Lc  SRMCAtod.obj [1]
+NSR_Timeout_Failure_Retry
+                        0x20000dc4    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_Voltage_Frequency   0x20000dd0    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_ZeroSpeedDebouncer  0x20000d98    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+NSR_ZeroSpeedWithCurrTimer
+                        0x20000d9c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+N_API020_Door_Lock_RX_Status
+                        0x1ffffc91    0x1  Data  Lc  SRAPI020Safety.obj [1]
+N_Api020                0x1ffffc94   0x10  Data  Lc  SRAPI020Safety.obj [1]
+N_Interrupt_Slot        0x1ffffdbf    0x1  Data  Lc  SRMain.obj [1]
+N_Is_Settingfile_Valid  0x1ffffdb8    0x1  Data  Lc  SettingFile.obj [1]
+N_Isr_Attempt_Cntr      0x1ffffd83    0x1  Data  Lc  SRIsrMonitor.obj [1]
+N_Isr_Enter_Cntr        0x1ffffd80    0x1  Data  Lc  SRIsrMonitor.obj [1]
+N_Isr_Exit_Cntr         0x1ffffd81    0x1  Data  Lc  SRIsrMonitor.obj [1]
+N_Isr_LowSpeed_Mode     0x1ffffd82    0x1  Data  Lc  SRIsrMonitor.obj [1]
+N_Isr_Max               0x1ffffd7e    0x1  Data  Lc  SRIsrMonitor.obj [1]
+N_Isr_Min               0x1ffffd7f    0x1  Data  Lc  SRIsrMonitor.obj [1]
+N_Main_Slot             0x1ffffdbe    0x1  Data  Lc  SRMain.obj [1]
+N_Mode                  0x1ffffdcc    0x1  Data  Lc  Mode.obj [1]
+N_SRClockMonitor_Counter
+                        0x1ffffdae    0x2  Data  Lc  SRClockMonitor.obj [1]
+N_SRClockMonitor_ErrorCount
+                        0x1ffffdab    0x1  Data  Lc  SRClockMonitor.obj [1]
+N_SRClockMonitor_Event  0x1ffffdac    0x1  Data  Lc  SRClockMonitor.obj [1]
+N_SRClock_First_Reading
+                        0x1ffffdaa    0x1  Data  Lc  SRClockMonitor.obj [1]
+N_SRTimerReference_Counter
+                        0x1ffffddc    0x4  Data  Lc  SRTimerReference.obj [1]
+N_Samples               0x1ffff1c8    0x2  Data  Lc  Mcl.obj [1]
+N_Samples_inv           0x1ffff224    0x4  Data  Lc  Mcl.obj [1]
+N_Settingfile_Section_Position
+                        0x1ffffdb9    0x1  Data  Lc  SettingFile.obj [1]
+Node_Not_Sending_Timer  0x20001061    0x1  Data  Lc  Win.obj [1]
+Node_Sent_Counter       0x20001060    0x1  Data  Lc  Win.obj [1]
+NominalPwmPeriod        0x1ffffc2c    0x2  Data  Lc  SRMCPwm.obj [1]
+Obs_Speed_Rotor_Flux    0x200011c8    0x4  Data  Lc  MclObserver.obj [1]
+Obs_Speed_Rotor_Flux_sum
+                        0x200011cc    0x4  Data  Lc  MclObserver.obj [1]
+Observer                0x00005405  0x136  Code  Gb  SelfCommissioning.obj [1]
+ObserverPmsm__BemfObsDQF
+                        0x00007d81   0xce  Code  Gb  ObserverPmsm.obj [1]
+ObserverPmsm__TrackingObsF
+                        0x00007e51   0x5a  Code  Gb  ObserverPmsm.obj [1]
+OutStream_Write         0x00013243   0x40  Code  Lc  lz77_init.o [5]
+Over_Flux_Ratio         0x1ffffd94    0x4  Data  Lc  MclDqRef.obj [1]
+Over_Torque_Time_Counter
+                        0x1ffff1ca    0x2  Data  Lc  Mcl.obj [1]
+PCI_PORT_LIST           0x00008f64   0x14  Data  Gb  Gpio.obj [1]
+POSSIBLE_BLOCKED_APIS_LIST
+                        0x0000f900   0x14  Data  Gb  Reveal.obj [1]
+PRODUCTINFO_BOARD_MAIN_PROJECT_DATA
+                        0x00012acc   0x34  Data  Lc  ProductInfo.obj [1]
+Parameter_Initialize    0x000051b5  0x18c  Code  Lc  SelfCommissioning.obj [1]
+ParamsReady             0x1ffffcfc    0x1  Data  Lc  ThermalModel.obj [1]
+Pi__CalcPiBackCalcF     0x0000887d   0x7e  Code  Gb  Pi.obj [1]
+Pi__CalcPiF             0x00008809   0x70  Code  Gb  Pi.obj [1]
+Pi__PiRegNoAntiWindupF  0x000088fb   0x44  Code  Gb  Pi.obj [1]
+Pnt_Rx_Buffer           0x1ffffd60    0x4  Data  Lc  API007App.obj [1]
+Pole_Pairs_Inv          0x200011f8    0x4  Data  Lc  MclObserver.obj [1]
+Prev_Rx_Msg_Count       0x20001078   0x10  Data  Lc  Win.obj [1]
+ProductInfo__GetNumProjects
+                        0x00012aab    0xa  Code  Gb  ProductInfo.obj [1]
+ProductInfo__GetProjectData
+                        0x00012a85   0x26  Code  Gb  ProductInfo.obj [1]
+ProductInfo__GetProjectIDs
+                        0x00012ab5    0xa  Code  Gb  ProductInfo.obj [1]
+PublishNextPacket       0x00011fef   0xcc  Code  Lc  API010PollVar.obj [1]
+Publish_Fvt_Result      0x00012d29   0xa8  Code  Lc  APIMotorControl.obj [1]
+PwmFrequency            0x1ffffc28    0x2  Data  Lc  SRMCPwm.obj [1]
+PwmModulationPrm        0x2000074c    0xc  Data  Gb  SelfCommissioning.obj [1]
+PwmModulation__DeadtimeCompensationGradientF
+                        0x00008cb1  0x15e  Code  Gb  PwmModulation.obj [1]
+PwmModulation__InverterLossCompF
+                        0x00008b99  0x102  Code  Gb  PwmModulation.obj [1]
+PwmModulation__SpaceVectorModulationF
+                        0x00008a0d  0x17e  Code  Gb  PwmModulation.obj [1]
+RAM_TOTAL_SIZE {Abs}    0x00004000          --   Gb  command line/config [2]
+REVEAL_PARSER           0x0000f860   0xa0  Data  Gb  Reveal.obj [1]
+Ram0_Page_End_Protection
+                        0x1ffffffc    0x4  Data  Lc  Micro.obj [1]
+Ram1_Page_Start_Protection
+                        0x20000000    0x4  Data  Lc  Micro.obj [1]
+RcThermalUpdate         0x000025bd  0x144  Code  Lc  SRMotorSafetyMgr.obj [1]
+Region$$Table$$Base     0x00013860          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0001389c          --   Gb  - Linker created -
+Remote_Mode             0x1ffffdcb    0x1  Data  Lc  Mode.obj [1]
+Remote_SubMode          0x1ffffe07    0x1  Data  Lc  Mode.obj [1]
+Requested_Sub_Mode      0x1ffffdcd    0x1  Data  Lc  Mode.obj [1]
+Res_Est_Flags           0x1ffffb5a    0x2  Data  Lc  ResistanceEstimation.obj [1]
+Res_Est_IO              0x1ffff1b0    0xc  Data  Lc  Mcl.obj [1]
+Res_Est_State           0x1ffffb55    0x1  Data  Lc  ResistanceEstimation.obj [1]
+Res_Frequency_Counter   0x1ffffb56    0x1  Data  Lc  ResistanceEstimation.obj [1]
+Res_Frequency_Counter_Spin
+                        0x1ffffb57    0x1  Data  Lc  ResistanceEstimation.obj [1]
+Res_Frequency_Timer     0x1ffffb5e    0x2  Data  Lc  ResistanceEstimation.obj [1]
+Res_Measure_Rate_State  0x1ffffb54    0x1  Data  Lc  ResistanceEstimation.obj [1]
+ResetModel              0x1ffffd10    0x4  Data  Gb  ThermalModel.obj [1]
+ResistanceEstimation__Handler25ms
+                        0x000091d7    0xc  Code  Gb  ResistanceEstimation.obj [1]
+ResistanceEstimation__Initialize
+                        0x0000918d   0x4a  Code  Gb  ResistanceEstimation.obj [1]
+Resistance_Adaptation   0x000098d1  0x10a  Code  Lc  MclObserver.obj [1]
+RevealHandlerIncomming  0x0000eaf1  0x88c  Code  Lc  Reveal.obj [1]
+RevealHandlerOutgoing   0x0000f381  0x4dc  Code  Lc  Reveal.obj [1]
+Reveal_1s               0x1fffee74    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Ack_Buffer       0x1fffe8e4   0x10  Data  Lc  Reveal.obj [1]
+Reveal_Ack_Read         0x1fffee63    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Ack_Write        0x1fffee62    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Adapter_Buffer   0x1fffe890   0x4c  Data  Lc  Reveal.obj [1]
+Reveal_Blocked_Messages
+                        0x1fffeea0   0x4c  Data  Lc  Reveal.obj [1]
+Reveal_Blocked_Messages_Remaining_Time
+                        0x1fffee7e    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Drop_flag        0x1fffee66    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Heartbeat_Counter
+                        0x1fffee72    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Heartbeat_Node_Counter
+                        0x1fffee90   0x10  Data  Lc  Reveal.obj [1]
+Reveal_Heartbeat_Timer  0x1fffee70    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Min_Space        0x1fffee65    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Node_Status      0x1fffee7c    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Outgoing_State   0x1fffee64    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Priority_Min_Space
+                        0x1fffee61    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Priority_Queue_Full_Counter
+                        0x1fffee6a    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Priority_Realign_Counter
+                        0x1fffee6e    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Priority_Self_Drop_Counter
+                        0x1fffee6c    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Queue            0x1fffe8f4  0x40c  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Debounce   0x1fffee80   0x10  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Full_Counter
+                        0x1fffee76    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Priority   0x1fffed00  0x15c  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Priority_Debounce
+                        0x1fffe8dc    0x8  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Priority_Read
+                        0x1fffee60    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Priority_Write
+                        0x1fffee5f    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Read       0x1fffee5d    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Retry      0x1fffee5e    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Timeout    0x1fffee68    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Queue_Write      0x1fffee5c    0x1  Data  Lc  Reveal.obj [1]
+Reveal_Realign_Counter  0x1fffee7a    0x2  Data  Lc  Reveal.obj [1]
+Reveal_Self_Drop_Counter
+                        0x1fffee78    0x2  Data  Lc  Reveal.obj [1]
+Reveal__AddDataU16      0x0000e6df   0x70  Code  Gb  Reveal.obj [1]
+Reveal__AddDataU32      0x0000e74f   0x78  Code  Gb  Reveal.obj [1]
+Reveal__AddDataU8       0x0000e633   0x6c  Code  Gb  Reveal.obj [1]
+Reveal__AddDataU8Buffer
+                        0x0000e69f   0x40  Code  Gb  Reveal.obj [1]
+Reveal__GetNodestatus   0x0000e8bd    0xa  Code  Gb  Reveal.obj [1]
+Reveal__Handler         0x0000e365   0x34  Code  Gb  Reveal.obj [1]
+Reveal__Handler1ms      0x0000e399  0x122  Code  Gb  Reveal.obj [1]
+Reveal__Initialize      0x0000e1fd  0x168  Code  Gb  Reveal.obj [1]
+Reveal__NewFeedback     0x0000e4bd   0xd4  Code  Gb  Reveal.obj [1]
+Reveal__PriorityNewCommand
+                        0x0000e61d   0x16  Code  Gb  Reveal.obj [1]
+Reveal__PriorityNewFeedback
+                        0x0000e591   0x8c  Code  Gb  Reveal.obj [1]
+Reveal__QueueCommand    0x0000e7c9   0xf4  Code  Gb  Reveal.obj [1]
+Reveal__QueueMessageU8  0x0000e8c9  0x1ba  Code  Gb  Reveal.obj [1]
+Rotor_Curr_Id           0x200011e8    0x4  Data  Lc  MclObserver.obj [1]
+Rotor_Curr_Id_Abs       0x200011f4    0x4  Data  Lc  MclObserver.obj [1]
+Rotor_Curr_Iq           0x200011ec    0x4  Data  Lc  MclObserver.obj [1]
+Rotor_Curr_Iq_Abs       0x200011f0    0x4  Data  Lc  MclObserver.obj [1]
+Rotor_Flux              0x200011a0    0xc  Data  Lc  MclObserver.obj [1]
+RunEvents               0x0000d081   0xfc  Code  Lc  ThermalModelCoreDD.obj [1]
+RunEvents               0x0000c5b9   0xfc  Code  Lc  ThermalModelCoreBPM.obj [1]
+Run_Time_Stack_Pointer  0x1ffffd88    0x4  Data  Gb  Micro.obj [1]
+Run_Time_Stack_Pointer_Inv
+                        0x1ffffd8c    0x4  Data  Gb  Micro.obj [1]
+SETTINGFILE_SIZE {Abs}  0x00001800          --   Gb  command line/config [2]
+SFUPDATER_SECTIONS      0x00010724    0x2  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Data_Index    0x1ffffbe0    0x2  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Data_Size     0x1ffffbde    0x2  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Displacement_Address
+                        0x1ffffbf0    0x4  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Displacement_Data_Index
+                        0x1ffffbe4    0x2  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Displacement_Reveal_Max_Size
+                        0x1ffffbdc    0x1  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Erase_Address
+                        0x1ffffbec    0x4  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Received_Displacement_Info
+                        0x1ffffbcc    0xc  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Requested_Displacement_Info
+                        0x1ffffbc0    0xc  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Requester_Status
+                        0x1ffffbdb    0x1  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Requester_Timer
+                        0x1ffffbe6    0x2  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Reveal_Max_Size
+                        0x1ffffbda    0x1  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Section_Address
+                        0x1ffffbe8    0x4  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Section_Index
+                        0x1ffffbd9    0x1  Data  Lc  SFUpdater.obj [1]
+SFUpdater_State         0x1ffffbd8    0x1  Data  Lc  SFUpdater.obj [1]
+SFUpdater_Timer         0x1ffffbe2    0x2  Data  Lc  SFUpdater.obj [1]
+SFUpdater__Initialize   0x00010445   0x3e  Code  Gb  SFUpdater.obj [1]
+SFUpdater__RxMaxPackage
+                        0x00010485   0x4c  Code  Gb  SFUpdater.obj [1]
+SFUpdater__RxSFData     0x00010651   0xce  Code  Gb  SFUpdater.obj [1]
+SFUpdater__RxSFDisplacementData
+                        0x000105e1   0x6e  Code  Gb  SFUpdater.obj [1]
+SFUpdater__RxSFDisplacementInfo
+                        0x000105ab   0x36  Code  Gb  SFUpdater.obj [1]
+SFUpdater__RxSFInfo     0x000104d1   0xda  Code  Gb  SFUpdater.obj [1]
+SFUpdater__ValidateFlashDisplacementData
+                        0x0001064f    0x2  Code  Gb  SFUpdater.obj [1]
+SRAPI020Safety__FeedbackParser
+                        0x00012e19   0xd4  Code  Gb  SRAPI020Safety.obj [1]
+SRAPI020Safety__GetRxValue
+                        0x00012eed   0x7c  Code  Gb  SRAPI020Safety.obj [1]
+SRAPI020Safety__Initialize
+                        0x00012dd1   0x48  Code  Gb  SRAPI020Safety.obj [1]
+SRAPI020Safety__SetTxValue
+                        0x00012f69   0xb6  Code  Gb  SRAPI020Safety.obj [1]
+SRClockMonitor_Counter  0x1ffffda8    0x2  Data  Lc  SRClockMonitor.obj [1]
+SRClockMonitor_ErrorCount
+                        0x1ffffda5    0x1  Data  Lc  SRClockMonitor.obj [1]
+SRClockMonitor_Event    0x1ffffda6    0x1  Data  Lc  SRClockMonitor.obj [1]
+SRClockMonitor__Initialize
+                        0x0000a105   0x3a  Code  Gb  SRClockMonitor.obj [1]
+SRClockMonitor__Monitor1ms
+                        0x0000a13f   0x70  Code  Gb  SRClockMonitor.obj [1]
+SRClockMonitor__MonitorExtClk
+                        0x0000a1af   0x94  Code  Gb  SRClockMonitor.obj [1]
+SRClock_First_Reading   0x1ffffda4    0x1  Data  Lc  SRClockMonitor.obj [1]
+SRData__CheckArray      0x00002bf5   0xf4  Code  Gb  SRData.obj [1]
+SRData__CheckByte       0x00002af3   0xda  Code  Gb  SRData.obj [1]
+SRData__CheckFloat      0x00002ebb   0xa2  Code  Gb  SRData.obj [1]
+SRData__CheckLong       0x00002df3   0xa2  Code  Gb  SRData.obj [1]
+SRData__CheckShort      0x00002d03   0xd8  Code  Gb  SRData.obj [1]
+SRData__UpdateArray     0x00002bcd   0x28  Code  Gb  SRData.obj [1]
+SRData__UpdateByte      0x00002ad9   0x1a  Code  Gb  SRData.obj [1]
+SRData__UpdateFloat     0x00002e95   0x26  Code  Gb  SRData.obj [1]
+SRData__UpdateLong      0x00002ddb   0x18  Code  Gb  SRData.obj [1]
+SRData__UpdateShort     0x00002ce9   0x1a  Code  Gb  SRData.obj [1]
+SREvery_Interrupt_Tasks
+                        0x0000a7c8    0x8  Data  Gb  SRMain.obj [1]
+SREvery_Slot_Tasks      0x0000a7ac    0x8  Data  Gb  SRMain.obj [1]
+SRException__Initialize
+                        0x00004b61    0x8  Code  Gb  SRException.obj [1]
+SRException__Queue      0x00004b69   0x66  Code  Gb  SRException.obj [1]
+SRFLOW_EVENT_ISR_LIST   0x00002acc    0xc  Data  Gb  SRFlow.obj [1]
+SRFLOW_EVENT_MAIN_LIST  0x00002ab8   0x14  Data  Gb  SRFlow.obj [1]
+SRFlow_ISR_Events       0x1ffffc14    0xc  Data  Lc  SRFlow.obj [1]
+SRFlow_ISR_Pointer      0x1ffffbfe    0x1  Data  Lc  SRFlow.obj [1]
+SRFlow_Init_Events      0x1ffffbf4    0x8  Data  Lc  SRFlow.obj [1]
+SRFlow_Init_Pointer     0x1ffffbfc    0x1  Data  Lc  SRFlow.obj [1]
+SRFlow_LowPower_Events  0x1ffffc20    0x4  Data  Lc  SRFlow.obj [1]
+SRFlow_LowPower_Pointer
+                        0x1ffffbff    0x1  Data  Lc  SRFlow.obj [1]
+SRFlow_Main_Events      0x1ffffc00   0x14  Data  Lc  SRFlow.obj [1]
+SRFlow_Main_Pointer     0x1ffffbfd    0x1  Data  Lc  SRFlow.obj [1]
+SRFlow__ISRCheck        0x00002a51   0x64  Code  Gb  SRFlow.obj [1]
+SRFlow__ISRLogEvent     0x00002a31   0x1e  Code  Gb  SRFlow.obj [1]
+SRFlow__InitCheck       0x00002955   0x58  Code  Gb  SRFlow.obj [1]
+SRFlow__InitLogEvent    0x0000293b   0x1a  Code  Gb  SRFlow.obj [1]
+SRFlow__Initialize      0x000028f1   0x4a  Code  Gb  SRFlow.obj [1]
+SRFlow__MainCheck       0x000029c9   0x68  Code  Gb  SRFlow.obj [1]
+SRFlow__MainLogEvent    0x000029ad   0x1c  Code  Gb  SRFlow.obj [1]
+SRInitialization_Tasks  0x0000a774   0x38  Data  Gb  SRMain.obj [1]
+SRInitializeAD0         0x00004099   0xc0  Code  Lc  SRMCAtod.obj [1]
+SRInitializeAD1         0x00004159   0xc6  Code  Lc  SRMCAtod.obj [1]
+SRInterrupt_Slot0_Tasks
+                        0x00013648    0x8  Data  Gb  SRMain.obj [1]
+SRInterrupt_Slot1_Tasks
+                        0x00013650    0x8  Data  Gb  SRMain.obj [1]
+SRInterrupt_Slot2_Tasks
+                        0x00013658    0x8  Data  Gb  SRMain.obj [1]
+SRInterrupt_Slot3_Tasks
+                        0x00013660    0x8  Data  Gb  SRMain.obj [1]
+SRInterrupt_Tasks       0x0000a7d0   0x10  Data  Gb  SRMain.obj [1]
+SRIsrMonitor__EnterIsr  0x000049fd   0x48  Code  Gb  SRIsrMonitor.obj [1]
+SRIsrMonitor__ExitIsr   0x00004a45   0x2e  Code  Gb  SRIsrMonitor.obj [1]
+SRIsrMonitor__Handler   0x00004a73   0xe8  Code  Gb  SRIsrMonitor.obj [1]
+SRIsrMonitor__Initialize
+                        0x000049a1   0x5c  Code  Gb  SRIsrMonitor.obj [1]
+SRMCAtod__DiagnosticHandler
+                        0x00003e31  0x1e2  Code  Gb  SRMCAtod.obj [1]
+SRMCAtod__EnableDiagnostic
+                        0x00004013   0x40  Code  Gb  SRMCAtod.obj [1]
+SRMCAtod__GetDiagnosticFeedback
+                        0x00004053   0x46  Code  Gb  SRMCAtod.obj [1]
+SRMCAtod__ISR           0x00003d99   0x46  Code  Gb  SRMCAtod.obj [1]
+SRMCAtod__Initialize    0x00003d0d   0x8c  Code  Gb  SRMCAtod.obj [1]
+SRMCPDB__ISR            0x00003ddf   0x52  Code  Gb  SRMCAtod.obj [1]
+SRMCPwm__DiagnosticHandler
+                        0x00004665  0x2be  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__EnableDiagnostic
+                        0x000045e3   0x82  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__GetDiagnosticFeedback
+                        0x00004923   0x56  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__GetHwFaultStatus
+                        0x000045ad   0x34  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__GetMaxPwm      0x000044ff    0x8  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__Handler250us   0x000045e1    0x2  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__Initialize     0x000042dd  0x222  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__Initialize_Before_Boot
+                        0x00004255   0x86  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__LoadAllPwmValues
+                        0x00004549   0x38  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__PwmISR         0x00004507    0x2  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__StartCounter   0x00004581   0x1e  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__TurnOffAllGates
+                        0x0000452d   0x1c  Code  Gb  SRMCPwm.obj [1]
+SRMCPwm__TurnOnLowSideGates
+                        0x00004509   0x24  Code  Gb  SRMCPwm.obj [1]
+SRMCUSpeedMonitor__Initialize
+                        0x00013511   0x2e  Code  Gb  SRMCUSpeedMonitor.obj [1]
+SRMCUSpeedMonitor__SlowHandler
+                        0x0001353f   0xe0  Code  Gb  SRMCUSpeedMonitor.obj [1]
+SRMain_Slot0_Tasks      0x00013624    0x8  Data  Gb  SRMain.obj [1]
+SRMain_Slot1_Tasks      0x0001362c    0x8  Data  Gb  SRMain.obj [1]
+SRMain_Slot2_Tasks      0x00013634    0x8  Data  Gb  SRMain.obj [1]
+SRMain_Slot3_Tasks      0x0001363c    0x8  Data  Gb  SRMain.obj [1]
+SRMain_Slot4_Tasks      0x00013644    0x4  Data  Gb  SRMain.obj [1]
+SRMain_Tasks            0x0000a7b4   0x14  Data  Gb  SRMain.obj [1]
+SRMain__TimerISR        0x0000a6d1   0x9c  Code  Gb  SRMain.obj [1]
+SRMotorSafetyMgr__AnyFaultFound
+                        0x0000230b   0x1c  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__ConfigPwmPattern
+                        0x000024c9   0x3e  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__ForceStop
+                        0x0000246b   0x2a  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__GetFault
+                        0x00002327   0x22  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__GetFaultHolder
+                        0x00002349   0x26  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__GetFlag
+                        0x0000236f   0x22  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__Handler1ms
+                        0x0000137d   0x16  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__Handler250us
+                        0x00000f3b  0x42e  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__Handler5ms
+                        0x00001395  0xe28  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__Initialize
+                        0x00000769  0x3e8  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__IsInIdle
+                        0x00002391   0x34  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__MCPwmHandler
+                        0x00000b61  0x3da  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__Prepare2StartMotor
+                        0x000023c5   0x58  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__Prepare2StopMotor
+                        0x0000241d   0x4e  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__SetParams
+                        0x00002509   0xb4  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__SlowHandler
+                        0x000021c5  0x146  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRMotorSafetyMgr__UpdatePwm
+                        0x00002495   0x34  Code  Gb  SRMotorSafetyMgr.obj [1]
+SRSignature__GetClassBSignature
+                        0x00012b01    0x6  Code  Gb  SRSignature.obj [1]
+SRSignature__GetClassBSignatureSize
+                        0x00012b07    0x4  Code  Gb  SRSignature.obj [1]
+SRTimerReference_Counter
+                        0x1ffffdd8    0x4  Data  Lc  SRTimerReference.obj [1]
+SRTimerReference__GetTimer
+                        0x0001304f    0x6  Code  Gb  SRTimerReference.obj [1]
+SRTimerReference__Handler1ms
+                        0x0001302f   0x20  Code  Gb  SRTimerReference.obj [1]
+SRTimerReference__Initialize
+                        0x00013025    0xa  Code  Gb  SRTimerReference.obj [1]
+SR_API020_Speed_Monitor_TX_Status
+                        0x1ffffde9    0x1  Data  Gb  SRMCUSpeedMonitor.obj [1]
+SR_Applied_Duty_A_Sum   0x20000d48    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Applied_Duty_A_Sum_High
+                        0x20000d4c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Cross_Event      0x20000ca7    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Ignored_First
+                        0x20000ca8    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Period      0x20000d50    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Period_Cycle_Counter
+                        0x20000d44    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Period_Cycle_Total
+                        0x20000ca6    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Period_High_Threshold
+                        0x20000d34    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Period_Low_Threshold
+                        0x20000d38    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Fund_Period_Time_Counter
+                        0x20000d40    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Avg_Threshold        0x20000d3c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CalibrationCntr      0x20000d04    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Check_Unlock_Door_Speed_Delta_Voltage
+                        0x20000d58    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Check_Unlock_Door_Speed_Timer
+                        0x20000d54    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Curr_Rms_Counter     0x20000d20    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentA             0x20000cb2    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentB             0x20000cb6    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentC             0x20000cba    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentOffsetA       0x20000cb4    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentOffsetB       0x20000cb8    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentOffsetC       0x20000cbc    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentOffsetHistA   0x20000cec    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentOffsetHistB   0x20000cf0    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_CurrentOffsetHistC   0x20000cf4    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_DCBus                0x20000cc6    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Fault_Holder         0x1ffffde1    0x1  Data  Lc  SRMCAtod.obj [1]
+SR_MCPwm_Diag_State     0x1ffffc24    0x1  Data  Lc  SRMCPwm.obj [1]
+SR_MCPwm_Errors         0x1ffffc25    0x1  Data  Lc  SRMCPwm.obj [1]
+SR_MCPwm_One_Timeout    0x1ffffc34    0x4  Data  Lc  SRMCPwm.obj [1]
+SR_MCPwm_Pulse_Active_Level
+                        0x1ffffc38    0x4  Data  Lc  SRMCPwm.obj [1]
+SR_MCPwm_Pulse_Default_Level
+                        0x1ffffc3c    0x4  Data  Lc  SRMCPwm.obj [1]
+SR_MCPwm_Zero_Timeout   0x1ffffc30    0x4  Data  Lc  SRMCPwm.obj [1]
+SR_MotorSafety_Params   0x20000ce8    0x4  Data  Gb  SRMotorSafetyMgr.obj [1]
+SR_Motor_Fault          0x20000cac    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Motor_Fault_Holder   0x20000cae    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Motor_Flags          0x20000cb0    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Overload_Counter     0x20000ccc    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Overload_Temp        0x20000d28    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Phase_Lost_Counter   0x20000cca    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_PowerUpTimer         0x20000cc8    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Raw_CurrentA         0x20000cbe    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Raw_CurrentB         0x20000cc0    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Raw_CurrentC         0x20000cc2    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SafetyMngr_State     0x20000ca4    0x1  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Sector               0x20000cc4    0x2  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Speed_Monitor_High_Speed_Found
+                        0x1ffffde8    0x1  Data  Gb  SRMCUSpeedMonitor.obj [1]
+SR_Speed_Monitor_TX_Handler_Timer
+                        0x1ffffdea    0x1  Data  Gb  SRMCUSpeedMonitor.obj [1]
+SR_SquaredCurrentRmsA   0x20000d08    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SquaredCurrentRmsB   0x20000d0c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SquaredCurrentRmsC   0x20000d10    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SquaredCurrentSumA   0x20000d14    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SquaredCurrentSumB   0x20000d18    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SquaredCurrentSumC   0x20000d1c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_SquaredCurrentsSum   0x20000d00    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Squared_Current      0x20000d30    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_State                0x1ffffde0    0x1  Data  Lc  SRMCAtod.obj [1]
+SR_Threshold            0x1ffffde2    0x2  Data  Lc  SRMCAtod.obj [1]
+SR_Timeout_Failure_Retry
+                        0x20000d24    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_Voltage_Frequency    0x20000d2c    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_ZeroSpeedDebouncer   0x20000cf8    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+SR_ZeroSpeedWithCurrTimer
+                        0x20000cfc    0x4  Data  Lc  SRMotorSafetyMgr.obj [1]
+STACKS$$Base            0x20001bb0          --   Gb  - Linker created -
+STACKS$$Limit           0x20001fd0          --   Gb  - Linker created -
+STACK_OVERFLOW_SIGNATURE$$Base
+                        0x20001bb0          --   Gb  - Linker created -
+STACK_OVERFLOW_SIGNATURE$$Limit
+                        0x20001bc0          --   Gb  - Linker created -
+STACK_UNDERFLOW_SIGNATURE$$Base
+                        0x20001fc0          --   Gb  - Linker created -
+STACK_UNDERFLOW_SIGNATURE$$Limit
+                        0x20001fd0          --   Gb  - Linker created -
+Sample_Counter          0x1ffffb64    0x2  Data  Lc  ResistanceEstimation.obj [1]
+ScBpm__PwmHandler       0x0000556d  0x52c  Code  Gb  SelfCommissioning.obj [1]
+ScBpm__ResetFocState    0x00005341   0xa6  Code  Lc  SelfCommissioning.obj [1]
+Sc_Bemf_Ampl            0x200007b0    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_Bemf_Observer_Params
+                        0x20000528   0x5c  Data  Lc  SelfCommissioning.obj [1]
+Sc_Current_Controller_D
+                        0x20000650   0x1c  Data  Lc  SelfCommissioning.obj [1]
+Sc_Current_Controller_Q
+                        0x2000066c   0x1c  Data  Lc  SelfCommissioning.obj [1]
+Sc_Current_Inj_Ampl     0x20000788    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_Data                 0x200005c8   0x34  Data  Gb  SelfCommissioning.obj [1]
+Sc_Dutycycle_By_Current_LUT
+                        0x200007c4  0x208  Data  Gb  SelfCommissioning.obj [1]
+Sc_FrequencyInj         0x2000077c    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_IAmpl                0x200007ac    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_IAmpl_Max            0x200007a4    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_IAmpl_Max_Tmp        0x2000079c    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_IAmpl_Min            0x200007a0    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_IIR1_Filter_Dq_Obs   0x20000714   0x14  Data  Lc  SelfCommissioning.obj [1]
+Sc_IO_Data              0x20000584   0x44  Data  Gb  SelfCommissioning.obj [1]
+Sc_Injection_Flag       0x2000076c    0x2  Data  Gb  SelfCommissioning.obj [1]
+Sc_Injection_Flag_Old   0x2000076e    0x2  Data  Gb  SelfCommissioning.obj [1]
+Sc_Inverter_Compensation_Selector
+                        0x20000766    0x2  Data  Gb  SelfCommissioning.obj [1]
+Sc_IsABC_Copy           0x200006c0    0xc  Data  Lc  SelfCommissioning.obj [1]
+Sc_IsAlphaBeta          0x20000708    0xc  Data  Lc  SelfCommissioning.obj [1]
+Sc_Master_Cmd_Acc       0x20000762    0x2  Data  Gb  SelfCommissioning.obj [1]
+Sc_Master_Cmd_Fdbk      0x20000764    0x2  Data  Gb  SelfCommissioning.obj [1]
+Sc_Master_Cmd_Force     0x20000760    0x2  Data  Gb  SelfCommissioning.obj [1]
+Sc_Master_Cmd_Speed     0x20000770    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_PositionInj          0x2000078c    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_PositionInjOld       0x20000790    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_PositionOpenLoop     0x20000794    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_Position_Flux_Est_Voltage
+                        0x20000774    0x4  Data  Lc  SelfCommissioning.obj [1]
+Sc_Prm                  0x2000062c   0x24  Data  Lc  SelfCommissioning.obj [1]
+Sc_Sc_IAmpl_Min_Tmp     0x20000798    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_SinCosInj            0x20000758    0x8  Data  Gb  SelfCommissioning.obj [1]
+Sc_Sin_Cos_Rotor_Position
+                        0x200009d4    0x8  Data  Lc  SelfCommissioning.obj [1]
+Sc_Sin_Cos_Rotor_Position_Voltage
+                        0x200009dc    0x8  Data  Lc  SelfCommissioning.obj [1]
+Sc_Slow_Controloop_Cnt  0x20000768    0x2  Data  Lc  SelfCommissioning.obj [1]
+Sc_Speed_Controller     0x20000688   0x1c  Data  Lc  SelfCommissioning.obj [1]
+Sc_Speed_Flux_El_Est    0x20000778    0x4  Data  Lc  SelfCommissioning.obj [1]
+Sc_Speed_Sign           0x2000076a    0x2  Data  Lc  SelfCommissioning.obj [1]
+Sc_Tracking_Observer_Params
+                        0x200005fc   0x30  Data  Lc  SelfCommissioning.obj [1]
+Sc_VAmpl                0x200007a8    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_VAmplCont            0x20000784    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_VAmpl_Max            0x200007c0    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_VAmpl_Max_Tmp        0x200007b8    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_VAmpl_Min            0x200007bc    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_VAmpl_Min_Tmp        0x200007b4    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_VAphaBetaInj         0x20000728    0xc  Data  Gb  SelfCommissioning.obj [1]
+Sc_VoltageInj           0x20000780    0x4  Data  Gb  SelfCommissioning.obj [1]
+Sc_Voltage_Controller   0x200006a4   0x1c  Data  Lc  SelfCommissioning.obj [1]
+Sc_VsABC                0x200006d8    0xc  Data  Lc  SelfCommissioning.obj [1]
+Sc_VsABC_bc             0x200006cc    0xc  Data  Lc  SelfCommissioning.obj [1]
+Sc_VsABC_rec            0x200006e4    0xc  Data  Lc  SelfCommissioning.obj [1]
+Sc_VsAlphaBeta          0x200006f0    0xc  Data  Lc  SelfCommissioning.obj [1]
+Sc_VsAlphaBeta_Rec      0x200006fc    0xc  Data  Lc  SelfCommissioning.obj [1]
+Segment_Info            0x1ffffdc0    0x8  Data  Lc  API007App.obj [1]
+SelfCommissioning__25msHandler
+                        0x0000511d   0x98  Code  Gb  SelfCommissioning.obj [1]
+SelfCommissioning__Initialize
+                        0x000050b1   0x34  Code  Gb  SelfCommissioning.obj [1]
+SelfCommissioning__RunningHandler
+                        0x000050e5   0x38  Code  Gb  SelfCommissioning.obj [1]
+SendData                0x000103f1   0x4e  Code  Lc  Win.obj [1]
+Set_Temperature_From_Outside
+                        0x1ffffd00    0x2  Data  Lc  ThermalModel.obj [1]
+SettingFile_Info_Received
+                        0x1ffffdf4    0x1  Data  Lc  API007Data.obj [1]
+SettingFile_Info_Timer  0x1ffffdf6    0x2  Data  Lc  API007Data.obj [1]
+SettingFile__BasicLoader
+                        0x0000bb9b   0x28  Code  Gb  SettingFile.obj [1]
+SettingFile__GetMemorySectionSize
+                        0x0000bbfb    0x4  Code  Gb  SettingFile.obj [1]
+SettingFile__GetMemorySectionStart
+                        0x0000bbf7    0x4  Code  Gb  SettingFile.obj [1]
+SettingFile__GetSettingFileCRC
+                        0x0000bbc3   0x34  Code  Gb  SettingFile.obj [1]
+SettingFile__GetSettingFilePointerByIndex
+                        0x0000bc0f   0x1e  Code  Gb  SettingFile.obj [1]
+SettingFile__GetSettingFileSize
+                        0x0000bc2d   0x14  Code  Gb  SettingFile.obj [1]
+SettingFile__GetSettingFileStart
+                        0x0000bbff   0x10  Code  Gb  SettingFile.obj [1]
+SettingFile__Initialize
+                        0x0000baed   0x96  Code  Gb  SettingFile.obj [1]
+SettingFile__IsValid    0x0000bb83   0x18  Code  Gb  SettingFile.obj [1]
+Settingfile_Flash_Crc   0x1ffffdb2    0x2  Data  Lc  SettingFile.obj [1]
+Settingfile_Flash_Crc_Ptr
+                        0x1ffffdb4    0x4  Data  Lc  SettingFile.obj [1]
+Settingfile_Section_Position
+                        0x1ffffdb1    0x1  Data  Lc  SettingFile.obj [1]
+Sin_Rot_k1              0x200011b0    0x4  Data  Lc  MclObserver.obj [1]
+SpeedRefGen__ApplyDefaultAccel
+                        0x00006841    0xe  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__Generator  0x000066a1  0x138  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__GetSpeedRef
+                        0x000067d9    0x8  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__GetSpeedTarget
+                        0x000067e1    0x8  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__GetStatus  0x000067e9   0x58  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__Initialize
+                        0x000065ed    0xe  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__Reset      0x00006615    0x8  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__SetNewSpeed
+                        0x0000661d   0x82  Code  Gb  SpeedRefGen.obj [1]
+SpeedRefGen__SetSpeedParams
+                        0x000065fd   0x18  Code  Gb  SpeedRefGen.obj [1]
+SpeedRef_Reference_Speed
+                        0x1ffffd50    0x4  Data  Gb  SpeedRefGen.obj [1]
+SpeedRef_Target_Speed   0x1ffffd4c    0x4  Data  Gb  SpeedRefGen.obj [1]
+Speed_Controller        0x200012f0   0x1c  Data  Lc  MclSpeedCtrl.obj [1]
+Speed_Filtered          0x1ffffcec    0x4  Data  Lc  Braking.obj [1]
+Speed_Gain_Scheduler    0x00009b0d  0x124  Code  Lc  MclSpeedCtrl.obj [1]
+Speed_Oscillation_Debouncer
+                        0x1ffffb5c    0x2  Data  Lc  ResistanceEstimation.obj [1]
+Speed_PLL               0x20001144   0x38  Data  Lc  MclObserver.obj [1]
+Speed_Threshold         0x200009f0    0x4  Data  Lc  MclPwm.obj [1]
+Speed_Threshold_High    0x200009e8    0x4  Data  Lc  MclPwm.obj [1]
+Speed_Threshold_High_CurOffComp
+                        0x20000c14    0x4  Data  Lc  MclInputProc.obj [1]
+Speed_Threshold_Low     0x200009ec    0x4  Data  Lc  MclPwm.obj [1]
+Speed_Threshold_Low_CurOffComp
+                        0x20000c18    0x4  Data  Lc  MclInputProc.obj [1]
+Speed_Transition_Counter
+                        0x200011e4    0x4  Data  Lc  MclObserver.obj [1]
+State_Machine_Requestor
+                        0x1ffffd54    0x1  Data  Lc  API007App.obj [1]
+Stator_Emf              0x2000117c    0xc  Data  Lc  MclObserver.obj [1]
+Stator_Emf_Err          0x20001188    0xc  Data  Lc  MclObserver.obj [1]
+Stator_Flux             0x20001194    0xc  Data  Lc  MclObserver.obj [1]
+Stator_Resistance_Corr  0x200011d8    0x4  Data  Lc  MclObserver.obj [1]
+Sub_Mode_State          0x1ffffdc8    0x1  Data  Lc  Mode.obj [1]
+Sub_Mode_Transitioned   0x1ffffdc9    0x1  Data  Lc  Mode.obj [1]
+SurgeRelay__25msHandler
+                        0x00005b19   0x90  Code  Gb  SurgeRelay.obj [1]
+SurgeRelay__Initialize  0x00005aed   0x2c  Code  Gb  SurgeRelay.obj [1]
+SurgeRelay__IsBusReady  0x00005ba9   0x10  Code  Gb  SurgeRelay.obj [1]
+Surge_State             0x1ffffdee    0x1  Data  Lc  SurgeRelay.obj [1]
+Swap_Phase_Cnt          0x200011ae    0x2  Data  Lc  MclObserver.obj [1]
+Swap_Phase_Flag         0x200011ac    0x2  Data  Lc  MclObserver.obj [1]
+SystemTimers__GetHandle
+                        0x0000daf5   0x62  Code  Gb  SystemTimers.obj [1]
+SystemTimers__GetState  0x0000dbd5   0x2c  Code  Gb  SystemTimers.obj [1]
+SystemTimers__Handler1ms
+                        0x0000daa1   0x54  Code  Gb  SystemTimers.obj [1]
+SystemTimers__Initialize
+                        0x0000da6d   0x32  Code  Gb  SystemTimers.obj [1]
+SystemTimers__ReleaseHandle
+                        0x0000db57   0x2e  Code  Gb  SystemTimers.obj [1]
+SystemTimers__SetMs     0x0000db85   0x50  Code  Gb  SystemTimers.obj [1]
+Tab_Crc16_Hi            0x00004d38  0x100  Data  Gb  Crc16.obj [1]
+Tab_Crc16_Lo            0x00004e38  0x100  Data  Gb  Crc16.obj [1]
+Temp_Data               0x1ffffb8c   0x34  Data  Lc  ProductInfo.obj [1]
+TemperatureFromRes      0x1ffffd08    0x4  Data  Gb  ThermalModel.obj [1]
+ThermalModelCoreBPM_DW  0x1ffff270  0x318  Data  Gb  ThermalModelCoreBPM.obj [1]
+ThermalModelCoreBPM_Params
+                        0x1ffffb14    0x4  Data  Gb  ThermalModelCoreBPM.obj [1]
+ThermalModelCoreBPM_U   0x1ffffadc   0x14  Data  Gb  ThermalModelCoreBPM.obj [1]
+ThermalModelCoreBPM_Y   0x1ffffaf0   0x20  Data  Gb  ThermalModelCoreBPM.obj [1]
+ThermalModelCoreBPM_initialize
+                        0x0000c95d   0x16  Code  Gb  ThermalModelCoreBPM.obj [1]
+ThermalModelCoreBPM_step
+                        0x0000c8c1   0x90  Code  Gb  ThermalModelCoreBPM.obj [1]
+ThermalModelCoreDD_B    0x1ffff258   0x14  Data  Gb  ThermalModelCoreDD.obj [1]
+ThermalModelCoreDD_ConstP
+                        0x0001389c   0x18  Data  Gb  ThermalModelCoreDD_data.obj [1]
+ThermalModelCoreDD_DW   0x1ffff588  0x2a0  Data  Gb  ThermalModelCoreDD.obj [1]
+ThermalModelCoreDD_Params
+                        0x1ffff254    0x4  Data  Gb  ThermalModelCoreDD.obj [1]
+ThermalModelCoreDD_U    0x1ffff228   0x14  Data  Gb  ThermalModelCoreDD.obj [1]
+ThermalModelCoreDD_Y    0x1ffff23c   0x14  Data  Gb  ThermalModelCoreDD.obj [1]
+ThermalModelCoreDD_initialize
+                        0x0000d429   0x64  Code  Gb  ThermalModelCoreDD.obj [1]
+ThermalModelCoreDD_step
+                        0x0000d38d   0x9c  Code  Gb  ThermalModelCoreDD.obj [1]
+ThermalModel__GetStatorTemperature
+                        0x00009141   0x1e  Code  Gb  ThermalModel.obj [1]
+ThermalModel__Handler25ms
+                        0x00008fed  0x152  Code  Gb  ThermalModel.obj [1]
+ThermalModel__Initialize
+                        0x00008f79   0x72  Code  Gb  ThermalModel.obj [1]
+Thermal_Model_Reset_Counter
+                        0x1ffffd04    0x4  Data  Lc  ThermalModel.obj [1]
+Thermal_Model_Start     0x1ffffcfe    0x2  Data  Lc  ThermalModel.obj [1]
+This_Timeout            0x1ffffb62    0x2  Data  Lc  ResistanceEstimation.obj [1]
+This_Timer              0x1ffffb60    0x2  Data  Lc  ResistanceEstimation.obj [1]
+TimeStep                0x1ffff250    0x4  Data  Lc  ThermalModelCoreDD.obj [1]
+TimeStep                0x1ffffb10    0x4  Data  Lc  ThermalModelCoreBPM.obj [1]
+Time_Prescaler          0x1ffffb58    0x1  Data  Lc  ResistanceEstimation.obj [1]
+TimerDefinition         0x000091e5   0xec  Code  Lc  ResistanceEstimation.obj [1]
+TimerInterrupt__Initialize
+                        0x00013829   0x32  Code  Gb  TimerInterrupt.obj [1]
+Timer_PC_Control_Handle
+                        0x1ffffdce    0x2  Data  Lc  Mode.obj [1]
+Timer_To_Reset_Resistance
+                        0x1ffffb70    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Torque_Brake_Max        0x1ffffce8    0x4  Data  Lc  Braking.obj [1]
+Torque_Brake_Max_thr    0x1ffffcf8    0x4  Data  Lc  Braking.obj [1]
+Torque_Controller       0x1ffffab4   0x1c  Data  Lc  MclDqCtrl.obj [1]
+Torque_Flux_Gains_Scheduler
+                        0x00009e51  0x13a  Code  Lc  MclDqCtrl.obj [1]
+Torque_Max_Braking      0x20001330    0x4  Data  Lc  MclSpeedCtrl.obj [1]
+UART0_Break             0x20001200    0x1  Data  Lc  Uart.obj [1]
+UART0_LastData          0x2000124c    0x4  Data  Lc  Uart.obj [1]
+UART0_Rx_Buffer         0x20001208   0x2c  Data  Lc  Uart.obj [1]
+UART0_Rx_Read_Index     0x200011ff    0x1  Data  Lc  Uart.obj [1]
+UART0_Rx_Write_Index    0x200011fe    0x1  Data  Lc  Uart.obj [1]
+UART0_Tx_Buffer         0x20001234   0x18  Data  Lc  Uart.obj [1]
+UART0_Tx_Read_Index     0x200011fd    0x1  Data  Lc  Uart.obj [1]
+UART0_Tx_Write_Index    0x200011fc    0x1  Data  Lc  Uart.obj [1]
+UART1_Break             0x20001205    0x1  Data  Lc  Uart.obj [1]
+UART1_LastData          0x20001294    0x4  Data  Lc  Uart.obj [1]
+UART1_Rx_Buffer         0x20001250   0x2c  Data  Lc  Uart.obj [1]
+UART1_Rx_Read_Index     0x20001204    0x1  Data  Lc  Uart.obj [1]
+UART1_Rx_Write_Index    0x20001203    0x1  Data  Lc  Uart.obj [1]
+UART1_Tx_Buffer         0x2000127c   0x18  Data  Lc  Uart.obj [1]
+UART1_Tx_Read_Index     0x20001202    0x1  Data  Lc  Uart.obj [1]
+UART1_Tx_Write_Index    0x20001201    0x1  Data  Lc  Uart.obj [1]
+UART_PTR                0x0000b060    0xc  Data  Lc  Uart.obj [1]
+Uart_Data               0x20001062    0x1  Data  Gb  Win.obj [1]
+Uart_Error              0x20001063    0x1  Data  Gb  Win.obj [1]
+Uart__Clear             0x0000ab3f   0x3a  Code  Gb  Uart.obj [1]
+Uart__ClearTx           0x0000ab79   0x26  Code  Gb  Uart.obj [1]
+Uart__GetStatus         0x0000ad71   0xe6  Code  Gb  Uart.obj [1]
+Uart__Handler           0x0000ae57   0x50  Code  Gb  Uart.obj [1]
+Uart__Initialize        0x0000aa39  0x106  Code  Gb  Uart.obj [1]
+Uart__Interrupt0        0x0000aea7   0xaa  Code  Gb  Uart.obj [1]
+Uart__Interrupt1        0x0000af51   0xb6  Code  Gb  Uart.obj [1]
+Uart__Interrupt2        0x0000b007    0xc  Code  Gb  Uart.obj [1]
+Uart__ReadByte          0x0000acfd   0x74  Code  Gb  Uart.obj [1]
+Uart__Write             0x0000aba1  0x110  Code  Gb  Uart.obj [1]
+Uart__WriteByte         0x0000acb1   0x4c  Code  Gb  Uart.obj [1]
+Utilities__ConvertArrayTo16bits
+                        0x000117a5    0xc  Code  Gb  Utilities.obj [1]
+Utilities__ConvertArrayTo24bits
+                        0x0001178b   0x10  Code  Gb  Utilities.obj [1]
+Utilities__ConvertArrayTo32bits
+                        0x00011775   0x16  Code  Gb  Utilities.obj [1]
+Utilities__CountOneBitsInArray
+                        0x000117cd   0x26  Code  Gb  Utilities.obj [1]
+Utilities__GetBitInArray
+                        0x000117b1   0x1c  Code  Gb  Utilities.obj [1]
+Utilities__Merg2BytesTo16bits
+                        0x0001179b    0xa  Code  Gb  Utilities.obj [1]
+Voltage_1st_Sum         0x1ffffb78    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Voltage_2nd_Sum         0x1ffffb80    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Voltage_Level           0x1ffffb74    0x4  Data  Lc  ResistanceEstimation.obj [1]
+Vs_DQ_Injection         0x20000740    0xc  Data  Gb  SelfCommissioning.obj [1]
+WinIncomingProcess      0x00010101  0x2f0  Code  Lc  Win.obj [1]
+WinOutgoingProcess      0x0000ff61  0x19e  Code  Lc  Win.obj [1]
+Win_Break_Counter       0x2000106e    0x2  Data  Lc  Win.obj [1]
+Win_Bus_Idle            0x20001056    0x1  Data  Lc  Win.obj [1]
+Win_Bus_Idle_Timer      0x20001057    0x1  Data  Lc  Win.obj [1]
+Win_Check_Index         0x20001066    0x2  Data  Lc  Win.obj [1]
+Win_Check_Tx_Pointer    0x20001074    0x4  Data  Lc  Win.obj [1]
+Win_Header              0x2000104c    0x8  Data  Lc  Win.obj [1]
+Win_Node_Status         0x2000106c    0x2  Data  Lc  Win.obj [1]
+Win_Remaining_Data      0x20001068    0x2  Data  Lc  Win.obj [1]
+Win_Retry               0x20001058    0x1  Data  Lc  Win.obj [1]
+Win_Retry_Collision     0x20001059    0x1  Data  Lc  Win.obj [1]
+Win_Rx_Buffer           0x20001000   0x4c  Data  Lc  Win.obj [1]
+Win_Rx_Crc              0x20001055    0x1  Data  Lc  Win.obj [1]
+Win_Rx_Index            0x2000106a    0x2  Data  Lc  Win.obj [1]
+Win_Rx_Message_State    0x2000105c    0x1  Data  Gb  Win.obj [1]
+Win_Rx_Message_Time     0x20001064    0x1  Data  Lc  Win.obj [1]
+Win_Rx_State            0x2000105b    0x1  Data  Lc  Win.obj [1]
+Win_Timer               0x20001054    0x1  Data  Lc  Win.obj [1]
+Win_Tx_Buffer           0x20000fb4   0x4c  Data  Lc  Win.obj [1]
+Win_Tx_Message_State    0x2000105d    0x1  Data  Gb  Win.obj [1]
+Win_Tx_Pointer          0x20001070    0x4  Data  Lc  Win.obj [1]
+Win_Tx_State            0x2000105a    0x1  Data  Lc  Win.obj [1]
+Win_Tx_Status           0x2000105e    0x1  Data  Lc  Win.obj [1]
+Win__AllocateMessage    0x0000febd   0x16  Code  Gb  Win.obj [1]
+Win__FreeIncomingMessage
+                        0x0000fe9d   0x20  Code  Gb  Win.obj [1]
+Win__GetAddress         0x0000fe43    0x4  Code  Gb  Win.obj [1]
+Win__GetIncomingMessage
+                        0x0000fe75   0x28  Code  Gb  Win.obj [1]
+Win__Handle1ms          0x0000fe47   0x2e  Code  Gb  Win.obj [1]
+Win__Initialize         0x0000fdbd   0x86  Code  Gb  Win.obj [1]
+Win__QueueMessage       0x0000fed3   0x8e  Code  Gb  Win.obj [1]
+__DMB                   0x0000a261         Code  Gb  cortexm4_macro.obj [1]
+__DSB                   0x0000a25b         Code  Gb  cortexm4_macro.obj [1]
+__ICFEDIT_INTERRUPT_TABLE_start__ {Abs}
+                        0x00000600          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x20001fff          --   Gb  command line/config [2]
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x1fffe000          --   Gb  command line/config [2]
+__ICFEDIT_region_ROM_end__ {Abs}
+                        0x0001e7ff          --   Gb  command line/config [2]
+__ICFEDIT_region_ROM_start__ {Abs}
+                        0x00000600          --   Gb  command line/config [2]
+__ICFEDIT_size_stack_bottom__ {Abs}
+                        0x00000010          --   Gb  command line/config [2]
+__ICFEDIT_size_stack_top__ {Abs}
+                        0x00000010          --   Gb  command line/config [2]
+__ISB                   0x0000a255         Code  Gb  cortexm4_macro.obj [1]
+__MRS_MSP               0x0000a281         Code  Gb  cortexm4_macro.obj [1]
+__MRS_PSP               0x0000a275         Code  Gb  cortexm4_macro.obj [1]
+__MSR_CONTROL           0x0000a26b         Code  Gb  cortexm4_macro.obj [1]
+__MSR_MSP               0x0000a287         Code  Gb  cortexm4_macro.obj [1]
+__MSR_PSP               0x0000a27b         Code  Gb  cortexm4_macro.obj [1]
+__RAM_CODE_SIZE {Abs}   0x00000000          --   Gb  command line/config [2]
+__RAM_Size {Abs}        0x00003fff          --   Gb  command line/config [2]
+__RAM_Start {Abs}       0x1fffe000          --   Gb  command line/config [2]
+__RESETPRIMASK          0x0000a28d         Code  Gb  cortexm4_macro.obj [1]
+__REV_HalfWord          0x0000a291         Code  Gb  cortexm4_macro.obj [1]
+__REV_Word              0x0000a295         Code  Gb  cortexm4_macro.obj [1]
+__RunRegisterTest       0x0000a2d5         Code  Gb  cortexm4_macro.obj [1]
+__SEV                   0x0000a251         Code  Gb  cortexm4_macro.obj [1]
+__SVC                   0x0000a267         Code  Gb  cortexm4_macro.obj [1]
+__SetingFile_End {Abs}  0x00020000          --   Gb  command line/config [2]
+__SetingFile_Size {Abs}
+                        0x00001800          --   Gb  command line/config [2]
+__SetingFile_Start {Abs}
+                        0x0001e800          --   Gb  command line/config [2]
+__SettingFile_X_End__ {Abs}
+                        0x0001ffff          --   Gb  command line/config [2]
+__SettingFile_X_Start__ {Abs}
+                        0x0001e800          --   Gb  command line/config [2]
+__StartupRegisterTest   0x0000a299         Code  Gb  cortexm4_macro.obj [1]
+__WFE                   0x0000a24d         Code  Gb  cortexm4_macro.obj [1]
+__WFI                   0x0000a249         Code  Gb  cortexm4_macro.obj [1]
+__aeabi_d2f             0x0000e151         Code  Gb  DblToFlt.o [4]
+__aeabi_dadd            0x0000e069         Code  Gb  DblAdd.o [4]
+__aeabi_errno_addr      0x0000f98d    0x6  Code  Gb  errno.o [3]
+__aeabi_f2d             0x0000e019         Code  Gb  FltToDbl.o [4]
+__aeabi_memclr4         0x0000a0fd         Code  Gb  ABImemclr4.o [5]
+__aeabi_memset          0x0000fd49         Code  Gb  ABImemset.o [5]
+__aeabi_memset4         0x00004f39         Code  Gb  ABImemset48.o [5]
+__aeabi_memset8         0x00004f39         Code  Gb  ABImemset48.o [5]
+__as_entries_start      0xffffffff          --   Gb  command line/config [2]
+__as_table_start        0xffffffff          --   Gb  command line/config [2]
+__cmain                 0x0000d785         Code  Gb  cmain.o [5]
+__exit                  0x000107f1   0x14  Code  Gb  exit.o [6]
+__iar_Errno             0x20000ca0    0x4  Data  Gb  errno.o [3]
+__iar_FDint             0x0000f93b   0x50  Code  Gb  xfdint.o [4]
+__iar_FDnorm            0x0000f915   0x26  Code  Gb  xfdnorm.o [4]
+__iar_FDscale           0x00010729   0xc8  Code  Gb  xfdscale.o [4]
+__iar_FExp              0x0000f9c1  0x1ec  Code  Gb  xfexp.o [4]
+__iar_FLogpoly          0x0000f999   0x1a  Code  Gb  xflog.o [4]
+__iar_Memset            0x0000fd49         Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x00004f41         Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x00004f41         Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x0000fd51         Code  Gb  ABImemset.o [5]
+__iar_dadd              0x0000e07d         Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x0000a4f5   0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x00010727    0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x0000fbdd         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x0000fbef         Code  Gb  DblSub.o [4]
+__iar_init_vfp          0x0000d769         Code  Gb  fpinit_M.o [4]
+__iar_lz77_init3        0x00013283  0x160  Code  Gb  lz77_init.o [5]
+__iar_program_start     0x0000a5c1         Code  Gb  cstartup_M.o [5]
+__iar_unaligned___aeabi_memcpy
+                        0x0000a9c1         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x0000a9e1         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x0000a9e1         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_xatanf            0x0000d9c9         Code  Gb  xatanf.o [4]
+__iar_zero_init3        0x00003ceb   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0000e1f5    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000600  0x168  Data  Gb  InterruptVector.obj [1]
+_call_main              0x0000d791         Code  Gb  cmain.o [5]
+_exit                   0x0000fdb1         Code  Gb  cexit.o [5]
+_main                   0x0000d79b         Code  Gb  cmain.o [5]
+abort                   0x000133e3    0x6  Code  Gb  abort.o [3]
+atan2f                  0x0000b881         Code  Gb  atan2f.o [4]
+dLambdas_alpha_old      0x200011bc    0x4  Data  Lc  MclObserver.obj [1]
+dLambdas_beta_old       0x200011c0    0x4  Data  Lc  MclObserver.obj [1]
+eev                     0x0000cded   0x1e  Code  Lc  ThermalModelCoreDD.obj [1]
+eev                     0x0000c2cd   0x1e  Code  Lc  ThermalModelCoreBPM.obj [1]
+eex                     0x0000ce1d  0x14e  Code  Lc  ThermalModelCoreDD.obj [1]
+eex                     0x0000c30d  0x198  Code  Lc  ThermalModelCoreBPM.obj [1]
+exit                    0x0000e1f9    0x4  Code  Gb  exit.o [3]
+fastpow                 0x0000bdb9   0x92  Code  Gb  ThermalModelCoreBPM.obj [1]
+fp                      0x0000c995  0x43c  Code  Lc  ThermalModelCoreDD.obj [1]
+fp                      0x0000be6d  0x45a  Code  Lc  ThermalModelCoreBPM.obj [1]
+fvt_debug_averaging     0x1ffffb40    0x1  Data  Gb  MclFvt.obj [1]
+internal_Pow            0x0000dd11  0x2fa  Code  Lc  powf.o [4]
+main                    0x0000a5cd  0x102  Code  Gb  SRMain.obj [1]
+memset                  0x0000e1e1   0x14  Code  Gb  memset.o [3]
+pcm_bTrgVarSigned       0x1fffe03f    0x1  Data  Lc  mc_rec.obj [1]
+pcm_dwRecEndBuffPtr     0x1fffe07c    0x4  Data  Gb  mc_rec.obj [1]
+pcm_dwRecWritePtr       0x1fffe078    0x4  Data  Gb  mc_rec.obj [1]
+pcm_nRecBuffAddr        0x1fffe088    0x4  Data  Lc  mc_rec.obj [1]
+pcm_nRecTriggerMode     0x1fffe03c    0x1  Data  Gb  mc_rec.obj [1]
+pcm_nRecVarCount        0x1fffe03d    0x1  Data  Gb  mc_rec.obj [1]
+pcm_nRxCheckSum         0x1ffffa4a    0x1  Data  Lc  mc_serial.obj [1]
+pcm_nRxTodo             0x1ffffa49    0x1  Data  Lc  mc_serial.obj [1]
+pcm_nScopeVarCount      0x1ffffc54    0x1  Data  Lc  mc_scope.obj [1]
+pcm_nTrgVarAddr         0x1fffe080    0x4  Data  Lc  mc_rec.obj [1]
+pcm_nTrgVarSize         0x1fffe03e    0x1  Data  Lc  mc_rec.obj [1]
+pcm_nTxTodo             0x1ffffa48    0x1  Data  Lc  mc_serial.obj [1]
+pcm_pCommBuffer         0x1ffffa4c   0x40  Data  Lc  mc_serial.obj [1]
+pcm_pCompareFunc        0x1fffe08c    0x4  Data  Lc  mc_rec.obj [1]
+pcm_pOwnRecBuffer       0x1fffe090  0x800  Data  Lc  mc_rec.obj [1]
+pcm_pRecVarAddr         0x1fffe04c   0x20  Data  Gb  mc_rec.obj [1]
+pcm_pRecVarSize         0x1fffe06c    0x8  Data  Gb  mc_rec.obj [1]
+pcm_pRxBuff             0x1ffffa94    0x4  Data  Lc  mc_serial.obj [1]
+pcm_pScopeVarAddr       0x1ffffc58   0x20  Data  Lc  mc_scope.obj [1]
+pcm_pScopeVarSize       0x1ffffc78    0x8  Data  Lc  mc_scope.obj [1]
+pcm_pTxBuff             0x1ffffa90    0x4  Data  Lc  mc_serial.obj [1]
+pcm_uTrgThreshold       0x1fffe084    0x4  Data  Lc  mc_rec.obj [1]
+pcm_wFlags              0x1ffffa8c    0x4  Data  Lc  mc_serial.obj [1]
+pcm_wRecBuffStartIx     0x1fffe04a    0x2  Data  Gb  mc_rec.obj [1]
+pcm_wRecFlags           0x1fffe074    0x4  Data  Gb  mc_rec.obj [1]
+pcm_wRecPostTrigger     0x1fffe042    0x2  Data  Gb  mc_rec.obj [1]
+pcm_wRecTimeDiv         0x1fffe044    0x2  Data  Gb  mc_rec.obj [1]
+pcm_wRecTimeDivCtr      0x1fffe046    0x2  Data  Gb  mc_rec.obj [1]
+pcm_wRecTotalSmps       0x1fffe040    0x2  Data  Gb  mc_rec.obj [1]
+pcm_wStoprecCountDown   0x1fffe048    0x2  Data  Gb  mc_rec.obj [1]
+powf                    0x0000e013    0x4  Code  Gb  powf.o [4]
+savespace               0x0000cf79   0xf8  Code  Lc  ThermalModelCoreDD.obj [1]
+savespace               0x0000c4b5   0xf8  Code  Lc  ThermalModelCoreBPM.obj [1]
+sc_sizeof_inv_comp_lut  0x200009d0    0x4  Data  Gb  SelfCommissioning.obj [1]
+sc_step_inv_pwm_comp    0x200009cc    0x4  Data  Gb  SelfCommissioning.obj [1]
+sinTable_wp_f32         0x00008004  0x804  Data  Gb  MathCalc.obj [1]
+sizeof_inv_comp_lut     0x20000c00    0x4  Data  Gb  MclPwm.obj [1]
+step_inv_pwm_comp       0x20000bfc    0x4  Data  Gb  MclPwm.obj [1]
+
+
+[1] = C:\Data\Python\Self_Commissioning_Bpm\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tlv.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  77 940 bytes of readonly  code memory
+   2 069 bytes of readonly  data memory (+ 16 absolute)
+  13 714 bytes of readwrite data memory (+ 8  absolute)
+
+Errors: none
+Warnings: none

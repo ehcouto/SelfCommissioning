@@ -1,0 +1,15 @@
+Motor Identification Parameter for Brushless PMSM Motor
+WindyStrip_sBPM__SelfComm__OrcaH34__Arcelik_#1
+Date: 20250124_173305
+
+Rs Measure
+
+Current [A]	 Frequency [Hz]	 Voltage [V]	 Rs [Ohm] 
+2.0108986496925354	0.0	13.446594715118408	5.294446200332504
+
+RsMean [Ohm]
+5.294446200332504
+
+
+Ld Lq Measure
+VoltageInjection(V) 	Frequency(Hz) 	Imin(A) 	IMax(A) 	Ld(H) 	Lq(H)

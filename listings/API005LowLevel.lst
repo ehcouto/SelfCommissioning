@@ -1,0 +1,1164 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:42
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API005LowLevel\API005LowLevel.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        API005LowLevel.obj -l ..\listings\API005LowLevel.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API005LowLevel\API005LowLevel.c
+#    List file    =  ..\listings\API005LowLevel.lst
+#    Object file  =  API005LowLevel.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API005LowLevel\API005LowLevel.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      This Reveal API manages the Low Level access to the system which can be used by FVT, Service and Manufacturing.
+      5           *
+      6           *  @details    Detailed description of the file contents
+      7           *
+      8           *  @copyright  Copyright 2013-$Date: 2015/07/24 10:18:59EDT $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      9           */
+     10          //---------------------------------------------------------------------------------------------------------------------
+     11          //---------------------------------------------------------------------------------------------------------------------
+     12          
+     13          //-------------------------------------- Include Files ----------------------------------------------------------------
+     14          #include "SystemConfig.h"
+     15          
+     16          #if (API005LOWLEVEL_FEATURE == ENABLED)
+     17          
+     18          #ifndef API005_USE_LOADS_AND_GIS_FEATURE
+     19              // API005_USE_LOADS_AND_GIS_FEATURE should be ENABLED for applications that use Hbl to control Loads and GIs.
+     20              #error API005_USE_LOADS_AND_GIS_FEATURE must be defined via SystemConfig.h as ENABLED or DISABLED.
+     21          #endif
+     22          #ifndef API005_USE_OBJECTS_AND_EVENTS_FEATURE
+     23              // API005_USE_OBJECTS_AND_EVENTS_FEATURE should be ENABLED for applications that use HblHmi to control Objects and Events.
+     24              #error API005_USE_OBJECTS_AND_EVENTS_FEATURE must be defined via SystemConfig.h as ENABLED or DISABLED.
+     25          #endif
+     26          #ifndef API005_CONTROL_CYCLES_FEATURE
+     27              // API005_CONTROL_CYCLES_FEATURE should be ENABLED for applications that use API005 to control cycles.
+     28              #error API005_CONTROL_CYCLES_FEATURE must be defined via SystemConfig.h as ENABLED or DISABLED.
+     29          #endif
+     30          
+     31          #include "API005LowLevel.h"
+     32          #include "API005LowLevel_prv.h"
+     33          
+     34          #include "Mode.h"
+     35          #include "Reveal.h"
+     36          #include <string.h>
+     37          #include "Utilities.h"
+     38          
+     39          #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+     40              #include "Hbl.h"
+     41              #include "SRHbl.h"
+     42          #endif
+     43          
+     44          #if (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+     45              #include "HblHmi.h"
+     46          #endif
+     47          
+     48          #if (API005_CONTROL_CYCLES_FEATURE == ENABLED)
+     49              #include "TestMgr.h"
+     50          #endif
+     51          
+     52          
+     53          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     54          
+     55          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     56          typedef enum
+     57          {
+     58              API005LOWLEVEL_OC_SET_LOAD                              = 0x01,
+     59              API005LOWLEVEL_OC_GET_PUB_LOAD_DATA                     = 0x02,
+     60              API005LOWLEVEL_OC_GET_PUB_LLI_DATA                      = 0x03,
+     61              API005LOWLEVEL_OC_GET_PUB_GI_DATA                       = 0x04,
+     62              API005LOWLEVEL_OC_GET_PUB_ALL_LOADS_CONFIGURATION       = 0x05,
+     63              API005LOWLEVEL_OC_GET_PUB_ALL_LLI_CONFIGURATION         = 0x06,
+     64              API005LOWLEVEL_OC_GET_PUB_ALL_GI_CONFIGURATION          = 0x07,
+     65              API005LOWLEVEL_OC_PUBLISH_EVENT                         = 0x08,
+     66          
+     67              API005LOWLEVEL_OC_CALL_DEBUG_FUNCTION                   = 0x10,
+     68              API005LOWLEVEL_OC_DEBUG_LABEL                           = 0x11,
+     69              API005LOWLEVEL_OC_SET_DEBUG_VARIABLE                    = 0x12,
+     70          
+     71              API005LOWLEVEL_OC_HMI_SET_OBJECT                        = 0x13,
+     72              API005LOWLEVEL_OC_HMI_PLAY_SOUND                        = 0x14,
+     73              API005LOWLEVEL_OC_HMI_PUB_GI_DATA                       = 0x15,
+     74              API005LOWLEVEL_OC_HMI_PUB_LLI_DATA                      = 0x16,
+     75              API005LOWLEVEL_OC_HMI_PUB_GI_CONFIG                     = 0x17,
+     76              API005LOWLEVEL_OC_HMI_PUB_LLI_CONFIG                    = 0x18,
+     77          
+     78          
+     79              API005LOWLEVEL_SET_TEST_STORAGE                         = 0x1A,
+     80              API005LOWLEVEL_ENGAGE_TEST_CYCLE                        = 0x1B,
+     81              API005LOWLEVEL_PHASE_TEST_CYCLE                         = 0x1C,
+     82          
+     83              API005LOWLEVEL_OC_EXTRACT_LOADS                         = 0x1D,
+     84              API005LOWLEVEL_OC_EXTRACT_GIS                           = 0x1E,
+     85              API005LOWLEVEL_STEP_TEST_CYCLE                          = 0x1F
+     86          }API005LOWLEVEL_OC_TYPE;
+     87          
+     88          
+     89          #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+     90          static uint8 API005_Timer_Divider;
+     91          static uint8 API005_Timer;
+     92          static BOOL_TYPE API005_Publish_Loads;
+     93          static BOOL_TYPE API005_Publish_Inputs;
+     94          static const uint8 API005_LOADS_OFF[] = {0,0,0,0,0,0,0,0,0,0};
+     95          #endif
+     96          
+     97          #define PAYLOAD_INDEX_DELTA     (PAYLOAD_DATA_SIZE + 1)
+     98          
+     99          #define REVEAL_MMP_BIT          ((uint8)0x80)        //reveal more message pending
+    100          /*
+    101           * defines the maximum number of characters for the debug function Label.
+    102           * Resolution: 1 = 1 ASCII character
+    103           */
+    104          #define API005_SIZE_OF_LABEL    20
+    105          
+    106          // structure for the debug table
+    107          typedef struct
+    108          {
+    109              FUNCTION_TYPE   Function;                           // debug function that will be run
+    110              char            Label[API005_SIZE_OF_LABEL];        // label that will be displayed on the WideBox button.  Maximum number of characters is defined by API005_SIZE_OF_LABEL.
+    111          } API005LOWLEVEL_DEBUG_TABLE_ELEMENT_TYPE;
+    112          
+    113          // definition of the Debug functions and labels.
+    114          static const API005LOWLEVEL_DEBUG_TABLE_ELEMENT_TYPE API005LOWLEVEL_DEBUG_TABLE[] =
+    115          {
+    116              API005LOWLEVEL_DEBUG_TABLE_APP_SPECIFIC
+    117          };
+    118          
+    119          typedef uint8 (* const HBL_GETDATASIZEBYINDEX)(uint8 index);
+    120          typedef void (* const BUILD_REVEAL_MSG)(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    121          
+    122          typedef struct
+    123          {
+    124              HBL_GETDATASIZEBYINDEX GetDataSizeByIndex;
+    125              BUILD_REVEAL_MSG BuildMessage;
+    126              uint8 Non_ItemData_Size;
+    127          }API005LOWLEVEL_PUBLISH_DATA_HOOK_TYPE;
+    128          
+    129          #define API005_NUM_DEBUG_FUNCTIONS (sizeof (API005LOWLEVEL_DEBUG_TABLE) / sizeof (API005LOWLEVEL_DEBUG_TABLE_ELEMENT_TYPE))
+    130          
+    131          //! Define how many Opcodes the API005_USE_LOADS_AND_GIS_FEATURE publishes
+    132          #define PUBLISH_DATA_NUM_OF_LOADs_AND_GI_OPCODES    (6)
+    133          
+    134          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    135          #if ((API005_USE_LOADS_AND_GIS_FEATURE == ENABLED) || (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED))
+    136              static REVEAL_RECIPE_STATUS_TYPE PublishData(API005LOWLEVEL_OC_TYPE oc, uint8 load_index, uint8 num_loads, uint8 node_id);
+    137              static uint8 GetDummyDataSize(uint8 index);
+    138          #endif
+    139          
+    140          #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+    141              static void BuildLoadDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    142              static void BuildLLIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    143              static void BuildGIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    144              static void BuildAllLoadConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    145              static void BuildAllLLIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    146              static void BuildAllGIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    147              static uint8 HblGetGIConvertedDataSizeByIndex(uint8 index);
+    148          #endif
+    149          
+    150          #if (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    151              void API005ReceiveEvent(HBLHMI_GI_EVENT_TYPE event);
+    152              static void BuildHmiGIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    153              static void BuildHmiLLIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    154              static void BuildHmiAllLLIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    155              static void BuildHmiAllGIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr);
+    156          #endif
+    157          
+    158          #if( (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED) || (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED))
+    159              const API005LOWLEVEL_PUBLISH_DATA_HOOK_TYPE PUBLISH_DATA_FUNCTION_PTR[] =
+    160              {
+    161              #if(API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+    162                  {Hbl__GetLoadDataSize                   ,BuildLoadDataMessage                  ,4},     //API005LOWLEVEL_OC_GET_PUB_LOAD_DATA
+    163                  {Hbl__GetLLIDataSizeByIndex             ,BuildLLIDataMessage                   ,3},     //API005LOWLEVEL_OC_GET_PUB_LLI_DATA
+    164                  {HblGetGIConvertedDataSizeByIndex       ,BuildGIDataMessage                    ,1},     //API005LOWLEVEL_OC_GET_PUB_GI_DATA
+    165                  {GetDummyDataSize                       ,BuildAllLoadConfigurationMessage      ,2},     //API005LOWLEVEL_OC_GET_PUB_ALL_LOADS_CONFIGURATION
+    166                  {GetDummyDataSize                       ,BuildAllLLIConfigurationMessage       ,2},     //API005LOWLEVEL_OC_GET_PUB_ALL_LLI_CONFIGURATION
+    167                  {GetDummyDataSize                       ,BuildAllGIConfigurationMessage        ,3},     //API005LOWLEVEL_OC_GET_PUB_ALL_GI_CONFIGURATION
+    168              #endif
+    169              #if (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    170                  {HblHmi__GetGIDataSizeByIndex           ,BuildHmiGIDataMessage                  ,2},     //API005LOWLEVEL_OC_HMI_PUB_GI_DATA
+    171                  {HblHmi__GetLLIDataSizeByIndex          ,BuildHmiLLIDataMessage                 ,3},    //API005LOWLEVEL_OC_HMI_PUB_LLI_DATA
+    172                  {GetDummyDataSize                       ,BuildHmiAllGIConfigurationMessage      ,4},    //API005LOWLEVEL_OC_HMI_PUB_GI_CONFIG
+    173                  {GetDummyDataSize                       ,BuildHmiAllLLIConfigurationMessage     ,3},    //API005LOWLEVEL_OC_HMI_PUB_LLI_CONFIG
+    174              #endif
+    175              };
+    176          #endif
+    177          //=====================================================================================================================
+    178          //-------------------------------------- Public Functions -------------------------------------------------------------
+    179          //=====================================================================================================================
+    180          
+    181          //---------------------------------------------------------------------------------------------------------------------
+    182          /**
+    183           * @brief It Initializes the module API005LowLevel and its variables
+    184           *
+    185           */
+    186          void API005LowLevel__Initialize(void)
+    187          {
+    188              #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+    189                  API005_Timer = 0;
+    190                  API005_Timer_Divider = 0;
+    191                  API005_Publish_Loads = FALSE;
+    192                  API005_Publish_Inputs = FALSE;
+    193              #endif
+    194          
+    195              #if (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    196                  HblHmi__RegisterGIEventHandler(API005ReceiveEvent);
+    197              #endif
+    198          }
+    199          
+    200          //----------------------------------------------------------------------------------------------------------
+    201          /**
+    202           * @brief This method parses messages target to the API005 sent to a broadcast or exclusively to this node for Reveal 4.x.
+    203           * @param buffer contains the Wide package that contains the message
+    204           * @return REVEAL_RECIPE_STATUS_TYPE that express the result of the parsing.
+    205           */
+    206          REVEAL_RECIPE_STATUS_TYPE API005LowLevel__CommandParser(REVEAL_MSG_TYPE * buffer)
+    207          {
+    208              REVEAL_RECIPE_STATUS_TYPE retval;
+    209              REVEAL_COMMAND_TYPE * ptr;
+    210          
+    211              retval = NVO_RS_READY;
+    212              #if ((API005_USE_LOADS_AND_GIS_FEATURE == ENABLED) || (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED))
+    213                  uint8 num_items = 0;
+    214                  uint8 item_index = 0;
+    215              #endif
+    216              #if(API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    217                  HBLHMI_GI_EVENT_TYPE gi_event;
+    218              #endif
+    219          
+    220              switch (buffer->op_code)
+    221              {
+    222                  #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+    223                      case API005LOWLEVEL_OC_SET_LOAD:
+    224                          if (Mode__IsPCControlEngaged() == FALSE)
+    225                          {
+    226                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    227                          }
+    228                          else if (buffer->size == 0)
+    229                          {
+    230                              retval = NVO_RS_UNSUP_INVALID_PARAM;
+    231                          }
+    232                          else
+    233                          {
+    234                              //Load ID  = 0 to 254 is used to set the individual load
+    235                              //Load ID  = 255 is used to turn-off all the loads. In this case following pay load value is invalid
+    236          
+    237                              // Payload[0] = LOAD IDx
+    238                              // Payload[1] = LOAD DATA SIZE
+    239                              // Payload[2] = LOAD DATA[0]
+    240                              // Payload[3] = LOAD DATA[n-1]
+    241                              // Payload[4] = LOAD IDy
+    242                              // Payload[5] = LOAD DATA SIZE
+    243                              // Payload[6] = LOAD DATA[0]
+    244                              // Payload[7] = LOAD DATA[n-1]
+    245          
+    246                              #define PAYLOAD_LOAD_ID                 (buffer->payload[payload_index])
+    247                              #define PAYLOAD_LOAD_DATA_SIZE          (buffer->payload[payload_index + 1])
+    248                              #define PAYLOAD_LOAD_DATA               (buffer->payload[payload_index + 2])
+    249                              #define PAYLOAD_NEXT_LOAD_ID_INDEX      (payload_index + PAYLOAD_LOAD_DATA_SIZE + 2)
+    250          
+    251                              uint8 payload_index = 0;
+    252          
+    253                              // define the return message buffer
+    254                              uint8 ret_mess[REVEAL_PAYLOAD_SIZE];
+    255          
+    256                              if ((buffer->size == 1) &&
+    257                                  (PAYLOAD_LOAD_ID == 0xFF))
+    258                              {
+    259                                  ret_mess[payload_index] = PAYLOAD_LOAD_ID;
+    260          
+    261                                  uint8 num_loads = Hbl__GetNumLoads();
+    262                                  for (uint8 load_loop_counter = 0; load_loop_counter < num_loads; load_loop_counter++)
+    263                                  {
+    264                                      Hbl__SetLoadRequestByIndex(load_loop_counter, HBL_PRIORITY_PC_CONTROL, (uint8 *)API005_LOADS_OFF); //lint !e926 cast from pointer to pointer
+    265                                  }
+    266          
+    267                                  //payl oad has only 1 pay load data
+    268                                  payload_index = 1;
+    269                              }
+    270                              else
+    271                              {
+    272                                  /***** loop for parsing the message for controlling the loads and building the return message ******/
+    273          
+    274                                  do
+    275                                  {
+    276                                      HBL_LOAD_ENUM_TYPE hbl_load_id = (HBL_LOAD_ENUM_TYPE)PAYLOAD_LOAD_ID;
+    277                                      uint8 hbl_load_index = Hbl__GetLoadIndexByLoadID(hbl_load_id);
+    278          
+    279                                      ret_mess[payload_index] = hbl_load_id;
+    280          
+    281                                      /******** verify the hbl load index is valid *************/
+    282                                      if (hbl_load_index >= Hbl__GetNumLoads())
+    283                                      {
+    284                                          retval = NVO_RS_UNSUP_INVALID_PARAM;
+    285                                          break;  // exit do while loop
+    286                                      }
+    287          
+    288                                      /** verify the buffer payload data size and the Hbl module size are the same **/
+    289                                      uint8 size = Hbl__GetLoadDataSize(hbl_load_index);
+    290                                      if (PAYLOAD_LOAD_DATA_SIZE != size)
+    291                                      {
+    292                                          retval = NVO_RS_UNSUP_INVALID_PARAM;
+    293                                          break; // exit do while loop
+    294                                      }
+    295          
+    296                                      /** set the Hbl load **/
+    297                                      if (size > 0)
+    298                                      {
+    299                                          (void)Hbl__SetLoadRequestByLoadID(hbl_load_id, HBL_PRIORITY_PC_CONTROL, &PAYLOAD_LOAD_DATA);
+    300          
+    301                                          /**** Write the hbl load size and data to the return message buffer ****/
+    302                                          ret_mess[payload_index + 1] = size;
+    303                                          uint8 * data = Hbl__GetProcessedLoad(hbl_load_index);
+    304                                          if (data == NULL)
+    305                                          {
+    306                                              retval = NVO_RS_UNSUP_INVALID_PARAM;
+    307                                              break;  // exit do while loop
+    308                                          }
+    309                                          else
+    310                                          {
+    311                                              memcpy(&ret_mess[payload_index + 2], data, PAYLOAD_LOAD_DATA_SIZE);
+    312                                          }
+    313                                      }
+    314          
+    315                                      payload_index = PAYLOAD_NEXT_LOAD_ID_INDEX;
+    316                                  } while (payload_index < buffer->size);
+    317          
+    318                              }
+    319          
+    320                              if (retval == NVO_RS_READY)     // verify the do while loop was not prematurely exited
+    321                              {
+    322                                  ptr = Reveal__NewFeedback(API005LOWLEVEL_NUM, API005LOWLEVEL_OC_SET_LOAD, buffer->node_id, payload_index);
+    323                                  if (ptr == (REVEAL_COMMAND_TYPE *)NULL)
+    324                                  {
+    325                                      retval = NVO_RS_UNSUPPORTED;
+    326                                  }
+    327                                  else
+    328                                  {
+    329                                      (void)Reveal__AddDataU8Buffer(ptr, ret_mess, payload_index);
+    330                                      (void)Reveal__QueueCommand(ptr);
+    331                                  }
+    332                              }
+    333                          }
+    334                          break;
+    335          
+    336                      case API005LOWLEVEL_OC_GET_PUB_LOAD_DATA:
+    337                          //For LOAD ID - 0 to 254 it publishes the requested LOAD ID DATA
+    338                          if (buffer->payload[0] != 0xFF)
+    339                          {
+    340                              item_index = Hbl__GetLoadIndexByLoadID((HBL_LOAD_ENUM_TYPE)buffer->payload[0]);
+    341          
+    342                              if (item_index != HBL_INDEX_INVALID)
+    343                              {
+    344                                  num_items = 1;
+    345                              }
+    346                              else
+    347                              {
+    348                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    349                              }
+    350                          }
+    351                          else
+    352                          {
+    353                              //For LOAD ID - 255 is used to request all load data
+    354                              num_items = Hbl__GetNumLoads();
+    355                              item_index = 0;
+    356                          }
+    357          
+    358                          if (retval == NVO_RS_READY)
+    359                          {
+    360                              retval = PublishData(API005LOWLEVEL_OC_GET_PUB_LOAD_DATA, item_index, num_items, buffer->node_id);
+    361                          }
+    362                          break;
+    363          
+    364                      case API005LOWLEVEL_OC_GET_PUB_LLI_DATA:
+    365                          //For LLI TYPE - 0 to 254 it publishes the requested LLI Data
+    366                          if (buffer->payload[0] != 0xFF)
+    367                          {
+    368                              item_index = HBl__GetLLIIndexByID((HBL_LLI_ENUM_TYPE)buffer->payload[0], buffer->payload[1]);
+    369          
+    370                              if (item_index != HBL_INDEX_INVALID)
+    371                              {
+    372                                  num_items = 1;
+    373                              }
+    374                              else
+    375                              {
+    376                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    377                              }
+    378                          }
+    379                          else
+    380                          {
+    381                              //For LLI TYPE - 255 is used to publish all LLI Data
+    382                              num_items = Hbl__GetNumLLI();
+    383                              item_index = 0;
+    384                          }
+    385          
+    386                          if (retval == NVO_RS_READY)
+    387                          {
+    388                              retval = PublishData(API005LOWLEVEL_OC_GET_PUB_LLI_DATA, item_index, num_items, buffer->node_id);
+    389                          }
+    390                          break;
+    391          
+    392                      case API005LOWLEVEL_OC_GET_PUB_GI_DATA:
+    393                          //For GI ID - 0 to 254 it publishes the requested GI CONVERTED DATA
+    394                          if (buffer->payload[0] != 0xFF)
+    395                          {
+    396                              item_index = Hbl__GetGIIndexByGIID((HBL_GENERIC_INPUT_ENUM_TYPE)buffer->payload[0]);
+    397          
+    398                              if (item_index != HBL_INDEX_INVALID)
+    399                              {
+    400                                  num_items = 1;
+    401                              }
+    402                              else
+    403                              {
+    404                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    405                              }
+    406                          }
+    407                          else
+    408                          {
+    409                              //For GI ID - 255 is used to request all GI CONVERTED DATA
+    410                              num_items = Hbl__GetNumGI();
+    411                              item_index = 0;
+    412                          }
+    413          
+    414                          if (retval == NVO_RS_READY)
+    415                          {
+    416                              retval = PublishData(API005LOWLEVEL_OC_GET_PUB_GI_DATA, item_index, num_items, buffer->node_id);
+    417                          }
+    418                          break;
+    419          
+    420                      case API005LOWLEVEL_OC_GET_PUB_ALL_LOADS_CONFIGURATION:
+    421                          retval = PublishData(API005LOWLEVEL_OC_GET_PUB_ALL_LOADS_CONFIGURATION, 0, Hbl__GetNumLoads(), buffer->node_id);
+    422                          break;
+    423          
+    424                      case API005LOWLEVEL_OC_GET_PUB_ALL_LLI_CONFIGURATION:
+    425                          retval = PublishData(API005LOWLEVEL_OC_GET_PUB_ALL_LLI_CONFIGURATION, 0, Hbl__GetNumLLI(), buffer->node_id);
+    426                          break;
+    427          
+    428                      case API005LOWLEVEL_OC_GET_PUB_ALL_GI_CONFIGURATION:
+    429                          retval = PublishData(API005LOWLEVEL_OC_GET_PUB_ALL_GI_CONFIGURATION, 0, Hbl__GetNumGI(), buffer->node_id);
+    430                          break;
+    431          
+    432                      case API005LOWLEVEL_OC_EXTRACT_LOADS:
+    433                          API005_Publish_Loads = (BOOL_TYPE)(buffer->payload[0] & 1);
+    434                          break;
+    435                      case API005LOWLEVEL_OC_EXTRACT_GIS:
+    436                          API005_Publish_Inputs = (BOOL_TYPE)(buffer->payload[0] & 1);
+    437                          break;
+    438                  #endif
+    439          
+    440                  #if (API005_CONTROL_CYCLES_FEATURE == ENABLED)
+    441                      case API005LOWLEVEL_SET_TEST_STORAGE:
+    442                          TestMgr__SetStorage((BOOL_TYPE)(buffer->payload[0] & 1));
+    443                          break;
+    444                      case API005LOWLEVEL_ENGAGE_TEST_CYCLE:
+    445                          if (TestMgr__EngageTest(buffer->payload[0],(TESTMGR_CYCLE_TYPE)buffer->payload[1]) == FAIL)
+    446                          {
+    447                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    448                          }
+    449                          break;
+    450                      case API005LOWLEVEL_PHASE_TEST_CYCLE:
+    451                          if (TestMgr__SetPhase(buffer->payload[0],(TESTMGR_PHASE_TYPE)buffer->payload[1]) == FAIL)
+    452                          {
+    453                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    454                          }
+    455                          break;
+    456                      case API005LOWLEVEL_STEP_TEST_CYCLE:
+    457                          if (TestMgr__SetStep(buffer->payload[0],(TESTMGR_PHASE_TYPE)buffer->payload[1]) == FAIL)
+    458                          {
+    459                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    460                          }
+    461                          break;
+    462                  #endif
+    463          
+    464                  #if (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    465                      case API005LOWLEVEL_OC_HMI_SET_OBJECT:
+    466                          if (Mode__IsPCControlEngaged())
+    467                          {
+    468                              //VISUAL_OBJECT_TYPE object_type, uint16 object_index, uint16 object_value
+    469                              if (buffer->size == 5)
+    470                              {
+    471                                  uint8 object_intensity = (Utilities__ConvertArrayTo16bits(&buffer->payload[3]) != 0) ? 100 : 0;
+    472                                  HblHmi__SetObject((VISUAL_OBJECT_TYPE)buffer->payload[0],
+    473                                                    Utilities__ConvertArrayTo16bits(&buffer->payload[1]),
+    474                                                    Utilities__ConvertArrayTo16bits(&buffer->payload[3]),
+    475                                                    object_intensity,
+    476                                  #if (HBLHMI_LED_PRIORITY_FEATURE == ENABLED)
+    477                                        HBLHMI_LED_PRIORITY_SYSTEM);
+    478                                  #else
+    479                                        HBLHMI_LED_PRIORITY_MAX);
+    480                                  #endif
+    481                              }
+    482                              else
+    483                              {
+    484                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    485                              }
+    486                          }
+    487                          else
+    488                          {
+    489                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    490                          }
+    491                          break;
+    492                      case API005LOWLEVEL_OC_HMI_PLAY_SOUND:
+    493                          if (Mode__IsPCControlEngaged())
+    494                          {
+    495                              if (buffer->size == 2)
+    496                              {
+    497                                  HblHmi__PlaySoundSimple(buffer->payload[0],(SOUND_VOLUME_TYPE)buffer->payload[1]);
+    498                              }
+    499                              else
+    500                              {
+    501                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    502                              }
+    503                          }
+    504                          else
+    505                          {
+    506                              retval = NVO_RS_UNSUP_UNAVAILABLE;
+    507                          }
+    508                          break;
+    509                      case API005LOWLEVEL_OC_HMI_PUB_GI_DATA:
+    510                          //For GI ID - 0 to 254 it publishes the requested GI CONVERTED DATA
+    511                          if (buffer->payload[0] != 0xFF)
+    512                          {
+    513                              gi_event.GI_Position = (buffer->payload[0])&(0x3F);    //0b00111111: Remove the READ TYPE bits
+    514                              gi_event.GI_Read_Type = (HBLHMI_GI_READ_TYPE)(buffer->payload[0]>>6);
+    515                              item_index = HblHmi__GetGIConfigIndexByType(gi_event.GI_Read_Type,gi_event.GI_Position);
+    516          
+    517                              if (item_index != HBL_GI_INVALID)    //GI in range, is a valid GI index
+    518                              {
+    519                                  num_items = 1;
+    520                              }
+    521                              else
+    522                              {
+    523                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    524                              }
+    525                          }
+    526                          else
+    527                          {
+    528                              //For GI ID - 255 is used to request all GI CONVERTED DATA
+    529                              num_items = HblHmi__GetNumGI();
+    530                              item_index = 0;
+    531                          }
+    532          
+    533                          if (retval == NVO_RS_READY)
+    534                          {
+    535                              retval = PublishData(API005LOWLEVEL_OC_HMI_PUB_GI_DATA, item_index, num_items, buffer->node_id);
+    536                          }
+    537                          break;
+    538                      case API005LOWLEVEL_OC_HMI_PUB_LLI_DATA:
+    539                          //For LLI TYPE - 0 to 254 it publishes the requested LLI Data
+    540                          if (buffer->payload[0] != 0xFF)
+    541                          {
+    542                              item_index = HblHmi__GetLLIIndexByID((HBL_LLI_ENUM_TYPE)buffer->payload[0], buffer->payload[1]);
+    543          
+    544                              if (item_index != HBL_LLI_INVALID)
+    545                              {
+    546                                  num_items = 1;
+    547                              }
+    548                              else
+    549                              {
+    550                                  retval = NVO_RS_UNSUP_INVALID_PARAM;
+    551                              }
+    552                          }
+    553                          else
+    554                          {
+    555                              //For LLI TYPE - 255 is used to publish all LLI Data
+    556                              num_items = HblHmi__GetNumLLI();
+    557                              item_index = 0;
+    558                          }
+    559          
+    560                          if (retval == NVO_RS_READY)
+    561                          {
+    562                              retval = PublishData(API005LOWLEVEL_OC_HMI_PUB_LLI_DATA, item_index, num_items, buffer->node_id);
+    563                          }
+    564                          break;
+    565          
+    566                      case API005LOWLEVEL_OC_HMI_PUB_GI_CONFIG:
+    567                           retval = PublishData(API005LOWLEVEL_OC_HMI_PUB_GI_CONFIG, 0, HblHmi__GetNumLLI(), buffer->node_id);
+    568                           break;
+    569          
+    570                       case API005LOWLEVEL_OC_HMI_PUB_LLI_CONFIG:
+    571                           retval = PublishData(API005LOWLEVEL_OC_HMI_PUB_LLI_CONFIG, 0, HblHmi__GetNumGI(), buffer->node_id);
+    572                           break;
+    573                  #endif
+    574                  case API005LOWLEVEL_OC_CALL_DEBUG_FUNCTION:
+    575                      if ((buffer->payload[0] < API005_NUM_DEBUG_FUNCTIONS) &&
+    576                          (API005LOWLEVEL_DEBUG_TABLE[buffer->payload[0]].Function != NULL_TASK))
+    577                      {
+    578                          API005LOWLEVEL_DEBUG_TABLE[buffer->payload[0]].Function();
+    579                      }
+    580                      else
+    581                      {
+    582                          retval = NVO_RS_UNSUP_INVALID_PARAM;
+    583                      }
+    584                      break;
+    585                  case API005LOWLEVEL_OC_DEBUG_LABEL:
+    586                      if (buffer->payload[0] < API005_NUM_DEBUG_FUNCTIONS)
+    587                      {
+    588                          ptr = Reveal__NewFeedback(API005LOWLEVEL_NUM, API005LOWLEVEL_OC_DEBUG_LABEL, REVEAL_BROADCAST_NODE, API005_SIZE_OF_LABEL + 1);
+    589                          if (ptr == (REVEAL_COMMAND_TYPE *)NULL)
+    590                          {
+    591                              retval = NVO_RS_UNSUPPORTED;
+    592                          }
+    593                          else
+    594                          {
+    595                              (void)Reveal__AddDataU8(ptr, buffer->payload[0]);
+    596                              (void)Reveal__AddDataU8Buffer(ptr, (uint8 *)API005LOWLEVEL_DEBUG_TABLE[buffer->payload[0]].Label, API005_SIZE_OF_LABEL);    //lint !e926 cast from pointer to pointer [MISRA 2004 Rule 11.4]
+    597                              (void)Reveal__QueueCommand(ptr);
+    598                          }
+    599                      }
+    600                      else
+    601                      {
+    602                          retval = NVO_RS_UNSUP_INVALID_PARAM;
+    603                      }
+    604                      break;
+    605                  case API005LOWLEVEL_OC_SET_DEBUG_VARIABLE:
+    606                      API005LOWLEVEL_SET_DEBUG_VAR(buffer->payload[0],Utilities__ConvertArrayTo32bits(&buffer->payload[1]));
+    607                      break;
+    608                  default:
+    609                      retval = NVO_RS_UNSUP_OP_CODE;
+    610                      break;
+    611              }
+    612              return (retval);
+    613          }
+    614          
+    615          //----------------------------------------------------------------------------------------------------------
+    616          /**
+    617           * @brief This method publish events related to API005 as they happens.
+    618           * @param event
+    619           */
+    620          void API005LowLevel__PublishEvent(uint8 * data, uint8 size)
+    621          {
+    622              REVEAL_COMMAND_TYPE * ptr;
+    623              ptr = Reveal__NewFeedback(API005LOWLEVEL_NUM,API005LOWLEVEL_OC_PUBLISH_EVENT,REVEAL_BROADCAST_NODE,size);
+    624              if (ptr != (REVEAL_COMMAND_TYPE *)NULL)
+    625              {
+    626                  Reveal__AddDataU8Buffer(ptr,data,size);
+    627                  Reveal__QueueCommand(ptr);
+    628              }
+    629          }
+    630          
+    631          //----------------------------------------------------------------------------------------------------------
+    632          /**
+    633           * @brief This method shall be called every 5ms from the Communication Thread
+    634           */
+    635          void API005LowLevel__Handler(void)
+    636          {
+    637              #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+    638                  API005_Timer_Divider++;
+    639                  if (API005_Timer_Divider > 8)
+    640                  {
+    641                      API005_Timer_Divider = 0;
+    642          
+    643                      API005_Timer++;
+    644          
+    645                      uint8 num_loads = Hbl__GetNumLoads();
+    646                      uint8 num_gis =  Hbl__GetNumGI();
+    647          
+    648                      if (API005_Publish_Loads == TRUE)
+    649                      {
+    650                          if ( (API005_Timer >= 50) &&
+    651                               (API005_Timer < (50 +num_loads))
+    652                             )
+    653                          {
+    654                              PublishData(API005LOWLEVEL_OC_GET_PUB_LOAD_DATA, API005_Timer-50, 1, REVEAL_BROADCAST_NODE);
+    655                          }
+    656                      }
+    657          
+    658                      if (API005_Publish_Inputs == TRUE)
+    659                      {
+    660                          if ( (API005_Timer >= (50 +num_loads)) &&
+    661                               (API005_Timer < ((50 +num_loads) + num_gis))
+    662                             )
+    663                          {
+    664                              PublishData(API005LOWLEVEL_OC_GET_PUB_GI_DATA, API005_Timer - 50 - num_loads, 1, REVEAL_BROADCAST_NODE);
+    665                          }
+    666                      }
+    667                      if (API005_Timer >= ((50 +num_loads) + num_gis))
+    668                      {
+    669                          API005_Timer = 0;
+    670                      }
+    671                  }
+    672              #else
+    673          
+    674              #endif
+    675          }
+    676          
+    677          //=====================================================================================================================
+    678          //-------------------------------------- Private Functions ------------------------------------------------------------
+    679          //=====================================================================================================================
+    680          
+    681          #if ((API005_USE_LOADS_AND_GIS_FEATURE == ENABLED) || (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED))
+    682          //----------------------------------------------------------------------------------------------------------
+    683          /**
+    684           * @brief Method used to publish the data or configuration related to Load, GI or LLI
+    685           * @param oc
+    686           * @param item_index
+    687           * @param num_items
+    688           * @param node_id
+    689           * @return REVEAL_RECIPE_STATUS_TYPE
+    690           */
+    691          static REVEAL_RECIPE_STATUS_TYPE PublishData(API005LOWLEVEL_OC_TYPE oc, uint8 item_index, uint8 num_items, uint8 node_id)
+    692          {
+    693              REVEAL_RECIPE_STATUS_TYPE retval;
+    694              retval = NVO_RS_READY;
+    695              REVEAL_COMMAND_TYPE * ptr;
+    696          
+    697              //The below logic sends multiple messages if all the data does not fit in one message
+    698              do
+    699              {
+    700                  ptr = Reveal__NewFeedback(API005LOWLEVEL_NUM, oc, node_id, (REVEAL_PAYLOAD_SIZE - 4));
+    701                  if (ptr == (REVEAL_COMMAND_TYPE *)NULL)
+    702                  {
+    703                      retval = NVO_RS_UNSUPPORTED;
+    704                      break;
+    705                  }
+    706                  else
+    707                  {
+    708                      //publish_data_function_index is the index PUBLISH_DATA_FUNCTION_PTR constant
+    709                      //the offsets are calculated depending on the Features that are enabled i.e. function pointers added to the table
+    710                      uint8 publish_data_function_index = oc - API005LOWLEVEL_OC_GET_PUB_LOAD_DATA;     //this is mapped by default to API005_USE_LOADS_AND_GIS_FEATURE
+    711          
+    712                      #if ((API005_USE_LOADS_AND_GIS_FEATURE == ENABLED) && (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED))
+    713                          if (oc >= API005LOWLEVEL_OC_HMI_PUB_GI_DATA)
+    714                          {
+    715                              publish_data_function_index =    oc - (API005LOWLEVEL_OC_HMI_PUB_GI_DATA - PUBLISH_DATA_NUM_OF_LOADs_AND_GI_OPCODES);
+    716                          }
+    717                      #elif (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    718                          if (oc >= API005LOWLEVEL_OC_HMI_PUB_GI_DATA)
+    719                          {
+    720                              publish_data_function_index =    oc - API005LOWLEVEL_OC_HMI_PUB_GI_DATA;
+    721                          }
+    722                      #endif
+    723          
+    724                      //populate the reveal message with the load data
+    725                      for (uint8 payload_data_counter = 0; num_items > 0; num_items--)
+    726                      {
+    727                          uint8 data_size = PUBLISH_DATA_FUNCTION_PTR[publish_data_function_index].GetDataSizeByIndex(item_index);
+    728          
+    729                          //Determine is this item data could be fit in the message or not
+    730                          payload_data_counter += PUBLISH_DATA_FUNCTION_PTR[publish_data_function_index].Non_ItemData_Size + data_size;
+    731          
+    732                          if (payload_data_counter > REVEAL_PAYLOAD_SIZE)
+    733                          {
+    734                              break;
+    735                          }
+    736          
+    737                          PUBLISH_DATA_FUNCTION_PTR[publish_data_function_index].BuildMessage(item_index, data_size, ptr);
+    738          
+    739                          item_index++;
+    740                      }
+    741          
+    742                      if (num_items != 0)
+    743                      {
+    744                          //set the mmp bit if their are more than one message needs to be send
+    745                          ptr->opcode |= REVEAL_MMP_BIT;
+    746                      }
+    747          
+    748                      Reveal__QueueCommand(ptr);
+    749                  }
+    750              }while(num_items != 0);
+    751          
+    752              return (retval);
+    753          }
+    754          
+    755          //----------------------------------------------------------------------------------------------------------
+    756          /**
+    757           * @brief Method returns the return size as 0
+    758           *
+    759           * @param index
+    760           * @return
+    761           */
+    762          static uint8 GetDummyDataSize(uint8 index)
+    763          {
+    764              return(0);
+    765          }
+    766          #endif
+    767          
+    768          #if (API005_USE_LOADS_AND_GIS_FEATURE == ENABLED)
+    769          //----------------------------------------------------------------------------------------------------------
+    770          /**
+    771           * @brief - This function builds the reveal message for the load data
+    772           * @details -
+    773           *     Payload[0]  = LOAD IDx
+    774           *     Payload[1]  = LOAD CONSISTENCY
+    775           *     Payload[2]  = LOAD STATUS
+    776           *     Payload[3]  = LOAD DATA SIZE
+    777           *     Payload[4]  = LOAD DATA[0]
+    778           *     Payload[5]  = LOAD DATA[n-1]
+    779           *     Payload[6]  = LOAD IDy
+    780           *     Payload[7]  = LOAD CONSISTENCY
+    781           *     Payload[8]  = LOAD STATUS
+    782           *     Payload[9]  = LOAD DATA SIZE
+    783           *     Payload[10] = LOAD DATA[0]
+    784           *     Payload[11] = LOAD DATA[n-1]
+    785           *
+    786           * @param item_index
+    787           * @param ptr
+    788           * @return
+    789           */
+    790          static void BuildLoadDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    791          {
+    792              // Form the message
+    793              Reveal__AddDataU8(ptr,Hbl__GetLoadIDByIndex(item_index));
+    794              Reveal__AddDataU8(ptr, Hbl__GetLoadConsistency(item_index));
+    795              Reveal__AddDataU8(ptr, *(uint8 *)Hbl__GetLoadStatusByIndex(item_index));
+    796              Reveal__AddDataU8(ptr, data_size);
+    797              Reveal__AddDataU8Buffer(ptr, Hbl__GetProcessedLoad(item_index), data_size);
+    798          }
+    799          
+    800          //----------------------------------------------------------------------------------------------------------
+    801          /**
+    802           * @brief - This function builds the reveal message for the LLI data
+    803           * @details -
+    804           *   Payload[0] = LLI TYPEx
+    805           *   Payload[1] = LLI POSITIONx
+    806           *   Payload[2] = LLI DATA SIZE
+    807           *   Payload[3] = LLI DATA[0]
+    808           *   Payload[4] = LLI DATA[n-1]
+    809           *   Payload[5] = LLI TYPEy
+    810           *   Payload[6] = LLI POSITIONy
+    811           *   Payload[7] = LLI DATA SIZE
+    812           *   Payload[8] = LLI DATA[0]
+    813           *   Payload[9] = LLI DATA[n-1]
+    814           *
+    815           * @param item_index
+    816           * @param data_size
+    817           * @param ptr
+    818           */
+    819          static void BuildLLIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    820          {
+    821              // Form the message
+    822              Reveal__AddDataU8(ptr,Hbl__GetLLITypeByIndex(item_index));
+    823              Reveal__AddDataU8(ptr,Hbl__GetLLIPositionByIndex(item_index));
+    824              Reveal__AddDataU8(ptr, data_size);
+    825              Reveal__AddDataU8Buffer(ptr, Hbl__GetLLIDataByIndex(item_index), data_size);
+    826          }
+    827          
+    828          //----------------------------------------------------------------------------------------------------------
+    829          /**
+    830           * @brief - This function builds the reveal message for the GI data
+    831           * @details -
+    832           *   Payload[0]   = GI IDx
+    833           *   Payload[1-4] = GI CONVERTED DATA
+    834           *   Payload[5]   = GI IDy
+    835           *   Payload[6-9] = GI CONVERTED DATA
+    836           *
+    837           * @param item_index
+    838           * @param data_size
+    839           * @param ptr
+    840           */
+    841          static void BuildGIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    842          {
+    843              // Form the message
+    844              Reveal__AddDataU8(ptr,Hbl__GetGIIDByIndex(item_index));
+    845              Reveal__AddDataU32(ptr, Hbl__GetGIDataConvertedByIndex(item_index));
+    846          }
+    847          
+    848          
+    849          //----------------------------------------------------------------------------------------------------------
+    850          /**
+    851           * @brief - This function builds the reveal message for all the load configuration
+    852           * @details -
+    853           *   Payload[0]     = NUM OF LOADS n
+    854           *   Payload[n+1]   = LOAD ID[n-1]
+    855           *   Payload[n+2]   = PILOT TYPE[n-1]
+    856           *
+    857           * @param item_index
+    858           * @param data_size
+    859           * @param ptr
+    860           */
+    861          static void BuildAllLoadConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    862          {
+    863              // Form the message
+    864              if (item_index == 0)
+    865              {
+    866                  Reveal__AddDataU8(ptr,Hbl__GetNumLoads());
+    867              }
+    868          
+    869              Reveal__AddDataU8(ptr,Hbl__GetLoadIDByIndex(item_index));
+    870              Reveal__AddDataU8(ptr,Hbl__GetPilotIDByIndex(item_index));
+    871          }
+    872          
+    873          //----------------------------------------------------------------------------------------------------------
+    874          /**
+    875           * @brief - This function builds the reveal message for all the LLI configuration
+    876           * @details -
+    877           *   Payload[0]     = NUM OF LLI
+    878           *   Payload[n+1]   = LLI ID[n-1]
+    879           *   Payload[n+2]   = LLI POSITION[n-1]
+    880           *
+    881           * @param item_index
+    882           * @param data_size
+    883           * @param ptr
+    884           */
+    885          static void BuildAllLLIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    886          {
+    887              // Form the message
+    888              if (item_index == 0)
+    889              {
+    890                  Reveal__AddDataU8(ptr,Hbl__GetNumLLI());
+    891              }
+    892          
+    893              Reveal__AddDataU8(ptr,Hbl__GetLLITypeByIndex(item_index));
+    894              Reveal__AddDataU8(ptr,Hbl__GetLLIPositionByIndex(item_index));
+    895          }
+    896          
+    897          //----------------------------------------------------------------------------------------------------------
+    898          /**
+    899           * @brief - This function builds the reveal message for all the GI configuration
+    900           * @details -
+    901           *   Payload[0]     = NUM OF GI n
+    902           *   Payload[n+1]   = GI ID[n-1]
+    903           *   Payload[n+2]   = LLI ID[n-1]
+    904           *   Payload[n+3]   = LLI POSITION[n-1]
+    905           *
+    906           * @param item_index
+    907           * @param data_size
+    908           * @param ptr
+    909           */
+    910          static void BuildAllGIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    911          {
+    912              // Form the message
+    913              if (item_index == 0)
+    914              {
+    915                  Reveal__AddDataU8(ptr,Hbl__GetNumGI());
+    916              }
+    917          
+    918              Reveal__AddDataU8(ptr,Hbl__GetGIIDByIndex(item_index));
+    919              Reveal__AddDataU8(ptr,Hbl__GetLLITypeByGIIndex(item_index));
+    920              Reveal__AddDataU8(ptr,Hbl__GetLLIPositionByGIIndex(item_index));
+    921          }
+    922          
+    923          //----------------------------------------------------------------------------------------------------------
+    924          /**
+    925           * @brief Method returns the return size of the GI Converted data
+    926           *
+    927           * @param index
+    928           * @return
+    929           */
+    930          static uint8 HblGetGIConvertedDataSizeByIndex(uint8 index)
+    931          {
+    932              return(4);
+    933          }
+    934          
+    935          #endif
+    936          
+    937          #if (API005_USE_OBJECTS_AND_EVENTS_FEATURE == ENABLED)
+    938          //----------------------------------------------------------------------------------------------------------
+    939          /**
+    940           * @brief Event handler for Hmi when in PC Control Mode
+    941           * @param event
+    942           */
+    943          void API005ReceiveEvent(HBLHMI_GI_EVENT_TYPE event)
+    944          {
+    945          
+    946              if (Mode__IsPCControlEngaged())
+    947              {
+    948                  API005LowLevel__PublishEvent((uint8 *)(&event), 1);
+    949              }
+    950          
+    951          }
+    952          
+    953          //----------------------------------------------------------------------------------------------------------
+    954          /**
+    955           * @brief   Builds the reveal message for HMI GI data
+    956           * @details
+    957           *   Payload[0] = GI READ_TYPE and GI POSITION
+    958           *   Payload[1] = GI DATA SIZE (n)
+    959           *   Payload[2] = GI DATA[0]
+    960           *   Payload[3] = GI DATA[n-1]
+    961           * @param item_index
+    962           * @param data_size
+    963           * @param ptr
+    964           */
+    965          static void BuildHmiGIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    966          {
+    967              uint8 gi_id;
+    968              gi_id = HblHmi__GetGIPositionByIndex(item_index);
+    969              gi_id = gi_id | (HblHmi__GetGIReadTypeByIndex(item_index)<< 6);
+    970          
+    971              // Form the message
+    972              Reveal__AddDataU8(ptr,gi_id);
+    973              Reveal__AddDataU8(ptr, data_size);
+    974              Reveal__AddDataU8Buffer(ptr, HblHmi__GetGIByIndex(item_index), data_size);
+    975          }
+    976          
+    977          //----------------------------------------------------------------------------------------------------------
+    978          /**
+    979           * @brief
+    980           * @details
+    981           *   Payload[0] = LLI TYPEx
+    982           *   Payload[1] = LLI POSITIONx
+    983           *   Payload[2] = LLI DATA SIZE (n)
+    984           *   Payload[3] = LLI DATA[0]
+    985           *   Payload[4] = LLI DATA[n-1]
+    986           * @param item_index
+    987           * @param data_size
+    988           * @param ptr
+    989           */
+    990          static void BuildHmiLLIDataMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+    991          {
+    992              // Form the message
+    993              Reveal__AddDataU8(ptr,HblHmi__GetLLIIDByIndex(item_index));
+    994              Reveal__AddDataU8(ptr,HblHmi__GetLLIPositionByIndex(item_index));
+    995              Reveal__AddDataU8(ptr, data_size);
+    996              Reveal__AddDataU8Buffer(ptr, HblHmi__GetLLIDataByIndex(item_index), data_size);
+    997          }
+    998          
+    999          //----------------------------------------------------------------------------------------------------------
+   1000          /**
+   1001           * @brief - This function builds the reveal message for all the LLI configuration
+   1002           * @details -
+   1003           *   Payload[0]     = NUM OF LLI
+   1004           *   Payload[n+1]   = LLI ID[n-1]
+   1005           *   Payload[n+2]   = LLI POSITION[n-1]
+   1006           *
+   1007           * @param item_index
+   1008           * @param data_size
+   1009           * @param ptr
+   1010           */
+   1011          static void BuildHmiAllLLIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+   1012          {
+   1013              // Form the message
+   1014              if (item_index == 0)
+   1015              {
+   1016                  Reveal__AddDataU8(ptr,HblHmi__GetNumLLI());
+   1017              }
+   1018          
+   1019              Reveal__AddDataU8(ptr,HblHmi__GetLLIIDByIndex(item_index));
+   1020              Reveal__AddDataU8(ptr,HblHmi__GetLLIPositionByIndex(item_index));
+   1021          }
+   1022          
+   1023          //----------------------------------------------------------------------------------------------------------
+   1024          /**
+   1025           * @brief - This function builds the reveal message for all the GI configuration
+   1026           * @details -
+   1027           *   Payload[0]     = NUM OF GI n
+   1028           *   Payload[n+1]   = GI READ_TYPE and GI POSITION
+   1029           *   Payload[n+2]   = GI ID[n-1]
+   1030           *   Payload[n+3]   = LLI ID[n-1]
+   1031           *   Payload[n+4]   = LLI POSITION[n-1]
+   1032           *
+   1033           * @param item_index
+   1034           * @param data_size
+   1035           * @param ptr
+   1036           */
+   1037          static void BuildHmiAllGIConfigurationMessage(uint8 item_index, uint8 data_size, REVEAL_COMMAND_TYPE * ptr)
+   1038          {
+   1039              uint8 gi_id;
+   1040              gi_id = HblHmi__GetGIPositionByIndex(item_index);
+   1041              gi_id = gi_id | (HblHmi__GetGIReadTypeByIndex(item_index)<< 6);
+   1042          
+   1043              // Form the message
+   1044              if (item_index == 0)
+   1045              {
+   1046                  Reveal__AddDataU8(ptr,HblHmi__GetNumGI());
+   1047              }
+   1048              Reveal__AddDataU8(ptr,gi_id);
+   1049              Reveal__AddDataU8(ptr,HblHmi__GetGIIDByIndex(item_index));
+   1050              Reveal__AddDataU8(ptr,HblHmi__GetLLIIDByGIIndex(item_index));
+   1051              Reveal__AddDataU8(ptr,HblHmi__GetLLIPositionByGIIndex(item_index));
+   1052          }
+   1053          
+   1054          #endif
+   1055          
+   1056          #endif  //API005LOWLEVEL_FEATURE
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

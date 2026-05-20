@@ -1,0 +1,635 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:31
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\Source\mc_llmem.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o mc_llmem.obj -l
+#        ..\listings\mc_llmem.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\Source\mc_llmem.c
+#    List file    =  ..\listings\mc_llmem.lst
+#    Object file  =  mc_llmem.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\MasterCommander\Source\mc_llmem.c
+      1          /**
+      2           *  @file       
+      3           *
+      4           *  @brief      MasterCommander low level memory access routines
+      5           *
+      6           *
+      7           *  $Header: $
+      8           *
+      9           *  @copyright  Copyright 2016-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     10           */
+     11          //---------------------------------------------------------------------------------------------------------------------
+     12          //---------------------------------------------------------------------------------------------------------------------
+     13          
+     14          
+     15          //-------------------------------------- Include Files ----------------------------------------------------------------
+     16          #include "mc_llmem.h"
+     17          
+     18          #include "C_Extensions.h"
+     19          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     20          
+     21          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     22          
+     23          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     24          
+     25          
+     26          //=====================================================================================================================
+     27          //-------------------------------------- Public Functions -------------------------------------------------------------
+     28          //=====================================================================================================================
+     29          
+     30          //---------------------------------------------------------------------------------------------------------------------
+     31          
+     32          #if !(MC_DISABLE)
+     33          /*******************************************************************************
+     34          *
+     35          *  @brief    API: User callback called from MC_Isr() handler
+     36          *
+     37          *******************************************************************************/
+     38          
+     39          #if defined(MC_ISR_CALLBACK)
+     40            extern void MC_ISR_CALLBACK(void);
+     41          #endif
+     42          
+     43          /*******************************************************************************
+     44          *
+     45          * @brief    API: Main SCI / JTAG / CAN Interrupt handler call
+     46          *
+     47          * This Interrupt Service Routine handles the SCI or CAN interrupts for the mc
+     48          * driver. In case you want to handle the interrupt in the application yourselves,
+     49          * call the MC_ProcessSCI, MC_ProcessCanRx or MC_ProcessCanTx functions which
+     50          * does the same job but is not compiled as an Interrupt Service Routine.
+     51          *
+     52          * In poll-driven mode (MC_POLL_DRIVEN) this function does nothing.
+     53          *
+     54          *******************************************************************************/
+     55          
+     56          /* 56F8xxx interrupt routine declaration, user has to  */
+     57          /* direct vector to the MC_Isr function */
+     58          ////#pragma interrupt saveall
+     59          
+
+   \                                 In section .text, align 2, keep-with-next
+     60          void MC_Isr(void)
+     61          {
+     62          #if (MC_LONG_INTR) || (MC_SHORT_INTR)
+     63          
+     64              /* process serial interface */
+     65          #if MC_USE_SCI
+     66              MC_ProcessSCI();
+     67          
+     68              /* process Jtag EOnCE interface */
+     69          #elif MC_USE_JTAG
+     70              MC_ProcessJTAG();
+     71          
+     72          #endif /* MC_USE_SCI */
+     73          
+     74              /* process application callback */
+     75          #if defined(MC_ISR_CALLBACK)
+     76              if((MC_ISR_CALLBACK) != NULL)
+     77                  MC_ISR_CALLBACK();
+     78          #endif
+     79          
+     80          #endif
+     81          }
+   \                     MC_Isr: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     82          
+     83          /* automatic inlining may cause problems with C calling convention assumed below */
+     84          //#pragma dont_inline on
+     85          
+     86          /**************************************************************************//*!
+     87          *
+     88          * @brief    The "memcpy" used internally in MC driver
+     89          *
+     90          * @param    nDestAddr - destination memory address
+     91          * @param    nSrcAddr  - source memory address
+     92          * @param    nSize     - memory size (always in bytes)
+     93          *
+     94          * @return This function returns a pointer to next destination byte
+     95          *
+     96          ******************************************************************************
+     97          *
+     98          * This function accepts both 16bit or 32bit address and works correctly
+     99          * even in the SDM mode. Buffer address is a standard ANSI C pointer
+    100          *
+    101          * Warning: This call assumes CodeWarrior style of passing parameters,
+    102          * i.e. 32 bit operands passed in A and B accumulators
+    103          *
+    104          * Warning2: MC_ADDR type MUST be numeric! (UWord type)
+    105          *
+    106          ******************************************************************************/
+    107          
+
+   \                                 In section .text, align 4, keep-with-next
+    108          void MC_CopyMemory(MC_ADDR nDestAddr, MC_ADDR nSrcAddr, MC_SIZE8 nSize)
+    109          {
+    110          	MC_U8* pSrcAddr = (MC_U8 *) nSrcAddr;
+    111          	MC_U8* pDestAddr = (MC_U8 *) nDestAddr;
+   \                     MC_CopyMemory: (+1)
+   \   00000000   0xB1E2             CBZ.N    R2,??MC_CopyMemory_0
+   \   00000002   0xF012 0x0303      ANDS     R3,R2,#0x3
+   \   00000006   0xD005             BEQ.N    ??MC_CopyMemory_1
+    112          
+    113          	while(nSize--)
+    114          	{
+    115          		*pDestAddr++ = *pSrcAddr++;
+   \                     ??MC_CopyMemory_2: (+1)
+   \   00000008   0x1E5B             SUBS     R3,R3,#+1
+   \   0000000A   0xF811 0xCB01      LDRB     R12,[R1], #+1
+   \   0000000E   0xF800 0xCB01      STRB     R12,[R0], #+1
+   \   00000012   0xD1F9             BNE.N    ??MC_CopyMemory_2
+   \                     ??MC_CopyMemory_1: (+1)
+   \   00000014   0x0892             LSRS     R2,R2,#+2
+   \   00000016   0xD011             BEQ.N    ??MC_CopyMemory_0
+   \                     ??MC_CopyMemory_3: (+1)
+   \   00000018   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   0000001C   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   00000020   0x1E52             SUBS     R2,R2,#+1
+   \   00000022   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000026   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   0000002A   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   0000002E   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   00000032   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000036   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   0000003A   0xD1ED             BNE.N    ??MC_CopyMemory_3
+    116          	}
+    117          }
+   \                     ??MC_CopyMemory_0: (+1)
+   \   0000003C   0x4770             BX       LR               ;; return
+    118          
+    119          /**************************************************************************//*!
+    120          *
+    121          * @brief  Write-into the communication buffer memory
+    122          *
+    123          * @param  pDestBuff - pointer to destination memory in communication buffer
+    124          * @param  nSrcAddr  - source memory address
+    125          * @param  nSize     - buffer size (always in bytes)
+    126          *
+    127          * @return This function returns a pointer to next byte in comm. buffer
+    128          *
+    129          ******************************************************************************
+    130          *
+    131          * This function accepts both 16bit or 32bit address and works correctly
+    132          * even in the SDM mode. Buffer address is a standard ANSI C pointer
+    133          *
+    134          * Warning: This call assumes CodeWarrior style of passing parameters,
+    135          * i.e. 32 bit operands passed in A and B accumulators
+    136          *
+    137          * Warning2: MC_ADDR type MUST be numeric! (UWord type)
+    138          *
+    139          ******************************************************************************/
+    140          
+
+   \                                 In section .text, align 4, keep-with-next
+    141          MC_BPTR MC_CopyToBuffer(MC_BPTR pDestBuff, MC_ADDR nSrcAddr, MC_SIZE8 nSize)
+    142          {
+    143          	MC_U8* pSrcAddr = (MC_U8 *) nSrcAddr;
+    144          	MC_U8 counter = 0;
+   \                     MC_CopyToBuffer: (+1)
+   \   00000000   0xB1E2             CBZ.N    R2,??MC_CopyToBuffer_0
+   \   00000002   0xF012 0x0303      ANDS     R3,R2,#0x3
+   \   00000006   0xD005             BEQ.N    ??MC_CopyToBuffer_1
+    145          
+    146          	while (counter < nSize)
+    147          	{
+    148          		*pDestBuff++ = *pSrcAddr++;
+    149          
+    150          		counter++;
+   \                     ??MC_CopyToBuffer_2: (+1)
+   \   00000008   0x1E5B             SUBS     R3,R3,#+1
+   \   0000000A   0xF811 0xCB01      LDRB     R12,[R1], #+1
+   \   0000000E   0xF800 0xCB01      STRB     R12,[R0], #+1
+   \   00000012   0xD1F9             BNE.N    ??MC_CopyToBuffer_2
+   \                     ??MC_CopyToBuffer_1: (+1)
+   \   00000014   0x0892             LSRS     R2,R2,#+2
+   \   00000016   0xD011             BEQ.N    ??MC_CopyToBuffer_0
+   \                     ??MC_CopyToBuffer_3: (+1)
+   \   00000018   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   0000001C   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   00000020   0x1E52             SUBS     R2,R2,#+1
+   \   00000022   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000026   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   0000002A   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   0000002E   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   00000032   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000036   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   0000003A   0xD1ED             BNE.N    ??MC_CopyToBuffer_3
+    151          	}
+    152          
+    153          	return pDestBuff;
+   \                     ??MC_CopyToBuffer_0: (+1)
+   \   0000003C   0x4770             BX       LR               ;; return
+    154          }
+    155          
+    156          /**************************************************************************//*!
+    157          *
+    158          * @brief  Read-out memory from communication buffer
+    159          *
+    160          * @param  nDestAddr - destination memory address
+    161          * @param  pSrcBuff  - pointer to source memory in communication buffer
+    162          * @param  nSize     - buffer size (always in bytes)
+    163          *
+    164          * @return This function returns a pointer to next byte in comm. buffer
+    165          *
+    166          ******************************************************************************
+    167          *
+    168          * This function accepts both 16bit or 32bit address and works correctly
+    169          * even in the SDM mode. Buffer address is a standard ANSI C pointer
+    170          *
+    171          * Warning: This call assumes CodeWarrior style of passing parameters,
+    172          * i.e. 32 bit operands passed in A and B accumulators
+    173          *
+    174          * Warning2: MC_ADDR type MUST be numeric! (UWord type)
+    175          *
+    176          ******************************************************************************/
+    177          
+
+   \                                 In section .text, align 4, keep-with-next
+    178          MC_BPTR MC_CopyFromBuffer(MC_ADDR nDestAddr, MC_BPTR pSrcBuff, MC_SIZE8 nSize)
+    179          {
+    180          	MC_U8* pDestAddr = (MC_U8 *) nDestAddr;
+    181          	MC_U8 counter = 0;
+   \                     MC_CopyFromBuffer: (+1)
+   \   00000000   0xB1E2             CBZ.N    R2,??MC_CopyFromBuffer_0
+   \   00000002   0xF012 0x0303      ANDS     R3,R2,#0x3
+   \   00000006   0xD005             BEQ.N    ??MC_CopyFromBuffer_1
+    182          
+    183          	while (counter < nSize)
+    184          	{
+    185          		*pDestAddr++ = *pSrcBuff++;
+    186          
+    187          		counter++;
+   \                     ??MC_CopyFromBuffer_2: (+1)
+   \   00000008   0x1E5B             SUBS     R3,R3,#+1
+   \   0000000A   0xF811 0xCB01      LDRB     R12,[R1], #+1
+   \   0000000E   0xF800 0xCB01      STRB     R12,[R0], #+1
+   \   00000012   0xD1F9             BNE.N    ??MC_CopyFromBuffer_2
+   \                     ??MC_CopyFromBuffer_1: (+1)
+   \   00000014   0x0892             LSRS     R2,R2,#+2
+   \   00000016   0xD011             BEQ.N    ??MC_CopyFromBuffer_0
+   \                     ??MC_CopyFromBuffer_3: (+1)
+   \   00000018   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   0000001C   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   00000020   0x1E52             SUBS     R2,R2,#+1
+   \   00000022   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000026   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   0000002A   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   0000002E   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   00000032   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000036   0xF800 0x3B01      STRB     R3,[R0], #+1
+   \   0000003A   0xD1ED             BNE.N    ??MC_CopyFromBuffer_3
+    188          	}
+    189          
+    190          	return pSrcBuff;
+   \                     ??MC_CopyFromBuffer_0: (+1)
+   \   0000003C   0x4608             MOV      R0,R1
+   \   0000003E   0x4770             BX       LR               ;; return
+    191          }
+    192          
+    193          
+    194          /**************************************************************************//*!
+    195          *
+    196          * @brief  Read-out memory from communication buffer, perform AND-masking
+    197          *
+    198          * @param  nDestAddr - destination memory address
+    199          * @param  pSrcBuff  - source memory in communication buffer, mask follows data
+    200          * @param  nSize     - buffer size (always in bytes)
+    201          *
+    202          ******************************************************************************
+    203          *
+    204          * This function accepts both 16bit or 32bit address and works correctly
+    205          * even in the SDM mode. Buffer address is a standard ANSI C pointer
+    206          *
+    207          * Warning: This call assumes CodeWarrior style of passing parameters,
+    208          * i.e. 32 bit operands passed in A and B accumulators
+    209          *
+    210          * Warning2: MC_ADDR type MUST be numeric! (UWord type)
+    211          *
+    212          ******************************************************************************/
+    213          
+
+   \                                 In section .text, align 2, keep-with-next
+    214          void MC_CopyFromBufferWithMask(MC_ADDR nDestAddr, MC_BPTR pSrcBuff, MC_SIZE8 nSize)
+    215          {
+    216          	MC_U8* pDestAddr = (MC_U8 *) nDestAddr;
+    217          	MC_U8* pSrc = pSrcBuff;
+   \                     MC_CopyFromBufferWithMask: (+1)
+   \   00000000   0xB902             CBNZ.N   R2,??MC_CopyFromBufferWithMask_0
+   \   00000002   0x4770             BX       LR
+   \                     ??MC_CopyFromBufferWithMask_0: (+1)
+   \   00000004   0xB470             PUSH     {R4-R6}
+   \   00000006   0x4613             MOV      R3,R2
+   \   00000008   0x07DC             LSLS     R4,R3,#+31
+   \   0000000A   0xD50B             BPL.N    ??MC_CopyFromBufferWithMask_1
+    218          	//MC_U8 counter = 0;
+    219          	MC_U16 stmp, dtmp, mask;
+    220          
+    221          	while (nSize--)
+   \   0000000C   0x1E52             SUBS     R2,R2,#+1
+    222          	{
+    223          		mask = *(pSrc + nSize);
+   \   0000000E   0xB2D2             UXTB     R2,R2
+   \   00000010   0x5C54             LDRB     R4,[R2, R1]
+    224          		stmp = *pSrc++;
+   \   00000012   0xF811 0x5B01      LDRB     R5,[R1], #+1
+    225          		dtmp = *pDestAddr;
+    226          		stmp = (stmp & mask) | (dtmp & ~mask);
+                 		                               ^
+Remark[Pa091]: operator operates on value promoted to int (with possibly
+          unexpected result)
+    227          		*pDestAddr++ = stmp;
+   \   00000016   0x7806             LDRB     R6,[R0, #+0]
+   \   00000018   0x4025             ANDS     R5,R4,R5
+   \   0000001A   0xEA26 0x0404      BIC      R4,R6,R4
+   \   0000001E   0x432C             ORRS     R4,R4,R5
+   \   00000020   0xF800 0x4B01      STRB     R4,[R0], #+1
+   \                     ??MC_CopyFromBufferWithMask_1: (+1)
+   \   00000024   0x085B             LSRS     R3,R3,#+1
+   \   00000026   0xD019             BEQ.N    ??MC_CopyFromBufferWithMask_2
+   \                     ??MC_CopyFromBufferWithMask_3: (+1)
+   \   00000028   0x1E52             SUBS     R2,R2,#+1
+   \   0000002A   0xB2D2             UXTB     R2,R2
+   \   0000002C   0x5C54             LDRB     R4,[R2, R1]
+   \   0000002E   0xF811 0x5B01      LDRB     R5,[R1], #+1
+   \   00000032   0x7806             LDRB     R6,[R0, #+0]
+   \   00000034   0x4025             ANDS     R5,R4,R5
+   \   00000036   0xEA26 0x0404      BIC      R4,R6,R4
+   \   0000003A   0x432C             ORRS     R4,R4,R5
+   \   0000003C   0x1E52             SUBS     R2,R2,#+1
+   \   0000003E   0xF800 0x4B01      STRB     R4,[R0], #+1
+   \   00000042   0xB2D2             UXTB     R2,R2
+   \   00000044   0x5C54             LDRB     R4,[R2, R1]
+   \   00000046   0xF811 0x5B01      LDRB     R5,[R1], #+1
+   \   0000004A   0x7806             LDRB     R6,[R0, #+0]
+   \   0000004C   0x4025             ANDS     R5,R4,R5
+   \   0000004E   0xEA26 0x0404      BIC      R4,R6,R4
+   \   00000052   0x432C             ORRS     R4,R4,R5
+   \   00000054   0xF800 0x4B01      STRB     R4,[R0], #+1
+   \   00000058   0x1E5B             SUBS     R3,R3,#+1
+   \   0000005A   0xD1E5             BNE.N    ??MC_CopyFromBufferWithMask_3
+    228          	}
+    229          
+    230          }
+   \                     ??MC_CopyFromBufferWithMask_2: (+1)
+   \   0000005C   0xBC70             POP      {R4-R6}
+   \   0000005E   0x4770             BX       LR               ;; return
+    231          
+    232          //#pragma dont_inline reset
+    233          
+    234          /**************************************************************************//*!
+    235          *
+    236          * @brief  Select an address size to be used in next access to a comm. buffer
+    237          *
+    238          * @param  bNextAddrIsEx - when non zero, next expected address is 32bit wide
+    239          *                       - when zero, next expected address is 16bit wide
+    240          *
+    241          ******************************************************************************/
+    242          
+    243          #if MC_USE_EX_CMDS && MC_USE_NOEX_CMDS
+    244          
+    245          static MC_BOOL pcm_bUseExAddr;
+    246          
+    247          void MC_SetExAddr(MC_BOOL bNextAddrIsEx)
+    248          {
+    249              pcm_bUseExAddr = bNextAddrIsEx;
+    250          }
+    251          
+    252          #endif
+    253          
+    254          /**************************************************************************//*!
+    255          *
+    256          * @brief    Fetch 16/32 bit address from buffer
+    257          *
+    258          * @param  pAddr - ANSI C pointer to a variable which is to receive the result
+    259          * @param  pSrc  - pointer to a source memory in communication buffer
+    260          *
+    261          * @return This function returns a pointer to next byte in comm. buffer
+    262          *
+    263          ******************************************************************************/
+    264          
+
+   \                                 In section .text, align 2, keep-with-next
+    265          MC_BPTR MC_AddressFromBuffer(MC_ADDR* pAddr, MC_BPTR pSrc)
+    266          {
+   \                     MC_AddressFromBuffer: (+1)
+   \   00000000   0xB081             SUB      SP,SP,#+4
+    267              /* do we have to differentiate the EX and non-EX access? */
+    268          #if MC_USE_EX_CMDS && MC_USE_NOEX_CMDS
+    269              if(pcm_bUseExAddr)
+    270          #endif
+    271              {
+    272          #if MC_USE_EX_CMDS
+    273                  /* fetch 32bit value */
+    274                  MC_U32 nAddr32;
+    275                  pSrc = MC_ValueFromBuffer32(&nAddr32, pSrc);
+   \   00000002   0xF811 0x2B01      LDRB     R2,[R1], #+1
+   \   00000006   0xF88D 0x2000      STRB     R2,[SP, #+0]
+   \   0000000A   0xF811 0x2B01      LDRB     R2,[R1], #+1
+   \   0000000E   0xF88D 0x2001      STRB     R2,[SP, #+1]
+   \   00000012   0xF811 0x2B01      LDRB     R2,[R1], #+1
+   \   00000016   0xF88D 0x2002      STRB     R2,[SP, #+2]
+   \   0000001A   0xF811 0x2B01      LDRB     R2,[R1], #+1
+   \   0000001E   0xF88D 0x2003      STRB     R2,[SP, #+3]
+    276                  /* and convert it to the address type */
+    277                  *pAddr = (MC_ADDR) nAddr32;
+   \   00000022   0x9A00             LDR      R2,[SP, #+0]
+   \   00000024   0x6002             STR      R2,[R0, #+0]
+    278          #endif
+    279              }
+    280          #if MC_USE_EX_CMDS && MC_USE_NOEX_CMDS
+    281              else
+    282          #endif
+    283              {
+    284          #if MC_USE_NOEX_CMDS
+    285                  /* fetch 16bit value */
+    286                  MC_U16 nAddr16;
+    287                  pSrc = MC_ValueFromBuffer16(&nAddr16, pSrc);
+    288                  /* and convert it to the address type */
+    289                  *pAddr = (MC_ADDR) nAddr16;
+    290          #endif
+    291              }
+    292          
+    293              return pSrc;
+   \   00000026   0x4608             MOV      R0,R1
+   \   00000028   0xB001             ADD      SP,SP,#+4
+   \   0000002A   0x4770             BX       LR               ;; return
+    294          }
+    295          
+    296          /**************************************************************************//*!
+    297          *
+    298          * @brief    Store 16/32 bit address to buffer
+    299          *
+    300          * @param  pDest - pointer to a destination memory in communication buffer
+    301          * @param  pSrc  - memory address value
+    302          *
+    303          * @return This function returns a pointer to next byte in comm. buffer
+    304          *
+    305          ******************************************************************************/
+    306          
+
+   \                                 In section .text, align 2, keep-with-next
+    307          MC_BPTR MC_AddressToBuffer(MC_BPTR pDest, MC_ADDR nAddr)
+    308          {
+   \                     MC_AddressToBuffer: (+1)
+   \   00000000   0xB081             SUB      SP,SP,#+4
+    309              /* do we have to differentiate the EX and non-EX access? */
+    310          #if MC_USE_EX_CMDS && MC_USE_NOEX_CMDS
+    311              if(pcm_bUseExAddr)
+    312          #endif
+    313              {
+    314          #if MC_USE_EX_CMDS
+    315                  /* put the address as a 32bit value */
+    316                  pDest = MC_ValueToBuffer32(pDest, (MC_U32) nAddr);
+   \   00000002   0x9100             STR      R1,[SP, #+0]
+   \   00000004   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \   00000008   0xF800 0x1B01      STRB     R1,[R0], #+1
+   \   0000000C   0xF89D 0x1001      LDRB     R1,[SP, #+1]
+   \   00000010   0xF800 0x1B01      STRB     R1,[R0], #+1
+   \   00000014   0xF89D 0x1002      LDRB     R1,[SP, #+2]
+   \   00000018   0xF800 0x1B01      STRB     R1,[R0], #+1
+   \   0000001C   0xF89D 0x1003      LDRB     R1,[SP, #+3]
+   \   00000020   0xF800 0x1B01      STRB     R1,[R0], #+1
+    317          #endif
+    318              }
+    319          #if MC_USE_EX_CMDS && MC_USE_NOEX_CMDS
+    320              else
+    321          #endif
+    322              {
+    323          #if MC_USE_NOEX_CMDS
+    324                  /* put the address as a 16bit value */
+    325                  pDest = MC_ValueToBuffer16(pDest, (MC_U16) nAddr);
+    326          #endif
+    327              }
+    328          
+    329              return pDest;
+   \   00000024   0xB001             ADD      SP,SP,#+4
+   \   00000026   0x4770             BX       LR               ;; return
+    330          }
+    331          
+    332          #endif /* !(MC_DISABLE) */
+    333          
+    334          //=====================================================================================================================
+    335          //-------------------------------------- Private Functions ------------------------------------------------------------
+    336          //=====================================================================================================================
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   MC_AddressFromBuffer
+       4   MC_AddressToBuffer
+       0   MC_CopyFromBuffer
+      12   MC_CopyFromBufferWithMask
+       0   MC_CopyMemory
+       0   MC_CopyToBuffer
+       0   MC_Isr
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      44  MC_AddressFromBuffer
+      40  MC_AddressToBuffer
+      64  MC_CopyFromBuffer
+      96  MC_CopyFromBufferWithMask
+      62  MC_CopyMemory
+      62  MC_CopyToBuffer
+       2  MC_Isr
+
+ 
+ 370 bytes in section .text
+ 
+ 370 bytes of CODE memory
+
+Errors: none
+Warnings: none

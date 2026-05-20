@@ -1,0 +1,54 @@
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 1
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 2
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Sc_IAmpl = 1.9969115257263184
+Sc_VAmpl = 12.136445045471191
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 11.86003589630127
+Sc_IAmpl = 2.0409717559814453
+Sc_VAmpl = 11.876565933227539
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 12.142664909362793
+Sc_IAmpl = 2.0129075050354004
+Sc_VAmpl = 12.132742881774902
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 13.160675048828125
+Sc_IAmpl = 2.0289413928985596
+Sc_VAmpl = 12.914488792419434
+Sc_IAmpl = 2.0088939666748047
+Sc_VAmpl = 11.94249153137207
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 10.200859069824219
+Sc_IAmpl = 2.0088939666748047
+Sc_VAmpl = 12.712778091430664
+Rs[0] = 6.017562298050309
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Step 1
+Voltage: 40.000000
+Frequency: 300.000000
+Step 2
+Voltage: 50.000000
+Frequency: 300.000000
+Step 3
+Voltage: 60.000000
+Frequency: 300.000000
+Zero value for Sc_IAmpl_Max found! Discarding...
+Zero value for Sc_IAmpl_Max found! Discarding...
+Zero value for Sc_IAmpl_Max found! Discarding...
+Zero value for Sc_IAmpl_Max found! Discarding...
+Zero value for Sc_IAmpl_Max found! Discarding...
+Step 4
+Voltage: 70.000000
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 2

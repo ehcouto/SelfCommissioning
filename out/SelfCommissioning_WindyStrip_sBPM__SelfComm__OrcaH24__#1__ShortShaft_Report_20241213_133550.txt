@@ -1,0 +1,4 @@
+Motor Identification Parameter for Brushless PMSM Motor
+WindyStrip_sBPM__SelfComm__OrcaH24__#1__ShortShaft
+Date: 20241213_133550
+

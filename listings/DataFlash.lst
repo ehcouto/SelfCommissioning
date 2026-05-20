@@ -1,0 +1,954 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:05
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o DataFlash.obj
+#        -l ..\listings\DataFlash.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c
+#    List file    =  ..\listings\DataFlash.lst
+#    Object file  =  DataFlash.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c
+      1          /**
+      2           *  @file
+      3           *  @brief    This module implements the standard Data Flash API (Application Programming Interface)
+      4           *            for Kinetis MKE02x series only
+      5           *  @details  This modules provides the interface to application in order to write, read, fill or
+      6           *            format the DataFlash of MKE02x.
+      7           *            Note -  1. Controller supports byte by byte and 1 long word write.
+      8           *                    2. The software design supports for both even and odd size write.
+      9           *
+     10           *  
+     11           *
+     12           *   @copyright  Copyright 2016-. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     13           */
+     14          //-------------------------------------- Include Files ----------------------------------------------------------------
+     15          #include "C_Extensions.h"
+     16          #include "uc.h"
+     17          #include "Micro.h"
+     18          #include "DataFlash.h"
+     19          
+     20          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     21          
+     22          #ifndef DATAFLASH_LOW_LIMIT
+     23          	extern uint32 __DataFlash_Start;
+     24          	#define DATAFLASH_LOW_LIMIT		(uint32)(&__DataFlash_Start)  // DataFlash lower boundary.
+     25          #endif
+     26          
+     27          #ifndef DATAFLASH_HIGH_LIMIT
+     28          	extern uint32 __DataFlash_End;
+     29          	#define DATAFLASH_HIGH_LIMIT	(uint32)(&__DataFlash_End)
+     30          #endif
+     31          
+     32          #ifndef RAM_LOW_LIMIT
+     33          	extern uint32 __ICFEDIT_region_RAM_start__;
+     34          	#define RAM_LOW_LIMIT                   ((uint32)&__ICFEDIT_region_RAM_start__)      	// This symbol comes from the linker file
+     35          #endif
+     36          
+     37          #ifndef RAM_HIGH_LIMIT
+     38          	extern uint32 __ICFEDIT_region_RAM_end__;
+     39          	#define RAM_HIGH_LIMIT                  ((uint32)&__ICFEDIT_region_RAM_end__)      		// This symbol comes from the linker file
+     40          #endif
+     41          
+     42          #ifndef DATAFLASH_RELATIVE_ADDRESS
+     43              #define DATAFLASH_RELATIVE_ADDRESS      ENABLED
+     44          #endif
+     45          
+     46          
+     47          #define EEPROM_SIZE             ((DATAFLASH_HIGH_LIMIT - DATAFLASH_LOW_LIMIT) + 1)
+     48          
+     49          #define DATAFLASH_SIZE          (EEPROM_SIZE)
+     50          
+     51          #if (DATAFLASH_WRITE_BYTE_BY_BYTE == DISABLED)
+     52              static uint8 DataFlash_Alignment;
+     53          #endif
+     54          
+     55          
+     56          typedef enum
+     57          {
+     58              DATAFLASH_HANDLER_STATE_IDLE,
+     59              DATAFLASH_HANDLER_STATE_ERASE_BEFORE_WRITE,
+     60              DATAFLASH_HANDLER_STATE_WRITE,
+     61              DATAFLASH_HANDLER_STATE_WAIT_WRITE,
+     62              DATAFLASH_HANDLER_STATE_ERASE_BEFORE_FILL,
+     63              DATAFLASH_HANDLER_STATE_FILL,
+     64              DATAFLASH_HANDLER_STATE_WAIT_FILL
+     65          }DATAFLASH_HANDLER_STATE_TYPE;
+     66          
+     67          typedef enum
+     68          {
+     69              DATAFLASH_BUSY = 1,
+     70              DATAFLASH_ERROR_WRP,
+     71              DATAFLASH_ERROR_PROGRAM,
+     72              DATAFLASH_COMPLETE,
+     73              DATAFLASH_TIME_OUT
+     74          }DATAFLASH_STATUS;
+     75          
+     76          static DATAFLASH_HANDLER_STATE_TYPE DataFlash_State;
+     77          
+     78          typedef enum
+     79          {
+     80          	DATAFLASH_ERASE_VERIFY_ALL_BLOCKS    = 0x01,			//Verifies that all flash blocks are erased
+     81          	DATAFLASH_ERASE_VERIFY_BLOCK         = 0x02,			//Verifies that a flash block is erased
+     82          	DATAFLASH_ERASE_ALL_BLOCK            = 0x08,			//Erase All Flash Blocks
+     83          	DATAFLASH_ERASE_BLOCK                = 0x09,			//Erases a Flash Block
+     84          	DATAFLASH_UNSECURE                   = 0x0B,
+     85          	DATAFLASH_SET_USER_MARGIN_LEVEL      = 0x0D,
+     86          	DATAFLASH_EARSE_VERIFY               = 0x10,
+     87          	DATAFLASH_PROGRAM                    = 0X11,
+     88          	DATAFLASH_ERASE_SECTOR               = 0X12,
+     89          }DATAFLASH_COMMAND;
+     90          
+     91          #if (FILL_DATA_FEATURE == ENABLED)
+     92              static uint16 DataFlash_Fill;
+     93          #endif
+     94          
+     95          static uint8 * DataFlash_Ram_Pointer;
+     96          
+     97          #if (DATAFLASH_WRITE_BLOCKING_FEATURE == DISABLED)
+     98          	static uint32 DataFlash_Flash_Pointer;
+     99          	static unsigned short int DataFlash_Size;
+    100          	static uint8 DataFlash_TimeOut;
+    101          	static uint16 Temp_Data1, Temp_Data2;
+    102          #endif
+    103          
+
+   \                                 In section .bss, align 1
+   \   00000000                      DS8 1
+    104          static DATAFLASH_STATE_TYPE DataFlash_Status;
+    105          
+    106          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    107          
+    108          static void DataFlash_Launchcmd(uint8 bWaitComplete);
+    109          #if (DATAFLASH_WRITE_BLOCKING_FEATURE == ENABLED)
+    110          	static DATAFLASH_STATUS DataFlashProgramHalfWord(uint32 address, uint16 data);
+    111          	static DATAFLASH_STATUS DataFlashEraseHalfWord(ADDRESS_TYPE page_init);
+    112          #endif
+    113          #if (DATAFLASH_WRITE_BLOCKING_FEATURE == DISABLED)
+    114          	static void DataFlashNoWaitWrite(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size);
+    115          	static void DataFlashNoWaitErase(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size);
+    116          	static void DataflashEraseCmd(ADDRESS_TYPE destination);
+    117          	static void DataflashWriteCmd(uint32 destination);
+    118          	#if (FILL_DATA_FEATURE == ENABLED)
+    119          		static void DataFlashNoWaitFill(ADDRESS_TYPE destination,SIZE_TYPE size);
+    120          	#endif
+    121          #endif
+    122          
+    123          //=====================================================================================================================
+    124          //-------------------------------------- Public Functions -------------------------------------------------------------
+    125          //=====================================================================================================================
+    126          //---------------------------------------------------------------------------------------------------------------------
+    127          /**
+    128           *    @brief    This method initializes the Data flash module.
+    129           *    @details  This method initializes data flash related variables.
+    130           */
+
+   \                                 In section .text, align 2, keep-with-next
+    131          void DataFlash__Initialize(void)
+    132          {
+    133              #if 0
+    134          	uint32 DataFlashbusclk;
+    135          
+    136          	DataFlash_State = DATAFLASH_HANDLER_STATE_IDLE;
+    137          	DataFlash_Status = DATAFLASH_STATE_FREE;
+    138          	SIM_CLK.SIM_SCGC |= SIM_SCGC_FLASH_MASK;							//Bus Clock to the Flash Module is Enabled
+    139          	DataFlashbusclk = (Micro__GetClock()->BUSCLK_Frequency) / 1000000 - 1;	//Write FCLKDIV register to divide BUSCLK down to a target FCLK (flash clock) of 1MHz
+    140          
+    141          	//Check Flash command status
+    142          	if ((FTMRE.FSTAT.BIT.CCIF) == TRUE)
+    143          	{
+    144          		if (!(FTMRE.FCLKDIV.BYTE & FTMRE_FCLKDIV_FDIVLCK_MASK)) 		//Check clock divider lock
+    145          		{
+    146          			FTMRE.FCLKDIV.BYTE |= DataFlashbusclk; 						//FDIVLCK = 0 - Clock divider (i.e FDIV) field is Open for Writing
+    147          		}
+    148          	}
+    149          
+    150              #ifdef MKE02_FAMILY
+    151                  FTMRE.EEPROT.BIT.DPOPEN = 1; 										//Enables EEPROM memory protection from pgm & erase with protected add range defined by DPS bits
+    152                  FTMRE.EEPROT.BIT.DPS = 0;											//EEPROM protection size
+    153              #endif
+    154              #endif
+    155          }
+   \                     DataFlash__Initialize: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    156          
+    157          //---------------------------------------------------------------------------------------------------------------------
+    158          /**
+    159           *    @brief    This method Copies data from the RAM to the DataFlash as per the size and returns
+    160           *              the response for write operation.
+    161           *    @details  This method writes data from source (RAM) to destination (Data Flash) as per the size
+    162           *              and returns the response for the write operation.
+    163           *            Note -
+    164           *            	    1. Implemented in this API - Dataflash (EEPROM) byte must be in erased state before being programmed.
+    165           *            		2. Controller supports byte by byte and 1 long write.
+    166           *                  3. The software design supports for both even and odd size write.
+    167           *
+    168           *    @param    destination : Defines the address of the Data flash where data to be written
+    169           *    @param    source      : Defines the address of RAM from where data to be written to flash
+    170           *    @param    size        : Number of bytes to be written
+    171           *    @return   enum DATAFLASH_RESPONSE_TYPE
+    172           *      @retval DATAFLASH_RESPONSE_DONE(0)                 : If the write operation is complete.
+    173           *      @retval DATAFLASH_RESPONSE_WRITE_ERROR(3)          : If the write operation is unsuccessful.
+    174           *      @retval DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE(4)   : If the requested memory is out of range
+    175           *      @retval DATAFLASH_RESPONSE_INVALID_SIZE(5)         : If the size is invalid i.e. odd size
+    176           *
+    177           *    @note For MKE02x EEROM memory is 256 bytes which is divided into 128 sectors
+    178           *   			1 sector = 2bytes
+    179           *   			To program 1 byte = 10 msec minimum time is required.
+    180           *   			To program 2 byte = 18 msec minimum time is required.
+    181           *   			To program 1 byte = 26 msec minimum time is required.
+    182           *   			To program 1 byte = 33 msec minimum time is required.
+    183           */
+
+   \                                 In section .text, align 2, keep-with-next
+    184          DATAFLASH_RESPONSE_TYPE DataFlash__Write(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size)
+                                                                       ^
+Remark[Pe826]: parameter "destination" was never referenced
+
+  DATAFLASH_RESPONSE_TYPE DataFlash__Write(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size)
+                                                                             ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",184  Remark[Pe826]: 
+          parameter "source" was never referenced
+
+  DATAFLASH_RESPONSE_TYPE DataFlash__Write(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size)
+                                                                                               ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",184  Remark[Pe826]: 
+          parameter "size" was never referenced
+    185           {
+    186              #if 0
+    187          	DATAFLASH_RESPONSE_TYPE response;
+    188          	DATAFLASH_STATUS status;
+    189          
+    190          	#if (DATAFLASH_WRITE_BLOCKING_FEATURE == ENABLED)
+    191          		FAR uint8 * pflash;
+    192          		uint16 temp1;
+    193          		uint16 temp2;
+    194          		uint8 count;
+    195          
+    196          		temp1 = 0;
+    197          		temp2 = 0;
+    198          	#endif
+    199          
+    200          	response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    201          	status = DATAFLASH_COMPLETE;
+    202          
+    203          	#if (DATAFLASH_RELATIVE_ADDRESS == ENABLED)
+    204          		destination += DATAFLASH_LOW_LIMIT;
+    205          	#endif
+    206          
+    207          	//Check for the requested size
+    208          	if (size > 0)
+    209          	{
+    210          		//For Absolute Address
+    211          		if ((((uint32) source >= RAM_LOW_LIMIT)	&&
+    212          				(((uint32) source + (uint32) size - (uint32) 1) <= (RAM_HIGH_LIMIT))) &&
+    213          				((destination >= DATAFLASH_LOW_LIMIT) && ((destination + size - 1) <= (DATAFLASH_HIGH_LIMIT))))
+    214          		{
+    215          
+    216          		#if (DATAFLASH_WRITE_BLOCKING_FEATURE == DISABLED)
+    217          			if (DataFlash_State == DATAFLASH_HANDLER_STATE_IDLE)
+    218          			{
+    219          				if (DataFlash_Status != DATAFLASH_STATE_BUSY)
+    220          				{
+    221          				#if (DATAFLASH_WRITE_BYTE_BY_BYTE == DISABLED)
+    222          					DataFlash_Alignment = (uint8)(destination % 4);
+    223          
+    224          					if (DataFlash_Alignment > 0)
+    225          					{
+    226          						DataFlash_Alignment = 4 - DataFlash_Alignment;
+    227          					}
+    228          				#endif
+    229          					DataFlash_Flash_Pointer = destination; //Assign the Address of Flash memory
+    230          					DataFlash_Ram_Pointer = source;//Assign source address of RAM memory
+    231          					DataFlash_Size = size;//Assign the size
+    232          
+    233          					DataFlash_Status = DATAFLASH_STATE_BUSY;
+    234          					DataFlash_State = DATAFLASH_HANDLER_STATE_ERASE_BEFORE_WRITE;
+    235          					response = DATAFLASH_RESPONSE_ACCEPTED;
+    236          				}
+    237          			}
+    238          
+    239          			else
+    240          			{
+    241          				response = DATAFLASH_RESPONSE_ERROR_BUSY;
+    242          				status = DATAFLASH_ERROR_WRP;
+    243          			}
+    244          
+    245          		#else
+    246          
+    247          			pflash = (FAR uint8 *) destination;             		//For High byte byte
+    248          			DataFlash_Ram_Pointer = source;
+    249          
+    250          			//Cortex Flash memory is 2-byte aligned, it writes only on the even aligned address
+    251          			//The write address should be even
+    252          			SERVICE_WATCHDOG();
+    253          
+    254          			if ((destination % 2) != 0)
+    255          			{
+    256          				destination = destination - 1;						//For Low byte
+    257          				pflash = (FAR uint8 *) destination;
+    258          				temp2 = *pflash;									//Read the even address byte
+    259          				temp1 = *DataFlash_Ram_Pointer;
+    260          				temp1 = temp1 << 8;
+    261          				temp1 = temp1 | temp2;								//apply the mask  = Even_Address_Read_Data | New Data Byte
+    262          				DataFlashEraseHalfWord(destination);
+    263          				status = DataFlashProgramHalfWord((destination), (temp1));//Write the Mask which starts from even address
+    264          				size--;
+    265          				destination++;
+    266          				destination++;
+    267          				source += 1;
+    268          			}
+    269          
+    270          			if ((((destination + size) % 2) != 0))
+    271          			{
+    272          				destination = destination + size;
+    273          				pflash = (FAR uint8 *) destination;					//Read the even address byte
+    274          				temp1 = *pflash;
+    275          				temp1 = temp1 << 8;
+    276          				DataFlash_Ram_Pointer += size - 1;
+    277          				temp2 = (*DataFlash_Ram_Pointer);// + size - 1);
+    278          				temp1 = temp1 | temp2;								//apply the mask  = Even_Address_Read_Data | New Data Byte
+    279          				destination = destination - 1;
+    280          				DataFlashEraseHalfWord(destination);
+    281          				status = DataFlashProgramHalfWord((destination), (temp1));//Write the Mask which starts from even address
+    282          				size--;
+    283          				destination = destination - size;
+    284          			}
+    285          
+    286          			SERVICE_WATCHDOG();
+    287          
+    288          			//Writing the halfword byte in the flash memory at the end
+    289          			count = 0;
+    290          			while ((count < size))  								//Writing the word data in the flash memory
+    291          			{
+    292          				DataFlashEraseHalfWord(destination);
+    293          				temp1 = *(source + 1);
+    294          				temp1 <<= 8;
+    295          				temp1 |= *source;
+    296          				status = DataFlashProgramHalfWord((destination), (temp1));
+    297          				source += 2;
+    298          				destination += 2;
+    299          				count += 2;
+    300          			}
+    301          
+    302          			if (status == DATAFLASH_COMPLETE)
+    303          			{
+    304          				response = DATAFLASH_RESPONSE_DONE;
+    305          			}
+    306          			else if (status == DATAFLASH_ERROR_WRP)
+    307          			{
+    308          				response = DATAFLASH_RESPONSE_WRITE_ERROR;
+    309          			}
+    310          			else if (status == DATAFLASH_ERROR_PROGRAM)
+    311          			{
+    312          				response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    313          			}
+    314          			else
+    315          			{
+    316          				response = DATAFLASH_RESPONSE_ERROR_BUSY;				//DATAFLASH_BUSY;
+    317          			}
+    318          		#endif
+    319          		}
+    320          
+    321          	}
+    322          
+    323          	else
+    324          	{
+    325          		response = DATAFLASH_RESPONSE_INVALID_SIZE;
+    326          	}
+    327          
+    328          	return (response);
+    329          
+    330              #else
+    331          	    return (DATAFLASH_RESPONSE_INVALID_SIZE);
+   \                     DataFlash__Write: (+1)
+   \   00000000   0x2005             MOVS     R0,#+5
+   \   00000002   0x4770             BX       LR               ;; return
+    332          	#endif
+    333          }
+    334          
+    335          //---------------------------------------------------------------------------------------------------------------------
+    336          /**
+    337           *    @brief    This method reads data from source (Data Flash) and copies to destination (RAM) as per the size
+    338          *               and returns the response for the read operation
+    339          *     @param    destination : Defines the address of the RAM where data to be copied
+    340          *     @param    source      : Defines the address of Data Flash from where data to be read
+    341          *     @param    size        : Number of bytes to be read
+    342          *     @return   enum DATAFLASH_RESPONSE_TYPE
+    343          *       @retval DATAFLASH_RESPONSE_DONE(0)                 : Read operation is performed successfully
+    344          *       @retval DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE(4)   : If the requested memory is out of range
+    345           */
+
+   \                                 In section .text, align 2, keep-with-next
+    346          DATAFLASH_RESPONSE_TYPE DataFlash__Read(uint8 * destination, ADDRESS_TYPE source, SIZE_TYPE size)
+                                                                 ^
+Remark[Pe826]: parameter "destination" was never referenced
+
+  DATAFLASH_RESPONSE_TYPE DataFlash__Read(uint8 * destination, ADDRESS_TYPE source, SIZE_TYPE size)
+                                                                            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",346  Remark[Pe826]: 
+          parameter "source" was never referenced
+
+  DATAFLASH_RESPONSE_TYPE DataFlash__Read(uint8 * destination, ADDRESS_TYPE source, SIZE_TYPE size)
+                                                                                              ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",346  Remark[Pe826]: 
+          parameter "size" was never referenced
+    347          {
+    348              #if 0
+    349          
+    350              DATAFLASH_RESPONSE_TYPE response;
+    351              FAR uint8 * pflash;
+    352              SIZE_TYPE count;
+    353          
+    354              response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    355          
+    356              //Check for the requested size
+    357              if (size > 0)
+    358              {
+    359                  #if (DATAFLASH_RELATIVE_ADDRESS == ENABLED)		//For relative address
+    360                        source += DATAFLASH_LOW_LIMIT;
+    361          		#endif
+    362          
+    363                  // Check for the memory boundaries
+    364                  if ((((uint32)destination >= RAM_LOW_LIMIT) &&
+    365                  		(((uint32)destination + (uint32)size - (uint32)1)<= (RAM_HIGH_LIMIT))) &&
+    366                          ((source >= DATAFLASH_LOW_LIMIT) &&
+    367                          ((source + size - 1) <= (DATAFLASH_HIGH_LIMIT))))
+    368                      {
+    369          
+    370                          pflash = (FAR uint8 *)source;
+    371          
+    372                          for (count = 0; count < size; count++)
+    373                          {
+    374                              #if (DATAFLASH_RELATIVE_ADDRESS == ENABLED)
+    375                                      if(((pflash + count) == ((uint8 *)(DATAFLASH_HIGH_LIMIT + 1))))
+    376                                      {
+    377                                          destination = destination + count;
+    378                                          size = size - count;
+    379                                          count = 0;
+    380                                      }
+    381                              #endif
+    382          
+    383                              destination[count] = pflash[count];
+    384                          }
+    385          
+    386                          response = DATAFLASH_RESPONSE_DONE;
+    387                      }
+    388              }
+    389              else
+    390              {
+    391                  response = DATAFLASH_RESPONSE_INVALID_SIZE;
+    392              }
+    393          
+    394              return (response);
+    395          
+    396              #else
+    397                  return (DATAFLASH_RESPONSE_INVALID_SIZE);
+   \                     DataFlash__Read: (+1)
+   \   00000000   0x2005             MOVS     R0,#+5
+   \   00000002   0x4770             BX       LR               ;; return
+    398              #endif
+    399          }
+    400          
+    401          #if (FILL_DATA_FEATURE == ENABLED)
+    402          //---------------------------------------------------------------------------------------------------------------------
+    403          /**
+    404           *   @brief    This method fills the Data Flash with specific value as per the size and returns the response of fill operation
+    405           *   @details  This method fills the specific no of bytes of data into the Data Flash with specific value.
+    406           *              Destination address is starting address of data flash where specific value to be filled.
+    407           *              It returns the Data flash response for write operation
+    408           *            Note -  1. Controller supports byte by byte and 1 long word write.
+    409           *                    2. The software design supports for both even and odd size write.
+    410           *
+    411           *    @param    destination : Defines the address of the Data flash where data to be written
+    412           *    @param    size        : Number of bytes to be written
+    413           *    @param    value       : Defines the specific value which should be filled into Data Flash
+    414           *    @return   enum DATAFLASH_RESPONSE_TYPE
+    415           *      @retval DATAFLASH_RESPONSE_DONE(0)                 : If the write operation is complete.
+    416           *      @retval DATAFLASH_RESPONSE_WRITE_ERROR(3)          : If the write operation is unsuccessful.
+    417           *      @retval DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE(4)   : If the requested memory is out of range
+    418           *      @retval DATAFLASH_RESPONSE_INVALID_SIZE(5)         : If the size is invalid i.e. odd size
+    419           */
+    420          DATAFLASH_RESPONSE_TYPE DataFlash__Fill(ADDRESS_TYPE destination, SIZE_TYPE size, uint8 value)
+    421          	#if (DATAFLASH_WRITE_BLOCKING_FEATURE == DISABLED)
+    422          	{
+    423          		DATAFLASH_RESPONSE_TYPE response;
+    424          		response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    425          
+    426          		//Check for the requested size
+    427          		if (size > 0)
+    428          		{
+    429          			// Check for the memory boundaries
+    430          			//For relative address
+    431          			#if (DATAFLASH_RELATIVE_ADDRESS == ENABLED)
+    432          					destination += DATAFLASH_LOW_LIMIT;
+    433          
+    434          			#else
+    435          				//For Absolute Address
+    436          			if ((((uint32) source >= RAM_LOW_LIMIT)	&&
+    437          					(((uint32) source + (uint32) size - (uint32) 1)	<= (RAM_HIGH_LIMIT))) &&
+    438          					((destination >= DATAFLASH_LOW_LIMIT) &&
+    439          					((destination + size - 1) <= (DATAFLASH_HIGH_LIMIT))))
+    440          				{
+    441          			#endif
+    442          					if (DataFlash_State == DATAFLASH_HANDLER_STATE_IDLE)
+    443          					{
+    444          						DataFlash_Fill = value;                                 // As Dataflash can write 2 bytes a time this will speed up write and erase operation
+    445          						DataFlash_Fill <<= 8;
+    446          						DataFlash_Fill |= value;
+    447          						DataFlash_Flash_Pointer = destination;
+    448          						DataFlash_Size = size;
+    449          						DataFlash_Status = DATAFLASH_STATE_BUSY;
+    450          						DataFlash_State = DATAFLASH_HANDLER_STATE_ERASE_BEFORE_FILL;
+    451          						response = DATAFLASH_RESPONSE_ACCEPTED;
+    452          					}
+    453          					else
+    454          					{
+    455          						response = DATAFLASH_RESPONSE_ERROR_BUSY;
+    456          					}
+    457          				}
+    458          		else
+    459          		{
+    460          			response = DATAFLASH_RESPONSE_INVALID_SIZE;
+    461          		}
+    462          
+    463          		return (response);
+    464          		}
+    465          
+    466          	#else
+    467          	{
+    468          
+    469          		 {
+    470          			DATAFLASH_RESPONSE_TYPE response;
+    471          			FAR uint8 * pflash;
+    472          			uint16 temp1;
+    473          			uint16 temp2;
+    474          			DATAFLASH_STATUS status;
+    475          			uint16 count;
+    476          			uint16 data;
+    477          
+    478          			response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    479          			status = DATAFLASH_COMPLETE;
+    480          			temp1 = 0;
+    481          			temp2 = 0;
+    482          			data = 0;
+    483          
+    484          			#if (DATAFLASH_RELATIVE_ADDRESS == ENABLED)
+    485          				destination += DATAFLASH_LOW_LIMIT;
+    486          			#endif
+    487          
+    488          			//Check for the requested size
+    489          			if (size > 0)
+    490          			{
+    491          				//For Absolute Address
+    492          				if ((destination >= DATAFLASH_LOW_LIMIT) &&
+    493          						((destination + (uint32) size - (uint32) 1)	<= DATAFLASH_HIGH_LIMIT))
+    494          				{
+    495          					pflash = (FAR uint8 *) destination;             //For High byte byte
+    496          
+    497          					//Cortex Flash memory is 2-byte aligned, it writes only on the even aligned address
+    498          					//The write address should be even
+    499          					SERVICE_WATCHDOG();
+    500          
+    501          					if ((destination % 2) != 0)
+    502          					{
+    503          						destination = destination - 1;					//For Low byte
+    504          						temp2 = *pflash;								//Read the even address byte
+    505          						temp1 = value;
+    506          						temp1 = temp1 << 8;
+    507          						temp1 = temp1 | temp2;							//apply the mask  = Even_Address_Read_Data | New Data Byte
+    508          
+    509          						DataFlashEraseHalfWord(destination);
+    510          						status = DataFlashProgramHalfWord((destination), (temp1));//Write the Mask which starts from even address
+    511          						size--;
+    512          						destination++;
+    513          						destination++;
+    514          					}
+    515          
+    516          					if ((((destination + size) % 2) != 0))
+    517          					{
+    518          						destination = destination + size;
+    519          						pflash = (FAR uint8 *) destination;						//Read the even address byte
+    520          						temp1 = *pflash;
+    521          						temp1 = temp1 << 8;
+    522          						temp2 = value;
+    523          						temp1 = temp1 | temp2;									//apply the mask  = Even_Address_Read_Data | New Data Byte
+    524          
+    525          						destination = destination - 1;
+    526          						DataFlashEraseHalfWord(destination);
+    527          						status = DataFlashProgramHalfWord((destination), (temp1));//Write the Mask which starts from even address
+    528          						size--;
+    529          						destination = destination - size;
+    530          					}
+    531          
+    532          					SERVICE_WATCHDOG();
+    533          
+    534          					data = value;
+    535          					data <<= 8;
+    536          					data |= value;
+    537          					count = 0;
+    538          
+    539          					//Writing the halfword byte in the flash memory at the end
+    540          					count = 0;
+    541          					while ((count <= size))  										//Writing the word data in the flash memory
+    542          					{
+    543          						DataFlashEraseHalfWord(destination);
+    544          						status = DataFlashProgramHalfWord(destination, data);
+    545          						destination += 2;
+    546          						count += 2;
+    547          					}
+    548          
+    549          					if (status == DATAFLASH_COMPLETE)
+    550          					{
+    551          						response = DATAFLASH_RESPONSE_DONE;
+    552          					}
+    553          					else if (status == DATAFLASH_ERROR_WRP)
+    554          					{
+    555          						response = DATAFLASH_RESPONSE_WRITE_ERROR;
+    556          					}
+    557          					else if (status == DATAFLASH_ERROR_PROGRAM)
+    558          					{
+    559          						response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    560          					}
+    561          					else
+    562          					{
+    563          						response = DATAFLASH_RESPONSE_ERROR_BUSY;
+    564          					}
+    565          
+    566          				}
+    567          			}
+    568          
+    569          			else
+    570          			{
+    571          				response = DATAFLASH_RESPONSE_INVALID_SIZE;
+    572          			}
+    573          
+    574          			return (response);
+    575          
+    576          		}
+    577          	}
+    578          	#endif
+    579          
+    580          #endif
+    581          
+    582          //---------------------------------------------------------------------------------------------------------------------
+    583          /**
+    584           *    @brief    This method performs erase/format operation on particular page.
+    585           *    @param    page_init :  address within page which to be formatted.
+    586           *
+    587           *    @note     For Freescale Kinetis MKE02x their is EEPROM of 256 byte it means only one page
+    588           *              This page is divided in 128 sectors each sector is of 2 bytes
+    589           *              so at a time erase of one sector is possible i.e 2 bytes
+    590           *              Erase supports only Even addressing
+    591           *
+    592           *    @note For MKE02x EEROM memory is 256 bytes which is divided into 128 sectors
+    593           *   			1 sector = 2bytes
+    594           *   			To erase 1 sector = 5.05 msec minimum time is required.
+    595           *
+    596           *    @return   enum DATAFLASH_RESPONSE_TYPE
+    597           *      @retval DATAFLASH_RESPONSE_DONE(0)                 : If the write operation is complete.
+    598           *      @retval DATAFLASH_RESPONSE_WRITE_ERROR(3)          : If the write operation is unsuccessful.
+    599           *      @retval DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE(4)   : If the requested memory is out of range
+    600           */
+
+   \                                 In section .text, align 2, keep-with-next
+    601          DATAFLASH_RESPONSE_TYPE DataFlash__FormatPage(ADDRESS_TYPE page_init)
+                                                                            ^
+Remark[Pe826]: parameter "page_init" was never referenced
+
+      static uint8 DataFlash_Alignment;
+                   ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",52  Warning[Pe177]: 
+          variable "DataFlash_Alignment" was declared but never referenced
+
+  static DATAFLASH_HANDLER_STATE_TYPE DataFlash_State;
+                                      ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",76  Warning[Pe177]: 
+          variable "DataFlash_State" was declared but never referenced
+
+  static uint8 * DataFlash_Ram_Pointer;
+                 ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",95  Warning[Pe177]: 
+          variable "DataFlash_Ram_Pointer" was declared but never referenced
+
+  	static uint32 DataFlash_Flash_Pointer;
+  	              ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",98  Warning[Pe177]: 
+          variable "DataFlash_Flash_Pointer" was declared but never referenced
+
+  	static unsigned short int DataFlash_Size;
+  	                          ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",99  Warning[Pe177]: 
+          variable "DataFlash_Size" was declared but never referenced
+
+  	static uint8 DataFlash_TimeOut;
+  	             ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",100  Warning[Pe177]: 
+          variable "DataFlash_TimeOut" was declared but never referenced
+
+  	static uint16 Temp_Data1, Temp_Data2;
+  	              ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",101  Warning[Pe177]: 
+          variable "Temp_Data1" was declared but never referenced
+
+  	static uint16 Temp_Data1, Temp_Data2;
+  	                          ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",101  Warning[Pe177]: 
+          variable "Temp_Data2" was declared but never referenced
+
+  static void DataFlash_Launchcmd(uint8 bWaitComplete);
+              ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",108  Warning[Pe177]: 
+          function "DataFlash_Launchcmd" was declared but never referenced
+
+  	static void DataFlashNoWaitWrite(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size);
+  	            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",114  Warning[Pe177]: 
+          function "DataFlashNoWaitWrite" was declared but never referenced
+
+  	static void DataFlashNoWaitErase(ADDRESS_TYPE destination, uint8 * source, SIZE_TYPE size);
+  	            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",115  Warning[Pe177]: 
+          function "DataFlashNoWaitErase" was declared but never referenced
+
+  	static void DataflashEraseCmd(ADDRESS_TYPE destination);
+  	            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",116  Warning[Pe177]: 
+          function "DataflashEraseCmd" was declared but never referenced
+
+  	static void DataflashWriteCmd(uint32 destination);
+  	            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\DataFlash\DataFlash.c",117  Warning[Pe177]: 
+          function "DataflashWriteCmd" was declared but never referenced
+    602          {
+    603              #if 0
+    604          	DATAFLASH_RESPONSE_TYPE response;
+    605          	response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;
+    606          	DataFlash_Status = DATAFLASH_STATE_BUSY;
+    607          
+    608          	#if (DATAFLASH_RELATIVE_ADDRESS == ENABLED)
+    609          		page_init += DATAFLASH_LOW_LIMIT;
+    610              #endif
+    611          
+    612          	MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+    613          
+    614          	if ((page_init >= DATAFLASH_LOW_LIMIT)&& (page_init <= DATAFLASH_HIGH_LIMIT))
+    615          	{
+    616          		response = DATAFLASH_RESPONSE_ERROR_BUSY;
+    617          		MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();
+    618          
+    619          		//Check Flash Memory controller is idle or busy executing a flash command (CCIF = 0)
+    620          		if ((FTMRE.FSTAT.BYTE & FTMRE_FSTAT_MGBUSY_MASK) == FALSE)
+    621          		{
+    622          			response = DATAFLASH_RESPONSE_DONE;
+    623          			SERVICE_WATCHDOG();                                      //Refresh Watchdog
+    624          
+    625          			FTMRE.FSTAT.BYTE = 0x30;                                 //Clear error flags
+    626          			FTMRE.FCCOBIX.BYTE = 0x00;                               //Write CCOBIX[2:0] index to specify the command code to be loaded
+    627          			FTMRE.FCCOBHI = DATAFLASH_ERASE_SECTOR;                  //Program eeprom command
+    628          			FTMRE.FCCOBLO = page_init >> 16;                         //Memory address bits [23:16]
+    629          			FTMRE.FCCOBIX.BYTE = 0x01;                               //Write CCOBIX[2:0] index to specify the lower byte memory address bits[15:0] to be loaded
+    630          			FTMRE.FCCOBHI = page_init >> 8;                          //Memory address bits [7:0]
+    631          			FTMRE.FCCOBLO = page_init;                               //Memory address bits [15:8]
+    632          			DataFlash_Launchcmd(TRUE);                               //Launch the command
+    633          
+    634          			//Check error status
+    635          			if (FTMRE.FSTAT.BYTE & FTMRE_FSTAT_ACCERR_MASK)
+    636          			{
+    637          				response = DATAFLASH_RESPONSE_ERROR_OUT_OF_RANGE;	 //Access error id detected
+    638          			}
+    639          
+    640          			if (FTMRE.FSTAT.BYTE & FTMRE_FSTAT_FPVIOL_MASK)
+    641          			{
+    642          				response = DATAFLASH_RESPONSE_WRITE_ERROR;			 //Protection violation is detected
+    643          			}
+    644          
+    645          			if (FTMRE.FSTAT.BYTE & FTMRE_FSTAT_MGSTAT_MASK)
+    646          			{
+    647          				response = DATAFLASH_RESPONSE_ERROR_BUSY;
+    648          			}
+    649          
+    650          			//Update Flash_Status
+    651          			if (response == DATAFLASH_RESPONSE_DONE)
+    652          			{
+    653          				DataFlash_Status = DATAFLASH_STATE_FREE;
+    654          			}
+    655          			else
+    656          			{
+    657          				DataFlash_Status = DATAFLASH_STATE_ERROR;
+    658          			}
+    659          
+    660          			MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();
+    661          
+    662          		}
+    663          	}
+    664          
+    665          	return (response);
+    666          
+    667              #else
+    668                  return (DATAFLASH_RESPONSE_INVALID_SIZE);
+   \                     DataFlash__FormatPage: (+1)
+   \   00000000   0x2005             MOVS     R0,#+5
+   \   00000002   0x4770             BX       LR               ;; return
+    669              #endif
+    670          }
+    671          
+    672          //---------------------------------------------------------------------------------------------------------------------
+    673          /**
+    674           *    @brief    DataFlash Handler
+    675           *    @details  N/A
+    676           */
+
+   \                                 In section .text, align 2, keep-with-next
+    677          void DataFlash__Handler(void)
+    678          {
+    679          
+    680          }
+   \                     DataFlash__Handler: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    681          
+    682          //---------------------------------------------------------------------------------------------------------------------
+    683          /**
+    684           *    @brief    This method provides status of Data flash whether busy/free/error
+    685           *    @return   enum DATAFLASH_STATE_TYPE
+    686           *    @retval   DATAFLASH_STATE_BUSY    : Data Flash is busy for read write
+    687           *              DATAFLASH_STATE_FREE    : Data Flash is free for read write
+    688           *              DATAFLASH_STATE_ERROR   : Data Flash is encountered error condition
+    689           */
+
+   \                                 In section .text, align 2, keep-with-next
+    690          DATAFLASH_STATE_TYPE DataFlash__GetStatus(void)
+    691          {
+    692          	return (DataFlash_Status);
+   \                     DataFlash__GetStatus: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    693          }
+    694          
+    695          //=====================================================================================================================
+    696          //-------------------------------------- Private Functions ------------------------------------------------------------
+    697          //=====================================================================================================================
+    698          //---------------------------------------------------------------------------------------------------------------------
+    699          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   DataFlash__FormatPage
+       0   DataFlash__GetStatus
+       0   DataFlash__Handler
+       0   DataFlash__Initialize
+       0   DataFlash__Read
+       0   DataFlash__Write
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       1  DataFlash_Status
+       4  DataFlash__FormatPage
+       4  DataFlash__GetStatus
+       2  DataFlash__Handler
+       2  DataFlash__Initialize
+       4  DataFlash__Read
+       4  DataFlash__Write
+
+ 
+  1 byte  in section .bss
+ 20 bytes in section .text
+ 
+ 20 bytes of CODE memory
+  1 byte  of DATA memory
+
+Errors: none
+Warnings: 13

@@ -1,0 +1,329 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:08
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Micro\InterruptVector.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        InterruptVector.obj -l ..\listings\InterruptVector.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Micro\InterruptVector.c
+#    List file    =  ..\listings\InterruptVector.lst
+#    Object file  =  InterruptVector.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Micro\InterruptVector.c
+      1          /**
+      2           *  @file
+      3           *  @defgroup   CLASS_B
+      4           *  @brief      This file contains the array of interruptions functions
+      5           *
+      6           *  $Header: $
+      7           *
+      8           *  @copyright  Copyright 2011-$Date: 2015/08/19 09:04:18EDT $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      9           */
+     10          //-------------------------------------- Include Files ----------------------------------------------------------------
+     11          #include "C_Extensions.h"
+     12          #include "InterruptVector_prm.h"
+     13           
+     14          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     15          #pragma language=extended
+     16          #pragma segment="CSTACK"
+     17          
+     18          void __iar_program_start( void );
+     19          #pragma location = ".intvec"
+     20          
+     21          //=====================================================================================================================
+     22          //-------------------------------------- Interrupt Vector Table -------------------------------------------------------
+     23          //=====================================================================================================================
+     24          //MKV3x Vector Table entries
+
+   \                                 In section .intvec, align 4
+     25          const intvec_elem __vector_table[] =
+   \                     __vector_table:
+   \   00000000   0x........         DC32 SFE(CSTACK), Micro__BootTest, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000010   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, 0H, 0H, 0H, 0H, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \   00000030   0x........         DC32 Micro__Trap, 0H, Micro__Trap, SRMain__TimerISR, Micro__Trap
+   \              0x00000000   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000044   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000058   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   0000006C   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000080   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000094   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   000000A8   0x........         DC32 Micro__Trap, Micro__Trap, 0H, 0H, Micro__Trap, Uart__Interrupt0
+   \              0x........   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \              0x........   
+   \   000000C0   0x........         DC32 Uart__Interrupt0, Uart__Interrupt1, Uart__Interrupt1
+   \              0x........   
+   \              0x........   
+   \   000000CC   0x........         DC32 Uart__Interrupt2, Uart__Interrupt2, 0H, 0H, Micro__Trap
+   \              0x........   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \   000000E0   0x........         DC32 Micro__Trap, Micro__Trap, SRMCPwm__PwmISR, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   000000F0   0x........         DC32 Micro__Trap, 0H, 0H, 0H, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   0000010C   0x........         DC32 Micro__Trap, SRMCPDB__ISR, 0H, 0H, 0H, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x........   
+   \              0x........   
+   \   00000128   0x........         DC32 Micro__LPTimerInterrupt, Micro__Trap, Micro__Trap, Micro__Trap
+   \              0x........   
+   \              0x........   
+   \              0x........   
+   \   00000138   0x........         DC32 Micro__Trap, Micro__Trap, Micro__Trap, 0H, 0H, 0H, 0H, 0H, 0H
+   \              0x........   
+   \              0x........   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x00000000   
+   \   0000015C   0x........         DC32 Micro__Trap, Micro__Trap, SRMCAtod__ISR
+   \              0x........   
+   \              0x........   
+     26          {
+     27          	{ .__ptr = __sfe( "CSTACK" ) },				//Start of ARM Core System Handler Vectors
+     28          	RESET_IRQHANDLER,
+     29              NMI_HANDLER,
+     30              HARDFAULT_HANDLER,
+     31          	MEMMANAGEFAULT_HANDLER,
+     32          	BUSFAULT_HANDLER,
+     33          	USAGEFAULT_HANDLER,
+     34          	0,
+     35          	0,
+     36          	0,
+     37          	0,											//Reserved
+     38          	SVC_HANDLER,
+     39          	DEBUGMONITOR_HANDLER,
+     40          	0,
+     41          	PENDSV_HANDLER,
+     42          	SYSTICK_HANDLER,							//End of ARM Core System Handler Vectors
+     43          	DMA_0_TRNASFER_COMPLETED_HANDLER,			//0:Start of Non-Core Vectors
+     44          	DMA_1_TRNASFER_COMPLETED_HANDLER,			//1:
+     45          	DMA_2_TRNASFER_COMPLETED_HANDLER,			//2:
+     46          	DMA_3_TRNASFER_COMPLETED_HANDLER,			//3:
+     47          	DMA_4_TRNASFER_COMPLETED_HANDLER,			//4:
+     48          	DMA_5_TRNASFER_COMPLETED_HANDLER,			//5:
+     49          	DMA_6_TRNASFER_COMPLETED_HANDLER,			//6:
+     50          	DMA_7_TRNASFER_COMPLETED_HANDLER,			//7:
+     51          	DMA_8_TRNASFER_COMPLETED_HANDLER,			//8:
+     52          	DMA_9_TRNASFER_COMPLETED_HANDLER,			//9
+     53          	DMA_10_TRNASFER_COMPLETED_HANDLER,			//10
+     54          	DMA_11_TRNASFER_COMPLETED_HANDLER,			//11:
+     55          	DMA_12_TRNASFER_COMPLETED_HANDLER,          //12:
+     56          	DMA_13_TRNASFER_COMPLETED_HANDLER,          //13:
+     57          	DMA_14_TRNASFER_COMPLETED_HANDLER,          //14:
+     58          	DMA_15_TRNASFER_COMPLETED_HANDLER,          //15:
+     59          	DMA_ERROR_INTERRUPT_HANDLER,                //16:
+     60          	MCM_HANDLER,                                //17:
+     61          	COMMAND_COMPLETE_HANDLER,                   //18:
+     62          	READ_COLLISION,                             //19:
+     63          	LBDLVM_HANLDER,                             //20:
+     64          	LOW_LEAKAGE_WAKEUP_HANDLER,                 //21:
+     65          	WDOG_HANDLER,								//22: WDOG or EWM (Both WD modules share this interrupt
+     66          	RNG_HANDLER,								//23: Random Number Generator
+     67          	I2C0_HANLDER,								//24:
+     68          	I2C1_HANLDER,                               //25:
+     69          	SPI0_HANDLER,                               //26:
+     70          	SPI1_HANDLER,                               //27:
+     71          	0,                                          //28:
+     72          	0,                                          //29:
+     73          	LPUART0_HANDLER,							//30: Status and Error
+     74          	UART0_HANDLER,								//31: Single Interrupt vector for UART status sources
+     75          	UART0_HANDLER,								//32: Single Interrupt vector for UART status sources
+     76          	UART1_HANDLER,								//33:
+     77          	UART1_HANDLER,                              //34:
+     78          	UART2_HANDLER,                              //35:
+     79          	UART2_HANDLER,                              //36:
+     80          	0,                                          //37:
+     81          	0,                                          //38:
+     82          	ADC_HANDLER,                                //39:
+     83          	ACMP0_HANDLER,                              //40:
+     84          	ACMP1_HANDLER,								//41:
+     85          	FLEXTIME0_HANDLER,                          //42:
+     86          	FLEXTIME1_HANDLER,                          //43:
+     87          	FLEXTIME2_HANDLER,                          //44:
+     88          	0,                                          //45:
+     89          	0,                                          //46:
+     90          	0,                                          //47:
+     91          	PIT_CH0_HANDLER,							//48: PIT Channel0
+     92          	PIT_CH1_HANDLER,							//49: PIT Channel1
+     93          	PIT_CH2_HANDLER,							//50: PIT Channel2
+     94          	PIT_CH3_HANDLER,							//51: PIT Channel3
+     95          	PDB_HANDLER,                                //52:
+     96          	0,                                          //53:
+     97          	0,                                          //54:
+     98          	0,                                          //55:
+     99          	DAC0_HANDLER,                               //56:
+    100          	MCG_HANDLER,                                //57:
+    101          	LOW_POWER_TIMER,                            //58:
+    102          //	EXTI_PORTA_CONTROLMODULE_HANDLER,				//59: Pin detect(Port A)
+    103          //	EXTI_PORTB_CONTROLMODULE_HANDLER,				//60: Pin detect(Port B)
+    104          //	EXTI_PORTC_CONTROLMODULE_HANDLER,				//61: Pin detect(Port C)
+    105          //	EXTI_PORTD_CONTROLMODULE_HANDLER,				//62: Pin detect(Port D)
+    106          //	EXTI_PORTE_CONTROLMODULE_HANDLER,				//63: Pin detect(Port E)
+    107          	PORTA_CONTROL_MODULE_HANDLER,				//59: Pin detect(Port A)
+    108          	PORTB_CONTROL_MODULE_HANDLER,				//60: Pin detect(Port B)
+    109          	PORTC_CONTROL_MODULE_HANDLER,				//61: Pin detect(Port C)
+    110          	PORTD_CONTROL_MODULE_HANDLER,				//62: Pin detect(Port D)
+    111          	PORTE_CONTROL_MODULE_HANDLER,				//63: Pin detect(Port E)
+    112          	SOFTWARE_HANDLER,							//64:
+    113          	0,                                          //65:
+    114          	0,                                          //66:
+    115          	0,                                          //67:
+    116          	0,                                          //68:
+    117          	0,                                          //69:
+    118          	0,                                          //70:
+    119          	FLEXTIME3_HANDLER,                          //71:
+    120          	DAC1_HANDLER,                               //72:
+    121          	ADC1_HANDLER                                //73:
+    122          };
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     360  __vector_table
+
+ 
+ 360 bytes in section .intvec
+ 
+ 360 bytes of CONST memory
+
+Errors: none
+Warnings: none

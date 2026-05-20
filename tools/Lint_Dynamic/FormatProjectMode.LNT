@@ -1,0 +1,12 @@
+// Format of the output
+
++ffn
+-width(0)
+-hSb^3
+
+-"format=%f:%l: %t %n %m"
+
+
+
+
+

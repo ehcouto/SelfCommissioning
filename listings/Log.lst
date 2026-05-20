@@ -1,0 +1,390 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:54
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Log\Log.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o Log.obj -l
+#        ..\listings\Log.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Log\Log.c
+#    List file    =  ..\listings\Log.lst
+#    Object file  =  Log.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\Log\Log.c
+      1          /**
+      2           * @file
+      3           * @brief       Implements a FIFO queue for debug messages generated by project modules.
+      4           * @details
+      5           *
+      6           * The Log module provides the following project-level features:
+      7           *  - Macros for publishing log messages (with data) with varying severities.
+      8           *  - A chronologically ordered record of debugging messages generated by the application.
+      9           *  - Automatic publication of log messages over Reveal.
+     10           *  - An optional method of filtering specific groups of messages so that they cannot be added.
+     11           *
+     12           * Each Log Message consists of four fields:
+     13           *  - A Module Identifier to link the debug message to a specific module in the project.
+     14           *  - A Message Identifier to specify a debug message unique to the module.
+     15           *  - A Message Severity to classify the debug message. (Refer to #LOG_SEVERITY_ID_TYPE)
+     16           *  - Associated data that can be used to further diagnose the reason for the debug message.
+     17           *
+     18           * The Log module works in conjunction with an external tool (LogPreprocessor) that can be run as
+     19           * part of the build environment. The external tool scans all project modules looking for log
+     20           * messages. It searches for a type definition with the name "MODULE_X_LOG_MESSAGE_ID_TYPE" where
+     21           * 'X' is the name of the module. It then updates the Log module's parameter files to add the
+     22           * module's name and log messages automatically.
+     23           *
+     24           * @copyright  Copyright 2013-2017 Whirlpool Corporation.  All rights reserved - CONFIDENTIAL.
+     25           */
+     26          
+     27          
+     28          //  --- Include Files -------------------------------------------------------------------------------------------------
+     29          
+     30          // -- This Module --
+     31          #include "SystemConfig.h"
+     32          #include "Log.h"
+     33          #if (LOG_MODULE_ENABLE == ENABLED)
+     34          #include "Log_prv.h"
+     35          
+     36          // -- Other Modules --
+     37          #include "Reveal.h"
+     38          #include "string.h"
+     39          
+     40          
+     41          //  --- Private Properties --------------------------------------------------------------------------------------------
+     42          
+     43          
+     44          // -- Private Constant Declarations --
+     45          
+     46          #ifndef LOG_RATE_CHECK_PERIOD
+     47              //! The period over which the message rate is checked.
+     48              //! This is also the period between two published messages when the message rate is exceeded.
+     49              //! Each count represents one call to the Log__Background() function.
+     50              //! Typically, 1 count equals 25ms, or 40 counts equals 1 second.
+     51              #define LOG_RATE_CHECK_PERIOD 80
+     52          #endif
+     53          
+     54          #ifndef LOG_MAX_RATE
+     55              //! As long as more than LOG_MAX_RATE log messages are generated over the LOG_RATE_CHECK_PERIOD,
+     56              //! the Log module will slow the publication rate down to one message per LOG_RATE_CHECK_PERIOD.
+     57              #define LOG_MAX_RATE 18
+     58          #endif
+     59          
+     60          
+     61          // -- Private Type Declarations --
+     62          
+     63          
+     64          // -- Private Variables --
+     65          
+     66          //! The memory buffer that holds the log messages in the Log Message Queue.
+     67          static LOG_MODULE_MESSAGE_ID_TYPE Log_Messages[LOG_MAX_MESSAGES];
+     68          
+     69          //! The memory buffer that holds the data associated with the log messages in the Log Message Queue.
+     70          static LOG_DATA_TYPE Log_Data[LOG_MAX_MESSAGES];
+     71          
+     72          //! The number of Log Messages currently in the Message Queue that have not been published.
+     73          static uint8 Num_Of_Messages;
+     74          
+     75          //! A counter to measure the number of messages generated over the LOG_RATE_CHECK_PERIOD.
+     76          static uint8 Log_Msg_Per_Period;
+     77          
+     78          //! A counter to measure the LOG_RATE_CHECK_PERIOD.
+     79          static uint8 Log_Period_Counter;
+     80          
+     81          //! A flag that indicates that the message generation rate exceeded the acceptable threshold.
+     82          //! When this flag is set, the publication rate is reduced.
+     83          static BOOL_TYPE Log_Too_Fast;
+     84          
+     85          #if (LOG_RUN_TIME_FILTERING == ENABLED)
+     86              //! An array of Message Severity filters - one for each Module.
+     87              LOG_SEVERITY_FILTER_TYPE Filters[NUMBER_OF_MODULES];
+     88          #endif
+     89          
+     90          
+     91          //  --- Compile-Time Assertions ---------------------------------------------------------------------------------------
+     92          
+     93          // Verify that the LOG_MODULE_MESSAGE_ID_TYPE exactly overlaps the concatenation of the
+     94          // LOG_MODULE_ID_TYPE and the LOG_MESSAGE_ID_TYPE.
+     95          CT_ASSERT(sizeof(LOG_MODULE_MESSAGE_ID_TYPE) == (sizeof(LOG_MODULE_ID_TYPE) + sizeof(LOG_MESSAGE_ID_TYPE)));
+     96          
+     97          // Verify that the LOG_MAX_MESSAGES is in the expected range.
+     98          CT_ASSERT((0 < LOG_MAX_MESSAGES) && (LOG_MAX_MESSAGES <= 255));
+     99          
+    100          // Verify that the NUMBER_OF_MODULES is in the expected range.
+    101          CT_ASSERT((0 < NUMBER_OF_MODULES) && (NUMBER_OF_MODULES <= 255));
+    102          
+    103          // Verify that the LOG_SEVERITY_FILTERS_TABLE is correctly sized.
+    104          CT_ASSERT(sizeof(LOG_SEVERITY_FILTERS_TABLE) == (sizeof(LOG_SEVERITY_FILTER_TYPE) * (NUMBER_OF_MODULES)));
+    105          
+    106          
+    107          //  --- Private Function Prototypes -----------------------------------------------------------------------------------
+    108          
+    109          
+    110          //=====================================================================================================================
+    111          //  --- Public Functions ----------------------------------------------------------------------------------------------
+    112          //=====================================================================================================================
+    113          
+    114          
+    115          
+    116          //---------------------------------------------------------------------------------------------------------------------
+    117          /**
+    118           * Initialize all Log module variables.
+    119           *
+    120           * Reset the Message Queue variables to an empty Message Queue.
+    121           * Fill the Message Queue memory with invalid Log Messages.
+    122           * If the #LOG_RUN_TIME_FILTERING is ENABLED, then reset the Message Filters to the default values
+    123           * from the LOG_SEVERITY_FILTERS_TABLE[] array.
+    124           */
+    125          void Log__Initialize(void)
+    126          {
+    127              // Set the variables for an empty Message Queue.
+    128              Num_Of_Messages = 0;
+    129          
+    130              // Fill the Log's memory buffer with invalid messages.
+    131              for (uint8 i = 0; i < LOG_MAX_MESSAGES; i++)
+    132              {
+    133                  Log_Messages[i] = MODULE_LOG_INVALID_MESSAGE;
+    134                  Log_Data[i] = 0;
+    135              }
+    136          
+    137              // Reset the message filters.
+    138              #if (LOG_RUN_TIME_FILTERING == ENABLED)
+    139                  memcpy(Filters, LOG_SEVERITY_FILTERS_TABLE, sizeof(Filters));
+    140              #endif
+    141          }
+    142          
+    143          
+    144          //---------------------------------------------------------------------------------------------------------------------
+    145          /**
+    146           * Check for a message in the Log buffer and send it if Reveal is not busy.
+    147           */
+    148          void Log__Background(void)
+    149          {
+    150              // Check for a message rate that is too fast.
+    151              Log_Period_Counter++;
+    152              if (Log_Period_Counter >= LOG_RATE_CHECK_PERIOD)
+    153              {
+    154                  Log_Too_Fast = (BOOL_TYPE)(Log_Msg_Per_Period > LOG_MAX_RATE);
+    155                  Log_Msg_Per_Period = 0;
+    156                  Log_Period_Counter = 0;
+    157              }
+    158          
+    159              // Check if Log Buffer is not empty and Reveal queue is empty.
+    160              if (((Log_Too_Fast == FALSE) ||
+    161                   (Log_Period_Counter == 0)) &&
+    162                  (Num_Of_Messages > 0) &&
+    163                  (Reveal__GetNumMessagesQueue() == 0))
+    164              {
+    165                  // Send the available Log message on Reveal.
+    166                  REVEAL_COMMAND_TYPE* ptr = Reveal__NewFeedback(LOG_REPORT_API, LOG_REPORT_OPCODE, REVEAL_BROADCAST_NODE,
+    167                                                                 sizeof(LOG_MODULE_MESSAGE_ID_TYPE) + sizeof(LOG_DATA_TYPE));
+    168                  if (ptr != (REVEAL_COMMAND_TYPE *)NULL)
+    169                  {
+    170                      uint8 index = Num_Of_Messages - 1;
+    171                      if ((Reveal__AddDataU16(ptr, Log_Messages[index]) == PASS) &&
+    172                          (Reveal__AddDataU16(ptr, Log_Data[index]) == PASS) &&
+    173                          (Reveal__QueueCommand(ptr) == TRUE))
+    174                      {
+    175                          Num_Of_Messages--;
+    176                      }
+    177                  }
+    178              }
+    179          }
+    180          
+    181          
+    182          //---------------------------------------------------------------------------------------------------------------------
+    183          /**
+    184           * Add a new Log Message to the Message Queue.
+    185           *
+    186           * Log Messages that are disabled through a filter will not be added to the Message Queue.
+    187           *
+    188           * If the Message Queue is full when this function is called, then the passed information will be
+    189           * discarded. The alternative solution of dropping the oldest Log Message is not used. If a
+    190           * project module floods the Message Queue, the Log Messages leading up to the flood are typically
+    191           * more useful than the repeated Log Message that generates the flood.
+    192           *
+    193           * Throws DEBUG_MODULE_ID_INVALID(module_id) if the Module Identifier is invalid.
+    194           *
+    195           * Throws DEBUG_SEVERITY_ID_INVALID(module_id, severity_id) if the Message Severity is invalid.
+    196           *
+    197           * @param module_id = Module Identifier value to use in the 'Module' field of the Log Message.
+    198           * @param message_id = Message Identifier value to use in the 'Id' field of the Log Message.
+    199           * @param severity_id = Message Severity value to use in the 'Severity' field of the Log Message.
+    200           * @param data = Data value to use in the 'Data' field of the Log Message.
+    201           */
+    202          void Log__AddMessage(LOG_MODULE_ID_TYPE module_id, LOG_MESSAGE_ID_TYPE message_id, LOG_SEVERITY_ID_TYPE severity_id, LOG_DATA_TYPE data)
+    203          {
+    204              if (module_id >= NUMBER_OF_MODULES)
+    205              {
+    206                  // Module Identifier is invalid.
+    207                  DEBUG_MODULE_ID_INVALID(module_id);
+    208              }
+    209              else if (severity_id > LOG_ERROR)
+    210              {
+    211                  // Severity is invalid.
+    212                  DEBUG_SEVERITY_ID_INVALID(module_id, severity_id);
+    213              }
+    214              else if ((LOG_SEVERITY_FILTERS_TABLE[module_id] & (1 << severity_id)) == 0)
+    215              {
+    216                  // Log Message was filtered out, so do nothing.
+    217              }
+    218              else
+    219              {
+    220                  if (Num_Of_Messages >= LOG_MAX_MESSAGES)
+    221                  {
+    222                      // Refer to the function description.
+    223                  }
+    224                  else
+    225                  {
+    226                      // Log_Messages[] and Log_Data[] arrays are FIFOs.
+    227                      // Shift all the messages down by one and write the newest message to index 0.
+    228                      memmove(&Log_Messages[1], &Log_Messages[0], (LOG_MAX_MESSAGES - 1) * sizeof(LOG_MODULE_MESSAGE_ID_TYPE));
+    229                      memmove(&Log_Data[1], &Log_Data[0], (LOG_MAX_MESSAGES - 1) * sizeof(LOG_DATA_TYPE));
+    230                      Log_Messages[0] = (LOG_MODULE_MESSAGE_ID_TYPE)COMBINE_BYTES(module_id, message_id);
+    231                      Log_Data[0] = data;
+    232          
+    233                      // increment the number of messages to publish by one.
+    234                      // Num_Of_Messages is known to be less than the max due to the check at the start of the function.
+    235                      Num_Of_Messages++;
+    236                  }
+    237          
+    238                  // Count the number of requested messages independent of the number of published messages.
+    239                  if (Log_Msg_Per_Period < 0xFF)
+    240                  {
+    241                      Log_Msg_Per_Period++;
+    242                  }
+    243              }
+    244          }
+    245          
+    246          
+    247          #if (LOG_RUN_TIME_FILTERING == ENABLED)
+    248          //---------------------------------------------------------------------------------------------------------------------
+    249          /**
+    250           * Implement a filter to enable/disable Log Messages based on the module ID and severity IDs.
+    251           *
+    252           * Log Messages that are disabled through a filter will not be added to the Message Queue.
+    253           *
+    254           * Throws DEBUG_MODULE_ID_INVALID(module_id) if the Module Identifier is invalid.
+    255           *
+    256           * If #LOG_RUN_TIME_FILTERING is DISABLED, then this function will have no effect.
+    257           *
+    258           * @image html "log_sq_set_message_filter_api.png"
+    259           *
+    260           * @param module_id = The LOG_MODULE_ID_TYPE for the module being filtered.
+    261           * @param severities_allowed = The combination of Message Severities that will be allowed.
+    262           *          Log Messages with other Message Severities will not be added to the Message Queue.
+    263           */
+    264          void Log__SetMessageFilter(LOG_MODULE_ID_TYPE module_id, LOG_SEVERITY_FILTER_TYPE severities_allowed)
+    265          {
+    266              if (module_id < NUMBER_OF_MODULES)
+    267              {
+    268                  Filters[module_id] = severities_allowed;
+    269              }
+    270              else
+    271              {
+    272                  DEBUG_MODULE_ID_INVALID(module_id);
+    273              }
+    274          }
+    275          #endif  // #if (LOG_RUN_TIME_FILTERING == ENABLED)
+    276          
+    277          //=====================================================================================================================
+    278          //  --- Private Functions ---------------------------------------------------------------------------------------------
+    279          //=====================================================================================================================
+    280          
+    281          
+    282          #endif  // #if (LOG_MODULE_ENABLE == ENABLED)
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

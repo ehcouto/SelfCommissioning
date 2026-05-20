@@ -1,0 +1,965 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:39
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\MciParametersLoader\MciParametersLoader.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        MciParametersLoader.obj -l ..\listings\MciParametersLoader.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\MciParametersLoader\MciParametersLoader.c
+#    List file    =  ..\listings\MciParametersLoader.lst
+#    Object file  =  MciParametersLoader.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\MciParametersLoader\MciParametersLoader.c
+      1          /**
+      2           *  @file       MciParametersLoaders.c
+      3           *
+      4           *  @brief      Mci Parameters Loader module
+      5           *
+      6           *  $Header: $
+      7           *
+      8           *  @copyright  Copyright 2016-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      9           */
+     10          //---------------------------------------------------------------------------------------------------------------------
+     11          //---------------------------------------------------------------------------------------------------------------------
+     12          
+     13          
+     14          //-------------------------------------- Include Files ----------------------------------------------------------------
+     15          #include "MciParametersLoader.h"
+     16          #include "MciParametersLoader_prv.h"
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SettingFile\SettingFile.h",39  Remark[Pe082]: 
+          storage class is not first
+     17          #include "Mci.h"
+     18          #include "SrMotorSafetyMgr.h"
+     19          
+     20          #include "string.h"
+     21          #include "Crc16.h"
+     22          
+     23          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     24          
+     25          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     26          // ----------------- CLASS A AUTOMATED DEFINITIONS ------------------------
+     27          #ifdef INTERNAL_DISPLS
+
+   \                                 In section .rodata, align 4, keep-with-next
+     28          const uint16 Displ_Idxs_Internal[] = INTERNAL_DISPLS;
+   \                     Displ_Idxs_Internal:
+   \   00000000   0x0001 0x0003      DC16 1, 3, 4, 9, 10, 11, 13, 14
+   \              0x0004 0x0009
+   \              0x000A 0x000B
+   \              0x000D 0x000E
+
+   \                                 In section .rodata, align 4, keep-with-next
+     29          const uint32 Displ_Sizes_Internal[] = INTERNAL_DISPL_SIZES;
+   \                     Displ_Sizes_Internal:
+   \   00000000   0x000001B4         DC32 436, 200, 104, 136, 136, 72, 136, 24
+   \              0x000000C8   
+   \              0x00000068   
+   \              0x00000088   
+   \              0x00000088   
+   \              0x00000048   
+   \              0x00000088   
+   \              0x00000018   
+     30          #define NUM_INTERNAL_DISPL  sizeof(Displ_Sizes_Internal)/sizeof(uint32)
+     31          #else
+     32          #define NUM_INTERNAL_DISPL 0
+     33          #endif
+     34          
+     35          #ifdef SF_RAM_DISPLS
+     36          const uint16 Displ_Idxs_Ram[] = SF_RAM_DISPLS;
+     37          #define NUM_SF_RAM_DISPL  sizeof(Displ_Idxs_Ram)/sizeof(uint16)
+     38          #else
+     39          #define NUM_SF_RAM_DISPL 0
+     40          #endif
+     41          
+     42          #ifdef SF_FLASH_DISPLS
+     43          const uint16 Displ_Idxs_Flash[] = SF_FLASH_DISPLS;
+     44          #define NUM_SF_FLASH_DISPL  sizeof(Displ_Idxs_Flash)/sizeof(uint16)
+     45          #else
+     46          #define NUM_SF_FLASH_DISPL 0
+     47          #endif
+     48          
+     49          // Total number
+     50          #define  MCI_CLASS_A_DISPLACEMENTS     NUM_INTERNAL_DISPL + NUM_SF_RAM_DISPL + NUM_SF_FLASH_DISPL
+     51          
+     52          // understand if any internally loaded
+     53          #ifdef INTERNAL_DISPLS
+     54              #define MCI_CLASS_A_PARAMETERS_LOADER_INTERNAL                  ENABLED
+     55          #else
+     56              #define MCI_CLASS_A_PARAMETERS_LOADER_INTERNAL                  DISABLED
+     57          #endif
+     58          
+     59          // understand if any loaded from Setting file (to be used directly from flash)
+     60          #ifdef SF_FLASH_DISPLS
+     61              #define MCI_CLASS_A_PARAMETERS_LOADER_SF                  ENABLED
+     62          #else
+     63              #define MCI_CLASS_A_PARAMETERS_LOADER_SF                  DISABLED
+     64          #endif
+     65          
+     66          // understand if any loaded from Setting file (to be buffered in ram)
+     67          #ifdef SF_RAM_DISPLS
+     68              #define MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM                  ENABLED
+     69          #else
+     70              #define MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM                  DISABLED
+     71          #endif
+     72          
+     73          #if (MCI_CLASS_A_PARAMETERS_LOADER_INTERNAL == ENABLED)
+     74          //Some Mci Class-A displacements are not from setting file
+     75              #include INTERNAL_CLASS_A_PARAMS_INCLUDE_FILE
+     76          #endif
+     77          
+     78          // ----------------- CLASS B AUTOMATED DEFINITIONS ------------------------
+     79          #ifdef INTERNAL_CLASSB_DISPLS
+
+   \                                 In section .rodata, align 2, keep-with-next
+     80          const uint16 Displ_Sr_Idxs_Internal[] = INTERNAL_CLASSB_DISPLS;
+   \                     Displ_Sr_Idxs_Internal:
+   \   00000000   0x0001             DC16 1
+
+   \                                 In section .rodata, align 4, keep-with-next
+     81          const uint32 Displ_Sr_Sizes_Internal[] = INTERNAL_CLASSB_DISPL_SIZES;
+   \                     Displ_Sr_Sizes_Internal:
+   \   00000000   0x00000034         DC32 52
+     82          #define NUM_CLASSB_INTERNAL_DISPL  sizeof(Displ_Sr_Sizes_Internal)/sizeof(uint32)
+     83          #else
+     84          #define NUM_CLASSB_INTERNAL_DISPL 0
+     85          #endif
+     86          
+     87          #ifdef SF_CLASSB_RAM_DISPLS
+     88          const uint16 Displ_Sr_Idxs_Ram[] = SF_CLASSB_RAM_DISPLS;
+     89          #define NUM_CLASSB_SF_RAM_DISPL  sizeof(Displ_Sr_Idxs_Ram)/sizeof(uint16)
+     90          #else
+     91          #define NUM_CLASSB_SF_RAM_DISPL 0
+     92          #endif
+     93          
+     94          #ifdef SF_CLASSB_FLASH_DISPLS
+     95          const uint16 Displ_Sr_Idxs_Flash[] = SF_CLASSB_FLASH_DISPLS;
+     96          #define NUM_CLASSB_SF_FLASH_DISPL  sizeof(Displ_Sr_Idxs_Flash)/sizeof(uint16)
+     97          #else
+     98          #define NUM_CLASSB_SF_FLASH_DISPL 0
+     99          #endif
+    100          
+    101          // Total number
+    102          #define  MCI_CLASS_B_DISPLACEMENTS     NUM_CLASSB_INTERNAL_DISPL + NUM_CLASSB_SF_RAM_DISPL + NUM_CLASSB_SF_FLASH_DISPL
+    103          
+    104          // understand if any internally loaded
+    105          #ifdef INTERNAL_CLASSB_DISPLS
+    106              #define MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL                  ENABLED
+    107          #else
+    108              #define MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL                  DISABLED
+    109          #endif
+    110          
+    111          // understand if any loaded from Setting file (to be used directly from flash)
+    112          #ifdef SF_CLASSB_FLASH_DISPLS
+    113              #define MCI_CLASS_B_PARAMETERS_LOADER_SF                  ENABLED
+    114          #else
+    115              #define MCI_CLASS_B_PARAMETERS_LOADER_SF                  DISABLED
+    116          #endif
+    117          
+    118          // understand if any loaded from Setting file (to be buffered in ram)
+    119          #ifdef SF_CLASSB_RAM_DISPLS
+    120              #define MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM                  ENABLED
+    121          #else
+    122              #define MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM                  DISABLED
+    123          #endif
+    124          
+    125          
+    126          #if (MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL == ENABLED)
+    127          //Some Mci Class-B displacements are not from setting file
+    128              #include INTERNAL_CLASS_B_PARAMS_INCLUDE_FILE
+
+  #endif  /* MOTORSR_PRM_ */
+                            ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\ProjectSpecific\Mci\Mcl\MotorSr_prm.h",53  Remark[Pe001]: 
+          last line of file ends without a newline
+    129          #endif
+    130          //////////////////////////////////////////////////////////////////////////////////////////////
+    131          
+    132          #if ((MCI_CLASS_A_PARAMETERS_LOADER_SF == ENABLED) || (MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED) || \
+    133               (MCI_CLASS_B_PARAMETERS_LOADER_SF == ENABLED) || (MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED))
+    134          #include "Mode.h"
+    135          #include "SettingFile.h"             //Some Mci Class-A displacements are from setting file
+    136          #endif
+    137          
+    138          #if (MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL != ENABLED)
+    139              #ifndef SETTING_FILE_H      // to avoid double inclusion
+    140                  #include "SettingFile.h"
+    141              #endif
+    142          #endif
+    143          
+    144          #ifndef MCI_PARAMETERS_LOADER_ADDITIONAL_CHECK
+    145              #define MCI_PARAMETERS_LOADER_ADDITIONAL_CHECK  TRUE
+    146          #endif
+    147          
+    148          #ifndef PLATFORM_USED
+    149              #define NUCLEUS_BASED                   0
+    150              #define PLATFORM_2_5_BASED              1
+    151          
+    152              #define PLATFORM_USED                  NUCLEUS_BASED
+    153          #endif
+    154          
+    155          #if (PLATFORM_USED == PLATFORM_2_5_BASED)
+    156          #include "Params.h"
+    157          #endif
+    158          
+    159          #if (MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED)
+    160              // allocate memory in RAM
+    161              uint8 Mci_ClassA_Prm_Ram[MCI_CLASS_A_PARAMETERS_SIZE_RAM];    // sum of parameters in all used displacements from RAM
+    162          #endif
+    163          
+    164          #if ((MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED) || (MCI_CLASS_A_PARAMETERS_LOADER_SF == ENABLED))
+    165          #if (PLATFORM_USED == NUCLEUS_BASED)
+    166              SETTINGFILE_LOADER_TYPE Mci_ClassA_Prm_Flash_Ptr;
+    167          #else
+    168              PARAMS_LOADER_TYPE Mci_ClassA_Prm_Flash_Ptr;
+    169          #endif
+    170          #endif
+    171          
+    172          #if (MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED)
+    173              // allocate memory in RAM
+    174              uint8 Mci_ClassB_Prm_Ram[MCI_CLASS_B_PARAMETERS_SIZE_RAM];    // sum of parameters in all used displacements from RAM
+    175          #endif
+    176          
+    177          #if ((MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED) || (MCI_CLASS_B_PARAMETERS_LOADER_SF == ENABLED))
+    178          
+    179              #if (PLATFORM_USED == NUCLEUS_BASED)
+    180                  SETTINGFILE_LOADER_TYPE Mci_ClassB_Prm_Flash_Ptr;
+    181              #else
+    182                  PARAMS_LOADER_TYPE Mci_ClassB_Prm_Flash_Ptr;
+    183              #endif
+    184          #endif
+    185          
+
+   \                                 In section .bss, align 4
+    186          addr_t Mcl_SF_Displs[MCI_CLASS_A_DISPLACEMENTS];
+   \                     Mcl_SF_Displs:
+   \   00000000                      DS8 32
+
+   \                                 In section .data, align 4
+    187          addr_t Mci_Sr_SF_Displs[MCI_CLASS_B_DISPLACEMENTS];
+   \                     Mci_Sr_SF_Displs:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   __absolute unsigned short Motor_Sr_Params_SF[26]
+   \                     Motor_Sr_Params_SF:
+   \   00000004   0x3F59 0x0023      DC16 16217, 35, 90, 130, 25, 533, 10616, 14924, 0, 16256, 60392, 15715
+   \              0x005A 0x0082
+   \              0x0019 0x0215
+   \              0x2978 0x3A4C
+   \              0x0000 0x3F80
+   \              0xEBE8 0x3D63
+   \   0000001C   0x886D 0x37DF      DC16 34925, 14303, 44564, 16439, 10784, 15245, 7864, 16133, 18770
+   \              0xAE14 0x4037
+   \              0x2A20 0x3B8D
+   \              0x1EB8 0x3F05
+   \              0x4952       
+   \   0000002E   0x3A9D 0x999A      DC16 15005, 39322, 16345, 1718, 0
+   \              0x3FD9 0x06B6
+   \              0x0000       
+    188          
+    189          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    190          void MciClassAPointerLoading(void);
+    191          void MciClassBPointerLoading(void);
+    192          
+    193          
+    194          //=====================================================================================================================
+    195          //-------------------------------------- Public Functions -------------------------------------------------------------
+    196          //=====================================================================================================================
+    197          
+    198          //---------------------------------------------------------------------------------------------------------------------
+    199          /**
+    200           *  @brief      It Initializes the module MciParametersLoaders and its variables.
+    201           *
+    202           */
+
+   \                                 In section .text, align 2, keep-with-next
+    203          void MciParametersLoader__Initialize(void)
+    204          {
+    205          
+    206          }
+   \                     MciParametersLoader__Initialize: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    207          
+    208          
+    209          
+    210          
+    211          //---------------------------------------------------------------------------------------------------------------------
+    212          /**
+    213           *  @brief      Handle Mci Parameters Loader  events of 25ms.
+    214           *
+    215           */
+
+   \                                 In section .text, align 2, keep-with-next
+    216          void MciParametersLoader__25msHandler(void)
+    217          {
+   \                     MciParametersLoader__25msHandler: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+    218          
+    219              if((Mci__GetDigital(MOTOR0, MCI_DI_PARAMETERS_LOADED) == FALSE) && (Mci__GetAnalog(MOTOR0, MCI_AI_INTERNAL_MCI_STATE)>2))
+   \   00000004   0x2105             MOVS     R1,#+5
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x.... 0x....      BL       Mci__GetDigital
+   \   0000000C   0xB970             CBNZ.N   R0,??MciParametersLoader__25msHandler_0
+   \   0000000E   0x2118             MOVS     R1,#+24
+   \   00000010   0x.... 0x....      BL       Mci__GetAnalog
+   \   00000014   0x2803             CMP      R0,#+3
+   \   00000016   0xDB09             BLT.N    ??MciParametersLoader__25msHandler_0
+    220              {
+    221          
+    222          #if ((MCI_CLASS_A_PARAMETERS_LOADER_SF == ENABLED) || (MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED) || \
+    223               (MCI_CLASS_B_PARAMETERS_LOADER_SF == ENABLED) || (MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED))
+    224                  if (Mode__IsProgrammingEngaged() == FALSE) //Mci is Initialized and parameters not loaded
+    225          #else
+    226                  if (MCI_PARAMETERS_LOADER_ADDITIONAL_CHECK)
+    227          #endif
+    228                  {
+    229                      // Load Class A Pointer data
+    230                      MciClassAPointerLoading();
+   \   00000018   0x.... 0x....      BL       MciClassAPointerLoading
+    231          
+    232                      // Load Class B Pointer data
+    233          #ifndef MCI_DISABLE_CLASSB_PARAMETERS_LOADER
+    234                      MciClassBPointerLoading();
+   \   0000001C   0x....             LDR.N    R1,??DataTable8
+   \   0000001E   0x1D08             ADDS     R0,R1,#+4
+   \   00000020   0x6008             STR      R0,[R1, #+0]
+   \   00000022   0xB001             ADD      SP,SP,#+4
+   \   00000024   0xF85D 0xEB04      POP      {LR}
+   \   00000028   0x.... 0x....      B.W      SRMotorSafetyMgr__SetParams
+    235          #endif
+    236                  }
+    237              }
+    238          }
+   \                     ??MciParametersLoader__25msHandler_0: (+1)
+   \   0000002C   0xB001             ADD      SP,SP,#+4
+   \   0000002E   0xBD00             POP      {PC}             ;; return
+    239          
+    240          
+    241          
+    242          //---------------------------------------------------------------------------------------------------------------------
+    243          /**
+    244           *  @brief      Get a class A displacement address
+    245           *
+    246           *  @param[in]  displacement Displacement to get, as defined in SettingFile_prm.h
+    247           *  @return     Pointer to the address of the displacement; NULL in case the index is out of range
+    248           */
+
+   \                                 In section .text, align 2, keep-with-next
+    249          addr_t* MciParametersLoader__GetClassADispl(uint8 displacement)
+    250          {
+    251              addr_t* res = (addr_t*)NULL;
+   \                     MciParametersLoader__GetClassADispl: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+    252              uint8 i = 0;
+    253          #if (MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED)
+    254              // Get the index for the given displacement
+    255              for (i = 0; i < NUM_SF_RAM_DISPL; i++)
+    256              {
+    257                  if (Displ_Idxs_Ram[i] == displacement)
+    258                  {
+    259                      res = Mcl_SF_Displs + i;
+    260                  }
+    261              }
+    262          #endif
+    263          #if (MCI_CLASS_A_PARAMETERS_LOADER_SF == ENABLED)
+    264              // Get the index for the given displacement
+    265              for (i = 0; i < NUM_SF_FLASH_DISPL; i++)
+    266              {
+    267                  if (Displ_Idxs_Flash[i] == displacement)
+    268                  {
+    269                      res = Mcl_SF_Displs + i;
+    270                  }
+    271              }
+    272          #endif
+    273          #if (MCI_CLASS_A_PARAMETERS_LOADER_INTERNAL == ENABLED)
+    274              // Get the index for the given displacement
+    275              for (i = 0; i < NUM_INTERNAL_DISPL; i++)
+    276              {
+    277                  if (Displ_Idxs_Internal[i] == displacement)
+   \   00000002   0x2801             CMP      R0,#+1
+   \   00000004   0xBF08             IT       EQ 
+   \   00000006   0x....             LDREQ.N  R1,??DataTable8_1
+   \   00000008   0xD01A             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   0000000A   0x2803             CMP      R0,#+3
+   \   0000000C   0xBF08             IT       EQ 
+   \   0000000E   0x....             LDREQ.N  R1,??DataTable8_2
+   \   00000010   0xD016             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   00000012   0x2804             CMP      R0,#+4
+   \   00000014   0xBF08             IT       EQ 
+   \   00000016   0x....             LDREQ.N  R1,??DataTable8_3
+   \   00000018   0xD012             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   0000001A   0x2809             CMP      R0,#+9
+   \   0000001C   0xBF08             IT       EQ 
+   \   0000001E   0x....             LDREQ.N  R1,??DataTable8_4
+   \   00000020   0xD00E             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   00000022   0x280A             CMP      R0,#+10
+   \   00000024   0xBF08             IT       EQ 
+   \   00000026   0x....             LDREQ.N  R1,??DataTable8_5
+   \   00000028   0xD00A             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   0000002A   0x280B             CMP      R0,#+11
+   \   0000002C   0xBF08             IT       EQ 
+   \   0000002E   0x....             LDREQ.N  R1,??DataTable8_6
+   \   00000030   0xD006             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   00000032   0x280D             CMP      R0,#+13
+   \   00000034   0xBF08             IT       EQ 
+   \   00000036   0x....             LDREQ.N  R1,??DataTable8_7
+   \   00000038   0xD002             BEQ.N    ??MciParametersLoader__GetClassADispl_0
+   \   0000003A   0x280E             CMP      R0,#+14
+   \   0000003C   0xBF08             IT       EQ 
+    278                  {
+    279                      res = Mcl_SF_Displs + i;
+   \   0000003E   0x....             LDREQ.N  R1,??DataTable8_8
+    280                  }
+    281              }
+    282          #endif
+    283          
+    284              return res;
+   \                     ??MciParametersLoader__GetClassADispl_0: (+1)
+   \   00000040   0x4608             MOV      R0,R1
+   \   00000042   0x4770             BX       LR               ;; return
+    285          }
+    286          
+    287          //---------------------------------------------------------------------------------------------------------------------
+    288          /**
+    289           *  @brief      Get a class B displacement address
+    290           *
+    291           *  @param[in]  displacement Displacement to get, as defined in SettingFile_prm.h
+    292           *  @return     The address of the displacement; NULL in case the index is out of range
+    293           */
+
+   \                                 In section .text, align 2, keep-with-next
+    294          addr_t MciParametersLoader__GetClassBDispl(uint8 displacement)
+    295          {
+    296              addr_t res = (addr_t)NULL;
+   \                     MciParametersLoader__GetClassBDispl: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+    297              uint8 i = 0;
+    298          #if (MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED)
+    299              for (i = 0; i < MCI_CLASS_B_DISPLACEMENTS; i++)
+    300              {
+    301                  if (Displ_Sr_Idxs_Ram[i] == displacement)
+    302                  {
+    303                      res = Mci_Sr_SF_Displs[i];
+    304                  }
+    305              }
+    306          #endif
+    307          #if (MCI_CLASS_B_PARAMETERS_LOADER_SF == ENABLED)
+    308              for (i = 0; i < MCI_CLASS_B_DISPLACEMENTS; i++)
+    309              {
+    310                  if (Displ_Sr_Idxs_Flash[i] == displacement)
+    311                  {
+    312                      res = Mci_Sr_SF_Displs[i];
+    313                  }
+    314              }
+    315          #endif
+    316          #if (MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL == ENABLED)
+    317              for (i = 0; i < MCI_CLASS_B_DISPLACEMENTS; i++)
+    318              {
+    319                  if (Displ_Sr_Idxs_Internal[i] == displacement)
+   \   00000002   0x2801             CMP      R0,#+1
+   \   00000004   0xBF04             ITT      EQ 
+    320                  {
+    321                      res = Mci_Sr_SF_Displs[i];
+   \   00000006   0x....             LDREQ.N  R0,??DataTable8
+   \   00000008   0x6801             LDREQ    R1,[R0, #+0]
+    322                  }
+    323              }
+    324          #endif
+    325          
+    326              return res;
+   \   0000000A   0x4608             MOV      R0,R1
+   \   0000000C   0x4770             BX       LR               ;; return
+    327          }
+    328          
+    329          
+
+   \                                 In section .text, align 2, keep-with-next
+    330          void MciClassAPointerLoading(void)
+    331          {
+    332              uint8 displ_address = 0;
+    333              uint8 i = 0;
+    334          #if MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED
+    335              uint8 *mci_class_a_prm_sf_ptr;           // Pointer to Ram buffer for SF copy
+    336          #endif
+    337          #if MCI_CLASS_A_PARAMETERS_LOADER_INTERNAL == ENABLED
+    338              uint8 *mci_class_a_prm_internal_ptr;     // Pointer to Ram area for internal params (not from setting file)
+    339              uint8 *mci_class_a_prm_internal_ptr_max; // Max Pointer value given the size of internal parameters
+    340          #endif
+    341              // init the displacement address for the vector pointer to be passed to MCI
+    342              displ_address = 0;
+    343          
+    344              // initialize pointer RAM buffer (copy from flash)
+    345          #if MCI_CLASS_A_PARAMETERS_LOADER_SF_RAM == ENABLED
+    346              mci_class_a_prm_sf_ptr = Mci_ClassA_Prm_Ram;
+    347          #endif
+    348          
+    349              // initialize pointer RAM (internal params)
+    350          #if MCI_CLASS_A_PARAMETERS_LOADER_INTERNAL == ENABLED
+    351              mci_class_a_prm_internal_ptr = (uint8*)Mcl_Params_SF;
+   \                     MciClassAPointerLoading: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable8_9
+   \   00000002   0x6802             LDR      R2,[R0, #+0]
+    352              mci_class_a_prm_internal_ptr_max = mci_class_a_prm_internal_ptr + INTERNAL_TOT_SIZES;
+    353          #endif
+    354          
+    355              // Loading required displacements of MCI Class A pointer ...
+    356          #ifdef SF_RAM_DISPLS
+    357              for (i = 0; i<NUM_SF_RAM_DISPL; i++)
+    358              {
+    359          
+    360          #if (PLATFORM_USED == NUCLEUS_BASED)
+    361                  // loading from setting file in Flash
+    362                  if(SettingFile__BasicLoader(SF_PTR_MCU_CLASS_A_MCI, Displ_Idxs_Ram[i], &Mci_ClassA_Prm_Flash_Ptr) == PASS)
+    363                  {
+    364                      // copy from Flash to RAM
+    365                      memcpy(mci_class_a_prm_sf_ptr, Mci_ClassA_Prm_Flash_Ptr.Data, Mci_ClassA_Prm_Flash_Ptr.Length); //Copy from Flash to RAM
+    366          
+    367                      // store RAM pointer value to be passed to MCI set params
+    368                      Mcl_SF_Displs[displ_address++] = (addr_t)mci_class_a_prm_sf_ptr;
+    369          
+    370                      //update RAM pointer
+    371                      mci_class_a_prm_sf_ptr += Mci_ClassA_Prm_Flash_Ptr.Length;
+    372                  }
+    373                  else
+    374                  {
+    375                      // NULL pointer in case of loading exception
+    376                      Mcl_SF_Displs[displ_address++] = (addr_t)NULL;
+    377                  }
+    378          #else
+    379                  // loading from setting file in Flash
+    380                  if(Params__BasicLoader(SF_PTR_MCU_CLASS_A_MCI, Displ_Idxs_Ram[i], &Mci_ClassA_Prm_Flash_Ptr) == PASS)
+    381                  {
+    382                      Mcl_SF_Displs[displ_address++] = (addr_t)Mci_ClassA_Prm_Flash_Ptr.Data;
+    383                  }
+    384                  else
+    385                  {
+    386                      // NULL pointer in case of loading exception
+    387                      Mcl_SF_Displs[displ_address++] = (addr_t)NULL;
+    388                  }
+    389          #endif
+    390          
+    391              }
+    392          #endif
+    393          #ifdef SF_FLASH_DISPLS
+    394              for (i = 0; i<NUM_SF_FLASH_DISPL; i++)
+    395              {
+    396                  // loading from setting file in Flash
+    397                  if((SettingFile__BasicLoader(SF_PTR_MCU_CLASS_A_MCI, Displ_Idxs_Flash[i], &Mci_ClassA_Prm_Flash_Ptr) == PASS) && (!mci_sf_error))
+    398                  {
+    399                      Mcl_SF_Displs[displ_address++] = (addr_t)Mci_ClassA_Prm_Flash_Ptr.Data;
+    400                  }
+    401                  else
+    402                  {
+    403                      // NULL pointer in case of loading exception
+    404                      Mcl_SF_Displs[displ_address++] = (addr_t)NULL;
+    405                  }
+    406              }
+    407          #endif
+    408          #ifdef INTERNAL_DISPLS
+    409              for (i = 0; i<NUM_INTERNAL_DISPL; i++)
+   \   00000004   0x....             LDR.N    R0,??DataTable8_1
+   \   00000006   0xF202 0x41DC      ADDW     R1,R2,#+1244
+    410              {
+    411                  if (mci_class_a_prm_internal_ptr < mci_class_a_prm_internal_ptr_max)
+   \   0000000A   0x428A             CMP      R2,R1
+   \   0000000C   0xBF32             ITEE     CC 
+    412                  {
+    413                      Mcl_SF_Displs[displ_address++] = (addr_t)mci_class_a_prm_internal_ptr;
+   \   0000000E   0x6002             STRCC    R2,[R0, #+0]
+    414                  }
+    415                  else
+    416                  {
+    417                      // NULL pointer in case of loading exception
+    418                      Mcl_SF_Displs[displ_address++] = (addr_t)NULL;
+   \   00000010   0x2300             MOVCS    R3,#+0
+   \   00000012   0x6003             STRCS    R3,[R0, #+0]
+    419                  }
+    420          
+    421                  mci_class_a_prm_internal_ptr += Displ_Sizes_Internal[i];
+   \   00000014   0xF502 0x72DA      ADD      R2,R2,#+436
+   \   00000018   0x428A             CMP      R2,R1
+   \   0000001A   0xBF32             ITEE     CC 
+   \   0000001C   0x6042             STRCC    R2,[R0, #+4]
+   \   0000001E   0x2300             MOVCS    R3,#+0
+   \   00000020   0x6043             STRCS    R3,[R0, #+4]
+   \   00000022   0x32C8             ADDS     R2,R2,#+200
+   \   00000024   0x428A             CMP      R2,R1
+   \   00000026   0xBF32             ITEE     CC 
+   \   00000028   0x6082             STRCC    R2,[R0, #+8]
+   \   0000002A   0x2300             MOVCS    R3,#+0
+   \   0000002C   0x6083             STRCS    R3,[R0, #+8]
+   \   0000002E   0x3268             ADDS     R2,R2,#+104
+   \   00000030   0x428A             CMP      R2,R1
+   \   00000032   0xBF32             ITEE     CC 
+   \   00000034   0x60C2             STRCC    R2,[R0, #+12]
+   \   00000036   0x2300             MOVCS    R3,#+0
+   \   00000038   0x60C3             STRCS    R3,[R0, #+12]
+   \   0000003A   0x3288             ADDS     R2,R2,#+136
+   \   0000003C   0x428A             CMP      R2,R1
+   \   0000003E   0xBF32             ITEE     CC 
+   \   00000040   0x6102             STRCC    R2,[R0, #+16]
+   \   00000042   0x2300             MOVCS    R3,#+0
+   \   00000044   0x6103             STRCS    R3,[R0, #+16]
+   \   00000046   0x3288             ADDS     R2,R2,#+136
+   \   00000048   0x428A             CMP      R2,R1
+   \   0000004A   0xBF32             ITEE     CC 
+   \   0000004C   0x6142             STRCC    R2,[R0, #+20]
+   \   0000004E   0x2300             MOVCS    R3,#+0
+   \   00000050   0x6143             STRCS    R3,[R0, #+20]
+   \   00000052   0x3248             ADDS     R2,R2,#+72
+   \   00000054   0x428A             CMP      R2,R1
+   \   00000056   0xBF32             ITEE     CC 
+   \   00000058   0x6182             STRCC    R2,[R0, #+24]
+   \   0000005A   0x2300             MOVCS    R3,#+0
+   \   0000005C   0x6183             STRCS    R3,[R0, #+24]
+   \   0000005E   0x3288             ADDS     R2,R2,#+136
+   \   00000060   0x428A             CMP      R2,R1
+   \   00000062   0xBF32             ITEE     CC 
+   \   00000064   0x61C2             STRCC    R2,[R0, #+28]
+   \   00000066   0x2100             MOVCS    R1,#+0
+   \   00000068   0x61C1             STRCS    R1,[R0, #+28]
+    422              }
+    423          #endif
+    424          
+    425              // complete the process
+    426              Mci__SetParams(&Mcl_SF_Displs);
+   \   0000006A   0x.... 0x....      B.W      Mci__SetParams
+    427          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == ENABLED)
+    428              InverterTemp__SetParams((void*)*MciParametersLoader__GetClassADispl(SF_DISPL_INVERTER_PARAMS));
+    429          #endif
+    430          #if (POWERMODULE_MANAGER_USED == ENABLED)
+    431              PowerModuleManager__SetParams((void*)*MciParametersLoader__GetClassADispl(SF_DISPL_POWERMODULE_MGR_PARAMS));
+    432          #endif
+    433          }
+    434          
+    435          
+
+   \                                 In section .text, align 2, keep-with-next
+    436          void MciClassBPointerLoading(void)
+    437          {
+    438              uint16 crc_calc;
+                            ^
+Warning[Pe177]: variable "crc_calc" was declared but never referenced
+    439              uint16 crc_sf;
+                            ^
+Warning[Pe177]: variable "crc_sf" was declared but never referenced
+    440              uint8 displ_address = 0;
+    441              uint8 i = 0;
+    442          #if MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED
+    443              uint8 *mci_class_b_prm_sf_ptr;           // Pointer to Ram buffer for SF copy
+    444          #endif
+    445          #if MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL == ENABLED
+    446              uint8 *mci_class_b_prm_internal_ptr;     // Pointer to Ram area for internal params (not from setting file)
+    447          #endif
+    448              // init the displacement address for the vector pointer to be passed to MCI
+    449              displ_address = 0;
+    450          
+    451              // initialize pointer RAM buffer (copy from flash)
+    452          #if MCI_CLASS_B_PARAMETERS_LOADER_SF_RAM == ENABLED
+    453              mci_class_b_prm_sf_ptr = Mci_ClassB_Prm_Ram;
+    454          #endif
+    455          
+    456              // initialize pointer RAM (internal params)
+    457          #if MCI_CLASS_B_PARAMETERS_LOADER_INTERNAL == ENABLED
+    458              mci_class_b_prm_internal_ptr = (uint8*)Motor_Sr_Params_SF;
+    459          #endif
+    460          
+    461              // Loading required displacements of MCI Class B pointer ...
+    462          #ifdef SF_CLASSB_RAM_DISPLS
+    463              #if (PLATFORM_USED == NUCLEUS_BASED)
+    464              for (i = 0; i<NUM_CLASSB_SF_RAM_DISPL; i++)
+    465              {
+    466                  // loading from setting file in Flash
+    467                  if(SettingFile__BasicLoader(SF_PTR_MCU_CLASS_B_MCI, Displ_Sr_Idxs_Ram[i], &Mci_ClassB_Prm_Flash_Ptr) == PASS)
+    468                  {
+    469                      // copy from Flash to RAM
+    470                      memcpy(mci_class_b_prm_sf_ptr, Mci_ClassB_Prm_Flash_Ptr.Data, Mci_ClassB_Prm_Flash_Ptr.Length); //Copy from Flash to RAM
+    471          
+    472                      crc_calc = Crc16__RangeProcess((uint8 *)(&mci_class_b_prm_sf_ptr[2]),0xFFFF,(SAFETY_MOTOR_PARAMETERS_NUM-2));
+    473          
+    474                      crc_sf = (uint16)(((mci_class_b_prm_sf_ptr[1])<<8) + (uint8)(mci_class_b_prm_sf_ptr[0]));
+    475          
+    476                      if(crc_calc == crc_sf) //calculated crc is equal to the one from setting file
+    477                      {
+    478                          // store RAM pointer value to be passed to MCI set params
+    479                          Mci_Sr_SF_Displs[displ_address++] = (addr_t)mci_class_b_prm_sf_ptr;
+    480          
+    481                          //update RAM pointer
+    482                          mci_class_b_prm_sf_ptr += Mci_ClassB_Prm_Flash_Ptr.Length;
+    483                      }
+    484                      else
+    485                      {
+    486                          // NULL pointer in case of loading exception
+    487                          Mci_Sr_SF_Displs[displ_address++] = (addr_t)NULL;
+    488                      }
+    489                  }
+    490                  else
+    491                  {
+    492                      // NULL pointer in case of loading exception
+    493                      Mci_Sr_SF_Displs[displ_address++] = (addr_t)NULL;
+    494                  }
+    495              }
+    496              #else
+    497              for (i = 0; i<NUM_CLASSB_SF_RAM_DISPL; i++)
+    498              {
+    499                  // loading from setting file in Flash
+    500                  if(Params__BasicLoader(SF_PTR_MCU_CLASS_B_MCI, Displ_Sr_Idxs_Ram[i], &Mci_ClassB_Prm_Flash_Ptr) == PASS)
+    501                  {
+    502                      crc_calc = Crc16__RangeProcess(&Mci_ClassB_Prm_Flash_Ptr.Data[2],0xFFFF,(SAFETY_MOTOR_PARAMETERS_NUM-2));
+    503          
+    504                      crc_sf = (uint16)(((Mci_ClassB_Prm_Flash_Ptr.Data[1])<<8) + (Mci_ClassB_Prm_Flash_Ptr.Data[0]));
+    505          
+    506                      if(crc_calc == crc_sf) //calculated crc is equal to the one from setting file
+    507                      {
+    508                          Mci_Sr_SF_Displs[displ_address++] = (addr_t)Mci_ClassB_Prm_Flash_Ptr.Data;
+    509                      }
+    510                      else
+    511                      {
+    512                          // NULL pointer in case of loading exception
+    513                          Mci_Sr_SF_Displs[displ_address++] = (addr_t)NULL;
+    514                      }
+    515                  }
+    516                  else
+    517                  {
+    518                      // NULL pointer in case of loading exception
+    519                      Mci_Sr_SF_Displs[displ_address++] = (addr_t)NULL;
+    520                  }
+    521              }
+    522              #endif
+    523          #endif
+    524          #ifdef SF_CLASSB_FLASH_DISPLS
+    525              for (i = 0; i<NUM_CLASSB_SF_FLASH_DISPL; i++)
+    526              {
+    527                  // loading from setting file in Flash
+    528                  if((SettingFile__BasicLoader(SF_PTR_MCU_CLASS_B_MCI, Displ_Sr_Idxs_Flash[i], &Mci_ClassB_Prm_Flash_Ptr) == PASS) && (!mci_sf_error))
+    529                  {
+    530                      crc_calc = Crc16__RangeProcess(Mci_ClassB_Prm_Flash_Ptr.Data[2],0xFFFF,(SAFETY_MOTOR_PARAMETERS_NUM-2));
+    531          
+    532                      crc_sf = (uint16)(((*Mci_ClassB_Prm_Flash_Ptr.Data[1])<<8) + (*Mci_ClassB_Prm_Flash_Ptr.Data[0]));
+    533          
+    534                      if(crc_calc == crc_sf) //calculated crc is equal to the one from setting file
+    535                      {
+    536                          Mci_Sr_SF_Displs[displ_address++] = (addr_t)Mci_ClassB_Prm_Flash_Ptr.Data;
+    537                      }
+    538                      else
+    539                      {
+    540                          // NULL pointer in case of loading exception
+    541                          Mci_Sr_SF_Displs[displ_address++] = (addr_t)NULL;
+    542                      }
+    543                  }
+    544                  else
+    545                  {
+    546                      // NULL pointer in case of loading exception
+    547                      Mci_Sr_SF_Displs[displ_address++] = (addr_t)NULL;
+    548                  }
+    549              }
+    550          #endif
+    551          #ifdef INTERNAL_CLASSB_DISPLS
+    552              for (i = 0; i<NUM_CLASSB_INTERNAL_DISPL; i++)
+   \                     MciClassBPointerLoading: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable8
+    553              {
+    554                  Mci_Sr_SF_Displs[displ_address++] = (addr_t)mci_class_b_prm_internal_ptr;
+   \   00000002   0x1D08             ADDS     R0,R1,#+4
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    555          
+    556                  mci_class_b_prm_internal_ptr += Displ_Sr_Sizes_Internal[i];
+    557              }
+    558          #endif
+    559          
+    560              // complete the process
+    561              SRMotorSafetyMgr__SetParams((void *)*Mci_Sr_SF_Displs);
+   \   00000006   0x.... 0x....      B.W      SRMotorSafetyMgr__SetParams
+    562          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \   00000000   0x........         DC32     Mci_Sr_SF_Displs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \   00000000   0x........         DC32     Mcl_SF_Displs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0x4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0x8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0xC
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0x10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0x14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0x18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_8:
+   \   00000000   0x........         DC32     Mcl_SF_Displs+0x1C
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_9:
+   \   00000000   0x........         DC32     Mcl_Params_SF
+    563          
+    564          
+    565          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   MciClassAPointerLoading
+         0   -> Mci__SetParams
+       0   MciClassBPointerLoading
+         0   -> SRMotorSafetyMgr__SetParams
+       8   MciParametersLoader__25msHandler
+         8   -> MciClassAPointerLoading
+         8   -> Mci__GetAnalog
+         8   -> Mci__GetDigital
+         0   -> SRMotorSafetyMgr__SetParams
+       0   MciParametersLoader__GetClassADispl
+       0   MciParametersLoader__GetClassBDispl
+       0   MciParametersLoader__Initialize
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       4  ??DataTable8_8
+       4  ??DataTable8_9
+      16  Displ_Idxs_Internal
+      32  Displ_Sizes_Internal
+       2  Displ_Sr_Idxs_Internal
+       4  Displ_Sr_Sizes_Internal
+     110  MciClassAPointerLoading
+      10  MciClassBPointerLoading
+      48  MciParametersLoader__25msHandler
+      68  MciParametersLoader__GetClassADispl
+      14  MciParametersLoader__GetClassBDispl
+       2  MciParametersLoader__Initialize
+      56  Mci_Sr_SF_Displs
+          Motor_Sr_Params_SF
+      32  Mcl_SF_Displs
+
+ 
+  32 bytes in section .bss
+  56 bytes in section .data
+  54 bytes in section .rodata
+ 292 bytes in section .text
+ 
+ 292 bytes of CODE  memory
+  54 bytes of CONST memory
+  88 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

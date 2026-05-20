@@ -1,0 +1,1216 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:07
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Gpio\Gpio.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o Gpio.obj -l
+#        ..\listings\Gpio.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Gpio\Gpio.c
+#    List file    =  ..\listings\Gpio.lst
+#    Object file  =  Gpio.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\Gpio\Gpio.c
+      1          /**
+      2           *  @file
+      3           *  @defgroup   CLASS_B
+      4           *  @brief      This module provides a standard way to access the GPIO ports and port-bits for Kinetis KE02x micro-contoller
+      5           *
+      6           *  $Header: Gpio.c 1.4 2015/08/21 13:56:34EDT Natak Rahul (NATAKRB) Exp  $
+      7           *
+      8           *  @copyright  Copyright 2012-$Date: 2015/08/21 13:56:34EDT $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      9           */
+     10          //-------------------------------------- Include Files ----------------------------------------------------------------
+     11          #include "Gpio.h"
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\API\Gpio\Gpio.h",44  Remark[Pe082]: 
+          storage class is not first
+     12          #include "SRMicro.h"
+     13          #include "SRException.h"
+     14          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     15          #ifndef GPIO_PROTECTION_FEATURE
+     16              // By default the feature is ENABLED
+     17              #define GPIO_PROTECTION_FEATURE   ENABLED
+     18          #endif
+     19          
+     20          
+     21          /*
+     22           * The below tables are based on the PIN_TYPE_DEF which is defined in the uc_MKE02x.h file -
+     23           *      typedef enum
+     24           *      {
+     25           *          INPUT_FLOAT,
+     26           *          INPUT_PULLUP,
+     27           *          INPUT_PULLDOWN,
+     28           *          INPUT_ANALOG,
+     29           *          SPECIAL_FUNCTION_OPEN_DRAIN,
+     30           *          SPECIAL_FUNCTION_PUSH_PULL,
+     31           *          OUTPUT_PUSHPULL,
+     32           *          OUTPUT_OPEN_DRAIN
+     33           *      } PIN_TYPE_DEF;
+     34           */
+     35          
+
+   \                                 In section .text, align 4, keep-with-next
+     36          volatile GPIO_DEF * const GPIO_PORT_LIST[] = {  (volatile GPIO_DEF *)GPIOA_BASE,
+   \                     GPIO_PORT_LIST:
+   \   00000000   0x400FF000         DC32 400FF000H, 400FF040H, 400FF080H, 400FF0C0H, 400FF100H
+   \              0x400FF040   
+   \              0x400FF080   
+   \              0x400FF0C0   
+   \              0x400FF100   
+     37                                                          (volatile GPIO_DEF *)GPIOB_BASE,
+     38                                                          (volatile GPIO_DEF *)GPIOC_BASE,
+     39                                                          (volatile GPIO_DEF *)GPIOD_BASE,
+     40                                                          (volatile GPIO_DEF *)GPIOE_BASE};
+     41          
+
+   \                                 In section .text, align 4, keep-with-next
+     42          volatile PORTx_DEF * const PCI_PORT_LIST[] = {  (volatile PORTx_DEF *)PORTA_BASE,
+   \                     PCI_PORT_LIST:
+   \   00000000   0x40049000         DC32 40049000H, 4004A000H, 4004B000H, 4004C000H, 4004D000H
+   \              0x4004A000   
+   \              0x4004B000   
+   \              0x4004C000   
+   \              0x4004D000   
+     43                                                          (volatile PORTx_DEF *)PORTB_BASE,
+     44                                                          (volatile PORTx_DEF *)PORTC_BASE,
+     45                                                          (volatile PORTx_DEF *)PORTD_BASE,
+     46                                                          (volatile PORTx_DEF *)PORTE_BASE};
+     47          
+     48          
+     49          #define ALL_OUTPUT							(uint32)0xFFFFFFFF
+     50          #define ALL_INPUT							(uint32)0x00000000
+     51          
+
+   \                                 In section .text, align 4, keep-with-next
+     52          unsigned char const GPIO_SET_MASK[] = {0x1,0x2,0x4,0x8,0x10,0x20,0x40,0x80};
+   \                     GPIO_SET_MASK:
+   \   00000000   0x01 0x02          DC8 1, 2, 4, 8, 16, 32, 64, 128
+   \              0x04 0x08    
+   \              0x10 0x20    
+   \              0x40 0x80    
+
+   \                                 In section .rodata, align 4, keep-with-next
+     53          unsigned char const GPIO_CLR_MASK[] = {0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
+   \                     GPIO_CLR_MASK:
+   \   00000000   0xFE 0xFD          DC8 254, 253, 251, 247, 239, 223, 191, 127
+   \              0xFB 0xF7    
+   \              0xEF 0xDF    
+   \              0xBF 0x7F    
+     54          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     55          static uint32 UpdateMaskedRegister(uint32 current,uint32 mask, uint32 value);
+     56          static BOOL_TYPE GpioCheckPinConfig(GPIO_PORT_TYPE port,uint8 pin,GPIO_PIN_MODE_TYPE type);
+     57          //=====================================================================================================================
+     58          //-------------------------------------- Public Functions -------------------------------------------------------------
+     59          //=====================================================================================================================
+     60          //---------------------------------------------------------------------------------------------------------------------
+     61          /**
+     62           *    @brief 	This method Initializes the GPIO module and its variables
+     63           *    @details  Connects the GPIO module to the clock Bus and calls the Gpio__RefreshConfig() which configures the
+     64           *              Gpio Ports to there default configuration as specified in the Gpio_prm.h file
+     65           */
+
+   \                                 In section .text, align 2, keep-with-next
+     66          void Gpio__Initialize(void)
+     67           {
+     68          	// Enable all of the port clocks. These have to be enabled to configure pin muxing options.
+     69          
+     70          	SIM.SCGC5 |= (SIM_SCGC5_PORTA_MASK |			// Connect the GPIOA device to the Core bus
+     71          			SIM_SCGC5_PORTB_MASK |					// Connect the GPIOB device to the Core bus
+     72          			SIM_SCGC5_PORTC_MASK |					// Connect the GPIOC device to the Core bus
+     73          			SIM_SCGC5_PORTD_MASK |					// Connect the GPIOD device to the Core bus
+     74          			SIM_SCGC5_PORTE_MASK);					// Connect the GPIOE device to the Core bus
+   \                     Gpio__Initialize: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable4  ;; 0x40048038
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+   \   00000004   0xF441 0x5178      ORR      R1,R1,#0x3E00
+   \   00000008   0x6001             STR      R1,[R0, #+0]
+     75          
+     76          	Gpio__RefreshConfig();
+   \   0000000A                      REQUIRE Gpio__RefreshConfig
+   \   0000000A                      ;; // Fall through to label Gpio__RefreshConfig
+     77          }
+     78          
+     79          //---------------------------------------------------------------------------------------------------------------------
+     80          /**
+     81           *    @brief 	This method refreshes the configuration of the port.
+     82           *    @details  Configures the Gpio Ports to there default configuration as specified in the Gpio_prm.h file
+     83           *              Interrupt are disabled before assigning value to register and enabled after
+     84           *              value is assigned
+     85           */
+
+   \                                 In section .text, align 2, keep-with-next
+     86          void Gpio__RefreshConfig(void)
+     87          {
+     88              #if (GPIO_PROTECTION_FEATURE == ENABLED)
+     89                  MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+     90              #endif
+     91          
+     92              #if (GPIO_PROTECTION_FEATURE == ENABLED)
+     93                  MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL(); // It saves and disable interrupts
+   \                     Gpio__RefreshConfig: (+1)
+   \   00000000   0xF3EF 0x8010      MRS      R0,PRIMASK
+   \   00000004   0xB672             CPSID    I
+     94              #endif
+     95          
+     96          //*********** Refresh PORTA Registers *********************
+     97          	#ifdef PORTA_PDDR_DEFAULT					//For Port Data Direction Register
+     98          		#ifdef PORTA_MASK
+     99          			GPIOA.PDDR = UpdateMaskedRegister(GPIOA.PDDR,PORTA_MASK, PORTA_PDDR_DEFAULT);
+   \   00000006   0x....             LDR.N    R1,??DataTable4_1  ;; 0x400ff014
+   \   00000008   0x680A             LDR      R2,[R1, #+0]
+   \   0000000A   0xF042 0x02FF      ORR      R2,R2,#0xFF
+   \   0000000E   0x600A             STR      R2,[R1, #+0]
+    100          		#else
+    101          			GPIOA.PDDR.BYTE = PORTA_PDDR_DEFAULT;
+    102          
+    103          		#endif
+    104          	#endif
+    105          
+    106          	#ifdef PORTA_PULLUP_DEFAULT						//For Port Pull up Enable Register
+    107          		#ifdef PORTA_MASK
+    108          			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    109          			PCIPORTA.PCR[0] = UpdateMaskedRegister(PCIPORTA.PCR[0],PORTA_MASK, PORTA_PCR_DEFAULT);
+   \   00000010   0x....             LDR.N    R2,??DataTable4_2  ;; 0x40049000
+   \   00000012   0x6813             LDR      R3,[R2, #+0]
+   \   00000014   0x0A1B             LSRS     R3,R3,#+8
+   \   00000016   0x021B             LSLS     R3,R3,#+8
+   \   00000018   0x6013             STR      R3,[R2, #+0]
+    110          		#else
+    111          			PORTPULLA.PUE.BYTE = PORTA_PULLUP_DEFAULT;
+    112          
+    113          		#endif
+    114          	#endif
+    115          
+    116          ////*********** Refresh PORTB Registers *********************
+    117          	#ifdef PORTB_PDDR_DEFAULT						//For Port Data Direction Register
+    118          		#ifdef PORTB_MASK
+    119          			GPIOB.PDDR = UpdateMaskedRegister(GPIOB.PDDR,PORTB_MASK, PORTB_PDDR_DEFAULT);
+   \   0000001A   0x6C0A             LDR      R2,[R1, #+64]
+   \   0000001C   0xF042 0x02FF      ORR      R2,R2,#0xFF
+   \   00000020   0x640A             STR      R2,[R1, #+64]
+    120          		#else
+    121          			GPIOB.PDDR = PORTB_PDDR_DEFAULT;
+    122          		#endif
+    123          	#endif
+    124          
+    125          //	#ifdef PORTB_PIDR_DEFAULT						//For Port Input Disable Register
+    126          //		#ifdef PORTB_MASK
+    127          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    128          //			GPIOB.PIDR.BYTE = UpdateMaskedRegister(GPIOB.PIDR.BYTE,PORTB_MASK, PORTB_PIDR_DEFAULT);
+    129          //		#else
+    130          //			GPIOB.PIDR.BYTE = PORTB_PIDR_DEFAULT;
+    131          //
+    132          //		#endif
+    133          //	#endif
+    134          //
+    135          //	#ifdef PORTB_PULLUP_DEFAULT						//For Port Pull up Enable Register
+    136          //		#ifdef PORTB_MASK
+    137          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    138          //			PORTPULLB.PUE.BYTE = UpdateMaskedRegister(PORTPULLB.PUE.BYTE,PORTB_MASK, PORTB_PULLUP_DEFAULT);
+    139          //		#else
+    140          //			PORTPULLB.PUE.BYTE = PORTB_PULLUP_DEFAULT;
+    141          //
+    142          //		#endif
+    143          //	#endif
+    144          //
+    145          //*********** Refresh PORTC Registers *********************
+    146          	#ifdef PORTC_PDDR_DEFAULT						//For Port Data Direction Register
+    147          		#ifdef PORTC_MASK
+    148          			GPIOC.PDDR = UpdateMaskedRegister(GPIOC.PDDR,PORTC_MASK, PORTC_PDDR_DEFAULT);
+   \   00000022   0xF8D1 0x2080      LDR      R2,[R1, #+128]
+   \   00000026   0xF042 0x02FF      ORR      R2,R2,#0xFF
+   \   0000002A   0xF8C1 0x2080      STR      R2,[R1, #+128]
+    149          		#else
+    150          			GPIOC.PDDR.BYTE = PORTC_PDDR_DEFAULT;
+    151          		#endif
+    152          	#endif
+    153          //
+    154          //	#ifdef PORTC_PIDR_DEFAULT						//For Port Input Disable Register
+    155          //		#ifdef PORTC_MASK
+    156          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    157          //			GPIOC.PIDR.BYTE = UpdateMaskedRegister(GPIOC.PIDR.BYTE,PORTC_MASK, PORTC_PIDR_DEFAULT);
+    158          //		#else
+    159          //			GPIOC.PIDR.BYTE = PORTC_PIDR_DEFAULT;
+    160          //
+    161          //		#endif
+    162          //	#endif
+    163          //
+    164          //	#ifdef PORTC_PULLUP_DEFAULT						//For Port Pull up Enable Register
+    165          //		#ifdef PORTC_MASK
+    166          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    167          //			PORTPULLC.PUE.BYTE = UpdateMaskedRegister(PORTPULLC.PUE.BYTE,PORTC_MASK, PORTC_PULLUP_DEFAULT);
+    168          //		#else
+    169          //			PORTPULLC.PUE.BYTE = PORTC_PULLUP_DEFAULT;
+    170          //
+    171          //		#endif
+    172          //	#endif
+    173          //
+    174          //*********** Refresh PORTD Registers *********************
+    175          	#ifdef PORTD_PDDR_DEFAULT						//For Port Data Direction Register
+    176          		#ifdef PORTD_MASK
+    177          			GPIOD.PDDR = UpdateMaskedRegister(GPIOD.PDDR,PORTD_MASK, PORTD_PDDR_DEFAULT);
+   \   0000002E   0xF8D1 0x20C0      LDR      R2,[R1, #+192]
+   \   00000032   0xF042 0x02FF      ORR      R2,R2,#0xFF
+   \   00000036   0xF8C1 0x20C0      STR      R2,[R1, #+192]
+    178          		#else
+    179          			GPIOD.PDDR.BYTE = PORTD_PDDR_DEFAULT;
+    180          		#endif
+    181          	#endif
+    182          //
+    183          //	#ifdef PORTD_PIDR_DEFAULT						//For Port Input Disable Register
+    184          //		#ifdef PORTD_MASK
+    185          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    186          //			GPIOD.PIDR.BYTE = UpdateMaskedRegister(GPIOD.PIDR.BYTE,PORTD_MASK, PORTD_PIDR_DEFAULT);
+    187          //		#else
+    188          //			GPIOD.PIDR.BYTE = PORTD_PIDR_DEFAULT;
+    189          //
+    190          //		#endif
+    191          //	#endif
+    192          //
+    193          //	#ifdef PORTD_PULLUP_DEFAULT						//For Port Pull up Enable Register
+    194          //		#ifdef PORTD_MASK
+    195          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    196          //			PORTPULLD.PUE.BYTE = UpdateMaskedRegister(PORTPULLD.PUE.BYTE,PORTD_MASK, PORTD_PULLUP_DEFAULT);
+    197          //		#else
+    198          //			PORTPULLD.PUE.BYTE = PORTD_PULLUP_DEFAULT;
+    199          //
+    200          //		#endif
+    201          //	#endif
+    202          //
+    203          //*********** Refresh PORTE Registers *********************
+    204          	#ifdef PORTE_PDDR_DEFAULT						//For Port Data Direction Register
+    205          		#ifdef PORTE_MASK
+    206          			GPIOE.PDDR = UpdateMaskedRegister(GPIOE.PDDR,PORTE_MASK, PORTE_PDDR_DEFAULT);
+   \   0000003A   0xF8D1 0x2100      LDR      R2,[R1, #+256]
+   \   0000003E   0xF042 0x02FF      ORR      R2,R2,#0xFF
+   \   00000042   0xF8C1 0x2100      STR      R2,[R1, #+256]
+    207          		#else
+    208          			GPIOE.PDDR.BYTE = PORTE_PDDR_DEFAULT;
+    209          
+    210          		#endif
+    211          	#endif
+    212          //
+    213          //	#ifdef PORTE_PIDR_DEFAULT						//For Port Input Disable Register
+    214          //		#ifdef PORTE_MASK
+    215          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    216          //			GPIOE.PIDR.BYTE = UpdateMaskedRegister(GPIOE.PIDR.BYTE,PORTE_MASK, PORTE_PIDR_DEFAULT);
+    217          //		#else
+    218          //			GPIOE.PIDR.BYTE = PORTE_PIDR_DEFAULT;
+    219          //
+    220          //		#endif
+    221          //	#endif
+    222          //
+    223          //	#ifdef PORTE_PULLUP_DEFAULT						//For Port Pull up Enable Register
+    224          //		#ifdef PORTE_MASK
+    225          //			//static uint8 UpdateMaskedRegister(uint8 current,uint8 mask, uint8 value)
+    226          //			PORTPULLE.PUE.BYTE = UpdateMaskedRegister(PORTPULLE.PUE.BYTE,PORTE_MASK, PORTE_PULLUP_DEFAULT);
+    227          //		#else
+    228          //			PORTPULLE.PUE1.BYTE = PORTE_PULLUP_DEFAULT;
+    229          //
+    230          //		#endif
+    231          //	#endif
+    232          //
+    233          
+    234          //*********** End of Refresh PORT Registers *********************
+    235              #if (GPIO_PROTECTION_FEATURE == ENABLED)
+    236                      MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();  // Reestablish the interruption configuration
+   \   00000046   0xF380 0x8810      MSR      PRIMASK,R0
+    237              #endif
+    238          }
+   \   0000004A   0x4770             BX       LR               ;; return
+    239          
+    240          //---------------------------------------------------------------------------------------------------------------------
+    241          /**
+    242           * @brief	This method validates the port pin number.
+    243           * @param 	port: Defines the specific port
+    244           * @param 	pin	: Defines the specific pin
+    245           * @return
+    246           */
+
+   \                                 In section .text, align 2, keep-with-next
+    247          PASS_FAIL_TYPE Gpio__Validate(GPIO_PORT_TYPE port,uint8 pin)
+    248           {
+    249          
+    250          	if ((port < GPIO_PORT_NUM) && (pin < MAX_PIN))
+   \                     Gpio__Validate: (+1)
+   \   00000000   0x2805             CMP      R0,#+5
+   \   00000002   0xBFB8             IT       LT 
+   \   00000004   0x2920             CMPLT    R1,#+32
+   \   00000006   0xDA01             BGE.N    ??Gpio__Validate_0
+    251          	{
+    252          		return (PASS);
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0x4770             BX       LR
+    253          	}
+    254          	else
+    255          	{
+    256          		return (FAIL);
+   \                     ??Gpio__Validate_0: (+1)
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x4770             BX       LR               ;; return
+    257          	}
+    258          }
+    259          
+    260          //---------------------------------------------------------------------------------------------------------------------
+    261          /**
+    262           *    @brief 	This method configures a port-bit to a specific state.
+    263           *    @details  Interrupt are disabled before assigning value to register and enabled after
+    264           *              value is assigned
+    265           *    @param 	port: Defines the specific port
+    266           *    @param 	pin : Defines the specific pin
+    267           *    @param 	type: Defines the specific type the selected pin will configure as
+    268           */
+
+   \                                 In section .text, align 4, keep-with-next
+    269          void Gpio__PinConfig(GPIO_PORT_TYPE port,uint8 pin,GPIO_PIN_MODE_TYPE type)
+    270           {
+   \                     Gpio__PinConfig: (+1)
+   \   00000000   0xB470             PUSH     {R4-R6}
+    271          	volatile GPIO_DEF * port_ptr;
+    272          	volatile PORTx_DEF * pci_ptr;
+    273          
+    274          	port_ptr = (volatile GPIO_DEF *) GPIO_PORT_LIST[port];
+   \   00000002   0x.... 0x....      ADR.W    R3,GPIO_PORT_LIST
+   \   00000006   0xF853 0x4020      LDR      R4,[R3, R0, LSL #+2]
+    275          	pci_ptr = (volatile PORTx_DEF *) PCI_PORT_LIST[port];
+   \   0000000A   0x.... 0x....      ADR.W    R3,PCI_PORT_LIST
+   \   0000000E   0xF853 0x5020      LDR      R5,[R3, R0, LSL #+2]
+    276          
+    277          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    278          		MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+    279          	#endif
+    280          
+    281          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    282          		MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();
+   \   00000012   0xF3EF 0x8310      MRS      R3,PRIMASK
+   \   00000016   0xB672             CPSID    I
+    283          	#endif
+    284          
+    285          	if (Gpio__Validate(port, pin) == PASS)
+   \   00000018   0x2805             CMP      R0,#+5
+   \   0000001A   0xBFBC             ITT      LT 
+   \   0000001C   0x4608             MOVLT    R0,R1
+   \   0000001E   0x2820             CMPLT    R0,#+32
+   \   00000020   0xDA3F             BGE.N    ??Gpio__PinConfig_1
+    286          	{
+    287          		switch (type)
+   \   00000022   0x1E52             SUBS     R2,R2,#+1
+   \   00000024   0x2A06             CMP      R2,#+6
+   \   00000026   0xD831             BHI.N    ??Gpio__PinConfig_2
+   \   00000028   0xE8DF 0xF002      TBB      [PC, R2]
+   \                     ??Gpio__PinConfig_0:
+   \   0000002C   0x0E 0x04          DC8      0xE,0x4,0x18,0x27
+   \              0x18 0x27    
+   \   00000030   0x30 0x21          DC8      0x30,0x21,0x27,0x0
+   \              0x27 0x00    
+    288          		{
+    289          		case INPUT_PULLDOWN:
+    290          			port_ptr->PDDR &= ~(1 << pin);									//Disable Port Data Direction Register - pin configured as general purpose input
+   \                     ??Gpio__PinConfig_3: (+1)
+   \   00000034   0x6962             LDR      R2,[R4, #+20]
+   \   00000036   0x2601             MOVS     R6,#+1
+   \   00000038   0xFA06 0xF101      LSL      R1,R6,R1
+   \   0000003C   0xEA22 0x0101      BIC      R1,R2,R1
+   \   00000040   0x6161             STR      R1,[R4, #+20]
+    291          			pci_ptr->PCR[pin] = (PORT_PCR_MUX(1) | PORT_PCR_PE_MASK);	//Internal Pull down resistor is enabled on corresponding pin
+   \   00000042   0xF44F 0x7181      MOV      R1,#+258
+   \   00000046   0xE02A             B.N      ??Gpio__PinConfig_4
+    292          			break;
+    293          
+    294          		case INPUT_PULLUP:
+    295          			port_ptr->PDDR &= ~(1 << pin);									// Disable Port DDR - pin configured as general purpose input
+   \                     ??Gpio__PinConfig_5: (+1)
+   \   00000048   0x6962             LDR      R2,[R4, #+20]
+   \   0000004A   0x2601             MOVS     R6,#+1
+   \   0000004C   0xFA06 0xF101      LSL      R1,R6,R1
+   \   00000050   0xEA22 0x0101      BIC      R1,R2,R1
+   \   00000054   0x6161             STR      R1,[R4, #+20]
+    296          			pci_ptr->PCR[pin] = (PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK);//Internal pullup resistor is enabled on the corresponding pin
+   \   00000056   0xF240 0x1103      MOVW     R1,#+259
+   \   0000005A   0xE020             B.N      ??Gpio__PinConfig_4
+    297          			break;
+    298          
+    299          		case INPUT_ANALOG:
+    300          			port_ptr->PDDR &= ~(1 << pin);									//Disable Port DDR - pin configured as general purpose input
+   \                     ??Gpio__PinConfig_6: (+1)
+   \   0000005C   0x6962             LDR      R2,[R4, #+20]
+   \   0000005E   0x2601             MOVS     R6,#+1
+   \   00000060   0xFA06 0xF101      LSL      R1,R6,R1
+   \   00000064   0xEA22 0x0101      BIC      R1,R2,R1
+   \   00000068   0x6161             STR      R1,[R4, #+20]
+    301          			pci_ptr->PCR[pin] = (PORT_PCR_MUX(0));						//Pin configure as Analog
+   \   0000006A   0x2100             MOVS     R1,#+0
+   \   0000006C   0xE017             B.N      ??Gpio__PinConfig_4
+    302          			break;
+    303          
+    304          		case OUTPUT_PUSHPULL:
+    305          			port_ptr->PDDR |= (1 << pin);									//Enable Port Data Direction Register - pin configured as general purpose output
+   \                     ??Gpio__PinConfig_7: (+1)
+   \   0000006E   0x6962             LDR      R2,[R4, #+20]
+   \   00000070   0x2601             MOVS     R6,#+1
+   \   00000072   0xFA06 0xF101      LSL      R1,R6,R1
+   \   00000076   0x4311             ORRS     R1,R1,R2
+   \   00000078   0xE00E             B.N      ??Gpio__PinConfig_8
+    306          			pci_ptr->PCR[pin] = (PORT_PCR_MUX(1));
+    307          			break;
+    308          
+    309          		case SPECIAL_FUNCTION_OPEN_DRAIN:
+    310          		case OUTPUT_OPEN_DRAIN:
+    311          			port_ptr->PDDR |= (1 << pin);									//Enable Port Data Direction Register - pin configured as general purpose output
+   \                     ??Gpio__PinConfig_9: (+1)
+   \   0000007A   0x6962             LDR      R2,[R4, #+20]
+   \   0000007C   0x2601             MOVS     R6,#+1
+   \   0000007E   0xFA06 0xF101      LSL      R1,R6,R1
+   \   00000082   0x4311             ORRS     R1,R1,R2
+   \   00000084   0x6161             STR      R1,[R4, #+20]
+    312          			pci_ptr->PCR[pin] = (PORT_PCR_MUX(1) | PORT_PCR_ODE_MASK);	//GPIO with Open Drain Enable
+   \   00000086   0xF44F 0x7190      MOV      R1,#+288
+   \   0000008A   0xE008             B.N      ??Gpio__PinConfig_4
+    313          			break;
+    314          
+    315          		case INPUT_FLOAT:
+    316          		default:
+    317          			port_ptr->PDDR &= ~(1 << pin);									//Disable Port Data Direction Register - pin configured as general purpose input
+   \                     ??Gpio__PinConfig_2: (+1)
+   \   0000008C   0x6962             LDR      R2,[R4, #+20]
+   \   0000008E   0x2601             MOVS     R6,#+1
+   \   00000090   0xFA06 0xF101      LSL      R1,R6,R1
+   \   00000094   0xEA22 0x0101      BIC      R1,R2,R1
+   \                     ??Gpio__PinConfig_8: (+1)
+   \   00000098   0x6161             STR      R1,[R4, #+20]
+    318          			pci_ptr->PCR[pin] = (PORT_PCR_MUX(1));						//Internal pullup or pulldown resistor is not enabled on the corresponding pin.
+   \   0000009A   0xF44F 0x7180      MOV      R1,#+256
+   \                     ??Gpio__PinConfig_4: (+1)
+   \   0000009E   0xF845 0x1020      STR      R1,[R5, R0, LSL #+2]
+    319          			break;
+    320          
+    321          		}
+    322          	}
+    323          
+    324          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    325          		MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL(); 							// Reestablish the interruption configuration
+   \                     ??Gpio__PinConfig_1: (+1)
+   \   000000A2   0xF383 0x8810      MSR      PRIMASK,R3
+    326          	#endif
+    327          
+    328          }
+   \   000000A6   0xBC70             POP      {R4-R6}
+   \   000000A8   0x4770             BX       LR               ;; return
+    329          
+    330          //---------------------------------------------------------------------------------------------------------------------
+    331          /**
+    332           *    @brief 	This method writes on a specific Port-Bit
+    333           *    @param 	port: Defines the specific port
+    334           *    @param 	pin : Defines the specific pin
+    335           *    @param    value: Defines the value to be applied on the port-bit
+    336           */
+
+   \                                 In section .text, align 2, keep-with-next
+    337          void Gpio__PinWrite(GPIO_PORT_TYPE port,uint8 pin,BOOL_TYPE value)
+    338           {
+    339          	volatile GPIO_DEF * port_ptr;
+    340          
+    341          	port_ptr = GPIO_PORT_LIST[port];
+   \                     Gpio__PinWrite: (+1)
+   \   00000000   0x.... 0x....      ADR.W    R3,GPIO_PORT_LIST
+   \   00000004   0xF853 0x3020      LDR      R3,[R3, R0, LSL #+2]
+    342          
+    343          	if (Gpio__Validate(port, pin) == PASS)
+   \   00000008   0x2805             CMP      R0,#+5
+   \   0000000A   0xBFB8             IT       LT 
+   \   0000000C   0x2920             CMPLT    R1,#+32
+   \   0000000E   0xDA08             BGE.N    ??Gpio__PinWrite_0
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0x4088             LSLS     R0,R0,R1
+   \   00000014   0x6819             LDR      R1,[R3, #+0]
+   \   00000016   0x2A00             CMP      R2,#+0
+   \   00000018   0xBF14             ITE      NE 
+    344          	{
+    345          
+    346          		if (value)
+    347          		{
+    348          			port_ptr->PDOR |= (1 << pin);				//Write logic '1' on selected pin
+   \   0000001A   0x4308             ORRNE    R0,R0,R1
+    349          		}
+    350          		else
+    351          		{
+    352          			port_ptr->PDOR &= ~(1 << pin);				//Write logic '0' on selected pin
+   \   0000001C   0xEA21 0x0000      BICEQ    R0,R1,R0
+   \   00000020   0x6018             STR      R0,[R3, #+0]
+    353          		}
+    354          	}
+    355          
+    356          }
+   \                     ??Gpio__PinWrite_0: (+1)
+   \   00000022   0x4770             BX       LR               ;; return
+    357          
+    358          //---------------------------------------------------------------------------------------------------------------------
+    359          /**
+    360           *    @brief 	This method reads the a specific Port-bit status
+    361           *    @details 	Reads the PDIR register
+    362           *    @param 	port: Defines the specific port
+    363           *    @param 	pin : Defines the specific pin
+    364           *    @return   result
+    365           *      @retval	TRUE: The port-bit is in high level
+    366           *      @retval FALSE: The port-bit is in low level
+    367           */
+
+   \                                 In section .text, align 2, keep-with-next
+    368          BOOL_TYPE Gpio__PinRead(GPIO_PORT_TYPE port,uint8 pin)
+    369           {
+    370          	BOOL_TYPE response;
+    371          	volatile GPIO_DEF * port_ptr;
+    372          
+    373          	response = FALSE;
+   \                     Gpio__PinRead: (+1)
+   \   00000000   0x2200             MOVS     R2,#+0
+    374          	port_ptr = GPIO_PORT_LIST[port];
+    375          
+    376          	if (Gpio__Validate(port, pin) == PASS)
+   \   00000002   0x2805             CMP      R0,#+5
+   \   00000004   0xBFB8             IT       LT 
+   \   00000006   0x2920             CMPLT    R1,#+32
+   \   00000008   0xDA08             BGE.N    ??Gpio__PinRead_0
+    377          	{
+    378          
+    379          		//This reads from GPIOx_PDIR and returns the input value of the associated/requested port pin.
+    380          		if (BIT_TEST(port_ptr->PDIR, pin))
+   \   0000000A   0x.... 0x....      ADR.W    R3,GPIO_PORT_LIST
+   \   0000000E   0xF853 0x0020      LDR      R0,[R3, R0, LSL #+2]
+   \   00000012   0x6900             LDR      R0,[R0, #+16]
+   \   00000014   0x40C8             LSRS     R0,R0,R1
+   \   00000016   0x07C0             LSLS     R0,R0,#+31
+   \   00000018   0xBF48             IT       MI 
+    381          		{
+    382          			response = TRUE;
+   \   0000001A   0x2201             MOVMI    R2,#+1
+    383          		}
+    384          	}
+    385          
+    386          	return (response);
+   \                     ??Gpio__PinRead_0: (+1)
+   \   0000001C   0x4610             MOV      R0,R2
+   \   0000001E   0x4770             BX       LR               ;; return
+    387          }
+    388          
+    389          //---------------------------------------------------------------------------------------------------------------------
+    390          /**
+    391           *    @brief 	This method configures a port to a specific state.
+    392           *    @details 	By default configures the port to ALL_INPUT_FLOAT mode
+    393           *    @param 	port: Defines the specific port
+    394           *    @param 	type: Defines the specific type the selected port will configure as
+    395           */
+
+   \                                 In section .text, align 4, keep-with-next
+    396          void Gpio__PortConfig(GPIO_PORT_TYPE port, GPIO_PIN_MODE_TYPE type)
+    397           {
+   \                     Gpio__PortConfig: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x460F             MOV      R7,R1
+    398          	uint8 i;
+    399          	volatile GPIO_DEF * port_ptr;
+    400          	volatile PORTx_DEF * pci_ptr;
+    401          
+    402          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    403          		MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+    404          	#endif
+    405          
+    406          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    407          		MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();
+   \   00000006   0xF3EF 0x8410      MRS      R4,PRIMASK
+   \   0000000A   0xB672             CPSID    I
+    408          	#endif
+    409          
+    410          	port_ptr = GPIO_PORT_LIST[port];
+   \   0000000C   0x.... 0x....      ADR.W    R1,GPIO_PORT_LIST
+   \   00000010   0xF851 0x6020      LDR      R6,[R1, R0, LSL #+2]
+    411          	pci_ptr = PCI_PORT_LIST[port];
+   \   00000014   0x.... 0x....      ADR.W    R1,PCI_PORT_LIST
+   \   00000018   0xF851 0x5020      LDR      R5,[R1, R0, LSL #+2]
+    412          
+    413          	// It protects against attempts to write out of the range
+    414          	if (Gpio__Validate(port, 0) == PASS)
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x.... 0x....      BL       Gpio__Validate
+   \   00000022   0x2801             CMP      R0,#+1
+   \   00000024   0xF040 0x8072      BNE.W    ??Gpio__PortConfig_1
+    415          	{
+    416          		switch (type)
+   \   00000028   0x1E7F             SUBS     R7,R7,#+1
+   \   0000002A   0x2F06             CMP      R7,#+6
+   \   0000002C   0xD85E             BHI.N    ??Gpio__PortConfig_2
+   \   0000002E   0xE8DF 0xF007      TBB      [PC, R7]
+   \                     ??Gpio__PortConfig_0:
+   \   00000032   0x17 0x04          DC8      0x17,0x4,0x2B,0x49
+   \              0x2B 0x49    
+   \   00000036   0x5D 0x35          DC8      0x5D,0x35,0x49,0x0
+   \              0x49 0x00    
+    417          		{
+    418          
+    419          		case INPUT_PULLDOWN:
+    420          			port_ptr->PDDR = ALL_INPUT;											//Disable Port DDR - All pins are configured as general purpose input
+   \                     ??Gpio__PortConfig_3: (+1)
+   \   0000003A   0x2000             MOVS     R0,#+0
+   \   0000003C   0x6170             STR      R0,[R6, #+20]
+    421          			for (i = 0; i < 32; i++)
+   \   0000003E   0xF44F 0x7181      MOV      R1,#+258
+   \   00000042   0x2008             MOVS     R0,#+8
+    422          			{
+    423          				pci_ptr->PCR[i] = (PORT_PCR_MUX(1) | PORT_PCR_PE_MASK);	//Internal Pull down resistor is enabled on corresponding pin
+   \                     ??Gpio__PortConfig_4: (+1)
+   \   00000044   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000048   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   0000004C   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000050   0xF845 0x1B04      STR      R1,[R5], #+4
+    424          			}
+   \   00000054   0x1E40             SUBS     R0,R0,#+1
+   \   00000056   0xD1F5             BNE.N    ??Gpio__PortConfig_4
+    425          			break;
+    426          
+    427          		case INPUT_PULLUP:
+    428          			port_ptr->PDDR = ALL_INPUT;											//Disable Port DDR - All pins are configured as general purpose input
+    429          			for (i = 0; i < 32; i++)
+    430          			{
+    431          				pci_ptr->PCR[i] = (PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK);//Internal pullup resistor is enabled on the corresponding pin
+    432          			}
+    433          			break;
+    434          
+    435          		case INPUT_ANALOG:
+    436          			port_ptr->PDDR = ALL_INPUT;											//Disable Port DDR - All pins are configured as general purpose input
+    437          			for (i = 0; i < 32; i++)
+    438          			{
+    439          				pci_ptr->PCR[i] = (PORT_PCR_MUX(0));						//Pin configure as Analog
+    440          			}
+    441          			break;
+    442          
+    443          		case OUTPUT_PUSHPULL:													// Configures the port in OUTPUT PUSHPULL mode
+    444          			port_ptr->PDDR = ALL_OUTPUT;										//Enable Port DDR - All pins are configured as general purpose output
+    445          			for (i = 0; i < 32; i++)
+    446          			{
+    447          				pci_ptr->PCR[i] = (PORT_PCR_MUX(1));
+    448          			}
+    449          			break;
+    450          
+    451          		case SPECIAL_FUNCTION_OPEN_DRAIN:
+    452          		case OUTPUT_OPEN_DRAIN:
+    453          			port_ptr->PDDR = ALL_OUTPUT;										//Enable Port DDR - All pins are configured as general purpose output
+    454          			for (i = 0; i < 32; i++)
+    455          			{
+    456          				pci_ptr->PCR[i] = (PORT_PCR_MUX(1) | PORT_PCR_ODE_MASK);	//GPIO with Open Drain Enable
+    457          			}
+    458          			break;
+    459          
+    460          		case INPUT_FLOAT:
+    461          		default:
+    462          			port_ptr->PDDR = ALL_INPUT;											//Disable Port DDR - All pins are configured as general purpose input
+    463          			for (i = 0; i < 32; i++)
+    464          			{
+    465          				pci_ptr->PCR[i] = (PORT_PCR_MUX(1));						//Internal pullup or pulldown resistor is not enabled on the corresponding pin.
+    466          			}
+    467          			break;
+    468          		}
+    469          	}
+    470          
+    471          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    472          		MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();
+   \   00000058   0xF384 0x8810      MSR      PRIMASK,R4
+    473          	#endif
+    474          }
+   \   0000005C   0xB001             ADD      SP,SP,#+4
+   \   0000005E   0xBDF0             POP      {R4-R7,PC}
+   \                     ??Gpio__PortConfig_5: (+1)
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0x6170             STR      R0,[R6, #+20]
+   \   00000064   0xF240 0x1103      MOVW     R1,#+259
+   \   00000068   0xF05F 0x0008      MOVS.W   R0,#+8
+   \                     ??Gpio__PortConfig_6: (+1)
+   \   0000006C   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000070   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000074   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000078   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   0000007C   0x1E40             SUBS     R0,R0,#+1
+   \   0000007E   0xD1F5             BNE.N    ??Gpio__PortConfig_6
+   \   00000080   0xF384 0x8810      MSR      PRIMASK,R4
+   \   00000084   0xB001             ADD      SP,SP,#+4
+   \   00000086   0xBDF0             POP      {R4-R7,PC}
+   \                     ??Gpio__PortConfig_7: (+1)
+   \   00000088   0x2000             MOVS     R0,#+0
+   \   0000008A   0x6170             STR      R0,[R6, #+20]
+   \   0000008C   0x2180             MOVS     R1,#+128
+   \   0000008E   0x4628             MOV      R0,R5
+   \   00000090   0x.... 0x....      BL       __aeabi_memclr4
+   \   00000094   0xF384 0x8810      MSR      PRIMASK,R4
+   \   00000098   0xB001             ADD      SP,SP,#+4
+   \   0000009A   0xBDF0             POP      {R4-R7,PC}
+   \                     ??Gpio__PortConfig_8: (+1)
+   \   0000009C   0xF04F 0x30FF      MOV      R0,#-1
+   \   000000A0   0x6170             STR      R0,[R6, #+20]
+   \   000000A2   0xF44F 0x7180      MOV      R1,#+256
+   \   000000A6   0x2008             MOVS     R0,#+8
+   \                     ??Gpio__PortConfig_9: (+1)
+   \   000000A8   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000AC   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000B0   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000B4   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000B8   0x1E40             SUBS     R0,R0,#+1
+   \   000000BA   0xD1F5             BNE.N    ??Gpio__PortConfig_9
+   \   000000BC   0xF384 0x8810      MSR      PRIMASK,R4
+   \   000000C0   0xB001             ADD      SP,SP,#+4
+   \   000000C2   0xBDF0             POP      {R4-R7,PC}
+   \                     ??Gpio__PortConfig_10: (+1)
+   \   000000C4   0xF04F 0x30FF      MOV      R0,#-1
+   \   000000C8   0x6170             STR      R0,[R6, #+20]
+   \   000000CA   0xF44F 0x7190      MOV      R1,#+288
+   \   000000CE   0x2008             MOVS     R0,#+8
+   \                     ??Gpio__PortConfig_11: (+1)
+   \   000000D0   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000D4   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000D8   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000DC   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000E0   0x1E40             SUBS     R0,R0,#+1
+   \   000000E2   0xD1F5             BNE.N    ??Gpio__PortConfig_11
+   \   000000E4   0xF384 0x8810      MSR      PRIMASK,R4
+   \   000000E8   0xB001             ADD      SP,SP,#+4
+   \   000000EA   0xBDF0             POP      {R4-R7,PC}
+   \                     ??Gpio__PortConfig_2: (+1)
+   \   000000EC   0x2000             MOVS     R0,#+0
+   \   000000EE   0x6170             STR      R0,[R6, #+20]
+   \   000000F0   0xF44F 0x7180      MOV      R1,#+256
+   \   000000F4   0xF05F 0x0008      MOVS.W   R0,#+8
+   \                     ??Gpio__PortConfig_12: (+1)
+   \   000000F8   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   000000FC   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000100   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000104   0xF845 0x1B04      STR      R1,[R5], #+4
+   \   00000108   0x1E40             SUBS     R0,R0,#+1
+   \   0000010A   0xD1F5             BNE.N    ??Gpio__PortConfig_12
+   \                     ??Gpio__PortConfig_1: (+1)
+   \   0000010C   0xF384 0x8810      MSR      PRIMASK,R4
+   \   00000110   0xB001             ADD      SP,SP,#+4
+   \   00000112   0xBDF0             POP      {R4-R7,PC}       ;; return
+    475          
+    476          
+    477          //---------------------------------------------------------------------------------------------------------------------
+    478          /**
+    479           *    @brief 	This method writes data on a specific port using a mask to define which bits will be affected
+    480           *    @param 	port: Defines the specific port
+    481           *    @param	mask: mask of affected bits (1 = will be affected, 0 = won't be affected)
+    482           *    @param    value: Defines the value to be applied on the port-bit
+    483           */
+
+   \                                 In section .text, align 2, keep-with-next
+    484          void Gpio__PortWrite(GPIO_PORT_TYPE port,PORT_DATA_TYPE mask, PORT_DATA_TYPE value)
+    485           {
+   \                     Gpio__PortWrite: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+    486          	volatile GPIO_DEF * port_ptr;
+    487          
+    488          	port_ptr = GPIO_PORT_LIST[port];
+   \   00000002   0x.... 0x....      ADR.W    R3,GPIO_PORT_LIST
+   \   00000006   0xF853 0x0020      LDR      R0,[R3, R0, LSL #+2]
+    489          
+    490          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    491          		MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+    492          	#endif
+    493          
+    494          	#if (GPIO_PROTECTION_FEATURE == ENABLED)				// it generates a sub-mask to clear bits
+    495          		MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();				// Save interrupt state and disable that
+   \   0000000A   0xF3EF 0x8310      MRS      R3,PRIMASK
+   \   0000000E   0xB672             CPSID    I
+    496          	#endif
+    497          
+    498          	PORT_DATA_TYPE aux;
+    499          	aux = mask & (~value);									// it generates a sub-mask to clear bits
+    500          	port_ptr->PDOR &= (~aux);								// It clears the bits supposed to be clear
+   \   00000010   0x6804             LDR      R4,[R0, #+0]
+   \   00000012   0xEA62 0x0501      ORN      R5,R2,R1
+   \   00000016   0x402C             ANDS     R4,R5,R4
+   \   00000018   0x6004             STR      R4,[R0, #+0]
+    501          	aux = mask & value;										// it generates a sub-mask to set bits
+    502          	port_ptr->PDOR |= aux;									// it sets the bits supposed to be set
+   \   0000001A   0x4011             ANDS     R1,R2,R1
+   \   0000001C   0x6804             LDR      R4,[R0, #+0]
+   \   0000001E   0x4321             ORRS     R1,R1,R4
+   \   00000020   0x6001             STR      R1,[R0, #+0]
+    503          
+    504          	#if (GPIO_PROTECTION_FEATURE == ENABLED)
+    505          		MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();			// Restore the interrupt context saved before
+   \   00000022   0xF383 0x8810      MSR      PRIMASK,R3
+    506          	#endif
+    507          }
+   \   00000026   0xBC30             POP      {R4,R5}
+   \   00000028   0x4770             BX       LR               ;; return
+    508          
+    509          //---------------------------------------------------------------------------------------------------------------------
+    510          /**
+    511           *    @brief	This method reads and entire port
+    512           *    @details 	Reads the IDR register
+    513           *    @param	port: Defines the specific port
+    514           *    @return   PORT_DATA_TYPE : The read value from the port requested
+    515           */
+
+   \                                 In section .text, align 2, keep-with-next
+    516          PORT_DATA_TYPE Gpio__PortRead(GPIO_PORT_TYPE port)
+    517           {
+   \                     Gpio__PortRead: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    518          	volatile GPIO_DEF * port_ptr;
+    519          
+    520          	port_ptr = GPIO_PORT_LIST[port];
+    521          
+    522          	if (Gpio__Validate(port, 0) == PASS)
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x.... 0x....      BL       Gpio__Validate
+   \   0000000A   0x2801             CMP      R0,#+1
+   \   0000000C   0xD105             BNE.N    ??Gpio__PortRead_0
+    523          	{
+    524          		//This reads from GPIOx_PDIR and returns the input value of the associated/requested port
+    525          		return (port_ptr->PDIR);
+   \   0000000E   0x.... 0x....      ADR.W    R0,GPIO_PORT_LIST
+   \   00000012   0xF850 0x0024      LDR      R0,[R0, R4, LSL #+2]
+   \   00000016   0x6900             LDR      R0,[R0, #+16]
+   \   00000018   0xBD10             POP      {R4,PC}
+    526          	}
+    527          	else
+    528          	{
+    529          		return ((PORT_DATA_TYPE) 0);
+   \                     ??Gpio__PortRead_0: (+1)
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+    530          	}
+    531          }
+    532          
+    533          //---------------------------------------------------------------------------------------------------------------------
+    534          /**
+    535           *    @brief    Check the configuration of a Gpio Port bit
+    536           *    @details  This function is used to determine whether the particular Gpio pin was configured properly.
+    537           *    @details  Port are configured to particular state as par the parameter are passed.
+    538           *              Pin position is obtained by updating table SR_GPIO_PINS_DEF in SRGpio_prm.h
+    539           *    @return   BOOL_TYPE
+    540           *              @retval TRUE(1)  means configuration matches
+    541           *              @retval FALSE(0) means configuration different them the expected.
+    542           */
+
+   \                                 In section .text, align 4, keep-with-next
+    543          BOOL_TYPE Gpio__CheckConfig(GPIO_PORT_TYPE port,uint8 pin,GPIO_PIN_MODE_TYPE type, BOOL_TYPE state)
+    544          {
+   \                     Gpio__CheckConfig: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+    545              BOOL_TYPE retval = FALSE;
+   \   00000002   0x2400             MOVS     R4,#+0
+    546              if (Gpio__Validate(port, pin) == PASS)
+   \   00000004   0x4606             MOV      R6,R0
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x2E05             CMP      R6,#+5
+   \   0000000A   0xBFB8             IT       LT 
+   \   0000000C   0x2920             CMPLT    R1,#+32
+   \   0000000E   0xDA19             BGE.N    ??Gpio__CheckConfig_1
+   \   00000010   0x.... 0x....      ADR.W    R7,GPIO_PORT_LIST
+   \   00000014   0xF857 0x6026      LDR      R6,[R7, R6, LSL #+2]
+   \   00000018   0x4696             MOV      LR,R2
+   \   0000001A   0xF1BE 0x0F07      CMP      LR,#+7
+   \   0000001E   0xD80C             BHI.N    ??Gpio__CheckConfig_2
+   \   00000020   0xE8DF 0xF00E      TBB      [PC, LR]
+   \                     ??Gpio__CheckConfig_0:
+   \   00000024   0x04 0x04          DC8      0x4,0x4,0x4,0x4
+   \              0x04 0x04    
+   \   00000028   0x13 0x13          DC8      0x13,0x13,0x13,0x13
+   \              0x13 0x13    
+   \                     ??Gpio__CheckConfig_3: (+1)
+   \   0000002C   0x6977             LDR      R7,[R6, #+20]
+   \   0000002E   0x.... 0x....      ADR.W    R12,GPIO_SET_MASK
+   \   00000032   0xF811 0x500C      LDRB     R5,[R1, R12]
+   \   00000036   0x422F             TST      R7,R5
+   \   00000038   0xD00E             BEQ.N    ??Gpio__CheckConfig_4
+    547              {
+    548                  if (GpioCheckPinConfig(port, pin, type))
+    549                  {
+    550                      if ((type == OUTPUT_PUSHPULL) ||
+    551                          (type == OUTPUT_OPEN_DRAIN))
+    552                      {
+    553                          // Read the actual pin state.
+    554                          BOOL_TYPE aux = FALSE;
+    555                          volatile GPIO_DEF * port_ptr = GPIO_PORT_LIST[port];
+    556                          if (BIT_TEST(port_ptr->PDOR, pin))
+    557                          {
+    558                              aux = TRUE;
+    559                          }
+    560          
+    561                          // Check if the actual pin state matches the expected pin state.
+    562                          if (aux != state)
+    563                          {
+    564                              retval = FALSE;
+    565                              //generate an exception when the GPIO data is corrupted
+    566                              SRException__Queue(SREXCEPTION_GPIO_DATA_CORRUPTION, port, pin);
+    567                          }
+    568                          else
+    569                          {
+    570                              retval = TRUE;
+    571                          }
+    572                      }
+    573                      else
+    574                      {
+    575                          retval = TRUE;                      // If pin is configured other than output then it should return TRUE.
+    576                      }
+    577                  }
+    578                  else
+    579                  {
+    580                      //generate an exception if the configuration is mismatched
+    581                      SRException__Queue(SREXCEPTION_GPIO_CONFIGURATION_CORRUPTION, port, pin);
+   \                     ??Gpio__CheckConfig_2: (+1)
+   \   0000003A   0x460A             MOV      R2,R1
+   \   0000003C   0x4601             MOV      R1,R0
+   \   0000003E   0x2028             MOVS     R0,#+40
+   \                     ??Gpio__CheckConfig_5: (+1)
+   \   00000040   0x.... 0x....      BL       SRException__Queue
+    582                  }
+    583          
+    584              }
+    585              return (retval);
+   \                     ??Gpio__CheckConfig_1: (+1)
+   \   00000044   0x4620             MOV      R0,R4
+   \   00000046   0xB001             ADD      SP,SP,#+4
+   \   00000048   0xBDF0             POP      {R4-R7,PC}       ;; return
+   \                     ??Gpio__CheckConfig_6: (+1)
+   \   0000004A   0x6977             LDR      R7,[R6, #+20]
+   \   0000004C   0x.... 0x....      ADR.W    R12,GPIO_SET_MASK
+   \   00000050   0xF811 0x500C      LDRB     R5,[R1, R12]
+   \   00000054   0x422F             TST      R7,R5
+   \   00000056   0xD0F0             BEQ.N    ??Gpio__CheckConfig_2
+   \                     ??Gpio__CheckConfig_4: (+1)
+   \   00000058   0x2A06             CMP      R2,#+6
+   \   0000005A   0xBF18             IT       NE 
+   \   0000005C   0x2A07             CMPNE    R2,#+7
+   \   0000005E   0xD10B             BNE.N    ??Gpio__CheckConfig_7
+   \   00000060   0x6835             LDR      R5,[R6, #+0]
+   \   00000062   0x2200             MOVS     R2,#+0
+   \   00000064   0x40CD             LSRS     R5,R5,R1
+   \   00000066   0x07ED             LSLS     R5,R5,#+31
+   \   00000068   0xBF48             IT       MI 
+   \   0000006A   0x2201             MOVMI    R2,#+1
+   \   0000006C   0x429A             CMP      R2,R3
+   \   0000006E   0xD003             BEQ.N    ??Gpio__CheckConfig_7
+   \   00000070   0x460A             MOV      R2,R1
+   \   00000072   0x4601             MOV      R1,R0
+   \   00000074   0x2029             MOVS     R0,#+41
+   \   00000076   0xE7E3             B.N      ??Gpio__CheckConfig_5
+   \                     ??Gpio__CheckConfig_7: (+1)
+   \   00000078   0x2401             MOVS     R4,#+1
+   \   0000007A   0x4620             MOV      R0,R4
+   \   0000007C   0xB001             ADD      SP,SP,#+4
+   \   0000007E   0xBDF0             POP      {R4-R7,PC}
+    586          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x40048038         DC32     0x40048038
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x400FF014         DC32     0x400ff014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x40049000         DC32     0x40049000
+    587          //=====================================================================================================================
+    588          //-------------------------------------- Private Functions ------------------------------------------------------------
+    589          //=====================================================================================================================
+    590          /**
+    591           *    @brief    Updates a register based on a mask
+    592           *    @param    current
+    593           *    @param    mask
+    594           *    @param    value
+    595           *    @return   uint8 updated value
+    596           */
+    597          static uint32 UpdateMaskedRegister(uint32 current,uint32 mask, uint32 value)
+    598          {
+    599              uint32 reg;
+    600              uint32 aux;
+    601          
+    602              aux = mask & (~value);                      //It generates a sub-mask to clear bits
+    603              reg = current & (~aux);
+    604              aux = mask & value;                         //It generates a sub-mask to set bits
+    605              reg = reg | aux;                            //It sets the bits supposed to be set
+    606              return (reg);
+    607          }
+    608          
+    609          //---------------------------------------------------------------------------------------------------------------------
+    610          /**
+    611           *    @brief    Check the configuration of a Gpio Port bit
+    612           *    @details  This function is used to determine whether the particular Gpio pin was configured properly.
+    613           *    @details  Port are configured to particular state as par the parameter are passed.
+    614           *              Pin position is obtained by updating table SR_GPIO_PINS_DEF in SRGpio_prm.h
+    615           *    @return   BOOL_TYPE
+    616           *              @retval TRUE(1)  means configuration matches
+    617           *              @retval FALSE(0) means configuration different them the expected.
+    618           */
+    619          static BOOL_TYPE GpioCheckPinConfig(GPIO_PORT_TYPE port,uint8 pin,GPIO_PIN_MODE_TYPE type)
+    620          {
+    621              BOOL_TYPE retval = FALSE;
+    622              volatile GPIO_DEF * port_ptr = GPIO_PORT_LIST[port];
+    623          
+    624              switch (type)
+    625              {
+    626                  case SPECIAL_FUNCTION_OPEN_DRAIN: // What is this type?
+    627                  case SPECIAL_FUNCTION_PUSH_PULL: // What is this type?
+    628                  case OUTPUT_PUSHPULL:
+    629                  case OUTPUT_OPEN_DRAIN:
+    630                      retval = (BOOL_TYPE)((port_ptr->PDDR & GPIO_SET_MASK[pin]) != 0);
+    631                      break;
+    632          
+    633                  case INPUT_ANALOG:
+    634                  case INPUT_FLOAT:
+    635                  case INPUT_PULLUP:
+    636                  case INPUT_PULLDOWN:
+    637                      retval = (BOOL_TYPE)((port_ptr->PDDR & GPIO_SET_MASK[pin]) == 0);
+    638                      break;
+    639          
+    640                  default:
+    641                      break;
+    642              }
+    643              return (retval);
+    644          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   Gpio__CheckConfig
+        24   -> SRException__Queue
+       0   Gpio__Initialize
+         0   -> Gpio__RefreshConfig
+      12   Gpio__PinConfig
+       0   Gpio__PinRead
+       0   Gpio__PinWrite
+      24   Gpio__PortConfig
+        24   -> Gpio__Validate
+        24   -> __aeabi_memclr4
+       8   Gpio__PortRead
+         8   -> Gpio__Validate
+       8   Gpio__PortWrite
+       0   Gpio__RefreshConfig
+       0   Gpio__Validate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       8  GPIO_CLR_MASK
+      20  GPIO_PORT_LIST
+       8  GPIO_SET_MASK
+     128  Gpio__CheckConfig
+      10  Gpio__Initialize
+     170  Gpio__PinConfig
+      32  Gpio__PinRead
+      36  Gpio__PinWrite
+     276  Gpio__PortConfig
+      30  Gpio__PortRead
+      42  Gpio__PortWrite
+      76  Gpio__RefreshConfig
+      16  Gpio__Validate
+      20  PCI_PORT_LIST
+
+ 
+   8 bytes in section .rodata
+ 876 bytes in section .text
+ 
+ 876 bytes of CODE  memory
+   8 bytes of CONST memory
+
+Errors: none
+Warnings: none

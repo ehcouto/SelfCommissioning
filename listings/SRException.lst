@@ -1,0 +1,372 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:58
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRException\SRException.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o SRException.obj
+#        -l ..\listings\SRException.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRException\SRException.c
+#    List file    =  ..\listings\SRException.lst
+#    Object file  =  SRException.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRException\SRException.c
+      1          /**
+      2           *  @defgroup   CLASS_B
+      3           *  @file       SRException.c
+      4           *  @brief      Basic description of file contents
+      5           *
+      6           *  @details    Detailed description of the file contents
+      7           *
+      8           *---------------------------------------------------------------------------------------------------------------------
+      9           *------------------- Copyright 2007.  Whirlpool Corporation.  All rights reserved - CONFIDENTIAL ---------------------
+     10           *---------------------------------------------------------------------------------------------------------------------
+     11           */
+     12          
+     13          //-------------------------------------- Include Files ----------------------------------------------------------------
+     14          #include "C_Extensions.h"
+     15          #include "SRException.h"
+     16          #include "SRMicro.h"
+     17          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     18          
+     19          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     20          
+     21          typedef struct
+     22          {
+     23              EXCEPTION_EVENT_TYPE    event;
+     24              uint16                  data1;
+     25              uint16                  data2;
+     26          }EXEPTION_EVENT_TYPE;
+     27          
+     28          
+     29          #define EXCEPTION_BUFFER_SIZE       10
+     30          
+
+   \                                 In section .noinit, align 4
+     31          NO_INIT EXEPTION_EVENT_TYPE Exception_Buffer[EXCEPTION_BUFFER_SIZE];
+   \                     Exception_Buffer:
+   \   00000000                      DS8 60
+     32          NO_INIT unsigned char Exception_Write;
+   \                     Exception_Write:
+   \   0000003C                      DS8 1
+
+   \                                 In section .noinit, align 1
+     33          NO_INIT unsigned char Exception_Read;
+   \                     Exception_Read:
+   \   00000000                      DS8 1
+     34          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     35          
+     36          
+     37          //=====================================================================================================================
+     38          //-------------------------------------- Public Functions -------------------------------------------------------------
+     39          //=====================================================================================================================
+     40          
+     41          //---------------------------------------------------------------------------------------------------------------------
+     42          /**
+     43           *  @brief      It Initializes the module Exception and its variables
+     44           *
+     45           */
+
+   \                                 In section .text, align 2, keep-with-next
+     46          void SRException__Initialize(void)
+     47          {
+     48              Exception_Read = 0;
+   \                     SRException__Initialize: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable1
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+     49          }
+   \   00000006   0x4770             BX       LR               ;; return
+     50          
+     51          
+     52          //---------------------------------------------------------------------------------------------------------------------
+     53          /**
+     54           *  @brief      Enter brief description of function.
+     55           *
+     56           *  @param
+     57           *
+     58           *  @return
+     59           */
+
+   \                                 In section .text, align 4, keep-with-next
+     60          void SRException__Queue(EXCEPTION_EVENT_TYPE event, uint16 data1, uint16 data2)
+     61          {
+   \                     SRException__Queue: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+     62              Exception_Buffer[Exception_Write].event = event;
+   \   00000002   0x....             LDR.N    R3,??DataTable1_1
+   \   00000004   0xF893 0x403C      LDRB     R4,[R3, #+60]
+   \   00000008   0xEB04 0x0544      ADD      R5,R4,R4, LSL #+1
+   \   0000000C   0x006D             LSLS     R5,R5,#+1
+   \   0000000E   0x54E8             STRB     R0,[R5, R3]
+     63              Exception_Buffer[Exception_Write].data1 = data1;
+   \   00000010   0x18ED             ADDS     R5,R5,R3
+   \   00000012   0x8069             STRH     R1,[R5, #+2]
+     64              Exception_Buffer[Exception_Write].data2 = data2;
+   \   00000014   0x80AA             STRH     R2,[R5, #+4]
+     65          
+     66              Exception_Write++;
+   \   00000016   0x1C61             ADDS     R1,R4,#+1
+     67              if (Exception_Write >= EXCEPTION_BUFFER_SIZE)
+   \   00000018   0xB2C9             UXTB     R1,R1
+   \   0000001A   0x290A             CMP      R1,#+10
+   \   0000001C   0xBFA8             IT       GE 
+     68              {
+     69                  Exception_Write = 0;
+   \   0000001E   0x2100             MOVGE    R1,#+0
+   \   00000020   0xF883 0x103C      STRB     R1,[R3, #+60]
+     70              }
+     71          
+     72              switch (event)
+   \   00000024   0x2823             CMP      R0,#+35
+   \   00000026   0xD818             BHI.N    ??SRException__Queue_1
+   \   00000028   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??SRException__Queue_0:
+   \   0000002C   0x1B 0x17          DC8      0x1B,0x17,0x17,0x17
+   \              0x17 0x17    
+   \   00000030   0x17 0x1B          DC8      0x17,0x1B,0x1B,0x1B
+   \              0x1B 0x1B    
+   \   00000034   0x1B 0x1B          DC8      0x1B,0x1B,0x1B,0x1B
+   \              0x1B 0x1B    
+   \   00000038   0x1B 0x17          DC8      0x1B,0x17,0x17,0x17
+   \              0x17 0x17    
+   \   0000003C   0x12 0x12          DC8      0x12,0x12,0x12,0x12
+   \              0x12 0x12    
+   \   00000040   0x12 0x12          DC8      0x12,0x12,0x12,0x12
+   \              0x12 0x12    
+   \   00000044   0x12 0x12          DC8      0x12,0x12,0x12,0x12
+   \              0x12 0x12    
+   \   00000048   0x17 0x17          DC8      0x17,0x17,0x17,0x12
+   \              0x17 0x12    
+   \   0000004C   0x17 0x17          DC8      0x17,0x17,0x17,0x12
+   \              0x17 0x12    
+     73              {
+     74                  case EXCEPTION_NONE:
+     75                      break;
+     76                  case EXCEPTION_MAIN_DATA_BYTE:
+     77                      break;
+     78                  case EXCEPTION_MAIN_DATA_SHORT:
+     79                      break;
+     80                  case EXCEPTION_MAIN_DATA_LONG:
+     81                      break;
+     82                  case EXCEPTION_MAIN_DATA_NOT_ALLOWED:
+     83                      break;
+     84                  case EXCEPTION_ISR_DATA_BYTE:
+     85                      break;
+     86                  case EXCEPTION_ISR_DATA_SHORT:
+     87                      break;
+     88                  case EXCEPTION_ISR_DATA_LONG:
+     89                      break;
+     90                  case EXCEPTION_ISR_DATA_NOT_ALLOWED:
+     91                      break;
+     92          
+     93                  case EXCEPTION_MAIN_FLOW:               // -fallthrough - Lint Command
+     94                  case EXCEPTION_ISR_FLOW:                // -fallthrough - Lint Command
+     95                  case EXCEPTION_INIT_FLOW:
+     96                      SYSTEM_RESET();
+     97                      break;
+     98          
+     99                  case EXCEPTION_SRGPIO_CONFIG:           // -fallthrough - Lint Command
+    100                  case EXCEPTION_SRGPIO_DATA:             // -fallthrough - Lint Command
+    101                  case EXCEPTION_SRGPIO_RANGE:
+    102                      SYSTEM_RESET();
+    103                      break;
+    104          
+    105                  case SREXCEPTION_SRDATA_NOISE:          // -fallthrough - Lint Command
+    106                  case SREXCEPTION_SRDATA_BAD_MEMORY:     // -fallthrough - Lint Command
+    107                  case SREXCEPTION_SRDATA_NOT_ALLOWED:    // -fallthrough - Lint Command
+    108                  case EXCEPTION_DATA_BYTE:               // -fallthrough - Lint Command
+    109                  case EXCEPTION_DATA_SHORT:              // -fallthrough - Lint Command
+    110                  case EXCEPTION_DATA_LONG:
+    111                      SRMicro__ForceReset(MICRO_RESET_MODE_COLD);
+    112                      break;
+    113          
+    114                  case EXCEPTION_MAX_ABSOLUT_CLOCK:       // -fallthrough - Lint Command
+    115                  case EXCEPTION_CLOCK_TEST:              // -fallthrough - Lint Command
+    116                  case SREXCEPTION_SRCLOCK_OVERRUN:       // -fallthrough - Lint Command
+    117                  case SREXCEPTION_SRCLOCK_TEST:
+    118                      SYSTEM_RESET();
+    119                      break;
+    120          
+    121                  case EXCEPTION_CPU_REGISTER_ERROR:      // -fallthrough - Lint Command
+    122                  case EXCEPTION_STACK_OVERFLOW_ERROR:    // -fallthrough - Lint Command
+    123                  case EXCEPTION_STACK_UNDERFLOW_ERROR:   // -fallthrough - Lint Command
+    124                  case EXCEPTION_FLASH_ERROR:             // -fallthrough - Lint Command
+    125                  case EXCEPTION_RAM_RUNTIME_CORRUPTION:
+    126                      SRMicro__ForceReset(MICRO_RESET_MODE_COLD);
+    127                      break;
+    128          
+    129                  case EXCEPTION_ATOD_STUCK:              // -fallthrough - Lint Command
+    130                  case EXCEPTION_SRATOD_CONFIG:
+    131                      SYSTEM_RESET();
+    132                      break;
+    133          
+    134                  case EXCEPTION_MAIN_SLOT_VIOLATION:     // -fallthrough - Lint Command
+    135                  case EXCEPTION_DIVISION_BY_ZERO:
+    136                      SYSTEM_RESET();
+   \                     ??SRException__Queue_2: (+1)
+   \   00000050   0x....             LDR.N    R1,??DataTable1_2  ;; 0xe000ed0c
+   \   00000052   0x....             LDR.N    R0,??DataTable1_3  ;; 0x5fa0004
+   \   00000054   0x6008             STR      R0,[R1, #+0]
+    137                      break;
+    138          
+    139                  case SREXCEPTION_MICRO_RESET_SIGNATURE_CORUPTION:
+    140                      SRMicro__ForceReset(MICRO_RESET_MODE_COLD);
+    141                      break;
+    142          
+    143                  default:
+    144                      SRMicro__ForceReset(MICRO_RESET_MODE_COLD);
+    145                      break;
+    146              }
+    147          }
+   \   00000056   0xBC30             POP      {R4,R5}
+   \   00000058   0x4770             BX       LR
+   \                     ??SRException__Queue_1: (+1)
+   \   0000005A   0xBC30             POP      {R4,R5}
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0x.... 0x....      B.W      Micro__ForceReset
+   \                     ??SRException__Queue_3: (+1)
+   \   00000062   0xBC30             POP      {R4,R5}
+   \   00000064   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x........         DC32     Exception_Read
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0x........         DC32     Exception_Buffer
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0xE000ED0C         DC32     0xe000ed0c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \   00000000   0x05FA0004         DC32     0x5fa0004
+    148          
+    149          
+    150          //=====================================================================================================================
+    151          //-------------------------------------- Private Functions ------------------------------------------------------------
+    152          //=====================================================================================================================
+    153          
+    154          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SRException__Initialize
+       8   SRException__Queue
+         0   -> Micro__ForceReset
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+      61  Exception_Buffer
+          Exception_Write
+       1  Exception_Read
+       8  SRException__Initialize
+     102  SRException__Queue
+
+ 
+  62 bytes in section .noinit
+ 126 bytes in section .text
+ 
+ 126 bytes of CODE memory
+  62 bytes of DATA memory
+
+Errors: none
+Warnings: none

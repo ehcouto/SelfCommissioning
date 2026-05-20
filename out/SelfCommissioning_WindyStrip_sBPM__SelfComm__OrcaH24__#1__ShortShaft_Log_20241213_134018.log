@@ -1,0 +1,45 @@
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 1
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 2
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 3
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Sc_IAmpl = 1.9848676919937134
+Sc_VAmpl = 12.261739730834961
+Sc_IAmpl = 2.0369608402252197
+Sc_VAmpl = 12.895960807800293
+Sc_IAmpl = 2.0289413928985596
+Sc_VAmpl = 13.412069320678711
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 10.914093017578125
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 12.923624038696289
+Sc_IAmpl = 1.9687962532043457
+Sc_VAmpl = 12.196046829223633
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 12.181852340698242
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 12.212807655334473
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 1
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 13.966097831726074
+Sc_IAmpl = 2.0129075050354004
+Sc_VAmpl = 14.719650268554688
+Rs[0] = 6.367361052815447
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 2
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 3
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 4
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 5

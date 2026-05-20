@@ -1,0 +1,1009 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:26
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\ObserverPmsm\ObserverPmsm.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        ObserverPmsm.obj -l ..\listings\ObserverPmsm.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\ObserverPmsm\ObserverPmsm.c
+#    List file    =  ..\listings\ObserverPmsm.lst
+#    Object file  =  ObserverPmsm.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\ObserverPmsm\ObserverPmsm.c
+      1          /**
+      2           *  @file
+      3           *  @brief       Rotor Flux Speed Position observer for PMSM motor
+      4           *  @details     This module implements a rotor flux speed/position observer for a 3-phase PMSM motor.
+      5           *               Fixed point implementation.
+      6           *  @author      alessio.beato/luigi.fagnano  (only temporary, since it is not integrated in MKS)
+      7           *  $Header: FOC/ObserverPmsm.h 1.4 2015/09/24 20:12:50CEST Luigi Fagnano (FAGNAL) Exp  $
+      8           * @copyright Copyright 2012 - $Date: 2015/09/24 20:12:50CEST $. Whirlpool Corporation. All rights reserved – CONFIDENTIAL
+      9          */
+     10          
+     11          
+     12          //-------------------------------------- Include Files ----------------------------------------------------------------
+     13          #include "ObserverPmsm.h"
+     14          #include "ClrkPark.h"
+     15          #include "MathCalc.h"
+     16          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     17          
+     18          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     19          #define STARTUP_OBSERVER_MIN_SPEED      MC_FLOAT_TO_IQ15S(0.0025f)    //50 rpm on 19800 rpm base
+     20          
+     21          #ifndef PI
+     22              #define PI 3.1415926535897932384626433832795f
+     23          #endif
+     24          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     25          
+     26          
+     27          //=====================================================================================================================
+     28          //-------------------------------------- Public Functions -------------------------------------------------------------
+     29          //=====================================================================================================================
+     30          
+     31          //---------------------------------------------------------------------------------------------------------------------
+     32          /**
+     33           *  @brief      It Initializes the module BemfObserver and its variables
+     34           *
+     35           */
+
+   \                                 In section .text, align 2, keep-with-next
+     36          void ObserverPmsm__Initialize(void)
+     37          {
+     38                  /* TO DO: initialization of parameters from setting file */
+     39          }
+   \                     ObserverPmsm__Initialize: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     40          
+     41          
+     42          //---------------------------------------------------------------------------------------------------------------------
+     43          /**
+     44           *  @brief      Back-EMF observer for PMSM motor.
+     45           *  @details
+     46           *
+     47           * That observer estimates the D-Q components of back-emf generated by the permanent magnet flux on the stator windings according to the following equations:
+     48           *
+     49           *
+     50           * \f[
+     51           *  \begin{aligned}
+     52           *     &\frac{\hat{dI_{d}}(t)}{dt}  =  -\frac{R}{L_{d}}\cdot {\hat{I}_{d}(t)} +\frac{1}{L_{d}}\cdot {\hat{E}_{d}(t)} + \frac{1}{L_{d}}\cdot {(V_{sd}(t)+ L_{q}w_{el}{I}_{q}(t))}\\
+     53           *     &\frac{\hat{dI_{q}}(t)}{dt}  =  -\frac{R}{L_{d}}\cdot {\hat{I}_{q}(t)} +\frac{1}{L_{d}}\cdot {\hat{E}_{q}(t)} + \frac{1}{L_{d}}\cdot {(V_{sq}(t)- L_{q}w_{el}{I}_{d}(t))}\\
+     54           *     &\frac{\hat{dE_{d}}(t)}{dt}  =  K_{i}\cdot {(I_{d}(t) - \hat{I}_{d}(t))} +K_{p}\cdot {(\frac{dI_{d}(t)}{dt} - \frac{\hat{dI_{d}}(t)}{dt})} \\
+     55           *       &\frac{\hat{dE_{q}}(t)}{dt}  =  K_{i}\cdot {(I_{q}(t) - \hat{I}_{q}(t))} +K_{p}\cdot {(\frac{dI_{q}(t)}{dt} - \frac{\hat{dI_{q}}(t)}{dt})} \\
+     56           *  \end{aligned}
+     57           * \f]
+     58           *
+     59           * where
+     60           *
+     61           * \f$ V_{d} \f$: voltage on d axis
+     62           *
+     63           * \f$ V_{q} \f$: voltage on q axis
+     64           *
+     65           * \f$ I_{d} \f$: current on d axis
+     66           *
+     67           * \f$ I_{q} \f$: current on q axis
+     68           *
+     69           * \f$ \hat{I_{d}} \f$: estimated current on d axis
+     70           *
+     71           * \f$ \hat{I_{q}} \f$: estimated current on q axis
+     72           *
+     73           * \f$ \hat{E_{d}} \f$: estimated back-emf on d axis
+     74           *
+     75           * \f$ \hat{E_{q}} \f$: estimated back-emf on q axis
+     76           *
+     77           * \f$ w_{el} \f$: rotor flux speed
+     78           *
+     79           * The observer model uses the back-emf extended formula
+     80           *
+     81           *
+     82           * \f[
+     83           *  \begin{aligned}
+     84           *     &E_{d}(t) = 0 \\
+     85           *     &E_{q}(t) = E_{a} = {(L_{q}-L_{d})}\cdot \frac{{dI_{q}}(t)}{dt} +   {(L_{d}-L_{q})}\cdot {w_{el}I_{d}}  + w_{el}\cdot{Phi_{m}}\\
+     86           *  \end{aligned}
+     87           * \f]
+     88           *
+     89           *
+     90           * The estimated back-emf depend on the d-q position estimation error
+     91           *
+     92           * \f[
+     93           *  \begin{aligned}
+     94           *     &\hat{E_{d}}(t) =  E_{a}\cdot{sin(Theta_{Err})} \\
+     95           *     &\hat{E_{q}}(t) =  -E_{a}\cdot{cos(Theta_{Err})}\\
+     96           *  \end{aligned}
+     97           * \f]
+     98           *
+     99           * Tha estimated back-emfs are used to calculate the position estimation error.
+    100           *
+    101           * \f[
+    102           *  \begin{aligned}
+    103           *     &Theta_{Err} = atan(\frac{\hat{E}_{d}(t)}{-\hat{E_{q}}(t)}) =  atan(\frac{E_{a}\cdot{sin(Theta_{Err})}}{E_{a}\cdot{cos(Theta_{Err})}})  \\
+    104           *  \end{aligned}
+    105           * \f]
+    106           *
+    107          
+    108           * Discretizing the previous equations using backward Euler transformation:
+    109           *
+    110           * \f[
+    111           *  \begin{aligned}
+    112           *     & IntegralStateD(k) =  Ki*Ts\cdot{(I_{d}(k) - \hat{I}_{d}(k-1))}  +  IntegralStateD(k-1)\\
+    113           *     &\hat{E_{d}}(k)  =  (Kp\cdot{(I_{d}(k) - \hat{I}_{d}(k-1))}  +  IntegralStateD(k))\\
+    114           *     &\hat{I_{d}}(k)  =  (Ld/(Ld+Ts\cdot{Rs}))\cdot {\hat{I}_{d}(k-1)}  +  (Ts/(Ld+Ts\cdot{Rs}))\cdot {E_{d}(k)} + (Ts/(Ld+Ts\cdot{Rs}))\cdot {V_{d}(k)}  +  (Ts\cdot{Lq}/(Ld+Ts\cdot{Rs}))\cdot {L_{q}w_{el}(k){I}_{q}(k)} \\
+    115           *     & IntegralStateQ(k) =  Ki*Ts\cdot{(I_{d}(k) - \hat{I}_{d}(k-1))}  +  IntegralStateQ(k-1)\\
+    116           *     &\hat{E_{q}}(k)  =  (Kp\cdot{(I_{q}(k) - \hat{I}_{q}(k-1))}  +  IntegralStateQ(k))\\
+    117           *     &\hat{I_{d}}(k)  =  (Ld/(Ld+Ts\cdot{Rs}))\cdot {\hat{I}_{q}(k-1)}  +  (Ts/(Ld+Ts\cdot{Rs}))\cdot {E_{q}(k)} + (Ts/(Ld+Ts\cdot{Rs}))\cdot {V_{d}(k)}  -  (Ts\cdot{Lq}/(Ld+Ts\cdot{Rs}))\cdot {L_{q}w_{el}(k){I}_{q}(k)} \\
+    118           *  \end{aligned}
+    119           * \f]
+    120           *
+    121           * where
+    122           *
+    123           * Ts is the sampling period
+    124           *
+    125           *  @param[in]      i_dq   = motor current components in d-q reference frame (aligned with rotor flux position)
+    126           *  @param[in]      v_dq   = motor voltage components in d-q reference frame (aligned with rotor flux position)
+    127           *  @param[in]      OmegaFlux   = rotor electrical speed in Q17.15 notation
+    128           *  @param[in,out]      params = this structure contains parameters used for back-emf equation, rotor-flux position, PI gains, estimated quantities [current/bemf]
+    129           */
+
+   \                                 In section .text, align 2, keep-with-next
+    130          void ObserverPmsm__BemfObsDQ(DQ_COOR_SYST_TYPE* i_dq, DQ_COOR_SYST_TYPE* v_dq, mc_sint32 omega_flux, BEMF_OBSERVER_PARAMS_TYPE* params)
+    131          {
+   \                     ObserverPmsm__BemfObsDQ: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x461E             MOV      R6,R3
+   \   00000008   0xB083             SUB      SP,SP,#+12
+    132          
+    133              mc_sint32 id_error;
+    134              mc_sint32 iq_error;
+    135              mc_sint32 bemf_d_15;
+    136              mc_sint32 bemf_q_15;
+    137              mc_sint64 temp64;
+    138          
+    139              //------------------------------------------------------------------------
+    140              //               Calculation params.BemfEst.D
+    141              // ------------------------------------------------------------------------
+    142              id_error = i_dq->D - MC_SCALE(params->Current_Est.D,IQ30,IQ15);
+    143          
+    144              params->Bemf_Est.D =    Pi__PiRegNoAntiWindup(id_error, &params->Pi_States.State_D, &params->Pi_Parameters);
+   \   0000000A   0x6860             LDR      R0,[R4, #+4]
+   \   0000000C   0x68B3             LDR      R3,[R6, #+8]
+   \   0000000E   0x460D             MOV      R5,R1
+   \   00000010   0x4692             MOV      R10,R2
+   \   00000012   0xF106 0x0218      ADD      R2,R6,#+24
+   \   00000016   0xF106 0x0110      ADD      R1,R6,#+16
+   \   0000001A   0xEBA0 0x30E3      SUB      R0,R0,R3, ASR #+15
+   \   0000001E   0x.... 0x....      BL       Pi__PiRegNoAntiWindup
+   \   00000022   0x6030             STR      R0,[R6, #+0]
+    145          
+    146              // ------------------------------------------------------------------------
+    147              //               Calculation params.CurrentEst.D
+    148              // ------------------------------------------------------------------------
+    149              //params->CurrentEst.D = params->Icoeff*params->CurrentEst.D    +    params->Ecoeff*params->BemfEst.D  +  params->Ucoeff*v_dq->D     + params->WIcoeff*w_el*i_dq->Q;
+    150              //temp64 = (sint64)IQMATH__I2Q30MULI17Q15_I2Q30(params->Icoeff, params->CurrentEst.D);
+    151              temp64 = MC_MULT_LL_LL(params->I_Coeff, params->Current_Est.D, IQ15, IQ30, IQ30);
+    152              temp64 = temp64 + MC_MULT_LL_LL(params->E_Coeff, params->Bemf_Est.D,IQ14,IQ30,IQ30);
+    153              temp64 = temp64 + (mc_sint64)params->U_Coeff * (mc_sint64)v_dq->D;
+    154              temp64 = temp64 + MC_MULT_LL_LL(params->WI_Coeff, ((mc_sint64)omega_flux * (mc_sint64)i_dq->Q), IQ14, IQ30, IQ30);
+   \   00000024   0x6B31             LDR      R1,[R6, #+48]
+   \   00000026   0x68B2             LDR      R2,[R6, #+8]
+   \   00000028   0xFB82 0x2301      SMULL    R2,R3,R2,R1
+   \   0000002C   0x6BF1             LDR      R1,[R6, #+60]
+   \   0000002E   0xFB80 0x0101      SMULL    R0,R1,R0,R1
+   \   00000032   0x0B80             LSRS     R0,R0,#+14
+   \   00000034   0x0BD2             LSRS     R2,R2,#+15
+   \   00000036   0xEA40 0x4081      ORR      R0,R0,R1, LSL #+18
+   \   0000003A   0xEA42 0x4243      ORR      R2,R2,R3, LSL #+17
+   \   0000003E   0x1389             ASRS     R1,R1,#+14
+   \   00000040   0x1810             ADDS     R0,R2,R0
+   \   00000042   0xEB41 0x31E3      ADC      R1,R1,R3, ASR #+15
+   \   00000046   0x6B72             LDR      R2,[R6, #+52]
+   \   00000048   0x686B             LDR      R3,[R5, #+4]
+   \   0000004A   0xFBC3 0x0102      SMLAL    R0,R1,R3,R2
+   \   0000004E   0xE9CD 0x0100      STRD     R0,R1,[SP, #+0]
+   \   00000052   0xEA4F 0x7BEA      ASR      R11,R10,#+31
+   \   00000056   0x6BB0             LDR      R0,[R6, #+56]
+   \   00000058   0x17C1             ASRS     R1,R0,#+31
+   \   0000005A   0xFBAA 0x2300      UMULL    R2,R3,R10,R0
+   \   0000005E   0xFB0A 0x3301      MLA      R3,R10,R1,R3
+   \   00000062   0xFB0B 0x3300      MLA      R3,R11,R0,R3
+   \   00000066   0x68A0             LDR      R0,[R4, #+8]
+   \   00000068   0xFBA0 0x7902      UMULL    R7,R9,R0,R2
+   \   0000006C   0x17C1             ASRS     R1,R0,#+31
+   \   0000006E   0xFB00 0x9903      MLA      R9,R0,R3,R9
+   \   00000072   0xFB01 0x9902      MLA      R9,R1,R2,R9
+   \   00000076   0x0BB8             LSRS     R0,R7,#+14
+   \   00000078   0xEA40 0x4289      ORR      R2,R0,R9, LSL #+18
+   \   0000007C   0xE9DD 0x0100      LDRD     R0,R1,[SP, #+0]
+   \   00000080   0x1880             ADDS     R0,R0,R2
+   \   00000082   0xEB41 0x31A9      ADC      R1,R1,R9, ASR #+14
+    155          
+    156              //saturation
+    157              if (temp64 > (mc_sint64)MC_ONE_IQ30)
+   \   00000086   0x2300             MOVS     R3,#+0
+   \   00000088   0x....             LDR.N    R2,??DataTable1_4  ;; 0x40000001
+   \   0000008A   0x4299             CMP      R1,R3
+   \   0000008C   0xDB05             BLT.N    ??ObserverPmsm__BemfObsDQ_0
+   \   0000008E   0xDC01             BGT.N    ??ObserverPmsm__BemfObsDQ_1
+   \   00000090   0x4290             CMP      R0,R2
+   \   00000092   0xD302             BCC.N    ??ObserverPmsm__BemfObsDQ_0
+    158              {
+    159                  params->Current_Est.D = MC_ONE_IQ30;
+   \                     ??ObserverPmsm__BemfObsDQ_1: (+1)
+   \   00000094   0xF04F 0x4080      MOV      R0,#+1073741824
+   \   00000098   0xE009             B.N      ??ObserverPmsm__BemfObsDQ_2
+    160              }
+    161              else if (temp64 < (mc_sint64)MC_MINUS_ONE_IQ30)
+   \                     ??ObserverPmsm__BemfObsDQ_0: (+1)
+   \   0000009A   0xF04F 0x33FF      MOV      R3,#-1
+   \   0000009E   0xF04F 0x4240      MOV      R2,#-1073741824
+   \   000000A2   0x4299             CMP      R1,R3
+   \   000000A4   0xDC03             BGT.N    ??ObserverPmsm__BemfObsDQ_2
+   \   000000A6   0xDB01             BLT.N    ??ObserverPmsm__BemfObsDQ_3
+   \   000000A8   0x4290             CMP      R0,R2
+   \   000000AA   0xD200             BCS.N    ??ObserverPmsm__BemfObsDQ_2
+    162              {
+    163                  params->Current_Est.D = MC_MINUS_ONE_IQ30;
+   \                     ??ObserverPmsm__BemfObsDQ_3: (+1)
+   \   000000AC   0x4610             MOV      R0,R2
+    164              }
+    165              else
+    166              {
+    167                  params->Current_Est.D = (mc_sint32)temp64;
+   \                     ??ObserverPmsm__BemfObsDQ_2: (+1)
+   \   000000AE   0x60B0             STR      R0,[R6, #+8]
+    168              }
+    169          
+    170          
+    171          
+    172              // ------------------------------------------------------------------------
+    173              //               Calculation params.BemfEst.Q
+    174              // ------------------------------------------------------------------------
+    175              iq_error = i_dq->Q - MC_SCALE(params->Current_Est.Q,IQ30, IQ15);
+    176          
+    177              params->Bemf_Est.Q =    Pi__PiRegNoAntiWindup(iq_error, &params->Pi_States.State_Q, &params->Pi_Parameters);
+   \   000000B0   0xF106 0x0218      ADD      R2,R6,#+24
+   \   000000B4   0x68A0             LDR      R0,[R4, #+8]
+   \   000000B6   0x68F3             LDR      R3,[R6, #+12]
+   \   000000B8   0xF106 0x0114      ADD      R1,R6,#+20
+   \   000000BC   0xEBA0 0x30E3      SUB      R0,R0,R3, ASR #+15
+   \   000000C0   0x.... 0x....      BL       Pi__PiRegNoAntiWindup
+   \   000000C4   0x4680             MOV      R8,R0
+   \   000000C6   0xF8C6 0x8004      STR      R8,[R6, #+4]
+    178          
+    179          
+    180              //------------------------------------------------------------------------
+    181              //               Calculation params.CurrentEst.Q
+    182              // ------------------------------------------------------------------------
+    183              //params->CurrentEst.Q = params->Icoeff*params->CurrentEst.Q    +    params->Ecoeff*params->BemfEst.Q +   params->Ucoeff*v_dq->Q     - params->WIcoeff*w_el*i_dq->D;
+    184              //temp64 = (sint64)IQMATH__I2Q30MULI17Q15_I2Q30(params->Icoeff, params->CurrentEst.Q);
+    185              temp64 = MC_MULT_LL_LL(params->I_Coeff, params->Current_Est.Q, IQ15, IQ30, IQ30);
+    186              temp64 = temp64 + MC_MULT_LL_LL(params->E_Coeff, params->Bemf_Est.Q,IQ14, IQ30, IQ30);
+    187              temp64 = temp64 + (mc_sint64)params->U_Coeff *(mc_sint64)v_dq->Q;
+    188              temp64 = temp64 - MC_MULT_LL_LL(params->WI_Coeff, ((mc_sint64)omega_flux * (mc_sint64)i_dq->D),IQ14, IQ30, IQ30);
+   \   000000CA   0x6B30             LDR      R0,[R6, #+48]
+   \   000000CC   0x68F1             LDR      R1,[R6, #+12]
+   \   000000CE   0x6864             LDR      R4,[R4, #+4]
+   \   000000D0   0xFB81 0x2300      SMULL    R2,R3,R1,R0
+   \   000000D4   0x6BF0             LDR      R0,[R6, #+60]
+   \   000000D6   0xFB88 0x0100      SMULL    R0,R1,R8,R0
+   \   000000DA   0x0B80             LSRS     R0,R0,#+14
+   \   000000DC   0x0BD2             LSRS     R2,R2,#+15
+   \   000000DE   0xEA40 0x4081      ORR      R0,R0,R1, LSL #+18
+   \   000000E2   0xEA42 0x4243      ORR      R2,R2,R3, LSL #+17
+   \   000000E6   0x1389             ASRS     R1,R1,#+14
+   \   000000E8   0x1817             ADDS     R7,R2,R0
+   \   000000EA   0xEB41 0x39E3      ADC      R9,R1,R3, ASR #+15
+   \   000000EE   0x6B70             LDR      R0,[R6, #+52]
+   \   000000F0   0x68A9             LDR      R1,[R5, #+8]
+   \   000000F2   0xFBC1 0x7900      SMLAL    R7,R9,R1,R0
+   \   000000F6   0x6BB0             LDR      R0,[R6, #+56]
+   \   000000F8   0x17C1             ASRS     R1,R0,#+31
+   \   000000FA   0xFBAA 0x2300      UMULL    R2,R3,R10,R0
+   \   000000FE   0xFB0A 0x3301      MLA      R3,R10,R1,R3
+   \   00000102   0xFB0B 0x3300      MLA      R3,R11,R0,R3
+   \   00000106   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   0000010A   0x17E5             ASRS     R5,R4,#+31
+   \   0000010C   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   00000110   0xFB05 0x1102      MLA      R1,R5,R2,R1
+   \   00000114   0x0B80             LSRS     R0,R0,#+14
+   \   00000116   0xEA40 0x4081      ORR      R0,R0,R1, LSL #+18
+   \   0000011A   0x1A38             SUBS     R0,R7,R0
+   \   0000011C   0xEB69 0x31A1      SBC      R1,R9,R1, ASR #+14
+    189          
+    190              //saturation
+    191              if (temp64 > (mc_sint64)MC_ONE_IQ30)
+   \   00000120   0x2300             MOVS     R3,#+0
+   \   00000122   0x....             LDR.N    R2,??DataTable1_4  ;; 0x40000001
+   \   00000124   0x4299             CMP      R1,R3
+   \   00000126   0xDB05             BLT.N    ??ObserverPmsm__BemfObsDQ_4
+   \   00000128   0xDC01             BGT.N    ??ObserverPmsm__BemfObsDQ_5
+   \   0000012A   0x4290             CMP      R0,R2
+   \   0000012C   0xD302             BCC.N    ??ObserverPmsm__BemfObsDQ_4
+    192              {
+    193                  params->Current_Est.Q = MC_MINUS_ONE_IQ30;
+   \                     ??ObserverPmsm__BemfObsDQ_5: (+1)
+   \   0000012E   0xF04F 0x4040      MOV      R0,#-1073741824
+   \   00000132   0xE009             B.N      ??ObserverPmsm__BemfObsDQ_6
+    194              }
+    195              else if (temp64 < (mc_sint64)MC_MINUS_ONE_IQ30)
+   \                     ??ObserverPmsm__BemfObsDQ_4: (+1)
+   \   00000134   0xF04F 0x33FF      MOV      R3,#-1
+   \   00000138   0xF04F 0x4240      MOV      R2,#-1073741824
+   \   0000013C   0x4299             CMP      R1,R3
+   \   0000013E   0xDC03             BGT.N    ??ObserverPmsm__BemfObsDQ_6
+   \   00000140   0xDB01             BLT.N    ??ObserverPmsm__BemfObsDQ_7
+   \   00000142   0x4290             CMP      R0,R2
+   \   00000144   0xD200             BCS.N    ??ObserverPmsm__BemfObsDQ_6
+    196              {
+    197                  params->Current_Est.Q = MC_MINUS_ONE_IQ30;
+   \                     ??ObserverPmsm__BemfObsDQ_7: (+1)
+   \   00000146   0x4610             MOV      R0,R2
+    198              }
+    199              else
+    200              {
+    201                  params->Current_Est.Q = (mc_sint32)temp64;
+   \                     ??ObserverPmsm__BemfObsDQ_6: (+1)
+   \   00000148   0x60F0             STR      R0,[R6, #+12]
+    202              }
+    203          
+    204          
+    205          
+    206              //Position Error calculation
+    207              bemf_d_15 = MC_SCALE(params->Bemf_Est.D,IQ30,IQ15);   //17.15 = 2.30>>15
+    208              bemf_q_15 = MC_SCALE(params->Bemf_Est.Q,IQ30,IQ15);     //17.15 = 2.30>>15
+    209          
+    210              params->Theta_Flux_Error = (mc_sint16)MC_ATAN2(-bemf_q_15, bemf_d_15);
+   \   0000014A   0x6830             LDR      R0,[R6, #+0]
+   \   0000014C   0x13C1             ASRS     R1,R0,#+15
+   \   0000014E   0xEA4F 0x30E8      ASR      R0,R8,#+15
+   \   00000152   0x4240             RSBS     R0,R0,#+0
+   \   00000154   0x.... 0x....      BL       MathCalc__Arctan2
+   \   00000158   0x85B0             STRH     R0,[R6, #+44]
+    211          
+    212          }
+   \   0000015A   0xB003             ADD      SP,SP,#+12
+   \   0000015C   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    213          
+    214          
+    215          
+    216          //---------------------------------------------------------------------------------------------------------------------
+    217          /**
+    218           *  @brief      Tracking observer for PMSM motor.
+    219           *  @details
+    220           *
+    221           * This module estimates the rotor flux speed and position starting from the position error calculated by the bemf observer according to the following equations:
+    222           *
+    223           *
+    224           * \f[
+    225           *  \begin{aligned}
+    226           *     & \hat{\omega}(t) = \frac{\hat{d\theta}(t)}{dt} = K_{p}\cdot {\theta_{err}}  +  K_{i}\cdot {\int{\theta_{err}\cdot{dt}}}\\
+    227           *     & \hat{\theta}(t) = {\int{\hat{\omega}(t)\cdot{dt}}}\\
+    228           *  \end{aligned}
+    229           * \f]
+    230           *
+    231           * where
+    232           *
+    233           * \f$ \hat{\omega}(t) \f$: estimated rotor flux speed
+    234           *
+    235           * \f$ \hat{\theta}(t) \f$: estimated rotor flux position
+    236           *
+    237           * \f$ \hat{\theta}_{err}(t) \f$: rotor flux estimated position error
+    238           *
+    239           * Discretizing the previous equations using backward Euler transformation:
+    240           *
+    241           * \f[
+    242           *  \begin{aligned}
+    243           *     & IntegralState(k) =  Ki*Ts\cdot{\theta_{err}(k)}  +  IntegralState(k-1)\\
+    244           *     &\hat{\omega}(k) =  Kp\cdot{\theta_{err}(k)}  +  IntegralState(k)\\
+    245           *     &\hat{\theta}(k) =  \hat{\theta}(k-1)  +  Ts\cdot {\omega}(k)\\
+    246           *  \end{aligned}
+    247           * \f]
+    248           *
+    249           * where
+    250           *
+    251           * Ts is the sampling period
+    252           *
+    253           *
+    254           *  @param[in]      theta_err  = position estimation error in Q1.15 notation
+    255           *  @param[in,out]  params = this structure contains parameters used for PI gains, estimated speed and position
+    256           *  @return            theta_inj_short   = estimated position in Q1.15 notation
+    257           */
+
+   \                                 In section .text, align 2, keep-with-next
+    258          mc_sint16 ObserverPmsm__TrackingObs(mc_sint16 theta_err, TRACKING_OBSERVER_PARAMS_TYPE *params)
+    259          {
+   \                     ObserverPmsm__TrackingObs: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x460C             MOV      R4,R1
+    260              mc_sint32 temp32;
+    261              mc_sint16 theta_inj_short;
+    262          
+    263              //Pi Execution -> Speed estimation
+    264              params->Omega_Est =    Pi__PiRegNoAntiWindup((mc_sint32)theta_err, &params->State_PI, &params->Pi_Parameters);
+   \   00000004   0x1D22             ADDS     R2,R4,#+4
+   \   00000006   0x.... 0x....      BL       Pi__PiRegNoAntiWindup
+   \   0000000A   0x62A0             STR      R0,[R4, #+40]
+    265          
+    266              temp32 = MC_SCALE(params->Omega_Est,IQ30,IQ15); //17.15 = 2.30>>15
+    267          
+    268              //Angle update according the estimated speed
+    269              theta_inj_short = (mc_sint16)Pi__IntegBE(temp32, &params->Theta_Est, &params->Integ_Parameters); // Thet_inj = Theta_inj_k + Ts*2*pi*SpeedEst
+    270          
+    271              return theta_inj_short;
+   \   0000000C   0xF104 0x0218      ADD      R2,R4,#+24
+   \   00000010   0xF104 0x012C      ADD      R1,R4,#+44
+   \   00000014   0x13C0             ASRS     R0,R0,#+15
+   \   00000016   0x.... 0x....      BL       Pi__IntegBE
+   \   0000001A   0xB200             SXTH     R0,R0
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+    272          }
+    273          
+    274          
+    275          //---------------------------------------------------------------------------------------------------------------------
+    276          /**
+    277           *  @brief      Startup observer for PMSM motor.
+    278           *  @details
+    279           *
+    280           * That observer estimates two electrical speeds according to the following equations:
+    281           *
+    282           *
+    283           * \f[
+    284           *  \begin{aligned}
+    285           *     &\hat{\omega_d} = V_d \cdot \left[-\frac{1}{L_s I_q}\right]\\
+    286           *     &\hat{\omega_d} = (V_q - V_{qAlign}) \cdot \frac{1}{\varphi_m}\\
+    287           *  \end{aligned}
+    288           * \f]
+    289           *
+    290           * where
+    291           *
+    292           * \f$ V_{d} \f$: voltage on d axis
+    293           *
+    294           * \f$ V_{q} \f$: voltage on q axis
+    295           *
+    296           * \f$ I_{q} \f$: current on q axis
+    297           *
+    298           * \f$ \hat{omega_{d}} \f$: estimated speed based on d axis equation
+    299           *
+    300           * \f$ \hat{omega_{q}} \f$: estimated speed based on q axis equation
+    301           *
+    302           * \f$ -\left[\frac{1}{L_s I_q}\right] = K1 \f$
+    303           *
+    304           * \f$ \frac{1}{\varphi_m} = K2 \f$
+    305           *
+    306           * The error is given by:
+    307           *
+    308           * \f$ \omega_{error} = \hat{\omega_{d}} - \hat{\omega_{q}} \f$
+    309           *
+    310           *
+    311           *
+    312           *  @param[in]      v_dq   = motor voltage components in d-q reference frame (aligned with rotor flux position)
+    313           *  @param[in,out]  omega_startup  = estimated motor electrical speed (d and q equations)
+    314           *  @param[in]      vq_alignment   = measured voltage during alignment phase (equal to \f$ R_s I_q \f$ )
+    315           *  @param[in]      params = this structure contains parameters used for startup observer K1, K2
+    316           *  @return         error  = \f$ \hat{\omega_{d}} - \hat{\omega_{q}} \f$
+    317           */
+
+   \                                 In section .text, align 2, keep-with-next
+    318          mc_sint32 ObserverPmsm__StartupObs(DQ_COOR_SYST_TYPE* v_dq, mc_sint32 vq_alignment, STARTUP_OBSERVER_PARAMS_TYPE* params)
+    319          {
+   \                     ObserverPmsm__StartupObs: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x4614             MOV      R4,R2
+   \   00000004   0xB088             SUB      SP,SP,#+32
+   \   00000006   0x4606             MOV      R6,R0
+    320              mc_sint32 temp;
+    321              mc_sint32 error;
+    322              DQ_COOR_SYST_TYPE v_dq_sobs;
+    323              ALPHA_BETA_COOR_SYST_TYPE v_alphabeta_sobs;
+    324              mc_sint32 theta_est;
+    325              SIN_COS_TYPE    sin_cos_theta_flux;
+    326          
+    327          
+    328              // calculation of Vs d-q components on estimated position by startup observer
+    329              theta_est = MC_SCALE(params->Theta_Est_Q, IQ30, IQ15);
+    330          
+    331              MC_SINCOS(theta_est, &sin_cos_theta_flux);
+   \   00000008   0x6BA0             LDR      R0,[R4, #+56]
+   \   0000000A   0x460D             MOV      R5,R1
+   \   0000000C   0xA900             ADD      R1,SP,#+0
+   \   0000000E   0x13C0             ASRS     R0,R0,#+15
+   \   00000010   0x.... 0x....      BL       MathCalc__SinCos
+    332          
+    333              ClrkPark__InversePark(v_dq, &v_alphabeta_sobs, &sin_cos_theta_flux);
+   \   00000014   0xAA00             ADD      R2,SP,#+0
+   \   00000016   0xA902             ADD      R1,SP,#+8
+   \   00000018   0x4630             MOV      R0,R6
+   \   0000001A   0x.... 0x....      BL       ClrkPark__InversePark
+    334          
+    335              theta_est = MC_SCALE(params->Theta_Est, IQ30, IQ15);
+    336          
+    337              MC_SINCOS(theta_est, &sin_cos_theta_flux);
+   \   0000001E   0x6B20             LDR      R0,[R4, #+48]
+   \   00000020   0xA900             ADD      R1,SP,#+0
+   \   00000022   0x13C0             ASRS     R0,R0,#+15
+   \   00000024   0x.... 0x....      BL       MathCalc__SinCos
+    338          
+    339              ClrkPark__DirectPark(&v_alphabeta_sobs, &v_dq_sobs, &sin_cos_theta_flux);
+   \   00000028   0xAA00             ADD      R2,SP,#+0
+   \   0000002A   0xA905             ADD      R1,SP,#+20
+   \   0000002C   0xA802             ADD      R0,SP,#+8
+   \   0000002E   0x.... 0x....      BL       ClrkPark__DirectPark
+    340          
+    341          
+    342          
+    343          
+    344              // Startup observer equation
+    345          
+    346              // Omega d-calculation
+    347              params->Omega_Est_D = MC_MULT_L(v_dq_sobs.D,params->K_1, IQ15, IQ15, IQ15);  //w_d = Vd/(Lq*CurrentStartup)
+   \   00000032   0x9806             LDR      R0,[SP, #+24]
+   \   00000034   0x6821             LDR      R1,[R4, #+0]
+   \   00000036   0x4348             MULS     R0,R0,R1
+   \   00000038   0x13C0             ASRS     R0,R0,#+15
+   \   0000003A   0x6420             STR      R0,[R4, #+64]
+    348          
+    349              // Omega q-calculation
+    350              temp = v_dq_sobs.Q - vq_alignment;
+    351              params->Omega_Est_Q = MC_MULT_L(temp, params->K_2, IQ15, IQ15, IQ15);       //w_q = (Vq - Rs*CurrentStartup)/(Phim)
+   \   0000003C   0x9907             LDR      R1,[SP, #+28]
+   \   0000003E   0x6862             LDR      R2,[R4, #+4]
+   \   00000040   0x1B49             SUBS     R1,R1,R5
+   \   00000042   0x4351             MULS     R1,R1,R2
+   \   00000044   0x13C9             ASRS     R1,R1,#+15
+    352          
+    353          
+    354              // angle estimation angle calculation
+    355              error = params->Omega_Est_D - params->Omega_Est_Q;
+   \   00000046   0x1A43             SUBS     R3,R0,R1
+   \   00000048   0x6461             STR      R1,[R4, #+68]
+    356          
+    357          
+    358              if(params->Omega_Est_D > STARTUP_OBSERVER_MIN_SPEED)
+   \   0000004A   0x2853             CMP      R0,#+83
+   \   0000004C   0xDB03             BLT.N    ??ObserverPmsm__StartupObs_0
+    359              {
+    360                  error = MathCalc__Arctan2(params->Omega_Est_D,error);
+   \   0000004E   0x4619             MOV      R1,R3
+   \   00000050   0x.... 0x....      BL       MathCalc__Arctan2
+   \   00000054   0x4603             MOV      R3,R0
+    361              }
+    362          
+    363              // Pi execution to reduce the error angle
+    364              params->Omega_Est = Pi__PiRegBackCalc(error, &params->State_PI, &params->Pi_Parameters);
+   \                     ??ObserverPmsm__StartupObs_0: (+1)
+   \   00000056   0xF104 0x020C      ADD      R2,R4,#+12
+   \   0000005A   0xF104 0x0108      ADD      R1,R4,#+8
+   \   0000005E   0x4618             MOV      R0,R3
+   \   00000060   0x.... 0x....      BL       Pi__PiRegBackCalc
+   \   00000064   0x63E0             STR      R0,[R4, #+60]
+    365          
+    366          
+    367              //Angle update according the estimated speed
+    368              theta_est = (mc_sint16)Pi__IntegBE(params->Omega_Est, &params->Theta_Est, &params->Integ_Parameters); // Thet_inj = Theta_inj_k + Ts*2*pi*SpeedEst
+   \   00000066   0xF104 0x0220      ADD      R2,R4,#+32
+   \   0000006A   0xF104 0x0130      ADD      R1,R4,#+48
+   \   0000006E   0x.... 0x....      BL       Pi__IntegBE
+    369          
+    370              //Angle update according the estimated speed
+    371              theta_est = (mc_sint16)Pi__IntegBE(params->Omega_Est_Q, &params->Theta_Est_Q, &params->Integ_Parameters); // Thet_inj = Theta_inj_k + Ts*2*pi*SpeedEst
+    372          
+    373          
+    374              return theta_est;
+   \   00000072   0x6C60             LDR      R0,[R4, #+68]
+   \   00000074   0xF104 0x0220      ADD      R2,R4,#+32
+   \   00000078   0xF104 0x0138      ADD      R1,R4,#+56
+   \   0000007C   0x.... 0x....      BL       Pi__IntegBE
+   \   00000080   0xB200             SXTH     R0,R0
+   \   00000082   0xB008             ADD      SP,SP,#+32
+   \   00000084   0xBD70             POP      {R4-R6,PC}       ;; return
+    375          
+    376          }
+    377          
+    378          
+
+   \                                 In section .text, align 2, keep-with-next
+    379          void ObserverPmsm__BemfObsDQF(DQ_COOR_SYST_F_TYPE* i_dq, DQ_COOR_SYST_F_TYPE* v_dq, float32 omega_flux, BEMF_OBSERVER_PARAMS_F_TYPE* params)
+    380          {
+   \                     ObserverPmsm__BemfObsDQF: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xED2D 0x8B02      VPUSH    {D8}
+   \   00000006   0x4604             MOV      R4,R0
+   \   00000008   0x4616             MOV      R6,R2
+   \   0000000A   0xEEB0 0x8A40      VMOV.F32 S16,S0
+    381              float32 temp;
+    382          
+    383              //------------------------------------------------------------------------
+    384              //               Calculation params.BemfEst.D
+    385              // ------------------------------------------------------------------------
+    386              params->Pi_D.Err = i_dq->D - params->Current_Est.D;
+   \   0000000E   0xED94 0x0A01      VLDR     S0,[R4, #+4]
+   \   00000012   0xEDD6 0x0A02      VLDR     S1,[R6, #+8]
+   \   00000016   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   0000001A   0x460D             MOV      R5,R1
+   \   0000001C   0xED86 0x0A04      VSTR     S0,[R6, #+16]
+    387              Pi__PiRegNoAntiWindupF(&params->Pi_D);
+   \   00000020   0xF106 0x0010      ADD      R0,R6,#+16
+   \   00000024   0x.... 0x....      BL       Pi__PiRegNoAntiWindupF
+    388              params->Bemf_Est.D = params->Pi_D.Out;
+   \   00000028   0xED96 0x0A06      VLDR     S0,[R6, #+24]
+   \   0000002C   0xED86 0x0A00      VSTR     S0,[R6, #0]
+    389          
+    390              // ------------------------------------------------------------------------
+    391              //               Calculation params.CurrentEst.D
+    392              // ------------------------------------------------------------------------
+    393              temp = params->I_Coeff * params->Current_Est.D;
+    394              temp = temp + params->E_Coeff * params->Bemf_Est.D;
+    395              temp = temp + params->U_Coeff * v_dq->D;
+    396              temp = temp + params->WI_Coeff * (omega_flux * i_dq->Q);
+    397          
+    398              params->Current_Est.D = temp;
+   \   00000030   0xEDD6 0x0A13      VLDR     S1,[R6, #+76]
+   \   00000034   0xED96 0x1A02      VLDR     S2,[R6, #+8]
+   \   00000038   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   0000003C   0xED96 0x1A16      VLDR     S2,[R6, #+88]
+   \   00000040   0xEE41 0x0A00      VMLA.F32 S1,S2,S0
+   \   00000044   0xED96 0x0A14      VLDR     S0,[R6, #+80]
+   \   00000048   0xED95 0x1A01      VLDR     S2,[R5, #+4]
+   \   0000004C   0xEE40 0x0A01      VMLA.F32 S1,S0,S2
+   \   00000050   0xED94 0x0A02      VLDR     S0,[R4, #+8]
+   \   00000054   0xED96 0x1A15      VLDR     S2,[R6, #+84]
+   \   00000058   0xEE28 0x0A00      VMUL.F32 S0,S16,S0
+   \   0000005C   0xEE40 0x0A01      VMLA.F32 S1,S0,S2
+   \   00000060   0xEDC6 0x0A02      VSTR     S1,[R6, #+8]
+    399          
+    400          
+    401          
+    402              // ------------------------------------------------------------------------
+    403              //               Calculation params.BemfEst.Q
+    404              // ------------------------------------------------------------------------
+    405              params->Pi_Q.Err = i_dq->Q - params->Current_Est.Q;
+   \   00000064   0xED94 0x0A02      VLDR     S0,[R4, #+8]
+   \   00000068   0xEDD6 0x0A03      VLDR     S1,[R6, #+12]
+   \   0000006C   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000070   0xED86 0x0A0B      VSTR     S0,[R6, #+44]
+    406              Pi__PiRegNoAntiWindupF(&params->Pi_Q);
+   \   00000074   0xF106 0x002C      ADD      R0,R6,#+44
+   \   00000078   0x.... 0x....      BL       Pi__PiRegNoAntiWindupF
+    407              params->Bemf_Est.Q = params->Pi_Q.Out;
+   \   0000007C   0xED96 0x0A0D      VLDR     S0,[R6, #+52]
+   \   00000080   0xED86 0x0A01      VSTR     S0,[R6, #+4]
+    408          
+    409              //------------------------------------------------------------------------
+    410              //               Calculation params.CurrentEst.Q
+    411              // ------------------------------------------------------------------------
+    412              temp = params->I_Coeff * params->Current_Est.Q;
+    413              temp = temp + (params->E_Coeff * params->Bemf_Est.Q);
+    414              temp = temp + (params->U_Coeff * v_dq->Q);
+    415              temp = temp - (params->WI_Coeff * (omega_flux * i_dq->D));
+    416          
+    417              params->Current_Est.Q = temp;
+   \   00000084   0xEDD6 0x0A13      VLDR     S1,[R6, #+76]
+   \   00000088   0xED96 0x1A03      VLDR     S2,[R6, #+12]
+   \   0000008C   0xEDD5 0x1A02      VLDR     S3,[R5, #+8]
+   \   00000090   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   00000094   0xED96 0x1A16      VLDR     S2,[R6, #+88]
+   \   00000098   0xEE41 0x0A00      VMLA.F32 S1,S2,S0
+   \   0000009C   0xED96 0x1A14      VLDR     S2,[R6, #+80]
+   \   000000A0   0xEE41 0x0A21      VMLA.F32 S1,S2,S3
+   \   000000A4   0xED94 0x1A01      VLDR     S2,[R4, #+4]
+   \   000000A8   0xEDD6 0x1A15      VLDR     S3,[R6, #+84]
+   \   000000AC   0xEE28 0x1A01      VMUL.F32 S2,S16,S2
+   \   000000B0   0xEE41 0x0A61      VMLS.F32 S1,S2,S3
+   \   000000B4   0xEDC6 0x0A03      VSTR     S1,[R6, #+12]
+    418          
+    419              //Position Error calculation
+    420              params->Theta_Flux_Error = MathCalc__Arctan2F(-(params->Bemf_Est.Q), params->Bemf_Est.D);
+   \   000000B8   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   000000BC   0xEDD6 0x0A00      VLDR     S1,[R6, #0]
+   \   000000C0   0x.... 0x....      BL       MathCalc__Arctan2F
+   \   000000C4   0xED86 0x0A12      VSTR     S0,[R6, #+72]
+    421          }
+   \   000000C8   0xECBD 0x8B02      VPOP     {D8}
+   \   000000CC   0xBD70             POP      {R4-R6,PC}       ;; return
+    422          
+
+   \                                 In section .text, align 4, keep-with-next
+    423          float32 ObserverPmsm__TrackingObsF(float32 theta_err, TRACKING_OBSERVER_PARAMS_F_TYPE *params)
+    424          {
+   \                     ObserverPmsm__TrackingObsF: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x4604             MOV      R4,R0
+    425              //Pi Execution -> Speed estimation
+    426              params->Pi.Err = theta_err;
+   \   00000004   0xED84 0x0A00      VSTR     S0,[R4, #0]
+    427              Pi__PiRegNoAntiWindupF(&params->Pi);
+   \   00000008   0x.... 0x....      BL       Pi__PiRegNoAntiWindupF
+    428              params->Omega_Est = params->Pi.Out;
+   \   0000000C   0xED94 0x0A02      VLDR     S0,[R4, #+8]
+   \   00000010   0xED84 0x0A0A      VSTR     S0,[R4, #+40]
+    429          
+    430              //Angle update according the estimated speed
+    431              params->Theta_Est = params->Theta_Est + params->Omega_Est * (params->Integ_Parameters.Ki); // Thet_inj = Theta_inj_k + Ts*SpeedEst
+   \   00000014   0xED94 0x1A07      VLDR     S2,[R4, #+28]
+   \   00000018   0xEDD4 0x0A0B      VLDR     S1,[R4, #+44]
+   \   0000001C   0xEE40 0x0A01      VMLA.F32 S1,S0,S2
+    432          
+    433              if(params->Theta_Est > PI)
+   \   00000020   0xED9F 0x....      VLDR.W   S0,??DataTable1  ;; 0x40490fdc
+   \   00000024   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000028   0xEDC4 0x0A0B      VSTR     S1,[R4, #+44]
+   \   0000002C   0xEEF1 0xFA10      FMSTAT   
+   \   00000030   0xBFA4             ITT      GE 
+    434              {
+    435                  params->Theta_Est -= (2.0f * PI);
+   \   00000032   0xED9F 0x....      VLDRGE.W S0,??DataTable1_1  ;; 0xc0c90fdb
+   \   00000036   0xEE70 0x0A80      VADDGE.F32 S1,S1,S0
+    436              }
+    437          
+    438              if(params->Theta_Est < (-PI))
+   \   0000003A   0xED9F 0x....      VLDR.W   S0,??DataTable1_2  ;; 0xc0490fdb
+   \   0000003E   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   00000042   0xEEF1 0xFA10      FMSTAT   
+   \   00000046   0xBF44             ITT      MI 
+    439              {
+    440                  params->Theta_Est += (2.0f * PI);
+   \   00000048   0xED9F 0x....      VLDRMI.W S0,??DataTable1_3  ;; 0x40c90fdb
+   \   0000004C   0xEE70 0x0A80      VADDMI.F32 S1,S1,S0
+   \   00000050   0xEDC4 0x0A0B      VSTR     S1,[R4, #+44]
+    441              }
+    442          
+    443              return params->Theta_Est;
+   \   00000054   0xED94 0x0A0B      VLDR     S0,[R4, #+44]
+   \   00000058   0xBD10             POP      {R4,PC}          ;; return
+    444          }
+    445          
+    446          
+
+   \                                 In section .text, align 2, keep-with-next
+    447          float32 ObserverPmsm__StartupObsF(DQ_COOR_SYST_F_TYPE* v_dq, float32 vq_alignment, STARTUP_OBSERVER_PARAMS_F_TYPE* params)
+    448          {
+   \                     ObserverPmsm__StartupObsF: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0xED2D 0x8B02      VPUSH    {D8}
+   \   0000000A   0xB088             SUB      SP,SP,#+32
+   \   0000000C   0x4604             MOV      R4,R0
+   \   0000000E   0xEEB0 0x8A40      VMOV.F32 S16,S0
+    449              float32 temp;
+    450              float32 error;
+    451              DQ_COOR_SYST_F_TYPE v_dq_sobs;
+    452              ALPHA_BETA_COOR_SYST_F_TYPE v_alphabeta_sobs;
+    453              SIN_COS_F_TYPE    sin_cos_theta_flux;
+    454          
+    455              // calculation of Vs d-q components on estimated position by startup observer
+    456              MC_SINCOS_F(params->Theta_Est_Q, &sin_cos_theta_flux);
+   \   00000012   0xA800             ADD      R0,SP,#+0
+   \   00000014   0xED95 0x0A0E      VLDR     S0,[R5, #+56]
+   \   00000018   0x.... 0x....      BL       MathCalc__SinCosF
+    457              ClrkPark__InverseParkF(v_dq, &v_alphabeta_sobs, &sin_cos_theta_flux);
+   \   0000001C   0xAA00             ADD      R2,SP,#+0
+   \   0000001E   0xA902             ADD      R1,SP,#+8
+   \   00000020   0x4620             MOV      R0,R4
+   \   00000022   0x.... 0x....      BL       ClrkPark__InverseParkF
+    458          
+    459              MC_SINCOS_F(params->Theta_Est, &sin_cos_theta_flux);
+   \   00000026   0xA800             ADD      R0,SP,#+0
+   \   00000028   0xED95 0x0A0C      VLDR     S0,[R5, #+48]
+   \   0000002C   0x.... 0x....      BL       MathCalc__SinCosF
+    460              ClrkPark__DirectParkF(&v_alphabeta_sobs, &v_dq_sobs, &sin_cos_theta_flux);
+   \   00000030   0xAA00             ADD      R2,SP,#+0
+   \   00000032   0xA905             ADD      R1,SP,#+20
+   \   00000034   0xA802             ADD      R0,SP,#+8
+   \   00000036   0x.... 0x....      BL       ClrkPark__DirectParkF
+    461          
+    462          
+    463              // Startup observer equation
+    464          
+    465              // Omega d-calculation
+    466              params->Omega_Est_D = v_dq_sobs.D * params->K_1;  //w_d = Vd/(Lq*CurrentStartup)
+   \   0000003A   0xED9D 0x0A06      VLDR     S0,[SP, #+24]
+   \   0000003E   0xEDD5 0x0A00      VLDR     S1,[R5, #0]
+   \   00000042   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000046   0xED85 0x0A10      VSTR     S0,[R5, #+64]
+    467          
+    468              // Omega q-calculation
+    469              temp = v_dq_sobs.Q - vq_alignment;
+    470              params->Omega_Est_Q = temp * params->K_2;       //w_q = (Vq - Rs*CurrentStartup)/(Phim)
+    471          
+    472              // angle estimation angle calculation
+    473              error = params->Omega_Est_D - params->Omega_Est_Q;
+    474          
+    475              // Pi execution to reduce the error angle
+    476              params->Pi.Err = error;
+    477              Pi__CalcPiBackCalcF(&params->Pi);
+   \   0000004A   0xF105 0x0008      ADD      R0,R5,#+8
+   \   0000004E   0xEDDD 0x0A07      VLDR     S1,[SP, #+28]
+   \   00000052   0xED95 0x1A01      VLDR     S2,[R5, #+4]
+   \   00000056   0xEE70 0x0AC8      VSUB.F32 S1,S1,S16
+   \   0000005A   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   0000005E   0xEDC5 0x0A11      VSTR     S1,[R5, #+68]
+   \   00000062   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000066   0xED85 0x0A02      VSTR     S0,[R5, #+8]
+   \   0000006A   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    478              params->Omega_Est = params->Pi.Out;
+   \   0000006E   0xED95 0x0A04      VLDR     S0,[R5, #+16]
+   \   00000072   0xED85 0x0A0F      VSTR     S0,[R5, #+60]
+    479          
+    480              //Angle update according the estimated speed
+    481              params->Theta_Est = params->Theta_Est + params->Omega_Est * (params->Integ_Parameters.Ki); // Thet_inj = Theta_inj_k + Ts*SpeedEst
+   \   00000076   0xEDD5 0x0A09      VLDR     S1,[R5, #+36]
+   \   0000007A   0xED95 0x1A0C      VLDR     S2,[R5, #+48]
+   \   0000007E   0xEE00 0x1A20      VMLA.F32 S2,S0,S1
+   \   00000082   0xED85 0x1A0C      VSTR     S2,[R5, #+48]
+    482          
+    483              //Angle update according the estimated speed
+    484              params->Theta_Est_Q = params->Theta_Est_Q + params->Omega_Est_Q * (params->Integ_Parameters.Ki); // Thet_inj = Theta_inj_k + Ts*SpeedEst
+   \   00000086   0xED95 0x1A11      VLDR     S2,[R5, #+68]
+   \   0000008A   0xED95 0x0A0E      VLDR     S0,[R5, #+56]
+   \   0000008E   0xEE01 0x0A20      VMLA.F32 S0,S2,S1
+   \   00000092   0xED85 0x0A0E      VSTR     S0,[R5, #+56]
+    485          
+    486              return params->Theta_Est_Q;
+   \   00000096   0xB008             ADD      SP,SP,#+32
+   \   00000098   0xECBD 0x8B02      VPOP     {D8}
+   \   0000009C   0xB001             ADD      SP,SP,#+4
+   \   0000009E   0xBD30             POP      {R4,R5,PC}       ;; return
+    487          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \   00000000   0x40490FDC         DC32     0x40490fdc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \   00000000   0xC0C90FDB         DC32     0xc0c90fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \   00000000   0xC0490FDB         DC32     0xc0490fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \   00000000   0x40C90FDB         DC32     0x40c90fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \   00000000   0x40000001         DC32     0x40000001
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   ObserverPmsm__BemfObsDQ
+        48   -> MathCalc__Arctan2
+        48   -> Pi__PiRegNoAntiWindup
+      24   ObserverPmsm__BemfObsDQF
+        24   -> MathCalc__Arctan2F
+        24   -> Pi__PiRegNoAntiWindupF
+       0   ObserverPmsm__Initialize
+      48   ObserverPmsm__StartupObs
+        48   -> ClrkPark__DirectPark
+        48   -> ClrkPark__InversePark
+        48   -> MathCalc__Arctan2
+        48   -> MathCalc__SinCos
+        48   -> Pi__IntegBE
+        48   -> Pi__PiRegBackCalc
+      56   ObserverPmsm__StartupObsF
+        56   -> ClrkPark__DirectParkF
+        56   -> ClrkPark__InverseParkF
+        56   -> MathCalc__SinCosF
+        56   -> Pi__CalcPiBackCalcF
+       8   ObserverPmsm__TrackingObs
+         8   -> Pi__IntegBE
+         8   -> Pi__PiRegNoAntiWindup
+       8   ObserverPmsm__TrackingObsF
+         8   -> Pi__PiRegNoAntiWindupF
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+     352  ObserverPmsm__BemfObsDQ
+     206  ObserverPmsm__BemfObsDQF
+       2  ObserverPmsm__Initialize
+     134  ObserverPmsm__StartupObs
+     160  ObserverPmsm__StartupObsF
+      30  ObserverPmsm__TrackingObs
+      90  ObserverPmsm__TrackingObsF
+
+ 
+ 994 bytes in section .text
+ 
+ 994 bytes of CODE memory
+
+Errors: none
+Warnings: none

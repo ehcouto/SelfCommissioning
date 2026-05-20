@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_board>
+  <pass>
+    <loader>$TOOLKIT_DIR$\config\flashloader\Freescale\FlashKxxFxxx16K_NoPLL.flash</loader>
+    <range>CODE 0x00000000 0x0001ffff</range>
+    <args>--enable_config_write</args>
+  </pass>
+</flash_board>

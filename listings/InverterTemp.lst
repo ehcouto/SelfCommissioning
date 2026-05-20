@@ -1,0 +1,740 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:16
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\InverterTemp\InverterTemp.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        InverterTemp.obj -l ..\listings\InverterTemp.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\InverterTemp\InverterTemp.c
+#    List file    =  ..\listings\InverterTemp.lst
+#    Object file  =  InverterTemp.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\InverterTemp\InverterTemp.c
+      1          /**
+      2           *  @file       InverterTemp.c
+      3           *
+      4           *  @brief      Inverter (silicon) NTC temperature
+      5           *
+      6           *  @details    Reads the analog input connected to an external NTC attached to the inverter silicon.
+      7           *              This module reads the analog data, filters it out and scale the analog temperature
+      8           *              in to Celsius degree.
+      9           *
+     10           *  @section    Applicable_Documents
+     11           *					List here all the applicable documents if needed. <tr>	
+     12           *
+     13           *  $Header: InverterTemp.c 1.6 2016/01/13 20:08:12CET Marcelo Silva (SILVAMC) Exp  $
+     14           *
+     15           *  @copyright  Copyright 2014-$Date: 2016/01/13 20:08:12CET $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     16           */
+     17          //---------------------------------------------------------------------------------------------------------------------
+     18          //---------------------------------------------------------------------------------------------------------------------
+     19          
+     20          
+     21          //-------------------------------------- Include Files ----------------------------------------------------------------
+     22          #include "C_Extensions.h"
+     23          #include "InverterTemp.h"
+     24          #include "InverterTemp_prv.h"
+
+   \                                 In section .data, align 4
+   \   __absolute struct <unnamed> Inverter_Temp_LUT_ST[151]
+   \                     Inverter_Temp_LUT_ST:
+   \   00000000   0x00000046         DC32 70, 3, 90, 6, 110, 8, 130, 11, 150, 13, 170, 16, 190, 18, 210, 20
+   \              0x00000003   
+   \              0x0000005A   
+   \              0x00000006   
+   \              0x0000006E   
+   \              0x00000008   
+   \              0x00000082   
+   \              0x0000000B   
+   \              0x00000096   
+   \              0x0000000D   
+   \              0x000000AA   
+   \              0x00000010   
+   \              0x000000BE   
+   \              0x00000012   
+   \              0x000000D2   
+   \              0x00000014   
+   \   00000040   0x000000E6         DC32 230, 22, 250, 24, 270, 26, 290, 28, 310, 30, 330, 32, 350, 33, 370
+   \              0x00000016   
+   \              0x000000FA   
+   \              0x00000018   
+   \              0x0000010E   
+   \              0x0000001A   
+   \              0x00000122   
+   \              0x0000001C   
+   \              0x00000136   
+   \              0x0000001E   
+   \              0x0000014A   
+   \              0x00000020   
+   \              0x0000015E   
+   \              0x00000021   
+   \              0x00000172   
+   \   0000007C   0x00000023         DC32 35, 390, 37, 410, 38, 430, 39, 450, 41, 470, 42, 490, 44, 510, 45
+   \              0x00000186   
+   \              0x00000025   
+   \              0x0000019A   
+   \              0x00000026   
+   \              0x000001AE   
+   \              0x00000027   
+   \              0x000001C2   
+   \              0x00000029   
+   \              0x000001D6   
+   \              0x0000002A   
+   \              0x000001EA   
+   \              0x0000002C   
+   \              0x000001FE   
+   \              0x0000002D   
+   \   000000B8   0x00000212         DC32 530, 46, 550, 47, 570, 48, 590, 49, 610, 50, 630, 51, 650, 52, 670
+   \              0x0000002E   
+   \              0x00000226   
+   \              0x0000002F   
+   \              0x0000023A   
+   \              0x00000030   
+   \              0x0000024E   
+   \              0x00000031   
+   \              0x00000262   
+   \              0x00000032   
+   \              0x00000276   
+   \              0x00000033   
+   \              0x0000028A   
+   \              0x00000034   
+   \              0x0000029E   
+   \   000000F4   0x00000035         DC32 53, 690, 54, 710, 55, 730, 56, 750, 57, 770, 58, 790, 59, 810, 60
+   \              0x000002B2   
+   \              0x00000036   
+   \              0x000002C6   
+   \              0x00000037   
+   \              0x000002DA   
+   \              0x00000038   
+   \              0x000002EE   
+   \              0x00000039   
+   \              0x00000302   
+   \              0x0000003A   
+   \              0x00000316   
+   \              0x0000003B   
+   \              0x0000032A   
+   \              0x0000003C   
+   \   00000130   0x0000033E         DC32 830, 60, 850, 61, 870, 62, 890, 63, 910, 64, 930, 64, 950, 65, 970
+   \              0x0000003C   
+   \              0x00000352   
+   \              0x0000003D   
+   \              0x00000366   
+   \              0x0000003E   
+   \              0x0000037A   
+   \              0x0000003F   
+   \              0x0000038E   
+   \              0x00000040   
+   \              0x000003A2   
+   \              0x00000040   
+   \              0x000003B6   
+   \              0x00000041   
+   \              0x000003CA   
+   \   0000016C   0x00000042         DC32 66, 990, 66, 1010, 67, 1030, 68, 1050, 69, 1070, 69, 1090, 70
+   \              0x000003DE   
+   \              0x00000042   
+   \              0x000003F2   
+   \              0x00000043   
+   \              0x00000406   
+   \              0x00000044   
+   \              0x0000041A   
+   \              0x00000045   
+   \              0x0000042E   
+   \              0x00000045   
+   \              0x00000442   
+   \              0x00000046   
+   \   000001A0   0x00000456         DC32 1110, 71, 1130, 71, 1150, 72, 1170, 73, 1190, 73, 1210, 74, 1230
+   \              0x00000047   
+   \              0x0000046A   
+   \              0x00000047   
+   \              0x0000047E   
+   \              0x00000048   
+   \              0x00000492   
+   \              0x00000049   
+   \              0x000004A6   
+   \              0x00000049   
+   \              0x000004BA   
+   \              0x0000004A   
+   \              0x000004CE   
+   \   000001D4   0x0000004B         DC32 75, 1250, 75, 1270, 76, 1290, 77, 1310, 77, 1330, 78, 1350, 79
+   \              0x000004E2   
+   \              0x0000004B   
+   \              0x000004F6   
+   \              0x0000004C   
+   \              0x0000050A   
+   \              0x0000004D   
+   \              0x0000051E   
+   \              0x0000004D   
+   \              0x00000532   
+   \              0x0000004E   
+   \              0x00000546   
+   \              0x0000004F   
+   \   00000208   0x0000055A         DC32 1370, 79, 1390, 80, 1410, 80, 1430, 81, 1450, 82, 1470, 82, 1490
+   \              0x0000004F   
+   \              0x0000056E   
+   \              0x00000050   
+   \              0x00000582   
+   \              0x00000050   
+   \              0x00000596   
+   \              0x00000051   
+   \              0x000005AA   
+   \              0x00000052   
+   \              0x000005BE   
+   \              0x00000052   
+   \              0x000005D2   
+   \   0000023C   0x00000053         DC32 83, 1510, 84, 1530, 84, 1550, 85, 1570, 86, 1590, 86, 1610, 87
+   \              0x000005E6   
+   \              0x00000054   
+   \              0x000005FA   
+   \              0x00000054   
+   \              0x0000060E   
+   \              0x00000055   
+   \              0x00000622   
+   \              0x00000056   
+   \              0x00000636   
+   \              0x00000056   
+   \              0x0000064A   
+   \              0x00000057   
+   \   00000270   0x0000065E         DC32 1630, 88, 1650, 88, 1670, 89, 1690, 90, 1710, 90, 1730, 91, 1750
+   \              0x00000058   
+   \              0x00000672   
+   \              0x00000058   
+   \              0x00000686   
+   \              0x00000059   
+   \              0x0000069A   
+   \              0x0000005A   
+   \              0x000006AE   
+   \              0x0000005A   
+   \              0x000006C2   
+   \              0x0000005B   
+   \              0x000006D6   
+   \   000002A4   0x0000005B         DC32 91, 1770, 92, 1790, 93, 1810, 93, 1830, 94, 1850, 95, 1870, 95
+   \              0x000006EA   
+   \              0x0000005C   
+   \              0x000006FE   
+   \              0x0000005D   
+   \              0x00000712   
+   \              0x0000005D   
+   \              0x00000726   
+   \              0x0000005E   
+   \              0x0000073A   
+   \              0x0000005F   
+   \              0x0000074E   
+   \              0x0000005F   
+   \   000002D8   0x00000762         DC32 1890, 96, 1910, 97, 1930, 97, 1950, 98, 1970, 98, 1990, 99, 2010
+   \              0x00000060   
+   \              0x00000776   
+   \              0x00000061   
+   \              0x0000078A   
+   \              0x00000061   
+   \              0x0000079E   
+   \              0x00000062   
+   \              0x000007B2   
+   \              0x00000062   
+   \              0x000007C6   
+   \              0x00000063   
+   \              0x000007DA   
+   \   0000030C   0x00000064         DC32 100, 2030, 100, 2050, 101, 2070, 102, 2090, 102, 2110, 103, 2130
+   \              0x000007EE   
+   \              0x00000064   
+   \              0x00000802   
+   \              0x00000065   
+   \              0x00000816   
+   \              0x00000066   
+   \              0x0000082A   
+   \              0x00000066   
+   \              0x0000083E   
+   \              0x00000067   
+   \              0x00000852   
+   \   0000033C   0x00000068         DC32 104, 2150, 104, 2170, 105, 2190, 105, 2210, 106, 2230, 107, 2250
+   \              0x00000866   
+   \              0x00000068   
+   \              0x0000087A   
+   \              0x00000069   
+   \              0x0000088E   
+   \              0x00000069   
+   \              0x000008A2   
+   \              0x0000006A   
+   \              0x000008B6   
+   \              0x0000006B   
+   \              0x000008CA   
+   \   0000036C   0x0000006B         DC32 107, 2270, 108, 2290, 109, 2310, 109, 2330, 110, 2350, 111, 2370
+   \              0x000008DE   
+   \              0x0000006C   
+   \              0x000008F2   
+   \              0x0000006D   
+   \              0x00000906   
+   \              0x0000006D   
+   \              0x0000091A   
+   \              0x0000006E   
+   \              0x0000092E   
+   \              0x0000006F   
+   \              0x00000942   
+   \   0000039C   0x00000070         DC32 112, 2390, 112, 2410, 113, 2430, 114, 2450, 114, 2470, 115, 2490
+   \              0x00000956   
+   \              0x00000070   
+   \              0x0000096A   
+   \              0x00000071   
+   \              0x0000097E   
+   \              0x00000072   
+   \              0x00000992   
+   \              0x00000072   
+   \              0x000009A6   
+   \              0x00000073   
+   \              0x000009BA   
+   \   000003CC   0x00000074         DC32 116, 2510, 117, 2530, 117, 2550, 118, 2570, 119, 2590, 120, 2610
+   \              0x000009CE   
+   \              0x00000075   
+   \              0x000009E2   
+   \              0x00000075   
+   \              0x000009F6   
+   \              0x00000076   
+   \              0x00000A0A   
+   \              0x00000077   
+   \              0x00000A1E   
+   \              0x00000078   
+   \              0x00000A32   
+   \   000003FC   0x00000079         DC32 121, 2630, 122, 2650, 123, 2670, 124, 2690, 125, 2710, 126, 2730
+   \              0x00000A46   
+   \              0x0000007A   
+   \              0x00000A5A   
+   \              0x0000007B   
+   \              0x00000A6E   
+   \              0x0000007C   
+   \              0x00000A82   
+   \              0x0000007D   
+   \              0x00000A96   
+   \              0x0000007E   
+   \              0x00000AAA   
+   \   0000042C   0x0000007F         DC32 127, 2750, 128, 2770, 129, 2790, 130, 2810, 131, 2830, 132, 2850
+   \              0x00000ABE   
+   \              0x00000080   
+   \              0x00000AD2   
+   \              0x00000081   
+   \              0x00000AE6   
+   \              0x00000082   
+   \              0x00000AFA   
+   \              0x00000083   
+   \              0x00000B0E   
+   \              0x00000084   
+   \              0x00000B22   
+   \   0000045C   0x00000085         DC32 133, 2870, 135, 2890, 136, 2910, 138, 2930, 139, 2950, 140, 2970
+   \              0x00000B36   
+   \              0x00000087   
+   \              0x00000B4A   
+   \              0x00000088   
+   \              0x00000B5E   
+   \              0x0000008A   
+   \              0x00000B72   
+   \              0x0000008B   
+   \              0x00000B86   
+   \              0x0000008C   
+   \              0x00000B9A   
+   \   0000048C   0x0000008E         DC32 142, 2990, 144, 3010, 145, 3030, 147, 3050, 149, 3070, 151
+   \              0x00000BAE   
+   \              0x00000090   
+   \              0x00000BC2   
+   \              0x00000091   
+   \              0x00000BD6   
+   \              0x00000093   
+   \              0x00000BEA   
+   \              0x00000095   
+   \              0x00000BFE   
+   \              0x00000097   
+
+   \                                 In section .data, align 4
+   \   __absolute sint32 Inv_Temp_LUT_X_Inv_Step_ST
+   \                     Inv_Temp_LUT_X_Inv_Step_ST:
+   \   00000000   0x00000666         DC32 1638
+
+   \                                 In section .data, align 4
+   \   __absolute sint32 SizeOf_Inv_Temp_LUT_ST
+   \                     SizeOf_Inv_Temp_LUT_ST:
+   \   00000000   0x00000097         DC32 151
+
+   \                                 In section .data, align 4
+   \   __absolute struct <unnamed> Inverter_Temp_LUT_Mitsubishi[3]
+   \                     Inverter_Temp_LUT_Mitsubishi:
+   \   00000000   0x0000024A         DC32 586, 0, 2327, 55, 4068, 110
+   \              0x00000000   
+   \              0x00000917   
+   \              0x00000037   
+   \              0x00000FE4   
+   \              0x0000006E   
+
+   \                                 In section .data, align 4
+   \   __absolute sint32 Inv_Temp_LUT_X_Inv_Step_Mitsubishi
+   \                     Inv_Temp_LUT_X_Inv_Step_Mitsubishi:
+   \   00000000   0x00000012         DC32 18
+
+   \                                 In section .data, align 4
+   \   __absolute sint32 SizeOf_Inv_Temp_LUT_Mitsubishi
+   \                     SizeOf_Inv_Temp_LUT_Mitsubishi:
+   \   00000000   0x00000003         DC32 3
+
+   \                                 In section .data, align 4
+   \   __absolute struct <unnamed> Inverter_Temp_LUT_Ext_Array[2]
+   \                     Inverter_Temp_LUT_Ext_Array:
+   \   00000000   0x........         DC32 Inverter_Temp_LUT_ST, Inv_Temp_LUT_X_Inv_Step_ST
+   \              0x........   
+   \   00000008   0x........         DC32 SizeOf_Inv_Temp_LUT_ST
+   \   0000000C   0x023A             DC16 570
+   \   0000000E   0x00 0x00          DC8 0, 0
+   \   00000010   0x........         DC32 Inverter_Temp_LUT_Mitsubishi, Inv_Temp_LUT_X_Inv_Step_Mitsubishi
+   \              0x........   
+   \   00000018   0x........         DC32 SizeOf_Inv_Temp_LUT_Mitsubishi
+   \   0000001C   0x0561             DC16 1377
+   \   0000001E   0x00 0x00          DC8 0, 0
+     25          #include "Filters.h"
+     26          #include "MathCalc.h"
+     27          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     28          
+     29          
+     30          #ifdef MCI_MEASURE_INVERTER_TEMP
+     31          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     32          
+     33          #ifndef INVERTER_TEMP_SETTINGFILE_SUPPORT
+     34              #define INVERTER_TEMP_SETTINGFILE_SUPPORT DISABLED
+     35          #endif
+     36          
+     37          //! History of the filter
+     38          static sint32 Temperature_Sum;
+     39          
+     40          //! Output of the lookup table
+     41          static sint32 Temperature_Degrees;
+     42          
+     43          //! Raw ADC filtered value
+     44          static sint32 Temperature_Raw;
+     45          
+     46          static MATHCALC_LUT_EXT_TYPE Actual_Inverter_Temp_Ext_LUT;
+     47          
+     48          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == ENABLED)
+     49          static INVERTER_TEMP_PARAMS_DISPL_TYPE* InverterTemp_Params_Displ;
+     50          
+     51          static BOOL_TYPE Inverter_Temp_Params_Loaded;
+     52          #endif // INVERTER_TEMP_SETTINGFILE_SUPPORT
+     53          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     54          
+     55          
+     56          //=====================================================================================================================
+     57          //-------------------------------------- Public Functions -------------------------------------------------------------
+     58          //=====================================================================================================================
+     59          
+     60          
+     61          
+     62          //---------------------------------------------------------------------------------------------------------------------
+     63          /**
+     64           *  @brief      It Initializes the module InverterTemp and its variables
+     65           *
+     66           */
+     67          void InverterTemp__Initialize(void)
+     68          {
+     69              // Initialize the ADC engine
+     70              ATOD_INITIALIZE();
+     71              // Start the ADC engine
+     72              ATOD_START_CONVERSION();
+     73          
+     74          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == ENABLED)
+     75              Inverter_Temp_Params_Loaded = FALSE;
+     76              Temperature_Degrees = 0;
+     77              Temperature_Sum = 0;
+     78              Temperature_Raw = 0;
+     79          #else
+     80              // LUT initialization
+     81              Actual_Inverter_Temp_Ext_LUT = Inverter_Temp_LUT_Ext_Array[INVERTER_TEMP_DEFAULT_LUT].ext_lut;
+     82          
+     83              // Initialize the temperatures to the default values
+     84              Temperature_Sum = Inverter_Temp_LUT_Ext_Array[INVERTER_TEMP_DEFAULT_LUT].default_temp_adc  << INVERTER_TEMP_LPF_SHIFT;
+     85              Temperature_Raw = Inverter_Temp_LUT_Ext_Array[INVERTER_TEMP_DEFAULT_LUT].default_temp_adc;
+     86          
+     87              Temperature_Degrees = MathCalc__GetInterpolationFast(Temperature_Raw, &Actual_Inverter_Temp_Ext_LUT);
+     88          #endif
+     89          }
+     90          
+     91          
+     92          //---------------------------------------------------------------------------------------------------------------------
+     93          /*
+     94           *  @brief      Handle the temperature read from the analog channel. It shall only
+     95           *              filter the analog data read.
+     96           *              Rate: it can be defined according to the setting the LPF filter shift.
+     97           */
+     98          void InverterTemp__Handler(void)
+     99          {
+    100              sint16 temp_adc;
+    101          
+    102          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == ENABLED)
+    103              if (Inverter_Temp_Params_Loaded)
+    104              {
+    105          #endif
+    106                  // Read the adc inverter temperature channel
+    107                  temp_adc = ATOD_GET_TEMPERATURE();
+    108          
+    109                  // Start the adc convertion to the next read
+    110                  ATOD_START_CONVERSION();
+    111          
+    112                  // Low pass filter the converted adc data
+    113                  FILTERS__FILTER_CALC(temp_adc, Temperature_Sum, INVERTER_TEMP_LPF_SHIFT);
+    114          
+    115                  // Get filtered adc value
+    116                  Temperature_Raw = FILTERS__FILTER_GET_FILTERED_VAR(Temperature_Sum, INVERTER_TEMP_LPF_SHIFT);
+    117          
+    118                  // LUT and interpolation
+    119                  Temperature_Degrees = MathCalc__GetInterpolationFast(Temperature_Raw, &Actual_Inverter_Temp_Ext_LUT);
+    120          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == ENABLED)
+    121              }
+    122          #endif
+    123          }
+    124          
+    125          
+    126          
+    127          
+    128          
+    129          //---------------------------------------------------------------------------------------------------------------------
+    130          /*
+    131           *  @brief      Handle the temperature read from the analog channel. It shall only
+    132           *              filter the analog data read.
+    133           *              Rate: it can be defined according to the setting the LPF filter shift.
+    134           */
+    135          void InverterTemp__PwmHandler(void)
+    136          {
+    137              INVERTER_TEMP_START__MANUAL_CONVERSION();
+    138          }
+    139          
+    140          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == DISABLED)
+    141          //---------------------------------------------------------------------------------------------------------------------
+    142          /*
+    143           *  @brief      Set the LUT for temperature conversion.
+    144           *	
+    145           *	@details	This function will set the LUT for temperature conversion according
+    146           *				to the specified index. If the index is out of range, the set will be
+    147           *				discarded. \n
+    148           *				The temperature will also be initialized to the specified value.
+    149           *	
+    150           *	@param[in]	lut_index The index to the LUT to set, as defined in the prm
+    151           */
+    152          void InverterTemp__SetLUT(INVERTERTEMP_LUT_INDEX_TYPE lut_index)
+    153          {
+    154              if (lut_index < sizeof(Inverter_Temp_LUT_Ext_Array)/sizeof(INVERTER_TEMP_LUT))
+    155              {
+    156                  Actual_Inverter_Temp_Ext_LUT = Inverter_Temp_LUT_Ext_Array[lut_index].ext_lut;
+    157                  Temperature_Sum = Inverter_Temp_LUT_Ext_Array[lut_index].default_temp_adc;
+    158                  Temperature_Raw = Inverter_Temp_LUT_Ext_Array[lut_index].default_temp_adc;
+    159              }
+    160          }
+    161          #endif // INVERTER_TEMP_SETTINGFILE_SUPPORT
+    162          //---------------------------------------------------------------------------------------------------------------------
+    163          /*
+    164           *  @brief      Get the inverter temperature.
+    165           *
+    166           *  @return     Inverter temperature [degC x65536 or <<16]
+    167           */
+    168          sint32 InverterTemp__GetInverterTemp_s16(void)
+    169          {
+    170              return(Temperature_Degrees << 16);
+    171          }
+    172          
+    173          
+    174          
+    175          //---------------------------------------------------------------------------------------------------------------------
+    176          /**
+    177           * @brief       Get the ADC read of the inverter temperature
+    178           * @return      ADC result of the temperature sensor [ADC counts]
+    179           */
+    180          sint16 InverterTemp__GetInverterRawTemp(void)
+    181          {
+    182              return(Temperature_Raw);
+    183          }
+    184          
+    185          
+    186          
+    187          //---------------------------------------------------------------------------------------------------------------------
+    188          /*
+    189           *  @brief  Compare the given temperature to a given threshold. There is no need to
+    190           *          calculate the analog temperature.
+    191           *  @param  [input] temperature [degC x65536 or <<16]
+    192           *  @return [output] TRUE: temperature is equal or higher than the threshold
+    193           *  @return [output] FALSE: temperature is lower than the threshold
+    194           */
+    195          BOOL_TYPE InverterTemp__AboveThreshold_s16(sint32 temp_shift_16)
+    196          {
+    197              sint32 temp_thr;
+    198              BOOL_TYPE ret_val;
+    199          
+    200              // Scale the given threshold
+    201              temp_thr = (temp_shift_16>>16);
+    202          
+    203              // Check the threshold
+    204              if(Temperature_Degrees >= temp_thr)
+    205              {
+    206                  ret_val = TRUE;
+    207              }
+    208              else
+    209              {
+    210                  ret_val = FALSE;
+    211              }
+    212          
+    213              return(ret_val);
+    214          }
+    215          
+    216          #if (INVERTER_TEMP_SETTINGFILE_SUPPORT == ENABLED)
+    217          //---------------------------------------------------------------------------------------------------------------------
+    218          /**
+    219           *  @brief      Write the address of Inverter Temp parameters.
+    220           *  @details
+    221           *
+    222           * @return  TRUE - value accepted
+    223           *          FALSE - value denied - default answer.
+    224           */
+    225          BOOL_TYPE InverterTemp__SetParams(void*  invtemp_params_address)
+    226          {
+    227              BOOL_TYPE ret_val = FALSE;
+    228          
+    229              if (invtemp_params_address != NULL)
+    230              {
+    231                  InverterTemp_Params_Displ = (INVERTER_TEMP_PARAMS_DISPL_TYPE*) invtemp_params_address;
+    232          
+    233                  Temperature_Raw = InverterTemp_Params_Displ->Default_Temp_Adc;
+    234                  Temperature_Sum = InverterTemp_Params_Displ->Default_Temp_Adc << INVERTER_TEMP_LPF_SHIFT;
+    235          
+    236                  Actual_Inverter_Temp_Ext_LUT.ptr_LUT = InverterTemp_Params_Displ->Inverter_Temp_Lut;
+    237                  Actual_Inverter_Temp_Ext_LUT.sizeof_lut = &InverterTemp_Params_Displ->Sizeof_Inverter_Temp_Lut;
+    238                  Actual_Inverter_Temp_Ext_LUT.step_inv = &InverterTemp_Params_Displ->Step_Inv_Inverter_Temp;
+    239          
+    240                  Temperature_Degrees = MathCalc__GetInterpolationFast(Temperature_Raw, &Actual_Inverter_Temp_Ext_LUT);
+    241          
+    242                  Inverter_Temp_Params_Loaded = TRUE;
+    243                  ret_val = TRUE;
+    244              }
+    245          
+    246              return ret_val;
+    247          }
+    248          
+    249          
+    250          //---------------------------------------------------------------------------------------------------------------------
+    251          /**
+    252           *  @brief      Get parameters loaded status.
+    253           *  @details
+    254           *
+    255           * @return  TRUE - parameters are loaded
+    256           *          FALSE - parameters not loaded
+    257           */
+    258          BOOL_TYPE InverterTemp__GetParameterLoaded(void)
+    259          {
+    260              return Inverter_Temp_Params_Loaded;
+    261          }
+    262          
+    263          #endif // INVERTER_TEMP_SETTINGFILE_SUPPORT
+    264          #endif
+    265          
+    266          //=====================================================================================================================
+    267          //-------------------------------------- Private Functions ------------------------------------------------------------
+    268          //=====================================================================================================================
+    269          
+    270          
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  Inv_Temp_LUT_X_Inv_Step_Mitsubishi
+       4  Inv_Temp_LUT_X_Inv_Step_ST
+      32  Inverter_Temp_LUT_Ext_Array
+      24  Inverter_Temp_LUT_Mitsubishi
+    1208  Inverter_Temp_LUT_ST
+       4  SizeOf_Inv_Temp_LUT_Mitsubishi
+       4  SizeOf_Inv_Temp_LUT_ST
+
+ 
+ 1 280 bytes in section .data
+ 
+ 1 280 bytes of DATA memory
+
+Errors: none
+Warnings: none

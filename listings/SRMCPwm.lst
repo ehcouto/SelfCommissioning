@@ -1,0 +1,2605 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:13
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\SRMCPwm\SRMCPwm.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o SRMCPwm.obj -l
+#        ..\listings\SRMCPwm.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\SRMCPwm\SRMCPwm.c
+#    List file    =  ..\listings\SRMCPwm.lst
+#    Object file  =  SRMCPwm.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Driver\SRMCPwm\SRMCPwm.c
+      1          /**
+      2           *  @defgroup   CLASS_B
+      3           *  @file       SRMCPwm.c
+      4           *  @brief      Motor Control PWM driver
+      5           *
+      6           *  @details    Motor control PWM initializer, control functions, and ISR
+      7           *
+      8           *---------------------------------------------------------------------------------------------------------------------
+      9           *------------------- Copyright 2012.  Whirlpool Corporation.  All rights reserved - CONFIDENTIAL ---------------------
+     10           *---------------------------------------------------------------------------------------------------------------------
+     11          */
+     12          
+     13          //-------------------------------------- Include Files ----------------------------------------------------------------
+     14          #include "SRMCPwm.h"
+     15          #include "SRMicro.h"
+     16          #include "SRData.h"
+     17          #include "SRException.h"
+     18          #include "Comparator.h"
+     19          
+     20          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     21          
+     22          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     23          
+     24          #ifndef SR_PWM_ENABLE_IRQ
+     25              #define SR_PWM_ENABLE_IRQ                         0
+     26          #endif
+     27          
+     28          #ifndef SR_PWM_DELAY_ENABLE
+     29              #define SR_PWM_DELAY_ENABLE                       0
+     30          #endif
+     31          
+     32          // Configuration constants
+     33          #define MILLION         1000000.0f
+     34          #define BILLION         1000000000.0f
+     35          
+     36          typedef enum
+     37          {
+     38              PWM_MOTOR_DRIVER_IDLE,
+     39              PWM_MOTOR_DRIVER_STARTED,
+     40              PWM_MOTOR_DRIVER_DEVICES_OFF,
+     41              PWM_MOTOR_DRIVER_ACTIVE,
+     42              PWM_MOTOR_DRIVER_LOWERS_ON,
+     43              PWM_MOTOR_DRIVER_UPPERS_ON
+     44          } PWM_DRIVE_STATE_TYPE;
+     45          
+
+   \                                 In section .bss, align 4
+     46          static uint16 MaxPwm;
+     47          static uint16 PwmFrequency;
+     48          static uint16 DeadTimeNanosec;
+     49          static uint16 NominalPwmPeriod;
+     50          
+     51          
+     52          //-------------------------------------- Safety Relevant Variables ------------------------------------------------
+     53          
+     54          // All variables declared in this module are considered critical (SR) and have one negated copy shadow (NSR).
+     55          // All variables are also declared as static, since its visibility must be blocked at compiling time.
+     56          
+     57          static SRMCPWM_DIAG_STATE_TYPE SR_MCPwm_Diag_State;     //!< Contains the current state where the state machine is located and running specific tasks.
+   \                     SR_MCPwm_Diag_State:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+   \   00000002                      DS8 2
+   \   00000004                      DS8 2
+   \   00000006                      DS8 2
+   \   00000008                      DS8 2
+   \   0000000A                      DS8 2
+   \   0000000C                      DS8 4
+   \   00000010                      DS8 4
+   \   00000014                      DS8 4
+   \   00000018                      DS8 4
+   \   0000001C                      DS8 1
+   \   0000001D                      DS8 1
+   \   0000001E                      DS8 2
+   \   00000020                      DS8 4
+   \   00000024                      DS8 4
+   \   00000028                      DS8 4
+   \   0000002C                      DS8 4
+     58          static uint32 SR_MCPwm_Zero_Timeout;             //!< Contains time to wait when the overcurrent comparator is configured with the low threshold (SR_PWM_FAULT_0_CMP_LEV_TEST). Once the time is over, the peripheral fault state is read, and the active polarity is expected.
+     59          static uint32 SR_MCPwm_One_Timeout;              //!< Contains time to wait when the overcurrent comparator is configured with the high, normal threshold (SR_PWM_FAULT_0_CMP_LEV). Once the time is over, the peripheral fault state is read, and the default polarity is expected.
+     60          static SRMCPWM_DIAG_ERROR_TYPE SR_MCPwm_Errors;              //!< At each state of the handler, the state machine searches for a failure in the hardware, once the fault is found, then a bit is set in this variable. The error are listed in bitwise method. The bit description is listed in the SRMCPWM_DIAG_ERROR_TYPE definition.
+     61          static uint32 SR_MCPwm_Pulse_Active_Level;   //!< Contains the longest pulse measurement, when the shut down pin is read as active. This variable is used in the 250us polling.
+     62          static uint32 SR_MCPwm_Pulse_Default_Level;  //!< Contains the time that the shut down pin is considered inactive while running the SRMCPwm diagnostic state machine handler. This variable is used in the PWM period polling.
+     63          
+     64          
+     65          static SRMCPWM_DIAG_STATE_TYPE NSR_MCPwm_Diag_State;
+     66          static uint32 NSR_MCPwm_Zero_Timeout;
+     67          static uint32 NSR_MCPwm_One_Timeout;
+     68          static SRMCPWM_DIAG_ERROR_TYPE NSR_MCPwm_Errors;
+     69          static uint32 NSR_MCPwm_Pulse_Active_Level;
+     70          static uint32 NSR_MCPwm_Pulse_Default_Level;
+     71          
+     72          
+     73          #if(SR_PWM_DELAY_ENABLE == 1)
+     74          static uint16 SR_Pwm_A_1;
+     75          static uint16 SR_Pwm_B_1;
+     76          static uint16 SR_Pwm_C_1;
+     77          
+     78          static uint16 NSR_Pwm_A_1;
+     79          static uint16 NSR_Pwm_B_1;
+     80          static uint16 NSR_Pwm_C_1;
+     81          #endif
+     82          
+     83          
+     84          //-------------------------------------- Definitions ------------------------------------------------
+     85          
+     86          #define PWM_OUTPUT_OFF()			{FTM0.OUTMASK |= (FTM_OUTMASK_CH5OM_MASK | FTM_OUTMASK_CH4OM_MASK |FTM_OUTMASK_CH3OM_MASK | FTM_OUTMASK_CH2OM_MASK |FTM_OUTMASK_CH1OM_MASK | FTM_OUTMASK_CH0OM_MASK);}	// all outputs disabled (at inactive level)
+     87          #define PWM_OUTPUT_ON()				{FTM0.OUTMASK &= ~(FTM_OUTMASK_CH5OM_MASK | FTM_OUTMASK_CH4OM_MASK |FTM_OUTMASK_CH3OM_MASK | FTM_OUTMASK_CH2OM_MASK |FTM_OUTMASK_CH1OM_MASK | FTM_OUTMASK_CH0OM_MASK);}	// all outputs enable (at active level)
+     88          #define PWM_TIMER_START()			{FTM0.MODE |= FTM_MODE_WPDIS_MASK; FTM0.SC |= FTM_SC_CLKS(1);FTM0.FMS |= FTM_FMS_WPEN_MASK;} //Not functional
+     89          #define PWM_TIMER_STOP()			{FTM0.MODE |= FTM_MODE_WPDIS_MASK; FTM0.SC |= FTM_SC_CLKS(0);FTM0.FMS |= FTM_FMS_WPEN_MASK;} //Not functional
+     90          
+     91          //---------------------------------------- Macros -----------------------------------------------------
+     92          
+     93          #if(1)
+     94          // CHECK Macro defs
+     95          //lint -emacro( 928, SR_MCPWM_CHECK_DIAG_STATE )
+     96          #define SR_MCPWM_CHECK_DIAG_STATE()                         SRData__CheckByte((uint8 *)&SR_MCPwm_Diag_State, (uint8 *)&NSR_MCPwm_Diag_State)
+     97          //lint -emacro( 929, SR_MCPWM_CHECK_ZERO_TIMEOUT )
+     98          #define SR_MCPWM_CHECK_ZERO_TIMEOUT()                       SRData__CheckLong((uint32 *)&SR_MCPwm_Zero_Timeout, (uint32 *)&NSR_MCPwm_Zero_Timeout)
+     99          //lint -emacro( 929, SR_MCPWM_CHECK_ONE_TIMEOUT )
+    100          #define SR_MCPWM_CHECK_ONE_TIMEOUT()                        SRData__CheckLong((uint32 *)&SR_MCPwm_One_Timeout, (uint32 *)&NSR_MCPwm_One_Timeout)
+    101          //lint -emacro( 928, SR_MCPWM_CHECK_ERRORS )
+    102          #define SR_MCPWM_CHECK_ERRORS()                             SRData__CheckByte((uint8 *)&SR_MCPwm_Errors, (uint8 *)&NSR_MCPwm_Errors)
+    103          //lint -emacro( 929, SR_MCPWM_CHECK_MAX_PULSE_DURATION )
+    104          #define SR_MCPWM_CHECK_MAX_PULSE_DURATION()                 SRData__CheckShort((uint16 *)&SR_MCPwm_Max_Pulse_Duration, (uint16 *)&NSR_MCPwm_Max_Pulse_Duration)
+    105          //lint -emacro( 929, SR_MCPWM_CHECK_TMP_PULSE_DURATION )
+    106          #define SR_MCPWM_CHECK_TMP_PULSE_DURATION()                 SRData__CheckLong((uint32 *)&SR_MCPwm_Tmp_Pulse_Duration, (uint32 *)&NSR_MCPwm_Tmp_Pulse_Duration)
+    107          //lint -emacro( 929, SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION )
+    108          #define SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION()              SRData__CheckLong((uint32 *)&SR_MCPwm_Pulse_Active_Level, (uint32 *)&NSR_MCPwm_Pulse_Active_Level)
+    109          //lint -emacro( 929, SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION )
+    110          #define SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION()             SRData__CheckLong((uint32 *)&SR_MCPwm_Pulse_Default_Level, (uint32 *)&NSR_MCPwm_Pulse_Default_Level)
+    111          
+    112          #if(SR_PWM_DELAY_ENABLE == 1)
+    113          //lint -emacro( 929, SR_MCPWM_CHECK_DUTY_A_DELAYED )
+    114          #define SR_MCPWM_CHECK_DUTY_A_DELAYED()                     SRData__CheckShort((uint16 *)&SR_Pwm_A_1, (uint16 *)&NSR_Pwm_A_1)
+    115          //lint -emacro( 929, SR_MCPWM_CHECK_DUTY_B_DELAYED )
+    116          #define SR_MCPWM_CHECK_DUTY_B_DELAYED()                     SRData__CheckShort((uint16 *)&SR_Pwm_B_1, (uint16 *)&NSR_Pwm_B_1)
+    117          //lint -emacro( 929, SR_MCPWM_CHECK_DUTY_C_DELAYED )
+    118          #define SR_MCPWM_CHECK_DUTY_C_DELAYED()                     SRData__CheckShort((uint16 *)&SR_Pwm_C_1, (uint16 *)&NSR_Pwm_C_1)
+    119          #endif
+    120          
+    121          // UPDATE Macro defs
+    122          //lint -emacro( 928, SR_MCPWM_UPDATE_DIAG_STATE )
+    123          #define SR_MCPWM_UPDATE_DIAG_STATE(value)                   SRData__UpdateByte((uint8 *)&SR_MCPwm_Diag_State, (uint8 *)&NSR_MCPwm_Diag_State, (uint8)(value))
+    124          //lint -emacro( 929, SR_MCPWM_UPDATE_ZERO_TIMEOUT )
+    125          #define SR_MCPWM_UPDATE_ZERO_TIMEOUT(value)                 SRData__UpdateLong((uint32 *)&SR_MCPwm_Zero_Timeout, (uint32 *)&NSR_MCPwm_Zero_Timeout, (uint32)(value))
+    126          //lint -emacro( 929, SR_MCPWM_UPDATE_ONE_TIMEOUT )
+    127          #define SR_MCPWM_UPDATE_ONE_TIMEOUT(value)                  SRData__UpdateLong((uint32 *)&SR_MCPwm_One_Timeout, (uint32 *)&NSR_MCPwm_One_Timeout, (uint32)(value))
+    128          //lint -emacro( 928, SR_MCPWM_UPDATE_ERRORS )
+    129          #define SR_MCPWM_UPDATE_ERRORS(value)                       SRData__UpdateByte((uint8 *)&SR_MCPwm_Errors, (uint8 *)&NSR_MCPwm_Errors, (uint8)(value))
+    130          //lint -emacro( 929, SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION )
+    131          #define SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(value)        SRData__UpdateLong((uint32 *)&SR_MCPwm_Pulse_Active_Level, (uint32 *)&NSR_MCPwm_Pulse_Active_Level, (uint32)(value))
+    132          //lint -emacro( 929, SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION )
+    133          #define SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(value)       SRData__UpdateLong((uint32 *)&SR_MCPwm_Pulse_Default_Level, (uint32 *)&NSR_MCPwm_Pulse_Default_Level, (uint32)(value))
+    134          
+    135          #if(SR_PWM_DELAY_ENABLE == 1)
+    136          //lint -emacro( 929, SR_MCPWM_UPDATE_DUTY_A_DELAYED )
+    137          #define SR_MCPWM_UPDATE_DUTY_A_DELAYED(value)               SRData__UpdateShort((uint16 *)&SR_Pwm_A_1, (uint16 *)&NSR_Pwm_A_1, (uint16)(value))
+    138          //lint -emacro( 929, SR_MCPWM_UPDATE_DUTY_B_DELAYED )
+    139          #define SR_MCPWM_UPDATE_DUTY_B_DELAYED(value)               SRData__UpdateShort((uint16 *)&SR_Pwm_B_1, (uint16 *)&NSR_Pwm_B_1, (uint16)(value))
+    140          //lint -emacro( 929, SR_MCPWM_UPDATE_DUTY_C_DELAYED )
+    141          #define SR_MCPWM_UPDATE_DUTY_C_DELAYED(value)               SRData__UpdateShort((uint16 *)&SR_Pwm_C_1, (uint16 *)&NSR_Pwm_C_1, (uint16)(value))
+    142          #endif
+    143          
+    144          #else
+    145          // CHECK Macro defs
+    146          #define SR_MCPWM_CHECK_DIAG_STATE()                         SRDATA_OK // SR_MCPwm_Diag_State
+    147          #define SR_MCPWM_CHECK_ZERO_TIMEOUT()                       SRDATA_OK // SR_MCPwm_Zero_Timeout
+    148          #define SR_MCPWM_CHECK_ONE_TIMEOUT()                        SRDATA_OK // SR_MCPwm_One_Timeout
+    149          #define SR_MCPWM_CHECK_ERRORS()                             SRDATA_OK // SR_MCPwm_Errors
+    150          #define SR_MCPWM_CHECK_MAX_PULSE_DURATION()                 SRDATA_OK // SR_MCPwm_Max_Pulse_Duration
+    151          #define SR_MCPWM_CHECK_TMP_PULSE_DURATION()                 SRDATA_OK // SR_MCPwm_Tmp_Pulse_Duration
+    152          #define SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION()              SRDATA_OK // SR_MCPwm_Pulse_Active_Level
+    153          #define SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION()             SRDATA_OK // SR_MCPwm_Pulse_Active_Level
+    154          
+    155          // UPDATE Macro defs
+    156          #define SR_MCPWM_UPDATE_DIAG_STATE(value)                   SR_MCPwm_Diag_State = (value)
+    157          #define SR_MCPWM_UPDATE_ZERO_TIMEOUT(value)                 SR_MCPwm_Zero_Timeout = (value)
+    158          #define SR_MCPWM_UPDATE_ONE_TIMEOUT(value)                  SR_MCPwm_One_Timeout = (value)
+    159          #define SR_MCPWM_UPDATE_ERRORS(value)                       SR_MCPwm_Errors = (value)
+    160          #define SR_MCPWM_UPDATE_MAX_PULSE_DURATION(value)           SR_MCPwm_Max_Pulse_Duration = (value)
+    161          #define SR_MCPWM_UPDATE_TMP_PULSE_DURATION(value)           SR_MCPwm_Tmp_Pulse_Duration = (value)
+    162          #define SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(value)        SR_MCPwm_Pulse_Active_Level = (value)
+    163          #define SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(value)       SR_MCPwm_Pulse_Default_Level = (value)
+    164          
+    165          #endif
+    166          
+    167          //-------------------------------------- PRIVATE Function Prototypes ------------------------------------------------
+    168          static BOOL_TYPE GetFaultState(void);
+    169          static BOOL_TYPE GetFaultFlagState(void);
+    170          static void ClearFaultFlag(void);
+    171          //=====================================================================================================================
+    172          //-------------------------------------- Public Functions -------------------------------------------------------------
+    173          //=====================================================================================================================
+    174          
+    175          
+    176          /*
+    177           * @brief       Initialize the inverter outputs before booting the class B - enable all lowers switches
+    178           * @details     According to the memory size, the microcontroller may take long time to power up, in the case of
+    179           *              a reset and according to the physics of the motor, some side effects shall happen to the
+    180           *              system. E.g., very high DC bus voltage and breaks the electronic. Therefore, it requires
+    181           *              to disconnect motor from the dc bus capacitors by enabled lowers switches.
+    182           */
+
+   \                                 In section .text, align 2, keep-with-next
+    183          void SRMCPwm__Initialize_Before_Boot(void)
+    184          {
+    185              SIM.SCGC5 |= (SIM_SCGC5_PORTA_MASK |            // Connect the GPIOA device to the Core bus
+    186                           SIM_SCGC5_PORTB_MASK  |            // Connect the GPIOB device to the Core bus
+    187                           SIM_SCGC5_PORTC_MASK  |            // Connect the GPIOC device to the Core bus
+    188                           SIM_SCGC5_PORTD_MASK  |            // Connect the GPIOD device to the Core bus
+    189                           SIM_SCGC5_PORTE_MASK);             // Connect the GPIOE device to the Core bus
+   \                     SRMCPwm__Initialize_Before_Boot: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19  ;; 0x40048038
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0xF441 0x5178      ORR      R1,R1,#0x3E00
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+    190          
+    191          
+    192          
+    193          
+    194              // Initialize the output state
+    195          #if SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == 1 // High level activated
+    196          
+    197              #if (SR_PWM__REMAP == 0)
+    198          
+    199                  // Zero all upper switches
+    200                  GPIOC.PCOR = (1<<0);
+    201                  GPIOC.PCOR = (1<<2);
+    202                  GPIOC.PCOR = (1<<4);
+    203          
+    204              #elif(SR_PWM__REMAP == 1)
+    205          
+    206                  // Zero all upper switches
+    207                  GPIOD.PCOR = (1<<0);
+   \   0000000C   0x2101             MOVS     R1,#+1
+   \   0000000E   0x.... 0x....      LDR.W    R0,??DataTable19_1  ;; 0x400ff0c4
+   \   00000012   0x6041             STR      R1,[R0, #+4]
+   \   00000014   0xF44F 0x7280      MOV      R2,#+256
+    208                  GPIOD.PCOR = (1<<2);
+   \   00000018   0x2104             MOVS     R1,#+4
+   \   0000001A   0x6041             STR      R1,[R0, #+4]
+    209                  GPIOD.PCOR = (1<<4);
+   \   0000001C   0x2110             MOVS     R1,#+16
+   \   0000001E   0x6041             STR      R1,[R0, #+4]
+    210          
+    211              #endif
+    212          
+    213          #elif SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == 0 // Low level activated
+    214          
+    215              #if (SR_PWM__REMAP == 0)
+    216          
+    217                  // One all upper switches
+    218                  GPIOC.PSOR = (1<<0);
+    219                  GPIOC.PSOR = (1<<2);
+    220                  GPIOC.PSOR = (1<<4);
+    221          
+    222              #elif(SR_PWM__REMAP == 1)
+    223          
+    224                  // One all upper switches
+    225                  GPIOD.PSOR = (1<<0);
+    226                  GPIOD.PSOR = (1<<2);
+    227                  GPIOD.PSOR = (1<<4);
+    228          
+    229              #endif
+    230          
+    231          #else
+    232          
+    233              #error High power switch driver polarity not defined
+    234          
+    235          #endif
+    236          
+    237          
+    238          #if SR_PWM_LOW_CHANNELS_ACTIVE_LEVEL == 1 // High level activated
+    239          
+    240              #if(SR_PWM__REMAP == 0)
+    241          
+    242                  GPIOC.PSOR = (1<<1);
+    243                  GPIOC.PSOR = (1<<3);
+    244                  GPIOC.PSOR = (1<<5);
+    245          
+    246              #elif(SR_PWM__REMAP == 1)
+    247          
+    248                  GPIOD.PSOR = (1<<1);
+   \   00000020   0x2102             MOVS     R1,#+2
+   \   00000022   0x6001             STR      R1,[R0, #+0]
+    249                  GPIOD.PSOR = (1<<3);
+   \   00000024   0x2108             MOVS     R1,#+8
+   \   00000026   0x6001             STR      R1,[R0, #+0]
+    250                  GPIOD.PSOR = (1<<5);
+   \   00000028   0x2120             MOVS     R1,#+32
+   \   0000002A   0x6001             STR      R1,[R0, #+0]
+    251          
+    252              #endif
+    253          
+    254          #elif SR_PWM_LOW_CHANNELS_ACTIVE_LEVEL == 0 // Low level activated
+    255          
+    256              #if(SR_PWM__REMAP == 0)
+    257          
+    258                  GPIOC.PCOR = (1<<1);
+    259                  GPIOC.PCOR = (1<<3);
+    260                  GPIOC.PCOR = (1<<5);
+    261          
+    262              #elif(SR_PWM__REMAP == 1)
+    263          
+    264                  GPIOD.PCOR = (1<<1);
+    265                  GPIOD.PCOR = (1<<3);
+    266                  GPIOD.PCOR = (1<<5);
+    267          
+    268              #endif
+    269          
+    270          #else
+    271          
+    272              #error High power switch driver polarity not defined
+    273          
+    274          #endif
+    275          
+    276          
+    277          
+    278          
+    279              // Initilize the gpio as output push pull
+    280          #if(SR_PWM__REMAP == 0)
+    281          
+    282              GPIOC.PDDR |= (1 << 0);
+    283              PCIPORTC.PCR[0] = (PORT_PCR_MUX(1));
+    284          
+    285              GPIOC.PDDR |= (1 << 1);
+    286              PCIPORTC.PCR[1] = (PORT_PCR_MUX(1));
+    287          
+    288              GPIOC.PDDR |= (1 << 2);
+    289              PCIPORTC.PCR[2] = (PORT_PCR_MUX(1));
+    290          
+    291              GPIOC.PDDR |= (1 << 3);
+    292              PCIPORTC.PCR[3] = (PORT_PCR_MUX(1));
+    293          
+    294              GPIOC.PDDR |= (1 << 4);
+    295              PCIPORTC.PCR[4] = (PORT_PCR_MUX(1));
+    296          
+    297              GPIOC.PDDR |= (1 << 5);
+    298              PCIPORTC.PCR[5] = (PORT_PCR_MUX(1));
+    299          
+    300          #elif(SR_PWM__REMAP == 1)
+    301          
+    302              GPIOD.PDDR |= (1 << 0);
+   \   0000002C   0x6901             LDR      R1,[R0, #+16]
+   \   0000002E   0xF041 0x0101      ORR      R1,R1,#0x1
+   \   00000032   0x6101             STR      R1,[R0, #+16]
+    303              PCIPORTD.PCR[0] = (PORT_PCR_MUX(1));
+   \   00000034   0x.... 0x....      LDR.W    R1,??DataTable19_2  ;; 0x4004c000
+   \   00000038   0x600A             STR      R2,[R1, #+0]
+    304          
+    305              GPIOD.PDDR |= (1 << 1);
+   \   0000003A   0x6903             LDR      R3,[R0, #+16]
+   \   0000003C   0xF043 0x0302      ORR      R3,R3,#0x2
+   \   00000040   0x6103             STR      R3,[R0, #+16]
+    306              PCIPORTD.PCR[1] = (PORT_PCR_MUX(1));
+   \   00000042   0x604A             STR      R2,[R1, #+4]
+    307          
+    308              GPIOD.PDDR |= (1 << 2);
+   \   00000044   0x6903             LDR      R3,[R0, #+16]
+   \   00000046   0xF043 0x0304      ORR      R3,R3,#0x4
+   \   0000004A   0x6103             STR      R3,[R0, #+16]
+    309              PCIPORTD.PCR[2] = (PORT_PCR_MUX(1));
+   \   0000004C   0x608A             STR      R2,[R1, #+8]
+    310          
+    311              GPIOD.PDDR |= (1 << 3);
+   \   0000004E   0x6903             LDR      R3,[R0, #+16]
+   \   00000050   0xF043 0x0308      ORR      R3,R3,#0x8
+   \   00000054   0x6103             STR      R3,[R0, #+16]
+    312              PCIPORTD.PCR[3] = (PORT_PCR_MUX(1));
+   \   00000056   0x60CA             STR      R2,[R1, #+12]
+    313          
+    314              GPIOD.PDDR |= (1 << 4);
+   \   00000058   0x6903             LDR      R3,[R0, #+16]
+   \   0000005A   0xF043 0x0310      ORR      R3,R3,#0x10
+   \   0000005E   0x6103             STR      R3,[R0, #+16]
+    315              PCIPORTD.PCR[4] = (PORT_PCR_MUX(1));
+   \   00000060   0x610A             STR      R2,[R1, #+16]
+    316          
+    317              GPIOD.PDDR |= (1 << 5);
+   \   00000062   0x6903             LDR      R3,[R0, #+16]
+   \   00000064   0xF043 0x0320      ORR      R3,R3,#0x20
+   \   00000068   0x6103             STR      R3,[R0, #+16]
+    318              PCIPORTD.PCR[5] = (PORT_PCR_MUX(1));
+   \   0000006A   0x614A             STR      R2,[R1, #+20]
+    319          
+    320          #endif
+    321          
+    322          
+    323          
+    324          
+    325              // Refresh the initialized output state
+    326          #if SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == 1 // High level activated
+    327          
+    328              #if (SR_PWM__REMAP == 0)
+    329          
+    330                  // Zero all upper switches
+    331                  GPIOC.PCOR = (1<<0);
+    332                  GPIOC.PCOR = (1<<2);
+    333                  GPIOC.PCOR = (1<<4);
+    334          
+    335              #elif(SR_PWM__REMAP == 1)
+    336          
+    337                  // Zero all upper switches
+    338                  GPIOD.PCOR = (1<<0);
+   \   0000006C   0x2101             MOVS     R1,#+1
+   \   0000006E   0x6041             STR      R1,[R0, #+4]
+    339                  GPIOD.PCOR = (1<<2);
+   \   00000070   0x2104             MOVS     R1,#+4
+   \   00000072   0x6041             STR      R1,[R0, #+4]
+    340                  GPIOD.PCOR = (1<<4);
+   \   00000074   0x2110             MOVS     R1,#+16
+   \   00000076   0x6041             STR      R1,[R0, #+4]
+    341          
+    342              #endif
+    343          
+    344          #elif SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == 0 // Low level activated
+    345          
+    346              #if (SR_PWM__REMAP == 0)
+    347          
+    348                  // One all upper switches
+    349                  GPIOC.PSOR = (1<<0);
+    350                  GPIOC.PSOR = (1<<2);
+    351                  GPIOC.PSOR = (1<<4);
+    352          
+    353              #elif(SR_PWM__REMAP == 1)
+    354          
+    355                  // One all upper switches
+    356                  GPIOD.PSOR = (1<<0);
+    357                  GPIOD.PSOR = (1<<2);
+    358                  GPIOD.PSOR = (1<<4);
+    359          
+    360              #endif
+    361          
+    362          #else
+    363          
+    364              #error High power switch driver polarity not defined
+    365          
+    366          #endif
+    367          
+    368          
+    369          #if SR_PWM_LOW_CHANNELS_ACTIVE_LEVEL == 1 // High level activated
+    370          
+    371              #if(SR_PWM__REMAP == 0)
+    372          
+    373                  GPIOC.PSOR = (1<<1);
+    374                  GPIOC.PSOR = (1<<3);
+    375                  GPIOC.PSOR = (1<<5);
+    376          
+    377              #elif(SR_PWM__REMAP == 1)
+    378          
+    379                  GPIOD.PSOR = (1<<1);
+   \   00000078   0x2102             MOVS     R1,#+2
+   \   0000007A   0x6001             STR      R1,[R0, #+0]
+    380                  GPIOD.PSOR = (1<<3);
+   \   0000007C   0x2108             MOVS     R1,#+8
+   \   0000007E   0x6001             STR      R1,[R0, #+0]
+    381                  GPIOD.PSOR = (1<<5);
+   \   00000080   0x2120             MOVS     R1,#+32
+   \   00000082   0x6001             STR      R1,[R0, #+0]
+    382          
+    383              #endif
+    384          
+    385          #elif SR_PWM_LOW_CHANNELS_ACTIVE_LEVEL == 0 // Low level activated
+    386          
+    387              #if(SR_PWM__REMAP == 0)
+    388          
+    389                  GPIOC.PCOR = (1<<1);
+    390                  GPIOC.PCOR = (1<<3);
+    391                  GPIOC.PCOR = (1<<5);
+    392          
+    393              #elif(SR_PWM__REMAP == 1)
+    394          
+    395                  GPIOD.PCOR = (1<<1);
+    396                  GPIOD.PCOR = (1<<3);
+    397                  GPIOD.PCOR = (1<<5);
+    398          
+    399              #endif
+    400          
+    401          #else
+    402          
+    403              #error High power switch driver polarity not defined
+    404          
+    405          #endif
+    406          }
+   \   00000084   0x4770             BX       LR               ;; return
+    407          
+    408          
+    409          
+    410          
+    411          /**
+    412           *  @brief       It Initializes the module MCPwm and its variables.
+    413           *               FTM0 is selected for PWM outputs
+    414           *
+    415           *  @param[in]   pwm_frequency defines the PWM frequency in Hz.
+    416           *  @param[in]   dead_time_ns defines the dead time inserted between complementary channels. This is defined in nanoseconds.
+    417           */
+
+   \                                 In section .text, align 4, keep-with-next
+    418          void SRMCPwm__Initialize(uint16 pwm_frequency, uint16 dead_time_ns)
+    419          {
+   \                     SRMCPwm__Initialize: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0xB081             SUB      SP,SP,#+4
+    420              uint16 deadtime;
+    421          	uint16 deadtime_prescaler;
+    422              uint16 pwm_period;                               // Local variable for calculation
+    423              uint16 fault_enable_mask = 0;
+    424           
+    425          
+    426              SIM.SCGC6 |= SIM_SCGC6_FTM0_MASK;	// Enables the clock for FTM0
+   \   00000006   0x.... 0x....      LDR.W    R4,??DataTable19_3  ;; 0x4004800c
+   \   0000000A   0xED2D 0x8B02      VPUSH    {D8}
+   \   0000000E   0xB082             SUB      SP,SP,#+8
+   \   00000010   0x4680             MOV      R8,R0
+   \   00000012   0x6B20             LDR      R0,[R4, #+48]
+   \   00000014   0xF040 0x7080      ORR      R0,R0,#0x1000000
+   \   00000018   0x460E             MOV      R6,R1
+   \   0000001A   0x6320             STR      R0,[R4, #+48]
+    427          
+    428          //------------------  Pwm Period & Deadtime Calculation --------------------------
+    429              pwm_period = (uint16)(Micro__GetClock()->BUSCLK_Frequency / pwm_frequency);// PWM period in clock events
+   \   0000001C   0x.... 0x....      BL       Micro__GetClock
+   \   00000020   0x6880             LDR      R0,[R0, #+8]
+   \   00000022   0xFBB0 0xF9F8      UDIV     R9,R0,R8
+    430          
+    431              //FTM0 deadtime counter it's only 5 bits long, there is a 2-bit pre-scaler that can be set:
+    432              //Calculating the pre-scaler value:
+    433              deadtime_prescaler = (uint16)(((dead_time_ns*(Micro__GetClock()->BUSCLK_Frequency/MILLION))/63.0f)/(uint32)1000.0f);
+   \   00000026   0x.... 0x....      BL       Micro__GetClock
+   \   0000002A   0xEE00 0x6A10      VMOV     S0,R6
+   \   0000002E   0xEEB8 0x8A40      VCVT.F32.U32 S16,S0
+   \   00000032   0xED90 0x0A02      VLDR     S0,[R0, #+8]
+   \   00000036   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
+   \   0000003A   0xEDDF 0x....      VLDR.W   S1,??DataTable10  ;; 0x49742400
+   \   0000003E   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   00000042   0xEE28 0x0A00      VMUL.F32 S0,S16,S0
+   \   00000046   0xEDDF 0x....      VLDR.W   S1,??DataTable10_1  ;; 0x427c0000
+   \   0000004A   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   0000004E   0xEDDF 0x....      VLDR.W   S1,??DataTable10_2  ;; 0x447a0000
+   \   00000052   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   00000056   0xEEBD 0x0AC0      VCVT.S32.F32 S0,S0
+   \   0000005A   0xEE10 0x5A10      VMOV     R5,S0
+   \   0000005E   0xB2AD             UXTH     R5,R5
+    434              //The pre-scaler is found by getting the Count of leading zeros in a 16 bit integer, IAR supports __clz(x) if needed
+    435              //FTM0 does not have a divided per 2 pre-scaler, so if we need 1, 3 divides the clock by 16
+    436              if (deadtime_prescaler < 4 && deadtime_prescaler > 0)
+   \   00000060   0x2D04             CMP      R5,#+4
+   \   00000062   0xDA02             BGE.N    ??SRMCPwm__Initialize_0
+   \   00000064   0xB115             CBZ.N    R5,??SRMCPwm__Initialize_1
+    437              {
+    438                  deadtime_prescaler = 2;
+   \   00000066   0x2502             MOVS     R5,#+2
+   \   00000068   0xE000             B.N      ??SRMCPwm__Initialize_1
+    439              }
+    440              else if (deadtime_prescaler >= 4)
+    441              {
+    442                  deadtime_prescaler = 4;
+   \                     ??SRMCPwm__Initialize_0: (+1)
+   \   0000006A   0x2504             MOVS     R5,#+4
+    443              }
+    444              else
+    445              {
+    446                  deadtime_prescaler = 0;
+    447              }
+    448          
+    449          
+    450              deadtime = ((uint16)((dead_time_ns*(Micro__GetClock()->BUSCLK_Frequency/MILLION))/1000.0f)/(1<<deadtime_prescaler));//1<<deadtime_prescaler);
+   \                     ??SRMCPwm__Initialize_1: (+1)
+   \   0000006C   0x.... 0x....      BL       Micro__GetClock
+   \   00000070   0xED90 0x0A02      VLDR     S0,[R0, #+8]
+   \   00000074   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
+   \   00000078   0xEDDF 0x....      VLDR.W   S1,??DataTable10  ;; 0x49742400
+   \   0000007C   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   00000080   0xEE28 0x0A00      VMUL.F32 S0,S16,S0
+   \   00000084   0xEDDF 0x....      VLDR.W   S1,??DataTable10_2  ;; 0x447a0000
+   \   00000088   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+   \   0000008C   0xEEBD 0x0AC0      VCVT.S32.F32 S0,S0
+   \   00000090   0xEE10 0x0A10      VMOV     R0,S0
+   \   00000094   0x2101             MOVS     R1,#+1
+   \   00000096   0xB280             UXTH     R0,R0
+   \   00000098   0x40A9             LSLS     R1,R1,R5
+   \   0000009A   0xFB90 0xF0F1      SDIV     R0,R0,R1
+   \   0000009E   0xB280             UXTH     R0,R0
+    451          
+    452              if (deadtime > ((1<<6)-1))
+   \   000000A0   0x2840             CMP      R0,#+64
+   \   000000A2   0xBFA8             IT       GE 
+    453              {
+    454                  deadtime = ((1<<6)-1);
+   \   000000A4   0x203F             MOVGE    R0,#+63
+    455              }
+    456          
+    457              if (deadtime_prescaler < 4)
+   \   000000A6   0x2D04             CMP      R5,#+4
+   \   000000A8   0xBFBA             ITTE     LT 
+    458              {
+    459                  deadtime |= (deadtime_prescaler<<6);
+   \   000000AA   0xEA40 0x1085      ORRLT    R0,R0,R5, LSL #+6
+   \   000000AE   0xB285             UXTHLT   R5,R0
+    460              }
+    461              else //The pre-scalar value of 3 is a 16 divider on the clock
+    462              {
+    463                  deadtime |= (3<<6);
+   \   000000B0   0xF040 0x05C0      ORRGE    R5,R0,#0xC0
+    464              }
+    465          
+    466              PwmFrequency = pwm_frequency;
+   \   000000B4   0x.... 0x....      LDR.W    R7,??DataTable19_4
+   \   000000B8   0xF8A7 0x8004      STRH     R8,[R7, #+4]
+    467              DeadTimeNanosec = dead_time_ns;
+    468              MaxPwm = pwm_period>>1;
+   \   000000BC   0xFA1F 0xF189      UXTH     R1,R9
+   \   000000C0   0x80FE             STRH     R6,[R7, #+6]
+   \   000000C2   0x0848             LSRS     R0,R1,#+1
+   \   000000C4   0x8078             STRH     R0,[R7, #+2]
+    469              NominalPwmPeriod = pwm_period;
+   \   000000C6   0x8139             STRH     R1,[R7, #+8]
+    470          
+    471          
+    472          
+    473          
+    474          //------------------------- Port configuration to force lowers on in case of break ---------------------
+    475              //Config_MCPwm_Gpio();
+    476          
+    477          //------------------  FTM0 Initialization --------------------------
+    478          
+    479          	MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();	//
+    480          	MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();		// Disables interruptions while configuring
+   \   000000C8   0xF3EF 0x8810      MRS      R8,PRIMASK
+   \   000000CC   0xB672             CPSID    I
+    481          	
+    482          	// Disable all channels outputs using the OUTPUT MASK feature.
+    483          	// However, the output pins are still driven as GPIO since the
+    484          	// channel mode is set to FTM channel disabled after RESET
+    485          	PWM_OUTPUT_OFF();
+   \   000000CE   0x.... 0x....      LDR.W    R6,??DataTable19_5  ;; 0x40038000
+   \   000000D2   0x6E31             LDR      R1,[R6, #+96]
+   \   000000D4   0xF041 0x013F      ORR      R1,R1,#0x3F
+   \   000000D8   0x6631             STR      R1,[R6, #+96]
+    486          	
+    487          	FTM0.MODE |= FTM_MODE_WPDIS_MASK; 			// Disable write protection for certain registers
+    488              FTM0.MODE |= FTM_MODE_FTMEN_MASK; 			// Enables the counter
+    489              //FTM0.MODE |= FTM_MODE_FAULTM_MASK;			// Fault control is enabled for all channels, and the selected mode is the automatic fault clearing.
+    490              FTM0.MODE |= FTM_MODE_FAULTM(2);          // Fault control is enabled for all channels, and the selected mode is the manual fault clearing.
+    491          
+    492          //------------------  FTM0 Counter configuration --------------------------
+    493          //Set the counter, edge aligned PWM, center-aligned is forced by the way the Duty cycles are set
+    494          
+    495          	FTM0.MOD = (uint16)((pwm_period>>1)-1);		// Set Modulo register
+   \   000000DA   0x1E40             SUBS     R0,R0,#+1
+   \   000000DC   0x6D71             LDR      R1,[R6, #+84]
+   \   000000DE   0xF041 0x0104      ORR      R1,R1,#0x4
+   \   000000E2   0x6571             STR      R1,[R6, #+84]
+   \   000000E4   0xB280             UXTH     R0,R0
+   \   000000E6   0xF041 0x0101      ORR      R1,R1,#0x1
+   \   000000EA   0x6571             STR      R1,[R6, #+84]
+   \   000000EC   0x60B0             STR      R0,[R6, #+8]
+   \   000000EE   0xF041 0x0140      ORR      R1,R1,#0x40
+   \   000000F2   0x6571             STR      R1,[R6, #+84]
+   \   000000F4   0x2301             MOVS     R3,#+1
+    496              FTM0.CNTIN = (uint32) (-(sint32)FTM0.MOD-1); 					// Set initial counting value
+   \   000000F6   0xF04F 0x31FF      MOV      R1,#-1
+   \   000000FA   0x1A08             SUBS     R0,R1,R0
+   \   000000FC   0x64F0             STR      R0,[R6, #+76]
+   \   000000FE   0x2200             MOVS     R2,#+0
+    497          
+    498          #ifdef PWM_LOAD_AT_MOD
+    499              FTM0.SYNC = FTM_SYNC_CNTMAX_MASK;  	// Pwm loading when FTM counter reaches its maximum value (MOD register).
+    500          #endif
+    501          #ifdef PWM_LOAD_AT_CNTIN
+    502              FTM0.SYNC = FTM_SYNC_CNTMIN_MASK; 	// Pwm loading when FTM counter reaches its minimum value (CNTIN register).
+    503          #endif
+    504          
+    505              FTM0.SYNCONF |= FTM_SYNC_REINIT_MASK; //Synchronize CNTIN with PWM in legacy pwm sync mode
+   \   00000100   0xF8D6 0x008C      LDR      R0,[R6, #+140]
+   \   00000104   0xF040 0x0004      ORR      R0,R0,#0x4
+   \   00000108   0xF8C6 0x008C      STR      R0,[R6, #+140]
+   \   0000010C   0x2107             MOVS     R1,#+7
+    506          
+    507          
+    508              // for center aligned PWM using combine mode:
+    509          	//	COMBINE = 1 - combine mode set
+    510          	//	COMP = 1 - complementary PWM set
+    511          	//	DTEN = 1 - deadtime enabled
+    512          	//	SYNCEN = 1 - PWM update synchronization enabled
+    513          	//	FAULTEN = 1 - fault control enabled
+    514          
+    515              FTM0.COMBINE =  FTM_COMBINE_FAULTEN0_MASK | FTM_COMBINE_SYNCEN0_MASK | FTM_COMBINE_DTEN0_MASK
+    516                          | FTM_COMBINE_COMP0_MASK    | FTM_COMBINE_COMBINE0_MASK
+    517                          | FTM_COMBINE_FAULTEN1_MASK | FTM_COMBINE_SYNCEN1_MASK | FTM_COMBINE_DTEN1_MASK
+    518                          | FTM_COMBINE_COMP1_MASK    | FTM_COMBINE_COMBINE1_MASK
+    519                          | FTM_COMBINE_FAULTEN2_MASK | FTM_COMBINE_SYNCEN2_MASK | FTM_COMBINE_DTEN2_MASK
+    520                          | FTM_COMBINE_COMP2_MASK    | FTM_COMBINE_COMBINE2_MASK;
+   \   0000010E   0x.... 0x....      LDR.W    R0,??DataTable19_6  ;; 0x737373
+   \   00000112   0x6670             STR      R0,[R6, #+100]
+    521          
+    522          
+    523          
+    524          //------------------------- Fault Input configuration ------------------------
+    525          #if (SR_PWM_FAULT_0 == ENABLED)
+    526              fault_enable_mask |= FTM_FLTCTRL_FAULT0EN_MASK;
+    527          
+    528          	#if (SR_PWM_FAULT_0_SRC == CMP)
+    529          	SIM.SOPT4 |= SIM_SOPT4_FTM0FLT0_MASK;	// Configures the source of FTM0 fault 0 to comparator CMP0 output
+   \   00000114   0x6820             LDR      R0,[R4, #+0]
+   \   00000116   0xF040 0x0001      ORR      R0,R0,#0x1
+   \   0000011A   0x6020             STR      R0,[R4, #+0]
+    530          	Comparator__Config(SR_COMPARATOR_CHANNEL, SR_COMPARATOR_INVERTED_INPUT, SR_COMPARATOR_NONINVERTED_INPUT, SR_COMPARATOR_MODE, SR_PWM_FAULT_0_CMP_LEV);	 // Conifigures the comparator 0
+   \   0000011C   0x2023             MOVS     R0,#+35
+   \   0000011E   0x9000             STR      R0,[SP, #+0]
+   \   00000120   0x2000             MOVS     R0,#+0
+   \   00000122   0x.... 0x....      BL       Comparator__Config
+    531          	#else
+    532          	SIM.SOPT4 &= ~SIM_SOPT4_FTM0FLT0_MASK;
+    533          	#endif
+    534          #endif
+    535          
+    536          #if (SR_PWM_FAULT_1 == ENABLED)
+    537          	fault_enable_mask |= FTM_FLTCTRL_FAULT1EN_MASK;
+    538          
+    539          	#if (SR_PWM_FAULT_1_SRC == CMP)
+    540          	SIM.SOPT4 |= SIM_SOPT4_FTM0FLT1_MASK;  	// Configures the source of FTM0 fault 1 to comparator CMP0 output
+    541          	Comparator__Config(SR_COMPARATOR_CHANNEL, SR_COMPARATOR_INVERTED_INPUT, SR_COMPARATOR_NONINVERTED_INPUT, SR_COMPARATOR_MODE, SR_PWM_FAULT_0_CMP_LEV);  // Conifigures the comparator 1
+    542          	#else
+    543          	SIM.SOPT4 &= ~SIM_SOPT4_FTM0FLT1_MASK;
+    544          	#endif
+    545          #endif
+    546          
+    547          #if (SR_PWM_FAULT_2 == ENABLED)
+    548          	fault_enable_mask |= FTM_FLTCTRL_FAULT2EN_MASK;
+    549          #endif
+    550          
+    551          #if (SR_PWM_FAULT_3 == ENABLED)
+    552          	fault_enable_mask |= FTM_FLTCTRL_FAULT3EN_MASK;
+    553          #endif
+    554          
+    555          	FTM0.FLTCTRL |= fault_enable_mask; 		// Enables the fault inputs
+   \   00000126   0x6FF0             LDR      R0,[R6, #+124]
+   \   00000128   0xF040 0x0001      ORR      R0,R0,#0x1
+   \   0000012C   0x67F0             STR      R0,[R6, #+124]
+    556          
+    557          
+    558          
+    559          //------------------------- FMT0 Output Polarity configuration ------------------------
+    560          	//POL Register set the level of the channel in case of Fault
+    561          	//This is considering channel 0,2 and 4 as the high channels
+    562          	FTM0.CONTROLS[0].CnSC |= FTM_CnSC_ELSB_MASK ;
+    563          	FTM0.CONTROLS[1].CnSC |= FTM_CnSC_ELSB_MASK ;
+    564          	FTM0.CONTROLS[2].CnSC |= FTM_CnSC_ELSB_MASK ;
+    565          	FTM0.CONTROLS[3].CnSC |= FTM_CnSC_ELSB_MASK ;
+    566          	FTM0.CONTROLS[4].CnSC |= FTM_CnSC_ELSB_MASK ;
+    567          	FTM0.CONTROLS[5].CnSC |= FTM_CnSC_ELSB_MASK ;
+    568          
+    569          #if (SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == SR_PWM_LOW_CHANNELS_ACTIVE_LEVEL)
+    570           #if (SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == 1)
+    571              FTM0.POL |= 0;									// The channel polarity is active high.
+    572           #else
+    573              FTM0.POL |= FTM_POL_POL0_MASK | FTM_POL_POL2_MASK | FTM_POL_POL4_MASK | FTM_POL_POL1_MASK | FTM_POL_POL3_MASK | FTM_POL_POL5_MASK;
+    574           #endif
+    575          #else
+    576           #if (SR_PWM_HIGH_CHANNELS_ACTIVE_LEVEL == 1)
+    577              FTM0.POL |= FTM_POL_POL1_MASK | FTM_POL_POL3_MASK | FTM_POL_POL5_MASK;
+    578           #else
+    579              FTM0.POL |= FTM_POL_POL0_MASK | FTM_POL_POL2_MASK | FTM_POL_POL4_MASK;
+    580           #endif
+    581          #endif
+    582          
+    583          	FTM0.DEADTIME = deadtime;	 					// Configures the deadtime prescaler factor and deadtime value
+    584          
+    585          	SRMCPWM__LOADALLPWMVALUES(SRMCPWM__GET_LOWERS_ON_PWM(),SRMCPWM__GET_LOWERS_ON_PWM(),SRMCPWM__GET_LOWERS_ON_PWM()); // Initial setting of value registers to 0 % of duty cycle
+    586          
+    587          	FTM0.EXTTRIG |= FTM_EXTTRIG_INITTRIGEN_MASK;	// Enables the generation of the trigger when the FTM counter is equal to the CNTIN register, used for starting of the PDB counter
+    588          	FTM0.MODE |= FTM_MODE_INIT_MASK;				// Initializes the channels
+    589          	FTM0.SC |= FTM_SC_CLKS(1);						// Set system clock as source for FTM0 (CLKS[1:0] = 01)
+    590          
+    591          	FTM0.CONF |= FTM_CONF_BDMMODE(1);               // When in debug mode, channels outputs are forced to their safe value according to POLn bit
+    592          //------------------------- Port for FTM0 configuration ---------------------
+    593          // Note: Clock for Port C anc D enabled in sysinit.c already
+    594          #if (SR_PWM__REMAP == 0)
+    595          	PCIPORTC.PCR[1] = PORT_PCR_MUX(4); 				// FTM0 CH0,PTC1
+    596          	PCIPORTC.PCR[2] = PORT_PCR_MUX(4); 				// FTM0 CH1,PTC2
+    597          	PCIPORTC.PCR[5] = PORT_PCR_MUX(7); 				// FTM0 CH2,PTC5
+    598          	PCIPORTC.PCR[4] = PORT_PCR_MUX(4); 				// FTM0 CH3,PTC4
+    599          	PCIPORTD.PCR[4] = PORT_PCR_MUX(4); 				// FTM0 CH4,PTD4
+    600          	PCIPORTD.PCR[5] = PORT_PCR_MUX(4); 				// FTM0 CH5,PTD5
+    601          
+    602          	PCIPORTA.PCR[19] = PORT_PCR_MUX(2); 			// Fault input FTM0_FLT0
+    603          #elif(SR_PWM__REMAP == 1)
+    604          	PCIPORTD.PCR[0]  = PORT_PCR_MUX(4); 			// FTM0 CH0  GWHGD
+   \   0000012E   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000132   0x68F0             LDR      R0,[R6, #+12]
+   \   00000134   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000138   0x60F0             STR      R0,[R6, #+12]
+   \   0000013A   0x6970             LDR      R0,[R6, #+20]
+   \   0000013C   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000140   0x6170             STR      R0,[R6, #+20]
+   \   00000142   0x69F0             LDR      R0,[R6, #+28]
+   \   00000144   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000148   0x61F0             STR      R0,[R6, #+28]
+   \   0000014A   0x6A70             LDR      R0,[R6, #+36]
+   \   0000014C   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000150   0x6270             STR      R0,[R6, #+36]
+   \   00000152   0x6AF0             LDR      R0,[R6, #+44]
+   \   00000154   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000158   0x62F0             STR      R0,[R6, #+44]
+   \   0000015A   0x6B70             LDR      R0,[R6, #+52]
+   \   0000015C   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000160   0x6370             STR      R0,[R6, #+52]
+   \   00000162   0x6F30             LDR      R0,[R6, #+112]
+   \   00000164   0x6730             STR      R0,[R6, #+112]
+   \   00000166   0x66B5             STR      R5,[R6, #+104]
+   \   00000168   0x2000             MOVS     R0,#+0
+   \   0000016A   0x63B0             STR      R0,[R6, #+56]
+   \   0000016C   0x6330             STR      R0,[R6, #+48]
+   \   0000016E   0x62B0             STR      R0,[R6, #+40]
+   \   00000170   0x6230             STR      R0,[R6, #+32]
+   \   00000172   0x61B0             STR      R0,[R6, #+24]
+   \   00000174   0x6130             STR      R0,[R6, #+16]
+   \   00000176   0xF44F 0x7000      MOV      R0,#+512
+   \   0000017A   0xF8C6 0x0098      STR      R0,[R6, #+152]
+   \   0000017E   0x6EF0             LDR      R0,[R6, #+108]
+   \   00000180   0xF040 0x0040      ORR      R0,R0,#0x40
+   \   00000184   0x66F0             STR      R0,[R6, #+108]
+   \   00000186   0x6D70             LDR      R0,[R6, #+84]
+   \   00000188   0xF040 0x0002      ORR      R0,R0,#0x2
+   \   0000018C   0x6570             STR      R0,[R6, #+84]
+   \   0000018E   0x6830             LDR      R0,[R6, #+0]
+   \   00000190   0xF040 0x0008      ORR      R0,R0,#0x8
+   \   00000194   0x6030             STR      R0,[R6, #+0]
+   \   00000196   0xF8D6 0x0084      LDR      R0,[R6, #+132]
+   \   0000019A   0xF040 0x0040      ORR      R0,R0,#0x40
+   \   0000019E   0xF8C6 0x0084      STR      R0,[R6, #+132]
+   \   000001A2   0x.... 0x....      LDR.W    R0,??DataTable19_2  ;; 0x4004c000
+   \   000001A6   0x6001             STR      R1,[R0, #+0]
+    605          	PCIPORTD.PCR[1]  = PORT_PCR_MUX(4);             // FTM0 CH1  GWLGD
+   \   000001A8   0x6041             STR      R1,[R0, #+4]
+    606          	PCIPORTD.PCR[2]  = PORT_PCR_MUX(4);             // FTM0 CH2  GVHGD
+   \   000001AA   0x6081             STR      R1,[R0, #+8]
+    607          	PCIPORTD.PCR[3]  = PORT_PCR_MUX(4);             // FTM0 CH3  GVLGD
+   \   000001AC   0x60C1             STR      R1,[R0, #+12]
+    608          	PCIPORTD.PCR[4]  = PORT_PCR_MUX(4);             // FTM0 CH4  GUHGD
+   \   000001AE   0x6101             STR      R1,[R0, #+16]
+    609          	PCIPORTD.PCR[5]  = PORT_PCR_MUX(4);             // FTM0 CH5  GULGD
+   \   000001B0   0x6141             STR      R1,[R0, #+20]
+    610          #endif
+    611          
+    612          
+    613          
+    614          //------------------------------ Enables Output ------------------------------
+    615          #if (SR_PWM_ENABLE_IRQ == 1)
+    616          	FTM0.SC |= FTM_SC_TOIE_MASK;					// Enables Counter Overflow interrupt
+    617          	Micro__NVICEnableIRQ(FTM0_IRQ_CHANNEL,0,0);	   	// Enables FTM0 Interrupt
+    618          #endif
+    619          	FTM0.FMS |= FTM_FMS_WPEN_MASK;				   	// Protect the Registers - Write Protection Enabled
+   \   000001B2   0x6F70             LDR      R0,[R6, #+116]
+   \   000001B4   0xF040 0x0040      ORR      R0,R0,#0x40
+   \   000001B8   0x6770             STR      R0,[R6, #+116]
+    620          
+    621          #if(SR_PWM_INIT_STATE == ENABLED)
+    622          	PWM_OUTPUT_ON();                                // Enables PWM output
+   \   000001BA   0x6E30             LDR      R0,[R6, #+96]
+   \   000001BC   0x0980             LSRS     R0,R0,#+6
+   \   000001BE   0x0180             LSLS     R0,R0,#+6
+   \   000001C0   0x6630             STR      R0,[R6, #+96]
+    623          #endif
+    624          
+    625          	MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();		// Enables back interruptions
+   \   000001C2   0xF388 0x8810      MSR      PRIMASK,R8
+    626          
+    627          
+    628          //------------------------ Initialize the Class B variables ---------------------------
+    629              SR_MCPWM_UPDATE_ZERO_TIMEOUT(0);
+   \   000001C6   0x2200             MOVS     R2,#+0
+   \   000001C8   0xF107 0x0120      ADD      R1,R7,#+32
+   \   000001CC   0xF107 0x000C      ADD      R0,R7,#+12
+   \   000001D0   0x.... 0x....      BL       SRData__UpdateLong
+    630          
+    631              SR_MCPWM_UPDATE_ONE_TIMEOUT(0);
+   \   000001D4   0x2200             MOVS     R2,#+0
+   \   000001D6   0xF107 0x0124      ADD      R1,R7,#+36
+   \   000001DA   0xF107 0x0010      ADD      R0,R7,#+16
+   \   000001DE   0x.... 0x....      BL       SRData__UpdateLong
+    632          
+    633              SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(0);
+   \   000001E2   0x2200             MOVS     R2,#+0
+   \   000001E4   0xF107 0x0128      ADD      R1,R7,#+40
+   \   000001E8   0xF107 0x0014      ADD      R0,R7,#+20
+   \   000001EC   0x.... 0x....      BL       SRData__UpdateLong
+    634              SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(0);
+   \   000001F0   0x2200             MOVS     R2,#+0
+   \   000001F2   0xF107 0x012C      ADD      R1,R7,#+44
+   \   000001F6   0xF107 0x0018      ADD      R0,R7,#+24
+   \   000001FA   0x.... 0x....      BL       SRData__UpdateLong
+    635          
+    636              SR_MCPWM_UPDATE_ERRORS(SR_MCPWM_ERROR_PERIPHERAL_NOT_SAFE);
+   \   000001FE   0x2204             MOVS     R2,#+4
+   \   00000200   0xF107 0x011D      ADD      R1,R7,#+29
+   \   00000204   0x1C78             ADDS     R0,R7,#+1
+   \   00000206   0x.... 0x....      BL       SRData__UpdateByte
+    637          
+    638              SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_WAITING_TO_CHECK);
+   \   0000020A   0xB002             ADD      SP,SP,#+8
+   \   0000020C   0xF107 0x011C      ADD      R1,R7,#+28
+   \   00000210   0xECBD 0x8B02      VPOP     {D8}
+   \   00000214   0x4638             MOV      R0,R7
+   \   00000216   0xB001             ADD      SP,SP,#+4
+   \   00000218   0xE8BD 0x43F0      POP      {R4-R9,LR}
+   \   0000021C   0x2200             MOVS     R2,#+0
+   \   0000021E   0x.... 0x....      B.W      SRData__UpdateByte
+    639          }
+    640          
+    641          //---------------------------------------------------------------------------------------------------------------------
+    642          /**
+    643           * @brief       Get the max PWM counts configured in the peripheral.
+    644           *
+    645           * @remark      This method uses a shadowed variable, which was set during the initialization of this module.
+    646           *
+    647           * @return      Max PWM in timer counts.
+    648           */
+
+   \                                 In section .text, align 2, keep-with-next
+    649          uint16 SRMCPwm__GetMaxPwm(void)
+    650          {
+    651              return(MaxPwm);
+   \                     SRMCPwm__GetMaxPwm: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_4
+   \   00000004   0x8840             LDRH     R0,[R0, #+2]
+   \   00000006   0x4770             BX       LR               ;; return
+    652          }
+    653          
+    654          //---------------------------------------------------------------------------------------------------------------------
+    655          /**
+    656           * @brief       ISR for the PWM.
+    657           *
+    658           * @detail      This is configured to happen at the end of each PWM period.
+    659           */
+
+   \                                 In section .text, align 2, keep-with-next
+    660          INTERRUPT_DIRECTIVE void SRMCPwm__PwmISR(void)
+    661          {
+    662          #if(SR_PWM_DELAY_ENABLE == 1)
+    663              uint32 temp;
+    664          
+    665              temp = SR_MCPWM_CHECK_DUTY_A_DELAYED();    // Checks state data
+    666              temp += SR_MCPWM_CHECK_DUTY_B_DELAYED();   // Checks variable data
+    667              temp += SR_MCPWM_CHECK_DUTY_C_DELAYED();   // Checks variable data
+    668          
+    669              if(temp == SRDATA_OK)                          // If data is not corrupted
+    670              {
+    671                  // phase U
+    672                  FTM0.CONTROLS[SR_PWM_U_HIGH].CnV    = (sint16)SR_Pwm_A_1;
+    673                  FTM0.CONTROLS[SR_PWM_U_LOW].CnV     = -(sint16)SR_Pwm_A_1;
+    674          
+    675                  // phase V
+    676                  FTM0.CONTROLS[SR_PWM_V_HIGH].CnV    = (sint16)SR_Pwm_B_1;
+    677                  FTM0.CONTROLS[SR_PWM_V_LOW].CnV     = -(sint16)SR_Pwm_B_1;
+    678          
+    679                  // phase V
+    680                  FTM0.CONTROLS[SR_PWM_W_HIGH].CnV    = (sint16)SR_Pwm_C_1;
+    681                  FTM0.CONTROLS[SR_PWM_W_LOW].CnV     = -(sint16)SR_Pwm_C_1;
+    682          
+    683                  FTM0.PWMLOAD = FTM_PWMLOAD_LDOK_MASK;
+    684          
+    685          
+    686                  FTM0.SC &= ~FTM_SC_TOF_MASK; //Clear the interrupt flag
+    687              }
+    688          #endif
+    689          
+    690          }
+   \                     SRMCPwm__PwmISR: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    691          
+    692          //---------------------------------------------------------------------------------------------------------------------
+    693          /**
+    694           * @brief       Turn ON ALL LOW GATES.
+    695           *
+    696           * @remark      This is related to the driver input and NOT to the PWM output.
+    697           */
+
+   \                                 In section .text, align 2, keep-with-next
+    698          void SRMCPwm__TurnOnLowSideGates(void)
+    699          {
+    700          	SRMCPWM__LOADALLPWMVALUES(0, 0, 0);
+   \                     SRMCPwm__TurnOnLowSideGates: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_7  ;; 0x40038010
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x6281             STR      R1,[R0, #+40]
+   \   00000008   0x6201             STR      R1,[R0, #+32]
+   \   0000000A   0x6181             STR      R1,[R0, #+24]
+   \   0000000C   0x6101             STR      R1,[R0, #+16]
+   \   0000000E   0x6081             STR      R1,[R0, #+8]
+   \   00000010   0x6001             STR      R1,[R0, #+0]
+   \   00000012   0xF44F 0x7100      MOV      R1,#+512
+   \   00000016   0xF8C0 0x1088      STR      R1,[R0, #+136]
+    701              PWM_OUTPUT_ON();
+   \   0000001A   0x6D01             LDR      R1,[R0, #+80]
+   \   0000001C   0x0989             LSRS     R1,R1,#+6
+   \   0000001E   0x0189             LSLS     R1,R1,#+6
+   \   00000020   0x6501             STR      R1,[R0, #+80]
+    702          }
+   \   00000022   0x4770             BX       LR               ;; return
+    703          
+    704          //---------------------------------------------------------------------------------------------------------------------
+    705          /**
+    706           * @brief       Turn OFF ALL LOW GATES.
+    707           *
+    708           * @remark      This is related to the driver input and NOT to the PWM output.
+    709           */
+
+   \                                 In section .text, align 2, keep-with-next
+    710          void SRMCPwm__TurnOffLowSideGates(void)
+    711          {
+    712          	SRMCPwm__DisablePwmOutput(SR_MCPWM_GATE_ALL_LO);
+   \                     SRMCPwm__TurnOffLowSideGates: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0xF041 0x012A      ORR      R1,R1,#0x2A
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+    713          }
+   \   0000000C   0x4770             BX       LR               ;; return
+    714          
+    715          //---------------------------------------------------------------------------------------------------------------------
+    716          /**
+    717           * @brief       Turn ON ALL HIGH GATES.
+    718           *
+    719           * @remark      This is related to the driver input and NOT to the PWM output.
+    720           */
+
+   \                                 In section .text, align 2, keep-with-next
+    721          void SRMCPwm__TurnOnHighSideGates(void)
+    722          {
+   \                     SRMCPwm__TurnOnHighSideGates: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_4
+    723          	SRMCPWM__LOADALLPWMVALUES(32768 , 32768 , 32768);
+   \   00000004   0x.... 0x....      LDR.W    R2,??DataTable19_7  ;; 0x40038010
+   \   00000008   0x8841             LDRH     R1,[R0, #+2]
+   \   0000000A   0xB209             SXTH     R1,R1
+   \   0000000C   0x4608             MOV      R0,R1
+   \   0000000E   0x4240             RSBS     R0,R0,#+0
+   \   00000010   0x6210             STR      R0,[R2, #+32]
+   \   00000012   0x6110             STR      R0,[R2, #+16]
+   \   00000014   0x6010             STR      R0,[R2, #+0]
+   \   00000016   0x6291             STR      R1,[R2, #+40]
+   \   00000018   0xF44F 0x7000      MOV      R0,#+512
+   \   0000001C   0xF8C2 0x0088      STR      R0,[R2, #+136]
+   \   00000020   0x6191             STR      R1,[R2, #+24]
+   \   00000022   0x6091             STR      R1,[R2, #+8]
+    724          
+    725          	PWM_OUTPUT_ON();
+   \   00000024   0x6D10             LDR      R0,[R2, #+80]
+   \   00000026   0x0980             LSRS     R0,R0,#+6
+   \   00000028   0x0180             LSLS     R0,R0,#+6
+   \   0000002A   0x6510             STR      R0,[R2, #+80]
+    726          }
+   \   0000002C   0x4770             BX       LR               ;; return
+    727          
+    728          //---------------------------------------------------------------------------------------------------------------------
+    729          /**
+    730           * @brief        Turn OFF ALL HIGH GATES.
+    731           *
+    732           * @details      This is related to the driver input and NOT to the PWM output.
+    733           *
+    734           */
+
+   \                                 In section .text, align 2, keep-with-next
+    735          void SRMCPwm__TurnOffHighSideGates(void)
+    736          {
+    737          	SRMCPwm__DisablePwmOutput(SR_MCPWM_GATE_ALL_HI);
+   \                     SRMCPwm__TurnOffHighSideGates: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0xF041 0x0115      ORR      R1,R1,#0x15
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+    738          }
+   \   0000000C   0x4770             BX       LR               ;; return
+    739          
+    740          //---------------------------------------------------------------------------------------------------------------------
+    741          /**
+    742           * @brief       Turn OFF all the gates.
+    743           *
+    744           * @details     This method is created and reconfigure on fly the Gpio output, because
+    745           *              the LOCK bits can be used and the OCx/OCxN will not be able to be
+    746           *              reconfigured on fly.
+    747           */
+
+   \                                 In section .text, align 2, keep-with-next
+    748          void SRMCPwm__TurnOffAllGates(void)
+    749          {
+    750          	PWM_OUTPUT_OFF();
+   \                     SRMCPwm__TurnOffAllGates: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000004   0x6801             LDR      R1,[R0, #+0]
+   \   00000006   0xF041 0x013F      ORR      R1,R1,#0x3F
+   \   0000000A   0x6001             STR      R1,[R0, #+0]
+    751          
+    752              if (GetFaultFlagState() != 0)
+   \   0000000C   0x6941             LDR      R1,[R0, #+20]
+   \   0000000E   0x060A             LSLS     R2,R1,#+24
+   \   00000010   0x0FD2             LSRS     R2,R2,#+31
+   \   00000012   0xBF1C             ITT      NE 
+    753              {
+    754                  ClearFaultFlag();
+   \   00000014   0xF021 0x018F      BICNE    R1,R1,#0x8F
+   \   00000018   0x6141             STRNE    R1,[R0, #+20]
+    755              }
+    756          }
+   \   0000001A   0x4770             BX       LR               ;; return
+    757          
+    758          //---------------------------------------------------------------------------------------------------------------------
+    759          /**
+    760           * @brief       Load the user PWM duty to the respective registers.
+    761           *
+    762           * @details     All parameters are given in PWM counts.
+    763           *
+    764           * @param[in] pwm_a
+    765           * @param[in] pwm_b
+    766           * @param[in] pwm_c
+    767           */
+
+   \                                 In section .text, align 2, keep-with-next
+    768          void SRMCPwm__LoadAllPwmValues(uint16 pwm_a, uint16 pwm_b, uint16 pwm_c)
+    769          {
+   \                     SRMCPwm__LoadAllPwmValues: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R3,??DataTable19_4
+   \   00000004   0x885B             LDRH     R3,[R3, #+2]
+   \   00000006   0x4358             MULS     R0,R0,R3
+    770          
+    771              pwm_a = (uint16)(((sint32)(MaxPwm) * (sint32)(pwm_a))>>15);
+    772              pwm_b = (uint16)(((sint32)(MaxPwm) * (sint32)(pwm_b))>>15);
+   \   00000008   0x4359             MULS     R1,R1,R3
+    773              pwm_c = (uint16)(((sint32)(MaxPwm) * (sint32)(pwm_c))>>15);
+   \   0000000A   0x435A             MULS     R2,R2,R3
+   \   0000000C   0x0040             LSLS     R0,R0,#+1
+    774          
+    775          #if(SR_PWM_DELAY_ENABLE == 0)
+    776              // phase U
+    777              FTM0.CONTROLS[SR_PWM_U_HIGH].CnV 	= (sint16)pwm_a;
+   \   0000000E   0x.... 0x....      LDR.W    R3,??DataTable19_7  ;; 0x40038010
+   \   00000012   0x1400             ASRS     R0,R0,#+16
+   \   00000014   0x6298             STR      R0,[R3, #+40]
+   \   00000016   0x0049             LSLS     R1,R1,#+1
+    778              FTM0.CONTROLS[SR_PWM_U_LOW].CnV 	= -(sint16)pwm_a;
+   \   00000018   0x4240             RSBS     R0,R0,#+0
+   \   0000001A   0x6218             STR      R0,[R3, #+32]
+    779          
+    780              // phase V
+    781          	FTM0.CONTROLS[SR_PWM_V_HIGH].CnV 	= (sint16)pwm_b;
+   \   0000001C   0x1409             ASRS     R1,R1,#+16
+    782          	FTM0.CONTROLS[SR_PWM_V_LOW].CnV 	= -(sint16)pwm_b;
+   \   0000001E   0x4248             RSBS     R0,R1,#+0
+   \   00000020   0x0052             LSLS     R2,R2,#+1
+   \   00000022   0x6118             STR      R0,[R3, #+16]
+    783          
+    784          	// phase V
+    785              FTM0.CONTROLS[SR_PWM_W_HIGH].CnV 	= (sint16)pwm_c;
+   \   00000024   0x1412             ASRS     R2,R2,#+16
+    786              FTM0.CONTROLS[SR_PWM_W_LOW].CnV 	= -(sint16)pwm_c;
+   \   00000026   0x4250             RSBS     R0,R2,#+0
+   \   00000028   0x6018             STR      R0,[R3, #+0]
+   \   0000002A   0x6199             STR      R1,[R3, #+24]
+    787          
+    788          	FTM0.PWMLOAD = FTM_PWMLOAD_LDOK_MASK;
+   \   0000002C   0xF44F 0x7000      MOV      R0,#+512
+   \   00000030   0x609A             STR      R2,[R3, #+8]
+   \   00000032   0xF8C3 0x0088      STR      R0,[R3, #+136]
+    789          #else
+    790          
+    791          	SR_MCPWM_UPDATE_DUTY_A_DELAYED(pwm_a);
+    792          	SR_MCPWM_UPDATE_DUTY_B_DELAYED(pwm_b);
+    793          	SR_MCPWM_UPDATE_DUTY_C_DELAYED(pwm_c);
+    794          #endif
+    795          }
+   \   00000036   0x4770             BX       LR               ;; return
+    796          
+    797          //---------------------------------------------------------------------------------------------------------------------
+    798          /**
+    799           * @brief       Start the PWM timer counter.
+    800           *
+    801           */
+
+   \                                 In section .text, align 2, keep-with-next
+    802          void SRMCPwm__StartCounter(void)
+    803          {
+    804          	PWM_TIMER_START();
+   \                     SRMCPwm__StartCounter: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_5  ;; 0x40038000
+   \   00000004   0x6D41             LDR      R1,[R0, #+84]
+   \   00000006   0xF041 0x0104      ORR      R1,R1,#0x4
+   \   0000000A   0x6541             STR      R1,[R0, #+84]
+   \   0000000C   0x6801             LDR      R1,[R0, #+0]
+   \   0000000E   0xF041 0x0108      ORR      R1,R1,#0x8
+   \   00000012   0x6001             STR      R1,[R0, #+0]
+   \   00000014   0x6F41             LDR      R1,[R0, #+116]
+   \   00000016   0xF041 0x0140      ORR      R1,R1,#0x40
+   \   0000001A   0x6741             STR      R1,[R0, #+116]
+    805          }
+   \   0000001C   0x4770             BX       LR               ;; return
+    806          
+    807          //---------------------------------------------------------------------------------------------------------------------
+    808          /**
+    809           * @brief       Stop the timer counter.
+    810           *
+    811           * @remark      This method also turns off the PWM ISR because the timer will be stopped.
+    812           */
+
+   \                                 In section .text, align 2, keep-with-next
+    813          void SRMCPwm__StopCounter(void)
+    814          {
+    815          	PWM_TIMER_STOP();
+   \                     SRMCPwm__StopCounter: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_5  ;; 0x40038000
+   \   00000004   0x6D41             LDR      R1,[R0, #+84]
+   \   00000006   0xF041 0x0104      ORR      R1,R1,#0x4
+   \   0000000A   0x6541             STR      R1,[R0, #+84]
+   \   0000000C   0x6801             LDR      R1,[R0, #+0]
+   \   0000000E   0x6001             STR      R1,[R0, #+0]
+   \   00000010   0x6F41             LDR      R1,[R0, #+116]
+   \   00000012   0xF041 0x0140      ORR      R1,R1,#0x40
+   \   00000016   0x6741             STR      R1,[R0, #+116]
+    816          }
+   \   00000018   0x4770             BX       LR               ;; return
+    817          
+    818          //---------------------------------------------------------------------------------------------------------------------
+    819          /**
+    820           * @brief       Enable the PWM output according the parameter gate_name.
+    821           *              It connects the PWM output to the internal PWM peripheral.
+    822           *
+    823           * @param[in]   gate_name Selects the gate to be connected.
+    824           */
+
+   \                                 In section .text, align 4, keep-with-next
+    825          void SRMCPwm__EnablePwmOutput(SRMCPWM_GATE_NAME_TYPE gate_name)
+    826          {
+    827          	switch(gate_name)
+   \                     SRMCPwm__EnablePwmOutput: (+1)
+   \   00000000   0x2808             CMP      R0,#+8
+   \   00000002   0xD83C             BHI.N    ??SRMCPwm__EnablePwmOutput_1
+   \   00000004   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??SRMCPwm__EnablePwmOutput_0:
+   \   00000008   0x05 0x1D          DC8      0x5,0x1D,0xB,0x23
+   \              0x0B 0x23    
+   \   0000000C   0x11 0x29          DC8      0x11,0x29,0x17,0x2F
+   \              0x17 0x2F    
+   \   00000010   0x35 0x00          DC8      0x35,0x0
+    828          	{
+    829          	    case SR_MCPWM_GATE_A_HI:
+    830          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH4OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_2: (+1)
+   \   00000012   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000016   0x6801             LDR      R1,[R0, #+0]
+   \   00000018   0xF021 0x0110      BIC      R1,R1,#0x10
+   \   0000001C   0xE02E             B.N      ??SRMCPwm__EnablePwmOutput_3
+    831          	        break;
+    832          	    case SR_MCPWM_GATE_B_HI:
+    833          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH2OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_4: (+1)
+   \   0000001E   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000022   0x6801             LDR      R1,[R0, #+0]
+   \   00000024   0xF021 0x0104      BIC      R1,R1,#0x4
+   \   00000028   0xE028             B.N      ??SRMCPwm__EnablePwmOutput_3
+    834          	        break;
+    835          	    case SR_MCPWM_GATE_C_HI:
+    836          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH0OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_5: (+1)
+   \   0000002A   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000002E   0x6801             LDR      R1,[R0, #+0]
+   \   00000030   0x0849             LSRS     R1,R1,#+1
+   \   00000032   0x0049             LSLS     R1,R1,#+1
+   \   00000034   0xE022             B.N      ??SRMCPwm__EnablePwmOutput_3
+    837          	        break;
+    838          	    case SR_MCPWM_GATE_ALL_HI:
+    839          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH0OM_MASK | FTM_OUTMASK_CH2OM_MASK |FTM_OUTMASK_CH4OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_6: (+1)
+   \   00000036   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000003A   0x6801             LDR      R1,[R0, #+0]
+   \   0000003C   0xF021 0x0115      BIC      R1,R1,#0x15
+   \   00000040   0xE01C             B.N      ??SRMCPwm__EnablePwmOutput_3
+    840          	        break;
+    841          	    case SR_MCPWM_GATE_A_LO:
+    842          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH5OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_7: (+1)
+   \   00000042   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000046   0x6801             LDR      R1,[R0, #+0]
+   \   00000048   0xF021 0x0120      BIC      R1,R1,#0x20
+   \   0000004C   0xE016             B.N      ??SRMCPwm__EnablePwmOutput_3
+    843          	        break;
+    844          	    case SR_MCPWM_GATE_B_LO:
+    845          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH3OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_8: (+1)
+   \   0000004E   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000052   0x6801             LDR      R1,[R0, #+0]
+   \   00000054   0xF021 0x0108      BIC      R1,R1,#0x8
+   \   00000058   0xE010             B.N      ??SRMCPwm__EnablePwmOutput_3
+    846          	        break;
+    847          	    case SR_MCPWM_GATE_C_LO:
+    848          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH1OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_9: (+1)
+   \   0000005A   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000005E   0x6801             LDR      R1,[R0, #+0]
+   \   00000060   0xF021 0x0102      BIC      R1,R1,#0x2
+   \   00000064   0xE00A             B.N      ??SRMCPwm__EnablePwmOutput_3
+    849          	        break;
+    850          	    case SR_MCPWM_GATE_ALL_LO:
+    851          	    	FTM0.OUTMASK &= ~(FTM_OUTMASK_CH1OM_MASK | FTM_OUTMASK_CH3OM_MASK |FTM_OUTMASK_CH5OM_MASK);
+   \                     ??SRMCPwm__EnablePwmOutput_10: (+1)
+   \   00000066   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000006A   0x6801             LDR      R1,[R0, #+0]
+   \   0000006C   0xF021 0x012A      BIC      R1,R1,#0x2A
+   \   00000070   0xE004             B.N      ??SRMCPwm__EnablePwmOutput_3
+    852          	        break;
+    853          	    case SR_MCPWM_GATE_ALL_6GATES:
+    854          	    	PWM_OUTPUT_ON()
+   \                     ??SRMCPwm__EnablePwmOutput_11: (+1)
+   \   00000072   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000076   0x6801             LDR      R1,[R0, #+0]
+   \   00000078   0x0989             LSRS     R1,R1,#+6
+   \   0000007A   0x0189             LSLS     R1,R1,#+6
+   \                     ??SRMCPwm__EnablePwmOutput_3: (+1)
+   \   0000007C   0x6001             STR      R1,[R0, #+0]
+    855          			break;
+    856          	    default:
+    857          	        break;
+    858          	}
+    859          }
+   \                     ??SRMCPwm__EnablePwmOutput_1: (+1)
+   \   0000007E   0x4770             BX       LR               ;; return
+    860          
+    861          
+    862          //---------------------------------------------------------------------------------------------------------------------
+    863          /**
+    864           * @brief       Disables PWM output according the parameter gate_name.
+    865           *              It disconnects the PWM output to the internal PWM peripheral.
+    866           *
+    867           * @param[in]   gate_name Selects the gate to be disconnected.
+    868           */
+
+   \                                 In section .text, align 4, keep-with-next
+    869          void SRMCPwm__DisablePwmOutput(SRMCPWM_GATE_NAME_TYPE gate_name)
+    870          {
+    871          	switch(gate_name)
+   \                     SRMCPwm__DisablePwmOutput: (+1)
+   \   00000000   0x2808             CMP      R0,#+8
+   \   00000002   0xD83C             BHI.N    ??SRMCPwm__DisablePwmOutput_1
+   \   00000004   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??SRMCPwm__DisablePwmOutput_0:
+   \   00000008   0x05 0x1D          DC8      0x5,0x1D,0xB,0x23
+   \              0x0B 0x23    
+   \   0000000C   0x11 0x29          DC8      0x11,0x29,0x17,0x2F
+   \              0x17 0x2F    
+   \   00000010   0x35 0x00          DC8      0x35,0x0
+    872          	{
+    873          	    case SR_MCPWM_GATE_A_HI:
+    874          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH4OM_MASK);;
+   \                     ??SRMCPwm__DisablePwmOutput_2: (+1)
+   \   00000012   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000016   0x6801             LDR      R1,[R0, #+0]
+   \   00000018   0xF041 0x0110      ORR      R1,R1,#0x10
+   \   0000001C   0xE02E             B.N      ??SRMCPwm__DisablePwmOutput_3
+    875          	        break;
+    876          	    case SR_MCPWM_GATE_B_HI:
+    877          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH2OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_4: (+1)
+   \   0000001E   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000022   0x6801             LDR      R1,[R0, #+0]
+   \   00000024   0xF041 0x0104      ORR      R1,R1,#0x4
+   \   00000028   0xE028             B.N      ??SRMCPwm__DisablePwmOutput_3
+    878          	        break;
+    879          	    case SR_MCPWM_GATE_C_HI:
+    880          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH0OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_5: (+1)
+   \   0000002A   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000002E   0x6801             LDR      R1,[R0, #+0]
+   \   00000030   0xF041 0x0101      ORR      R1,R1,#0x1
+   \   00000034   0xE022             B.N      ??SRMCPwm__DisablePwmOutput_3
+    881          	        break;
+    882          	    case SR_MCPWM_GATE_ALL_HI:
+    883          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH0OM_MASK | FTM_OUTMASK_CH2OM_MASK |FTM_OUTMASK_CH4OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_6: (+1)
+   \   00000036   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000003A   0x6801             LDR      R1,[R0, #+0]
+   \   0000003C   0xF041 0x0115      ORR      R1,R1,#0x15
+   \   00000040   0xE01C             B.N      ??SRMCPwm__DisablePwmOutput_3
+    884          	        break;
+    885          	    case SR_MCPWM_GATE_A_LO:
+    886          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH5OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_7: (+1)
+   \   00000042   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000046   0x6801             LDR      R1,[R0, #+0]
+   \   00000048   0xF041 0x0120      ORR      R1,R1,#0x20
+   \   0000004C   0xE016             B.N      ??SRMCPwm__DisablePwmOutput_3
+    887          	        break;
+    888          	    case SR_MCPWM_GATE_B_LO:
+    889          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH3OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_8: (+1)
+   \   0000004E   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000052   0x6801             LDR      R1,[R0, #+0]
+   \   00000054   0xF041 0x0108      ORR      R1,R1,#0x8
+   \   00000058   0xE010             B.N      ??SRMCPwm__DisablePwmOutput_3
+    890          	        break;
+    891          	    case SR_MCPWM_GATE_C_LO:
+    892          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH1OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_9: (+1)
+   \   0000005A   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000005E   0x6801             LDR      R1,[R0, #+0]
+   \   00000060   0xF041 0x0102      ORR      R1,R1,#0x2
+   \   00000064   0xE00A             B.N      ??SRMCPwm__DisablePwmOutput_3
+    893          	        break;
+    894          	    case SR_MCPWM_GATE_ALL_LO:
+    895          	    	FTM0.OUTMASK |= (FTM_OUTMASK_CH1OM_MASK | FTM_OUTMASK_CH3OM_MASK |FTM_OUTMASK_CH5OM_MASK);
+   \                     ??SRMCPwm__DisablePwmOutput_10: (+1)
+   \   00000066   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   0000006A   0x6801             LDR      R1,[R0, #+0]
+   \   0000006C   0xF041 0x012A      ORR      R1,R1,#0x2A
+   \   00000070   0xE004             B.N      ??SRMCPwm__DisablePwmOutput_3
+    896          	        break;
+    897          	    case SR_MCPWM_GATE_ALL_6GATES:
+    898          	    	PWM_OUTPUT_OFF();
+   \                     ??SRMCPwm__DisablePwmOutput_11: (+1)
+   \   00000072   0x.... 0x....      LDR.W    R0,??DataTable19_8  ;; 0x40038060
+   \   00000076   0x6801             LDR      R1,[R0, #+0]
+   \   00000078   0xF041 0x013F      ORR      R1,R1,#0x3F
+   \                     ??SRMCPwm__DisablePwmOutput_3: (+1)
+   \   0000007C   0x6001             STR      R1,[R0, #+0]
+    899          			break;
+    900          	    default:
+    901          	        break;
+    902          	}
+    903          }
+   \                     ??SRMCPwm__DisablePwmOutput_1: (+1)
+   \   0000007E   0x4770             BX       LR               ;; return
+    904          
+    905          
+    906          //---------------------------------------------------------------------------------------------------------------------
+    907          /**
+    908           * @brief       Get the specified PWM frequency.
+    909           *
+    910           * @return      Frequency in Hertz, decimal and no fractional number.
+    911           */
+
+   \                                 In section .text, align 2, keep-with-next
+    912          uint16 SRMCPwm__GetPwmFrequencyHz(void)
+    913          {
+    914          	return (PwmFrequency);
+   \                     SRMCPwm__GetPwmFrequencyHz: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_4
+   \   00000004   0x8880             LDRH     R0,[R0, #+4]
+   \   00000006   0x4770             BX       LR               ;; return
+    915          }
+    916          
+    917          //---------------------------------------------------------------------------------------------------------------------
+    918          /**
+    919           * @brief       Get the configured dead time in the PWM peripheral.
+    920           *
+    921           * @return      Dead time in nanoseconds, decimal and no fractional number.
+    922           */
+
+   \                                 In section .text, align 2, keep-with-next
+    923          uint16 SRMCPwm__GetDeadtimeNanosec(void)
+    924          {
+    925          	return (DeadTimeNanosec);
+   \                     SRMCPwm__GetDeadtimeNanosec: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable19_4
+   \   00000004   0x88C0             LDRH     R0,[R0, #+6]
+   \   00000006   0x4770             BX       LR               ;; return
+    926          }
+    927          
+    928          //---------------------------------------------------------------------------------------------------------------------
+    929          /**
+    930           * @brief       Get the Fault Status of the peripheral.
+    931           *
+    932           * @details     This function returns over current or over temperature error from driver module.
+    933           *
+    934           * @return
+    935           */
+
+   \                                 In section .text, align 2, keep-with-next
+    936          uint8 SRMCPwm__GetHwFaultStatus(void)
+    937          {
+   \                     SRMCPwm__GetHwFaultStatus: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    938              uint8 temp = FALSE;                     // Starts with no fault reported
+    939              uint32 temp1;
+    940          
+    941              temp1 = SR_MCPWM_CHECK_DIAG_STATE();            // Checks state data
+    942          
+    943              if(temp1 == SRDATA_OK)                          // If data is not corrupted
+   \   00000002   0x.... 0x....      LDR.W    R5,??DataTable19_4
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x2400             MOVS     R4,#+0
+   \   0000000A   0xF105 0x011C      ADD      R1,R5,#+28
+   \   0000000E   0x4628             MOV      R0,R5
+   \   00000010   0x.... 0x....      BL       SRData__CheckByte
+   \   00000014   0xB958             CBNZ.N   R0,??SRMCPwm__GetHwFaultStatus_0
+    944              {
+    945                  temp1 = SR_MCPwm_Diag_State;
+   \   00000016   0x7828             LDRB     R0,[R5, #+0]
+    946          
+    947                  if( (temp1 == SR_MCPWM_FEEDBACK_UPDATED) ||
+    948                      (temp1 == SR_MCPWM_WAITING_TO_CHECK) )  // Checks if it already finished a check or not started
+   \   00000018   0x2804             CMP      R0,#+4
+   \   0000001A   0xBF18             IT       NE 
+   \   0000001C   0x2800             CMPNE    R0,#+0
+   \   0000001E   0xD106             BNE.N    ??SRMCPwm__GetHwFaultStatus_0
+    949                  {
+    950                    
+    951                      if(GetFaultFlagState() != 0)
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable19_9  ;; 0x40038074
+   \   00000024   0x6800             LDR      R0,[R0, #+0]
+   \   00000026   0x0600             LSLS     R0,R0,#+24
+   \   00000028   0x0FC0             LSRS     R0,R0,#+31
+   \   0000002A   0xBF18             IT       NE 
+    952                      {
+    953                          temp = TRUE;                        // Failure detected
+   \   0000002C   0x2401             MOVNE    R4,#+1
+    954          
+    955                      }
+    956                  }
+    957              }
+    958              return(temp);                                   // Returns status
+   \                     ??SRMCPwm__GetHwFaultStatus_0: (+1)
+   \   0000002E   0x4620             MOV      R0,R4
+   \   00000030   0xB001             ADD      SP,SP,#+4
+   \   00000032   0xBD30             POP      {R4,R5,PC}       ;; return
+    959          }
+    960          
+    961          //---------------------------------------------------------------------------------------------------------------------
+    962          /**
+    963           * @brief
+    964           *
+    965           */
+
+   \                                 In section .text, align 2, keep-with-next
+    966          void SRMCPwm__Handler250us(void)
+    967          {
+    968          
+    969          
+    970          
+    971          }
+   \                     SRMCPwm__Handler250us: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    972          
+    973          //---------------------------------------------------------------------------------------------------------------------
+    974          /**
+    975           * @brief       Triggers the handler to start, if the handler is available.
+    976           *
+    977           * @param[in]   timeout_to_zero Counts the time that the micro will force the signal to zero logic
+    978           * @param[in]   timeout_to_one Counts the time that the micro will force the signal to one logic
+    979           */
+
+   \                                 In section .text, align 2, keep-with-next
+    980          void SRMCPwm__EnableDiagnostic(uint32 timeout_to_zero, uint32 timeout_to_one)
+    981          {
+   \                     SRMCPwm__EnableDiagnostic: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460D             MOV      R5,R1
+    982              uint32 temp;
+    983          
+    984              temp = SR_MCPWM_CHECK_ZERO_TIMEOUT();
+   \   00000008   0x.... 0x....      LDR.W    R6,??DataTable19_4
+   \   0000000C   0xF106 0x0120      ADD      R1,R6,#+32
+   \   00000010   0xF106 0x000C      ADD      R0,R6,#+12
+   \   00000014   0x.... 0x....      BL       SRData__CheckLong
+   \   00000018   0x4607             MOV      R7,R0
+    985              temp += SR_MCPWM_CHECK_ONE_TIMEOUT();
+   \   0000001A   0xF106 0x0124      ADD      R1,R6,#+36
+   \   0000001E   0xF106 0x0010      ADD      R0,R6,#+16
+   \   00000022   0x.... 0x....      BL       SRData__CheckLong
+   \   00000026   0x4680             MOV      R8,R0
+    986              temp += SR_MCPWM_CHECK_DIAG_STATE();
+   \   00000028   0xF106 0x011C      ADD      R1,R6,#+28
+   \   0000002C   0x4630             MOV      R0,R6
+   \   0000002E   0x.... 0x....      BL       SRData__CheckByte
+    987              temp += SR_MCPWM_CHECK_ERRORS();
+    988          
+    989              if(temp == SRDATA_OK)
+   \   00000032   0xFA58 0xF187      UXTAB    R1,R8,R7
+   \   00000036   0xFA51 0xF780      UXTAB    R7,R1,R0
+   \   0000003A   0xF106 0x011D      ADD      R1,R6,#+29
+   \   0000003E   0x1C70             ADDS     R0,R6,#+1
+   \   00000040   0x.... 0x....      BL       SRData__CheckByte
+   \   00000044   0xFA57 0xF080      UXTAB    R0,R7,R0
+   \   00000048   0x2800             CMP      R0,#+0
+   \   0000004A   0xBF04             ITT      EQ 
+    990              {
+    991                  temp = SR_MCPwm_Diag_State;
+    992          
+    993                  if(temp == SR_MCPWM_WAITING_TO_CHECK)
+   \   0000004C   0x7830             LDRBEQ   R0,[R6, #+0]
+   \   0000004E   0x2800             CMPEQ    R0,#+0
+   \   00000050   0xD115             BNE.N    ??SRMCPwm__EnableDiagnostic_0
+    994                  {
+    995                      SR_MCPWM_UPDATE_ZERO_TIMEOUT(timeout_to_zero);
+   \   00000052   0x4622             MOV      R2,R4
+   \   00000054   0xF106 0x0120      ADD      R1,R6,#+32
+   \   00000058   0xF106 0x000C      ADD      R0,R6,#+12
+   \   0000005C   0x.... 0x....      BL       SRData__UpdateLong
+    996                      SR_MCPWM_UPDATE_ONE_TIMEOUT(timeout_to_one);
+   \   00000060   0x462A             MOV      R2,R5
+   \   00000062   0xF106 0x0124      ADD      R1,R6,#+36
+   \   00000066   0xF106 0x0010      ADD      R0,R6,#+16
+   \   0000006A   0x.... 0x....      BL       SRData__UpdateLong
+    997                      SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_CHECK_SIGNAL_POL);
+   \   0000006E   0xF106 0x011C      ADD      R1,R6,#+28
+   \   00000072   0x4630             MOV      R0,R6
+   \   00000074   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   00000078   0x2201             MOVS     R2,#+1
+   \   0000007A   0x.... 0x....      B.W      SRData__UpdateByte
+    998                  }
+    999              }
+   1000          }
+   \                     ??SRMCPwm__EnableDiagnostic_0: (+1)
+   \   0000007E   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+   1001          
+   1002          //---------------------------------------------------------------------------------------------------------------------
+   1003          /**
+   1004           * @brief       Peripheral Diagnostic handler
+   1005           *
+   1006           * @details     Manipulates the shut down input in order to perform
+   1007           *              the plausibility checks.
+   1008           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1009          void SRMCPwm__DiagnosticHandler(void)
+   1010          {
+   \                     SRMCPwm__DiagnosticHandler: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   1011              uint32 temp;
+   1012              uint32 temp1;
+   1013              uint32 temp2;
+   1014          
+   1015              temp = SR_MCPWM_CHECK_DIAG_STATE();             // Checks state integrity state
+   1016              if(temp == SRDATA_OK)                           // Continues check if OK, in case of corruption a reset will be forced
+   \   00000002   0x....             LDR.N    R4,??DataTable19_4
+   \   00000004   0xB081             SUB      SP,SP,#+4
+   \   00000006   0xF104 0x011C      ADD      R1,R4,#+28
+   \   0000000A   0x4620             MOV      R0,R4
+   \   0000000C   0x.... 0x....      BL       SRData__CheckByte
+   \   00000010   0x2800             CMP      R0,#+0
+   \   00000012   0xF040 0x8152      BNE.W    ??SRMCPwm__DiagnosticHandler_0
+   1017              {
+   1018                  temp = SR_MCPwm_Diag_State;                 // Saves state into temp
+   \   00000016   0x7820             LDRB     R0,[R4, #+0]
+   1019          
+   1020                  if(temp == SR_MCPWM_WAITING_TO_CHECK)       // Keeps here waiting for an update, but is always checking state
+   \   00000018   0xB9F0             CBNZ.N   R0,??SRMCPwm__DiagnosticHandler_1
+   1021                  {
+   1022                      temp  = SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION();
+   \   0000001A   0xF104 0x0128      ADD      R1,R4,#+40
+   \   0000001E   0xF104 0x0014      ADD      R0,R4,#+20
+   \   00000022   0x.... 0x....      BL       SRData__CheckLong
+   \   00000026   0x4605             MOV      R5,R0
+   1023                      temp += SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION();
+   1024                      
+   1025                      if(temp == SRDATA_OK)                           // Continues check if OK, in case of corruption a reset will be forced
+   \   00000028   0xF104 0x012C      ADD      R1,R4,#+44
+   \   0000002C   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000030   0x.... 0x....      BL       SRData__CheckLong
+   \   00000034   0xFA50 0xF085      UXTAB    R0,R0,R5
+   \   00000038   0x2800             CMP      R0,#+0
+   \   0000003A   0xF040 0x813E      BNE.W    ??SRMCPwm__DiagnosticHandler_0
+   1026                      {
+   1027                          SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(0);
+   \   0000003E   0x2200             MOVS     R2,#+0
+   \   00000040   0xF104 0x0128      ADD      R1,R4,#+40
+   \   00000044   0xF104 0x0014      ADD      R0,R4,#+20
+   \   00000048   0x.... 0x....      BL       SRData__UpdateLong
+   1028                          SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(0);
+   \   0000004C   0x2200             MOVS     R2,#+0
+   \   0000004E   0xF104 0x012C      ADD      R1,R4,#+44
+   \   00000052   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000056   0xE0E8             B.N      ??SRMCPwm__DiagnosticHandler_2
+   1029                      }
+   1030                  }
+   1031          
+   1032                  // Check if the shut down is INACTIVE.
+   1033                  else if(temp == SR_MCPWM_CHECK_SIGNAL_POL)  // If was commanded to check SD pin, starts by reading signals
+   \                     ??SRMCPwm__DiagnosticHandler_1: (+1)
+   \   00000058   0x2801             CMP      R0,#+1
+   \   0000005A   0xD156             BNE.N    ??SRMCPwm__DiagnosticHandler_3
+   1034                  {
+   1035                      temp = SR_MCPWM_CHECK_ERRORS();
+   \   0000005C   0xF104 0x011D      ADD      R1,R4,#+29
+   \   00000060   0x1C60             ADDS     R0,R4,#+1
+   \   00000062   0x.... 0x....      BL       SRData__CheckByte
+   \   00000066   0x4605             MOV      R5,R0
+   1036                      temp += SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION();
+   \   00000068   0xF104 0x0128      ADD      R1,R4,#+40
+   \   0000006C   0xF104 0x0014      ADD      R0,R4,#+20
+   \   00000070   0x.... 0x....      BL       SRData__CheckLong
+   1037                      temp += SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION();
+   1038                      
+   1039                      if(temp == SRDATA_OK)                   // Checks data integrity
+   \   00000074   0xFA50 0xF585      UXTAB    R5,R0,R5
+   \   00000078   0xF104 0x012C      ADD      R1,R4,#+44
+   \   0000007C   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000080   0x.... 0x....      BL       SRData__CheckLong
+   \   00000084   0xFA55 0xF080      UXTAB    R0,R5,R0
+   \   00000088   0x2800             CMP      R0,#+0
+   \   0000008A   0xF040 0x8116      BNE.W    ??SRMCPwm__DiagnosticHandler_0
+   1040                      {
+   1041          //                Gpio__PinConfig(PORT7,0, INPUT_PULLUP);
+   1042                      	Comparator__SetThr(SR_COMPARATOR_CHANNEL, SR_PWM_FAULT_0_CMP_LEV);
+   \   0000008E   0x2123             MOVS     R1,#+35
+   \   00000090   0x.... 0x....      BL       Comparator__SetThr
+   1043          
+   1044                          temp1 = SR_MCPwm_Pulse_Active_Level;
+   1045                          temp2 = SR_MCPwm_Pulse_Default_Level;
+   1046          //                temp = Gpio__PinRead(PORT7,0);
+   1047                          temp = GetFaultState();
+   1048          
+   1049                          if(temp == SR_MCPWM_SHUTDOWN_ACTIVE_POLARITY)
+   \   00000094   0x....             LDR.N    R0,??DataTable19_9  ;; 0x40038074
+   \   00000096   0x6965             LDR      R5,[R4, #+20]
+   \   00000098   0x7800             LDRB     R0,[R0, #+0]
+   \   0000009A   0x69A6             LDR      R6,[R4, #+24]
+   \   0000009C   0x0680             LSLS     R0,R0,#+26
+   \   0000009E   0xD506             BPL.N    ??SRMCPwm__DiagnosticHandler_4
+   1050                          {
+   1051                              temp1 = SR_MCPwm_Pulse_Active_Level;
+   1052                              temp1++;
+   \   000000A0   0x1C6D             ADDS     R5,R5,#+1
+   1053                              SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(temp1);
+   \   000000A2   0x462A             MOV      R2,R5
+   \   000000A4   0xF104 0x0128      ADD      R1,R4,#+40
+   \   000000A8   0xF104 0x0014      ADD      R0,R4,#+20
+   \   000000AC   0xE005             B.N      ??SRMCPwm__DiagnosticHandler_5
+   1054                          }
+   1055                          else
+   1056                          {
+   1057                              temp2 = SR_MCPwm_Pulse_Default_Level;
+   1058                              temp2++;
+   \                     ??SRMCPwm__DiagnosticHandler_4: (+1)
+   \   000000AE   0x1C76             ADDS     R6,R6,#+1
+   1059                              SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(temp2);
+   \   000000B0   0x4632             MOV      R2,R6
+   \   000000B2   0xF104 0x012C      ADD      R1,R4,#+44
+   \   000000B6   0xF104 0x0018      ADD      R0,R4,#+24
+   \                     ??SRMCPwm__DiagnosticHandler_5: (+1)
+   \   000000BA   0x.... 0x....      BL       SRData__UpdateLong
+   1060                          }
+   1061          #ifdef FORCE_SHUTDOWN_FAILURE_ALREADY_ACTIVE
+   1062                          temp1 = SR_MCPWM_DIAG_SAMPLES_4_DECISION;
+   1063          #endif
+   1064          
+   1065                          if((temp1 + temp2) >= SR_MCPWM_DIAG_TOTAL_SAMPLES_NR)
+   \   000000BE   0x1970             ADDS     R0,R6,R5
+   \   000000C0   0x2819             CMP      R0,#+25
+   \   000000C2   0xF0C0 0x80FA      BCC.W    ??SRMCPwm__DiagnosticHandler_0
+   1066                          {                                   // after 2.5ms sampling
+   1067                              if (temp1 >= SR_MCPWM_DIAG_SAMPLES_4_DECISION)
+   \   000000C6   0x7860             LDRB     R0,[R4, #+1]
+   \   000000C8   0x2D0F             CMP      R5,#+15
+   \   000000CA   0xBF28             IT       CS 
+   1068                              {                               // 60% samples showing SD active
+   1069                                  // The shut down circuit is already activated!
+   1070                                  temp = SR_MCPwm_Errors;     // Read errors
+   1071                                  BIT_SET(temp, SR_MCPWM_ERROR_SHUTDOWN_ALREADY_ON);
+   1072                                  SR_MCPWM_UPDATE_ERRORS((SRMCPWM_DIAG_ERROR_TYPE)temp);
+   \   000000CC   0xF040 0x0201      ORRCS    R2,R0,#0x1
+   \   000000D0   0xF080 0x80E5      BCS.W    ??SRMCPwm__DiagnosticHandler_6
+   1073                                  SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_FEEDBACK_UPDATED);
+   1074                              }
+   1075                              else                            // SD pin is not active
+   1076                              {
+   1077                                  // The shut down circuit is already deactivated!
+   1078                                  temp = SR_MCPwm_Errors;     // We are reading and clearing an error which was not set (really needed???)
+   1079                                  BIT_CLR(temp, SR_MCPWM_ERROR_SHUTDOWN_ALREADY_ON);
+   1080                                  SR_MCPWM_UPDATE_ERRORS((SRMCPWM_DIAG_ERROR_TYPE)temp);
+   \   000000D4   0xF000 0x02FE      AND      R2,R0,#0xFE
+   \   000000D8   0xF104 0x011D      ADD      R1,R4,#+29
+   \   000000DC   0x1C60             ADDS     R0,R4,#+1
+   \   000000DE   0x.... 0x....      BL       SRData__UpdateByte
+   1081                                  // There are specific feedacks for errors, but we don't report them to application, is it also needed
+   1082            //                      Gpio__PinConfig(PORT7,0, OUTPUT_OPEN_DRAIN);
+   1083            //                      Gpio__PinWrite(PORT7,0, SR_MCPWM_SHUTDOWN_ACTIVE_POLARITY);
+   1084                                  Comparator__SetThr(SR_COMPARATOR_CHANNEL, SR_PWM_FAULT_0_CMP_LEV_TEST);
+   \   000000E2   0x2108             MOVS     R1,#+8
+   \   000000E4   0x2000             MOVS     R0,#+0
+   \   000000E6   0x.... 0x....      BL       Comparator__SetThr
+   1085          
+   1086                                  temp1 = 0;
+   1087                                  temp2 = 0;
+   1088                                  SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(temp1);
+   \   000000EA   0x2200             MOVS     R2,#+0
+   \   000000EC   0xF104 0x0128      ADD      R1,R4,#+40
+   \   000000F0   0xF104 0x0014      ADD      R0,R4,#+20
+   \   000000F4   0x.... 0x....      BL       SRData__UpdateLong
+   1089                                  SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(temp2);
+   \   000000F8   0x2200             MOVS     R2,#+0
+   \   000000FA   0xF104 0x012C      ADD      R1,R4,#+44
+   \   000000FE   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000102   0x.... 0x....      BL       SRData__UpdateLong
+   1090                                  // Commands output to force disabling SD pin
+   1091          
+   1092                                  SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_CHECK_STUCK_AT_1);
+   \   00000106   0x2202             MOVS     R2,#+2
+   \   00000108   0xE0CF             B.N      ??SRMCPwm__DiagnosticHandler_7
+   1093                                                          // Gets to the state to detect if it's stuck at 1
+   1094                              }                               
+   1095          
+   1096                          }                               // Gets final state
+   1097                      }
+   1098                  }
+   1099                  else if(temp == SR_MCPWM_CHECK_STUCK_AT_1)
+   \                     ??SRMCPwm__DiagnosticHandler_3: (+1)
+   \   0000010A   0x2802             CMP      R0,#+2
+   \   0000010C   0xD163             BNE.N    ??SRMCPwm__DiagnosticHandler_8
+   1100                  {
+   1101                      temp  = SR_MCPWM_CHECK_ZERO_TIMEOUT();
+   \   0000010E   0xF104 0x0120      ADD      R1,R4,#+32
+   \   00000112   0xF104 0x000C      ADD      R0,R4,#+12
+   \   00000116   0x.... 0x....      BL       SRData__CheckLong
+   \   0000011A   0x4605             MOV      R5,R0
+   1102                      temp += SR_MCPWM_CHECK_ERRORS();        // Checks timers, error flags and flow flags
+   \   0000011C   0xF104 0x011D      ADD      R1,R4,#+29
+   \   00000120   0x1C60             ADDS     R0,R4,#+1
+   \   00000122   0x.... 0x....      BL       SRData__CheckByte
+   \   00000126   0x4606             MOV      R6,R0
+   1103                      temp += SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION();
+   \   00000128   0xF104 0x0128      ADD      R1,R4,#+40
+   \   0000012C   0xF104 0x0014      ADD      R0,R4,#+20
+   \   00000130   0x.... 0x....      BL       SRData__CheckLong
+   1104                      temp += SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION();
+   1105                      
+   1106                      if(temp == SRDATA_OK)                   // In case data wasn't corrupted
+   \   00000134   0xFA56 0xF185      UXTAB    R1,R6,R5
+   \   00000138   0xFA51 0xF580      UXTAB    R5,R1,R0
+   \   0000013C   0xF104 0x012C      ADD      R1,R4,#+44
+   \   00000140   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000144   0x.... 0x....      BL       SRData__CheckLong
+   \   00000148   0xFA55 0xF080      UXTAB    R0,R5,R0
+   \   0000014C   0x2800             CMP      R0,#+0
+   \   0000014E   0xF040 0x80B4      BNE.W    ??SRMCPwm__DiagnosticHandler_0
+   1107                      {
+   1108                          temp = SR_MCPwm_Zero_Timeout;
+   \   00000152   0x68E0             LDR      R0,[R4, #+12]
+   1109                          if(temp)
+   \   00000154   0xB128             CBZ.N    R0,??SRMCPwm__DiagnosticHandler_9
+   1110                          {
+   1111                              temp--;                         // Decrements and updates timer
+   1112                              SR_MCPWM_UPDATE_ZERO_TIMEOUT(temp);
+   \   00000156   0x1E42             SUBS     R2,R0,#+1
+   \   00000158   0xF104 0x0120      ADD      R1,R4,#+32
+   \   0000015C   0xF104 0x000C      ADD      R0,R4,#+12
+   \   00000160   0xE063             B.N      ??SRMCPwm__DiagnosticHandler_2
+   1113                          }
+   1114                          else                                // After a while (2.5ms forcing null)
+   1115                          {
+   1116           //                   Gpio__PinConfig(PORT7,0, INPUT_PULLUP);
+   1117           //               	Comparator__SetThr(SR_COMPARATOR_CHANNEL, SR_PWM_FAULT_0_CMP_LEV);
+   1118          
+   1119                              temp1 = SR_MCPwm_Pulse_Active_Level;
+   1120                              temp2 = SR_MCPwm_Pulse_Default_Level;
+   1121          
+   1122            //                  temp = Gpio__PinRead(PORT7,0);
+   1123                              temp = GetFaultState();
+   1124          
+   1125                              if(temp == SR_MCPWM_SHUTDOWN_ACTIVE_POLARITY)
+   \                     ??SRMCPwm__DiagnosticHandler_9: (+1)
+   \   00000162   0x....             LDR.N    R0,??DataTable19_9  ;; 0x40038074
+   \   00000164   0x6965             LDR      R5,[R4, #+20]
+   \   00000166   0x7800             LDRB     R0,[R0, #+0]
+   \   00000168   0x69A6             LDR      R6,[R4, #+24]
+   \   0000016A   0x0680             LSLS     R0,R0,#+26
+   \   0000016C   0xD506             BPL.N    ??SRMCPwm__DiagnosticHandler_10
+   1126                              {
+   1127                                  temp1 = SR_MCPwm_Pulse_Active_Level;
+   1128                                  temp1++;
+   \   0000016E   0x1C6D             ADDS     R5,R5,#+1
+   1129                                  SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(temp1);
+   \   00000170   0x462A             MOV      R2,R5
+   \   00000172   0xF104 0x0128      ADD      R1,R4,#+40
+   \   00000176   0xF104 0x0014      ADD      R0,R4,#+20
+   \   0000017A   0xE005             B.N      ??SRMCPwm__DiagnosticHandler_11
+   1130                              }
+   1131                              else
+   1132                              {
+   1133                                  temp2 = SR_MCPwm_Pulse_Default_Level;
+   1134                                  temp2++;
+   \                     ??SRMCPwm__DiagnosticHandler_10: (+1)
+   \   0000017C   0x1C76             ADDS     R6,R6,#+1
+   1135                                  SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(temp2);
+   \   0000017E   0x4632             MOV      R2,R6
+   \   00000180   0xF104 0x012C      ADD      R1,R4,#+44
+   \   00000184   0xF104 0x0018      ADD      R0,R4,#+24
+   \                     ??SRMCPwm__DiagnosticHandler_11: (+1)
+   \   00000188   0x.... 0x....      BL       SRData__UpdateLong
+   1136                              }
+   1137          #ifdef FORCE_SHUTDOWN_FAILURE_STUCK_AT_1
+   1138                              temp1 = 0;
+   1139          #endif
+   1140                              if((temp1 + temp2) >= SR_MCPWM_DIAG_TOTAL_SAMPLES_NR)
+   \   0000018C   0x1970             ADDS     R0,R6,R5
+   \   0000018E   0x2819             CMP      R0,#+25
+   \   00000190   0xF0C0 0x8093      BCC.W    ??SRMCPwm__DiagnosticHandler_0
+   1141                              {                                   // after 2.5ms sampling
+   1142                                  if (temp1 >= SR_MCPWM_DIAG_SAMPLES_4_DECISION)
+   \   00000194   0x7860             LDRB     R0,[R4, #+1]
+   \   00000196   0x2D0F             CMP      R5,#+15
+   \   00000198   0xD31A             BCC.N    ??SRMCPwm__DiagnosticHandler_12
+   1143                                  {                               // 60% samples showing SD active
+   1144                                      // The register is NOT stuck at 1!
+   1145                                      temp = SR_MCPwm_Errors;
+   1146                                      BIT_CLR(temp, SR_MCPWM_ERROR_REGISTER_STUCK_AT_1);
+   1147                                      SR_MCPWM_UPDATE_ERRORS((SRMCPWM_DIAG_ERROR_TYPE)temp);
+   \   0000019A   0xF000 0x02FD      AND      R2,R0,#0xFD
+   \   0000019E   0xF104 0x011D      ADD      R1,R4,#+29
+   \   000001A2   0x1C60             ADDS     R0,R4,#+1
+   \   000001A4   0x.... 0x....      BL       SRData__UpdateByte
+   1148                                      Comparator__SetThr(SR_COMPARATOR_CHANNEL, SR_PWM_FAULT_0_CMP_LEV);
+   \   000001A8   0x2123             MOVS     R1,#+35
+   \   000001AA   0x2000             MOVS     R0,#+0
+   \   000001AC   0x.... 0x....      BL       Comparator__SetThr
+   1149                                      temp1 = 0;
+   1150                                      temp2 = 0;
+   1151                                      SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(temp1);
+   \   000001B0   0x2200             MOVS     R2,#+0
+   \   000001B2   0xF104 0x0128      ADD      R1,R4,#+40
+   \   000001B6   0xF104 0x0014      ADD      R0,R4,#+20
+   \   000001BA   0x.... 0x....      BL       SRData__UpdateLong
+   1152                                      SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(temp2);
+   \   000001BE   0x2200             MOVS     R2,#+0
+   \   000001C0   0xF104 0x012C      ADD      R1,R4,#+44
+   \   000001C4   0xF104 0x0018      ADD      R0,R4,#+24
+   \   000001C8   0x.... 0x....      BL       SRData__UpdateLong
+   1153          
+   1154                                      SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_CHECK_STUCK_AT_0);
+   \   000001CC   0x2203             MOVS     R2,#+3
+   \   000001CE   0xE06C             B.N      ??SRMCPwm__DiagnosticHandler_7
+   1155                                                                 // Changes state to check if it's stuck at zero (I don't know if it is redundant, since first check was checking if not zero)
+   1156                                  }                               
+   1157                                  else
+   1158                                  {
+   1159                                      // The register IS stuck at 1!
+   1160                                      temp = SR_MCPwm_Errors;
+   1161                                      BIT_SET(temp, SR_MCPWM_ERROR_REGISTER_STUCK_AT_1);
+   1162                                      SR_MCPWM_UPDATE_ERRORS((SRMCPWM_DIAG_ERROR_TYPE)temp);
+   \                     ??SRMCPwm__DiagnosticHandler_12: (+1)
+   \   000001D0   0xF040 0x0202      ORR      R2,R0,#0x2
+   \   000001D4   0xE063             B.N      ??SRMCPwm__DiagnosticHandler_6
+   1163                                                                  // Updates error
+   1164          
+   1165                                      SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_FEEDBACK_UPDATED);
+   1166                                  }                               // Ends check since error was detected
+   1167                              }
+   1168                          }
+   1169                      }
+   1170                  }
+   1171                  else if(temp == SR_MCPWM_CHECK_STUCK_AT_0)  // Checks if not stuck at zero
+   \                     ??SRMCPwm__DiagnosticHandler_8: (+1)
+   \   000001D6   0x2803             CMP      R0,#+3
+   \   000001D8   0xD16F             BNE.N    ??SRMCPwm__DiagnosticHandler_0
+   1172                  {
+   1173                      temp  = SR_MCPWM_CHECK_ONE_TIMEOUT();
+   \   000001DA   0xF104 0x0124      ADD      R1,R4,#+36
+   \   000001DE   0xF104 0x0010      ADD      R0,R4,#+16
+   \   000001E2   0x.... 0x....      BL       SRData__CheckLong
+   \   000001E6   0x4605             MOV      R5,R0
+   1174                      temp += SR_MCPWM_CHECK_ERRORS();
+   \   000001E8   0xF104 0x011D      ADD      R1,R4,#+29
+   \   000001EC   0x1C60             ADDS     R0,R4,#+1
+   \   000001EE   0x.... 0x....      BL       SRData__CheckByte
+   \   000001F2   0x4606             MOV      R6,R0
+   1175                      temp += SR_MCPWM_CHECK_ACTIVE_PULSE_DURATION();
+   \   000001F4   0xF104 0x0128      ADD      R1,R4,#+40
+   \   000001F8   0xF104 0x0014      ADD      R0,R4,#+20
+   \   000001FC   0x.... 0x....      BL       SRData__CheckLong
+   1176                      temp += SR_MCPWM_CHECK_DEFAULT_PULSE_DURATION();
+   1177          
+   1178                      if(temp == SRDATA_OK)                   // Since data is not corrupted (I don't know if all these tests are really needed, in case of corruption it will force reset
+   \   00000200   0xFA56 0xF185      UXTAB    R1,R6,R5
+   \   00000204   0xFA51 0xF580      UXTAB    R5,R1,R0
+   \   00000208   0xF104 0x012C      ADD      R1,R4,#+44
+   \   0000020C   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000210   0x.... 0x....      BL       SRData__CheckLong
+   \   00000214   0xFA55 0xF080      UXTAB    R0,R5,R0
+   \   00000218   0x2800             CMP      R0,#+0
+   \   0000021A   0xD14E             BNE.N    ??SRMCPwm__DiagnosticHandler_0
+   1179                      {
+   1180                          temp = SR_MCPwm_One_Timeout;
+   \   0000021C   0x6920             LDR      R0,[R4, #+16]
+   1181                          if(temp)
+   \   0000021E   0xB148             CBZ.N    R0,??SRMCPwm__DiagnosticHandler_13
+   1182                          {
+   1183                              temp--;
+   1184                              SR_MCPWM_UPDATE_ONE_TIMEOUT(temp);
+   \   00000220   0x1E42             SUBS     R2,R0,#+1
+   \   00000222   0xF104 0x0124      ADD      R1,R4,#+36
+   \   00000226   0xF104 0x0010      ADD      R0,R4,#+16
+   \                     ??SRMCPwm__DiagnosticHandler_2: (+1)
+   \   0000022A   0xB001             ADD      SP,SP,#+4
+   \   0000022C   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   00000230   0x.... 0x....      B.W      SRData__UpdateLong
+   1185                          }                                   // Waits 20ms to release condition
+   1186                          else
+   1187                          {
+   1188                              temp1 = SR_MCPwm_Pulse_Active_Level;
+   1189                              temp2 = SR_MCPwm_Pulse_Default_Level;
+   1190          //                    temp = Gpio__PinRead(PORT7,0);
+   1191                              temp = GetFaultState();
+   1192          
+   1193                              if(temp == SR_MCPWM_SHUTDOWN_ACTIVE_POLARITY)
+   \                     ??SRMCPwm__DiagnosticHandler_13: (+1)
+   \   00000234   0x....             LDR.N    R7,??DataTable19_9  ;; 0x40038074
+   \   00000236   0x6965             LDR      R5,[R4, #+20]
+   \   00000238   0x7838             LDRB     R0,[R7, #+0]
+   \   0000023A   0x69A6             LDR      R6,[R4, #+24]
+   \   0000023C   0x0680             LSLS     R0,R0,#+26
+   \   0000023E   0xD506             BPL.N    ??SRMCPwm__DiagnosticHandler_14
+   1194                              {
+   1195                                  temp1 = SR_MCPwm_Pulse_Active_Level;
+   1196                                  temp1++;
+   \   00000240   0x1C6D             ADDS     R5,R5,#+1
+   1197                                  SR_MCPWM_UPDATE_ACTIVE_PULSE_DURATION(temp1);
+   \   00000242   0x462A             MOV      R2,R5
+   \   00000244   0xF104 0x0128      ADD      R1,R4,#+40
+   \   00000248   0xF104 0x0014      ADD      R0,R4,#+20
+   \   0000024C   0xE005             B.N      ??SRMCPwm__DiagnosticHandler_15
+   1198                              }
+   1199                              else
+   1200                              {
+   1201                                  temp2 = SR_MCPwm_Pulse_Default_Level;
+   1202                                  temp2++;
+   \                     ??SRMCPwm__DiagnosticHandler_14: (+1)
+   \   0000024E   0x1C76             ADDS     R6,R6,#+1
+   1203                                  SR_MCPWM_UPDATE_DEFAULT_PULSE_DURATION(temp2);
+   \   00000250   0x4632             MOV      R2,R6
+   \   00000252   0xF104 0x012C      ADD      R1,R4,#+44
+   \   00000256   0xF104 0x0018      ADD      R0,R4,#+24
+   \                     ??SRMCPwm__DiagnosticHandler_15: (+1)
+   \   0000025A   0x.... 0x....      BL       SRData__UpdateLong
+   1204                              }
+   1205          
+   1206          #ifdef FORCE_SHUTDOWN_FAILURE_STUCK_AT_0
+   1207                              temp2 = 0;
+   1208          #endif
+   1209                              if((temp1 + temp2) >= SR_MCPWM_DIAG_TOTAL_SAMPLES_NR)
+   \   0000025E   0x1970             ADDS     R0,R6,R5
+   \   00000260   0x2819             CMP      R0,#+25
+   \   00000262   0xD32A             BCC.N    ??SRMCPwm__DiagnosticHandler_0
+   1210                              {                                   // after 2.5ms sampling
+   1211                                  if (temp2 >= SR_MCPWM_DIAG_SAMPLES_4_DECISION)
+   \   00000264   0x7860             LDRB     R0,[R4, #+1]
+   \   00000266   0x2E0F             CMP      R6,#+15
+   \   00000268   0xD317             BCC.N    ??SRMCPwm__DiagnosticHandler_16
+   1212                                  {                               // 60% samples showing SD active
+   1213                                      // The register is NOT stuck at 0!
+   1214                                      temp = SR_MCPwm_Errors; // It's not checking to read here
+   1215                                      BIT_CLR(temp, SR_MCPWM_ERROR_REGISTER_STUCK_AT_0);
+   1216                                      BIT_SET(temp, SR_MCPWM_ERROR_PERIPHERAL_SAFE);
+   1217                                      SR_MCPWM_UPDATE_ERRORS((SRMCPWM_DIAG_ERROR_TYPE)temp);
+   \   0000026A   0xF000 0x00FB      AND      R0,R0,#0xFB
+   \   0000026E   0xF040 0x0220      ORR      R2,R0,#0x20
+   \   00000272   0xF104 0x011D      ADD      R1,R4,#+29
+   \   00000276   0x1C60             ADDS     R0,R4,#+1
+   \   00000278   0x.... 0x....      BL       SRData__UpdateByte
+   1218          
+   1219                                      SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_FEEDBACK_UPDATED);
+   \   0000027C   0x2204             MOVS     R2,#+4
+   \   0000027E   0xF104 0x011C      ADD      R1,R4,#+28
+   \   00000282   0x4620             MOV      R0,R4
+   \   00000284   0x.... 0x....      BL       SRData__UpdateByte
+   1220                                      // Updates state machine
+   1221                                      if (GetFaultFlagState() != 0)
+   \   00000288   0x6838             LDR      R0,[R7, #+0]
+   \   0000028A   0x0601             LSLS     R1,R0,#+24
+   \   0000028C   0x0FC9             LSRS     R1,R1,#+31
+   \   0000028E   0xD014             BEQ.N    ??SRMCPwm__DiagnosticHandler_0
+   1222                                      {
+   1223                                          ClearFaultFlag();
+   \   00000290   0xF020 0x008F      BIC      R0,R0,#0x8F
+   \   00000294   0x6038             STR      R0,[R7, #+0]
+   1224                                      }
+   1225                                  }
+   1226                                  else                        // In case of failure
+   1227                                  {
+   1228                                      // The register IS stuck at 1!
+   1229                                      temp = SR_MCPwm_Errors;
+   1230                                      BIT_SET(temp, SR_MCPWM_ERROR_REGISTER_STUCK_AT_0);
+   1231                                      SR_MCPWM_UPDATE_ERRORS((SRMCPWM_DIAG_ERROR_TYPE)temp);
+   1232                                      // Reports the error
+   1233                                      SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_FEEDBACK_UPDATED);
+   1234                                  }
+   1235                              }
+   1236                          }
+   1237                      }
+   1238                  }
+   1239                  else if(temp == SR_MCPWM_FEEDBACK_UPDATED)
+   1240                  {
+   1241                      // Stay here until the feedback is read by the caller.
+   1242                  }
+   1243                  else
+   1244                  {
+   1245                      // Should never reach this region.
+   1246                      // Just in case, should force to a safe condition here
+   1247                  }
+   1248              }
+   1249          }
+   \   00000296   0xB001             ADD      SP,SP,#+4
+   \   00000298   0xBDF0             POP      {R4-R7,PC}
+   \                     ??SRMCPwm__DiagnosticHandler_16: (+1)
+   \   0000029A   0xF040 0x0204      ORR      R2,R0,#0x4
+   \                     ??SRMCPwm__DiagnosticHandler_6: (+1)
+   \   0000029E   0xF104 0x011D      ADD      R1,R4,#+29
+   \   000002A2   0x1C60             ADDS     R0,R4,#+1
+   \   000002A4   0x.... 0x....      BL       SRData__UpdateByte
+   \   000002A8   0x2204             MOVS     R2,#+4
+   \                     ??SRMCPwm__DiagnosticHandler_7: (+1)
+   \   000002AA   0xF104 0x011C      ADD      R1,R4,#+28
+   \   000002AE   0x4620             MOV      R0,R4
+   \   000002B0   0xB001             ADD      SP,SP,#+4
+   \   000002B2   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   000002B6   0x.... 0x....      B.W      SRData__UpdateByte
+   \                     ??SRMCPwm__DiagnosticHandler_0: (+1)
+   \   000002BA   0xB001             ADD      SP,SP,#+4
+   \   000002BC   0xBDF0             POP      {R4-R7,PC}       ;; return
+   1250          
+   1251          //---------------------------------------------------------------------------------------------------------------------
+   1252          /**
+   1253           * @brief       Get the feedback of the plausibility check
+   1254           *
+   1255           * @details     Gets the plausibility check result, when the state machine is fully executed.
+   1256           *              As soon as the state machine reaches its final state, it will update the feedback
+   1257           *              which will be read by this method, once the state machine has reached its final state,
+   1258           *              and once this method is called, then it will trigger the state machine to go back to
+   1259           *              its very state and reset the integrity feedback of the circuit.
+   1260           *              This action prevents two reading in sequence of a safe hardware, i.e., once it gets
+   1261           *              the feedback, the state machine must be ran again to update the status.
+   1262           *
+   1263           * @return      The plausibility check result.
+   1264           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1265          SRMCPWM_DIAG_ERROR_TYPE SRMCPwm__GetDiagnosticFeedback(void)
+   1266          {
+   \                     SRMCPwm__GetDiagnosticFeedback: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   1267              MICRO_DECLARE_INTERRUPT_CONTEXT_LOCAL();
+   1268              uint32 temp;
+   1269              uint32 temp1;
+   1270              SRMCPWM_DIAG_ERROR_TYPE current_status;
+   1271          
+   1272              SR_MCPWM_CHECK_DIAG_STATE();
+   \   00000002   0x....             LDR.N    R4,??DataTable19_4
+   \   00000004   0xF104 0x011C      ADD      R1,R4,#+28
+   \   00000008   0x4620             MOV      R0,R4
+   \   0000000A   0x.... 0x....      BL       SRData__CheckByte
+   1273              SR_MCPWM_CHECK_ERRORS();
+   \   0000000E   0xF104 0x011D      ADD      R1,R4,#+29
+   \   00000012   0x1C60             ADDS     R0,R4,#+1
+   \   00000014   0x.... 0x....      BL       SRData__CheckByte
+   1274          
+   1275              temp = SR_MCPwm_Diag_State;
+   \   00000018   0x7820             LDRB     R0,[R4, #+0]
+   1276          
+   1277              if(temp == SR_MCPWM_FEEDBACK_UPDATED)
+   \   0000001A   0x2804             CMP      R0,#+4
+   \   0000001C   0xD115             BNE.N    ??SRMCPwm__GetDiagnosticFeedback_0
+   1278              {
+   1279                 MICRO_SAVE_INTERRUPT_CONTEXT_LOCAL();
+   \   0000001E   0xF3EF 0x8510      MRS      R5,PRIMASK
+   \   00000022   0xB672             CPSID    I
+   1280                 current_status = SR_MCPWM_ERROR_PERIPHERAL_NOT_SAFE;
+   1281          
+   1282                 temp  = SR_MCPwm_Errors;
+   \   00000024   0x7860             LDRB     R0,[R4, #+1]
+   \   00000026   0x2604             MOVS     R6,#+4
+   1283                 temp1  = BIT_TEST(temp, SR_MCPWM_ERROR_SHUTDOWN_ALREADY_ON);
+   1284                 temp1 += BIT_TEST(temp, SR_MCPWM_ERROR_REGISTER_STUCK_AT_1);
+   1285                 temp1 += BIT_TEST(temp, SR_MCPWM_ERROR_REGISTER_STUCK_AT_0);
+   1286          
+   1287                 if(!temp1)
+   \   00000028   0x07C1             LSLS     R1,R0,#+31
+   \   0000002A   0xD404             BMI.N    ??SRMCPwm__GetDiagnosticFeedback_1
+   \   0000002C   0x0781             LSLS     R1,R0,#+30
+   \   0000002E   0xD402             BMI.N    ??SRMCPwm__GetDiagnosticFeedback_1
+   \   00000030   0x0740             LSLS     R0,R0,#+29
+   \   00000032   0xBF58             IT       PL 
+   1288                 {
+   1289                     current_status = SR_MCPWM_ERROR_PERIPHERAL_SAFE;
+   \   00000034   0x2605             MOVPL    R6,#+5
+   1290                 }
+   1291          
+   1292                 SR_MCPWM_UPDATE_DIAG_STATE(SR_MCPWM_WAITING_TO_CHECK);
+   \                     ??SRMCPwm__GetDiagnosticFeedback_1: (+1)
+   \   00000036   0x2200             MOVS     R2,#+0
+   \   00000038   0xF104 0x011C      ADD      R1,R4,#+28
+   \   0000003C   0x4620             MOV      R0,R4
+   \   0000003E   0x.... 0x....      BL       SRData__UpdateByte
+   1293                 MICRO_RESTORE_INTERRUPT_CONTEXT_LOCAL();
+   \   00000042   0xF385 0x8810      MSR      PRIMASK,R5
+   1294              }
+   1295              else if(temp == SR_MCPWM_WAITING_TO_CHECK)
+   1296              {
+   1297                  current_status = SR_MCPWM_ERROR_WAITING_START_TRIGGER;
+   1298              }
+   1299              else
+   1300              {
+   1301                  current_status = SR_MCPWM_ERROR_CHECKING;
+   1302              }
+   1303          
+   1304          
+   1305              return(current_status);                                 // Returns status
+   \   00000046   0x4630             MOV      R0,R6
+   \   00000048   0xBD70             POP      {R4-R6,PC}
+   \                     ??SRMCPwm__GetDiagnosticFeedback_0: (+1)
+   \   0000004A   0x2800             CMP      R0,#+0
+   \   0000004C   0xBF0C             ITE      EQ 
+   \   0000004E   0x2603             MOVEQ    R6,#+3
+   \   00000050   0x2606             MOVNE    R6,#+6
+   \   00000052   0x4630             MOV      R0,R6
+   \   00000054   0xBD70             POP      {R4-R6,PC}       ;; return
+   1306          }
+   1307          
+   1308          //---------------------------------------------------------------------------------------------------------------------
+   1309          /**
+   1310           * @brief       Variable PWM Frequency: update the PWM period
+   1311           *
+   1312           * @details     It updates the pwm switching period according to the percentage of the nominal value.
+   1313           *
+   1314           * @param[in]   pwm_period_perc The percentage of the nominal period we want to apply in the next pwm cycle.
+   1315           *              pwm_period perc is expressed in 17.15 fixed point notation (base value is 100% --> 1)
+   1316           */
+
+   \                                 In section .text, align 2, keep-with-next
+   1317          void SRMCPwm__UpdatePeriod(uint32 pwm_period_perc)
+   1318          {
+   1319              uint16 pwm_period;
+   1320              uint16 mod;
+   1321          
+   1322              FTM0.MODE |= FTM_MODE_WPDIS_MASK;           // Disable write protection for certain registers
+   \                     SRMCPwm__UpdatePeriod: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable19_10  ;; 0x40038008
+   \   00000002   0x6CCA             LDR      R2,[R1, #+76]
+   \   00000004   0xF042 0x0204      ORR      R2,R2,#0x4
+   \   00000008   0x64CA             STR      R2,[R1, #+76]
+   1323              // calculate new pwm_period
+   1324              pwm_period = (uint16)(((uint32)NominalPwmPeriod * pwm_period_perc) >> 15);
+   \   0000000A   0x....             LDR.N    R2,??DataTable19_4
+   \   0000000C   0x8913             LDRH     R3,[R2, #+8]
+   \   0000000E   0x4358             MULS     R0,R0,R3
+   \   00000010   0x0040             LSLS     R0,R0,#+1
+   1325          
+   1326              // Update MaxPwm value
+   1327              MaxPwm = pwm_period>>1;
+   \   00000012   0x0C40             LSRS     R0,R0,#+17
+   \   00000014   0x8050             STRH     R0,[R2, #+2]
+   1328          
+   1329          
+   1330              // Update Timer modulus register and initialized value for CNT
+   1331              mod = (uint16)((pwm_period>>1)-1);
+   1332              FTM0.MOD = mod;
+   1333              FTM0.CNTIN = (uint32) (-(sint32)mod-1);                    // Set initial counting value
+   \   00000016   0xF04F 0x32FF      MOV      R2,#-1
+   \   0000001A   0x1E40             SUBS     R0,R0,#+1
+   \   0000001C   0xB280             UXTH     R0,R0
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+   \   00000020   0x1A10             SUBS     R0,R2,R0
+   \   00000022   0x6448             STR      R0,[R1, #+68]
+   1334          
+   1335              FTM0.FMS |= FTM_FMS_WPEN_MASK;                  // Protect the Registers - Write Protection Enabled
+   \   00000024   0x6EC8             LDR      R0,[R1, #+108]
+   \   00000026   0xF040 0x0040      ORR      R0,R0,#0x40
+   \   0000002A   0x66C8             STR      R0,[R1, #+108]
+   1336          }
+   \   0000002C   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \   00000000   0x49742400         DC32     0x49742400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \   00000000   0x427C0000         DC32     0x427c0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \   00000000   0x447A0000         DC32     0x447a0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19:
+   \   00000000   0x40048038         DC32     0x40048038
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_1:
+   \   00000000   0x400FF0C4         DC32     0x400ff0c4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_2:
+   \   00000000   0x4004C000         DC32     0x4004c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_3:
+   \   00000000   0x4004800C         DC32     0x4004800c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_4:
+   \   00000000   0x........         DC32     SR_MCPwm_Diag_State
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_5:
+   \   00000000   0x40038000         DC32     0x40038000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_6:
+   \   00000000   0x00737373         DC32     0x737373
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_7:
+   \   00000000   0x40038010         DC32     0x40038010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_8:
+   \   00000000   0x40038060         DC32     0x40038060
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_9:
+   \   00000000   0x40038074         DC32     0x40038074
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable19_10:
+   \   00000000   0x40038008         DC32     0x40038008
+   1337          
+   1338          
+   1339          //=====================================================================================================================
+   1340          //-------------------------------------- Private Functions -------------------------------------------------------------
+   1341          //=====================================================================================================================
+   1342          
+   1343          /**
+   1344           * @brief       Get the fault state
+   1345           *
+   1346           * @return      TRUE, if there is a fault, FALSE otherwise
+   1347           *
+   1348           */
+   1349          static BOOL_TYPE GetFaultState(void)
+   1350          {
+   1351          	BOOL_TYPE response;
+   1352          	uint16 temp;
+   1353          
+   1354          	temp = FTM0.FMS&FTM_FMS_FAULTIN_MASK;
+   1355          
+   1356          	if(temp != 0)
+   1357          	{
+   1358          		response = TRUE;
+   1359          	}
+   1360          	else
+   1361          	{
+   1362          		response = FALSE;
+   1363          	}
+   1364          
+   1365          	return (response);
+   1366          }
+   1367          
+   1368          /**
+   1369           * @brief       Get the fault flag state
+   1370           *
+   1371           * @return      TRUE, if there is a fault, FALSE otherwise
+   1372           *
+   1373           */
+   1374          static BOOL_TYPE GetFaultFlagState(void)
+   1375          {
+   1376          	BOOL_TYPE response;
+   1377          	uint16 temp;
+   1378          
+   1379          	temp = FTM0.FMS&FTM_FMS_FAULTF_MASK;
+   1380          
+   1381          	if(temp != 0)
+   1382          	{
+   1383          		response = TRUE;
+   1384          	}
+   1385          	else
+   1386          	{
+   1387          		response = FALSE;
+   1388          	}
+   1389          
+   1390          	return (response);
+   1391          }
+   1392          
+   1393          /**
+   1394           * @brief       Clear the fault flag.
+   1395           *
+   1396           *
+   1397           */
+   1398          static void ClearFaultFlag(void)
+   1399          {
+   1400          
+   1401          	FTM0.FMS &= ~(FTM_FMS_FAULTF_MASK|FTM_FMS_FAULTF3_MASK|FTM_FMS_FAULTF2_MASK|FTM_FMS_FAULTF1_MASK|FTM_FMS_FAULTF0_MASK);
+   1402          }
+   1403          
+   1404          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   SRMCPwm__DiagnosticHandler
+        24   -> Comparator__SetThr
+        24   -> SRData__CheckByte
+        24   -> SRData__CheckLong
+         0   -> SRData__UpdateByte
+        24   -> SRData__UpdateByte
+         0   -> SRData__UpdateLong
+        24   -> SRData__UpdateLong
+       0   SRMCPwm__DisablePwmOutput
+      24   SRMCPwm__EnableDiagnostic
+        24   -> SRData__CheckByte
+        24   -> SRData__CheckLong
+         0   -> SRData__UpdateByte
+        24   -> SRData__UpdateLong
+       0   SRMCPwm__EnablePwmOutput
+       0   SRMCPwm__GetDeadtimeNanosec
+      16   SRMCPwm__GetDiagnosticFeedback
+        16   -> SRData__CheckByte
+        16   -> SRData__UpdateByte
+      16   SRMCPwm__GetHwFaultStatus
+        16   -> SRData__CheckByte
+       0   SRMCPwm__GetMaxPwm
+       0   SRMCPwm__GetPwmFrequencyHz
+       0   SRMCPwm__Handler250us
+      48   SRMCPwm__Initialize
+        48   -> Comparator__Config
+        48   -> Micro__GetClock
+         0   -> SRData__UpdateByte
+        48   -> SRData__UpdateByte
+        48   -> SRData__UpdateLong
+       0   SRMCPwm__Initialize_Before_Boot
+       0   SRMCPwm__LoadAllPwmValues
+       0   SRMCPwm__PwmISR
+       0   SRMCPwm__StartCounter
+       0   SRMCPwm__StopCounter
+       0   SRMCPwm__TurnOffAllGates
+       0   SRMCPwm__TurnOffHighSideGates
+       0   SRMCPwm__TurnOffLowSideGates
+       0   SRMCPwm__TurnOnHighSideGates
+       0   SRMCPwm__TurnOnLowSideGates
+       0   SRMCPwm__UpdatePeriod
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable19
+       4  ??DataTable19_1
+       4  ??DataTable19_10
+       4  ??DataTable19_2
+       4  ??DataTable19_3
+       4  ??DataTable19_4
+       4  ??DataTable19_5
+       4  ??DataTable19_6
+       4  ??DataTable19_7
+       4  ??DataTable19_8
+       4  ??DataTable19_9
+     702  SRMCPwm__DiagnosticHandler
+     128  SRMCPwm__DisablePwmOutput
+     130  SRMCPwm__EnableDiagnostic
+     128  SRMCPwm__EnablePwmOutput
+       8  SRMCPwm__GetDeadtimeNanosec
+      86  SRMCPwm__GetDiagnosticFeedback
+      52  SRMCPwm__GetHwFaultStatus
+       8  SRMCPwm__GetMaxPwm
+       8  SRMCPwm__GetPwmFrequencyHz
+       2  SRMCPwm__Handler250us
+     546  SRMCPwm__Initialize
+     134  SRMCPwm__Initialize_Before_Boot
+      56  SRMCPwm__LoadAllPwmValues
+       2  SRMCPwm__PwmISR
+      30  SRMCPwm__StartCounter
+      26  SRMCPwm__StopCounter
+      28  SRMCPwm__TurnOffAllGates
+      14  SRMCPwm__TurnOffHighSideGates
+      14  SRMCPwm__TurnOffLowSideGates
+      46  SRMCPwm__TurnOnHighSideGates
+      36  SRMCPwm__TurnOnLowSideGates
+      46  SRMCPwm__UpdatePeriod
+      48  SR_MCPwm_Diag_State
+          SR_MCPwm_Errors
+          MaxPwm
+          PwmFrequency
+          DeadTimeNanosec
+          NominalPwmPeriod
+          SR_MCPwm_Zero_Timeout
+          SR_MCPwm_One_Timeout
+          SR_MCPwm_Pulse_Active_Level
+          SR_MCPwm_Pulse_Default_Level
+          NSR_MCPwm_Diag_State
+          NSR_MCPwm_Errors
+          NSR_MCPwm_Zero_Timeout
+          NSR_MCPwm_One_Timeout
+          NSR_MCPwm_Pulse_Active_Level
+          NSR_MCPwm_Pulse_Default_Level
+
+ 
+    48 bytes in section .bss
+ 2 286 bytes in section .text
+ 
+ 2 286 bytes of CODE memory
+    48 bytes of DATA memory
+
+Errors: none
+Warnings: none

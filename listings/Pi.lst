@@ -1,0 +1,2022 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:27
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\Pi\Pi.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o Pi.obj -l
+#        ..\listings\Pi.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\Pi\Pi.c
+#    List file    =  ..\listings\Pi.lst
+#    Object file  =  Pi.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MicroBlocks\Pi\Pi.c
+      1          /**
+      2           *  @file
+      3           *  @brief       PI regulator
+      4           *  @details     PI regulator with 2 different anti-windup strategies:
+      5           *               back-calculation and clamping
+      6           *  @author      alessio.beato/luigi.fagnano (only temporary, since it is not integrated in MKS)
+      7           *  $Header: $
+      8           *
+      9           *  @copyright  Copyright 2015-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     10          */
+     11          
+     12          //-------------------------------------- Include Files ----------------------------------------------------------------
+     13          #include "Pi.h"
+     14          #include "McMathCalc_macros.h"
+     15          
+     16          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     17          
+     18          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     19          
+     20          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     21          
+     22          
+     23          //=====================================================================================================================
+     24          //-------------------------------------- Public Functions -------------------------------------------------------------
+     25          //=====================================================================================================================
+     26          
+     27          //---------------------------------------------------------------------------------------------------------------------
+     28          
+     29          
+     30          //---------------------------------------------------------------------------------------------------------------------
+     31          /**
+     32           *  @brief      PI Regulator with back-calculation anti-windup strategy
+     33           *  @details    PI controller algorithm.
+     34           *              Definitions:
+     35           *
+     36           *              <b>e(t)</b> - input error in continuous time domain.
+     37           *
+     38           *              <b>u(t)</b> - controller output in continuous time domain.
+     39           *
+     40           *              <b>e(k)</b> - input error at step k - discrete time domain.
+     41           *
+     42           *              <b>u(k)</b> - controller output at step k - discrete time domain.
+     43           *
+     44           *              <b>e_max</b> - max range of e(k).
+     45           *
+     46           *              <b>u_max</b> - max range of u(k).
+     47           *
+     48           *            PI controller algorithm in <b>continuous time domain</b>:
+     49           *
+     50           *          \f[ u(t) = K\left(e(t) +\frac{1}{T_i}\int_0^t \! e(t) \, \mathrm{d}t. \right)\f]
+     51           *           where:
+     52           *            K :  controller gain
+     53           *
+     54           *            Ti: integral time constant
+     55           *
+     56           *           PI controller algorithm in <b>fractional arithmetic</b>:
+     57           *
+     58           *           \f[
+     59           *             \begin{aligned}
+     60           *                & u_f(k) = K_{p_{sc}} \cdot e_f(k) + u_f(k - 1) + K_{i_{sc}} \cdot e_f(k) \\
+     61           *                & e_f(k) = \frac{e(k)}{e_{max}}\\
+     62           *                & u_f(k) = \frac{u(k)}{u_{max}}\\
+     63           *                & K_{p_{sc}} =  K \frac{e(k)}{e_{max}}\\
+     64           *                & K_{i_{sc}} =  K \frac{T}{T_i}\frac{e(k)}{e_{max}}\\
+     65           *             \end{aligned}
+     66           *           \f]
+     67           *           where:
+     68           *           <b>T</b> : sampling time
+     69           *
+     70           *  The <b>anti-windup</b> technique is implemented as follows:
+     71           *  when the output saturates, the integral
+     72           *  term in the controller is recomputed so that its new value gives an
+     73           *  output at the saturation limit
+     74           *
+     75           *  @param[in]      pi_params       = PI parameters: gains and limits
+     76           *  @param[in]      err             = PI input error in Q17.15 notation
+     77           *  @param[in, out] integ_term_k_1  = PI state variable in Q2.30 notation
+     78           *  @return         PI output after saturation in Q17.15 notation
+     79           */
+
+   \                                 In section .text, align 2, keep-with-next
+     80          mc_sint32 Pi__PiRegBackCalc(mc_sint32 err, mc_sint32* integ_term_k_1, CONTROLLER_PI_PARAMS_TYPE* pi_params)
+     81          {
+   \                     Pi__PiRegBackCalc: (+1)
+   \   00000000   0xE92D 0x4EF2      PUSH     {R1,R4-R7,R9-R11,LR}
+   \   00000004   0x4614             MOV      R4,R2
+     82          
+     83              mc_sint64 prop_term;
+     84              mc_sint64 integ_term;
+     85              mc_sint64 tmp;
+     86          
+     87              // prop_term calculation in Q34.30 notation
+     88              prop_term = MC_MULT_LL_LL(pi_params->KpMant, err, (IQ15 + pi_params->KpExp), IQ15, IQ30);
+   \   00000006   0x4607             MOV      R7,R0
+   \   00000008   0x6822             LDR      R2,[R4, #+0]
+     89          
+     90              // prop_term Saturation
+     91              if (prop_term > (mc_sint64)pi_params->UpperLimit)
+   \   0000000A   0x68A5             LDR      R5,[R4, #+8]
+   \   0000000C   0xEA4F 0x7BE0      ASR      R11,R0,#+31
+   \   00000010   0x17D3             ASRS     R3,R2,#+31
+   \   00000012   0xFBA7 0x0102      UMULL    R0,R1,R7,R2
+   \   00000016   0xFB07 0x1103      MLA      R1,R7,R3,R1
+   \   0000001A   0xFB0B 0x1102      MLA      R1,R11,R2,R1
+   \   0000001E   0xF994 0x2010      LDRSB    R2,[R4, #+16]
+   \   00000022   0x.... 0x....      BL       __aeabi_lasr
+   \   00000026   0x468A             MOV      R10,R1
+   \   00000028   0xEA4F 0x79E5      ASR      R9,R5,#+31
+   \   0000002C   0x4606             MOV      R6,R0
+   \   0000002E   0x45D1             CMP      R9,R10
+   \   00000030   0xDC05             BGT.N    ??Pi__PiRegBackCalc_0
+   \   00000032   0xDB01             BLT.N    ??Pi__PiRegBackCalc_1
+   \   00000034   0x42B5             CMP      R5,R6
+   \   00000036   0xD202             BCS.N    ??Pi__PiRegBackCalc_0
+     92              {
+     93                  prop_term = (mc_sint64)pi_params->UpperLimit;
+   \                     ??Pi__PiRegBackCalc_1: (+1)
+   \   00000038   0x462E             MOV      R6,R5
+   \   0000003A   0x46CA             MOV      R10,R9
+   \   0000003C   0xE009             B.N      ??Pi__PiRegBackCalc_2
+     94              }
+     95              else if (prop_term < (mc_sint64)pi_params->LowerLimit)
+   \                     ??Pi__PiRegBackCalc_0: (+1)
+   \   0000003E   0x68E0             LDR      R0,[R4, #+12]
+   \   00000040   0xEBBA 0x7FE0      CMP      R10,R0, ASR #+31
+   \   00000044   0xDC05             BGT.N    ??Pi__PiRegBackCalc_2
+   \   00000046   0xDB01             BLT.N    ??Pi__PiRegBackCalc_3
+   \   00000048   0x4286             CMP      R6,R0
+   \   0000004A   0xD202             BCS.N    ??Pi__PiRegBackCalc_2
+     96              {
+     97                  prop_term = (mc_sint64)pi_params->LowerLimit;
+   \                     ??Pi__PiRegBackCalc_3: (+1)
+   \   0000004C   0x4606             MOV      R6,R0
+   \   0000004E   0xEA4F 0x7AE0      ASR      R10,R0,#+31
+     98              }
+     99          
+    100              // integ_term calculation in Q34.30 notation
+    101              integ_term = MC_MULT_LL_LL(pi_params->KiMant, err, (IQ15 + pi_params->KiExp), IQ15, IQ30);
+    102          
+    103              integ_term = integ_term + (mc_sint64)*integ_term_k_1;
+   \                     ??Pi__PiRegBackCalc_2: (+1)
+   \   00000052   0x6862             LDR      R2,[R4, #+4]
+   \   00000054   0x17D3             ASRS     R3,R2,#+31
+   \   00000056   0xFBA7 0x0102      UMULL    R0,R1,R7,R2
+   \   0000005A   0xFB07 0x1103      MLA      R1,R7,R3,R1
+   \   0000005E   0xFB0B 0x1102      MLA      R1,R11,R2,R1
+   \   00000062   0xF994 0x2011      LDRSB    R2,[R4, #+17]
+   \   00000066   0x.... 0x....      BL       __aeabi_lasr
+   \   0000006A   0x9A00             LDR      R2,[SP, #+0]
+   \   0000006C   0x6812             LDR      R2,[R2, #+0]
+   \   0000006E   0x1887             ADDS     R7,R0,R2
+   \   00000070   0xEB41 0x7BE2      ADC      R11,R1,R2, ASR #+31
+    104          
+    105              // output Saturation & state variable back-calculation anti-windup
+    106              tmp = prop_term + integ_term;
+   \   00000074   0x19F2             ADDS     R2,R6,R7
+   \   00000076   0xEB4A 0x030B      ADC      R3,R10,R11
+    107          
+    108              if (tmp > (mc_sint64)pi_params->UpperLimit)
+   \   0000007A   0x4599             CMP      R9,R3
+   \   0000007C   0xDC06             BGT.N    ??Pi__PiRegBackCalc_4
+   \   0000007E   0xDB01             BLT.N    ??Pi__PiRegBackCalc_5
+   \   00000080   0x4295             CMP      R5,R2
+   \   00000082   0xD203             BCS.N    ??Pi__PiRegBackCalc_4
+    109              {
+    110                  tmp = (mc_sint64)pi_params->UpperLimit;
+   \                     ??Pi__PiRegBackCalc_5: (+1)
+   \   00000084   0x462A             MOV      R2,R5
+   \   00000086   0x464B             MOV      R3,R9
+    111                  *integ_term_k_1 = pi_params->UpperLimit - (mc_sint32)prop_term;
+   \   00000088   0x1BAF             SUBS     R7,R5,R6
+   \   0000008A   0xE009             B.N      ??Pi__PiRegBackCalc_6
+    112              }
+    113              else if (tmp < pi_params->LowerLimit)
+   \                     ??Pi__PiRegBackCalc_4: (+1)
+   \   0000008C   0x68E0             LDR      R0,[R4, #+12]
+   \   0000008E   0xEBB3 0x7FE0      CMP      R3,R0, ASR #+31
+   \   00000092   0xDC05             BGT.N    ??Pi__PiRegBackCalc_6
+   \   00000094   0xDB01             BLT.N    ??Pi__PiRegBackCalc_7
+   \   00000096   0x4282             CMP      R2,R0
+   \   00000098   0xD202             BCS.N    ??Pi__PiRegBackCalc_6
+    114              {
+    115                  tmp = (mc_sint64)pi_params->LowerLimit;
+   \                     ??Pi__PiRegBackCalc_7: (+1)
+   \   0000009A   0x4602             MOV      R2,R0
+   \   0000009C   0x17C3             ASRS     R3,R0,#+31
+    116                  *integ_term_k_1 = pi_params->LowerLimit - (mc_sint32)prop_term;
+   \   0000009E   0x1B87             SUBS     R7,R0,R6
+    117              }
+    118              else
+    119              {
+    120                  *integ_term_k_1 = (mc_sint64)integ_term;
+   \                     ??Pi__PiRegBackCalc_6: (+1)
+   \   000000A0   0x9800             LDR      R0,[SP, #+0]
+   \   000000A2   0x6007             STR      R7,[R0, #+0]
+    121              }
+    122          
+    123              // output in Q17.15 notation
+    124              return ((mc_sint32)(MC_SCALE(tmp,IQ30,IQ15)));
+   \   000000A4   0x0BD2             LSRS     R2,R2,#+15
+   \   000000A6   0xEA42 0x4043      ORR      R0,R2,R3, LSL #+17
+   \   000000AA   0xB001             ADD      SP,SP,#+4
+   \   000000AC   0xE8BD 0x8EF0      POP      {R4-R7,R9-R11,PC}  ;; return
+    125          }
+    126          
+    127          
+    128          
+    129          //---------------------------------------------------------------------------------------------------------------------
+    130          /**
+    131           *  @brief      PI Regulator with clamping anti-windup
+    132           *  @details    PI controller algorithm.
+    133           *              Definitions:
+    134           *
+    135           *              <b>e(t)</b> - input error in continuous time domain.
+    136           *
+    137           *              <b>u(t)</b> - controller output in continuous time domain.
+    138           *
+    139           *              <b>e(k)</b> - input error at step k - discrete time domain.
+    140           *
+    141           *              <b>u(k)</b> - controller output at step k - discrete time domain.
+    142           *
+    143           *              <b>e_max</b> - max range of e(k).
+    144           *
+    145           *              <b>u_max</b> - max range of u(k).
+    146           *
+    147           *            PI controller algorithm in <b>continuous time domain</b>:
+    148           *
+    149           *          \f[ u(t) = K\left(e(t) +\frac{1}{T_i}\int_0^t \! e(t) \, \mathrm{d}t. \right)\f]
+    150           *           where:
+    151           *            K :  controller gain
+    152           *
+    153           *            Ti: integral time constant
+    154           *
+    155           *           PI controller algorithm in <b>fractional arithmetic</b>:
+    156           *
+    157           *           \f[
+    158           *             \begin{aligned}
+    159           *                & u_f(k) = K_{p_{sc}} \cdot e_f(k) + u_f(k - 1) + K_{i_{sc}} \cdot e_f(k) \\
+    160           *                & e_f(k) = \frac{e(k)}{e_{max}}\\
+    161           *                & u_f(k) = \frac{u(k)}{u_{max}}\\
+    162           *                & K_{p_{sc}} =  K \frac{e(k)}{e_{max}}\\
+    163           *                & K_{i_{sc}} =  K \frac{T}{T_i}\frac{e(k)}{e_{max}}\\
+    164           *             \end{aligned}
+    165           *           \f]
+    166           *           where:
+    167           *           <b>T</b> : sampling time
+    168           *
+    169           *  The <b>anti-windup</b> technique is implemented as follows.
+    170           *
+    171           *  It stops integration when the sum of proportional and integral components exceeds the output limits
+    172           *  and the two components have the same sign.
+    173           *
+    174           *  @param[in]      pi_params       = PI parameters: gains and limits
+    175           *  @param[in]      err             = PI input error in Q17.15 notation
+    176           *  @param[in, out] integ_term_k_1  = PI state variable in Q2.30 notation
+    177           *  @return         PI output after saturation in Q17.15 notation
+    178           */
+
+   \                                 In section .text, align 2, keep-with-next
+    179          mc_sint32 Pi__PiRegClamp(mc_sint32 err, mc_sint32* integ_term_k_1, CONTROLLER_PI_PARAMS_TYPE* pi_params)
+    180          {
+   \                     Pi__PiRegClamp: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0x4615             MOV      R5,R2
+   \   00000006   0x4604             MOV      R4,R0
+    181          
+    182              mc_sint64 prop_term;
+    183              mc_sint64 integ_term;
+    184              mc_sint64 tmp;
+    185          
+    186          
+    187              // prop_term calculation in Q34.30 notation
+    188              prop_term = MC_MULT_LL_LL(pi_params->KpMant, err, (IQ15 + pi_params->KpExp), IQ15, IQ30);
+   \   00000008   0x682A             LDR      R2,[R5, #+0]
+   \   0000000A   0x460F             MOV      R7,R1
+   \   0000000C   0x17D3             ASRS     R3,R2,#+31
+   \   0000000E   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   00000012   0xEA4F 0x78E4      ASR      R8,R4,#+31
+   \   00000016   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   0000001A   0xFB08 0x1102      MLA      R1,R8,R2,R1
+   \   0000001E   0xF995 0x2010      LDRSB    R2,[R5, #+16]
+   \   00000022   0x.... 0x....      BL       __aeabi_lasr
+    189          
+    190              // integ_term calculation in Q34.30 notation
+    191              integ_term = MC_MULT_LL_LL(pi_params->KiMant, err, (IQ15 + pi_params->KiExp), IQ15, IQ30);
+    192          
+    193              integ_term = integ_term + (mc_sint64)*integ_term_k_1;
+   \   00000026   0x686A             LDR      R2,[R5, #+4]
+   \   00000028   0x4606             MOV      R6,R0
+   \   0000002A   0x4689             MOV      R9,R1
+   \   0000002C   0x17D3             ASRS     R3,R2,#+31
+   \   0000002E   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   00000032   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   00000036   0xFB08 0x1102      MLA      R1,R8,R2,R1
+   \   0000003A   0xF995 0x2011      LDRSB    R2,[R5, #+17]
+   \   0000003E   0x.... 0x....      BL       __aeabi_lasr
+   \   00000042   0x683A             LDR      R2,[R7, #+0]
+   \   00000044   0x17D3             ASRS     R3,R2,#+31
+   \   00000046   0x1882             ADDS     R2,R0,R2
+   \   00000048   0x414B             ADCS     R3,R1,R3
+    194          
+    195              integ_term = MATHCALC__SATURATE(MC_MINUS_ONE_IQ30, integ_term, MC_ONE_IQ30);
+   \   0000004A   0x2B00             CMP      R3,#+0
+   \   0000004C   0xDB07             BLT.N    ??Pi__PiRegClamp_0
+   \   0000004E   0xDC02             BGT.N    ??Pi__PiRegClamp_1
+   \   00000050   0xF1B2 0x4F80      CMP      R2,#+1073741824
+   \   00000054   0xD303             BCC.N    ??Pi__PiRegClamp_0
+   \                     ??Pi__PiRegClamp_1: (+1)
+   \   00000056   0xF04F 0x4280      MOV      R2,#+1073741824
+   \   0000005A   0x2300             MOVS     R3,#+0
+   \   0000005C   0xE00B             B.N      ??Pi__PiRegClamp_2
+   \                     ??Pi__PiRegClamp_0: (+1)
+   \   0000005E   0xF04F 0x31FF      MOV      R1,#-1
+   \   00000062   0x.... 0x....      LDR.W    R0,??DataTable2_1  ;; 0xc0000001
+   \   00000066   0x428B             CMP      R3,R1
+   \   00000068   0xDC05             BGT.N    ??Pi__PiRegClamp_2
+   \   0000006A   0xDB01             BLT.N    ??Pi__PiRegClamp_3
+   \   0000006C   0x4282             CMP      R2,R0
+   \   0000006E   0xD202             BCS.N    ??Pi__PiRegClamp_2
+   \                     ??Pi__PiRegClamp_3: (+1)
+   \   00000070   0xF04F 0x4240      MOV      R2,#-1073741824
+   \   00000074   0x460B             MOV      R3,R1
+    196          
+    197              tmp = prop_term + integ_term;
+   \                     ??Pi__PiRegClamp_2: (+1)
+   \   00000076   0x18B0             ADDS     R0,R6,R2
+    198          
+    199              // output Saturation & state variable clamping anti-windup
+    200              if (tmp > (mc_sint64) pi_params->UpperLimit)
+   \   00000078   0x68AE             LDR      R6,[R5, #+8]
+   \   0000007A   0xEB49 0x0103      ADC      R1,R9,R3
+   \   0000007E   0xEA4F 0x79E6      ASR      R9,R6,#+31
+   \   00000082   0x4589             CMP      R9,R1
+   \   00000084   0xDC12             BGT.N    ??Pi__PiRegClamp_4
+   \   00000086   0xDB01             BLT.N    ??Pi__PiRegClamp_5
+   \   00000088   0x4286             CMP      R6,R0
+   \   0000008A   0xD20F             BCS.N    ??Pi__PiRegClamp_4
+    201              {
+    202                  tmp = (mc_sint64)pi_params->UpperLimit;
+   \                     ??Pi__PiRegClamp_5: (+1)
+   \   0000008C   0x4630             MOV      R0,R6
+   \   0000008E   0x4649             MOV      R1,R9
+    203                  // check components sign to decide if clamping is needed
+    204                  if ((MATHCALC__SIGN(err)) != (MATHCALC__SIGN(integ_term)))
+   \   00000090   0x2C00             CMP      R4,#+0
+   \   00000092   0xBF4C             ITE      MI 
+   \   00000094   0xF04F 0x34FF      MOVMI    R4,#-1
+   \   00000098   0x2401             MOVPL    R4,#+1
+   \   0000009A   0x2B00             CMP      R3,#+0
+   \   0000009C   0xBFB4             ITE      LT 
+   \   0000009E   0xF04F 0x38FF      MOVLT    R8,#-1
+   \   000000A2   0xF04F 0x0801      MOVGE    R8,#+1
+   \   000000A6   0x4544             CMP      R4,R8
+   \   000000A8   0xD017             BEQ.N    ??Pi__PiRegClamp_6
+    205                  {
+    206                      *integ_term_k_1 = (mc_sint64)integ_term;
+   \   000000AA   0xE015             B.N      ??Pi__PiRegClamp_7
+    207                  }
+    208              }
+    209              else if (tmp < (mc_sint64) pi_params->LowerLimit)
+   \                     ??Pi__PiRegClamp_4: (+1)
+   \   000000AC   0x68EE             LDR      R6,[R5, #+12]
+   \   000000AE   0xEBB1 0x7FE6      CMP      R1,R6, ASR #+31
+   \   000000B2   0xDC11             BGT.N    ??Pi__PiRegClamp_7
+   \   000000B4   0xDB01             BLT.N    ??Pi__PiRegClamp_8
+   \   000000B6   0x42B0             CMP      R0,R6
+   \   000000B8   0xD20E             BCS.N    ??Pi__PiRegClamp_7
+    210              {
+    211                  tmp = (mc_sint64)pi_params->LowerLimit;
+   \                     ??Pi__PiRegClamp_8: (+1)
+   \   000000BA   0x17F1             ASRS     R1,R6,#+31
+   \   000000BC   0x4630             MOV      R0,R6
+    212                  // check components sign to decide if clamping is needed
+    213                  if ((MATHCALC__SIGN(err)) != (MATHCALC__SIGN(integ_term)))
+   \   000000BE   0x2C00             CMP      R4,#+0
+   \   000000C0   0xBF4C             ITE      MI 
+   \   000000C2   0xF04F 0x34FF      MOVMI    R4,#-1
+   \   000000C6   0x2401             MOVPL    R4,#+1
+   \   000000C8   0x2B00             CMP      R3,#+0
+   \   000000CA   0xBFB4             ITE      LT 
+   \   000000CC   0xF04F 0x38FF      MOVLT    R8,#-1
+   \   000000D0   0xF04F 0x0801      MOVGE    R8,#+1
+   \   000000D4   0x4544             CMP      R4,R8
+   \   000000D6   0xD000             BEQ.N    ??Pi__PiRegClamp_6
+    214                  {
+    215                      *integ_term_k_1 = (mc_sint64)integ_term;
+    216                  }
+    217              }
+    218              else
+    219              {
+    220                  *integ_term_k_1 = (mc_sint64)integ_term;
+   \                     ??Pi__PiRegClamp_7: (+1)
+   \   000000D8   0x603A             STR      R2,[R7, #+0]
+    221              }
+    222          
+    223              // output in Q17.15 notation
+    224              return ((mc_sint32)MC_SCALE(tmp,IQ30,IQ15));
+   \                     ??Pi__PiRegClamp_6: (+1)
+   \   000000DA   0x0BC0             LSRS     R0,R0,#+15
+   \   000000DC   0xEA40 0x4041      ORR      R0,R0,R1, LSL #+17
+   \   000000E0   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    225          }
+    226          
+    227          
+    228          
+    229          
+    230          
+    231          
+    232          //---------------------------------------------------------------------------------------------------------------------
+    233          /**
+    234           *  @brief      PI Regulator without anti-windup
+    235           *  @details    PI controller algorithm.
+    236           *              Definitions:
+    237           *
+    238           *              <b>e(t)</b> - input error in continuous time domain.
+    239           *
+    240           *              <b>u(t)</b> - controller output in continuous time domain.
+    241           *
+    242           *              <b>e(k)</b> - input error at step k - discrete time domain.
+    243           *
+    244           *              <b>u(k)</b> - controller output at step k - discrete time domain.
+    245           *
+    246           *              <b>e_max</b> - max range of e(k).
+    247           *
+    248           *              <b>u_max</b> - max range of u(k).
+    249           *
+    250           *            PI controller algorithm in <b>continuous time domain</b>:
+    251           *
+    252           *          \f[ u(t) = K\left(e(t) +\frac{1}{T_i}\int_0^t \! e(t) \, \mathrm{d}t. \right)\f]
+    253           *           where:
+    254           *            K :  controller gain
+    255           *
+    256           *            Ti: integral time constant
+    257           *
+    258           *           PI controller algorithm in <b>fractional arithmetic</b>:
+    259           *
+    260           *           \f[
+    261           *             \begin{aligned}
+    262           *                & u_f(k) = K_{p_{sc}} \cdot e_f(k) + u_f(k - 1) + K_{i_{sc}} \cdot e_f(k) \\
+    263           *                & e_f(k) = \frac{e(k)}{e_{max}}\\
+    264           *                & u_f(k) = \frac{u(k)}{u_{max}}\\
+    265           *                & K_{p_{sc}} =  K \frac{e(k)}{e_{max}}\\
+    266           *                & K_{i_{sc}} =  K \frac{T}{T_i}\frac{e(k)}{e_{max}}\\
+    267           *             \end{aligned}
+    268           *           \f]
+    269           *           where:
+    270           *           <b>T</b> : sampling time
+    271           *
+    272           *
+    273           *  It stops integration when the sum of proportional and integral components exceeds the output limits
+    274           *  and the two components have the same sign.
+    275           *
+    276           *  @param[in]      pi_params       = PI parameters: gains and limits
+    277           *  @param[in]      err             = PI input error in Q17.15 notation
+    278           *  @param[in, out] integ_term_k_1  = PI state variable in Q2.30 notation
+    279           *  @return         PI output after saturation in Q2.30 notation
+    280           */
+
+   \                                 In section .text, align 2, keep-with-next
+    281          mc_sint32 Pi__PiRegNoAntiWindup(mc_sint32 err, mc_sint32* integ_term_k_1, CONTROLLER_PI_PARAMS_TYPE* pi_params)
+    282          {
+   \                     Pi__PiRegNoAntiWindup: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0x4617             MOV      R7,R2
+   \   00000006   0x4689             MOV      R9,R1
+    283          
+    284              mc_sint64 prop_term;
+    285              mc_sint64 integ_term;
+    286              mc_sint64 tmp64;
+    287          
+    288          
+    289              // prop_term calculation in Q34.30 notation
+    290              prop_term = MC_MULT_LL_LL(pi_params->KpMant, err, (IQ15 + pi_params->KpExp), IQ15, IQ30);
+    291          
+    292              // integ_term calculation in Q34.30 notation
+    293              integ_term = MC_MULT_LL_LL(pi_params->KiMant, err, (IQ15 + pi_params->KiExp), IQ15, IQ30);
+    294          
+    295              integ_term = integ_term + (mc_sint64)*integ_term_k_1;
+   \   00000008   0x687A             LDR      R2,[R7, #+4]
+   \   0000000A   0x4604             MOV      R4,R0
+   \   0000000C   0x17C5             ASRS     R5,R0,#+31
+   \   0000000E   0x17D3             ASRS     R3,R2,#+31
+   \   00000010   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   00000014   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   00000018   0xFB05 0x1102      MLA      R1,R5,R2,R1
+   \   0000001C   0xF997 0x2011      LDRSB    R2,[R7, #+17]
+   \   00000020   0x.... 0x....      BL       __aeabi_lasr
+   \   00000024   0xF8D9 0x2000      LDR      R2,[R9, #+0]
+   \   00000028   0xEB10 0x0802      ADDS     R8,R0,R2
+   \   0000002C   0xEB41 0x76E2      ADC      R6,R1,R2, ASR #+31
+    296          
+    297              // output Saturation & state variable limitation
+    298              tmp64 = prop_term + integ_term;
+   \   00000030   0x683A             LDR      R2,[R7, #+0]
+   \   00000032   0x17D3             ASRS     R3,R2,#+31
+   \   00000034   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   00000038   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   0000003C   0xFB05 0x1102      MLA      R1,R5,R2,R1
+   \   00000040   0xF997 0x2010      LDRSB    R2,[R7, #+16]
+    299          
+    300              tmp64 = MATHCALC__SATURATE((mc_sint64)pi_params->LowerLimit, tmp64, (mc_sint64)pi_params->UpperLimit);
+   \   00000044   0x68BC             LDR      R4,[R7, #+8]
+   \   00000046   0x.... 0x....      BL       __aeabi_lasr
+   \   0000004A   0xEB10 0x0008      ADDS     R0,R0,R8
+   \   0000004E   0x68FA             LDR      R2,[R7, #+12]
+   \   00000050   0x4171             ADCS     R1,R1,R6
+   \   00000052   0x4294             CMP      R4,R2
+   \   00000054   0xDB0D             BLT.N    ??Pi__PiRegNoAntiWindup_0
+   \   00000056   0xEBB1 0x7FE4      CMP      R1,R4, ASR #+31
+   \   0000005A   0xDB02             BLT.N    ??Pi__PiRegNoAntiWindup_1
+   \   0000005C   0xDC17             BGT.N    ??Pi__PiRegNoAntiWindup_2
+   \   0000005E   0x42A0             CMP      R0,R4
+   \   00000060   0xD215             BCS.N    ??Pi__PiRegNoAntiWindup_2
+   \                     ??Pi__PiRegNoAntiWindup_1: (+1)
+   \   00000062   0x17D3             ASRS     R3,R2,#+31
+   \   00000064   0x428B             CMP      R3,R1
+   \   00000066   0xDB13             BLT.N    ??Pi__PiRegNoAntiWindup_3
+   \   00000068   0xDC09             BGT.N    ??Pi__PiRegNoAntiWindup_4
+   \   0000006A   0x4282             CMP      R2,R0
+   \   0000006C   0xD310             BCC.N    ??Pi__PiRegNoAntiWindup_3
+   \   0000006E   0x4610             MOV      R0,R2
+   \   00000070   0xE00E             B.N      ??Pi__PiRegNoAntiWindup_3
+   \                     ??Pi__PiRegNoAntiWindup_0: (+1)
+   \   00000072   0xEBB1 0x7FE2      CMP      R1,R2, ASR #+31
+   \   00000076   0xDB04             BLT.N    ??Pi__PiRegNoAntiWindup_5
+   \   00000078   0xDC01             BGT.N    ??Pi__PiRegNoAntiWindup_4
+   \   0000007A   0x4290             CMP      R0,R2
+   \   0000007C   0xD301             BCC.N    ??Pi__PiRegNoAntiWindup_5
+   \                     ??Pi__PiRegNoAntiWindup_4: (+1)
+   \   0000007E   0x4610             MOV      R0,R2
+   \   00000080   0xE006             B.N      ??Pi__PiRegNoAntiWindup_3
+   \                     ??Pi__PiRegNoAntiWindup_5: (+1)
+   \   00000082   0x17E5             ASRS     R5,R4,#+31
+   \   00000084   0x428D             CMP      R5,R1
+   \   00000086   0xDB03             BLT.N    ??Pi__PiRegNoAntiWindup_3
+   \   00000088   0xDC01             BGT.N    ??Pi__PiRegNoAntiWindup_2
+   \   0000008A   0x4284             CMP      R4,R0
+   \   0000008C   0xD300             BCC.N    ??Pi__PiRegNoAntiWindup_3
+   \                     ??Pi__PiRegNoAntiWindup_2: (+1)
+   \   0000008E   0x4620             MOV      R0,R4
+    301          
+    302              integ_term = MATHCALC__SATURATE(MC_MINUS_ONE_IQ30, integ_term, MC_ONE_IQ30);
+   \                     ??Pi__PiRegNoAntiWindup_3: (+1)
+   \   00000090   0x2E00             CMP      R6,#+0
+   \   00000092   0xDB09             BLT.N    ??Pi__PiRegNoAntiWindup_6
+   \   00000094   0xDC02             BGT.N    ??Pi__PiRegNoAntiWindup_7
+   \   00000096   0xF1B8 0x4F80      CMP      R8,#+1073741824
+   \   0000009A   0xD305             BCC.N    ??Pi__PiRegNoAntiWindup_6
+   \                     ??Pi__PiRegNoAntiWindup_7: (+1)
+   \   0000009C   0xF04F 0x4880      MOV      R8,#+1073741824
+    303          
+    304              *integ_term_k_1 = (mc_sint32)integ_term;
+   \   000000A0   0xF8C9 0x8000      STR      R8,[R9, #+0]
+    305          
+    306              // output in Q2.30 notation
+    307              return ((mc_sint32)tmp64);
+   \   000000A4   0xE8BD 0x83F0      POP      {R4-R9,PC}
+   \                     ??Pi__PiRegNoAntiWindup_6: (+1)
+   \   000000A8   0xF04F 0x33FF      MOV      R3,#-1
+   \   000000AC   0x.... 0x....      LDR.W    R2,??DataTable2_1  ;; 0xc0000001
+   \   000000B0   0x429E             CMP      R6,R3
+   \   000000B2   0xDC04             BGT.N    ??Pi__PiRegNoAntiWindup_8
+   \   000000B4   0xDB01             BLT.N    ??Pi__PiRegNoAntiWindup_9
+   \   000000B6   0x4590             CMP      R8,R2
+   \   000000B8   0xD201             BCS.N    ??Pi__PiRegNoAntiWindup_8
+   \                     ??Pi__PiRegNoAntiWindup_9: (+1)
+   \   000000BA   0xF04F 0x4840      MOV      R8,#-1073741824
+   \                     ??Pi__PiRegNoAntiWindup_8: (+1)
+   \   000000BE   0xF8C9 0x8000      STR      R8,[R9, #+0]
+   \   000000C2   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    308          }
+    309          
+    310          
+    311          
+    312          //---------------------------------------------------------------------------------------------------------------------
+    313          /**
+    314           *  @brief      PI Regulator with back-calculation anti-windup strategy
+    315           *  @details    PI controller algorithm.
+    316           *              Definitions:
+    317           *
+    318           *              <b>e(t)</b> - input error in continuous time domain.
+    319           *
+    320           *              <b>u(t)</b> - controller output in continuous time domain.
+    321           *
+    322           *              <b>e(k)</b> - input error at step k - discrete time domain.
+    323           *
+    324           *              <b>u(k)</b> - controller output at step k - discrete time domain.
+    325           *
+    326           *              <b>e_max</b> - max range of e(k).
+    327           *
+    328           *              <b>u_max</b> - max range of u(k).
+    329           *
+    330           *            PI controller algorithm in <b>continuous time domain</b>:
+    331           *
+    332           *          \f[ u(t) = K\left(e(t) +\frac{1}{T_i}\int_0^t \! e(t) \, \mathrm{d}t. \right)\f]
+    333           *           where:
+    334           *            K :  controller gain
+    335           *
+    336           *            Ti: integral time constant
+    337           *
+    338           *           PI controller algorithm in <b>fractional arithmetic</b>:
+    339           *
+    340           *           \f[
+    341           *             \begin{aligned}
+    342           *                & u_f(k) = K_{p_{sc}} \cdot e_f(k) + u_f(k - 1) + K_{i_{sc}} \cdot e_f(k) \\
+    343           *                & e_f(k) = \frac{e(k)}{e_{max}}\\
+    344           *                & u_f(k) = \frac{u(k)}{u_{max}}\\
+    345           *                & K_{p_{sc}} =  K \frac{e(k)}{e_{max}}\\
+    346           *                & K_{i_{sc}} =  K \frac{T}{T_i}\frac{e(k)}{e_{max}}\\
+    347           *             \end{aligned}
+    348           *           \f]
+    349           *           where:
+    350           *           <b>T</b> : sampling time
+    351           *
+    352           *  The <b>anti-windup</b> technique is implemented as follows:
+    353           *  when the output saturates, the integral
+    354           *  term in the controller is recomputed so that its new value gives an
+    355           *  output at the saturation limit
+    356           *
+    357           *  @param[in]      pi_params       = PI parameters: gains in floating p.u. and limits in IQ
+    358           *  @param[in]      err             = PI input error in Q17.15 notation
+    359           *  @param[in, out] integ_term_k_1  = PI state variable in Q2.30 notation
+    360           *  @return         PI output after saturation in Q17.15 notation
+    361           */
+
+   \                                 In section .text, align 2, keep-with-next
+    362          sint32 Pi__PiRegBackCalc_FloatGains(sint32 err, sint32* integ_term_k_1, CONTROLLER_PI_PARAMS_FLOATGAINS_TYPE* pi_params)
+    363          {
+   \                     Pi__PiRegBackCalc_FloatGains: (+1)
+   \   00000000   0xE92D 0x4EF0      PUSH     {R4-R7,R9-R11,LR}
+   \   00000004   0xB081             SUB      SP,SP,#+4
+   \   00000006   0xEE00 0x0A10      VMOV     S0,R0
+   \   0000000A   0xB402             PUSH     {R1}
+   \   0000000C   0xED2D 0x8B02      VPUSH    {D8}
+   \   00000010   0x4614             MOV      R4,R2
+    364              /* p.u. float gains --> kfloat*(IQ<<15) */
+    365              sint64 prop_term;
+    366              sint64 integ_term;
+    367              sint64 tmp;
+    368          
+    369              // prop_term calculation in Q34.30 notation
+    370              //prop_term = (sint64) (pi_params->Kp * (float)(MC_SCALE(err, IQ15, IQ30)));
+    371              prop_term = (sint64) (pi_params->Kp * err);
+   \   00000012   0xEEB8 0x8AC0      VCVT.F32.S32 S16,S0
+   \   00000016   0xED94 0x0A00      VLDR     S0,[R4, #0]
+   \   0000001A   0xEE28 0x0A00      VMUL.F32 S0,S16,S0
+   \   0000001E   0xEE10 0x0A10      VMOV     R0,S0
+   \   00000022   0x.... 0x....      BL       __aeabi_f2lz
+    372          
+    373              // prop_term Saturation
+    374              if (prop_term > pi_params->UpperLimit)
+   \   00000026   0x68A5             LDR      R5,[R4, #+8]
+   \   00000028   0x468A             MOV      R10,R1
+   \   0000002A   0xEA4F 0x79E5      ASR      R9,R5,#+31
+   \   0000002E   0x4606             MOV      R6,R0
+   \   00000030   0x45D1             CMP      R9,R10
+   \   00000032   0xDC05             BGT.N    ??Pi__PiRegBackCalc_FloatGains_0
+   \   00000034   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FloatGains_1
+   \   00000036   0x42B5             CMP      R5,R6
+   \   00000038   0xD202             BCS.N    ??Pi__PiRegBackCalc_FloatGains_0
+    375              {
+    376                  prop_term = pi_params->UpperLimit;
+   \                     ??Pi__PiRegBackCalc_FloatGains_1: (+1)
+   \   0000003A   0x462E             MOV      R6,R5
+   \   0000003C   0x46CA             MOV      R10,R9
+   \   0000003E   0xE009             B.N      ??Pi__PiRegBackCalc_FloatGains_2
+    377              }
+    378              else if (prop_term < pi_params->LowerLimit)
+   \                     ??Pi__PiRegBackCalc_FloatGains_0: (+1)
+   \   00000040   0x68E0             LDR      R0,[R4, #+12]
+   \   00000042   0xEBBA 0x7FE0      CMP      R10,R0, ASR #+31
+   \   00000046   0xDC05             BGT.N    ??Pi__PiRegBackCalc_FloatGains_2
+   \   00000048   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FloatGains_3
+   \   0000004A   0x4286             CMP      R6,R0
+   \   0000004C   0xD202             BCS.N    ??Pi__PiRegBackCalc_FloatGains_2
+    379              {
+    380                  prop_term = pi_params->LowerLimit;
+   \                     ??Pi__PiRegBackCalc_FloatGains_3: (+1)
+   \   0000004E   0x4606             MOV      R6,R0
+   \   00000050   0xEA4F 0x7AE0      ASR      R10,R0,#+31
+    381              }
+    382          
+    383              // integ_term calculation in Q34.30 notation
+    384              //integ_term = (sint64)(pi_params->Ki * (float)(MC_SCALE(err, IQ15, IQ30)));
+    385              integ_term = (sint64)(pi_params->Ki * err);
+    386          
+    387              integ_term = integ_term + *integ_term_k_1;
+   \                     ??Pi__PiRegBackCalc_FloatGains_2: (+1)
+   \   00000054   0xED94 0x0A01      VLDR     S0,[R4, #+4]
+   \   00000058   0xEE28 0x0A00      VMUL.F32 S0,S16,S0
+   \   0000005C   0xEE10 0x0A10      VMOV     R0,S0
+   \   00000060   0x.... 0x....      BL       __aeabi_f2lz
+   \   00000064   0x9A02             LDR      R2,[SP, #+8]
+   \   00000066   0x6812             LDR      R2,[R2, #+0]
+   \   00000068   0x1887             ADDS     R7,R0,R2
+   \   0000006A   0xEB41 0x7BE2      ADC      R11,R1,R2, ASR #+31
+    388          
+    389              // output Saturation & state variable back-calculation anti-windup
+    390              tmp = prop_term + integ_term;
+   \   0000006E   0x19F2             ADDS     R2,R6,R7
+   \   00000070   0xEB4A 0x030B      ADC      R3,R10,R11
+    391          
+    392              if (tmp > pi_params->UpperLimit)
+   \   00000074   0x4599             CMP      R9,R3
+   \   00000076   0xDC06             BGT.N    ??Pi__PiRegBackCalc_FloatGains_4
+   \   00000078   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FloatGains_5
+   \   0000007A   0x4295             CMP      R5,R2
+   \   0000007C   0xD203             BCS.N    ??Pi__PiRegBackCalc_FloatGains_4
+    393              {
+    394                  tmp = pi_params->UpperLimit;
+   \                     ??Pi__PiRegBackCalc_FloatGains_5: (+1)
+   \   0000007E   0x462A             MOV      R2,R5
+   \   00000080   0x464B             MOV      R3,R9
+    395                  *integ_term_k_1 = pi_params->UpperLimit - prop_term;
+   \   00000082   0x1BAF             SUBS     R7,R5,R6
+   \   00000084   0xE009             B.N      ??Pi__PiRegBackCalc_FloatGains_6
+    396              }
+    397              else if (tmp < pi_params->LowerLimit)
+   \                     ??Pi__PiRegBackCalc_FloatGains_4: (+1)
+   \   00000086   0x68E0             LDR      R0,[R4, #+12]
+   \   00000088   0xEBB3 0x7FE0      CMP      R3,R0, ASR #+31
+   \   0000008C   0xDC05             BGT.N    ??Pi__PiRegBackCalc_FloatGains_6
+   \   0000008E   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FloatGains_7
+   \   00000090   0x4282             CMP      R2,R0
+   \   00000092   0xD202             BCS.N    ??Pi__PiRegBackCalc_FloatGains_6
+    398              {
+    399                  tmp = pi_params->LowerLimit;
+   \                     ??Pi__PiRegBackCalc_FloatGains_7: (+1)
+   \   00000094   0x4602             MOV      R2,R0
+   \   00000096   0x17C3             ASRS     R3,R0,#+31
+    400                  *integ_term_k_1 = pi_params->LowerLimit - prop_term;
+   \   00000098   0x1B87             SUBS     R7,R0,R6
+    401              }
+    402              else
+    403              {
+    404                  *integ_term_k_1 = integ_term;
+   \                     ??Pi__PiRegBackCalc_FloatGains_6: (+1)
+   \   0000009A   0x9802             LDR      R0,[SP, #+8]
+   \   0000009C   0x6007             STR      R7,[R0, #+0]
+    405              }
+    406          
+    407              // output in Q17.15 notation
+    408              return ((sint32)(MC_SCALE(tmp,IQ30,IQ15)));
+   \   0000009E   0x0BD2             LSRS     R2,R2,#+15
+   \   000000A0   0xECBD 0x8B02      VPOP     {D8}
+   \   000000A4   0xEA42 0x4043      ORR      R0,R2,R3, LSL #+17
+   \   000000A8   0xB002             ADD      SP,SP,#+8
+   \   000000AA   0xE8BD 0x8EF0      POP      {R4-R7,R9-R11,PC}  ;; return
+    409          }
+    410          
+    411          
+    412          //---------------------------------------------------------------------------------------------------------------------
+    413          /**
+    414           *  @brief     Integral routine: it approximates the integral of an input quantities according to Backward-Euler Method.
+    415           *  @details
+    416           *  This function approximates the integral of an input signal according to the Backward-Euler Method.
+    417           *  The output is eventually saturated to the upper or lower limit if needed.
+    418           *
+    419           *          Integrator in <b>continuous time domain</b>:
+    420           *          \f[ y(t) =  K_i\int_0^t \! x(t) \, \mathrm{d}t. \f]
+    421           *           where:
+    422           *           Ki : integrator gain
+    423           *
+    424           *           Integrator in <b>fractional arithmetic</b>, <b>discrete time domain</b>:
+    425           *
+    426           *           \f[ y_f(k) =  y_f(k - 1) + T_s \cdot K_{i_{f}} \cdot x_f(k) \f]
+    427           *           where:
+    428           *           Ts : sampling period
+    429           *
+    430           *  @param[in]      integ_params    = integrator parameters: integrator gain and limits
+    431           *  @param[in, out] y_k_1           = integrator output in Q2.30 notation  (input is at k-1 step, output is at k step)
+    432           *  @param[in]      x_k             = integrator input in Q17.15 notation
+    433           *  @return         integrator output after saturation in Q17.15 notation
+    434           *
+    435           */
+
+   \                                 In section .text, align 2, keep-with-next
+    436          mc_sint32 Pi__IntegBESat(mc_sint32 x_k, mc_sint32* y_k_1, INTEGRATOR_PARAMS_TYPE* integ_params)
+    437          {
+   \                     Pi__IntegBESat: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0x4615             MOV      R5,R2
+   \   00000004   0x460C             MOV      R4,R1
+    438              mc_sint64 temp64;
+    439              temp64 = (mc_sint64) (*y_k_1) + MC_MULT_LL_LL(x_k,integ_params->KiMant, IQ15,(IQ15+integ_params->KiExp),IQ30);
+   \   00000006   0xF9B5 0x1000      LDRSH    R1,[R5, #+0]
+   \   0000000A   0x89AA             LDRH     R2,[R5, #+12]
+   \   0000000C   0x6826             LDR      R6,[R4, #+0]
+   \   0000000E   0xFB81 0x0100      SMULL    R0,R1,R1,R0
+   \   00000012   0x.... 0x....      BL       __aeabi_lasr
+   \   00000016   0x1830             ADDS     R0,R6,R0
+   \   00000018   0xEB41 0x71E6      ADC      R1,R1,R6, ASR #+31
+    440          
+    441              // Saturation
+    442              *y_k_1 = (mc_sint32)MATHCALC__SATURATE((mc_sint64)integ_params->LowerLimit, temp64, (mc_sint64)integ_params->UpperLimit);
+   \   0000001C   0x68AE             LDR      R6,[R5, #+8]
+   \   0000001E   0x686A             LDR      R2,[R5, #+4]
+   \   00000020   0x42B2             CMP      R2,R6
+   \   00000022   0xDB0C             BLT.N    ??Pi__IntegBESat_0
+   \   00000024   0xEBB1 0x7FE2      CMP      R1,R2, ASR #+31
+   \   00000028   0xDB02             BLT.N    ??Pi__IntegBESat_1
+   \   0000002A   0xDC14             BGT.N    ??Pi__IntegBESat_2
+   \   0000002C   0x4290             CMP      R0,R2
+   \   0000002E   0xD212             BCS.N    ??Pi__IntegBESat_2
+   \                     ??Pi__IntegBESat_1: (+1)
+   \   00000030   0x17F7             ASRS     R7,R6,#+31
+   \   00000032   0x428F             CMP      R7,R1
+   \   00000034   0xDB13             BLT.N    ??Pi__IntegBESat_3
+   \   00000036   0xDC13             BGT.N    ??Pi__IntegBESat_4
+   \   00000038   0x4286             CMP      R6,R0
+   \   0000003A   0xD211             BCS.N    ??Pi__IntegBESat_4
+   \   0000003C   0xE00F             B.N      ??Pi__IntegBESat_3
+   \                     ??Pi__IntegBESat_0: (+1)
+   \   0000003E   0xEBB1 0x7FE6      CMP      R1,R6, ASR #+31
+   \   00000042   0xDB02             BLT.N    ??Pi__IntegBESat_5
+   \   00000044   0xDC0C             BGT.N    ??Pi__IntegBESat_4
+   \   00000046   0x42B0             CMP      R0,R6
+   \   00000048   0xD20A             BCS.N    ??Pi__IntegBESat_4
+   \                     ??Pi__IntegBESat_5: (+1)
+   \   0000004A   0x17D3             ASRS     R3,R2,#+31
+   \   0000004C   0x428B             CMP      R3,R1
+   \   0000004E   0xDB06             BLT.N    ??Pi__IntegBESat_3
+   \   00000050   0xDC01             BGT.N    ??Pi__IntegBESat_2
+   \   00000052   0x4282             CMP      R2,R0
+   \   00000054   0xD303             BCC.N    ??Pi__IntegBESat_3
+   \                     ??Pi__IntegBESat_2: (+1)
+   \   00000056   0x4616             MOV      R6,R2
+   \   00000058   0x6026             STR      R6,[R4, #+0]
+    443          /*
+    444              if (temp64 > integ_params->UpperLimit)
+    445              {
+    446                  *y_k_1 = integ_params->UpperLimit;     //2.30
+    447              }
+    448              else if (temp64 < integ_params->LowerLimit)
+    449              {
+    450                  *y_k_1 = integ_params->LowerLimit;     //2.30
+    451              }
+    452              else
+    453              {
+    454                  *y_k_1 = (sint32)temp64;
+    455              }
+    456          */
+    457              return (MC_SCALE(*y_k_1, IQ30, IQ15));    //y_k in 17.15 notation
+   \   0000005A   0x13F0             ASRS     R0,R6,#+15
+   \   0000005C   0xBDF0             POP      {R4-R7,PC}
+   \                     ??Pi__IntegBESat_3: (+1)
+   \   0000005E   0x4606             MOV      R6,R0
+   \                     ??Pi__IntegBESat_4: (+1)
+   \   00000060   0x6026             STR      R6,[R4, #+0]
+   \   00000062   0x13F0             ASRS     R0,R6,#+15
+   \   00000064   0xBDF0             POP      {R4-R7,PC}       ;; return
+    458          }
+    459          
+    460          
+    461          //---------------------------------------------------------------------------------------------------------------------
+    462          /**
+    463           *  @brief     Integral routine: it approximates the integral of an input quantities according to Backward-Euler Method.
+    464           *  @details
+    465           *  This function approximates the integral of an input signal according to the Backward-Euler Method.
+    466           *  The output is not saturated, so overflow may occur.
+    467           *
+    468           *          Integrator in <b>continuous time domain</b>:
+    469           *          \f[ y(t) =  K_i\int_0^t \! x(t) \, \mathrm{d}t. \f]
+    470           *           where:
+    471           *           Ki : integrator gain
+    472           *
+    473           *           Integrator in <b>fractional arithmetic</b>, <b>discrete time domain</b>:
+    474           *
+    475           *           \f[ y_f(k) =  y_f(k - 1) + T_s \cdot K_{i_{f}} \cdot x_f(k) \f]
+    476           *           where:
+    477           *           Ts : sampling period
+    478           *
+    479           *  @param[in]      integ_params    = integrator parameters: integrator gain and limits
+    480           *  @param[in, out] y_k_1           = integrator output in Q2.30 notation  (input is at k-1 step, output is at k step)
+    481           *  @param[in]      x_k             = integrator input in Q17.15 notation
+    482           *  @return         integrator output in Q17.15 notation
+    483           *
+    484           */
+
+   \                                 In section .text, align 2, keep-with-next
+    485          mc_sint32 Pi__IntegBE(mc_sint32 x_k, mc_sint32* y_k_1, INTEGRATOR_PARAMS_TYPE* integ_params)
+    486          {
+    487              mc_sint32 temp;
+    488          
+    489              temp = MC_MULT_L(x_k, integ_params->KiMant,IQ15, (IQ15+integ_params->KiExp), IQ30);  //2.30 not saturated
+    490              *y_k_1 = *y_k_1 + temp;   //y_k in 2.30 notation
+   \                     Pi__IntegBE: (+1)
+   \   00000000   0xF9B2 0xC000      LDRSH    R12,[R2, #+0]
+   \   00000004   0x8992             LDRH     R2,[R2, #+12]
+   \   00000006   0x680B             LDR      R3,[R1, #+0]
+   \   00000008   0xFB00 0xF00C      MUL      R0,R0,R12
+   \   0000000C   0x4110             ASRS     R0,R0,R2
+   \   0000000E   0x18C0             ADDS     R0,R0,R3
+   \   00000010   0x6008             STR      R0,[R1, #+0]
+    491          
+    492              return (MC_SCALE(*y_k_1, IQ30, IQ15));    //y_k in 17.15 notation
+   \   00000012   0x13C0             ASRS     R0,R0,#+15
+   \   00000014   0x4770             BX       LR               ;; return
+    493          }
+    494          
+    495          
+    496          
+    497          //---------------------------------------------------------------------------------------------------------------------
+    498          /**
+    499           *  @brief      PI Regulator with back-calculation anti-windup strategy
+    500           *  @details    PI controller algorithm.
+    501           *              Definitions:
+    502           *
+    503           *              <b>e(t)</b> - input error in continuous time domain.
+    504           *
+    505           *              <b>u(t)</b> - controller output in continuous time domain.
+    506           *
+    507           *              <b>e(k)</b> - input error at step k - discrete time domain.
+    508           *
+    509           *              <b>u(k)</b> - controller output at step k - discrete time domain.
+    510           *
+    511           *              <b>e_max</b> - max range of e(k).
+    512           *
+    513           *              <b>u_max</b> - max range of u(k).
+    514           *
+    515           *            PI controller algorithm in <b>continuous time domain</b>:
+    516           *
+    517           *          \f[ u(t) = K\left(e(t) +\frac{1}{T_i}\int_0^t \! e(t) \, \mathrm{d}t. \right)\f]
+    518           *           where:
+    519           *            K :  controller gain
+    520           *
+    521           *            Ti: integral time constant
+    522           *
+    523           *           PI controller algorithm in <b>fractional arithmetic</b>:
+    524           *
+    525           *           \f[
+    526           *             \begin{aligned}
+    527           *                & u_f(k) = K_{p_{sc}} \cdot e_f(k) + u_f(k - 1) + K_{i_{sc}} \cdot e_f(k) \\
+    528           *                & e_f(k) = \frac{e(k)}{e_{max}}\\
+    529           *                & u_f(k) = \frac{u(k)}{u_{max}}\\
+    530           *                & K_{p_{sc}} =  K \frac{e(k)}{e_{max}}\\
+    531           *                & K_{i_{sc}} =  K \frac{T}{T_i}\frac{e(k)}{e_{max}}\\
+    532           *             \end{aligned}
+    533           *           \f]
+    534           *           where:
+    535           *           <b>T</b> : sampling time
+    536           *
+    537           *  The <b>anti-windup</b> technique is implemented as follows:
+    538           *  when the output saturates, the integral
+    539           *  term in the controller is recomputed so that its new value gives an
+    540           *  output at the saturation limit
+    541           *
+    542           *  @param[in]      pi_params       = PI parameters: gains and limits
+    543           *  @param[in]      err             = PI input error in Q17.15 notation
+    544           *  @param[in, out] integ_term_k_1  = PI state variable in Q2.30 notation
+    545           *  @return         PI output after saturation in Q17.15 notation
+    546           */
+
+   \                                 In section .text, align 2, keep-with-next
+    547          mc_sint32 Pi__PiRegBackCalc_FixedGains(mc_sint32 err, mc_sint32* integ_term_k_1, CONTROLLER_PI_PARAMS_FIXEDGAINS_TYPE* pi_params)
+    548          {
+   \                     Pi__PiRegBackCalc_FixedGains: (+1)
+   \   00000000   0xE92D 0x4BF0      PUSH     {R4-R9,R11,LR}
+   \   00000004   0x4696             MOV      LR,R2
+    549          
+    550              mc_sint64 prop_term;
+    551              mc_sint64 integ_term;
+    552              mc_sint64 tmp;
+    553          
+    554              // prop_term calculation in Q.39 notation
+    555              prop_term = (mc_sint64) pi_params->Kp * (mc_sint64) err;
+    556              prop_term = MC_SCALE(prop_term, IQ39, IQ30);
+   \   00000006   0x4606             MOV      R6,R0
+   \   00000008   0xEA4F 0x78E0      ASR      R8,R0,#+31
+   \   0000000C   0xF8DE 0x0000      LDR      R0,[LR, #+0]
+    557          
+    558              // prop_term Saturation
+    559              if (prop_term > (mc_sint64)pi_params->UpperLimit)
+   \   00000010   0xF8DE 0x2008      LDR      R2,[LR, #+8]
+   \   00000014   0x468B             MOV      R11,R1
+   \   00000016   0x17C1             ASRS     R1,R0,#+31
+   \   00000018   0xFBA6 0x4500      UMULL    R4,R5,R6,R0
+   \   0000001C   0xFB06 0x5501      MLA      R5,R6,R1,R5
+   \   00000020   0xFB08 0x5500      MLA      R5,R8,R0,R5
+   \   00000024   0x0A64             LSRS     R4,R4,#+9
+   \   00000026   0xEA44 0x54C5      ORR      R4,R4,R5, LSL #+23
+   \   0000002A   0x126D             ASRS     R5,R5,#+9
+   \   0000002C   0x17D3             ASRS     R3,R2,#+31
+   \   0000002E   0x42AB             CMP      R3,R5
+   \   00000030   0xDC05             BGT.N    ??Pi__PiRegBackCalc_FixedGains_0
+   \   00000032   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FixedGains_1
+   \   00000034   0x42A2             CMP      R2,R4
+   \   00000036   0xD202             BCS.N    ??Pi__PiRegBackCalc_FixedGains_0
+    560              {
+    561                  prop_term = (mc_sint64)pi_params->UpperLimit;
+   \                     ??Pi__PiRegBackCalc_FixedGains_1: (+1)
+   \   00000038   0x4614             MOV      R4,R2
+   \   0000003A   0x461D             MOV      R5,R3
+   \   0000003C   0xE009             B.N      ??Pi__PiRegBackCalc_FixedGains_2
+    562              }
+    563              else if (prop_term < (mc_sint64)pi_params->LowerLimit)
+   \                     ??Pi__PiRegBackCalc_FixedGains_0: (+1)
+   \   0000003E   0xF8DE 0x000C      LDR      R0,[LR, #+12]
+   \   00000042   0xEBB5 0x7FE0      CMP      R5,R0, ASR #+31
+   \   00000046   0xDC04             BGT.N    ??Pi__PiRegBackCalc_FixedGains_2
+   \   00000048   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FixedGains_3
+   \   0000004A   0x4284             CMP      R4,R0
+   \   0000004C   0xD201             BCS.N    ??Pi__PiRegBackCalc_FixedGains_2
+    564              {
+    565                  prop_term = (mc_sint64)pi_params->LowerLimit;
+   \                     ??Pi__PiRegBackCalc_FixedGains_3: (+1)
+   \   0000004E   0x4604             MOV      R4,R0
+   \   00000050   0x17C5             ASRS     R5,R0,#+31
+    566              }
+    567          
+    568              // integ_term calculation in Q.44 notation
+    569              integ_term = (mc_sint64) pi_params->Ki * (mc_sint64) err;
+    570              integ_term = MC_SCALE(integ_term, IQ44, IQ30);
+    571          
+    572              integ_term = integ_term + (mc_sint64)*integ_term_k_1;
+   \                     ??Pi__PiRegBackCalc_FixedGains_2: (+1)
+   \   00000052   0xF8DE 0x0004      LDR      R0,[LR, #+4]
+   \   00000056   0x17C1             ASRS     R1,R0,#+31
+   \   00000058   0xFBA6 0x7900      UMULL    R7,R9,R6,R0
+   \   0000005C   0xFB06 0x9901      MLA      R9,R6,R1,R9
+   \   00000060   0xFB08 0x9900      MLA      R9,R8,R0,R9
+   \   00000064   0x0BB8             LSRS     R0,R7,#+14
+   \   00000066   0xEA40 0x4789      ORR      R7,R0,R9, LSL #+18
+   \   0000006A   0xF8DB 0x0000      LDR      R0,[R11, #+0]
+   \   0000006E   0x17C1             ASRS     R1,R0,#+31
+   \   00000070   0x183E             ADDS     R6,R7,R0
+   \   00000072   0xEB41 0x38A9      ADC      R8,R1,R9, ASR #+14
+    573          
+    574              // output Saturation & state variable back-calculation anti-windup
+    575              tmp = prop_term + integ_term;
+   \   00000076   0x19A7             ADDS     R7,R4,R6
+   \   00000078   0xEB45 0x0908      ADC      R9,R5,R8
+    576          
+    577              if (tmp > (mc_sint64)pi_params->UpperLimit)
+   \   0000007C   0x454B             CMP      R3,R9
+   \   0000007E   0xDC0C             BGT.N    ??Pi__PiRegBackCalc_FixedGains_4
+   \   00000080   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FixedGains_5
+   \   00000082   0x42BA             CMP      R2,R7
+   \   00000084   0xD209             BCS.N    ??Pi__PiRegBackCalc_FixedGains_4
+    578              {
+    579                  tmp = (mc_sint64)pi_params->UpperLimit;
+   \                     ??Pi__PiRegBackCalc_FixedGains_5: (+1)
+   \   00000086   0x4617             MOV      R7,R2
+   \   00000088   0x4699             MOV      R9,R3
+    580                  *integ_term_k_1 = pi_params->UpperLimit - (mc_sint32)prop_term;
+   \   0000008A   0x1B16             SUBS     R6,R2,R4
+    581              }
+    582              else if (tmp < pi_params->LowerLimit)
+    583              {
+    584                  tmp = (mc_sint64)pi_params->LowerLimit;
+    585                  *integ_term_k_1 = pi_params->LowerLimit - (mc_sint32)prop_term;
+    586              }
+    587              else
+    588              {
+    589                  *integ_term_k_1 = (mc_sint64)integ_term;
+    590              }
+    591          
+    592              // output in Q17.15 notation
+    593              return ((mc_sint32)(MC_SCALE(tmp,IQ30,IQ15)));
+   \   0000008C   0x0BF9             LSRS     R1,R7,#+15
+   \   0000008E   0xF8CB 0x6000      STR      R6,[R11, #+0]
+   \   00000092   0xEA41 0x4049      ORR      R0,R1,R9, LSL #+17
+   \   00000096   0xE8BD 0x8BF0      POP      {R4-R9,R11,PC}
+   \                     ??Pi__PiRegBackCalc_FixedGains_4: (+1)
+   \   0000009A   0xF8DE 0x000C      LDR      R0,[LR, #+12]
+   \   0000009E   0xEBB9 0x7FE0      CMP      R9,R0, ASR #+31
+   \   000000A2   0xDC06             BGT.N    ??Pi__PiRegBackCalc_FixedGains_6
+   \   000000A4   0xDB01             BLT.N    ??Pi__PiRegBackCalc_FixedGains_7
+   \   000000A6   0x4287             CMP      R7,R0
+   \   000000A8   0xD203             BCS.N    ??Pi__PiRegBackCalc_FixedGains_6
+   \                     ??Pi__PiRegBackCalc_FixedGains_7: (+1)
+   \   000000AA   0x4607             MOV      R7,R0
+   \   000000AC   0xEA4F 0x79E0      ASR      R9,R0,#+31
+   \   000000B0   0x1B06             SUBS     R6,R0,R4
+   \                     ??Pi__PiRegBackCalc_FixedGains_6: (+1)
+   \   000000B2   0x0BF9             LSRS     R1,R7,#+15
+   \   000000B4   0xF8CB 0x6000      STR      R6,[R11, #+0]
+   \   000000B8   0xEA41 0x4049      ORR      R0,R1,R9, LSL #+17
+   \   000000BC   0xE8BD 0x8BF0      POP      {R4-R9,R11,PC}   ;; return
+    594          }
+    595          
+    596          
+    597          //---------------------------------------------------------------------------------------------------------------------
+    598          /**
+    599           *  @brief      Initialize pi parameters.
+    600           *
+    601           *  @param      sum, out
+    602           *  @return     none
+    603           */
+
+   \                                 In section .text, align 2, keep-with-next
+    604          void Pi__InitPiQ60( TPiParmQ60 *parmPtr )
+    605          {
+    606              parmPtr->sum = 0;
+   \                     Pi__InitPiQ60: (+1)
+   \   00000000   0x2200             MOVS     R2,#+0
+   \   00000002   0xE9C0 0x2200      STRD     R2,R2,[R0, #+0]
+    607              parmPtr->out = 0;
+   \   00000006   0x6402             STR      R2,[R0, #+64]
+    608          }
+   \   00000008   0x4770             BX       LR               ;; return
+    609          
+    610          
+    611          
+    612          
+    613          //---------------------------------------------------------------------------------------------------------------------
+    614          /**
+    615           *  @brief      Calculate pi control value, internal variable is Q60 format.
+    616           *
+    617           *  @param      Kp, Ki, outMax, outMin, inRef, inMeas
+    618           *  @return     out
+    619           */
+
+   \                                 In section .text, align 2, keep-with-next
+    620          void Pi__CalcPiQ60(TPiParmQ60 *parmPtr)
+    621          {
+   \                     Pi__CalcPiQ60: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000004   0x4605             MOV      R5,R0
+   \   00000006   0xB081             SUB      SP,SP,#+4
+    622              signed long long int tempS64;
+    623          
+    624              parmPtr->err = parmPtr->inRef - parmPtr->inMeas;
+   \   00000008   0x6BA8             LDR      R0,[R5, #+56]
+   \   0000000A   0x6BE9             LDR      R1,[R5, #+60]
+   \   0000000C   0x1A44             SUBS     R4,R0,R1
+   \   0000000E   0x62AC             STR      R4,[R5, #+40]
+    625          
+    626              tempS64 = ((signed long long int)parmPtr->Kp * (signed long long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Kp - parmPtr->Fmt.In);
+   \   00000010   0x46A0             MOV      R8,R4
+   \   00000012   0xF895 0x0044      LDRB     R0,[R5, #+68]
+   \   00000016   0xF88D 0x0000      STRB     R0,[SP, #+0]
+   \   0000001A   0xEA4F 0x79E4      ASR      R9,R4,#+31
+   \   0000001E   0x6A2A             LDR      R2,[R5, #+32]
+   \   00000020   0x17D3             ASRS     R3,R2,#+31
+   \   00000022   0xFBA8 0x0102      UMULL    R0,R1,R8,R2
+   \   00000026   0xFB08 0x1103      MLA      R1,R8,R3,R1
+   \   0000002A   0xFB09 0x1102      MLA      R1,R9,R2,R1
+   \   0000002E   0xF895 0xA048      LDRB     R10,[R5, #+72]
+   \   00000032   0xF895 0x2046      LDRB     R2,[R5, #+70]
+   \   00000036   0xF89D 0x3000      LDRB     R3,[SP, #+0]
+   \   0000003A   0xEBAA 0x0202      SUB      R2,R10,R2
+   \   0000003E   0x1AD2             SUBS     R2,R2,R3
+   \   00000040   0x.... 0x....      BL       __aeabi_llsl
+   \   00000044   0x4606             MOV      R6,R0
+    627          
+    628              if (parmPtr->err >= 0)
+   \   00000046   0xF895 0x0045      LDRB     R0,[R5, #+69]
+   \   0000004A   0x460F             MOV      R7,R1
+   \   0000004C   0xEBAA 0x0B00      SUB      R11,R10,R0
+   \   00000050   0x2C00             CMP      R4,#+0
+   \   00000052   0xD40A             BMI.N    ??Pi__CalcPiQ60_0
+    629              {
+    630                  if(tempS64 >= ((signed long long int)parmPtr->outMax << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)))
+   \   00000054   0x6B28             LDR      R0,[R5, #+48]
+   \   00000056   0x17C1             ASRS     R1,R0,#+31
+   \   00000058   0x465A             MOV      R2,R11
+   \   0000005A   0x.... 0x....      BL       __aeabi_llsl
+   \   0000005E   0x428F             CMP      R7,R1
+   \   00000060   0xDB0D             BLT.N    ??Pi__CalcPiQ60_1
+   \   00000062   0xDC0E             BGT.N    ??Pi__CalcPiQ60_2
+   \   00000064   0x4286             CMP      R6,R0
+   \   00000066   0xD20C             BCS.N    ??Pi__CalcPiQ60_2
+    631                  {
+    632                      parmPtr->prop = (signed long long int)(parmPtr->outMax) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out);
+    633                  }
+    634                  else
+    635                  {
+    636                      parmPtr->prop = tempS64;
+   \   00000068   0xE009             B.N      ??Pi__CalcPiQ60_1
+    637                  }
+    638              }
+    639              else
+    640              {
+    641                  if(tempS64 <= ((signed long long int)(parmPtr->outMin) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)) )
+   \                     ??Pi__CalcPiQ60_0: (+1)
+   \   0000006A   0x6B68             LDR      R0,[R5, #+52]
+   \   0000006C   0x17C1             ASRS     R1,R0,#+31
+   \   0000006E   0x465A             MOV      R2,R11
+   \   00000070   0x.... 0x....      BL       __aeabi_llsl
+   \   00000074   0x42B9             CMP      R1,R7
+   \   00000076   0xDB02             BLT.N    ??Pi__CalcPiQ60_1
+   \   00000078   0xDC03             BGT.N    ??Pi__CalcPiQ60_2
+   \   0000007A   0x42B0             CMP      R0,R6
+   \   0000007C   0xD201             BCS.N    ??Pi__CalcPiQ60_2
+    642                  {
+    643                      parmPtr->prop = (signed long long int)parmPtr->outMin << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out);
+    644                  }
+    645                  else
+    646                  {
+    647                      parmPtr->prop = tempS64;
+   \                     ??Pi__CalcPiQ60_1: (+1)
+   \   0000007E   0x4630             MOV      R0,R6
+   \   00000080   0x4639             MOV      R1,R7
+   \                     ??Pi__CalcPiQ60_2: (+1)
+   \   00000082   0xE9C5 0x0102      STRD     R0,R1,[R5, #+8]
+    648                  }
+    649              }
+    650          
+    651              if ( parmPtr->err >= 0)
+   \   00000086   0xE9D5 0x6702      LDRD     R6,R7,[R5, #+8]
+   \   0000008A   0x2C00             CMP      R4,#+0
+   \   0000008C   0xD40A             BMI.N    ??Pi__CalcPiQ60_3
+    652              {
+    653                  parmPtr->int_uplim = ((signed long long int)parmPtr->outMax << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)) - parmPtr->prop;
+   \   0000008E   0x6B28             LDR      R0,[R5, #+48]
+   \   00000090   0x17C1             ASRS     R1,R0,#+31
+   \   00000092   0x465A             MOV      R2,R11
+   \   00000094   0x.... 0x....      BL       __aeabi_llsl
+   \   00000098   0x1B80             SUBS     R0,R0,R6
+   \   0000009A   0x41B9             SBCS     R1,R1,R7
+    654                  parmPtr->int_lowlim = -(parmPtr->int_uplim);
+   \   0000009C   0x4242             RSBS     R2,R0,#+0
+   \   0000009E   0xEB61 0x0341      SBC      R3,R1,R1, LSL #+1
+   \   000000A2   0xE00A             B.N      ??Pi__CalcPiQ60_4
+    655              }
+    656              else
+    657              {
+    658                  parmPtr->int_lowlim = ((signed long long int)parmPtr->outMin << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)) - parmPtr->prop;
+   \                     ??Pi__CalcPiQ60_3: (+1)
+   \   000000A4   0x6B68             LDR      R0,[R5, #+52]
+   \   000000A6   0x17C1             ASRS     R1,R0,#+31
+   \   000000A8   0x465A             MOV      R2,R11
+   \   000000AA   0x.... 0x....      BL       __aeabi_llsl
+   \   000000AE   0x1B82             SUBS     R2,R0,R6
+   \   000000B0   0xEB61 0x0307      SBC      R3,R1,R7
+    659                  parmPtr->int_uplim = -(parmPtr->int_lowlim);
+   \   000000B4   0x4250             RSBS     R0,R2,#+0
+   \   000000B6   0xEB63 0x0143      SBC      R1,R3,R3, LSL #+1
+   \                     ??Pi__CalcPiQ60_4: (+1)
+   \   000000BA   0xE9C5 0x2306      STRD     R2,R3,[R5, #+24]
+   \   000000BE   0xE9C5 0x0104      STRD     R0,R1,[R5, #+16]
+    660              }
+    661          
+    662              tempS64 = (((signed long long int)parmPtr->Ki * (signed long long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Ki - parmPtr->Fmt.In)) + parmPtr->sum;
+   \   000000C2   0x6A68             LDR      R0,[R5, #+36]
+   \   000000C4   0x17C1             ASRS     R1,R0,#+31
+   \   000000C6   0xFBA8 0x2300      UMULL    R2,R3,R8,R0
+   \   000000CA   0xFB08 0x3301      MLA      R3,R8,R1,R3
+   \   000000CE   0xFB09 0x3300      MLA      R3,R9,R0,R3
+   \   000000D2   0x4610             MOV      R0,R2
+   \   000000D4   0x4619             MOV      R1,R3
+   \   000000D6   0xF895 0x2047      LDRB     R2,[R5, #+71]
+   \   000000DA   0xF89D 0x3000      LDRB     R3,[SP, #+0]
+   \   000000DE   0xEBAA 0x0202      SUB      R2,R10,R2
+   \   000000E2   0x1AD2             SUBS     R2,R2,R3
+   \   000000E4   0x.... 0x....      BL       __aeabi_llsl
+   \   000000E8   0xE9D5 0x2300      LDRD     R2,R3,[R5, #+0]
+   \   000000EC   0x1880             ADDS     R0,R0,R2
+   \   000000EE   0x4159             ADCS     R1,R1,R3
+    663          
+    664              if (tempS64 >= parmPtr->int_uplim)
+   \   000000F0   0xE9D5 0x2304      LDRD     R2,R3,[R5, #+16]
+   \   000000F4   0x4299             CMP      R1,R3
+   \   000000F6   0xDB02             BLT.N    ??Pi__CalcPiQ60_5
+   \   000000F8   0xDC08             BGT.N    ??Pi__CalcPiQ60_6
+   \   000000FA   0x4290             CMP      R0,R2
+   \   000000FC   0xD206             BCS.N    ??Pi__CalcPiQ60_6
+    665              {
+    666                  parmPtr->sum = parmPtr->int_uplim;
+    667              }
+    668              else if (tempS64 <= parmPtr->int_lowlim)
+   \                     ??Pi__CalcPiQ60_5: (+1)
+   \   000000FE   0xE9D5 0x2306      LDRD     R2,R3,[R5, #+24]
+   \   00000102   0x428B             CMP      R3,R1
+   \   00000104   0xDB04             BLT.N    ??Pi__CalcPiQ60_7
+   \   00000106   0xDC01             BGT.N    ??Pi__CalcPiQ60_6
+   \   00000108   0x4282             CMP      R2,R0
+   \   0000010A   0xD301             BCC.N    ??Pi__CalcPiQ60_7
+    669              {
+    670                  parmPtr->sum = parmPtr->int_lowlim;
+   \                     ??Pi__CalcPiQ60_6: (+1)
+   \   0000010C   0x4610             MOV      R0,R2
+   \   0000010E   0x4619             MOV      R1,R3
+    671              }
+    672              else
+    673              {
+    674                  parmPtr->sum = tempS64;
+   \                     ??Pi__CalcPiQ60_7: (+1)
+   \   00000110   0xE9C5 0x0100      STRD     R0,R1,[R5, #+0]
+    675              }
+    676              parmPtr->out = (signed long int)((parmPtr->sum + parmPtr->prop) >> (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out));
+   \   00000114   0x465A             MOV      R2,R11
+   \   00000116   0x1980             ADDS     R0,R0,R6
+   \   00000118   0x4179             ADCS     R1,R1,R7
+   \   0000011A   0x.... 0x....      BL       __aeabi_lasr
+   \   0000011E   0x6428             STR      R0,[R5, #+64]
+    677          }
+   \   00000120   0xB001             ADD      SP,SP,#+4
+   \   00000122   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    678          
+    679          
+    680          
+    681          
+    682          //---------------------------------------------------------------------------------------------------------------------
+    683          /**
+    684           *  @brief      Calculate pi control value, internal variable is Q60 format.
+    685           *
+    686           *  @param      Kp, Ki, outMax, outMin, inRef, inMeas
+    687           *  @return     out
+    688           */
+
+   \                                 In section .text, align 2, keep-with-next
+    689          void Pi__CalcPiQ30(TPiParmQ30 *parmPtr)
+    690          {
+   \                     Pi__CalcPiQ30: (+1)
+   \   00000000   0xB4F0             PUSH     {R4-R7}
+    691              signed long int tempS32;
+    692          
+    693              parmPtr->err = parmPtr->inRef - parmPtr->inMeas;
+   \   00000002   0x6A81             LDR      R1,[R0, #+40]
+   \   00000004   0x6AC2             LDR      R2,[R0, #+44]
+   \   00000006   0x1A89             SUBS     R1,R1,R2
+   \   00000008   0x6181             STR      R1,[R0, #+24]
+    694          
+    695          
+    696              tempS32 = ((signed long int)parmPtr->Kp * (signed long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Kp - parmPtr->Fmt.In);
+   \   0000000A   0xF890 0x3038      LDRB     R3,[R0, #+56]
+   \   0000000E   0xF890 0x5036      LDRB     R5,[R0, #+54]
+   \   00000012   0xF890 0x2034      LDRB     R2,[R0, #+52]
+   \   00000016   0x6904             LDR      R4,[R0, #+16]
+   \   00000018   0x1B5D             SUBS     R5,R3,R5
+   \   0000001A   0x434C             MULS     R4,R4,R1
+   \   0000001C   0x1AAD             SUBS     R5,R5,R2
+   \   0000001E   0xFA04 0xF505      LSL      R5,R4,R5
+    697              //tempS32 is in Q(FmtPropSum) format now
+    698          
+    699              if (parmPtr->err >= 0)
+   \   00000022   0xF890 0x4035      LDRB     R4,[R0, #+53]
+   \   00000026   0x1B1C             SUBS     R4,R3,R4
+   \   00000028   0x2900             CMP      R1,#+0
+   \   0000002A   0xD403             BMI.N    ??Pi__CalcPiQ30_0
+    700              {
+    701                  if(tempS32 >= ((signed long int)parmPtr->outMax << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)))
+   \   0000002C   0x6A06             LDR      R6,[R0, #+32]
+   \   0000002E   0x40A6             LSLS     R6,R6,R4
+   \   00000030   0x42B5             CMP      R5,R6
+   \   00000032   0xE002             B.N      ??Pi__CalcPiQ30_1
+    702                  {
+    703                      parmPtr->prop = (signed long int)(parmPtr->outMax) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out);
+    704                  }
+    705                  else
+    706                  {
+    707                      parmPtr->prop = tempS32;
+    708                  }
+    709              }
+    710              else
+    711              {
+    712                  if(tempS32 <= ((signed long int)(parmPtr->outMin) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)) )
+   \                     ??Pi__CalcPiQ30_0: (+1)
+   \   00000034   0x6A46             LDR      R6,[R0, #+36]
+   \   00000036   0x40A6             LSLS     R6,R6,R4
+   \   00000038   0x42AE             CMP      R6,R5
+   \                     ??Pi__CalcPiQ30_1: (+1)
+   \   0000003A   0xBFA8             IT       GE 
+    713                  {
+    714                      parmPtr->prop = (signed long int)parmPtr->outMin << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out);
+   \   0000003C   0x4635             MOVGE    R5,R6
+    715                  }
+    716                  else
+    717                  {
+    718                      parmPtr->prop = tempS32;
+   \   0000003E   0x6045             STR      R5,[R0, #+4]
+    719                  }
+    720              }
+    721          
+    722              if ( parmPtr->err >= 0)
+   \   00000040   0x2900             CMP      R1,#+0
+   \   00000042   0xD404             BMI.N    ??Pi__CalcPiQ30_2
+    723              {
+    724                  parmPtr->int_uplim = ((signed long int)parmPtr->outMax << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)) - parmPtr->prop;
+   \   00000044   0x6A06             LDR      R6,[R0, #+32]
+   \   00000046   0x40A6             LSLS     R6,R6,R4
+   \   00000048   0x1B76             SUBS     R6,R6,R5
+    725                  parmPtr->int_lowlim = -(parmPtr->int_uplim);
+   \   0000004A   0x4277             RSBS     R7,R6,#+0
+   \   0000004C   0xE003             B.N      ??Pi__CalcPiQ30_3
+    726              }
+    727              else
+    728              {
+    729                  parmPtr->int_lowlim = ((signed long int)parmPtr->outMin << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out)) - parmPtr->prop;
+   \                     ??Pi__CalcPiQ30_2: (+1)
+   \   0000004E   0x6A46             LDR      R6,[R0, #+36]
+   \   00000050   0x40A6             LSLS     R6,R6,R4
+   \   00000052   0x1B77             SUBS     R7,R6,R5
+    730                  parmPtr->int_uplim = -(parmPtr->int_lowlim);
+   \   00000054   0x427E             RSBS     R6,R7,#+0
+   \                     ??Pi__CalcPiQ30_3: (+1)
+   \   00000056   0x60C7             STR      R7,[R0, #+12]
+   \   00000058   0x6086             STR      R6,[R0, #+8]
+    731              }
+    732          
+    733              tempS32 = (((signed long int)parmPtr->Ki * (signed long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Ki - parmPtr->Fmt.In)) + parmPtr->sum;
+   \   0000005A   0x6946             LDR      R6,[R0, #+20]
+   \   0000005C   0x4371             MULS     R1,R1,R6
+   \   0000005E   0xF890 0x6037      LDRB     R6,[R0, #+55]
+   \   00000062   0x1B9B             SUBS     R3,R3,R6
+   \   00000064   0x1A9A             SUBS     R2,R3,R2
+   \   00000066   0x4091             LSLS     R1,R1,R2
+   \   00000068   0x6802             LDR      R2,[R0, #+0]
+   \   0000006A   0x1851             ADDS     R1,R2,R1
+    734          
+    735              if (tempS32 >= parmPtr->int_uplim)
+   \   0000006C   0x6882             LDR      R2,[R0, #+8]
+   \   0000006E   0x4291             CMP      R1,R2
+   \   00000070   0xBFBE             ITTT     LT 
+    736              {
+    737                  parmPtr->sum = parmPtr->int_uplim;
+    738              }
+    739              else if (tempS32 <= parmPtr->int_lowlim)
+   \   00000072   0x68C2             LDRLT    R2,[R0, #+12]
+   \   00000074   0x428A             CMPLT    R2,R1
+   \   00000076   0x460A             MOVLT    R2,R1
+    740              {
+    741                  parmPtr->sum = parmPtr->int_lowlim;
+    742              }
+    743              else
+    744              {
+    745                  parmPtr->sum = tempS32;
+    746              }
+    747              parmPtr->out = (signed long int)((parmPtr->sum + parmPtr->prop) >> (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out));
+   \   00000078   0x18A9             ADDS     R1,R5,R2
+   \   0000007A   0x6002             STR      R2,[R0, #+0]
+   \   0000007C   0x4121             ASRS     R1,R1,R4
+   \   0000007E   0x6301             STR      R1,[R0, #+48]
+    748          }
+   \   00000080   0xBCF0             POP      {R4-R7}
+   \   00000082   0x4770             BX       LR               ;; return
+    749          
+    750          
+    751          
+    752          
+
+   \                                 In section .text, align 2, keep-with-next
+    753          void Pi__InitPiQ30( TPiParmQ30 *parmPtr )
+    754          {
+    755              parmPtr->sum = 0;
+   \                     Pi__InitPiQ30: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x6001             STR      R1,[R0, #+0]
+    756              parmPtr->out = 0;
+   \   00000004   0x6301             STR      R1,[R0, #+48]
+    757          }   /* end of InitPi() */
+   \   00000006   0x4770             BX       LR               ;; return
+    758          
+    759          
+    760          
+    761          //---------------------------------------------------------------------------------------------------------------------
+    762          /**
+    763           *  @brief      Calculate pi control value, internal variable is Q30 format.
+    764           *
+    765           *  @param      Kp, Ki, outMax, outMin, inRef, inMeas
+    766           *  @return     out
+    767           */
+
+   \                                 In section .text, align 2, keep-with-next
+    768          void Pi__CalcPiQ30_new(TPiParmQ30 *parmPtr)
+    769          {
+   \                     Pi__CalcPiQ30_new: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4606             MOV      R6,R0
+    770              sint32 tempS32;
+    771          
+    772              parmPtr->err = parmPtr->inRef - parmPtr->inMeas;
+   \   00000006   0x6AB0             LDR      R0,[R6, #+40]
+   \   00000008   0x6AF1             LDR      R1,[R6, #+44]
+   \   0000000A   0x1A44             SUBS     R4,R0,R1
+   \   0000000C   0x61B4             STR      R4,[R6, #+24]
+    773          
+    774              parmPtr->prop = ((signed long long int)parmPtr->Kp * (signed long long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Kp - parmPtr->Fmt.In); // proportional term
+   \   0000000E   0xEA4F 0x78E4      ASR      R8,R4,#+31
+   \   00000012   0x6932             LDR      R2,[R6, #+16]
+   \   00000014   0x17D3             ASRS     R3,R2,#+31
+   \   00000016   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   0000001A   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   0000001E   0xFB08 0x1102      MLA      R1,R8,R2,R1
+   \   00000022   0xF896 0x5038      LDRB     R5,[R6, #+56]
+   \   00000026   0xF896 0x2036      LDRB     R2,[R6, #+54]
+   \   0000002A   0xF896 0x7034      LDRB     R7,[R6, #+52]
+   \   0000002E   0x1AAA             SUBS     R2,R5,R2
+   \   00000030   0x1BD2             SUBS     R2,R2,R7
+   \   00000032   0x.... 0x....      BL       __aeabi_llsl
+   \   00000036   0x6070             STR      R0,[R6, #+4]
+    775          
+    776              tempS32 = ((signed long long int)parmPtr->Ki * (signed long long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Ki - parmPtr->Fmt.In); // new integrated error
+   \   00000038   0x6972             LDR      R2,[R6, #+20]
+   \   0000003A   0x17D3             ASRS     R3,R2,#+31
+   \   0000003C   0xFBA4 0x0102      UMULL    R0,R1,R4,R2
+   \   00000040   0xFB04 0x1103      MLA      R1,R4,R3,R1
+   \   00000044   0xFB08 0x1102      MLA      R1,R8,R2,R1
+   \   00000048   0xF896 0x2037      LDRB     R2,[R6, #+55]
+   \   0000004C   0x1AAA             SUBS     R2,R5,R2
+   \   0000004E   0x1BD2             SUBS     R2,R2,R7
+   \   00000050   0x.... 0x....      BL       __aeabi_llsl
+    777          
+    778              parmPtr->out = (signed long int)((parmPtr->sum + tempS32 + parmPtr->prop) >> (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out));
+   \   00000054   0x6831             LDR      R1,[R6, #+0]
+   \   00000056   0x6872             LDR      R2,[R6, #+4]
+   \   00000058   0x1841             ADDS     R1,R0,R1
+   \   0000005A   0x1851             ADDS     R1,R2,R1
+   \   0000005C   0xF896 0x2035      LDRB     R2,[R6, #+53]
+   \   00000060   0x1AAA             SUBS     R2,R5,R2
+   \   00000062   0x4111             ASRS     R1,R1,R2
+    779          
+    780              if(parmPtr->out >= parmPtr->outMax)   // Saturation on the positive limit
+   \   00000064   0x6A32             LDR      R2,[R6, #+32]
+   \   00000066   0x4291             CMP      R1,R2
+   \   00000068   0xDB03             BLT.N    ??Pi__CalcPiQ30_new_0
+    781              {
+    782                  parmPtr->out = parmPtr->outMax;         // Limit the output
+   \   0000006A   0x4611             MOV      R1,R2
+    783                  tempS32 = (tempS32 > 0) ? 0 : tempS32;  // Do not allow increase of the sum (antiwindup)
+   \   0000006C   0x2801             CMP      R0,#+1
+   \   0000006E   0xDB07             BLT.N    ??Pi__CalcPiQ30_new_1
+   \   00000070   0xE005             B.N      ??Pi__CalcPiQ30_new_2
+    784              }
+    785              else if(parmPtr->out <= parmPtr->outMin)
+   \                     ??Pi__CalcPiQ30_new_0: (+1)
+   \   00000072   0x6A72             LDR      R2,[R6, #+36]
+   \   00000074   0x428A             CMP      R2,R1
+   \   00000076   0xDB03             BLT.N    ??Pi__CalcPiQ30_new_1
+    786              {
+    787                  parmPtr->out = parmPtr->outMin;              // Limit the output
+   \   00000078   0x4611             MOV      R1,R2
+    788                  tempS32 = (tempS32 < 0) ? 0 : tempS32;  // Do not allow decrease of the sum (antiwindup)
+   \   0000007A   0x2800             CMP      R0,#+0
+   \   0000007C   0xD500             BPL.N    ??Pi__CalcPiQ30_new_1
+   \                     ??Pi__CalcPiQ30_new_2: (+1)
+   \   0000007E   0x2000             MOVS     R0,#+0
+   \                     ??Pi__CalcPiQ30_new_1: (+1)
+   \   00000080   0x6331             STR      R1,[R6, #+48]
+    789              }
+    790          
+    791              parmPtr->sum += tempS32;
+   \   00000082   0x6831             LDR      R1,[R6, #+0]
+   \   00000084   0x1840             ADDS     R0,R0,R1
+   \   00000086   0x6030             STR      R0,[R6, #+0]
+    792          }
+   \   00000088   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    793          
+    794          
+    795          //---------------------------------------------------------------------------------------------------------------------
+    796          /**
+    797           *  @brief      Calculate pi control value, internal variable is Q60 format.
+    798           *
+    799           *  @param      Kp, Ki, outMax, outMin, inRef, inMeas
+    800           *  @return     out
+    801           */
+
+   \                                 In section .text, align 2, keep-with-next
+    802          void Pi__CalcPiQ60_new(TPiParmQ60 *parmPtr)
+    803          {
+   \                     Pi__CalcPiQ60_new: (+1)
+   \   00000000   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \   00000004   0x4604             MOV      R4,R0
+    804              signed long long int tempS64;
+    805          
+    806              parmPtr->err = parmPtr->inRef - parmPtr->inMeas;
+   \   00000006   0x6BA0             LDR      R0,[R4, #+56]
+   \   00000008   0x6BE1             LDR      R1,[R4, #+60]
+   \   0000000A   0x1A46             SUBS     R6,R0,R1
+   \   0000000C   0x62A6             STR      R6,[R4, #+40]
+    807          
+    808              parmPtr->prop = ((signed long long int)parmPtr->Kp * (signed long long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Kp - parmPtr->Fmt.In); // proportional term
+   \   0000000E   0x17F7             ASRS     R7,R6,#+31
+   \   00000010   0x6A22             LDR      R2,[R4, #+32]
+   \   00000012   0x17D3             ASRS     R3,R2,#+31
+   \   00000014   0xFBA6 0x0102      UMULL    R0,R1,R6,R2
+   \   00000018   0xFB06 0x1103      MLA      R1,R6,R3,R1
+   \   0000001C   0xFB07 0x1102      MLA      R1,R7,R2,R1
+   \   00000020   0xF894 0x5048      LDRB     R5,[R4, #+72]
+   \   00000024   0xF894 0x2046      LDRB     R2,[R4, #+70]
+   \   00000028   0xF894 0xA044      LDRB     R10,[R4, #+68]
+   \   0000002C   0x1AAA             SUBS     R2,R5,R2
+   \   0000002E   0xEBA2 0x020A      SUB      R2,R2,R10
+   \   00000032   0x.... 0x....      BL       __aeabi_llsl
+   \   00000036   0x4680             MOV      R8,R0
+   \   00000038   0x4689             MOV      R9,R1
+   \   0000003A   0xE9C4 0x8902      STRD     R8,R9,[R4, #+8]
+    809          
+    810              tempS64 = ((signed long long int)parmPtr->Ki * (signed long long int)parmPtr->err) << (parmPtr->Fmt.PropSum - parmPtr->Fmt.Ki - parmPtr->Fmt.In); // new integrated error
+   \   0000003E   0x6A62             LDR      R2,[R4, #+36]
+   \   00000040   0x17D3             ASRS     R3,R2,#+31
+   \   00000042   0xFBA6 0x0102      UMULL    R0,R1,R6,R2
+   \   00000046   0xFB06 0x1103      MLA      R1,R6,R3,R1
+   \   0000004A   0xFB07 0x1102      MLA      R1,R7,R2,R1
+   \   0000004E   0xF894 0x2047      LDRB     R2,[R4, #+71]
+   \   00000052   0x1AAA             SUBS     R2,R5,R2
+   \   00000054   0xEBA2 0x020A      SUB      R2,R2,R10
+   \   00000058   0x.... 0x....      BL       __aeabi_llsl
+   \   0000005C   0x4606             MOV      R6,R0
+   \   0000005E   0x460F             MOV      R7,R1
+    811          
+    812              parmPtr->out = (signed long int)((parmPtr->sum + tempS64 + parmPtr->prop) >> (parmPtr->Fmt.PropSum - parmPtr->Fmt.Out));
+   \   00000060   0xE9D4 0x0100      LDRD     R0,R1,[R4, #+0]
+   \   00000064   0x1980             ADDS     R0,R0,R6
+   \   00000066   0x4179             ADCS     R1,R1,R7
+   \   00000068   0xEB10 0x0008      ADDS     R0,R0,R8
+   \   0000006C   0xF894 0x2045      LDRB     R2,[R4, #+69]
+   \   00000070   0xEB41 0x0109      ADC      R1,R1,R9
+   \   00000074   0x1AAA             SUBS     R2,R5,R2
+   \   00000076   0x.... 0x....      BL       __aeabi_lasr
+    813          
+    814              if(parmPtr->out >= parmPtr->outMax)   // Saturation on the positive limit
+   \   0000007A   0x6B21             LDR      R1,[R4, #+48]
+   \   0000007C   0x4288             CMP      R0,R1
+   \   0000007E   0xDB06             BLT.N    ??Pi__CalcPiQ60_new_0
+    815              {
+    816                  parmPtr->out = parmPtr->outMax;         // Limit the output
+   \   00000080   0x4608             MOV      R0,R1
+    817                  tempS64 = (tempS64 > 0) ? 0 : tempS64;  // Do not allow increase of the sum (antiwindup)
+   \   00000082   0x2F00             CMP      R7,#+0
+   \   00000084   0xDB0B             BLT.N    ??Pi__CalcPiQ60_new_1
+   \   00000086   0xDC08             BGT.N    ??Pi__CalcPiQ60_new_2
+   \   00000088   0x2E01             CMP      R6,#+1
+   \   0000008A   0xD308             BCC.N    ??Pi__CalcPiQ60_new_1
+   \   0000008C   0xE005             B.N      ??Pi__CalcPiQ60_new_2
+    818              }
+    819              else if(parmPtr->out <= parmPtr->outMin)
+   \                     ??Pi__CalcPiQ60_new_0: (+1)
+   \   0000008E   0x6B61             LDR      R1,[R4, #+52]
+   \   00000090   0x4281             CMP      R1,R0
+   \   00000092   0xDB04             BLT.N    ??Pi__CalcPiQ60_new_1
+    820              {
+    821                  parmPtr->out = parmPtr->outMin;              // Limit the output
+   \   00000094   0x4608             MOV      R0,R1
+    822                  tempS64 = (tempS64 < 0) ? 0 : tempS64;  // Do not allow decrease of the sum (antiwindup)
+   \   00000096   0x2F00             CMP      R7,#+0
+   \   00000098   0xDA01             BGE.N    ??Pi__CalcPiQ60_new_1
+   \                     ??Pi__CalcPiQ60_new_2: (+1)
+   \   0000009A   0x2600             MOVS     R6,#+0
+   \   0000009C   0x2700             MOVS     R7,#+0
+   \                     ??Pi__CalcPiQ60_new_1: (+1)
+   \   0000009E   0x6420             STR      R0,[R4, #+64]
+    823              }
+    824          
+    825              parmPtr->sum += tempS64;
+   \   000000A0   0xE9D4 0x0100      LDRD     R0,R1,[R4, #+0]
+   \   000000A4   0x1980             ADDS     R0,R0,R6
+   \   000000A6   0x4179             ADCS     R1,R1,R7
+   \   000000A8   0xE9C4 0x0100      STRD     R0,R1,[R4, #+0]
+    826          }
+   \   000000AC   0xE8BD 0x87F0      POP      {R4-R10,PC}      ;; return
+    827          
+    828          
+
+   \                                 In section .text, align 4, keep-with-next
+    829          void Pi__CalcPiF(PI_CONTROLLER_F_TYPE *param)
+    830          {
+    831              float32 prop_term;
+    832              float32 integ_term;
+    833              float32 out;
+    834          
+    835              // calculate proportional term
+    836              prop_term = param->Kp * param->Err;
+    837          
+    838              // calculate integral term step k
+    839              integ_term = param->Ki * param->Err;
+   \                     Pi__CalcPiF: (+1)
+   \   00000000   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000004   0xEDD0 0x0A04      VLDR     S1,[R0, #+16]
+    840          
+    841              // prepare the output for saturation
+    842              out = prop_term + integ_term  + param->Integ_K_1;
+   \   00000008   0xED90 0x1A03      VLDR     S2,[R0, #+12]
+   \   0000000C   0xEE60 0x0A80      VMUL.F32 S1,S1,S0
+   \   00000010   0xEEF0 0x1A60      VMOV.F32 S3,S1
+   \   00000014   0xEE41 0x1A00      VMLA.F32 S3,S2,S0
+   \   00000018   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+    843          
+    844              // saturate and apply anti-windup to the state
+    845              if (out > param->Upper_Limit)
+   \   0000001C   0xED90 0x1A05      VLDR     S2,[R0, #+20]
+   \   00000020   0xEE31 0x0A80      VADD.F32 S0,S3,S0
+   \   00000024   0xEEB4 0x1A40      VCMP.F32 S2,S0
+   \   00000028   0xEEF1 0xFA10      FMSTAT   
+   \   0000002C   0xD507             BPL.N    ??Pi__CalcPiF_0
+    846              {
+    847                  param->Out = param->Upper_Limit;
+    848                  if (integ_term > 0.0f)
+   \   0000002E   0xEEF5 0x0A40      VCMP.F32 S1,#0.0
+   \   00000032   0xEEB0 0x0A41      VMOV.F32 S0,S2
+   \   00000036   0xEEF1 0xFA10      FMSTAT   
+   \   0000003A   0xDD10             BLE.N    ??Pi__CalcPiF_1
+    849                  {
+    850                      integ_term = 0.0f;
+   \   0000003C   0xE00D             B.N      ??Pi__CalcPiF_2
+    851                  }
+    852              }
+    853              else if (out < param->Lower_Limit)
+   \                     ??Pi__CalcPiF_0: (+1)
+   \   0000003E   0xED90 0x1A06      VLDR     S2,[R0, #+24]
+   \   00000042   0xEEB4 0x0A41      VCMP.F32 S0,S2
+   \   00000046   0xEEF1 0xFA10      FMSTAT   
+   \   0000004A   0xBF42             ITTT     MI 
+    854              {
+    855                  param->Out = param->Lower_Limit;
+   \   0000004C   0xEEB0 0x0A41      VMOVMI.F32 S0,S2
+    856                  if (integ_term<0.0f)
+   \   00000050   0xEEF5 0x0A40      VCMPMI.F32 S1,#0.0
+   \   00000054   0xEEF1 0xFA10      FMSTATMI 
+   \   00000058   0xD501             BPL.N    ??Pi__CalcPiF_1
+    857                  {
+    858                      integ_term = 0.0f;
+   \                     ??Pi__CalcPiF_2: (+1)
+   \   0000005A   0xEDDF 0x....      VLDR.W   S1,??DataTable2  ;; 0x0
+    859                  }
+    860              }
+    861              else
+    862              {
+    863                  param->Out = out;
+   \                     ??Pi__CalcPiF_1: (+1)
+   \   0000005E   0xED80 0x0A02      VSTR     S0,[R0, #+8]
+    864              }
+    865          
+    866              param->Integ_K_1 += integ_term;
+   \   00000062   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   00000066   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   0000006A   0xED80 0x0A01      VSTR     S0,[R0, #+4]
+    867          }
+   \   0000006E   0x4770             BX       LR               ;; return
+    868          
+    869          
+
+   \                                 In section .text, align 2, keep-with-next
+    870          void Pi__CalcPiBackCalcF(PI_CONTROLLER_F_TYPE *param)
+    871          {
+    872              float32 prop_term;
+    873              float32 integ_term;
+    874              float32 tmp;
+    875          
+    876              prop_term = param->Kp * param->Err;
+   \                     Pi__CalcPiBackCalcF: (+1)
+   \   00000000   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000004   0xEDD0 0x0A03      VLDR     S1,[R0, #+12]
+    877              // prop_term Saturation
+    878              if (prop_term > param->Upper_Limit)
+   \   00000008   0xED90 0x1A05      VLDR     S2,[R0, #+20]
+   \   0000000C   0xEE60 0x0A80      VMUL.F32 S1,S1,S0
+   \   00000010   0xEEB4 0x1A60      VCMP.F32 S2,S1
+   \   00000014   0xEEF1 0xFA10      FMSTAT   
+   \   00000018   0xBF48             IT       MI 
+    879              {
+    880                 prop_term = param->Upper_Limit;
+   \   0000001A   0xEEF0 0x0A41      VMOVMI.F32 S1,S2
+   \   0000001E   0xD408             BMI.N    ??Pi__CalcPiBackCalcF_0
+    881              }
+    882              else if (prop_term < param->Lower_Limit)
+   \   00000020   0xEDD0 0x1A06      VLDR     S3,[R0, #+24]
+   \   00000024   0xEEF4 0x0A61      VCMP.F32 S1,S3
+   \   00000028   0xEEF1 0xFA10      FMSTAT   
+   \   0000002C   0xBF48             IT       MI 
+    883              {
+    884                 prop_term = param->Lower_Limit;
+   \   0000002E   0xEEF0 0x0A61      VMOVMI.F32 S1,S3
+    885              }
+    886          
+    887              integ_term = param->Ki * param->Err;
+    888              integ_term = integ_term + param->Integ_K_1;
+   \                     ??Pi__CalcPiBackCalcF_0: (+1)
+   \   00000032   0xEDD0 0x1A04      VLDR     S3,[R0, #+16]
+   \   00000036   0xED90 0x2A01      VLDR     S4,[R0, #+4]
+   \   0000003A   0xEE01 0x2A80      VMLA.F32 S4,S3,S0
+    889              // output Saturation & state variable back-calculation anti-windup
+    890              tmp = prop_term + integ_term;
+   \   0000003E   0xEE30 0x0A82      VADD.F32 S0,S1,S4
+    891          
+    892              if (tmp > param->Upper_Limit)
+   \   00000042   0xEEB4 0x1A40      VCMP.F32 S2,S0
+   \   00000046   0xEEF1 0xFA10      FMSTAT   
+   \   0000004A   0xD508             BPL.N    ??Pi__CalcPiBackCalcF_1
+    893              {
+    894                 tmp = param->Upper_Limit;
+    895                 param->Integ_K_1 = param->Upper_Limit - prop_term;
+   \   0000004C   0xEE31 0x2A60      VSUB.F32 S4,S2,S1
+   \   00000050   0xEEB0 0x0A41      VMOV.F32 S0,S2
+    896              }
+    897              else if (tmp < param->Lower_Limit)
+    898              {
+    899                 tmp = param->Lower_Limit;
+    900                 param->Integ_K_1 = param->Lower_Limit - prop_term;
+    901              }
+    902              else
+    903              {
+    904                  param->Integ_K_1 = integ_term;
+   \   00000054   0xED80 0x2A01      VSTR     S4,[R0, #+4]
+    905              }
+    906          
+    907              param->Out = tmp;
+   \   00000058   0xED80 0x0A02      VSTR     S0,[R0, #+8]
+    908          }
+   \   0000005C   0x4770             BX       LR
+   \                     ??Pi__CalcPiBackCalcF_1: (+1)
+   \   0000005E   0xEDD0 0x1A06      VLDR     S3,[R0, #+24]
+   \   00000062   0xEEB4 0x0A61      VCMP.F32 S0,S3
+   \   00000066   0xEEF1 0xFA10      FMSTAT   
+   \   0000006A   0xBF44             ITT      MI 
+   \   0000006C   0xEEB0 0x0A61      VMOVMI.F32 S0,S3
+   \   00000070   0xEE31 0x2AE0      VSUBMI.F32 S4,S3,S1
+   \   00000074   0xED80 0x2A01      VSTR     S4,[R0, #+4]
+   \   00000078   0xED80 0x0A02      VSTR     S0,[R0, #+8]
+   \   0000007C   0x4770             BX       LR               ;; return
+    909          
+    910          
+
+   \                                 In section .text, align 2, keep-with-next
+    911          void Pi__PiRegNoAntiWindupF(PI_CONTROLLER_F_TYPE *param)
+    912          {
+    913              float32 prop_term;
+    914              float32 integ_term;
+    915              float32 out;
+    916          
+    917              // calculate proportional term
+    918              prop_term = param->Kp * param->Err;
+    919          
+    920              // calculate integral term step k
+    921              integ_term = param->Ki * param->Err + param->Integ_K_1;
+   \                     Pi__PiRegNoAntiWindupF: (+1)
+   \   00000000   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000004   0xED90 0x1A04      VLDR     S2,[R0, #+16]
+   \   00000008   0xEDD0 0x0A01      VLDR     S1,[R0, #+4]
+    922          
+    923              // prepare the output for saturation
+    924              out = prop_term + integ_term ;
+   \   0000000C   0xEDD0 0x1A03      VLDR     S3,[R0, #+12]
+   \   00000010   0xEE41 0x0A00      VMLA.F32 S1,S2,S0
+   \   00000014   0xEEB0 0x1A60      VMOV.F32 S2,S1
+   \   00000018   0xEE01 0x1A80      VMLA.F32 S2,S3,S0
+    925          
+    926              if (out > param->Upper_Limit)
+   \   0000001C   0xED90 0x0A05      VLDR     S0,[R0, #+20]
+   \   00000020   0xEEB4 0x0A41      VCMP.F32 S0,S2
+   \   00000024   0xEEF1 0xFA10      FMSTAT   
+   \   00000028   0xBF5D             ITTTE    PL 
+    927              {
+    928                  out = param->Upper_Limit;
+    929              }
+    930              else if (out < param->Lower_Limit)
+   \   0000002A   0xED90 0x0A06      VLDRPL   S0,[R0, #+24]
+   \   0000002E   0xEEB4 0x1A40      VCMPPL.F32 S2,S0
+   \   00000032   0xEEF1 0xFA10      FMSTATPL 
+    931              {
+    932                  out = param->Lower_Limit;
+   \   00000036   0xEEB0 0x1A40      VMOVMI.F32 S2,S0
+    933              }
+    934          
+    935              param->Integ_K_1 = integ_term;
+   \   0000003A   0xEDC0 0x0A01      VSTR     S1,[R0, #+4]
+    936              param->Out = out;
+   \   0000003E   0xED80 0x1A02      VSTR     S2,[R0, #+8]
+    937          }
+   \   00000042   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x00000000         DC32     0x0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0xC0000001         DC32     0xc0000001
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   Pi__CalcPiBackCalcF
+       0   Pi__CalcPiF
+      16   Pi__CalcPiQ30
+      24   Pi__CalcPiQ30_new
+        24 __aeabi_llsl
+      40   Pi__CalcPiQ60
+        40 __aeabi_lasr
+        40 __aeabi_llsl
+      32   Pi__CalcPiQ60_new
+        32 __aeabi_lasr
+        32 __aeabi_llsl
+       0   Pi__InitPiQ30
+       0   Pi__InitPiQ60
+       0   Pi__IntegBE
+      20   Pi__IntegBESat
+        20 __aeabi_lasr
+      36   Pi__PiRegBackCalc
+        36 __aeabi_lasr
+      32   Pi__PiRegBackCalc_FixedGains
+      48   Pi__PiRegBackCalc_FloatGains
+        48   -> __aeabi_f2lz
+      28   Pi__PiRegClamp
+        28 __aeabi_lasr
+      28   Pi__PiRegNoAntiWindup
+        28 __aeabi_lasr
+       0   Pi__PiRegNoAntiWindupF
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+     126  Pi__CalcPiBackCalcF
+     112  Pi__CalcPiF
+     132  Pi__CalcPiQ30
+     140  Pi__CalcPiQ30_new
+     294  Pi__CalcPiQ60
+     176  Pi__CalcPiQ60_new
+       8  Pi__InitPiQ30
+      10  Pi__InitPiQ60
+      22  Pi__IntegBE
+     102  Pi__IntegBESat
+     176  Pi__PiRegBackCalc
+     192  Pi__PiRegBackCalc_FixedGains
+     174  Pi__PiRegBackCalc_FloatGains
+     228  Pi__PiRegClamp
+     198  Pi__PiRegNoAntiWindup
+      68  Pi__PiRegNoAntiWindupF
+
+ 
+ 2 166 bytes in section .text
+ 
+ 2 166 bytes of CODE memory
+
+Errors: none
+Warnings: none

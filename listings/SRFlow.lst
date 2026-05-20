@@ -1,0 +1,833 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:58
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRFlow\SRFlow.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o SRFlow.obj -l
+#        ..\listings\SRFlow.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRFlow\SRFlow.c
+#    List file    =  ..\listings\SRFlow.lst
+#    Object file  =  SRFlow.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SRFlow\SRFlow.c
+      1          /**
+      2           *  @defgroup   CLASS_B
+      3           *  @file
+      4           *
+      5           *  @brief      This module intends to check the execution flow of the main processes in the system.
+      6           *
+      7           *  @details    Basically this module accepts log of events from other modules and in the appropriated time check the
+      8           *              logged events against a predefined events list.
+      9           *              <pre>
+     10           *              This module basically checks the execution log of:
+     11           *                      Initialization
+     12           *                      Main slots 25ms and every slot
+     13           *                      Interrupt Slots and every timer interruption
+     14           *
+     15          
+     16           *
+     17           *              The variables used in the module are not handled as SR Variables because of the way the variables works
+     18           *              itself ensures the integrity.
+     19           *
+     20           *              The system basically have a array where the events are logger and a pointer which works as a index to the list.
+     21           *              If a event is logged and other process interfere or the memory position is damaged in the array the
+     22           *              system will point a exception because the events wont match the expected values.
+     23           *              If the pointer is affected by other process it will interfere in the sequence of the logged events as well
+     24           *              as by the time the system will check the logged events it could be shorter or longer than the expected
+     25           *              list of events.
+     26           *              So basically the pointer and the array work together and is a single bit failure happen the system will
+     27           *              generate a exception about that.
+     28           *
+     29           *              <pre>
+     30           *
+     31           *  
+     32           *
+     33           *  @copyright  Copyright 2011-. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     34           */
+     35          //---------------------------------------------------------------------------------------------------------------------
+     36          //---------------------------------------------------------------------------------------------------------------------
+     37          
+     38          //-------------------------------------- Include Files ----------------------------------------------------------------
+     39          #include "C_Extensions.h"
+     40          #include "SRFlow.h"
+     41          #include "SRFlow_prv.h"
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \   __absolute enum <unnamed> const SRFLOW_EVENT_INIT_LIST[8]
+   \                     SRFLOW_EVENT_INIT_LIST:
+   \   00000000   0x00 0x01          DC8 0, 1, 2, 3, 4, 5, 6, 7
+   \              0x02 0x03    
+   \              0x04 0x05    
+   \              0x06 0x07    
+
+   \                                 In section .text, align 4, keep-with-next
+   \   __absolute enum <unnamed> const SRFLOW_EVENT_MAIN_LIST[18]
+   \                     SRFLOW_EVENT_MAIN_LIST:
+   \   00000000   0x00 0x01          DC8 0, 1, 2, 3, 0, 1, 4, 5, 0, 1, 6, 7, 0, 1, 8, 9, 0, 1, 0, 0
+   \              0x02 0x03    
+   \              0x00 0x01    
+   \              0x04 0x05    
+   \              0x00 0x01    
+   \              0x06 0x07    
+   \              0x00 0x01    
+   \              0x08 0x09    
+   \              0x00 0x01    
+   \              0x00 0x00    
+
+   \                                 In section .text, align 4, keep-with-next
+   \   __absolute enum <unnamed> const SRFLOW_EVENT_ISR_LIST[11]
+   \                     SRFLOW_EVENT_ISR_LIST:
+   \   00000000   0x00 0x01          DC8 0, 1, 2, 0, 1, 0, 1, 3, 4, 0, 1, 0
+   \              0x02 0x00    
+   \              0x01 0x00    
+   \              0x01 0x03    
+   \              0x04 0x00    
+   \              0x01 0x00    
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \   __absolute enum <unnamed> const SRFLOW_EVENT_LOWPOWER_LIST[4]
+   \                     SRFLOW_EVENT_LOWPOWER_LIST:
+   \   00000000   0x00 0x01          DC8 0, 1, 2, 0
+   \              0x02 0x00    
+     42          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     43          #if (SRFLOW_NUM_INIT_EVENTS > 0)
+
+   \                                 In section .bss, align 4
+     44              static SRFLOW_INIT_EVENT_TYPE SRFlow_Init_Events[SRFLOW_NUM_INIT_EVENTS];
+   \                     SRFlow_Init_Events:
+   \   00000000                      DS8 8
+   \   00000008                      DS8 1
+   \   00000009                      DS8 1
+   \   0000000A                      DS8 1
+   \   0000000B                      DS8 1
+   \   0000000C                      DS8 20
+   \   00000020                      DS8 12
+   \   0000002C                      DS8 4
+     45              static unsigned char SRFlow_Init_Pointer;
+     46          #endif
+     47          
+     48          #if (SRFLOW_NUM_MAIN_EVENTS > 0)
+     49              static SRFLOW_MAIN_EVENT_TYPE SRFlow_Main_Events[SRFLOW_NUM_MAIN_EVENTS];
+     50              static unsigned char SRFlow_Main_Pointer;
+     51          #endif
+     52          
+     53          #if (SRFLOW_NUM_ISR_EVENTS > 0)
+     54              static SRFLOW_ISR_EVENT_TYPE SRFlow_ISR_Events[SRFLOW_NUM_ISR_EVENTS];
+     55              static unsigned char SRFlow_ISR_Pointer;
+     56          #endif
+     57          
+     58          #if (SRFLOW_NUM_LOWPOWER_EVENTS > 0)
+     59              static SRFLOW_LOWPOWER_EVENT_TYPE SRFlow_LowPower_Events[SRFLOW_NUM_LOWPOWER_EVENTS];
+     60              static unsigned char SRFlow_LowPower_Pointer;
+     61          #endif
+     62          
+     63          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     64          
+     65          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     66          static void SRFlowClearInit(void);
+     67          static void SRFlowClearMain(void);
+     68          static void SRFlowClearISR(void);
+     69          static void SRFlowClearISR(void);
+     70          static void SRFlowClearLowPower(void);
+     71          
+     72          //=====================================================================================================================
+     73          //-------------------------------------- Public Functions -------------------------------------------------------------
+     74          //=====================================================================================================================
+     75          
+     76          //---------------------------------------------------------------------------------------------------------------------
+     77          /**
+     78           *  @brief      It Initializes the module SRFlow and its variables
+     79           */
+
+   \                                 In section .text, align 2, keep-with-next
+     80          void SRFlow__Initialize(void)
+     81          {
+   \                     SRFlow__Initialize: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+     82              SRFlowClearInit();
+   \   00000002   0x....             LDR.N    R4,??DataTable12
+   \   00000004   0xB081             SUB      SP,SP,#+4
+   \   00000006   0x25FF             MOVS     R5,#+255
+   \   00000008   0x22FF             MOVS     R2,#+255
+   \   0000000A   0x2108             MOVS     R1,#+8
+   \   0000000C   0x4620             MOV      R0,R4
+   \   0000000E   0x.... 0x....      BL       __aeabi_memset4
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x7220             STRB     R0,[R4, #+8]
+     83              SRFlowClearMain();
+   \   00000016   0x462A             MOV      R2,R5
+   \   00000018   0x2112             MOVS     R1,#+18
+   \   0000001A   0xF104 0x000C      ADD      R0,R4,#+12
+   \   0000001E   0x.... 0x....      BL       __aeabi_memset4
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x7260             STRB     R0,[R4, #+9]
+     84              SRFlowClearISR();
+   \   00000026   0x462A             MOV      R2,R5
+   \   00000028   0x210B             MOVS     R1,#+11
+   \   0000002A   0xF104 0x0020      ADD      R0,R4,#+32
+   \   0000002E   0x.... 0x....      BL       __aeabi_memset4
+   \   00000032   0x2000             MOVS     R0,#+0
+   \   00000034   0x72A0             STRB     R0,[R4, #+10]
+     85              SRFlowClearLowPower();
+   \   00000036   0x462A             MOV      R2,R5
+   \   00000038   0x2104             MOVS     R1,#+4
+   \   0000003A   0xF104 0x002C      ADD      R0,R4,#+44
+   \   0000003E   0x.... 0x....      BL       __aeabi_memset4
+   \   00000042   0x2000             MOVS     R0,#+0
+   \   00000044   0x72E0             STRB     R0,[R4, #+11]
+     86          }
+   \   00000046   0xB001             ADD      SP,SP,#+4
+   \   00000048   0xBD30             POP      {R4,R5,PC}       ;; return
+     87          
+     88          //---------------------------------------------------------------------------------------------------------------------
+     89          /**
+     90           *  @brief      This method logs a Initialization event
+     91           *  @param      event
+     92           */
+
+   \                                 In section .text, align 2, keep-with-next
+     93          void SRFlow__InitLogEvent(SRFLOW_INIT_EVENT_TYPE event)
+     94          {
+     95          	#if (SRFLOW_NUM_INIT_EVENTS > 0)
+     96          	    if (SRFlow_Init_Pointer < SRFLOW_NUM_INIT_EVENTS)
+   \                     SRFlow__InitLogEvent: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable12
+   \   00000002   0x7A0A             LDRB     R2,[R1, #+8]
+   \   00000004   0x2A08             CMP      R2,#+8
+   \   00000006   0xDA03             BGE.N    ??SRFlow__InitLogEvent_0
+     97          	    {
+     98          	        SRFlow_Init_Events[SRFlow_Init_Pointer] = event;
+   \   00000008   0x5450             STRB     R0,[R2, R1]
+     99          	        SRFlow_Init_Pointer++;
+   \   0000000A   0x1C50             ADDS     R0,R2,#+1
+   \   0000000C   0x7208             STRB     R0,[R1, #+8]
+   \   0000000E   0x4770             BX       LR
+    100          	    }
+    101          	    else
+    102          	    {
+    103          	        // Exception: More events than expected
+    104          
+    105          	        SRFLOW_INIT_OVERFILLED_EXCEPTION();
+   \                     ??SRFlow__InitLogEvent_0: (+1)
+   \   00000010   0x2200             MOVS     R2,#+0
+   \   00000012   0x2103             MOVS     R1,#+3
+   \   00000014   0x2012             MOVS     R0,#+18
+   \   00000016   0x.... 0x....      B.W      SRException__Queue
+    106          	    }
+    107          	#endif
+    108          }
+    109          
+    110          //---------------------------------------------------------------------------------------------------------------------
+    111          /**
+    112           *  @brief      This method verifies the sequence of the Initialization Execution.
+    113           */
+
+   \                                 In section .text, align 2, keep-with-next
+    114          void SRFlow__InitCheck(void)
+    115          {
+   \                     SRFlow__InitCheck: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    116          #if (SRFLOW_NUM_INIT_EVENTS > 0)
+    117              unsigned char count;
+    118          
+    119              if (SRFlow_Init_Pointer != SRFLOW_NUM_INIT_EVENTS)
+   \   00000002   0x....             LDR.N    R4,??DataTable12
+   \   00000004   0x7A20             LDRB     R0,[R4, #+8]
+   \   00000006   0x2808             CMP      R0,#+8
+   \   00000008   0xD002             BEQ.N    ??SRFlow__InitCheck_0
+    120              {
+    121                  // Exception: fewer events than expected
+    122                  SRFLOW_INIT_INCOMPLETE_EXCEPTION();
+   \   0000000A   0x2200             MOVS     R2,#+0
+   \   0000000C   0x2102             MOVS     R1,#+2
+   \   0000000E   0xE003             B.N      ??SRFlow__InitCheck_1
+    123              }
+    124              else
+    125              {
+    126                  for (count=0;count<SRFLOW_NUM_INIT_EVENTS;count++)
+    127                  {
+    128                      if (SRFlow_Init_Events[count] != SRFLOW_EVENT_INIT_LIST[count])
+   \                     ??SRFlow__InitCheck_0: (+1)
+   \   00000010   0x7820             LDRB     R0,[R4, #+0]
+   \   00000012   0xB128             CBZ.N    R0,??SRFlow__InitCheck_2
+    129                      {
+    130                          // Exception : wrong sequence executed
+    131                          SRFLOW_INIT_SEQUENCE_EXCEPTION();
+   \                     ??SRFlow__InitCheck_3: (+1)
+   \   00000014   0x2200             MOVS     R2,#+0
+   \   00000016   0x2101             MOVS     R1,#+1
+   \                     ??SRFlow__InitCheck_1: (+1)
+   \   00000018   0x2012             MOVS     R0,#+18
+   \   0000001A   0x.... 0x....      BL       SRException__Queue
+    132                          break;
+   \   0000001E   0xE013             B.N      ??SRFlow__InitCheck_4
+    133                      }
+   \                     ??SRFlow__InitCheck_2: (+1)
+   \   00000020   0x7860             LDRB     R0,[R4, #+1]
+   \   00000022   0x2801             CMP      R0,#+1
+   \   00000024   0xBF04             ITT      EQ 
+   \   00000026   0x78A0             LDRBEQ   R0,[R4, #+2]
+   \   00000028   0x2802             CMPEQ    R0,#+2
+   \   0000002A   0xD1F3             BNE.N    ??SRFlow__InitCheck_3
+   \   0000002C   0x78E0             LDRB     R0,[R4, #+3]
+   \   0000002E   0x2803             CMP      R0,#+3
+   \   00000030   0xBF04             ITT      EQ 
+   \   00000032   0x7920             LDRBEQ   R0,[R4, #+4]
+   \   00000034   0x2804             CMPEQ    R0,#+4
+   \   00000036   0xD1ED             BNE.N    ??SRFlow__InitCheck_3
+   \   00000038   0x7960             LDRB     R0,[R4, #+5]
+   \   0000003A   0x2805             CMP      R0,#+5
+   \   0000003C   0xBF01             ITTTT    EQ 
+   \   0000003E   0x79A0             LDRBEQ   R0,[R4, #+6]
+   \   00000040   0x2806             CMPEQ    R0,#+6
+   \   00000042   0x79E0             LDRBEQ   R0,[R4, #+7]
+   \   00000044   0x2807             CMPEQ    R0,#+7
+   \   00000046   0xD1E5             BNE.N    ??SRFlow__InitCheck_3
+    134                  }
+    135              }
+    136              SRFlowClearInit();
+   \                     ??SRFlow__InitCheck_4: (+1)
+   \   00000048   0x22FF             MOVS     R2,#+255
+   \   0000004A   0x2108             MOVS     R1,#+8
+   \   0000004C   0x4620             MOV      R0,R4
+   \   0000004E   0x.... 0x....      BL       __aeabi_memset4
+   \   00000052   0x2000             MOVS     R0,#+0
+   \   00000054   0x7220             STRB     R0,[R4, #+8]
+    137          #endif
+    138          }
+   \   00000056   0xBD10             POP      {R4,PC}          ;; return
+    139          
+    140          //---------------------------------------------------------------------------------------------------------------------
+    141          /**
+    142           *  @brief      This method logs a Main Flow Event
+    143           *  @param      event
+    144           */
+
+   \                                 In section .text, align 2, keep-with-next
+    145          void SRFlow__MainLogEvent(SRFLOW_MAIN_EVENT_TYPE event)
+    146          {
+    147          #if (SRFLOW_NUM_MAIN_EVENTS > 0)
+    148              if (SRFlow_Main_Pointer < SRFLOW_NUM_MAIN_EVENTS)
+   \                     SRFlow__MainLogEvent: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable12
+   \   00000002   0x7A4A             LDRB     R2,[R1, #+9]
+   \   00000004   0x2A12             CMP      R2,#+18
+   \   00000006   0xDA04             BGE.N    ??SRFlow__MainLogEvent_0
+    149              {
+    150                  SRFlow_Main_Events[SRFlow_Main_Pointer] = event;
+   \   00000008   0x1853             ADDS     R3,R2,R1
+   \   0000000A   0x7318             STRB     R0,[R3, #+12]
+    151                  SRFlow_Main_Pointer++;
+   \   0000000C   0x1C50             ADDS     R0,R2,#+1
+   \   0000000E   0x7248             STRB     R0,[R1, #+9]
+   \   00000010   0x4770             BX       LR
+    152              }
+    153              else
+    154              {
+    155                  // Exception: More events than expected
+    156                  SRFLOW_MAIN_OVERFILLED_EXCEPTION();
+   \                     ??SRFlow__MainLogEvent_0: (+1)
+   \   00000012   0x2200             MOVS     R2,#+0
+   \   00000014   0x2103             MOVS     R1,#+3
+   \   00000016   0x2010             MOVS     R0,#+16
+   \   00000018   0x.... 0x....      B.W      SRException__Queue
+    157          
+    158              }
+    159          #endif
+    160          }
+    161          
+    162          //---------------------------------------------------------------------------------------------------------------------
+    163          /**
+    164           *  @brief      This method verifies the sequence of the Main Flow Execution.
+    165           */
+
+   \                                 In section .text, align 4, keep-with-next
+    166          void SRFlow__MainCheck(void)
+    167          {
+   \                     SRFlow__MainCheck: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    168          #if (SRFLOW_NUM_MAIN_EVENTS > 0)
+    169              unsigned char count;
+    170          
+    171              if (SRFlow_Main_Pointer != SRFLOW_NUM_MAIN_EVENTS)
+   \   00000002   0x....             LDR.N    R4,??DataTable12
+   \   00000004   0x7A60             LDRB     R0,[R4, #+9]
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x2812             CMP      R0,#+18
+   \   0000000A   0xD002             BEQ.N    ??SRFlow__MainCheck_0
+    172              {
+    173                  // Exception: fewer events than expected
+    174                  SRFLOW_MAIN_INCOMPLETE_EXCEPTION();
+   \   0000000C   0x2200             MOVS     R2,#+0
+   \   0000000E   0x2102             MOVS     R1,#+2
+   \   00000010   0xE00C             B.N      ??SRFlow__MainCheck_1
+    175              }
+    176              else
+    177              {
+    178                  for (count=0;count<SRFLOW_NUM_MAIN_EVENTS;count++)
+   \                     ??SRFlow__MainCheck_0: (+1)
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0xF104 0x010C      ADD      R1,R4,#+12
+   \   00000018   0x.... 0x....      ADR.W    R2,SRFLOW_EVENT_MAIN_LIST
+    179                  {
+    180                      if (SRFlow_Main_Events[count] != SRFLOW_EVENT_MAIN_LIST[count])
+   \                     ??SRFlow__MainCheck_2: (+1)
+   \   0000001C   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000020   0xF812 0x5B01      LDRB     R5,[R2], #+1
+   \   00000024   0x42AB             CMP      R3,R5
+   \   00000026   0xD005             BEQ.N    ??SRFlow__MainCheck_3
+    181                      {
+    182                          SRFLOW_MAIN_SEQUENCE_EXCEPTION();
+   \                     ??SRFlow__MainCheck_4: (+1)
+   \   00000028   0x2200             MOVS     R2,#+0
+   \   0000002A   0x2101             MOVS     R1,#+1
+   \                     ??SRFlow__MainCheck_1: (+1)
+   \   0000002C   0x2010             MOVS     R0,#+16
+   \   0000002E   0x.... 0x....      BL       SRException__Queue
+    183                          break;  // break the for loop
+   \   00000032   0xE00F             B.N      ??SRFlow__MainCheck_5
+    184                      }
+   \                     ??SRFlow__MainCheck_3: (+1)
+   \   00000034   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000038   0xF812 0x5B01      LDRB     R5,[R2], #+1
+   \   0000003C   0x42AB             CMP      R3,R5
+   \   0000003E   0xBF02             ITTT     EQ 
+   \   00000040   0xF811 0x3B01      LDRBEQ   R3,[R1], #+1
+   \   00000044   0xF812 0x5B01      LDRBEQ   R5,[R2], #+1
+   \   00000048   0x42AB             CMPEQ    R3,R5
+   \   0000004A   0xD1ED             BNE.N    ??SRFlow__MainCheck_4
+    185                  }
+   \   0000004C   0x1CC0             ADDS     R0,R0,#+3
+   \   0000004E   0xB2C0             UXTB     R0,R0
+   \   00000050   0x2812             CMP      R0,#+18
+   \   00000052   0xDBE3             BLT.N    ??SRFlow__MainCheck_2
+    186              }
+    187              SRFlowClearMain();
+   \                     ??SRFlow__MainCheck_5: (+1)
+   \   00000054   0x22FF             MOVS     R2,#+255
+   \   00000056   0x2112             MOVS     R1,#+18
+   \   00000058   0xF104 0x000C      ADD      R0,R4,#+12
+   \   0000005C   0x.... 0x....      BL       __aeabi_memset4
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0x7260             STRB     R0,[R4, #+9]
+    188          #endif
+    189          }
+   \   00000064   0xB001             ADD      SP,SP,#+4
+   \   00000066   0xBD30             POP      {R4,R5,PC}       ;; return
+    190          
+    191          //---------------------------------------------------------------------------------------------------------------------
+    192          /**
+    193           *  @brief      This method logs a ISR Flow Event.
+    194           *  @param      event
+    195           */
+
+   \                                 In section .text, align 2, keep-with-next
+    196          void SRFlow__ISRLogEvent(SRFLOW_ISR_EVENT_TYPE event)
+    197          {
+    198          #if (SRFLOW_NUM_ISR_EVENTS > 0)
+    199              if (SRFlow_ISR_Pointer < SRFLOW_NUM_ISR_EVENTS)
+   \                     SRFlow__ISRLogEvent: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable12
+   \   00000002   0x7A8A             LDRB     R2,[R1, #+10]
+   \   00000004   0x2A0B             CMP      R2,#+11
+   \   00000006   0xDA05             BGE.N    ??SRFlow__ISRLogEvent_0
+    200              {
+    201                  SRFlow_ISR_Events[SRFlow_ISR_Pointer] = event;
+   \   00000008   0x1853             ADDS     R3,R2,R1
+   \   0000000A   0xF883 0x0020      STRB     R0,[R3, #+32]
+    202                  SRFlow_ISR_Pointer++;
+   \   0000000E   0x1C50             ADDS     R0,R2,#+1
+   \   00000010   0x7288             STRB     R0,[R1, #+10]
+   \   00000012   0x4770             BX       LR
+    203              }
+    204              else
+    205              {
+    206                  // Exception: More events than expected
+    207                  SRFLOW_ISR_OVERFILLED_EXCEPTION();
+   \                     ??SRFlow__ISRLogEvent_0: (+1)
+   \   00000014   0x2200             MOVS     R2,#+0
+   \   00000016   0x2103             MOVS     R1,#+3
+   \   00000018   0x2011             MOVS     R0,#+17
+   \   0000001A   0x.... 0x....      B.W      SRException__Queue
+    208              }
+    209          #endif
+    210          }
+    211          
+    212          //---------------------------------------------------------------------------------------------------------------------
+    213          /**
+    214           *  @brief      This method verifies the sequence of the Timer ISR Flow Execution.
+    215           */
+
+   \                                 In section .text, align 4, keep-with-next
+    216          void SRFlow__ISRCheck(void)
+    217          {
+   \                     SRFlow__ISRCheck: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    218          #if (SRFLOW_NUM_ISR_EVENTS > 0)
+    219             unsigned char count;
+    220          
+    221             if (SRFlow_ISR_Pointer != SRFLOW_NUM_ISR_EVENTS)
+   \   00000002   0x....             LDR.N    R4,??DataTable12
+   \   00000004   0x7AA0             LDRB     R0,[R4, #+10]
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x280B             CMP      R0,#+11
+   \   0000000A   0xD002             BEQ.N    ??SRFlow__ISRCheck_0
+    222             {
+    223                 // Exception: fewer events than expected
+    224                 SRFLOW_ISR_INCOMPLETE_EXCEPTION();
+   \   0000000C   0x2200             MOVS     R2,#+0
+   \   0000000E   0x2102             MOVS     R1,#+2
+   \   00000010   0xE010             B.N      ??SRFlow__ISRCheck_1
+    225             }
+    226             else
+    227             {
+    228                 for (count=0;count<SRFLOW_NUM_ISR_EVENTS;count++)
+    229                 {
+    230                     if (SRFlow_ISR_Events[count] != SRFLOW_EVENT_ISR_LIST[count])
+   \                     ??SRFlow__ISRCheck_0: (+1)
+   \   00000012   0xF894 0x0020      LDRB     R0,[R4, #+32]
+   \   00000016   0xB958             CBNZ.N   R0,??SRFlow__ISRCheck_2
+   \   00000018   0xF05F 0x0001      MOVS.W   R0,#+1
+   \   0000001C   0xF104 0x0121      ADD      R1,R4,#+33
+   \   00000020   0x.... 0x....      ADR.W    R2,SRFLOW_EVENT_ISR_LIST+0x1
+   \                     ??SRFlow__ISRCheck_3: (+1)
+   \   00000024   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000028   0xF812 0x5B01      LDRB     R5,[R2], #+1
+   \   0000002C   0x42AB             CMP      R3,R5
+   \   0000002E   0xD005             BEQ.N    ??SRFlow__ISRCheck_4
+    231                     {
+    232                         // Exception : wrong sequence executed
+    233                         SRFLOW_ISR_SEQUENCE_EXCEPTION();
+   \                     ??SRFlow__ISRCheck_2: (+1)
+   \   00000030   0x2200             MOVS     R2,#+0
+   \   00000032   0x2101             MOVS     R1,#+1
+   \                     ??SRFlow__ISRCheck_1: (+1)
+   \   00000034   0x2011             MOVS     R0,#+17
+   \   00000036   0x.... 0x....      BL       SRException__Queue
+    234                         break;
+   \   0000003A   0xE009             B.N      ??SRFlow__ISRCheck_5
+    235                     }
+   \                     ??SRFlow__ISRCheck_4: (+1)
+   \   0000003C   0xF811 0x3B01      LDRB     R3,[R1], #+1
+   \   00000040   0xF812 0x5B01      LDRB     R5,[R2], #+1
+   \   00000044   0x42AB             CMP      R3,R5
+   \   00000046   0xD1F3             BNE.N    ??SRFlow__ISRCheck_2
+    236                 }
+   \   00000048   0x1C80             ADDS     R0,R0,#+2
+   \   0000004A   0xB2C0             UXTB     R0,R0
+   \   0000004C   0x280B             CMP      R0,#+11
+   \   0000004E   0xDBE9             BLT.N    ??SRFlow__ISRCheck_3
+    237             }
+    238             SRFlowClearISR();
+   \                     ??SRFlow__ISRCheck_5: (+1)
+   \   00000050   0x22FF             MOVS     R2,#+255
+   \   00000052   0x210B             MOVS     R1,#+11
+   \   00000054   0xF104 0x0020      ADD      R0,R4,#+32
+   \   00000058   0x.... 0x....      BL       __aeabi_memset4
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0x72A0             STRB     R0,[R4, #+10]
+    239          #endif
+    240          }
+   \   00000060   0xB001             ADD      SP,SP,#+4
+   \   00000062   0xBD30             POP      {R4,R5,PC}       ;; return
+    241          
+    242          //---------------------------------------------------------------------------------------------------------------------
+    243          /**
+    244           *  @brief      This method logs a LowPowe Flow Event.
+    245           *  @param      event
+    246           */
+
+   \                                 In section .text, align 2, keep-with-next
+    247          void SRFlow__LowPowerLogEvent(SRFLOW_LOWPOWER_EVENT_TYPE event)
+    248          {
+    249          #if (SRFLOW_NUM_LOWPOWER_EVENTS > 0)
+    250              if (SRFlow_LowPower_Pointer < SRFLOW_NUM_LOWPOWER_EVENTS)
+   \                     SRFlow__LowPowerLogEvent: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable12
+   \   00000002   0x7ACA             LDRB     R2,[R1, #+11]
+   \   00000004   0x2A04             CMP      R2,#+4
+   \   00000006   0xDA04             BGE.N    ??SRFlow__LowPowerLogEvent_0
+    251              {
+    252                  SRFlow_LowPower_Events[SRFlow_LowPower_Pointer] = event;
+   \   00000008   0x1853             ADDS     R3,R2,R1
+   \   0000000A   0xF883 0x002C      STRB     R0,[R3, #+44]
+    253                  SRFlow_LowPower_Pointer++;
+   \   0000000E   0x1C50             ADDS     R0,R2,#+1
+   \   00000010   0x72C8             STRB     R0,[R1, #+11]
+    254              }
+    255              else
+    256              {
+    257                  // Exception: More events than expected
+    258                  SRFLOW_LOWPOWER_OVERFILLED_EXCEPTION();
+    259              }
+    260          #endif
+    261          }
+   \                     ??SRFlow__LowPowerLogEvent_0: (+1)
+   \   00000012   0x4770             BX       LR               ;; return
+    262          //---------------------------------------------------------------------------------------------------------------------
+    263          /**
+    264           *  @brief      This method verifies the sequence of the Timer ISR Flow Execution.
+    265           */
+
+   \                                 In section .text, align 2, keep-with-next
+    266          void SRFlow__LowPowerCheck(void)
+    267          {
+   \                     SRFlow__LowPowerCheck: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    268          #if (SRFLOW_NUM_LOWPOWER_EVENTS > 0)
+    269             unsigned char count;
+    270          
+    271             if (SRFlow_LowPower_Pointer != SRFLOW_NUM_LOWPOWER_EVENTS)
+   \   00000002   0x....             LDR.N    R4,??DataTable12
+    272             {
+    273                 // Exception: fewer events than expected
+    274                 SRFLOW_LOWPOWER_INCOMPLETE_EXCEPTION();
+    275             }
+    276             else
+    277             {
+    278                 for (count=0;count<SRFLOW_NUM_LOWPOWER_EVENTS;count++)
+    279                 {
+    280                     if (SRFlow_LowPower_Events[count] != SRFLOW_EVENT_LOWPOWER_LIST[count])
+    281                     {
+    282                         // Exception : wrong sequence executed
+    283                         SRFLOW_LOWPOWER_SEQUENCE_EXCEPTION();
+    284                         break;
+    285                     }
+    286                 }
+    287             }
+    288             SRFlowClearLowPower();
+   \   00000004   0x22FF             MOVS     R2,#+255
+   \   00000006   0x2104             MOVS     R1,#+4
+   \   00000008   0xF104 0x002C      ADD      R0,R4,#+44
+   \   0000000C   0x.... 0x....      BL       __aeabi_memset4
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0x72E0             STRB     R0,[R4, #+11]
+    289          #endif
+    290          }
+   \   00000014   0xBD10             POP      {R4,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \   00000000   0x........         DC32     SRFlow_Init_Events
+    291          
+    292          //=====================================================================================================================
+    293          //-------------------------------------- Private Functions ------------------------------------------------------------
+    294          //=====================================================================================================================
+    295          
+    296          //---------------------------------------------------------------------------------------------------------------------
+    297          /**
+    298           *  @brief      This method clear all the events in the Init List of events
+    299           */
+    300          static void SRFlowClearInit(void)
+    301          {
+    302          #if (SRFLOW_NUM_INIT_EVENTS > 0)
+    303              unsigned char count;
+    304              for (count=0;count<SRFLOW_NUM_INIT_EVENTS;count++)
+    305              {
+    306                  SRFlow_Init_Events[count] = SRFLOW_CLEAR_INIT_ALL;
+    307              }
+    308              SRFlow_Init_Pointer = 0;
+    309          #endif
+    310          }
+    311          
+    312          //---------------------------------------------------------------------------------------------------------------------
+    313          /**
+    314           *  @brief      This method clear all the events in the Main List of events
+    315           */
+    316          static void SRFlowClearMain(void)
+    317          {
+    318          #if (SRFLOW_NUM_MAIN_EVENTS > 0)
+    319              unsigned char count;
+    320              for (count=0;count<SRFLOW_NUM_MAIN_EVENTS;count++)
+    321              {
+    322                  SRFlow_Main_Events[count] = SRFLOW_CLEAR_MAIN_ALL;
+    323              }
+    324              SRFlow_Main_Pointer = 0;
+    325          #endif
+    326          }
+    327          
+    328          //---------------------------------------------------------------------------------------------------------------------
+    329          /**
+    330           *  @brief      This method clear all the events in the ISR List of events
+    331           */
+    332          static void SRFlowClearISR(void)
+    333          {
+    334          #if (SRFLOW_NUM_ISR_EVENTS > 0)
+    335              unsigned char count;
+    336              for (count=0;count<SRFLOW_NUM_ISR_EVENTS;count++)
+    337              {
+    338                  SRFlow_ISR_Events[count] = SRFLOW_CLEAR_ISR_ALL;
+    339              }
+    340              SRFlow_ISR_Pointer = 0;
+    341          #endif
+    342          }
+    343          
+    344          
+    345          //---------------------------------------------------------------------------------------------------------------------
+    346          /**
+    347           *  @brief      This method clear all the events in the LowPower List of events
+    348           */
+    349          static void SRFlowClearLowPower(void)
+    350          {
+    351          #if (SRFLOW_NUM_LOWPOWER_EVENTS > 0)
+    352              unsigned char count;
+    353              for (count=0;count<SRFLOW_NUM_LOWPOWER_EVENTS;count++)
+    354              {
+    355                  SRFlow_LowPower_Events[count] = SRFLOW_LOWPOWER_CLEAR_ALL;
+    356              }
+    357              SRFlow_LowPower_Pointer = 0;
+    358          #endif
+    359          }
+    360          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   SRFlow__ISRCheck
+        16   -> SRException__Queue
+        16   -> __aeabi_memset4
+       0   SRFlow__ISRLogEvent
+         0   -> SRException__Queue
+       8   SRFlow__InitCheck
+         8   -> SRException__Queue
+         8   -> __aeabi_memset4
+       0   SRFlow__InitLogEvent
+         0   -> SRException__Queue
+      16   SRFlow__Initialize
+        16   -> __aeabi_memset4
+       8   SRFlow__LowPowerCheck
+         8   -> __aeabi_memset4
+       0   SRFlow__LowPowerLogEvent
+      16   SRFlow__MainCheck
+        16   -> SRException__Queue
+        16   -> __aeabi_memset4
+       0   SRFlow__MainLogEvent
+         0   -> SRException__Queue
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       8  SRFLOW_EVENT_INIT_LIST
+      12  SRFLOW_EVENT_ISR_LIST
+       4  SRFLOW_EVENT_LOWPOWER_LIST
+      20  SRFLOW_EVENT_MAIN_LIST
+      48  SRFlow_Init_Events
+          SRFlow_Init_Pointer
+          SRFlow_Main_Pointer
+          SRFlow_ISR_Pointer
+          SRFlow_LowPower_Pointer
+          SRFlow_Main_Events
+          SRFlow_ISR_Events
+          SRFlow_LowPower_Events
+     100  SRFlow__ISRCheck
+      30  SRFlow__ISRLogEvent
+      88  SRFlow__InitCheck
+      26  SRFlow__InitLogEvent
+      74  SRFlow__Initialize
+      22  SRFlow__LowPowerCheck
+      20  SRFlow__LowPowerLogEvent
+     104  SRFlow__MainCheck
+      28  SRFlow__MainLogEvent
+
+ 
+  48 bytes in section .bss
+  12 bytes in section .rodata
+ 528 bytes in section .text
+ 
+ 528 bytes of CODE  memory
+  12 bytes of CONST memory
+  48 bytes of DATA  memory
+
+Errors: none
+Warnings: none

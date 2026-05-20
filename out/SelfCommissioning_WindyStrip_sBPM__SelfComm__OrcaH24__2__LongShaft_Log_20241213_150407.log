@@ -1,0 +1,65 @@
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Error while reading tuple: (Sc_Current_Inj_Ampl,)
+Retries: 1
+Error while reading tuple: (Sc_Current_Inj_Ampl,)
+Retries: 2
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Sc_IAmpl = 2.0009067058563232
+Sc_VAmpl = 12.406062126159668
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 12.027050971984863
+Sc_IAmpl = 2.0209219455718994
+Sc_VAmpl = 11.814454078674316
+Sc_IAmpl = 1.9968632459640503
+Sc_VAmpl = 12.287116050720215
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 12.82087516784668
+Sc_IAmpl = 2.0088939666748047
+Sc_VAmpl = 13.092841148376465
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 12.115045547485352
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 12.377121925354004
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 13.371484756469727
+Sc_IAmpl = 1.9527571201324463
+Sc_VAmpl = 12.156304359436035
+Rs[0] = 6.2181983602995325
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Step 1
+Voltage: 37.777778
+Frequency: 300.000000
+Step 2
+Voltage: 45.555556
+Frequency: 300.000000
+Step 3
+Voltage: 53.333333
+Frequency: 300.000000
+Step 4
+Voltage: 61.111111
+Frequency: 300.000000
+Step 5
+Voltage: 68.888889
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 6
+Voltage: 76.666667
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 2
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 3
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 4
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 5

@@ -1,0 +1,43 @@
+/**
+ * @mainpage
+ * 
+ * @section Brief_Desc  Overview
+ * This is the Software Design Documentation for the Windy Strip for Fresh Care MCU motor 
+ * control software.
+ * 
+ * @image html washer.jpg
+ *
+ * @section micro_settings Microcontroller and Compiler description
+ *
+ * - <b>Microcontroller</b>: NXP MKV30F64VLF10
+ * - <b>Compiler</b>: IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM
+ * - <b>Linker</b>: IAR ELF Linker V7.20.5.7591/W32 for ARM
+ *
+ * The Microcontroller datasheet is available <a href="KV30P64M100SFA.pdf" target="_blank">here</a>.
+ *
+ * @section sec_code Class B code Best Practices
+ *
+ * All the Safety Relevant code has been written according to the Motor Industry Software Reliability Association (MISRA)
+ * coding rules. \n
+ * Agreement with the rules has been verified using the <b>PC-Lint</b> tool. Exceptions to the rules are all documented
+ * and justified according to the specific application. \n
+ * See <a href="Errors.lnt" target="_blank">this</a> file for the Lint Errors configuration. \n
+ * 
+ *
+ * @section sec_signature Class B Signature Process
+ * 
+ * Here is an explanation of the \subpage mainpage_SRSignature.
+ *
+ * @section sec_sw_struct Safety Modules
+ *
+ * \n 1. \subpage mainpage_SRClockMonitor \n
+ * \n 2. \subpage mainpage_SRData \n
+ * \n 3. \subpage mainpage_SRFlow \n
+ * \n 4. \subpage mainpage_SRIsrMonitor \n
+ * \n 5. \subpage mainpage_SRMain \n
+ * \n 6. \subpage mainpage_SRMotorSafetyInfoParamsMgr \n
+ * \n 7. <a href="Pe13-1_SRMCAtod_KV30.pdf" target="_blank"><b>SRMCAtod Module Design</b></a> \n
+ * \n 8. <a href="Pe13-1_SRMCPwm_KV30.pdf" target="_blank"><b>SRMCPwm Module Design</b></a> \n
+ * \n 9. <a href="Pe13-1_Micro_MKV3x_Sdd.pdf" target="_blank"><b>Micro Module Design</b></a> \n
+ * \n 10. <a href="Pe13-1_WINDY_MCU_CLASS B - SRMotorSafetyMgr.pdf" target="_blank"><b>SRMotorSafetyMgr Module Design</b></a> \n
+ */

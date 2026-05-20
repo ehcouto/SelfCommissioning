@@ -1,0 +1,78 @@
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Error while reading tuple: (Sc_Current_Inj_Ampl,)
+Retries: 1
+Error while reading tuple: (Sc_Current_Inj_Ampl,)
+Retries: 2
+Sc_IAmpl = 2.0620384216308594
+Sc_VAmpl = 16.368242263793945
+Sc_IAmpl = 1.9929193258285522
+Sc_VAmpl = 11.537213325500488
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 12.817636489868164
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 12.344184875488281
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 12.359070777893066
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 12.62448501586914
+Sc_IAmpl = 2.0209219455718994
+Sc_VAmpl = 11.39694881439209
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 12.171846389770508
+Sc_IAmpl = 2.024933099746704
+Sc_VAmpl = 11.664407730102539
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 12.436296463012695
+Rs[0] = 6.242899405700776
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Step 1
+Voltage: 37.777778
+Frequency: 300.000000
+Step 2
+Voltage: 45.555556
+Frequency: 300.000000
+Step 3
+Voltage: 53.333333
+Frequency: 300.000000
+Step 4
+Voltage: 61.111111
+Frequency: 300.000000
+Step 5
+Voltage: 68.888889
+Frequency: 300.000000
+Step 6
+Voltage: 76.666667
+Frequency: 300.000000
+Step 7
+Voltage: 84.444444
+Frequency: 300.000000
+Step 8
+Voltage: 92.222222
+Frequency: 300.000000
+Step 9
+Voltage: 100.000000
+Frequency: 300.000000
+Step 0
+Speed: 1000.000000
+Step 1
+Speed: 1333.333333
+Step 2
+Speed: 1666.666667
+Step 3
+Speed: 2000.000000
+Step 4
+Speed: 2333.333333
+Step 5
+Speed: 2666.666667
+Step 6
+Speed: 3000.000000
+Step 7
+Speed: 3333.333333
+Step 8
+Speed: 3666.666667
+Step 9
+Speed: 4000.000000

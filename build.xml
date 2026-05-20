@@ -1,0 +1,279 @@
+<!--
+
+This sample build demonstrates a simple ant build that compiles and tests
+code and uses the jazz build toolkit to publish the results.
+
+The build file must be invoked by the jazz build engine.
+
+Prerequisites:
+
+1. Create a new Ant build definition in Jazz. Set the "Build file" field on the Ant page 
+to this build file.
+ 
+2. You must download the eclipse JDT standalone compiler (ecj.jar) to use this build file.
+Find it in the eclipse.org platform downloads. Look for "JDT Core Batch Compiler". Version 
+3.3.4 or later of the JDT compiler is required in order to publish xml compile logs.
+For earlier versions, only the simple, non-xml compile log format is supported.
+
+3. You must edit the "Ant arguments" field on the Ant page of the build definition editor
+to point to your location of ecj.jar. For example, assuming you saved ecj.jar to C:\,
+you would set the Ant arguments to: -lib C:\ecj.jar
+
+4. You must update the junitJar property in this build file to point at a junit.jar. 
+To get junit.jar, you can use the one from an eclipse installation (eclipse\plugins\junit...)
+or download it from junit.org.
+
+5. You must update the userId and password properties in this build file to specify a valid
+user and password for your Jazz repository. Search for ADMIN below.
+
+-->
+
+<project name="MCU Build" default="build" basedir='.'>
+	<property name="workspaceRoot" location="${basedir}" />
+	<property name="userId" value="RTUser_1" />
+	<property name="passwordFile" location="C:/RTC-BuildSystem-Toolkit-Win-6.0.3/jazz/buildsystem/buildengine/eclipse/pass_file" />
+	<property name="versionNumber" value="" />
+	<property name="iapS19Name" location="" />
+	<property name="mergeOutName" value="" />
+	
+	<target name="build" depends="checkEnv, compile, publish" />
+	<target name="build_iap" depends="checkEnv, compile, publish, compile_iap, merge, publish_iap" />
+	
+	<target name="compile" depends="checkEnv">
+		<!-- Update the build progress in Jazz by starting a new build activity. -->
+		<startBuildActivity activityIdProperty="compileActivityId"
+		                    label="compiling..."
+		                    buildResultUUID="${buildResultUUID}"
+		                    repositoryAddress="${repositoryAddress}"
+		                    userId="${userId}"
+		                    passwordFile="${passwordFile}" />
+
+		<property 	name="build_script_path"
+					location="build.bat"/>
+
+		<exec executable="cmd" failonerror="true">
+			<arg value="/c"/>
+			<arg value="${build_script_path}"/>
+			<arg value="-u"/>
+		</exec>
+		
+		<!-- Complete the compile build activity. -->
+		<completeBuildActivity activityId="${compileActivityId}"
+		                       buildResultUUID="${buildResultUUID}"
+		                       repositoryAddress="${repositoryAddress}"
+		                       userId="${userId}"
+							   passwordFile="${passwordFile}" />
+	
+	</target>
+	
+	<target name="compile_iap" depends="checkEnv">
+	        <!-- Update the build progress in Jazz by starting a new build activity. -->
+	        <startBuildActivity activityIdProperty="compileIapActivityId"
+	                            label="compiling for IAP..."
+	                            buildResultUUID="${buildResultUUID}"
+	                            repositoryAddress="${repositoryAddress}"
+	                            userId="${userId}"
+	                            passwordFile="${passwordFile}" />
+
+	        <property   name="build_script_path"
+	                    location="build.bat"/>
+
+	        <exec executable="cmd" failonerror="true">
+	            <arg value="/c"/>
+	            <arg value="${build_script_path}"/>
+	            <arg value="-u"/>
+	        	<arg value="I"/>
+	        </exec>
+	        
+	        <!-- Complete the compile build activity. -->
+	        <completeBuildActivity activityId="${compileIapActivityId}"
+	                               buildResultUUID="${buildResultUUID}"
+	                               repositoryAddress="${repositoryAddress}"
+	                               userId="${userId}"
+	                               passwordFile="${passwordFile}" />
+	    
+	    </target>
+		
+	<target name="publish" depends="compile">
+		<!-- Update the build progress in Jazz by starting a new build activity. -->
+		<startBuildActivity activityIdProperty="publishActivityId"
+		                    label="Publishing artifacts..."
+		                    buildResultUUID="${buildResultUUID}"
+		                    repositoryAddress="${repositoryAddress}"
+		                    userId="${userId}"
+		                    passwordFile="${passwordFile}" />
+		
+		<!-- Publish some downloadable artifacts. Files published with the 
+		     artifactFilePublisher are shown on the Downloads tab of the build
+		     result editor. -->
+		
+		<!-- Rename the executable files with the version number -->
+		<move file="${workspaceRoot}/exe/${executableName}.out" tofile="${workspaceRoot}/exe/${executableName}_noIAP_${versionNumber}.out"/>
+		<move file="${workspaceRoot}/exe/${executableName}.s19" tofile="${workspaceRoot}/exe/${executableName}_noIAP_${versionNumber}.s19"/>
+		<move file="${workspaceRoot}/exe/${executableName}.map" tofile="${workspaceRoot}/exe/${executableName}_noIAP_${versionNumber}.map"/>
+		
+		<artifactFilePublisher buildResultUUID="${buildResultUUID}"
+		                       repositoryAddress="${repositoryAddress}"
+		                       userId="${userId}"
+							   passwordFile="${passwordFile}"
+		                       verbose="true"
+		                       filePath="${workspaceRoot}/exe/${executableName}_noIAP_${versionNumber}.out"
+		                       label="The executable output with debug symbols, to use without IAP" />
+							   
+		<artifactFilePublisher buildResultUUID="${buildResultUUID}"
+		                       repositoryAddress="${repositoryAddress}"
+		                       userId="${userId}"
+							   passwordFile="${passwordFile}"
+		                       verbose="true"
+		                       filePath="${workspaceRoot}/exe/${executableName}_noIAP_${versionNumber}.s19"
+		                       label="The executable output, to use without IAP" />
+		
+		<artifactFilePublisher buildResultUUID="${buildResultUUID}"
+                               repositoryAddress="${repositoryAddress}"
+                               userId="${userId}"
+                               passwordFile="${passwordFile}"
+                               verbose="true"
+                               filePath="${workspaceRoot}/exe/${executableName}_noIAP_${versionNumber}.map"
+                               label="The MAP file, for the no IAP version" />
+		
+		<artifactFilePublisher buildResultUUID="${buildResultUUID}"
+                               repositoryAddress="${repositoryAddress}"
+                               userId="${userId}"
+                               passwordFile="${passwordFile}"
+                               verbose="true"
+                               filePath="${workspaceRoot}/source/ClassB_Signature.h"
+                               label="The Class B Signature" />
+		
+		<!-- Complete the compile build activity. -->
+		<completeBuildActivity activityId="${publishActivityId}"
+		                       buildResultUUID="${buildResultUUID}"
+		                       repositoryAddress="${repositoryAddress}"
+		                       userId="${userId}"
+							   passwordFile="${passwordFile}" />
+		
+	</target>
+	
+	<target name="merge" depends="compile_iap">
+	        <!-- Update the build progress in Jazz by starting a new build activity. -->
+	        <startBuildActivity activityIdProperty="mergeActivityId"
+	                            label="merging for IAP"
+	                            buildResultUUID="${buildResultUUID}"
+	                            repositoryAddress="${repositoryAddress}"
+	                            userId="${userId}"
+	                            passwordFile="${passwordFile}" />
+
+	        <exec executable="DatasetReadWriteApplication.exe" failonerror="true">
+	            <arg value="settings\IAP\${iapS19Name}.s19"/>
+	        	<arg value="exe\${executableName}.s19"/>
+	        	<arg value="\o:exe\${mergeOutName}_${versionNumber}.s19"/>
+	        	
+	        </exec>
+	        
+	        <!-- Complete the merge build activity. -->
+	        <completeBuildActivity activityId="${mergeActivityId}"
+	                               buildResultUUID="${buildResultUUID}"
+	                               repositoryAddress="${repositoryAddress}"
+	                               userId="${userId}"
+	                               passwordFile="${passwordFile}" />
+	    
+    </target>
+	
+	<target name="publish_iap" depends="merge">
+	        <!-- Update the build progress in Jazz by starting a new build activity. -->
+	        <startBuildActivity activityIdProperty="publishIapActivityId"
+	                            label="Publishing artifacts..."
+	                            buildResultUUID="${buildResultUUID}"
+	                            repositoryAddress="${repositoryAddress}"
+	                            userId="${userId}"
+	                            passwordFile="${passwordFile}" />
+	        
+	        <!-- Publish some downloadable artifacts. Files published with the 
+	             artifactFilePublisher are shown on the Downloads tab of the build
+	             result editor. -->
+	        
+	        <!-- Rename the executable files with the version number -->
+	        <move file="${workspaceRoot}/exe/${executableName}.out" tofile="${workspaceRoot}/exe/${executableName}_${versionNumber}.out"/>
+	        <move file="${workspaceRoot}/exe/${executableName}.s19" tofile="${workspaceRoot}/exe/${executableName}_${versionNumber}.s19"/>
+	        <move file="${workspaceRoot}/exe/${executableName}.map" tofile="${workspaceRoot}/exe/${executableName}_${versionNumber}.map"/>
+	        
+	        <artifactFilePublisher buildResultUUID="${buildResultUUID}"
+	                               repositoryAddress="${repositoryAddress}"
+	                               userId="${userId}"
+	                               passwordFile="${passwordFile}"
+	                               verbose="true"
+	                               filePath="${workspaceRoot}/exe/${executableName}_${versionNumber}.out"
+	                               label="The executable output with debug symbols" />
+	                               
+	        <artifactFilePublisher buildResultUUID="${buildResultUUID}"
+	                               repositoryAddress="${repositoryAddress}"
+	                               userId="${userId}"
+	                               passwordFile="${passwordFile}"
+	                               verbose="true"
+	                               filePath="${workspaceRoot}/exe/${executableName}_${versionNumber}.s19"
+	                               label="The executable output" />
+		
+        	<artifactFilePublisher buildResultUUID="${buildResultUUID}"
+        	                                   repositoryAddress="${repositoryAddress}"
+        	                                   userId="${userId}"
+        	                                   passwordFile="${passwordFile}"
+        	                                   verbose="true"
+        	                                   filePath="${workspaceRoot}/exe/${mergeOutName}_${versionNumber}.s19"
+        	                                   label="The IAP + application merged output" />
+	        
+	        <artifactFilePublisher buildResultUUID="${buildResultUUID}"
+	                               repositoryAddress="${repositoryAddress}"
+	                               userId="${userId}"
+	                               passwordFile="${passwordFile}"
+	                               verbose="true"
+	                               filePath="${workspaceRoot}/exe/${executableName}_${versionNumber}.map"
+	                               label="The MAP file" />
+	        
+	        <!-- Complete the compile build activity. -->
+	        <completeBuildActivity activityId="${publishIapActivityId}"
+	                               buildResultUUID="${buildResultUUID}"
+	                               repositoryAddress="${repositoryAddress}"
+	                               userId="${userId}"
+	                               passwordFile="${passwordFile}" />
+	        
+	    </target>
+
+	<target name="checkEnv">
+		<fail message="The repositoryAddress property must be defined."
+		      unless="repositoryAddress" />
+		<echo message="Using repositoryAddress = ${repositoryAddress}" />
+
+		<fail message="The userId property must be defined." unless="userId" />
+		<echo message="Using userId = ${userId}" />
+
+		<fail message="The password File property must be defined."
+		      unless="passwordFile" />
+
+		<fail message="The buildDefinitionId property must be defined."
+		      unless="buildDefinitionId" />
+		<echo message="Using buildDefinitionId = ${buildDefinitionId}" />
+		
+		<fail message="The executableName property must be defined."
+		      unless="executableName" />
+		<echo message="Using executableName = ${executableName}" />
+		
+		<fail message="The version number property must be defined."
+		      unless="versionNumber" />
+		<echo message="Version Number = ${versionNumber}" />
+
+	</target>
+
+
+	<!-- These task definitions make the Jazz ant tasks available to this build file.
+	     In order to find these classnames at run time, ant must be invoked with:
+	
+		     -lib <buildsystem-location>/buildtoolkit
+	 -->
+	
+	<taskdef name="artifactFilePublisher" classname="com.ibm.team.build.ant.task.ArtifactFilePublisherTask" />
+	<taskdef name="artifactLinkPublisher" classname="com.ibm.team.build.ant.task.ArtifactLinkPublisherTask" />
+	<taskdef name="linkPublisher" classname="com.ibm.team.build.ant.task.LinkPublisherTask" />
+	<taskdef name="logPublisher" classname="com.ibm.team.build.ant.task.LogPublisherTask" />
+	<taskdef name="startBuildActivity" classname="com.ibm.team.build.ant.task.StartBuildActivityTask" />
+	<taskdef name="completeBuildActivity" classname="com.ibm.team.build.ant.task.CompleteBuildActivityTask" />
+
+</project>

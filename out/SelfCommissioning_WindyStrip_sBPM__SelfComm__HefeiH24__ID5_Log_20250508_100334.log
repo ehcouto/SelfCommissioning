@@ -1,0 +1,124 @@
+Waiting for reset...
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x201
+Step 0
+Current: 3.500000
+Frequency: 0.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Sc_IAmpl = 3.4604287147521973
+Sc_VAmpl = 13.89094066619873
+Sc_IAmpl = 3.5205740928649902
+Sc_VAmpl = 11.985542297363281
+Sc_IAmpl = 3.51255464553833
+Sc_VAmpl = 11.734179496765137
+Sc_IAmpl = 3.472456932067871
+Sc_VAmpl = 13.635773658752441
+Sc_IAmpl = 3.5085458755493164
+Sc_VAmpl = 12.464215278625488
+Sc_IAmpl = 3.51255464553833
+Sc_VAmpl = 11.717859268188477
+Sc_IAmpl = 3.484487295150757
+Sc_VAmpl = 11.154789924621582
+Sc_IAmpl = 3.5165653228759766
+Sc_VAmpl = 12.235472679138184
+Sc_IAmpl = 3.5245847702026367
+Sc_VAmpl = 12.220559120178223
+Sc_IAmpl = 3.51255464553833
+Sc_VAmpl = 12.456024169921875
+Rs[0] = 3.5258893454104245
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 1
+Voltage: 37.777778
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 2
+Voltage: 45.555556
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Step 3
+Voltage: 53.333333
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 4
+Voltage: 61.111111
+Frequency: 300.000000
+Step 5
+Voltage: 68.888889
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Step 6
+Voltage: 76.666667
+Frequency: 300.000000
+Step 7
+Voltage: 84.444444
+Frequency: 300.000000
+Error while writing tuple: (Sc_Injection_Flag,)
+Retries: 1
+Step 8
+Voltage: 92.222222
+Frequency: 300.000000
+Step 9
+Voltage: 100.000000
+Frequency: 300.000000
+Error while writing tuple: (Sc_VoltageInj, Sc_FrequencyInj)
+Retries: 1
+Waiting for reset...
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x201
+Step 0
+Speed: 1000.000000
+Step 1
+Speed: 1333.333333
+Step 2
+Speed: 1666.666667
+Step 3
+Speed: 2000.000000
+Step 4
+Speed: 2333.333333
+Step 5
+Speed: 2666.666667
+Step 6
+Speed: 3000.000000
+Step 7
+Speed: 3333.333333
+Step 8
+Speed: 3666.666667
+Step 9
+Speed: 4000.000000

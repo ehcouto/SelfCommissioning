@@ -1,0 +1,2539 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:50
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        APIMotorControl.obj -l ..\listings\APIMotorControl.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c
+#    List file    =  ..\listings\APIMotorControl.lst
+#    Object file  =  APIMotorControl.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c
+      1          /**
+      2           *  @file       APIMotorControl.c
+      3           *
+      4           *  @brief      This module provides a link between the Reveal and the Mci API.
+      5           *
+      6           *  @details    Parse all commands from Reveal, link with Mci API, build up the data accordingly and
+      7           *              provides the related feedback to the Reveal protocol.
+      8           *              There is no product action/reaction contained in this module.
+      9           *
+     10           *  @section    Applicable_Documents
+     11           *                  List here all the applicable documents if needed. <tr>
+     12           *
+     13           *  $Header: APIMotorControl.c 1.15.1.2 2016/03/29 15:57:54BRT Marcelo Silva (SILVAMC) Exp  $
+     14           *
+     15           *  @copyright  Copyright 2013-$Date: 2016/03/29 15:57:54BRT $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     16           */
+     17          //---------------------------------------------------------------------------------------------------------------------
+     18          //---------------------------------------------------------------------------------------------------------------------
+     19          
+     20          
+     21          //-------------------------------------- Include Files ----------------------------------------------------------------
+     22          #include "C_Extensions.h"                           //!< Standard file required by this code
+     23          #include "Mci.h"                                    //!< Motor Control API header file
+     24          #include "Reveal.h"                                 //!< Reveal stack API
+     25          #include "APIMotorControl.h"                        //!< Motor Control API implementation
+     26          #include "APIMotorControl_prv.h"
+     27          #include <string.h>                                 //!< Include the string intrinsic library
+     28          
+     29          #ifndef API220_DEBUG_MODE
+     30              #define API220_DEBUG_MODE   DISABLED
+     31          #endif
+     32          
+     33          #ifndef API220_THERMALMODEL_DEBUG
+     34              #define API220_THERMALMODEL_DEBUG   DISABLED
+     35          #endif
+     36          
+     37          #ifndef MCI_FVT_TESTS
+     38              #define MCI_FVT_TESTS   DISABLED
+     39          #endif
+     40          
+     41          #ifndef CYCLE_SIMULATION
+     42              #define CYCLE_SIMULATION   DISABLED
+     43          #endif
+     44          
+     45          
+     46          
+     47          #if(API220_THERMALMODEL_DEBUG == ENABLED)
+     48          
+     49          #include "ThermalModelCore.h"
+     50          
+     51          #endif
+     52          
+     53          
+     54          
+     55          
+     56          #if(MCI_FVT_TESTS == ENABLED)
+     57          #include "mclfvt.h"
+     58          #endif
+     59          
+     60          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     61          
+     62          //! Sanity check on user's parameters.
+     63          #if(!defined API220_NR_OF_CONNECTED_MOTORS) || (API220_NR_OF_CONNECTED_MOTORS == 0)
+     64              #error This parameters has to be defined in the prm file and shall be different of zero!
+     65          #endif
+     66          
+     67          
+     68          //! Structure for periodic analog data publishing.
+     69          typedef struct
+     70          {
+     71              uint8 Publish_Requested;                        //!< Flags if the data is requested to be published
+     72              uint16 Time_Threshold;                          //!< Time threshold; multiple of 25 ms. Note: this value shall be adjusted according to the amount of motors
+     73              uint16 Time_Counter;                            //!< Instantaneous timer counter.
+     74          } API220_PUBLISH_ANALOG_DATA_PERIOD_TYPE;
+     75          
+     76          
+     77          //! Converts a value into TRUE or FALSE; 0 is FALSE, TRUE otherwise.
+     78          #ifndef GET_TRUE_FALSE
+     79              #define GET_TRUE_FALSE(value)           (BOOL_TYPE)(((value) == 0) ? (FALSE) : (TRUE))
+     80          #endif
+     81          
+     82          
+     83          #if(API220_DEBUG_MODE == ENABLED)
+     84          
+     85              typedef enum
+     86              {
+     87                  CMD_API_FORCE_ERROR 					= 0,                //!< 0 - Command to emulate/force errors in the Mci
+     88                  CMD_CLASSB_THERMAL_MODEL_DEBUG			= 1,				//!< 1 - OpCode to debug Class B thermal model
+     89          		CMD_CLASSA_THERMAL_MODEL_DEBUG			= 2,				//!< 2 - OpCode to debug Class A thermal model
+     90          		CMD_TUMBLING							= 15
+     91              } COMMAND_LIST_API_DEBUG_MODE_TYPE;
+     92          
+     93          #endif
+     94          
+     95          #ifndef MANUAL_INJECTION_RUN
+     96              #define MANUAL_INJECTION_RUN(motor_index, method, level_target, level_rate, parameter, param_rate)  Mci__Manual_Injection(motor_index, method, level_target, level_rate, parameter, param_rate)
+     97          #endif
+     98          
+     99          #ifndef FVT_START
+    100              #define FVT_START(motor_index)  Mci__FvtStart(motor_index)
+    101          #endif
+    102          
+    103          #ifndef FVT_STOP
+    104              #define FVT_STOP(motor_index)   Mci__FvtStop(motor_index)
+    105          #endif
+    106          
+    107          #ifndef FVT_GET_MOTOR
+    108              #define FVT_GET_MOTOR()         (MOTOR_ENUM_TYPE)0
+    109          #endif
+    110          
+    111          
+    112          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+    113          
+    114          //! Digital input log, these variable stores the most recent events.
+    115          static uint32 Mci_Digital_Inputs[API220_NR_OF_CONNECTED_MOTORS];
+    116          
+    117          //! Error log, these variable stores the most recent error events.
+    118          static uint32 Mci_Digital_Error[API220_NR_OF_CONNECTED_MOTORS];
+    119          
+    120          //! Define the structure to control the periodic data publishing.
+    121          static API220_PUBLISH_ANALOG_DATA_PERIOD_TYPE Api220_Per_Analog_Data[API220_NR_OF_CONNECTED_MOTORS][(1+MCI_AI_NR_OF_AI)];
+    122          
+    123          //! Last speed set by user; used to generate Reveal events
+    124          static sint32 Last_Speed_Target[API220_NR_OF_CONNECTED_MOTORS];
+    125          //! Last ramp set by user; used to generate Reveal events
+    126          static sint32 Last_Ramp_Target[API220_NR_OF_CONNECTED_MOTORS];
+    127          //! Last manual injection method selected
+    128          static uint8 Last_Manual_Injection_Method[API220_NR_OF_CONNECTED_MOTORS];
+    129          //! Last manual injection level target
+    130          static sint32 Last_Manual_Injection_Level_Target[API220_NR_OF_CONNECTED_MOTORS];
+    131          //! Last manual injection parameter target
+    132          static sint32 Last_Manual_Injection_Parameter[API220_NR_OF_CONNECTED_MOTORS];
+    133          
+    134          #if(API220_THERMALMODEL_DEBUG == ENABLED)
+    135          
+    136          	extern ExtU_ThermalModelCore_T ThermalModelCore_U;
+    137          	extern ExtY_ThermalModelCore_T ThermalModelCore_Y;
+    138          
+    139          #endif
+    140          
+    141          //! Last digital output set or reset by user; used to generate Reveal events
+    142          static uint8 Last_Digital_Output[API220_NR_OF_CONNECTED_MOTORS];
+    143          //! Last analog output written by user; used to generate Reveal events
+    144          static sint32 Last_Analog_Output[API220_NR_OF_CONNECTED_MOTORS][MCI_AO_NR_OF_AO];
+    145          
+    146          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    147          static uint8 Run_Motor(REVEAL_MSG_TYPE *buffer);
+    148          static uint8 Stop_Motor(REVEAL_MSG_TYPE *buffer);
+    149          static uint8 Get_Digital(REVEAL_MSG_TYPE *buffer);
+    150          static uint8 Get_Error(REVEAL_MSG_TYPE *buffer);
+    151          static void Update_Digital_Inputs(void);
+    152          static void Update_Error(void);
+    153          static T_BOOL Publish_Digital_Input(MOTOR_ENUM_TYPE motor_index, uint32 digital_input);
+    154          static T_BOOL Publish_Error(MOTOR_ENUM_TYPE motor_index, uint32 errors);
+    155          static uint8 Set_Digital(REVEAL_MSG_TYPE *buffer);
+    156          static uint8 Get_Analog(REVEAL_MSG_TYPE *buffer);
+    157          static uint8 Publish_Analog_Input(MOTOR_ENUM_TYPE motor_index, MCI_AI_TYPE analog_data_index);
+    158          static uint8 Set_Analog(REVEAL_MSG_TYPE *buffer);
+    159          static void Periodically_Publish_Analog(void);
+    160          static uint8 Set_Data_Periodically_Publish(REVEAL_MSG_TYPE *buffer);
+    161          static uint8 Manual_Control(REVEAL_MSG_TYPE *buffer);
+    162          static uint8 Command_Api220_Debug_Mode(REVEAL_MSG_TYPE *buffer);
+    163          
+    164          #if(API220_DEBUG_MODE == ENABLED)
+    165          
+    166              static uint8 Stack_Class_B_Debug_Data(MOTOR_ENUM_TYPE motor_index);
+    167          
+    168          #if(API220_THERMALMODEL_DEBUG == ENABLED)
+    169          
+    170              static uint8 Stack_Class_A_Debug_Data(MOTOR_ENUM_TYPE motor_index);
+    171          
+    172          #endif
+    173          
+    174          #endif
+    175          
+    176          #if (MCI_FVT_TESTS == ENABLED)
+    177          
+    178              static uint8 Api220_Fvt_Result_Published;
+    179              static uint8 Api220_Fvt_Mode(REVEAL_MSG_TYPE *buffer);
+    180              static uint8 Publish_Fvt_Result(void);
+    181          
+    182          #endif
+    183          
+    184          #if (CYCLE_SIMULATION == ENABLED)
+    185          
+    186              static uint8 Tumbling_Motor(REVEAL_MSG_TYPE *buffer);
+    187          
+    188          #endif
+    189          
+    190          //=====================================================================================================================
+    191          //-------------------------------------- Public Functions -------------------------------------------------------------
+    192          //=====================================================================================================================
+    193          
+    194          
+    195          
+    196          
+    197          //---------------------------------------------------------------------------------------------------------------------
+    198          /**
+    199           *  @brief      It Initializes the module CompressorLink and its variables
+    200           *
+    201           */
+
+   \                                 In section .text, align 2, keep-with-next
+    202          void APIMotorControl__Initialize(void)
+    203          {
+   \                     APIMotorControl__Initialize: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+    204              memset(&Api220_Per_Analog_Data, 0, sizeof(Api220_Per_Analog_Data));
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable7
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x2500             MOVS     R5,#+0
+   \   0000000A   0x2200             MOVS     R2,#+0
+   \   0000000C   0x219C             MOVS     R1,#+156
+   \   0000000E   0xF104 0x0040      ADD      R0,R4,#+64
+   \   00000012   0x.... 0x....      BL       __aeabi_memset4
+    205              memset(&Mci_Digital_Inputs, 0, sizeof(Mci_Digital_Inputs));
+   \   00000016   0x2604             MOVS     R6,#+4
+   \   00000018   0x462A             MOV      R2,R5
+   \   0000001A   0x4631             MOV      R1,R6
+   \   0000001C   0xF104 0x0008      ADD      R0,R4,#+8
+   \   00000020   0x.... 0x....      BL       __aeabi_memset4
+    206              memset(&Mci_Digital_Error, 0, sizeof(Mci_Digital_Error));
+   \   00000024   0x462A             MOV      R2,R5
+   \   00000026   0x4631             MOV      R1,R6
+   \   00000028   0xF104 0x000C      ADD      R0,R4,#+12
+   \   0000002C   0x.... 0x....      BL       __aeabi_memset4
+    207          
+    208              memset(&Last_Speed_Target, 0, sizeof(Last_Speed_Target));
+   \   00000030   0x462A             MOV      R2,R5
+   \   00000032   0x4631             MOV      R1,R6
+   \   00000034   0xF104 0x0010      ADD      R0,R4,#+16
+   \   00000038   0x.... 0x....      BL       __aeabi_memset4
+    209              memset(&Last_Ramp_Target, 0, sizeof(Last_Ramp_Target));
+   \   0000003C   0x462A             MOV      R2,R5
+   \   0000003E   0x4631             MOV      R1,R6
+   \   00000040   0xF104 0x0014      ADD      R0,R4,#+20
+   \   00000044   0x.... 0x....      BL       __aeabi_memset4
+    210              memset(&Last_Digital_Output, 0, sizeof(Last_Digital_Output));
+   \   00000048   0x2701             MOVS     R7,#+1
+   \   0000004A   0x462A             MOV      R2,R5
+   \   0000004C   0x4639             MOV      R1,R7
+   \   0000004E   0x1C60             ADDS     R0,R4,#+1
+   \   00000050   0x.... 0x....      BL       __aeabi_memset
+    211              memset(&Last_Analog_Output, 0, sizeof(Last_Analog_Output));
+   \   00000054   0x462A             MOV      R2,R5
+   \   00000056   0x2120             MOVS     R1,#+32
+   \   00000058   0xF104 0x0020      ADD      R0,R4,#+32
+   \   0000005C   0x.... 0x....      BL       __aeabi_memset4
+    212          
+    213              memset(&Last_Manual_Injection_Method, 0, sizeof(Last_Manual_Injection_Method));
+   \   00000060   0x462A             MOV      R2,R5
+   \   00000062   0x4639             MOV      R1,R7
+   \   00000064   0x4620             MOV      R0,R4
+   \   00000066   0x.... 0x....      BL       __aeabi_memset4
+    214              memset(&Last_Manual_Injection_Level_Target, 0, sizeof(Last_Manual_Injection_Level_Target));
+   \   0000006A   0x462A             MOV      R2,R5
+   \   0000006C   0x4631             MOV      R1,R6
+   \   0000006E   0xF104 0x0018      ADD      R0,R4,#+24
+   \   00000072   0x.... 0x....      BL       __aeabi_memset4
+    215              memset(&Last_Manual_Injection_Parameter, 0, sizeof(Last_Manual_Injection_Parameter));
+   \   00000076   0x462A             MOV      R2,R5
+   \   00000078   0x4631             MOV      R1,R6
+   \   0000007A   0xF104 0x001C      ADD      R0,R4,#+28
+   \   0000007E   0x.... 0x....      BL       __aeabi_memset4
+    216          
+    217          #if (MCI_FVT_TESTS == ENABLED)
+    218          
+    219              Api220_Fvt_Result_Published = FALSE;
+   \   00000082   0x70A5             STRB     R5,[R4, #+2]
+    220          
+    221          #endif
+    222          
+    223          }
+   \   00000084   0xB001             ADD      SP,SP,#+4
+   \   00000086   0xBDF0             POP      {R4-R7,PC}       ;; return
+    224          
+    225          
+    226          
+    227          
+    228          //---------------------------------------------------------------------------------------------------------------------
+    229          /**
+    230           *  @brief      Slow handler (rate: 25 ms)
+    231           *  @details    Some implementation of this module might need to handle some slow timings, this is the place
+    232           *              for this handling.
+    233           */
+
+   \                                 In section .text, align 2, keep-with-next
+    234          void APIMotorControl__SlowHandler(void)
+    235          {
+   \                     APIMotorControl__SlowHandler: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    236              Update_Digital_Inputs();
+   \   00000004   0x....             LDR.N    R4,??DataTable7
+   \   00000006   0x78E0             LDRB     R0,[R4, #+3]
+   \   00000008   0x1C40             ADDS     R0,R0,#+1
+   \   0000000A   0xB082             SUB      SP,SP,#+8
+   \   0000000C   0xB2C0             UXTB     R0,R0
+   \   0000000E   0xB100             CBZ.N    R0,??APIMotorControl__SlowHandler_0
+   \   00000010   0x2000             MOVS     R0,#+0
+   \                     ??APIMotorControl__SlowHandler_0: (+1)
+   \   00000012   0x70E0             STRB     R0,[R4, #+3]
+   \   00000014   0x78E0             LDRB     R0,[R4, #+3]
+   \   00000016   0x.... 0x....      BL       Mci__GetDigitalList
+   \   0000001A   0x78E6             LDRB     R6,[R4, #+3]
+   \   0000001C   0xAF00             ADD      R7,SP,#+0
+   \   0000001E   0x4605             MOV      R5,R0
+   \   00000020   0xF847 0x5026      STR      R5,[R7, R6, LSL #+2]
+   \   00000024   0xEB04 0x0086      ADD      R0,R4,R6, LSL #+2
+   \   00000028   0x6880             LDR      R0,[R0, #+8]
+   \   0000002A   0x42A8             CMP      R0,R5
+   \   0000002C   0xD01A             BEQ.N    ??APIMotorControl__SlowHandler_1
+   \   0000002E   0x2305             MOVS     R3,#+5
+   \   00000030   0x220F             MOVS     R2,#+15
+   \   00000032   0x2103             MOVS     R1,#+3
+   \   00000034   0x20DC             MOVS     R0,#+220
+   \   00000036   0x.... 0x....      BL       Reveal__NewFeedback
+   \   0000003A   0xEA5F 0x0800      MOVS     R8,R0
+   \   0000003E   0xD011             BEQ.N    ??APIMotorControl__SlowHandler_1
+   \   00000040   0x4631             MOV      R1,R6
+   \   00000042   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000046   0x4629             MOV      R1,R5
+   \   00000048   0x4640             MOV      R0,R8
+   \   0000004A   0x.... 0x....      BL       Reveal__AddDataU32
+   \   0000004E   0x4640             MOV      R0,R8
+   \   00000050   0x.... 0x....      BL       Reveal__QueueCommand
+   \   00000054   0x2801             CMP      R0,#+1
+   \   00000056   0xD105             BNE.N    ??APIMotorControl__SlowHandler_1
+   \   00000058   0x78E0             LDRB     R0,[R4, #+3]
+   \   0000005A   0xF857 0x1020      LDR      R1,[R7, R0, LSL #+2]
+   \   0000005E   0xEB04 0x0080      ADD      R0,R4,R0, LSL #+2
+   \   00000062   0x6081             STR      R1,[R0, #+8]
+    237              Update_Error();
+   \                     ??APIMotorControl__SlowHandler_1: (+1)
+   \   00000064   0x7920             LDRB     R0,[R4, #+4]
+   \   00000066   0x1C40             ADDS     R0,R0,#+1
+   \   00000068   0xB2C0             UXTB     R0,R0
+   \   0000006A   0xB100             CBZ.N    R0,??APIMotorControl__SlowHandler_2
+   \   0000006C   0x2000             MOVS     R0,#+0
+   \                     ??APIMotorControl__SlowHandler_2: (+1)
+   \   0000006E   0x7120             STRB     R0,[R4, #+4]
+   \   00000070   0x7920             LDRB     R0,[R4, #+4]
+   \   00000072   0x.... 0x....      BL       Mci__GetErrorList
+   \   00000076   0x7926             LDRB     R6,[R4, #+4]
+   \   00000078   0x4605             MOV      R5,R0
+   \   0000007A   0xF847 0x5026      STR      R5,[R7, R6, LSL #+2]
+   \   0000007E   0xEB04 0x0086      ADD      R0,R4,R6, LSL #+2
+   \   00000082   0x68C0             LDR      R0,[R0, #+12]
+   \   00000084   0x42A8             CMP      R0,R5
+   \   00000086   0xD01A             BEQ.N    ??APIMotorControl__SlowHandler_3
+   \   00000088   0x2305             MOVS     R3,#+5
+   \   0000008A   0x220F             MOVS     R2,#+15
+   \   0000008C   0x2108             MOVS     R1,#+8
+   \   0000008E   0x20DC             MOVS     R0,#+220
+   \   00000090   0x.... 0x....      BL       Reveal__NewFeedback
+   \   00000094   0xEA5F 0x0800      MOVS     R8,R0
+   \   00000098   0xD011             BEQ.N    ??APIMotorControl__SlowHandler_3
+   \   0000009A   0x4631             MOV      R1,R6
+   \   0000009C   0x.... 0x....      BL       Reveal__AddDataU8
+   \   000000A0   0x4629             MOV      R1,R5
+   \   000000A2   0x4640             MOV      R0,R8
+   \   000000A4   0x.... 0x....      BL       Reveal__AddDataU32
+   \   000000A8   0x4640             MOV      R0,R8
+   \   000000AA   0x.... 0x....      BL       Reveal__QueueCommand
+   \   000000AE   0x2801             CMP      R0,#+1
+   \   000000B0   0xD105             BNE.N    ??APIMotorControl__SlowHandler_3
+   \   000000B2   0x7920             LDRB     R0,[R4, #+4]
+   \   000000B4   0xF857 0x1020      LDR      R1,[R7, R0, LSL #+2]
+   \   000000B8   0xEB04 0x0080      ADD      R0,R4,R0, LSL #+2
+   \   000000BC   0x60C1             STR      R1,[R0, #+12]
+    238          #ifndef API220_FVT_ONLY
+    239              Periodically_Publish_Analog();
+    240          #endif
+    241              // Check and publishes if FVT was performed and there is an event
+    242              // to publish the fvt results.
+    243          #if (MCI_FVT_TESTS == ENABLED)
+    244          
+    245              if(!Api220_Fvt_Result_Published)
+   \                     ??APIMotorControl__SlowHandler_3: (+1)
+   \   000000BE   0x78A0             LDRB     R0,[R4, #+2]
+   \   000000C0   0xB930             CBNZ.N   R0,??APIMotorControl__SlowHandler_4
+    246              {
+    247                  if(Mci__FvtGetStatus(MOTOR0, MCI_FVT_STATUS_FINISHED))
+   \   000000C2   0x2101             MOVS     R1,#+1
+   \   000000C4   0x.... 0x....      BL       Mci__FvtGetStatus
+   \   000000C8   0xB110             CBZ.N    R0,??APIMotorControl__SlowHandler_4
+    248                  {
+    249                      Api220_Fvt_Result_Published = Publish_Fvt_Result();
+   \   000000CA   0x.... 0x....      BL       Publish_Fvt_Result
+   \   000000CE   0x70A0             STRB     R0,[R4, #+2]
+    250                  }
+    251              }
+    252          
+    253          #endif
+    254          
+    255          #if(API220_DEBUG_MODE == ENABLED)
+    256          
+    257          //    Periodically_Publish_Debug_Data();
+    258          
+    259          #endif
+    260          }
+   \                     ??APIMotorControl__SlowHandler_4: (+1)
+   \   000000D0   0xB002             ADD      SP,SP,#+8
+   \   000000D2   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    261          
+    262          
+    263          
+    264          
+    265          //---------------------------------------------------------------------------------------------------------------------
+    266          /**
+    267           *  @brief      Parses a command arrived from Reveal.
+    268           *  @param      buffer - Pointer to the arrived buffer from Reveal.
+    269           *  @return     return the status of the requested OpCode.
+    270           */
+
+   \                                 In section .text, align 2, keep-with-next
+    271          REVEAL_RECIPE_STATUS_TYPE APIMotorControl__CommandParser(REVEAL_MSG_TYPE *buffer)
+    272          {
+   \                     APIMotorControl__CommandParser: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+    273              REVEAL_RECIPE_STATUS_TYPE retval;
+    274          
+    275              retval = NVO_RS_REJECTED;
+    276          
+    277              switch (buffer->op_code)
+   \   00000004   0x7901             LDRB     R1,[R0, #+4]
+   \   00000006   0x2402             MOVS     R4,#+2
+   \   00000008   0xF001 0x011F      AND      R1,R1,#0x1F
+   \   0000000C   0x2912             CMP      R1,#+18
+   \   0000000E   0xD13F             BNE.N    ??APIMotorControl__CommandParser_0
+    278              {
+    279          #ifndef API220_FVT_ONLY
+    280                  case API220_OPCODE_MOTOR_CONTROL_RUN:
+    281                      if(Run_Motor(buffer) == TRUE)
+    282                      {
+    283                          retval = NVO_RS_READY;
+    284                      }
+    285                      break;
+    286          
+    287                  case API220_OPCODE_MOTOR_CONTROL_STOP:
+    288                      if(Stop_Motor(buffer) == TRUE)
+    289                      {
+    290                          retval = NVO_RS_READY;
+    291                      }
+    292                      break;
+    293          
+    294          
+    295                  case API220_OPCODE_MOTOR_CONTROL_GET_DIGITAL:
+    296                      if(Get_Digital(buffer) == TRUE)
+    297                      {
+    298                          retval = NVO_RS_READY;
+    299                      }
+    300                      break;
+    301          
+    302                  case API220_OPCODE_MOTOR_CONTROL_GET_ERROR:
+    303                      if(Get_Error(buffer) == TRUE)
+    304                      {
+    305                          retval = NVO_RS_READY;
+    306                      }
+    307                      break;
+    308          
+    309                  case API220_OPCODE_MOTOR_CONTROL_SET_DIGITAL:
+    310                      if(Set_Digital(buffer) == TRUE)
+    311                      {
+    312                          retval = NVO_RS_READY;
+    313                      }
+    314                      break;
+    315          
+    316          
+    317                  case API220_OPCODE_MOTOR_CONTROL_GET_ANALOG:
+    318                      if(Get_Analog(buffer) == TRUE)
+    319                      {
+    320                          retval = NVO_RS_READY;
+    321                      }
+    322                      break;
+    323          
+    324          
+    325                  case API220_OPCODE_MOTOR_CONTROL_SET_ANALOG:
+    326                      if(Set_Analog(buffer) == TRUE)
+    327                      {
+    328                          retval = NVO_RS_READY;
+    329                      }
+    330                      break;
+    331          
+    332          
+    333                  case API220_OPCODE_MOTOR_CONTROL_MANUAL_CONTROL:
+    334                      if(Manual_Control(buffer) == TRUE)
+    335                      {
+    336                          retval = NVO_RS_READY;
+    337                      }
+    338                      break;
+    339          
+    340          
+    341                  case API220_OPCODE_MOTOR_CONTROL_PUBLISH_PERIOD:
+    342                      if(Set_Data_Periodically_Publish(buffer) == TRUE)
+    343                      {
+    344                          retval = NVO_RS_READY;
+    345                      }
+    346                      break;
+    347          #endif
+    348          
+    349          #if (MCI_FVT_TESTS == ENABLED)
+    350          
+    351                  case API220_OPCODE_MOTOR_CONTROL_FVT:
+    352                      if(Api220_Fvt_Mode(buffer) == TRUE)
+   \   00000010   0x7985             LDRB     R5,[R0, #+6]
+   \   00000012   0x7940             LDRB     R0,[R0, #+5]
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x2801             CMP      R0,#+1
+   \   00000018   0xD015             BEQ.N    ??APIMotorControl__CommandParser_1
+   \   0000001A   0xD333             BCC.N    ??APIMotorControl__CommandParser_2
+   \   0000001C   0x2803             CMP      R0,#+3
+   \   0000001E   0xD001             BEQ.N    ??APIMotorControl__CommandParser_3
+   \   00000020   0xD303             BCC.N    ??APIMotorControl__CommandParser_4
+   \   00000022   0xE02F             B.N      ??APIMotorControl__CommandParser_2
+   \                     ??APIMotorControl__CommandParser_3: (+1)
+   \   00000024   0x.... 0x....      BL       Publish_Fvt_Result
+   \   00000028   0xE02B             B.N      ??APIMotorControl__CommandParser_5
+   \                     ??APIMotorControl__CommandParser_4: (+1)
+   \   0000002A   0x2306             MOVS     R3,#+6
+   \   0000002C   0x220F             MOVS     R2,#+15
+   \   0000002E   0x2112             MOVS     R1,#+18
+   \   00000030   0x20DC             MOVS     R0,#+220
+   \   00000032   0x.... 0x....      BL       Reveal__NewFeedback
+   \   00000036   0x0006             MOVS     R6,R0
+   \   00000038   0xD02B             BEQ.N    ??APIMotorControl__CommandParser_6
+   \   0000003A   0x4628             MOV      R0,R5
+   \   0000003C   0x.... 0x....      BL       Mci__FvtStop
+   \   00000040   0x4607             MOV      R7,R0
+   \   00000042   0x2102             MOVS     R1,#+2
+   \   00000044   0xE00F             B.N      ??APIMotorControl__CommandParser_7
+   \                     ??APIMotorControl__CommandParser_1: (+1)
+   \   00000046   0x2306             MOVS     R3,#+6
+   \   00000048   0x220F             MOVS     R2,#+15
+   \   0000004A   0x2112             MOVS     R1,#+18
+   \   0000004C   0x20DC             MOVS     R0,#+220
+   \   0000004E   0x.... 0x....      BL       Reveal__NewFeedback
+   \   00000052   0x0006             MOVS     R6,R0
+   \   00000054   0xD01D             BEQ.N    ??APIMotorControl__CommandParser_6
+   \   00000056   0x4628             MOV      R0,R5
+   \   00000058   0x.... 0x....      BL       Mci__FvtStart
+   \   0000005C   0x4607             MOV      R7,R0
+   \   0000005E   0x....             LDR.N    R1,??DataTable7
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0x7088             STRB     R0,[R1, #+2]
+   \   00000064   0x2101             MOVS     R1,#+1
+   \                     ??APIMotorControl__CommandParser_7: (+1)
+   \   00000066   0x4630             MOV      R0,R6
+   \   00000068   0x.... 0x....      BL       Reveal__AddDataU8
+   \   0000006C   0x4629             MOV      R1,R5
+   \   0000006E   0x4630             MOV      R0,R6
+   \   00000070   0x.... 0x....      BL       Reveal__AddDataU8
+   \   00000074   0xB2F9             UXTB     R1,R7
+   \   00000076   0x4630             MOV      R0,R6
+   \   00000078   0x.... 0x....      BL       Reveal__AddDataU8
+   \   0000007C   0x4630             MOV      R0,R6
+   \   0000007E   0x.... 0x....      BL       Reveal__QueueCommand
+   \                     ??APIMotorControl__CommandParser_5: (+1)
+   \   00000082   0x4601             MOV      R1,R0
+   \                     ??APIMotorControl__CommandParser_2: (+1)
+   \   00000084   0x2901             CMP      R1,#+1
+   \   00000086   0xD104             BNE.N    ??APIMotorControl__CommandParser_6
+    353                      {
+    354                          retval = NVO_RS_READY;
+   \   00000088   0x2400             MOVS     R4,#+0
+    355                      }
+    356                      break;
+    357          
+    358          #endif
+    359          
+    360          #if(API220_DEBUG_MODE == ENABLED)
+    361          
+    362                  case API220_OPCODE_MOTOR_CONTROL_DEBUG:
+    363                      if(Command_Api220_Debug_Mode(buffer) == TRUE)
+    364                      {
+    365                          retval = NVO_RS_READY;
+    366                      }
+    367                      break;
+    368          
+    369          #endif
+    370          
+    371                  default:
+    372                      retval = NVO_RS_UNSUP_OP_CODE;
+    373                      break;
+    374              }
+    375          
+    376              return(retval);
+   \   0000008A   0x4620             MOV      R0,R4
+   \   0000008C   0xB001             ADD      SP,SP,#+4
+   \   0000008E   0xBDF0             POP      {R4-R7,PC}
+   \                     ??APIMotorControl__CommandParser_0: (+1)
+   \   00000090   0x2405             MOVS     R4,#+5
+   \                     ??APIMotorControl__CommandParser_6: (+1)
+   \   00000092   0x4620             MOV      R0,R4
+   \   00000094   0xB001             ADD      SP,SP,#+4
+   \   00000096   0xBDF0             POP      {R4-R7,PC}       ;; return
+    377          }
+    378          
+    379          
+    380          
+    381          
+    382          //---------------------------------------------------------------------------------------------------------------------
+    383          /**
+    384           *  @brief      Parses a feedback arrived from Reveal.
+    385           *  @param      buffer - Pointer to the arrived buffer from Reveal.
+    386           */
+
+   \                                 In section .text, align 2, keep-with-next
+    387          void APIMotorControl__FeedbackParser(REVEAL_MSG_TYPE *buffer)
+                                                                       ^
+Remark[Pe826]: parameter "buffer" was never referenced
+    388          {
+    389          
+    390          }
+   \                     APIMotorControl__FeedbackParser: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    391          
+    392          
+    393          
+    394          
+    395          //---------------------------------------------------------------------------------------------------------------------
+    396          /**
+    397           *  @brief      Parses a acknowledge arrived from Reveal.
+    398           *  @param      address - source address
+    399           *  @param      api - received api
+    400           *  @param      opcode - received opcode
+    401           *  @param      reasoncode - recipe status
+    402           */
+
+   \                                 In section .text, align 2, keep-with-next
+    403          void APIMotorControl__AckParser(uint8 address, uint8 api, uint8 opcode, REVEAL_RECIPE_STATUS_TYPE reasoncode)
+                                                       ^
+Remark[Pe826]: parameter "address" was never referenced
+
+  void APIMotorControl__AckParser(uint8 address, uint8 api, uint8 opcode, REVEAL_RECIPE_STATUS_TYPE reasoncode)
+                                                       ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",403  Remark[Pe826]: 
+          parameter "api" was never referenced
+
+  void APIMotorControl__AckParser(uint8 address, uint8 api, uint8 opcode, REVEAL_RECIPE_STATUS_TYPE reasoncode)
+                                                                  ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",403  Remark[Pe826]: 
+          parameter "opcode" was never referenced
+
+  void APIMotorControl__AckParser(uint8 address, uint8 api, uint8 opcode, REVEAL_RECIPE_STATUS_TYPE reasoncode)
+                                                                                                    ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",403  Remark[Pe826]: 
+          parameter "reasoncode" was never referenced
+    404          {
+    405          
+    406          }
+   \                     APIMotorControl__AckParser: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    407          
+    408          
+    409          
+    410          
+    411          //---------------------------------------------------------------------------------------------------------------------
+    412          /**
+    413           * @brief       Run the motor and publishes the request on Reveal protocol
+    414           * @param       motor indexer to the desired motor
+    415           * @param       target define the target speed
+    416           * @param       ramp define the acceleration of the motor
+    417           * @return      MCI_CMD_RESPONSE_TYPE ret_val: Returns whether Mci has accepted
+    418           */
+
+   \                                 In section .text, align 2, keep-with-next
+    419          void APIMotorControl__PublishRun(MOTOR_ENUM_TYPE motor, sint32 target, sint32 ramp, MCI_CMD_RESPONSE_TYPE mci_feedback)
+    420          {
+   \                     APIMotorControl__PublishRun: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0x4680             MOV      R8,R0
+   \   00000006   0x....             LDR.N    R0,??DataTable7
+   \   00000008   0xEB00 0x0488      ADD      R4,R0,R8, LSL #+2
+   \   0000000C   0xB081             SUB      SP,SP,#+4
+   \   0000000E   0x6920             LDR      R0,[R4, #+16]
+   \   00000010   0x460D             MOV      R5,R1
+   \   00000012   0x4616             MOV      R6,R2
+   \   00000014   0x461F             MOV      R7,R3
+   \   00000016   0x42A8             CMP      R0,R5
+   \   00000018   0xBF04             ITT      EQ 
+   \   0000001A   0x6960             LDREQ    R0,[R4, #+20]
+   \   0000001C   0x42B0             CMPEQ    R0,R6
+   \   0000001E   0xD01C             BEQ.N    ??APIMotorControl__PublishRun_0
+    421              REVEAL_COMMAND_TYPE *command;
+    422          
+    423              // Check if the new command is different of the previous one
+    424              if( (Last_Speed_Target[motor] != target)   ||
+    425                  (Last_Ramp_Target[motor] != ramp)      )
+    426              {
+    427                  // Either speed target or acceleration is different, so, publish the new request
+    428                  // Check and stack if available a new Reveal feedback
+    429                  command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_RUN, REVEAL_BROADCAST_NODE, 6);
+   \   00000020   0x2306             MOVS     R3,#+6
+   \   00000022   0x220F             MOVS     R2,#+15
+   \   00000024   0x2101             MOVS     R1,#+1
+   \   00000026   0x20DC             MOVS     R0,#+220
+   \   00000028   0x.... 0x....      BL       Reveal__NewFeedback
+   \   0000002C   0xEA5F 0x0900      MOVS     R9,R0
+    430                  if(command != NULL)
+   \   00000030   0xD011             BEQ.N    ??APIMotorControl__PublishRun_1
+    431                  {
+    432                      // Build and enqueue the Reveal buffer with the required feedback
+    433                      Reveal__AddDataU8(command, motor);
+   \   00000032   0x4641             MOV      R1,R8
+   \   00000034   0x.... 0x....      BL       Reveal__AddDataU8
+    434                      Reveal__AddDataU16(command, target);
+   \   00000038   0xB2A9             UXTH     R1,R5
+   \   0000003A   0x4648             MOV      R0,R9
+   \   0000003C   0x.... 0x....      BL       Reveal__AddDataU16
+    435                      Reveal__AddDataU16(command, ramp);
+   \   00000040   0xB2B1             UXTH     R1,R6
+   \   00000042   0x4648             MOV      R0,R9
+   \   00000044   0x.... 0x....      BL       Reveal__AddDataU16
+    436                      Reveal__AddDataU8(command, (uint8)mci_feedback);
+   \   00000048   0xB2F9             UXTB     R1,R7
+   \   0000004A   0x4648             MOV      R0,R9
+   \   0000004C   0x.... 0x....      BL       Reveal__AddDataU8
+    437          
+    438                      Reveal__QueueCommand(command);
+   \   00000050   0x4648             MOV      R0,R9
+   \   00000052   0x.... 0x....      BL       Reveal__QueueCommand
+    439                  }
+    440          
+    441                  Last_Speed_Target[motor] = target;
+   \                     ??APIMotorControl__PublishRun_1: (+1)
+   \   00000056   0x6125             STR      R5,[R4, #+16]
+    442                  Last_Ramp_Target[motor] = ramp;
+   \   00000058   0x6166             STR      R6,[R4, #+20]
+    443              }
+    444          }
+   \                     ??APIMotorControl__PublishRun_0: (+1)
+   \   0000005A   0xB001             ADD      SP,SP,#+4
+   \   0000005C   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+    445          
+    446          
+    447          
+    448          //---------------------------------------------------------------------------------------------------------------------
+    449          /**
+    450           * @brief       Run the motor and publishes the request on Reveal protocol
+    451           * @param       motor indexer to the desired motor
+    452           * @param       target define the target speed
+    453           * @param       ramp define the acceleration of the motor
+    454           * @return      MCI_CMD_RESPONSE_TYPE ret_val: Returns whether Mci has accepted
+    455           */
+
+   \                                 In section .text, align 2, keep-with-next
+    456          void APIMotorControl__PublishManualInjection(MOTOR_ENUM_TYPE motor, MCI_INJECTION_TYPE method, sint32 level_target, sint32 level_rate, sint32 parameter, sint32 param_rate, MCI_CMD_RESPONSE_TYPE mci_feedback)
+                                                                                                                                            ^
+Remark[Pe826]: parameter "level_rate" was never referenced
+
+  void APIMotorControl__PublishManualInjection(MOTOR_ENUM_TYPE motor, MCI_INJECTION_TYPE method, sint32 level_target, sint32 level_rate, sint32 parameter, sint32 param_rate, MCI_CMD_RESPONSE_TYPE mci_feedback)
+                                                                                                                                                                  ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",456  Remark[Pe826]: 
+          parameter "param_rate" was never referenced
+    457          {
+   \                     APIMotorControl__PublishManualInjection: (+1)
+   \   00000000   0xE92D 0x46F0      PUSH     {R4-R7,R9,R10,LR}
+   \   00000004   0x4604             MOV      R4,R0
+    458              REVEAL_COMMAND_TYPE *command;
+    459          
+    460              // Check if the new command is different of the previous one
+    461              if( (Last_Manual_Injection_Method[motor] != method)   ||
+    462                  (Last_Manual_Injection_Level_Target[motor] != level_target)   ||
+    463                  (Last_Manual_Injection_Parameter[motor] != parameter)      )
+   \   00000006   0x....             LDR.N    R7,??DataTable7
+   \   00000008   0xB081             SUB      SP,SP,#+4
+   \   0000000A   0x5DE0             LDRB     R0,[R4, R7]
+   \   0000000C   0x9E08             LDR      R6,[SP, #+32]
+   \   0000000E   0x460D             MOV      R5,R1
+   \   00000010   0x4691             MOV      R9,R2
+   \   00000012   0x42A8             CMP      R0,R5
+   \   00000014   0xBF02             ITTT     EQ 
+   \   00000016   0xEB07 0x0084      ADDEQ    R0,R7,R4, LSL #+2
+   \   0000001A   0x6981             LDREQ    R1,[R0, #+24]
+   \   0000001C   0x4549             CMPEQ    R1,R9
+   \   0000001E   0xBF04             ITT      EQ 
+   \   00000020   0x69C0             LDREQ    R0,[R0, #+28]
+   \   00000022   0x42B0             CMPEQ    R0,R6
+   \   00000024   0xD01C             BEQ.N    ??APIMotorControl__PublishManualInjection_0
+    464              {
+    465                  // Either speed target or acceleration is different, so, publish the new request
+    466                  // Check and stack if available a new Reveal feedback
+    467                  command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_MANUAL_CONTROL, REVEAL_BROADCAST_NODE, 3);
+   \   00000026   0x2303             MOVS     R3,#+3
+   \   00000028   0x220F             MOVS     R2,#+15
+   \   0000002A   0x2107             MOVS     R1,#+7
+   \   0000002C   0x20DC             MOVS     R0,#+220
+   \   0000002E   0x.... 0x....      BL       Reveal__NewFeedback
+   \   00000032   0xEA5F 0x0A00      MOVS     R10,R0
+    468                  if(command != NULL)
+   \   00000036   0xD00D             BEQ.N    ??APIMotorControl__PublishManualInjection_1
+    469                  {
+    470                      // Build and enqueue the Reveal buffer with the required feedback
+    471                      Reveal__AddDataU8(command, motor);
+   \   00000038   0x4621             MOV      R1,R4
+   \   0000003A   0x.... 0x....      BL       Reveal__AddDataU8
+    472                      Reveal__AddDataU8(command, method);
+   \   0000003E   0x4629             MOV      R1,R5
+   \   00000040   0x4650             MOV      R0,R10
+   \   00000042   0x.... 0x....      BL       Reveal__AddDataU8
+    473                      Reveal__AddDataU8(command, (uint8)mci_feedback);
+   \   00000046   0x990A             LDR      R1,[SP, #+40]
+   \   00000048   0x4650             MOV      R0,R10
+   \   0000004A   0x.... 0x....      BL       Reveal__AddDataU8
+    474          
+    475                      Reveal__QueueCommand(command);
+   \   0000004E   0x4650             MOV      R0,R10
+   \   00000050   0x.... 0x....      BL       Reveal__QueueCommand
+    476                  }
+    477          
+    478                  Last_Manual_Injection_Method[motor] = method;
+   \                     ??APIMotorControl__PublishManualInjection_1: (+1)
+   \   00000054   0x55E5             STRB     R5,[R4, R7]
+    479                  Last_Manual_Injection_Level_Target[motor] = level_target;
+   \   00000056   0xEB07 0x0084      ADD      R0,R7,R4, LSL #+2
+   \   0000005A   0xF8C0 0x9018      STR      R9,[R0, #+24]
+    480                  Last_Manual_Injection_Parameter[motor] = parameter;
+   \   0000005E   0x61C6             STR      R6,[R0, #+28]
+    481              }
+    482          }
+   \                     ??APIMotorControl__PublishManualInjection_0: (+1)
+   \   00000060   0xB001             ADD      SP,SP,#+4
+   \   00000062   0xE8BD 0x86F0      POP      {R4-R7,R9,R10,PC}  ;; return
+    483          
+    484          
+    485          
+    486          
+    487          //---------------------------------------------------------------------------------------------------------------------
+    488          /**
+    489           * @brief       Request to stop the motor regardless the free spot on the Reveal stack.
+    490           *              E.g., the stop command will be performed even if the Reveal stack is full.
+    491           * @param       motor indexer to the desired motor
+    492           * @param       ramp define the deceleration of the motor
+    493           * @return      MCI_CMD_RESPONSE_TYPE ret_val: Returns whether Mci has accepted
+    494           */
+
+   \                                 In section .text, align 2, keep-with-next
+    495          void APIMotorControl__PublishStop(MOTOR_ENUM_TYPE motor, sint32 ramp, MCI_CMD_RESPONSE_TYPE mci_feedback)
+    496          {
+   \                     APIMotorControl__PublishStop: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4605             MOV      R5,R0
+   \   00000006   0x....             LDR.N    R0,??DataTable7
+   \   00000008   0xEB00 0x0785      ADD      R7,R0,R5, LSL #+2
+   \   0000000C   0x460C             MOV      R4,R1
+   \   0000000E   0x6938             LDR      R0,[R7, #+16]
+   \   00000010   0x4616             MOV      R6,R2
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xBF04             ITT      EQ 
+   \   00000016   0x6978             LDREQ    R0,[R7, #+20]
+   \   00000018   0x42A0             CMPEQ    R0,R4
+   \   0000001A   0xD019             BEQ.N    ??APIMotorControl__PublishStop_0
+    497              REVEAL_COMMAND_TYPE *command;
+    498          
+    499              // Check if the new command is different of the previous one
+    500              if( (Last_Speed_Target[motor] != 0)   ||
+    501                  (Last_Ramp_Target[motor] != ramp)      )
+    502              {
+    503                  // if so, publish the event to Reveal network
+    504                  command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_STOP, REVEAL_BROADCAST_NODE, 4);
+   \   0000001C   0x2304             MOVS     R3,#+4
+   \   0000001E   0x220F             MOVS     R2,#+15
+   \   00000020   0x2102             MOVS     R1,#+2
+   \   00000022   0x20DC             MOVS     R0,#+220
+   \   00000024   0x.... 0x....      BL       Reveal__NewFeedback
+   \   00000028   0xEA5F 0x0800      MOVS     R8,R0
+    505                  if(command != NULL)
+   \   0000002C   0xD00D             BEQ.N    ??APIMotorControl__PublishStop_1
+    506                  {
+    507                      // Build and enqueue the Reveal buffer with the required feedback
+    508                      Reveal__AddDataU8(command, motor);
+   \   0000002E   0x4629             MOV      R1,R5
+   \   00000030   0x.... 0x....      BL       Reveal__AddDataU8
+    509                      Reveal__AddDataU16(command, (uint16)ramp);
+   \   00000034   0xB2A1             UXTH     R1,R4
+   \   00000036   0x4640             MOV      R0,R8
+   \   00000038   0x.... 0x....      BL       Reveal__AddDataU16
+    510                      Reveal__AddDataU8(command, (uint8)mci_feedback);
+   \   0000003C   0xB2F1             UXTB     R1,R6
+   \   0000003E   0x4640             MOV      R0,R8
+   \   00000040   0x.... 0x....      BL       Reveal__AddDataU8
+    511          
+    512                      Reveal__QueueCommand(command);
+   \   00000044   0x4640             MOV      R0,R8
+   \   00000046   0x.... 0x....      BL       Reveal__QueueCommand
+    513                  }
+    514          
+    515                  Last_Speed_Target[motor] = 0;
+   \                     ??APIMotorControl__PublishStop_1: (+1)
+   \   0000004A   0x2000             MOVS     R0,#+0
+   \   0000004C   0x6138             STR      R0,[R7, #+16]
+    516                  Last_Ramp_Target[motor] = ramp;
+   \   0000004E   0x617C             STR      R4,[R7, #+20]
+    517              }
+    518          }
+   \                     ??APIMotorControl__PublishStop_0: (+1)
+   \   00000050   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    519          
+    520          
+    521          
+    522          
+    523          //---------------------------------------------------------------------------------------------------------------------
+    524          /**
+    525           * @brief       Set digital command - this command is used to set or reset a flag inside the Mci layer.
+    526           *              Note: the set digital command shall be performed only in the case that a free spot was
+    527           *              found in the Reveal queue, otherwise, the set command shall be denied. This action is required
+    528           *              to proper synchronize integrated Mci requests with Reveal event generation.
+    529           * @param       motor indexer to the desired motor
+    530           * @param       write_data selects which flags is desired to be written
+    531           * @param       value TRUE sets a flag; FALSE resets a flag
+    532           * @return      TRUE parameters were accepted; FALSE parameter write is denied
+    533           */
+
+   \                                 In section .text, align 2, keep-with-next
+    534          void APIMotorControl__PublishSetDigital(MOTOR_ENUM_TYPE motor, MCI_DO_TYPE write_data, uint8 value, uint8 mci_feedback)
+    535          {
+   \                     APIMotorControl__PublishSetDigital: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x4605             MOV      R5,R0
+   \   00000006   0x4614             MOV      R4,R2
+   \   00000008   0x461E             MOV      R6,R3
+    536              REVEAL_COMMAND_TYPE *command;
+    537              BOOL_TYPE temp;
+    538          
+    539              if(write_data < MCI_DO_NR_OF_DO)
+   \   0000000A   0xBB69             CBNZ.N   R1,??APIMotorControl__PublishSetDigital_0
+    540              {
+    541                  temp = GET_TRUE_FALSE(value);
+   \   0000000C   0x1E60             SUBS     R0,R4,#+1
+   \   0000000E   0x4180             SBCS     R0,R0,R0
+    542          
+    543                  if(GET_TRUE_FALSE(BIT_TEST(Last_Digital_Output[motor], write_data)) != temp)
+   \   00000010   0x....             LDR.N    R1,??DataTable7
+   \   00000012   0x186F             ADDS     R7,R5,R1
+   \   00000014   0x43C0             MVNS     R0,R0
+   \   00000016   0x7879             LDRB     R1,[R7, #+1]
+   \   00000018   0xF001 0x0101      AND      R1,R1,#0x1
+   \   0000001C   0xEBB1 0x7FD0      CMP      R1,R0, LSR #+31
+   \   00000020   0xD022             BEQ.N    ??APIMotorControl__PublishSetDigital_0
+    544                  {
+    545                      // Check if there is a free spot in the Reveal queue
+    546                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_SET_DIGITAL, REVEAL_BROADCAST_NODE, 4);
+   \   00000022   0x2304             MOVS     R3,#+4
+   \   00000024   0x220F             MOVS     R2,#+15
+   \   00000026   0x2104             MOVS     R1,#+4
+   \   00000028   0x20DC             MOVS     R0,#+220
+   \   0000002A   0x.... 0x....      BL       Reveal__NewFeedback
+   \   0000002E   0xEA5F 0x0800      MOVS     R8,R0
+    547                      if(command != NULL)
+   \   00000032   0xD019             BEQ.N    ??APIMotorControl__PublishSetDigital_0
+    548                      {
+    549                          // Build and enqueue the Reveal buffer with the required feedback
+    550                          Reveal__AddDataU8(command, motor);
+   \   00000034   0x4629             MOV      R1,R5
+   \   00000036   0x.... 0x....      BL       Reveal__AddDataU8
+    551                          Reveal__AddDataU8(command, write_data);
+   \   0000003A   0x2100             MOVS     R1,#+0
+   \   0000003C   0x4640             MOV      R0,R8
+   \   0000003E   0x.... 0x....      BL       Reveal__AddDataU8
+    552                          Reveal__AddDataU8(command, value);
+   \   00000042   0x4621             MOV      R1,R4
+   \   00000044   0x4640             MOV      R0,R8
+   \   00000046   0x.... 0x....      BL       Reveal__AddDataU8
+    553                          Reveal__AddDataU8(command, mci_feedback);
+   \   0000004A   0x4631             MOV      R1,R6
+   \   0000004C   0x4640             MOV      R0,R8
+   \   0000004E   0x.... 0x....      BL       Reveal__AddDataU8
+    554          
+    555                          Reveal__QueueCommand(command);
+   \   00000052   0x4640             MOV      R0,R8
+   \   00000054   0x.... 0x....      BL       Reveal__QueueCommand
+    556          
+    557                          if(!value)
+   \   00000058   0x7878             LDRB     R0,[R7, #+1]
+   \   0000005A   0x2C00             CMP      R4,#+0
+   \   0000005C   0xBF0C             ITE      EQ 
+    558                          {
+    559                              BIT_CLR(Last_Digital_Output[motor], write_data);
+   \   0000005E   0xF000 0x00FE      ANDEQ    R0,R0,#0xFE
+    560                          }
+    561                          else
+    562                          {
+    563                              BIT_SET(Last_Digital_Output[motor], write_data);
+   \   00000062   0xF040 0x0001      ORRNE    R0,R0,#0x1
+   \   00000066   0x7078             STRB     R0,[R7, #+1]
+    564                          }
+    565                      }
+    566                  }
+    567              }
+    568          }
+   \                     ??APIMotorControl__PublishSetDigital_0: (+1)
+   \   00000068   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    569          
+    570          
+    571          
+    572          
+    573          //---------------------------------------------------------------------------------------------------------------------
+    574          /**
+    575           * @brief       Set analog command - this command is used to write an analog value inside the Mci layer.
+    576           *              Note: the set analog command shall be performed only in the case that a free spot was
+    577           *              found in the Reveal queue, otherwise, the set command shall be denied. This action is required
+    578           *              to proper synchronize integrated Mci requests with Reveal event generation.
+    579           * @param       motor indexer to the desired motor
+    580           * @param       write_data selects which data is desired to be written
+    581           * @param       value defines the value to be written to the variable
+    582           * @return      TRUE command and parameters were accepted; FALSE either command or parameter write is denied
+    583           */
+
+   \                                 In section .text, align 2, keep-with-next
+    584          void APIMotorControl__PublishSetAnalog(MOTOR_ENUM_TYPE motor, MCI_AO_TYPE write_data, sint32 value, uint8 mci_feedback)
+    585          {
+   \                     APIMotorControl__PublishSetAnalog: (+1)
+   \   00000000   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \   00000004   0x460D             MOV      R5,R1
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x4604             MOV      R4,R0
+   \   0000000A   0x4616             MOV      R6,R2
+   \   0000000C   0x4698             MOV      R8,R3
+    586              REVEAL_COMMAND_TYPE *command;
+    587          
+    588              if(write_data < MCI_AO_NR_OF_AO)
+   \   0000000E   0x2D08             CMP      R5,#+8
+   \   00000010   0xDA23             BGE.N    ??APIMotorControl__PublishSetAnalog_0
+    589              {
+    590                  if(Last_Analog_Output[motor][write_data] != value)
+   \   00000012   0x....             LDR.N    R1,??DataTable7
+   \   00000014   0xEB01 0x1144      ADD      R1,R1,R4, LSL #+5
+   \   00000018   0xEB01 0x0785      ADD      R7,R1,R5, LSL #+2
+   \   0000001C   0x6A38             LDR      R0,[R7, #+32]
+   \   0000001E   0x42B0             CMP      R0,R6
+   \   00000020   0xD01B             BEQ.N    ??APIMotorControl__PublishSetAnalog_0
+    591                  {
+    592                      // Check if there is a free spot in the Reveal queue
+    593                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_SET_ANALOG , REVEAL_BROADCAST_NODE, 5);
+   \   00000022   0x2305             MOVS     R3,#+5
+   \   00000024   0x220F             MOVS     R2,#+15
+   \   00000026   0x2106             MOVS     R1,#+6
+   \   00000028   0x20DC             MOVS     R0,#+220
+   \   0000002A   0x.... 0x....      BL       Reveal__NewFeedback
+   \   0000002E   0xEA5F 0x0900      MOVS     R9,R0
+    594                      if(command != NULL)
+   \   00000032   0xD012             BEQ.N    ??APIMotorControl__PublishSetAnalog_0
+    595                      {
+    596                          // and build and enqueue the Reveal buffer with the required feedback
+    597                          Reveal__AddDataU8(command, motor);
+   \   00000034   0x4621             MOV      R1,R4
+   \   00000036   0x.... 0x....      BL       Reveal__AddDataU8
+    598                          Reveal__AddDataU8(command, write_data);
+   \   0000003A   0x4629             MOV      R1,R5
+   \   0000003C   0x4648             MOV      R0,R9
+   \   0000003E   0x.... 0x....      BL       Reveal__AddDataU8
+    599                          Reveal__AddDataS16(command, value);
+   \   00000042   0xB231             SXTH     R1,R6
+   \   00000044   0x4648             MOV      R0,R9
+   \   00000046   0x.... 0x....      BL       Reveal__AddDataS16
+    600                          Reveal__AddDataU8(command, mci_feedback);
+   \   0000004A   0x4641             MOV      R1,R8
+   \   0000004C   0x4648             MOV      R0,R9
+   \   0000004E   0x.... 0x....      BL       Reveal__AddDataU8
+    601          
+    602                          Reveal__QueueCommand(command);
+   \   00000052   0x4648             MOV      R0,R9
+   \   00000054   0x.... 0x....      BL       Reveal__QueueCommand
+    603          
+    604                          Last_Analog_Output[motor][write_data] = value;
+   \   00000058   0x623E             STR      R6,[R7, #+32]
+    605                      }
+    606                  }
+    607              }
+    608          }
+   \                     ??APIMotorControl__PublishSetAnalog_0: (+1)
+   \   0000005A   0xB001             ADD      SP,SP,#+4
+   \   0000005C   0xE8BD 0x83F0      POP      {R4-R9,PC}       ;; return
+
+   \                                 In section .bss, align 4
+   \                     Last_Manual_Injection_Method:
+   \   00000000                      DS8 1
+   \   00000001                      DS8 1
+   \   00000002                      DS8 1
+   \   00000003                      DS8 1
+   \   00000004                      DS8 1
+   \   00000005                      DS8 3
+   \   00000008                      DS8 4
+   \   0000000C                      DS8 4
+   \   00000010                      DS8 4
+   \   00000014                      DS8 4
+   \   00000018                      DS8 4
+   \   0000001C                      DS8 4
+   \   00000020                      DS8 32
+   \   00000040                      DS8 156
+    609          
+    610          
+    611          
+    612          
+    613          //=====================================================================================================================
+    614          //-------------------------------------- Private Functions ------------------------------------------------------------
+    615          //=====================================================================================================================
+    616          
+    617          
+    618          
+    619          
+    620          //---------------------------------------------------------------------------------------------------------------------
+    621          /*
+    622           * @brief       Set a new target speed and invoke the Mci run command.
+    623           * @param       buffer - a pointer to the received Reveal buffer.
+    624           * @return      Returns whether Mci has accepted or not the command; TRUE = accepted; FALSE = denied
+    625           */
+    626          uint8 Run_Motor(REVEAL_MSG_TYPE *buffer)
+    627          {
+    628          #ifdef API220_ENABLE_MCI_CALLS
+    629          
+    630              uint8 ret_val;
+    631              MOTOR_ENUM_TYPE motor_index;
+    632              sint16 target_speed;
+    633              sint16 target_accel;
+    634              #ifndef ENABLE_API220_CALLBACKS
+    635                  MCI_CMD_RESPONSE_TYPE feedback;
+    636                  REVEAL_COMMAND_TYPE *command;
+    637              #endif
+    638          
+    639              ret_val = FALSE;                                // Default answer is FALSE
+    640          
+    641              if(buffer->sdu_length == 7)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+    642              {
+    643                  // Build up the data from the Reveal buffer
+    644                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+    645                  target_speed = ((sint16)(buffer->payload[1])<<8) + buffer->payload[2];
+    646                  target_accel = ((sint16)(buffer->payload[3])<<8) + buffer->payload[4];
+    647          
+    648                  #ifdef ENABLE_API220_CALLBACKS
+    649          
+    650                      // Invoke Mci
+    651                      Mci__Run(motor_index, target_speed, target_accel);
+    652          
+    653                      ret_val = TRUE;
+    654          
+    655                  #else
+    656          
+    657                      // Invoke Mci run and read its feedback
+    658                      feedback = Mci__Run(motor_index, target_speed, target_accel);
+    659          
+    660                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_RUN, REVEAL_BROADCAST_NODE, 6);
+    661                      if(command != NULL)
+    662                      {
+    663                          // Build and enqueue the Reveal buffer with the required feedback
+    664                          Reveal__AddDataU8(command, motor_index);
+    665                          Reveal__AddDataU16(command, target_speed);
+    666                          Reveal__AddDataU16(command, target_accel);
+    667                          Reveal__AddDataU8(command, (uint8)feedback);
+    668          
+    669                          ret_val = Reveal__QueueCommand(command);
+    670                      }
+    671          
+    672                  #endif
+    673          
+    674                  // Set the last commands to internal variables.
+    675                  Last_Speed_Target[motor_index] = target_speed;
+    676                  Last_Ramp_Target[motor_index] = target_accel;
+    677              }
+    678          
+    679              return(ret_val);
+    680          
+    681          #else
+    682          
+    683              return(FALSE);
+    684          
+    685          #endif
+    686          }
+    687          
+    688          
+    689          
+    690          
+    691          //---------------------------------------------------------------------------------------------------------------------
+    692          /*
+    693           * @brief       Request to stop the motor by invoking the Mci stop command.
+    694           * @param       buffer - a pointer to the received Reveal buffer.
+    695           * @return      Returns whether Mci has accepted or not the command; TRUE = accepted; FALSE = denied
+    696           */
+
+   \                                 In section .bss, align 2
+    697          volatile unsigned short stop_motor_counter;
+   \                     stop_motor_counter:
+   \   00000000                      DS8 2
+
+   \                                 In section .bss, align 2
+    698          volatile unsigned short stop_motor_counter1;
+   \                     stop_motor_counter1:
+   \   00000000                      DS8 2
+    699          uint8 Stop_Motor(REVEAL_MSG_TYPE *buffer)
+    700          {
+    701          #ifdef API220_ENABLE_MCI_CALLS
+    702          
+    703              uint8 ret_val;
+    704              MOTOR_ENUM_TYPE motor_index;
+    705              sint16 target_accel;
+    706              #ifndef ENABLE_API220_CALLBACKS
+    707                  MCI_CMD_RESPONSE_TYPE feedback;
+    708                  REVEAL_COMMAND_TYPE *command;
+    709              #endif
+    710          
+    711              ret_val = FALSE;                                // Default answer is FALSE
+    712          
+    713              stop_motor_counter++;
+    714          
+    715              if(buffer->sdu_length == 5)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+    716              {
+    717                  stop_motor_counter1++;
+    718          
+    719                  // Build up the data from the Reveal buffer
+    720                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+    721                  target_accel = ((sint16)(buffer->payload[1])<<8) + buffer->payload[2];
+    722          
+    723                  // Set the last commands to internal variables.
+    724                  Last_Speed_Target[motor_index] = 0;
+    725                  Last_Ramp_Target[motor_index] = target_accel;
+    726          
+    727                  #ifdef ENABLE_API220_CALLBACKS
+    728          
+    729                      // Invoke Mci stop
+    730                      Mci__Stop(motor_index, target_accel);
+    731          
+    732                  #else
+    733          
+    734                      // Invoke Mci stop and read its feedback
+    735                      feedback = Mci__Stop(motor_index, target_accel);
+    736          
+    737                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_STOP, REVEAL_BROADCAST_NODE, 4);
+    738                      if(command != NULL)
+    739                      {
+    740                          // Build and enqueue the Reveal buffer with the required feedback
+    741                          Reveal__AddDataU8(command, motor_index);
+    742                          Reveal__AddDataU16(command, target_accel);
+    743                          Reveal__AddDataU8(command, (uint8)feedback);
+    744          
+    745                          ret_val = Reveal__QueueCommand(command);
+    746                      }
+    747                  #endif
+    748              }
+    749              return(ret_val);
+    750          
+    751          #else
+    752          
+    753              return(FALSE);
+    754          
+    755          #endif
+    756          }
+    757          
+
+   \                                 In section .bss, align 1
+    758          volatile MOTOR_ENUM_TYPE motor_index;
+   \                     motor_index:
+   \   00000000                      DS8 1
+    759          #pragma optimize = none
+    760          
+    761          //---------------------------------------------------------------------------------------------------------------------
+    762          /**
+    763           * @brief       Get all the digital inputs. It parses the command from Reveal, builds up the
+    764           *              buffer and sends it back to the communication buffer.
+    765           * @param       buffer a point to the incoming Reveal buffer
+    766           * @return      TRUE: The variable was successfully changed.
+    767           *              FALSE: The variable could not be changed.
+    768           */
+    769          uint8 Get_Digital(REVEAL_MSG_TYPE *buffer)
+    770          {
+    771              uint8 ret_val;
+    772              MOTOR_ENUM_TYPE motor_index;
+    773          
+    774              ret_val = FALSE;                                // By default, the feedback is always false.
+    775          
+    776              if(buffer->sdu_length == 3)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+    777              {
+    778                  // Recover the data from the Reveal buffer
+    779                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+    780          
+    781                  // Check the sanity of the motor index
+    782                  if(motor_index < API220_NR_OF_CONNECTED_MOTORS)
+    783                  {
+    784                      // Invoke the publishing method with the required feedback
+    785                      Publish_Digital_Input(motor_index, Mci_Digital_Inputs[motor_index]);
+    786          
+    787                      ret_val = TRUE;                         // Command is accepted
+    788                  }
+    789              }
+    790          
+    791              return(ret_val);
+    792          }
+    793          
+    794          
+    795          
+    796          
+    797          //---------------------------------------------------------------------------------------------------------------------
+    798          /**
+    799           * @brief       Get all the digital inputs. It parses the command from Reveal, builds up the
+    800           *              buffer and sends it back to the communication buffer.
+    801           * @param       buffer a point to the incoming Reveal buffer
+    802           * @return      TRUE: The variable was successfully changed.
+    803           *              FALSE: The variable could not be changed.
+    804           */
+    805          uint8 Get_Error(REVEAL_MSG_TYPE *buffer)
+    806          {
+    807              uint8 ret_val;
+    808              MOTOR_ENUM_TYPE motor_index;
+    809              uint8 param_value;
+    810          
+    811              ret_val = FALSE;                                // By default, the feedback is always false.
+    812          
+    813              if(buffer->sdu_length == 4)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+    814              {
+    815                  // Recover the data from the Reveal buffer
+    816                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+    817                  param_value = (uint8)buffer->payload[1];
+    818          
+    819                  // Check the sanity of the motor index
+    820                  if(motor_index < API220_NR_OF_CONNECTED_MOTORS  &&  param_value == 0)
+    821                  {
+    822                      // Invoke the publishing method with the required feedback
+    823                      Publish_Error(motor_index, Mci_Digital_Error[motor_index]);
+    824          
+    825                      ret_val = TRUE;                         // Command is accepted
+    826                  }else if(motor_index < API220_NR_OF_CONNECTED_MOTORS  &&  param_value == 255)
+    827                  {
+    828                  	// Clear error holder
+    829                  	 Mci__ClearError(motor_index);
+    830                      // Update the error
+    831                  	 Mci_Digital_Error[motor_index] = Mci__GetErrorList(motor_index);
+    832                  	 // Invoke the publishing method with the required feedback
+    833                  	 Publish_Error(motor_index, Mci_Digital_Error[motor_index]);
+    834                  	 ret_val = TRUE;                         // Command is accepted
+    835                  }
+    836              }
+    837          
+    838              return(ret_val);
+    839          }
+    840          
+    841          //---------------------------------------------------------------------------------------------------------------------
+    842          /*
+    843           * @brief       Periodically update the digital inputs log from Mci. In the case any bit is changed in the log status,
+    844           *              then the event needs to be published over the Reveal stack.
+    845           */
+    846          void Update_Digital_Inputs(void)
+    847          {
+    848          
+    849              uint32 digital_in_temp[API220_NR_OF_CONNECTED_MOTORS];
+    850              static MOTOR_ENUM_TYPE motor_index = MOTOR0;
+    851          
+    852              // Motor index is handled in a such way that no nested for loops are performed,
+    853              // as the computational effort is decreased, it saves cpu resources, e.g., cpu usage
+    854              // by having only the side effect to take more time to sweep all digital failures
+    855              // configured in the Mci look up tables.
+    856              motor_index++;
+    857              if(motor_index >= API220_NR_OF_CONNECTED_MOTORS)
+    858              {
+    859                  motor_index = MOTOR0;
+    860              }
+    861          
+    862              digital_in_temp[motor_index] = Mci__GetDigitalList(motor_index);
+    863          
+    864              // Check for any differences between the previous log status to the actual one...
+    865              if(Mci_Digital_Inputs[motor_index] != digital_in_temp[motor_index])
+    866              {
+    867              	// If any bit is inverted, then check if the command was properly enqueued on the Reveal buffer
+    868              	// if the command was not enqueued, then, keep trying until the value is sent.
+    869              	if(Publish_Digital_Input(motor_index, digital_in_temp[motor_index]) == TRUE)
+    870              	{
+    871              		// Publish the digital inputs to the Reveal bus
+    872              		Mci_Digital_Inputs[motor_index] = digital_in_temp[motor_index];
+    873              	}
+    874              }
+    875          }
+    876          
+    877          
+    878          
+    879          //---------------------------------------------------------------------------------------------------------------------
+    880          /*
+    881           * @brief       Periodically update the digital inputs log from Mci. In the case any bit is changed in the log status,
+    882           *              then the event needs to be published over the Reveal stack.
+    883           */
+    884          void Update_Error(void)
+    885          {
+    886          
+    887              uint32 error_temp[API220_NR_OF_CONNECTED_MOTORS];
+    888              static MOTOR_ENUM_TYPE motor_index = MOTOR0;
+    889          
+    890              // Motor index is handled in a such way that no nested for loops are performed,
+    891              // as the computational effort is decreased, it saves cpu resources, e.g., cpu usage
+    892              // by having only the side effect to take more time to sweep all digital failures
+    893              // configured in the Mci look up tables.
+    894              motor_index++;
+    895              if(motor_index >= API220_NR_OF_CONNECTED_MOTORS)
+    896              {
+    897                  motor_index = MOTOR0;
+    898              }
+    899          
+    900              error_temp[motor_index] = Mci__GetErrorList(motor_index);
+    901          
+    902              // Check for any differences between the previous log status to the actual one...
+    903              if(Mci_Digital_Error[motor_index] != error_temp[motor_index])
+    904              {
+    905              	// If any bit is inverted, then check if the command was properly enqueued on the Reveal buffer
+    906              	// if the command was not enqueued, then, keep trying until the value is sent.
+    907              	if(Publish_Error(motor_index, error_temp[motor_index]) == TRUE)
+    908              	{
+    909              		// Publish the digital inputs to the Reveal bus
+    910              		Mci_Digital_Error[motor_index] = error_temp[motor_index];
+    911              	}
+    912              }
+    913          }
+    914          
+    915          
+    916          
+    917          
+    918          
+    919          //---------------------------------------------------------------------------------------------------------------------
+    920          /**
+    921           * @brief       Publish the digital data with the latest log
+    922           * @param       motor_index motor indexer between 0 and user defined
+    923           * @param       digital_input the bitwise flags read from the Mci digital data
+    924           * @return      TRUE: command was properly enqueued.
+    925           *              FALSE: command was not enqueued; feedback from Reveal stack.
+    926           */
+    927          T_BOOL Publish_Digital_Input(MOTOR_ENUM_TYPE motor_index, uint32 digital_input)
+    928          {
+    929              T_BOOL ret_val;
+    930              REVEAL_COMMAND_TYPE *command;
+    931          
+    932              ret_val = FALSE;                                // Default answer is false.
+    933          
+    934              command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_GET_DIGITAL, REVEAL_BROADCAST_NODE, 5);
+    935              if(command != NULL)
+    936              {
+    937                  // Build and enqueue the Reveal buffer with the required feedback
+    938                  Reveal__AddDataU8(command, motor_index);
+    939                  Reveal__AddDataU32(command, digital_input);
+    940          
+    941                  ret_val = (T_BOOL)Reveal__QueueCommand(command);
+    942              }
+    943          
+    944              return(ret_val);
+    945          }
+    946          
+    947          
+    948          
+    949          
+    950          //---------------------------------------------------------------------------------------------------------------------
+    951          /**
+    952           * @brief       Publish the digital data with the latest log
+    953           * @param       motor_index motor indexer between 0 and user defined
+    954           * @param       digital_input the bitwise flags read from the Mci digital data
+    955           * @return      TRUE: command was properly enqueued.
+    956           *              FALSE: command was not enqueued; feedback from Reveal stack.
+    957           */
+    958          T_BOOL Publish_Error(MOTOR_ENUM_TYPE motor_index, uint32 errors)
+    959          {
+    960              T_BOOL ret_val;
+    961              REVEAL_COMMAND_TYPE *command;
+    962          
+    963              ret_val = FALSE;                                // Default answer is false.
+    964          
+    965              command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_GET_ERROR, REVEAL_BROADCAST_NODE, 5);
+    966              if(command != NULL)
+    967              {
+    968                  // Build and enqueue the Reveal buffer with the required feedback
+    969                  Reveal__AddDataU8(command, motor_index);
+    970                  Reveal__AddDataU32(command, errors);
+    971          
+    972                  ret_val = (T_BOOL)Reveal__QueueCommand(command);
+    973              }
+    974          
+    975              return(ret_val);
+    976          }
+    977          
+    978          
+    979          
+    980          //---------------------------------------------------------------------------------------------------------------------
+    981          /**
+    982           * @brief       Set digital data in the Mci. The data comes from Reveal, is parsed within this method. If there is a
+    983           *              free spot in the Reveal stack, then the Mci set digital command is performed
+    984           * @param       buffer a pointer to the incoming Reveal buffer
+    985           * @return      TRUE: The variable was successfully changed.
+    986           *              FALSE: The variable could not be changed.
+    987           */
+    988          uint8 Set_Digital(REVEAL_MSG_TYPE *buffer)
+    989          {
+    990              uint8 dig_feedback;
+    991              uint8 ret_val;
+    992              MOTOR_ENUM_TYPE motor_index;
+    993              MCI_DO_TYPE dig_index;
+    994              uint8 dig_data;
+    995              REVEAL_COMMAND_TYPE *command;
+    996          
+    997              ret_val = FALSE;                                // Default answer is false.
+    998          
+    999              if(buffer->sdu_length == 5)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+   1000              {
+   1001                  command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_SET_DIGITAL, REVEAL_BROADCAST_NODE, 4);
+   1002                  if(command != NULL)
+   1003                  {
+   1004                      // Recover the data from the serial communication.
+   1005                      motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1006                      dig_index = (MCI_DO_TYPE)buffer->payload[1];
+   1007                      dig_data = (MCI_DO_TYPE)buffer->payload[2];
+   1008                      dig_data = GET_TRUE_FALSE(dig_data);
+   1009          
+   1010          #ifdef API220_ENABLE_MCI_CALLS
+   1011                      // Invoke the Mci Command.
+   1012                      dig_feedback = Mci__SetDigital(motor_index, dig_index, (T_BOOL)dig_data);
+   1013          #else
+   1014                      dig_feedback = FALSE;
+   1015          #endif
+   1016          
+   1017                      // Build and enqueue the Reveal buffer with the required feedback
+   1018                      Reveal__AddDataU8(command, motor_index);
+   1019                      Reveal__AddDataU8(command, dig_index);
+   1020                      Reveal__AddDataU8(command, dig_data);
+   1021                      Reveal__AddDataU8(command, dig_feedback);
+   1022          
+   1023                      ret_val = Reveal__QueueCommand(command);
+   1024                  }
+   1025              }
+   1026          
+   1027              return(ret_val);
+   1028          }
+   1029          
+   1030          
+   1031          
+   1032          //---------------------------------------------------------------------------------------------------------------------
+   1033          /**
+   1034           * @brief       Get analog data from Mci according to the incoming Reveal buffer.
+   1035           * @param       buffer a pointer to the incoming Reveal buffer
+   1036           * @return      TRUE data is read and has properly fedback the Reveal protocol
+   1037           *              FALSE data wasn't read nor built in the Reveal stack
+   1038           */
+   1039          uint8 Get_Analog(REVEAL_MSG_TYPE *buffer)
+   1040          {
+   1041              uint8 ret_val;
+   1042              MOTOR_ENUM_TYPE motor_index;
+   1043              MCI_AI_TYPE analog_data_index;
+   1044          
+   1045              ret_val = FALSE;                                // Default answer is false.
+   1046          
+   1047              if(buffer->sdu_length == 4)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+   1048              {
+   1049                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1050                  analog_data_index = (MCI_AI_TYPE)buffer->payload[1];
+   1051          
+   1052                  ret_val = Publish_Analog_Input(motor_index, analog_data_index);
+   1053              }
+   1054          
+   1055              return(ret_val);
+   1056          }
+   1057          
+   1058          
+   1059          
+   1060          
+   1061          //---------------------------------------------------------------------------------------------------------------------
+   1062          /**
+   1063           * @brief       Publish on the Reveal bus the requested analog data.
+   1064           * @param       motor_index is the requested motor index connected to the Mci API implementation.
+   1065           * @param       analog_data_index indexes the requested analog data from the Mci API implementation
+   1066           * @return      TRUE data was properly read and set in the Reveal buffer
+   1067           *              FALSE data wasn't able to be read nor be built on the on the Reveal buffer
+   1068           */
+   1069          uint8 Publish_Analog_Input(MOTOR_ENUM_TYPE motor_index, MCI_AI_TYPE analog_data_index)
+   1070          {
+   1071              uint16 temp_u16;
+   1072              uint8 ret_val;
+   1073              sint32 analog_data;
+   1074              REVEAL_COMMAND_TYPE *command;
+   1075          
+   1076              ret_val = FALSE;                            // By default, the feedback is FALSE.
+   1077          
+   1078              // Check and, if available, enqueue a new Reveal feedback.
+   1079              command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_GET_ANALOG, REVEAL_BROADCAST_NODE, 6);
+   1080              if(command != NULL)
+   1081              {
+   1082                  if(analog_data_index < MCI_AI_NR_OF_AI)
+   1083                  {
+   1084                   	// Invoke Mci with required analog data to be read
+   1085                  	analog_data = (sint32)Mci__GetAnalog(motor_index, analog_data_index);
+   1086          
+   1087                  	// Build and enqueue the Reveal buffer with the required feedback
+   1088                  	Reveal__AddDataU8(command, motor_index);
+   1089                  	Reveal__AddDataU8(command, analog_data_index);
+   1090                  	Reveal__AddDataU32(command, (uint32)analog_data);        
+   1091                  }
+   1092                  else
+   1093                  {
+   1094                      // Build and enqueue the Reveal buffer with the required feedback
+   1095                      Reveal__AddDataU8(command, motor_index);
+   1096                      Reveal__AddDataU8(command, analog_data_index);
+   1097          
+   1098                      temp_u16 = (uint16)(Mci__GetAnalog(MOTOR0, MCI_AI_SPEED_REFERENCE_RPM_S16)>>16);
+   1099                      Reveal__AddDataU16(command, temp_u16);
+   1100          
+   1101                      temp_u16 = (uint16)(Mci__GetAnalog(MOTOR0, MCI_AI_ACTUAL_SPEED_S16)>>16);
+   1102                      Reveal__AddDataU16(command, temp_u16);
+   1103          
+   1104                      temp_u16 = (uint16)Mci__GetAnalog(MOTOR0, MCI_AI_INTERNAL_MCI_STATE);
+   1105                      Reveal__AddDataU8(command, (uint8)temp_u16);
+   1106          
+   1107                      temp_u16 = (uint16)(Mci__GetAnalog(MOTOR0, MCI_AI_BUS_VOLTAGE_S16)>>16);
+   1108                      Reveal__AddDataU16(command, temp_u16);
+   1109                  }
+   1110          
+   1111                  ret_val = Reveal__QueueCommand(command);
+   1112              }
+   1113          
+   1114              return(ret_val);
+   1115          }
+   1116          
+   1117          
+   1118          
+   1119          
+   1120          //---------------------------------------------------------------------------------------------------------------------
+   1121          /*
+   1122           * @brief       Set analog data in the Mci.
+   1123           * @param       buffer a pointer to the incoming Reveal buffer
+   1124           * @return      TRUE: The variable was successfully changed.
+   1125           *              FALSE: The variable could not be changed.
+   1126           */
+   1127          uint8 Set_Analog(REVEAL_MSG_TYPE *buffer)
+   1128          {
+   1129              uint8 ret_val;
+   1130              uint8 feedback;
+   1131              MOTOR_ENUM_TYPE motor_index;
+   1132              MCI_AO_TYPE analog_data_index;
+   1133              uint32 analog_data;
+   1134              REVEAL_COMMAND_TYPE *command;
+   1135          
+   1136              ret_val = FALSE;                                // Default answer is FALSE
+   1137          
+   1138              if(buffer->sdu_length == 8)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+   1139              {
+   1140                  // Check and, if available, enqueue a new Reveal feedback.
+   1141                  command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_SET_ANALOG, REVEAL_BROADCAST_NODE, 7);
+   1142                  if(command != NULL)
+   1143                  {
+   1144                      motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1145                      analog_data_index = (MCI_AO_TYPE)buffer->payload[1];
+   1146                      analog_data =   (((uint32)buffer->payload[2])<<24) +
+   1147                                      (((uint32)buffer->payload[3])<<16) +
+   1148                                      (((uint32)buffer->payload[4])<<8)  +
+   1149                                      (((uint32)buffer->payload[5]));
+   1150          
+   1151          #ifdef API220_ENABLE_MCI_CALLS
+   1152                      // Invoke Mci to write the analog data
+   1153                      feedback = Mci__SetAnalog(motor_index, analog_data_index, analog_data);
+   1154          #else
+   1155                      feedback = FALSE;
+   1156          #endif
+   1157          
+   1158                      // Update last user analog write request
+   1159                      Last_Analog_Output[motor_index][analog_data_index] = analog_data;
+   1160          
+   1161                      // Build and enqueue the Reveal buffer with the required feedback
+   1162                      Reveal__AddDataU8(command, motor_index);
+   1163                      Reveal__AddDataU8(command, analog_data_index);
+   1164                      Reveal__AddDataU32(command, analog_data);
+   1165                      Reveal__AddDataU8(command, feedback);
+   1166          
+   1167                      ret_val = Reveal__QueueCommand(command);
+   1168                  }
+   1169              }
+   1170          
+   1171              return(ret_val);
+   1172          }
+   1173          
+   1174          
+   1175          
+   1176          
+   1177          //---------------------------------------------------------------------------------------------------------------------
+   1178          /*
+   1179           * @brief       Parse the buffer that sets the parameters to periodically publish the analog data.
+   1180           * @param       buffer a Reveal buffer to be parsed
+   1181           * @return      TRUE the command accepted with all parameters correct. FALSE something was wrong in the requested data
+   1182           */
+   1183          uint8 Set_Data_Periodically_Publish(REVEAL_MSG_TYPE *buffer)
+   1184          {
+   1185              MOTOR_ENUM_TYPE motor_index;
+   1186              MCI_AI_TYPE analog_data_index;
+   1187              uint8 publish_rate;
+   1188              uint8 ret_val;
+   1189          
+   1190              ret_val = FALSE;                                // Default answer is FALSE
+   1191          
+   1192              if(buffer->sdu_length == 5)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+   1193              {
+   1194                  // Build the data from the buffer
+   1195                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1196                  analog_data_index = (MCI_AI_TYPE)buffer->payload[1];
+   1197                  publish_rate = buffer->payload[2];
+   1198          
+   1199                  // Sanity check on the given parameters
+   1200                  if( (motor_index < API220_NR_OF_CONNECTED_MOTORS) &&
+   1201                      (analog_data_index < MCI_AI_NR_OF_AI)   )
+   1202                  {
+   1203                      // If the rate is different than zero, it means that something has to be published periodically
+   1204                      if(publish_rate)
+   1205                      {
+   1206                          // Enable the periodic publishing according to the received bytes.
+   1207                          Api220_Per_Analog_Data[motor_index][analog_data_index].Publish_Requested = TRUE;
+   1208                          Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Threshold = (publish_rate * 40)/API220_NR_OF_CONNECTED_MOTORS;
+   1209                          Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Counter = 0;
+   1210                      }
+   1211                      else // otherwise, it is requested to stop publishing
+   1212                      {
+   1213                          // Disable the periodic publishing.
+   1214                          Api220_Per_Analog_Data[motor_index][analog_data_index].Publish_Requested = FALSE;
+   1215                          Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Threshold = 0;
+   1216                          Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Counter = 0;
+   1217                      }
+   1218          
+   1219                      ret_val = TRUE;                         // command accepted.
+   1220                  }
+   1221          
+   1222              }
+   1223          
+   1224              return(ret_val);
+   1225          }
+   1226          
+   1227          
+   1228          
+   1229          
+   1230          //---------------------------------------------------------------------------------------------------------------------
+   1231          /*
+   1232           * @brief       Parse commands required by FVT mode.
+   1233           * @details     Parse and communicates to FVT tests, start, stop, request and publish results.
+   1234           * @param       buffer a Reveal buffer to be parsed
+   1235           * @return      TRUE the command accepted with all parameters correct. FALSE something was wrong in the requested data
+   1236           */
+   1237          
+   1238          #if (MCI_FVT_TESTS == ENABLED)
+   1239          
+   1240          static uint8 Api220_Fvt_Mode(REVEAL_MSG_TYPE *buffer)
+   1241          {
+   1242              API220_FVT_COMMANDS_TYPE fvt_command;
+   1243              uint8 feedback;
+   1244              MOTOR_ENUM_TYPE motor_index;
+   1245              REVEAL_COMMAND_TYPE *command;
+   1246              uint8 ret_val;
+   1247          
+   1248              ret_val = FALSE;                                // Default answer is FALSE
+   1249          
+   1250              // parse incoming package
+   1251              fvt_command = (API220_FVT_COMMANDS_TYPE)buffer->payload[0];
+   1252              motor_index = (MOTOR_ENUM_TYPE)buffer->payload[1];
+   1253          
+   1254              switch(fvt_command)
+   1255              {
+   1256                  case API220_FVT_START:
+   1257                      // Check and, if available, enqueue a new Reveal feedback.
+   1258                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_FVT, REVEAL_BROADCAST_NODE, 6);
+   1259                      if(command != NULL)
+   1260                      {
+   1261                          feedback = FVT_START(motor_index);
+   1262          
+   1263                          Api220_Fvt_Result_Published = FALSE;
+   1264          
+   1265                          Reveal__AddDataU8(command, fvt_command);
+   1266                          Reveal__AddDataU8(command, motor_index);
+   1267                          Reveal__AddDataU8(command, feedback);
+   1268          
+   1269                          ret_val = Reveal__QueueCommand(command);
+   1270                      }
+   1271                      break;
+   1272          
+   1273                  case API220_FVT_STOP:
+   1274                      // Check and, if available, enqueue a new Reveal feedback.
+   1275                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_FVT, REVEAL_BROADCAST_NODE, 6);
+   1276                      if(command != NULL)
+   1277                      {
+   1278                          feedback = FVT_STOP(motor_index);
+   1279          
+   1280                          Reveal__AddDataU8(command, fvt_command);
+   1281                          Reveal__AddDataU8(command, motor_index);
+   1282                          Reveal__AddDataU8(command, feedback);
+   1283          
+   1284                          ret_val = Reveal__QueueCommand(command);
+   1285                      }
+   1286                      break;
+   1287          
+   1288                  case API220_FVT_REQUEST_RESULT:
+   1289                      ret_val = Publish_Fvt_Result();
+   1290                      break;
+   1291          
+   1292                  default:
+   1293                      // Left blank intentionally
+   1294                      break;
+   1295              }
+   1296          
+   1297          
+   1298          
+   1299              return(ret_val);
+   1300          }
+   1301          
+
+   \                                 In section .text, align 2, keep-with-next
+   1302          uint8 Publish_Fvt_Result(void)
+   1303          {
+   \                     Publish_Fvt_Result: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB085             SUB      SP,SP,#+20
+   1304              REVEAL_COMMAND_TYPE *command;
+   1305              MCI_FVT_TEST_RESULT_TYPE fvt_result;
+   1306              MOTOR_ENUM_TYPE motor_index;
+   1307              uint8 ret_val;
+   1308          
+   1309              ret_val = FALSE;
+   \   00000004   0x2400             MOVS     R4,#+0
+   1310          
+   1311              // Check and, if available, enqueue a new Reveal feedback.
+   1312              command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_FVT, REVEAL_BROADCAST_NODE, 6);
+   \   00000006   0x2306             MOVS     R3,#+6
+   \   00000008   0x220F             MOVS     R2,#+15
+   \   0000000A   0x2112             MOVS     R1,#+18
+   \   0000000C   0x20DC             MOVS     R0,#+220
+   \   0000000E   0x.... 0x....      BL       Reveal__NewFeedback
+   \   00000012   0x0005             MOVS     R5,R0
+   1313              if(command != NULL)
+   \   00000014   0xD045             BEQ.N    ??Publish_Fvt_Result_0
+   1314              {
+   1315                  MclFvt__GetResult(&fvt_result);
+   \   00000016   0xA800             ADD      R0,SP,#+0
+   \   00000018   0x.... 0x....      BL       MclFvt__GetResult
+   1316                  motor_index = FVT_GET_MOTOR();
+   1317          
+   1318                  Reveal__AddDataU8(command, API220_FVT_REQUEST_RESULT);
+   \   0000001C   0x2103             MOVS     R1,#+3
+   \   0000001E   0x4628             MOV      R0,R5
+   \   00000020   0x.... 0x....      BL       Reveal__AddDataU8
+   1319                  Reveal__AddDataU8(command, motor_index);
+   \   00000024   0x2100             MOVS     R1,#+0
+   \   00000026   0x4628             MOV      R0,R5
+   \   00000028   0x.... 0x....      BL       Reveal__AddDataU8
+   1320          
+   1321                  Reveal__AddDataU8(command, fvt_result.Error_List);
+   \   0000002C   0xF89D 0x1013      LDRB     R1,[SP, #+19]
+   \   00000030   0x4628             MOV      R0,R5
+   \   00000032   0x.... 0x....      BL       Reveal__AddDataU8
+   1322          
+   1323                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_DC_Bus_Volt));
+   \   00000036   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \   0000003A   0x4628             MOV      R0,R5
+   \   0000003C   0x.... 0x....      BL       Reveal__AddDataU16
+   1324                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_Phase_Volt_A));
+   \   00000040   0xF8BD 0x1002      LDRH     R1,[SP, #+2]
+   \   00000044   0x4628             MOV      R0,R5
+   \   00000046   0x.... 0x....      BL       Reveal__AddDataU16
+   1325                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_Phase_Volt_B));
+   \   0000004A   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \   0000004E   0x4628             MOV      R0,R5
+   \   00000050   0x.... 0x....      BL       Reveal__AddDataU16
+   1326                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_Phase_Volt_C));
+   \   00000054   0xF8BD 0x1006      LDRH     R1,[SP, #+6]
+   \   00000058   0x4628             MOV      R0,R5
+   \   0000005A   0x.... 0x....      BL       Reveal__AddDataU16
+   1327                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_Curr_A));
+   \   0000005E   0xF8BD 0x1008      LDRH     R1,[SP, #+8]
+   \   00000062   0x4628             MOV      R0,R5
+   \   00000064   0x.... 0x....      BL       Reveal__AddDataU16
+   1328                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_Curr_B));
+   \   00000068   0xF8BD 0x100A      LDRH     R1,[SP, #+10]
+   \   0000006C   0x4628             MOV      R0,R5
+   \   0000006E   0x.... 0x....      BL       Reveal__AddDataU16
+   1329                  Reveal__AddDataU16(command, (uint16)(fvt_result.Sensors_Test_Avg_Curr_C));
+   \   00000072   0xF8BD 0x100C      LDRH     R1,[SP, #+12]
+   \   00000076   0x4628             MOV      R0,R5
+   \   00000078   0x.... 0x....      BL       Reveal__AddDataU16
+   1330          
+   1331                  Reveal__AddDataU16(command, (uint16)(fvt_result.Surge_Test_Avg_DC_Bus_Volt_Open));
+   \   0000007C   0xF8BD 0x100E      LDRH     R1,[SP, #+14]
+   \   00000080   0x4628             MOV      R0,R5
+   \   00000082   0x.... 0x....      BL       Reveal__AddDataU16
+   1332                  Reveal__AddDataU16(command, (uint16)(fvt_result.Surge_Test_Avg_DC_Bus_Volt_Close));
+   \   00000086   0xF8BD 0x1010      LDRH     R1,[SP, #+16]
+   \   0000008A   0x4628             MOV      R0,R5
+   \   0000008C   0x.... 0x....      BL       Reveal__AddDataU16
+   1333          
+   1334                  Reveal__AddDataU8(command, fvt_result.OC_Test_Found);
+   \   00000090   0xF89D 0x1012      LDRB     R1,[SP, #+18]
+   \   00000094   0x4628             MOV      R0,R5
+   \   00000096   0x.... 0x....      BL       Reveal__AddDataU8
+   1335          
+   1336                  ret_val = Reveal__QueueCommand(command);
+   \   0000009A   0x4628             MOV      R0,R5
+   \   0000009C   0x.... 0x....      BL       Reveal__QueueCommand
+   \   000000A0   0x4604             MOV      R4,R0
+   1337              }
+   1338          
+   1339              return(ret_val);
+   \                     ??Publish_Fvt_Result_0: (+1)
+   \   000000A2   0x4620             MOV      R0,R4
+   \   000000A4   0xB005             ADD      SP,SP,#+20
+   \   000000A6   0xBD30             POP      {R4,R5,PC}       ;; return
+   1340          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x........         DC32     Last_Manual_Injection_Method
+   1341          
+   1342          #endif
+   1343          
+   1344          //---------------------------------------------------------------------------------------------------------------------
+   1345          /*
+   1346           * @brief       Handle the algorithms for periodic analog data publishing.
+   1347           */
+   1348          void Periodically_Publish_Analog(void)
+   1349          {
+   1350              static MOTOR_ENUM_TYPE motor_index;
+   1351              uint8 analog_data_index;
+   1352          
+   1353              // Handle the connected motor amount, it shall sweep of number of the connected motors
+   1354              motor_index++;
+   1355              if(motor_index >= API220_NR_OF_CONNECTED_MOTORS)
+   1356              {
+   1357                  motor_index = MOTOR0;
+   1358              }
+   1359          
+   1360              // Sweeps all the requested analog data for publishing
+   1361              for(analog_data_index = 0; analog_data_index < (1+MCI_AI_NR_OF_AI); analog_data_index++)
+   1362              {
+   1363                  // Check if the data defined in the PUBLISH_ANALOG_DATA_TYPE is requested for periodic publishing
+   1364                  if(Api220_Per_Analog_Data[motor_index][analog_data_index].Publish_Requested == TRUE)
+   1365                  {
+   1366                      // If the publishing time is not yet over, then
+   1367                      if(Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Counter)
+   1368                      {
+   1369                          // count the time.
+   1370                          Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Counter--;
+   1371                      }
+   1372                      else // otherwise
+   1373                      {
+   1374                          // attempt to build and stack the command on the wide, if it was stacked,
+   1375                          if(Publish_Analog_Input(motor_index, (MCI_AI_TYPE)analog_data_index) == TRUE)
+   1376                          {
+   1377                              // then reload the time for publishing.
+   1378                              Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Counter = Api220_Per_Analog_Data[motor_index][analog_data_index].Time_Threshold;
+   1379                          }
+   1380                      }
+   1381                  }
+   1382              }
+   1383          }
+   1384          
+   1385          
+   1386          
+   1387          
+   1388          //---------------------------------------------------------------------------------------------------------------------
+   1389          /*
+   1390           * @brief       Manual control of the inverter output
+   1391           * @detail      The output can be manually controlled, this output might be the voltage vector or the current vector.
+   1392           * @param       buffer - a pointer to the received Reveal buffer.
+   1393           * @return      Returns whether Mci has accepted or not the command; TRUE = accepted; FALSE = denied
+   1394           */
+   1395          uint8 Manual_Control(REVEAL_MSG_TYPE *buffer)
+   1396          {
+   1397          #ifdef API220_ENABLE_MCI_CALLS
+   1398          
+   1399              uint8 ret_val;
+   1400              MOTOR_ENUM_TYPE motor_index;
+   1401              MCI_INJECTION_TYPE method;
+   1402              sint32 level_target;
+   1403              sint32 level_rate;
+   1404              sint32 parameter;
+   1405              sint32 param_rate;
+   1406          
+   1407              #ifndef ENABLE_API220_CALLBACKS
+   1408                  MCI_CMD_RESPONSE_TYPE feedback;
+   1409                  REVEAL_COMMAND_TYPE *command;
+   1410              #endif
+   1411          
+   1412              ret_val = FALSE;                                // Default answer is FALSE
+   1413          
+   1414              if(buffer->sdu_length == 12)                    // This command requests receiving this amount of bytes, include API and Opcode bytes.
+   1415              {
+   1416                  // Build up the data from the Reveal buffer
+   1417                  motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1418                  method = (MCI_INJECTION_TYPE)buffer->payload[1];
+   1419                  level_target = (((sint16)buffer->payload[2])<<8) + buffer->payload[3];
+   1420                  level_rate   = (((sint16)buffer->payload[4])<<8) + buffer->payload[5];
+   1421                  parameter    = (((sint16)buffer->payload[6])<<8) + buffer->payload[7];
+   1422                  param_rate   = (((sint16)buffer->payload[8])<<8) + buffer->payload[9];
+   1423          
+   1424                  #ifdef ENABLE_API220_CALLBACKS
+   1425          
+   1426                      // Invoke Mci
+   1427                      Mci__Manual_Injection(motor_index, method, level_target, level_rate, parameter, param_rate);
+   1428          
+   1429                      ret_val = TRUE;
+   1430          
+   1431                  #else
+   1432          
+   1433                      // Invoke Mci manual control and read its feedback
+   1434                      feedback = MANUAL_INJECTION_RUN(motor_index, method, level_target, level_rate, parameter, param_rate);
+   1435          
+   1436                      command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_MANUAL_CONTROL, REVEAL_BROADCAST_NODE, 3);
+   1437                      if(command != NULL)
+   1438                      {
+   1439                          // Build and enqueue the Reveal buffer with the required feedback
+   1440                          Reveal__AddDataU8(command, motor_index);
+   1441                          Reveal__AddDataU8(command, method);
+   1442                          Reveal__AddDataU8(command, (uint8)feedback);
+   1443          
+   1444                          ret_val = Reveal__QueueCommand(command);
+   1445                      }
+   1446          
+   1447                  #endif
+   1448          
+   1449                  // Set the last commands to internal variables.
+   1450                  Last_Manual_Injection_Method[motor_index] = method;
+   1451                  Last_Manual_Injection_Level_Target[motor_index] = level_target;
+   1452                  Last_Manual_Injection_Parameter[motor_index] = parameter;
+   1453              }
+   1454          
+   1455              return(ret_val);
+   1456          
+   1457          #else
+   1458          
+   1459              return(FALSE);
+   1460          
+   1461          #endif
+   1462          }
+   1463          
+   1464          
+   1465          #if(API220_DEBUG_MODE == ENABLED)
+   1466          
+   1467              #include "SRMotorSafetyMgr.h"                       //!< Include SR Motor safety manager
+   1468              #include "Mci_prv.h"                                //!< Include Mci private
+   1469          
+   1470          #endif
+   1471          uint8 Command_Api220_Debug_Mode(REVEAL_MSG_TYPE *buffer)
+                                                                  ^
+Remark[Pe826]: parameter "buffer" was never referenced
+
+  uint8 Run_Motor(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",626  Warning[Pe177]: 
+          function "Run_Motor" was declared but never referenced
+
+  uint8 Stop_Motor(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",699  Warning[Pe177]: 
+          function "Stop_Motor" was declared but never referenced
+
+  uint8 Get_Digital(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",769  Warning[Pe177]: 
+          function "Get_Digital" was declared but never referenced
+
+  uint8 Get_Error(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",805  Warning[Pe177]: 
+          function "Get_Error" was declared but never referenced
+
+  uint8 Set_Digital(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",988  Warning[Pe177]: 
+          function "Set_Digital" was declared but never referenced
+
+  uint8 Get_Analog(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",1039  Warning[Pe177]: 
+          function "Get_Analog" was declared but never referenced
+
+  uint8 Set_Analog(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",1127  Warning[Pe177]: 
+          function "Set_Analog" was declared but never referenced
+
+  void Periodically_Publish_Analog(void)
+       ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",1348  Warning[Pe177]: 
+          function "Periodically_Publish_Analog" was declared but never
+          referenced
+
+  uint8 Set_Data_Periodically_Publish(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",1183  Warning[Pe177]: 
+          function "Set_Data_Periodically_Publish" was declared but never
+          referenced
+
+  uint8 Manual_Control(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",1395  Warning[Pe177]: 
+          function "Manual_Control" was declared but never referenced
+
+  uint8 Command_Api220_Debug_Mode(REVEAL_MSG_TYPE *buffer)
+        ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\Reveal_APIs\API220MotorControl\APIMotorControl.c",1471  Warning[Pe177]: 
+          function "Command_Api220_Debug_Mode" was declared but never
+          referenced
+   1472          {
+   1473          #if(API220_DEBUG_MODE == ENABLED)
+   1474          
+   1475              uint8 ret_val;
+   1476              MOTOR_ENUM_TYPE motor_index;
+   1477              COMMAND_LIST_API_DEBUG_MODE_TYPE debug_command;
+   1478              uint8 emulate_this_failure_index;
+   1479          
+   1480              ret_val = FALSE;                                // Default answer is FALSE
+   1481          
+   1482              // Build up the data from the Reveal buffer
+   1483              motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1484              debug_command = (COMMAND_LIST_API_DEBUG_MODE_TYPE)buffer->payload[1];
+   1485          
+   1486              switch(debug_command)
+   1487              {
+   1488                  case CMD_API_FORCE_ERROR:
+   1489                      emulate_this_failure_index = buffer->payload[2];
+   1490                      Mci__Emulate_Error(emulate_this_failure_index);
+   1491                      break;
+   1492          
+   1493                  case CMD_CLASSB_THERMAL_MODEL_DEBUG:
+   1494                  	ret_val = Stack_Class_B_Debug_Data(motor_index);
+   1495                  	break;
+   1496          
+   1497          #if(API220_THERMALMODEL_DEBUG == ENABLED)
+   1498          
+   1499                  case CMD_CLASSA_THERMAL_MODEL_DEBUG:
+   1500                  	ret_val = Stack_Class_A_Debug_Data(motor_index);
+   1501                  	break;
+   1502          
+   1503          #endif
+   1504          
+   1505          #if (CYCLE_SIMULATION == ENABLED)
+   1506          
+   1507                  case CMD_TUMBLING:
+   1508                        ret_val = Tumbling_Motor(buffer);
+   1509                        break;
+   1510          
+   1511          #endif
+   1512          
+   1513                  default:
+   1514                      //
+   1515                      break;
+   1516              };
+   1517          
+   1518              return(ret_val);
+   1519          
+   1520          #else
+   1521          
+   1522              return(FALSE);
+   1523          
+   1524          #endif
+   1525          }
+   1526          
+   1527          
+   1528          
+   1529          #if(API220_DEBUG_MODE == ENABLED)
+   1530          uint8 Stack_Class_B_Debug_Data(MOTOR_ENUM_TYPE motor_index)
+   1531          {
+   1532          	REVEAL_COMMAND_TYPE *command;
+   1533              uint8 ret_val;
+   1534              float temp_f;
+   1535          
+   1536          	ret_val = FALSE;
+   1537          
+   1538              command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_DEBUG, REVEAL_BROADCAST_NODE, 9);
+   1539              if(command != NULL)
+   1540              {
+   1541                  // Build and enqueue the Reveal buffer with the required feedback
+   1542                  Reveal__AddDataU8(command, (uint8)motor_index);
+   1543          
+   1544                  Reveal__AddDataU8(command, (uint8)CMD_CLASSB_THERMAL_MODEL_DEBUG);
+   1545          
+   1546              	temp_f = 65536.0f * SRMotorSafetyMgr__GetVoltageFrequency();
+   1547                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1548          
+   1549              	temp_f = 65536.0f * SRMotorSafetyMgr__GetMotorTemperature();
+   1550                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1551          
+   1552                  temp_f = 65536.0f * SRMotorSafetyMgr__GetSquaredCurrents();
+   1553                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1554          
+   1555                  ret_val = Reveal__QueueCommand(command);
+   1556              }
+   1557          
+   1558          
+   1559          	return ret_val;
+   1560          }
+   1561          
+   1562          #if(API220_THERMALMODEL_DEBUG == ENABLED)
+   1563          
+   1564          uint8 Stack_Class_A_Debug_Data(MOTOR_ENUM_TYPE motor_index)
+   1565          {
+   1566          	REVEAL_COMMAND_TYPE *command;
+   1567              uint8 ret_val;
+   1568              float temp_f;
+   1569          
+   1570          	ret_val = FALSE;
+   1571          
+   1572              command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_DEBUG, REVEAL_BROADCAST_NODE, 9);
+   1573              if(command != NULL)
+   1574              {
+   1575                  // Build and enqueue the Reveal buffer with the required feedback
+   1576                  Reveal__AddDataU8(command, (uint8)motor_index);
+   1577          
+   1578                  Reveal__AddDataU8(command, (uint8)CMD_CLASSA_THERMAL_MODEL_DEBUG);
+   1579          
+   1580                  temp_f = 65536.0f * ThermalModelCore_Y.WindingTemperature;
+   1581                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1582          
+   1583                  temp_f = 65536.0f * ThermalModelCore_Y.AmbientTemperature;
+   1584                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1585          
+   1586                  temp_f = 65536.0f * ThermalModelCore_Y.MagnetTemperature;
+   1587                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1588          
+   1589                  temp_f = 65536.0f * ThermalModelCore_U.Temperature;
+   1590                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1591          
+   1592                  temp_f = 65536.0f * ThermalModelCore_U.Current;
+   1593                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1594          
+   1595                  temp_f = 65536.0f * ThermalModelCore_U.Speed;
+   1596                  Reveal__AddDataU32(command, (uint32)temp_f);
+   1597          
+   1598                  ret_val = Reveal__QueueCommand(command);
+   1599              }
+   1600          
+   1601          
+   1602          	return ret_val;
+   1603          }
+   1604          
+   1605          #endif
+   1606          
+   1607          #endif
+   1608          
+   1609          #if (CYCLE_SIMULATION == ENABLED)
+   1610          
+   1611          	volatile uint8 bytes_recebidos[20];
+   1612          
+   1613          	uint8 Tumbling_Motor(REVEAL_MSG_TYPE *buffer)
+   1614          	{
+   1615          		uint8 ret_val;
+   1616          
+   1617          		ret_val = FALSE;                                // Default answer is FALSE
+   1618          
+   1619          		motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1620          		bytes_recebidos[0] = buffer->payload[1];
+   1621          		bytes_recebidos[1] = buffer->payload[2];
+   1622          		bytes_recebidos[2] = buffer->payload[3];
+   1623          		bytes_recebidos[3] = buffer->payload[4];
+   1624          		bytes_recebidos[4] = buffer->payload[5];
+   1625          		bytes_recebidos[5] = buffer->payload[6];
+   1626          		bytes_recebidos[6] = buffer->payload[7];
+   1627          		bytes_recebidos[7] = buffer->payload[8];
+   1628          		bytes_recebidos[8] = buffer->payload[9];
+   1629          		bytes_recebidos[9] = buffer->payload[10];
+   1630          		bytes_recebidos[10] = buffer->payload[11];
+   1631          		bytes_recebidos[11] = buffer->payload[12];
+   1632          		bytes_recebidos[12] = buffer->payload[13];
+   1633          		bytes_recebidos[13] = buffer->payload[14];
+   1634          		bytes_recebidos[14] = buffer->payload[15];
+   1635          		bytes_recebidos[15] = buffer->payload[16];
+   1636          
+   1637          	//Tumbling(device, mcu_address, target_speed, acceleration, ton_ms, toff_ms, start_direction=1, asymetric_flag=1, start_flag=0):
+   1638          
+   1639          		uint16 My_Cycle_Ton_seg         = ((sint16)(buffer->payload[1])<<8) + buffer->payload[2];
+   1640          		uint16 My_Cycle_Toff_seg        = ((sint16)(buffer->payload[3])<<8) + buffer->payload[4];
+   1641          		sint16 My_Cycle_Target_Speed    = ((sint16)(buffer->payload[5])<<8) + buffer->payload[6];
+   1642          		sint16  My_Cycle_Target_Accel   = ((sint16)(buffer->payload[7])<<8) + buffer->payload[8];
+   1643          		sint16  cycle		     = ((sint16)(buffer->payload[9])<<8) + buffer->payload[10];
+   1644          
+   1645          		 refresh_variables (My_Cycle_Ton_seg, My_Cycle_Toff_seg, My_Cycle_Target_Speed, My_Cycle_Target_Accel, cycle);
+   1646          
+   1647          	/*
+   1648          	message = 	(format(API,'x') + ',' + format(OPCODE,'x') + ',' + format(start_direction,'x') + ',' +
+   1649          				format(speed_byte0,'x') + ',' + format(speed_byte1,'x') + ',' + format(accel_byte0,'x') + ',' +
+   1650          				format(accel_byte1,'x') + ',' + format(ton_byte0,'x') + ',' + format(ton_byte1,'x') + ',' +
+   1651          				format(toff_byte0,'x') + ',' + format(toff_byte1,'x') + ',' + format(asymetric_flag,'x') + ',' +
+   1652          				format(start_flag,'x'))
+   1653          	*/
+   1654          
+   1655          		return ret_val;
+   1656          
+   1657          
+   1658          	//#ifdef API220_ENABLE_MCI_CALLS
+   1659          	//
+   1660          	//    uint8 ret_val;
+   1661          	//    MOTOR_ENUM_TYPE motor_index;
+   1662          	//    sint16 target_speed;
+   1663          	//    sint16 target_accel;
+   1664          	//    #ifndef ENABLE_API220_CALLBACKS
+   1665          	//        MCI_CMD_RESPONSE_TYPE feedback;
+   1666          	//        REVEAL_COMMAND_TYPE *command;
+   1667          	//    #endif
+   1668          	//
+   1669          	//    ret_val = FALSE;                                // Default answer is FALSE
+   1670          	//
+   1671          	//    if(buffer->sdu_length == 7)                     // This command requests receiving this amount of bytes, include API and Opcode bytes.
+   1672          	//    {
+   1673          	//        // Build up the data from the Reveal buffer
+   1674          	//        motor_index = (MOTOR_ENUM_TYPE)buffer->payload[0];
+   1675          	//        target_speed = ((sint16)(buffer->payload[1])<<8) + buffer->payload[2];
+   1676          	//        target_accel = ((sint16)(buffer->payload[3])<<8) + buffer->payload[4];
+   1677          	//
+   1678          	//        #ifdef ENABLE_API220_CALLBACKS
+   1679          	//
+   1680          	//            // Invoke Mci
+   1681          	//            Mci__Run(motor_index, target_speed, target_accel);
+   1682          	//
+   1683          	//            ret_val = TRUE;
+   1684          	//
+   1685          	//        #else
+   1686          	//
+   1687          	//            // Invoke Mci run and read its feedback
+   1688          	//            feedback = Mci__Run(motor_index, target_speed, target_accel);
+   1689          	//
+   1690          	//            command = Reveal__NewFeedback(API220_MOTOR_CONTROL_NUM, API220_OPCODE_MOTOR_CONTROL_RUN, REVEAL_BROADCAST_NODE, 6);
+   1691          	//            if(command != NULL)
+   1692          	//            {
+   1693          	//                // Build and enqueue the Reveal buffer with the required feedback
+   1694          	//                Reveal__AddDataU8(command, motor_index);
+   1695          	//                Reveal__AddDataU16(command, target_speed);
+   1696          	//                Reveal__AddDataU16(command, target_accel);
+   1697          	//                Reveal__AddDataU8(command, (uint8)feedback);
+   1698          	//
+   1699          	//                ret_val = Reveal__QueueCommand(command);
+   1700          	//            }
+   1701          	//
+   1702          	//        #endif
+   1703          	//
+   1704          	//        // Set the last commands to internal variables.
+   1705          	//        Last_Speed_Target[motor_index] = target_speed;
+   1706          	//        Last_Ramp_Target[motor_index] = target_accel;
+   1707          	//    }
+   1708          	//
+   1709          	//    return(ret_val);
+   1710          	//
+   1711          	//#else
+   1712          	//
+   1713          	//    return(FALSE);
+   1714          	//
+   1715          	//#endif
+   1716          }
+   1717          
+   1718          #endif
+   1719          
+   1720          
+   1721          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   APIMotorControl__AckParser
+      24   APIMotorControl__CommandParser
+        24   -> Mci__FvtStart
+        24   -> Mci__FvtStop
+        24   -> Publish_Fvt_Result
+        24   -> Reveal__AddDataU8
+        24   -> Reveal__NewFeedback
+        24   -> Reveal__QueueCommand
+       0   APIMotorControl__FeedbackParser
+      24   APIMotorControl__Initialize
+        24   -> __aeabi_memset
+        24   -> __aeabi_memset4
+      32   APIMotorControl__PublishManualInjection
+        32   -> Reveal__AddDataU8
+        32   -> Reveal__NewFeedback
+        32   -> Reveal__QueueCommand
+      32   APIMotorControl__PublishRun
+        32   -> Reveal__AddDataU16
+        32   -> Reveal__AddDataU8
+        32   -> Reveal__NewFeedback
+        32   -> Reveal__QueueCommand
+      32   APIMotorControl__PublishSetAnalog
+        32   -> Reveal__AddDataS16
+        32   -> Reveal__AddDataU8
+        32   -> Reveal__NewFeedback
+        32   -> Reveal__QueueCommand
+      24   APIMotorControl__PublishSetDigital
+        24   -> Reveal__AddDataU8
+        24   -> Reveal__NewFeedback
+        24   -> Reveal__QueueCommand
+      24   APIMotorControl__PublishStop
+        24   -> Reveal__AddDataU16
+        24   -> Reveal__AddDataU8
+        24   -> Reveal__NewFeedback
+        24   -> Reveal__QueueCommand
+      32   APIMotorControl__SlowHandler
+        32   -> Mci__FvtGetStatus
+        32   -> Mci__GetDigitalList
+        32   -> Mci__GetErrorList
+        32   -> Publish_Fvt_Result
+        32   -> Reveal__AddDataU32
+        32   -> Reveal__AddDataU8
+        32   -> Reveal__NewFeedback
+        32   -> Reveal__QueueCommand
+      32   Publish_Fvt_Result
+        32   -> MclFvt__GetResult
+        32   -> Reveal__AddDataU16
+        32   -> Reveal__AddDataU8
+        32   -> Reveal__NewFeedback
+        32   -> Reveal__QueueCommand
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       2  APIMotorControl__AckParser
+     152  APIMotorControl__CommandParser
+       2  APIMotorControl__FeedbackParser
+     136  APIMotorControl__Initialize
+     102  APIMotorControl__PublishManualInjection
+      96  APIMotorControl__PublishRun
+      96  APIMotorControl__PublishSetAnalog
+     108  APIMotorControl__PublishSetDigital
+      84  APIMotorControl__PublishStop
+     214  APIMotorControl__SlowHandler
+     220  Last_Manual_Injection_Method
+          Last_Digital_Output
+          Api220_Fvt_Result_Published
+          motor_index
+          motor_index
+          Mci_Digital_Inputs
+          Mci_Digital_Error
+          Last_Speed_Target
+          Last_Ramp_Target
+          Last_Manual_Injection_Level_Target
+          Last_Manual_Injection_Parameter
+          Last_Analog_Output
+          Api220_Per_Analog_Data
+     168  Publish_Fvt_Result
+       1  motor_index
+       2  stop_motor_counter
+       2  stop_motor_counter1
+
+ 
+   225 bytes in section .bss
+ 1 164 bytes in section .text
+ 
+ 1 164 bytes of CODE memory
+   225 bytes of DATA memory
+
+Errors: none
+Warnings: 11

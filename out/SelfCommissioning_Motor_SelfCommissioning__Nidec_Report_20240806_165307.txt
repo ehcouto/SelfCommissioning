@@ -1,0 +1,4 @@
+Motor Identification Parameter for Brushless PMSM Motor
+Motor_SelfCommissioning__Nidec
+Date: 20240806_165307
+

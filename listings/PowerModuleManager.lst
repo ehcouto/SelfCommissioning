@@ -1,0 +1,348 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:29
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\PowerModuleManager\PowerModuleManager.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        PowerModuleManager.obj -l ..\listings\PowerModuleManager.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\PowerModuleManager\PowerModuleManager.c
+#    List file    =  ..\listings\PowerModuleManager.lst
+#    Object file  =  PowerModuleManager.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\PowerModuleManager\PowerModuleManager.c
+      1          /**
+      2           *  @file       
+      3           *
+      4           *  @brief      MCI Power Module Manager
+      5           *
+      6           *  @details
+      7           *
+      8           *  $Header: $
+      9           *
+     10           *  @copyright  Copyright 2019-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     11           */
+     12          //---------------------------------------------------------------------------------------------------------------------
+     13          //---------------------------------------------------------------------------------------------------------------------
+     14          
+     15          
+     16          //-------------------------------------- Include Files ----------------------------------------------------------------
+     17          #include "C_Extensions.h"
+     18          #include "PowerModuleManager.h"
+     19          #include "PowerModuleManager_prv.h"
+     20          #include "Mci.h"
+     21          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     22          
+     23          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+
+   \                                 In section .bss, align 1
+     24          static BOOL_TYPE PowerModuleMgr_Temp_Params_Loaded;
+   \                     PowerModuleMgr_Temp_Params_Loaded:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+     25          static POWERMODULEMANAGER_PARAMS_DISPL_TYPE* PowerModuleMgr_Params_Displ;
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+     26          static uint32 Pm_Mgr_Modulation_Time;
+     27          
+     28          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     29          
+     30          
+     31          //=====================================================================================================================
+     32          //-------------------------------------- Public Functions -------------------------------------------------------------
+     33          //=====================================================================================================================
+     34          
+     35          //---------------------------------------------------------------------------------------------------------------------
+     36          /**
+     37           *  @brief      It Initializes the module PowerModuleManager and its variables
+     38           *
+     39           */
+
+   \                                 In section .text, align 2, keep-with-next
+     40          void PowerModuleManager__Initialize(void)
+     41          {
+     42              PowerModuleMgr_Temp_Params_Loaded = FALSE;
+   \                     PowerModuleManager__Initialize: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable2
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+     43              PowerModuleMgr_Params_Displ = NULL;
+     44              Pm_Mgr_Modulation_Time = 0;
+     45          }
+   \   00000006   0x4770             BX       LR               ;; return
+     46          
+     47          
+     48          //---------------------------------------------------------------------------------------------------------------------
+     49          /**
+     50           *  @brief
+     51           *
+     52           */
+
+   \                                 In section .text, align 2, keep-with-next
+     53          void PowerModuleManager__25msHandler(void)
+     54          {
+     55              uint32 temperature;
+     56              uint32 current_rms;
+     57              BOOL_TYPE low_power_mode;
+     58          
+     59          
+     60              if (PowerModuleMgr_Temp_Params_Loaded == TRUE && POWERMODULEMGR__IS_MOTOR_RUNNING())
+     61              {
+     62                  // sample the temperature
+     63                  temperature = POWERMODULEMGR__GET_INVERTER_TEMP();
+     64                  // sample the current
+     65                  current_rms = POWERMODULEMGR__GET_I_RMS_S16();
+     66          
+     67                  low_power_mode = POWERMODULEMGR__IS_LOW_POWER();
+     68                  if (low_power_mode)
+     69                  {
+     70                      // Low power request - turn off
+     71                      if (current_rms < POWERMODULEMGR_I_RMS_THR_LOW_S16)
+     72                      {
+     73                          if (Pm_Mgr_Modulation_Time <= 0)
+     74                          {
+     75                              if (temperature < POWERMODULEMGR_INV_TEMP_THR_LOW)
+     76                              {
+     77                                  // switch off request
+     78                                  low_power_mode = FALSE;
+     79                              }
+     80                          }
+     81                          else
+     82                          {
+     83                              Pm_Mgr_Modulation_Time--;
+     84                          }
+     85                      }
+     86                      else
+     87                      {
+     88                          Pm_Mgr_Modulation_Time = POWERMODULEMGR_MODULATION_WINDOW;
+     89                      }
+     90                  }
+     91                  else
+     92                  {
+     93                      if (temperature > POWERMODULEMGR_INV_TEMP_THR_HIGH)
+     94                      {
+     95                          // switch on request
+     96                          low_power_mode = TRUE;
+     97                      }
+     98                      else
+     99                      {
+    100                          if (current_rms > POWERMODULEMGR_I_RMS_THR_HIGH_S16)
+    101                          {
+    102                              if (Pm_Mgr_Modulation_Time >= POWERMODULEMGR_MODULATION_WINDOW)
+    103                              {
+    104                                  // switch on request
+    105                                  low_power_mode = TRUE;
+    106                                  Pm_Mgr_Modulation_Time = POWERMODULEMGR_MODULATION_WINDOW;
+    107                              }
+    108                              else
+    109                              {
+    110                                  Pm_Mgr_Modulation_Time++;
+    111                              }
+    112                          }
+    113                          else
+    114                          {
+    115                              Pm_Mgr_Modulation_Time = 0;
+    116                          }
+    117                      }
+    118                  }
+    119          
+    120                  // Enable only after steady state
+    121                  if (low_power_mode == TRUE && POWERMODULEMGR__IS_STABLE())
+    122                  {
+    123                      POWERMODULEMGR__ENTER_LOW_POWER();
+    124                  }
+    125                  else
+    126                  {
+    127                      POWERMODULEMGR__EXIT_LOW_POWER();
+    128                  }
+    129              }
+    130          }
+   \                     PowerModuleManager__25msHandler: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    131          
+    132          
+    133          //---------------------------------------------------------------------------------------------------------------------
+    134          /**
+    135           *  @brief      Write the address of PowerModuleManager parameters.
+    136           *  @details
+    137           *
+    138           * @return  TRUE - value accepted
+    139           *          FALSE - value denied - default answer.
+    140           */
+
+   \                                 In section .text, align 2, keep-with-next
+    141          BOOL_TYPE PowerModuleManager__SetParams(void*  powermodulemgr_params_address)
+    142          {
+    143              BOOL_TYPE ret_val = FALSE;
+   \                     PowerModuleManager__SetParams: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+    144          
+    145              if (powermodulemgr_params_address != NULL)
+   \   00000002   0xB118             CBZ.N    R0,??PowerModuleManager__SetParams_0
+    146              {
+    147                  PowerModuleMgr_Params_Displ = (POWERMODULEMANAGER_PARAMS_DISPL_TYPE*) powermodulemgr_params_address;
+    148                  PowerModuleMgr_Temp_Params_Loaded = TRUE;
+   \   00000004   0x....             LDR.N    R1,??DataTable2
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0x7008             STRB     R0,[R1, #+0]
+    149                  ret_val = TRUE;
+   \   0000000A   0x2101             MOVS     R1,#+1
+    150              }
+    151          
+    152              return ret_val;
+   \                     ??PowerModuleManager__SetParams_0: (+1)
+   \   0000000C   0x4608             MOV      R0,R1
+   \   0000000E   0x4770             BX       LR               ;; return
+    153          }
+    154          
+    155          //---------------------------------------------------------------------------------------------------------------------
+    156          /**
+    157           *  @brief      Get parameters loaded status.
+    158           *  @details
+    159           *
+    160           * @return  TRUE - parameters are loaded
+    161           *          FALSE - parameters not loaded
+    162           */
+
+   \                                 In section .text, align 2, keep-with-next
+    163          BOOL_TYPE PowerModuleManager__GetParameterLoaded(void)
+    164          {
+    165              return PowerModuleMgr_Temp_Params_Loaded;
+   \                     PowerModuleManager__GetParameterLoaded: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    166          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     PowerModuleMgr_Temp_Params_Loaded
+    167          
+    168          
+    169          //=====================================================================================================================
+    170          //-------------------------------------- Private Functions ------------------------------------------------------------
+    171          //=====================================================================================================================
+    172          
+    173          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   PowerModuleManager__25msHandler
+       0   PowerModuleManager__GetParameterLoaded
+       0   PowerModuleManager__Initialize
+       0   PowerModuleManager__SetParams
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  Pm_Mgr_Modulation_Time
+       2  PowerModuleManager__25msHandler
+       6  PowerModuleManager__GetParameterLoaded
+       8  PowerModuleManager__Initialize
+      16  PowerModuleManager__SetParams
+       4  PowerModuleMgr_Params_Displ
+       1  PowerModuleMgr_Temp_Params_Loaded
+
+ 
+  9 bytes in section .bss
+ 36 bytes in section .text
+ 
+ 36 bytes of CODE memory
+  9 bytes of DATA memory
+
+Errors: none
+Warnings: none

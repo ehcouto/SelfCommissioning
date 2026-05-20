@@ -1,0 +1,896 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:42:19
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclDqCtrl.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o MclDqCtrl.obj
+#        -l ..\listings\MclDqCtrl.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclDqCtrl.c
+#    List file    =  ..\listings\MclDqCtrl.lst
+#    Object file  =  MclDqCtrl.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Hbl\Mci\Mcl\MacroBlocks\MclDqCtrl.c
+      1          /**
+      2           *  @file       MclDqCtrl.c
+      3           *  @brief      Motor Control Loop 3-phase motors: DQ Reference Controllers Macro Block.
+      4           *  @details    This module implements the DQ Control module.
+      5           *  @author     alessio.beato/luigi.fagnano
+      6           *  $Header:
+      7           *  @copyright  Copyright 2020-$Date$. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+      8          */
+      9          //---------------------------------------------------------------------------------------------------------------------
+     10          //---------------------------------------------------------------------------------------------------------------------
+     11          
+     12          
+     13          //-------------------------------------- Include Files ----------------------------------------------------------------
+     14          #include "MclDqCtrl.h"
+     15          #include "McMathCalc_macros.h"
+     16          #include "Pi.h"
+     17          #include "ClrkPark.h"
+     18          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     19          
+     20          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     21          #ifndef SQRT3_INV
+     22              #define SQRT3_INV     (float32) (1.0f/1.7320508075688772935274463415059f)
+     23          #endif
+     24          
+     25          #ifndef RPM_TO_RADS
+     26              #define RPM_TO_RADS     0.10471975511965977461542144610932f
+     27          #endif
+     28          
+     29          static PI_CONTROLLER_F_TYPE Flux_Controller;
+     30          static PI_CONTROLLER_F_TYPE Torque_Controller;
+     31          
+     32          
+     33          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+     34          static void Torque_Flux_Gains_Scheduler(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params);
+     35          #ifdef DQCTRL__HEXAGON_LIMIT
+     36          static float32 HexagonTrajectoryCalculation(MCL_DQ_CTRL_IO_F_TYPE *io);
+     37          #endif
+     38          
+     39          
+     40          //=====================================================================================================================
+     41          //-------------------------------------- Public Functions -------------------------------------------------------------
+     42          //=====================================================================================================================
+     43          
+     44          //---------------------------------------------------------------------------------------------------------------------
+     45          /**
+     46           *  @brief      Reset all Mcl Dq Controllers quantities.
+     47           *  @details    This routine reset all Dq Controllers quantities, it has to be called at every time the pwm is switched off (motor stop or free down ramp).
+     48           *
+     49           *
+     50           *  @param[in]     
+     51           *  @param[Out]
+     52           *  @return        
+     53           */
+
+   \                                 In section .text, align 2, keep-with-next
+     54          void MclDqCtrl__ResetState(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params)
+     55          {
+     56              //Private variables reset
+     57              io->Vs_Alpha_Beta->Alpha = 0.0f;
+   \                     MclDqCtrl__ResetState: (+1)
+   \   00000000   0x6A42             LDR      R2,[R0, #+36]
+   \   00000002   0x2300             MOVS     R3,#+0
+   \   00000004   0x6053             STR      R3,[R2, #+4]
+     58              io->Vs_Alpha_Beta->Beta = 0.0f;
+   \   00000006   0x6A40             LDR      R0,[R0, #+36]
+   \   00000008   0x6083             STR      R3,[R0, #+8]
+     59          
+     60              Torque_Controller.Kp = params->gains[0].torque_kp;
+   \   0000000A   0x....             LDR.N    R0,??DataTable4_2
+   \   0000000C   0x690A             LDR      R2,[R1, #+16]
+   \   0000000E   0x6282             STR      R2,[R0, #+40]
+     61              Torque_Controller.Ki = params->gains[0].torque_ki;
+   \   00000010   0x694A             LDR      R2,[R1, #+20]
+   \   00000012   0x62C2             STR      R2,[R0, #+44]
+     62          
+     63              Torque_Controller.Integ_K_1 = 0.0f;
+   \   00000014   0x6203             STR      R3,[R0, #+32]
+     64              Torque_Controller.Out = 0.0f;
+   \   00000016   0x6243             STR      R3,[R0, #+36]
+     65          
+     66              Flux_Controller.Kp = params->gains[0].flux_kp;
+   \   00000018   0x698A             LDR      R2,[R1, #+24]
+   \   0000001A   0x60C2             STR      R2,[R0, #+12]
+     67              Flux_Controller.Ki = params->gains[0].flux_ki;
+   \   0000001C   0x69CA             LDR      R2,[R1, #+28]
+   \   0000001E   0x6102             STR      R2,[R0, #+16]
+     68          
+     69              Flux_Controller.Out = 0.0f;
+   \   00000020   0x6083             STR      R3,[R0, #+8]
+     70              Flux_Controller.Integ_K_1 = 0.0f;
+   \   00000022   0x6043             STR      R3,[R0, #+4]
+     71          
+     72              Flux_Controller.Upper_Limit =  params->Vd_Max;
+   \   00000024   0x680A             LDR      R2,[R1, #+0]
+   \   00000026   0x6142             STR      R2,[R0, #+20]
+     73              Flux_Controller.Lower_Limit = -params->Vd_Max;
+   \   00000028   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   0000002C   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000030   0xED80 0x0A06      VSTR     S0,[R0, #+24]
+     74          }
+   \   00000034   0x4770             BX       LR               ;; return
+     75          
+     76          
+     77          //---------------------------------------------------------------------------------------------------------------------
+     78          /**
+     79           *  @brief      Motor Control Loop Dq Controller initialization.
+     80           *  @details    In this routine are called all initialization functions.
+     81           *
+     82           *
+     83           *  @param[in]     
+     84           *  @param[Out]
+     85           *  @param[in]      
+     86           *  @return        
+     87           */
+
+   \                                 In section .text, align 2, keep-with-next
+     88          void MclDqCtrl__Initialize(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params)
+     89          {
+     90          	// reset MCL quantities
+     91          	MclDqCtrl__ResetState(io, params);
+   \                     MclDqCtrl__Initialize: (+1)
+   \   00000000   0x6A42             LDR      R2,[R0, #+36]
+   \   00000002   0x2300             MOVS     R3,#+0
+   \   00000004   0x6053             STR      R3,[R2, #+4]
+   \   00000006   0x6A40             LDR      R0,[R0, #+36]
+   \   00000008   0x6083             STR      R3,[R0, #+8]
+   \   0000000A   0x....             LDR.N    R0,??DataTable4_2
+   \   0000000C   0x690A             LDR      R2,[R1, #+16]
+   \   0000000E   0x6282             STR      R2,[R0, #+40]
+   \   00000010   0x694A             LDR      R2,[R1, #+20]
+   \   00000012   0x62C2             STR      R2,[R0, #+44]
+   \   00000014   0x6203             STR      R3,[R0, #+32]
+   \   00000016   0x6243             STR      R3,[R0, #+36]
+   \   00000018   0x698A             LDR      R2,[R1, #+24]
+   \   0000001A   0x60C2             STR      R2,[R0, #+12]
+   \   0000001C   0x69CA             LDR      R2,[R1, #+28]
+   \   0000001E   0x6102             STR      R2,[R0, #+16]
+   \   00000020   0x6083             STR      R3,[R0, #+8]
+   \   00000022   0x6043             STR      R3,[R0, #+4]
+   \   00000024   0x680A             LDR      R2,[R1, #+0]
+   \   00000026   0x6142             STR      R2,[R0, #+20]
+   \   00000028   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   0000002C   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000030   0xED80 0x0A06      VSTR     S0,[R0, #+24]
+     92          }
+   \   00000034   0x4770             BX       LR               ;; return
+     93          
+     94          
+     95          //---------------------------------------------------------------------------------------------------------------------
+     96          /**
+     97           *  @brief      Mcl DQ Controllers Override Gains.
+     98           *  @details    In this routine Torque and Flux controllers gains are changed according input parameters.
+     99           *
+    100           *
+    101           *  @param[in]
+    102           *  @param[Out]
+    103           *  @param[in]
+    104           *  @return
+    105           */
+
+   \                                 In section .text, align 2, keep-with-next
+    106          void MclDqCtrl__OverrideRegGains(MCL_DQ_CTRL_PARAMS_TYPE *params)
+    107          {
+    108              Torque_Controller.Kp = params->gains[0].torque_kp;
+   \                     MclDqCtrl__OverrideRegGains: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable4_2
+   \   00000002   0x6902             LDR      R2,[R0, #+16]
+   \   00000004   0x628A             STR      R2,[R1, #+40]
+    109              Torque_Controller.Ki = params->gains[0].torque_ki;
+   \   00000006   0x6942             LDR      R2,[R0, #+20]
+   \   00000008   0x62CA             STR      R2,[R1, #+44]
+    110              Flux_Controller.Kp = params->gains[0].flux_kp;
+   \   0000000A   0x6982             LDR      R2,[R0, #+24]
+   \   0000000C   0x60CA             STR      R2,[R1, #+12]
+    111              Flux_Controller.Ki = params->gains[0].flux_ki;
+   \   0000000E   0x69C0             LDR      R0,[R0, #+28]
+   \   00000010   0x6108             STR      R0,[R1, #+16]
+    112          }
+   \   00000012   0x4770             BX       LR               ;; return
+    113          
+    114          
+    115          //---------------------------------------------------------------------------------------------------------------------
+    116          /**
+    117           *  @brief     Dq Reference Controllers
+    118           *  @details   Dq Controller:   DQ PI execution (FOC: current PI, DTC: flux/torque PI)
+    119           *                              alpha-beta voltage reference generation
+    120           *  @param[in]     
+    121           *  @param[Out]
+    122           *  @param[in]      
+    123           *  @return        
+    124           */
+
+   \                                 In section .text, align 4, keep-with-next
+    125          void MclDqCtrl__RunningHandler(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params)
+    126          {
+   \                     MclDqCtrl__RunningHandler: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB088             SUB      SP,SP,#+32
+   \   00000004   0x4604             MOV      R4,R0
+    127              float32 vs_max;
+    128              float32 vd_out;
+    129              float32 vq_out_max;
+    130              float32 temp;
+    131              ALPHA_BETA_COOR_SYST_F_TYPE temp_vdq;  // used for phase advance angle rotation
+    132              DQ_COOR_SYST_F_TYPE dq_in;
+    133              SIN_COS_F_TYPE sin_cos;
+    134          
+    135              dq_in.ZeroSequence = 0.0f;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x9000             STR      R0,[SP, #+0]
+    136              temp_vdq.ZeroSequence = 0.0f;
+   \   0000000A   0x9005             STR      R0,[SP, #+20]
+   \   0000000C   0x460D             MOV      R5,R1
+    137          
+    138              //==========================================================================//
+    139              //                           Flux control loop                              //
+    140              //==========================================================================//
+    141              Flux_Controller.Err = *(io->D_Ref) -  *(io->D_Est);
+   \   0000000E   0x6820             LDR      R0,[R4, #+0]
+   \   00000010   0x....             LDR.N    R6,??DataTable4_2
+   \   00000012   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000016   0x6860             LDR      R0,[R4, #+4]
+   \   00000018   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   0000001C   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000020   0xED86 0x0A00      VSTR     S0,[R6, #0]
+    142              Pi__CalcPiF(&Flux_Controller);
+   \   00000024   0x4630             MOV      R0,R6
+   \   00000026   0x.... 0x....      BL       Pi__CalcPiF
+    143              vd_out = Flux_Controller.Out;
+    144          
+    145          
+    146              //==========================================================================//
+    147              //                          Torque control loop                             //
+    148              //==========================================================================//
+    149          #ifdef DQCTRL__HEXAGON_LIMIT
+    150              //hexagon trajectory
+    151              temp = HexagonTrajectoryCalculation(io);
+    152              // Calculate the maximum available vq voltage considering the desired usage of available DC bus voltage
+    153                  vs_max = (*(io->Vdc) * SQRT3_INV) * temp;
+    154          #else
+    155                  vs_max = (*(io->Vdc) * SQRT3_INV) * params->m_index;
+   \   0000002A   0x69E0             LDR      R0,[R4, #+28]
+   \   0000002C   0xEDD6 0x0A02      VLDR     S1,[R6, #+8]
+   \   00000030   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000034   0xED9F 0x....      VLDR.W   S2,??DataTable4  ;; 0x3f13cd3a
+   \   00000038   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+   \   0000003C   0xED95 0x1A03      VLDR     S2,[R5, #+12]
+   \   00000040   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+    156          #endif
+    157          
+    158          
+    159              /*! Vq limitation is given by:
+    160               * \f[
+    161               * \begin{aligned}
+    162               *      &V_{qmax} = \sqrt{V_{smax}^2 - v_{ds}^2}
+    163               * \end{aligned}
+    164               * \f]
+    165               */
+    166              vq_out_max  = vs_max*vs_max;
+    167              vq_out_max -= vd_out*vd_out;
+    168              vq_out_max = MC_SQRT_F(vq_out_max);
+   \   00000044   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   00000048   0xEE00 0x0AE0      VMLS.F32 S0,S1,S1
+   \   0000004C   0x.... 0x....      BL       MathCalc__SqrtF
+    169          
+    170          
+    171              Torque_Controller.Upper_Limit =  vq_out_max;
+   \   00000050   0xED86 0x0A0C      VSTR     S0,[R6, #+48]
+    172              Torque_Controller.Lower_Limit = -vq_out_max;
+   \   00000054   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000058   0xED86 0x0A0D      VSTR     S0,[R6, #+52]
+    173          
+    174              Torque_Controller.Err = *(io->Q_Ref) -  *(io->Q_Est);
+   \   0000005C   0x68A0             LDR      R0,[R4, #+8]
+   \   0000005E   0xED90 0x0A00      VLDR     S0,[R0, #0]
+   \   00000062   0x68E0             LDR      R0,[R4, #+12]
+   \   00000064   0xEDD0 0x0A00      VLDR     S1,[R0, #0]
+   \   00000068   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   0000006C   0xED86 0x0A07      VSTR     S0,[R6, #+28]
+    175              Pi__CalcPiF(&Torque_Controller);
+   \   00000070   0xF106 0x001C      ADD      R0,R6,#+28
+   \   00000074   0x.... 0x....      BL       Pi__CalcPiF
+    176          
+    177          
+    178              //==========================================================================//
+    179              //          Check and if requested, overwrite the output voltage            //
+    180              //==========================================================================//
+    181              if( (io->Force_Out_Volt->D != 0) ||
+    182                  (io->Force_Out_Volt->Q != 0) )
+   \   00000078   0x6960             LDR      R0,[R4, #+20]
+   \   0000007A   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   0000007E   0xEEB5 0x0A40      VCMP.F32 S0,#0.0
+   \   00000082   0xEEF1 0xFA10      FMSTAT   
+   \   00000086   0xBF02             ITTT     EQ 
+   \   00000088   0xEDD0 0x0A02      VLDREQ   S1,[R0, #+8]
+   \   0000008C   0xEEF5 0x0A40      VCMPEQ.F32 S1,#0.0
+   \   00000090   0xEEF1 0xFA10      FMSTATEQ 
+   \   00000094   0xD019             BEQ.N    ??MclDqCtrl__RunningHandler_0
+    183              {
+    184                  dq_in.D = io->Force_Out_Volt->D;
+   \   00000096   0xED8D 0x0A01      VSTR     S0,[SP, #+4]
+    185                  temp    = io->Force_Out_Volt->D;
+    186          
+    187                  // Load the integral of PI with the output voltage
+    188                  Flux_Controller.Integ_K_1= temp;
+   \   0000009A   0x6960             LDR      R0,[R4, #+20]
+   \   0000009C   0xED90 0x0A01      VLDR     S0,[R0, #+4]
+   \   000000A0   0xED86 0x0A01      VSTR     S0,[R6, #+4]
+    189                  Flux_Controller.Out = temp;
+   \   000000A4   0xED86 0x0A02      VSTR     S0,[R6, #+8]
+    190          
+    191          
+    192                  dq_in.Q  = io->Force_Out_Volt->Q;
+   \   000000A8   0x6960             LDR      R0,[R4, #+20]
+   \   000000AA   0x6880             LDR      R0,[R0, #+8]
+    193                  temp     = io->Force_Out_Volt->Q;
+    194          
+    195                  // Load the integral of PI with the output voltage
+    196                  Torque_Controller.Integ_K_1 = temp;
+    197                  Torque_Controller.Out = temp;
+    198          
+    199                  io->Vs_DQ->D = dq_in.D;
+   \   000000AC   0x9901             LDR      R1,[SP, #+4]
+   \   000000AE   0x9002             STR      R0,[SP, #+8]
+   \   000000B0   0x6960             LDR      R0,[R4, #+20]
+   \   000000B2   0xED90 0x0A02      VLDR     S0,[R0, #+8]
+   \   000000B6   0xED86 0x0A08      VSTR     S0,[R6, #+32]
+   \   000000BA   0xED86 0x0A09      VSTR     S0,[R6, #+36]
+   \   000000BE   0x6A20             LDR      R0,[R4, #+32]
+   \   000000C0   0x6041             STR      R1,[R0, #+4]
+    200                  io->Vs_DQ->Q = dq_in.Q;
+   \   000000C2   0x6A20             LDR      R0,[R4, #+32]
+   \   000000C4   0x9902             LDR      R1,[SP, #+8]
+   \   000000C6   0x6081             STR      R1,[R0, #+8]
+   \   000000C8   0xE01F             B.N      ??MclDqCtrl__RunningHandler_1
+    201          
+    202              }
+    203              else
+    204              {
+    205                  dq_in.D = Flux_Controller.Out;
+    206                  dq_in.Q = Torque_Controller.Out;
+   \                     ??MclDqCtrl__RunningHandler_0: (+1)
+   \   000000CA   0x6A70             LDR      R0,[R6, #+36]
+   \   000000CC   0xED96 0x0A02      VLDR     S0,[R6, #+8]
+   \   000000D0   0x9002             STR      R0,[SP, #+8]
+   \   000000D2   0xED8D 0x0A01      VSTR     S0,[SP, #+4]
+    207          
+    208                  io->Vs_DQ->D = dq_in.D;
+   \   000000D6   0x6A20             LDR      R0,[R4, #+32]
+   \   000000D8   0xED80 0x0A01      VSTR     S0,[R0, #+4]
+    209                  io->Vs_DQ->Q = dq_in.Q;
+   \   000000DC   0x6A20             LDR      R0,[R4, #+32]
+   \   000000DE   0x9902             LDR      R1,[SP, #+8]
+   \   000000E0   0x6081             STR      R1,[R0, #+8]
+    210          
+    211          
+    212                  //==========================================================================//
+    213                  //                        Phase Advance                                     //
+    214                  //==========================================================================//
+    215                  #ifdef PWM_DOUBLE_SLOT
+    216                  temp = ( *(io->Ctrl_Specific->Speed_Rotor_Observed) * params->Phase_Advance_Coeff * 0.5f); //half the Ts due to double slot (shift 16 instead of 15)
+    217                  #else
+    218                  temp = ( *(io->Ctrl_Specific->Speed_Rotor_Observed) * params->Phase_Advance_Coeff );
+    219                  #endif
+    220          
+    221                  MathCalc__SinCosF(temp,  &sin_cos);
+   \   000000E2   0xA803             ADD      R0,SP,#+12
+   \   000000E4   0x6AA1             LDR      R1,[R4, #+40]
+   \   000000E6   0xEDD5 0x0A02      VLDR     S1,[R5, #+8]
+   \   000000EA   0x6889             LDR      R1,[R1, #+8]
+   \   000000EC   0xED91 0x0A00      VLDR     S0,[R1, #0]
+   \   000000F0   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000000F4   0x.... 0x....      BL       MathCalc__SinCosF
+    222          
+    223          
+    224                  ClrkPark__InverseParkF(&dq_in, &temp_vdq, &sin_cos);
+   \   000000F8   0xAA03             ADD      R2,SP,#+12
+   \   000000FA   0xA905             ADD      R1,SP,#+20
+   \   000000FC   0xA800             ADD      R0,SP,#+0
+   \   000000FE   0x.... 0x....      BL       ClrkPark__InverseParkF
+    225          
+    226                  dq_in.D = temp_vdq.Alpha;
+   \   00000102   0x9806             LDR      R0,[SP, #+24]
+   \   00000104   0x9001             STR      R0,[SP, #+4]
+    227                  dq_in.Q = temp_vdq.Beta;
+   \   00000106   0x9807             LDR      R0,[SP, #+28]
+   \   00000108   0x9002             STR      R0,[SP, #+8]
+    228              }
+    229          
+    230              //==========================================================================//
+    231              //                Inverse Park transformation (dq-abc)                      //
+    232              //==========================================================================//
+    233              ClrkPark__InverseParkF(&dq_in, io->Vs_Alpha_Beta, io->Sin_Cos);
+   \                     ??MclDqCtrl__RunningHandler_1: (+1)
+   \   0000010A   0x6922             LDR      R2,[R4, #+16]
+   \   0000010C   0x6A61             LDR      R1,[R4, #+36]
+   \   0000010E   0xA800             ADD      R0,SP,#+0
+   \   00000110   0x.... 0x....      BL       ClrkPark__InverseParkF
+    234          }
+   \   00000114   0xB008             ADD      SP,SP,#+32
+   \   00000116   0xBD70             POP      {R4-R6,PC}       ;; return
+    235          
+    236          
+    237          #ifdef PWM_DOUBLE_SLOT
+    238          //---------------------------------------------------------------------------------------------------------------------
+    239          /**
+    240           *  @brief      Motor Control Loop Dq Controller 2nd Running Handler.
+    241           *  @details    This routine is called in second pwm slots.
+    242           *
+    243           *
+    244           *  @param[in]
+    245           *  @param[Out]
+    246           *  @param[in]
+    247           *  @return
+    248           */
+    249          void MclDqCtrl__2ndRunningHandler(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params)
+    250          {
+    251              float32 temp_vd;
+    252              float32 temp_vq;
+    253              float32 temp;
+    254              DQ_COOR_SYST_F_TYPE dq_in;
+    255              SIN_COS_F_TYPE sin_cos;
+    256          
+    257              dq_in.D = (io->Vs_DQ->D);
+    258              dq_in.Q = (io->Vs_DQ->Q);
+    259          
+    260              //==========================================================================//
+    261              //                        Phase Advance (advance of 1Ts)                    //
+    262              //==========================================================================//
+    263          #ifdef SIM_SENSORED_MODE
+    264              temp = ( *(io->Ctrl_Specific->Speed_Rotor_Observed) * params->Phase_Advance_Coeff * 0.5f); // the sincos is updated from simulation so we just need one phase advance step (halved due to double slot)
+    265          #else
+    266              temp = ( *(io->Ctrl_Specific->Speed_Rotor_Observed) * params->Phase_Advance_Coeff ); // the sincos is the internal one, so we need two steps (halved due to double slot)
+    267          #endif
+    268              MathCalc__SinCosF(temp,  &sin_cos);
+    269          
+    270              temp_vd  = (dq_in.D * sin_cos.Cos); //(Flux_Controller.Out * sin_cos.Cos)>>15;
+    271              temp_vd -= (dq_in.Q * sin_cos.Sin); //(Torque_Controller.Out * sin_cos.Sin)>>15;
+    272              temp_vq  = (dq_in.D * sin_cos.Sin); //(Flux_Controller.Out * sin_cos.Sin)>>15;
+    273              temp_vq += (dq_in.Q * sin_cos.Cos); //(Torque_Controller.Out * sin_cos.Cos)>>15;
+    274          
+    275              dq_in.D = temp_vd;//Flux_Controller.Out = temp_vd;
+    276              dq_in.Q = temp_vq;//Torque_Controller.Out = temp_vq;
+    277          
+    278          
+    279              //==========================================================================//
+    280              //                Inverse Park transformation (dq-abc)                      //
+    281              //==========================================================================//
+    282              ClrkPark__InverseParkF(&dq_in, io->Vs_Alpha_Beta, io->Sin_Cos);
+    283          
+    284          }
+    285          #endif
+    286          
+    287          
+    288          //---------------------------------------------------------------------------------------------------------------------
+    289          /**
+    290           *  @brief      Handle MclDqCtrl events of 25ms.
+    291           *
+    292           *  @param      none
+    293           *  @return     none
+    294           */
+
+   \                                 In section .text, align 4, keep-with-next
+    295          void MclDqCtrl__25msHandler(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params)
+   \                     MclDqCtrl__25msHandler: (+1)
+   \   00000000   0xBF00             Nop      
+   \   00000002   0xBF00             Nop      
+    296          {
+    297              Torque_Flux_Gains_Scheduler(io, params);
+   \   00000004                      REQUIRE Torque_Flux_Gains_Scheduler
+   \   00000004                      ;; // Fall through to label Torque_Flux_Gains_Scheduler
+    298          }
+    299          
+    300          
+    301          //=====================================================================================================================
+    302          //-------------------------------------- Private Functions ------------------------------------------------------------
+    303          //=====================================================================================================================
+    304          
+
+   \                                 In section .text, align 4, keep-with-next
+    305          static void Torque_Flux_Gains_Scheduler(MCL_DQ_CTRL_IO_F_TYPE *io, MCL_DQ_CTRL_PARAMS_TYPE *params)
+    306          {
+   \                     Torque_Flux_Gains_Scheduler: (+1)
+   \   00000000   0xB4F0             PUSH     {R4-R7}
+    307              static sint32 gains_indexer_previous;
+    308              static sint32 gains_indexer;
+    309              static sint16 relative_time;
+    310              float32 temp_speed_table;
+    311              float32 speed_rotor_abs;
+    312              float32 delta;
+    313              float32 temp_flux_kp;
+    314              float32 temp_flux_ki;
+    315              float32 temp_torque_kp;
+    316              float32 temp_torque_ki;
+    317          
+    318          
+    319              // During starting, use default gains.
+    320              if( (*io->Ctrl_Specific->Elapsed_Time_After_Starting) <= (uint32)params->Force_Gains_Starting_Time )
+   \   00000002   0x6A82             LDR      R2,[R0, #+40]
+   \   00000004   0x....             LDR.N    R0,??DataTable4_2
+   \   00000006   0x6954             LDR      R4,[R2, #+20]
+   \   00000008   0x684B             LDR      R3,[R1, #+4]
+   \   0000000A   0x6824             LDR      R4,[R4, #+0]
+   \   0000000C   0x42A3             CMP      R3,R4
+   \   0000000E   0xD30D             BCC.N    ??Torque_Flux_Gains_Scheduler_0
+    321              {
+    322                  Torque_Controller.Kp = params->gains[0].torque_kp;
+   \   00000010   0x690A             LDR      R2,[R1, #+16]
+   \   00000012   0x6282             STR      R2,[R0, #+40]
+    323                  Torque_Controller.Ki = params->gains[0].torque_ki;
+   \   00000014   0x694A             LDR      R2,[R1, #+20]
+   \   00000016   0x62C2             STR      R2,[R0, #+44]
+    324          
+    325                  Flux_Controller.Kp = params->gains[0].flux_kp;
+   \   00000018   0x698A             LDR      R2,[R1, #+24]
+   \   0000001A   0x60C2             STR      R2,[R0, #+12]
+    326                  Flux_Controller.Ki = params->gains[0].flux_ki;
+   \   0000001C   0x69C9             LDR      R1,[R1, #+28]
+   \   0000001E   0x6101             STR      R1,[R0, #+16]
+    327          
+    328                  // Initialize the variable, since it is starting now...
+    329                  gains_indexer_previous = 0;
+   \   00000020   0x2100             MOVS     R1,#+0
+   \   00000022   0x63C1             STR      R1,[R0, #+60]
+    330                  gains_indexer = 0;
+   \   00000024   0x6401             STR      R1,[R0, #+64]
+    331                  relative_time = 0;
+   \   00000026   0x8701             STRH     R1,[R0, #+56]
+    332              }
+    333              else // Starting time is already over, so, look for new regions
+    334              {
+    335                  // Look for new index only if the transition between regions is already done.
+    336                  if(gains_indexer == gains_indexer_previous)
+    337                  {
+    338                      // Save the speed on stack
+    339                      speed_rotor_abs = *(io->Ctrl_Specific->Speed_Rotor_Observed_Mech_Abs);
+    340          
+    341                      // Look for the indexer
+    342                      for(gains_indexer = 0; gains_indexer < (DQCRTL__MAX_GAINS_INDEX-1); gains_indexer++)
+    343                      {
+    344                          // Only one indexed reading is performed
+    345                          temp_speed_table = (params->gains[gains_indexer].abs_speed) * RPM_TO_RADS;
+    346          
+    347                          if(temp_speed_table > 0)
+    348                          {
+    349                              if( speed_rotor_abs < temp_speed_table )
+    350                              {
+    351                                  break;
+    352                              }
+    353                          }
+    354                          else
+    355                          {
+    356                              break;
+    357                          }
+    358                      }
+    359          
+    360                      relative_time = 0;
+    361                  }
+    362                  else //if(gains_indexer != gains_indexer_previous)
+    363                  {
+    364                      relative_time++;
+    365          
+    366                      // Calculate flux gains - kp
+    367                      delta = (params->gains[gains_indexer].flux_kp) - (params->gains[gains_indexer_previous].flux_kp);
+    368                      delta = delta*relative_time;
+    369                      delta = delta/(params->gains[gains_indexer].transition_time);
+    370                      temp_flux_kp = delta + (params->gains[gains_indexer_previous].flux_kp);
+    371          
+    372                      // Calculate flux gains - ki
+    373                      delta = (params->gains[gains_indexer].flux_ki) - (params->gains[gains_indexer_previous].flux_ki);
+    374                      delta = delta*relative_time;
+    375                      delta = delta/(params->gains[gains_indexer].transition_time);
+    376                      temp_flux_ki = delta + (params->gains[gains_indexer_previous].flux_ki);
+    377          
+    378          
+    379                      // Calculate torque gains - kp
+    380                      delta = (params->gains[gains_indexer].torque_kp) - (params->gains[gains_indexer_previous].torque_kp);
+    381                      delta = delta*relative_time;
+    382                      delta = delta/(params->gains[gains_indexer].transition_time);
+    383                      temp_torque_kp = delta + (params->gains[gains_indexer_previous].torque_kp);
+    384          
+    385                      // Calculate torque gains - ki
+    386                      delta = (params->gains[gains_indexer].torque_ki) - (params->gains[gains_indexer_previous].torque_ki);
+    387                      delta = delta*relative_time;
+    388                      delta = delta/(params->gains[gains_indexer].transition_time);
+    389                      temp_torque_ki = delta + (params->gains[gains_indexer_previous].torque_ki);
+    390          
+    391          
+    392                      if(relative_time >= (params->gains[gains_indexer].transition_time))
+    393                      {
+    394                          gains_indexer_previous = gains_indexer;
+    395          
+    396                          temp_flux_kp = (params->gains[gains_indexer].flux_kp);
+    397                          temp_flux_ki = (params->gains[gains_indexer].flux_ki);
+    398          
+    399                          temp_torque_kp = (params->gains[gains_indexer].torque_kp);
+    400                          temp_torque_ki = (params->gains[gains_indexer].torque_ki);
+    401                      }
+    402          
+    403                      Flux_Controller.Kp = temp_flux_kp;
+    404                      Flux_Controller.Ki = temp_flux_ki;
+    405          
+    406                      Torque_Controller.Kp = temp_torque_kp;
+    407                      Torque_Controller.Ki = temp_torque_ki;
+    408                  }
+    409              }
+    410          }
+   \   00000028   0xBCF0             POP      {R4-R7}
+   \   0000002A   0x4770             BX       LR
+   \                     ??Torque_Flux_Gains_Scheduler_0: (+1)
+   \   0000002C   0x6BC3             LDR      R3,[R0, #+60]
+   \   0000002E   0x6C04             LDR      R4,[R0, #+64]
+   \   00000030   0x429C             CMP      R4,R3
+   \   00000032   0xD128             BNE.N    ??Torque_Flux_Gains_Scheduler_1
+   \   00000034   0x6912             LDR      R2,[R2, #+16]
+   \   00000036   0xED91 0x1A08      VLDR     S2,[R1, #+32]
+   \   0000003A   0xED92 0x0A00      VLDR     S0,[R2, #0]
+   \   0000003E   0xEDDF 0x....      VLDR.W   S1,??DataTable4_1  ;; 0x3dd67750
+   \   00000042   0xEE21 0x1A20      VMUL.F32 S2,S2,S1
+   \   00000046   0x2200             MOVS     R2,#+0
+   \   00000048   0xEEB5 0x1A40      VCMP.F32 S2,#0.0
+   \   0000004C   0xEEF1 0xFA10      FMSTAT   
+   \   00000050   0xDD14             BLE.N    ??Torque_Flux_Gains_Scheduler_2
+   \   00000052   0xEEB4 0x0A41      VCMP.F32 S0,S2
+   \   00000056   0xEEF1 0xFA10      FMSTAT   
+   \   0000005A   0xD40F             BMI.N    ??Torque_Flux_Gains_Scheduler_2
+   \   0000005C   0xED91 0x1A0E      VLDR     S2,[R1, #+56]
+   \   00000060   0xEE61 0x0A20      VMUL.F32 S1,S2,S1
+   \   00000064   0x2201             MOVS     R2,#+1
+   \   00000066   0xEEF5 0x0A40      VCMP.F32 S1,#0.0
+   \   0000006A   0xEEF1 0xFA10      FMSTAT   
+   \   0000006E   0xDD05             BLE.N    ??Torque_Flux_Gains_Scheduler_2
+   \   00000070   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   00000074   0xEEF1 0xFA10      FMSTAT   
+   \   00000078   0xBF58             IT       PL 
+   \   0000007A   0x2202             MOVPL    R2,#+2
+   \                     ??Torque_Flux_Gains_Scheduler_2: (+1)
+   \   0000007C   0x2100             MOVS     R1,#+0
+   \   0000007E   0x6402             STR      R2,[R0, #+64]
+   \   00000080   0x8701             STRH     R1,[R0, #+56]
+   \   00000082   0xBCF0             POP      {R4-R7}
+   \   00000084   0x4770             BX       LR
+   \                     ??Torque_Flux_Gains_Scheduler_1: (+1)
+   \   00000086   0x8F02             LDRH     R2,[R0, #+56]
+   \   00000088   0x1C52             ADDS     R2,R2,#+1
+   \   0000008A   0xEB04 0x0544      ADD      R5,R4,R4, LSL #+1
+   \   0000008E   0x8702             STRH     R2,[R0, #+56]
+   \   00000090   0xEB01 0x05C5      ADD      R5,R1,R5, LSL #+3
+   \   00000094   0xEB03 0x0743      ADD      R7,R3,R3, LSL #+1
+   \   00000098   0xEB01 0x01C7      ADD      R1,R1,R7, LSL #+3
+   \   0000009C   0x6A6E             LDR      R6,[R5, #+36]
+   \   0000009E   0xEDD1 0x0A06      VLDR     S1,[R1, #+24]
+   \   000000A2   0xED95 0x1A06      VLDR     S2,[R5, #+24]
+   \   000000A6   0xEDD5 0x2A07      VLDR     S5,[R5, #+28]
+   \   000000AA   0xEDD5 0x3A04      VLDR     S7,[R5, #+16]
+   \   000000AE   0xEDD5 0x4A05      VLDR     S9,[R5, #+20]
+   \   000000B2   0xB212             SXTH     R2,R2
+   \   000000B4   0xEE01 0x2A90      VMOV     S3,R2
+   \   000000B8   0xEE00 0x6A10      VMOV     S0,R6
+   \   000000BC   0xEEF8 0x1AE1      VCVT.F32.S32 S3,S3
+   \   000000C0   0xEE31 0x2A60      VSUB.F32 S4,S2,S1
+   \   000000C4   0xEEB8 0x0AC0      VCVT.F32.S32 S0,S0
+   \   000000C8   0xEE22 0x2A21      VMUL.F32 S4,S4,S3
+   \   000000CC   0xEE82 0x2A00      VDIV.F32 S4,S4,S0
+   \   000000D0   0xEE72 0x0A20      VADD.F32 S1,S4,S1
+   \   000000D4   0xED91 0x2A07      VLDR     S4,[R1, #+28]
+   \   000000D8   0xEE32 0x3AC2      VSUB.F32 S6,S5,S4
+   \   000000DC   0xEE23 0x3A21      VMUL.F32 S6,S6,S3
+   \   000000E0   0xEE83 0x3A00      VDIV.F32 S6,S6,S0
+   \   000000E4   0xEE33 0x2A02      VADD.F32 S4,S6,S4
+   \   000000E8   0xED91 0x3A04      VLDR     S6,[R1, #+16]
+   \   000000EC   0xEE33 0x4AC3      VSUB.F32 S8,S7,S6
+   \   000000F0   0xEE24 0x4A21      VMUL.F32 S8,S8,S3
+   \   000000F4   0xEE84 0x4A00      VDIV.F32 S8,S8,S0
+   \   000000F8   0xEE34 0x3A03      VADD.F32 S6,S8,S6
+   \   000000FC   0xED91 0x4A05      VLDR     S8,[R1, #+20]
+   \   00000100   0xEE34 0x5AC4      VSUB.F32 S10,S9,S8
+   \   00000104   0xEE65 0x1A21      VMUL.F32 S3,S10,S3
+   \   00000108   0xEE81 0x0A80      VDIV.F32 S0,S3,S0
+   \   0000010C   0xEE30 0x0A04      VADD.F32 S0,S0,S8
+   \   00000110   0x42B2             CMP      R2,R6
+   \   00000112   0xDB08             BLT.N    ??Torque_Flux_Gains_Scheduler_3
+   \   00000114   0x63C4             STR      R4,[R0, #+60]
+   \   00000116   0xEEF0 0x0A41      VMOV.F32 S1,S2
+   \   0000011A   0xEEB0 0x2A62      VMOV.F32 S4,S5
+   \   0000011E   0xEEB0 0x3A63      VMOV.F32 S6,S7
+   \   00000122   0xEEB0 0x0A64      VMOV.F32 S0,S9
+   \                     ??Torque_Flux_Gains_Scheduler_3: (+1)
+   \   00000126   0xEDC0 0x0A03      VSTR     S1,[R0, #+12]
+   \   0000012A   0xED80 0x2A04      VSTR     S4,[R0, #+16]
+   \   0000012E   0xED80 0x3A0A      VSTR     S6,[R0, #+40]
+   \   00000132   0xED80 0x0A0B      VSTR     S0,[R0, #+44]
+   \   00000136   0xBCF0             POP      {R4-R7}
+   \   00000138   0x4770             BX       LR               ;; return
+
+   \                                 In section .bss, align 4
+   \                     Flux_Controller:
+   \   00000000                      DS8 28
+   \   0000001C                      DS8 28
+   \   00000038                      DS8 2
+   \   0000003A                      DS8 2
+   \   0000003C                      DS8 4
+   \   00000040                      DS8 4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x3F13CD3A         DC32     0x3f13cd3a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x3DD67750         DC32     0x3dd67750
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x........         DC32     Flux_Controller
+    411          
+    412          
+    413          
+    414          #ifdef DQCTRL__HEXAGON_LIMIT
+    415          #ifdef __IAR_SYSTEMS_ICC__
+    416          #pragma inline = forced
+    417          #endif
+    418          static float32 HexagonTrajectoryCalculation(MCL_DQ_CTRL_IO_F_TYPE *io)
+    419          {
+    420              SIN_COS_F_TYPE sin_cos_reduced;
+    421              float32 hexagon;
+    422              //reduced sine and cosine to 0 - pi/3 range
+    423              sin_cos_reduced.Cos = io->Sin_Cos->Cos;
+    424              sin_cos_reduced.Sin = io->Sin_Cos->Sin;
+    425          
+    426              if (sin_cos_reduced.Sin < 0)
+    427              {
+    428                  sin_cos_reduced.Sin = -sin_cos_reduced.Sin;
+    429                  sin_cos_reduced.Cos = -sin_cos_reduced.Cos;
+    430              }
+    431          
+    432              if ((sin_cos_reduced.Cos < 0.5f) && (sin_cos_reduced.Cos > -0.5f))
+    433              {
+    434                  hexagon = 1.0f/sin_cos_reduced.Sin;
+    435              }
+    436              else if ((sin_cos_reduced.Cos < -0.5f))
+    437              {
+    438                  hexagon = 2.0f / (-F_SQRT3 * sin_cos_reduced.Cos + sin_cos_reduced.Sin);
+    439              }
+    440              else
+    441              {
+    442                  hexagon = 2.0f / (F_SQRT3 * sin_cos_reduced.Cos + sin_cos_reduced.Sin);
+    443              }
+    444              return(hexagon);
+    445          }
+    446          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   MclDqCtrl__25msHandler
+         0   -> Torque_Flux_Gains_Scheduler
+       0   MclDqCtrl__Initialize
+       0   MclDqCtrl__OverrideRegGains
+       0   MclDqCtrl__ResetState
+      48   MclDqCtrl__RunningHandler
+        48   -> ClrkPark__InverseParkF
+        48   -> MathCalc__SinCosF
+        48   -> MathCalc__SqrtF
+        48   -> Pi__CalcPiF
+      16   Torque_Flux_Gains_Scheduler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+      68  Flux_Controller
+          Torque_Controller
+          relative_time
+          gains_indexer_previous
+          gains_indexer
+       4  MclDqCtrl__25msHandler
+      54  MclDqCtrl__Initialize
+      20  MclDqCtrl__OverrideRegGains
+      54  MclDqCtrl__ResetState
+     280  MclDqCtrl__RunningHandler
+     314  Torque_Flux_Gains_Scheduler
+
+ 
+  68 bytes in section .bss
+ 738 bytes in section .text
+ 
+ 738 bytes of CODE memory
+  68 bytes of DATA memory
+
+Errors: none
+Warnings: none

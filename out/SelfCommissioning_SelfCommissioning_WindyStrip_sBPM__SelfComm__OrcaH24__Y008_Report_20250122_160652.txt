@@ -1,0 +1,4 @@
+Motor Identification Parameter for Brushless PMSM Motor
+SelfCommissioning_WindyStrip_sBPM__SelfComm__OrcaH24__Y008
+Date: 20250122_160652
+

@@ -1,0 +1,2141 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:53
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o SFUpdater.obj
+#        -l ..\listings\SFUpdater.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater.c
+#    List file    =  ..\listings\SFUpdater.lst
+#    Object file  =  SFUpdater.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater.c
+      1          /**
+      2           *  @file
+      3           *
+      4           *  @brief      This module manages the process to download the setting file section and displacement data from the ACU
+      5           *
+      6           *      Handling of unaligned section data
+      7           *      When we have more then one section of setting file and if the previous section does not end with the correct FLASH_ALIGNMENT then the previous
+      8           *      next segment write would be end up in issue.
+      9           *      The following sequence is used
+     10           *
+     11          @startuml{SFUpdater_Unaliged_Section_Data_Handling.png}
+     12              title SFUpdater handling un aliged section data Sequence Diagram
+     13          
+     14              (*) --> "Prepare for Requesting Remaining Data left in the current Section of Setting file"
+     15          
+     16              if "Did we reached near to the end of the section" then
+     17                  -->[TRUE]   if "Is Data ends at unaligned address" then
+     18                                -->[true] if "their is next section present" then
+     19                                --> [true] "Prepare to receive the un aligned data in the Temporary Buffer"
+     20                                -->[Ending process] (*)
+     21                                    endif
+     22                              else
+     23                                ->[false] "Request Remaining Data"
+     24                                -->[Ending process] (*)
+     25                              endif
+     26              else
+     27                  ->[false] "Continue requesting the remain data"
+     28                  -->[Ending process] (*)
+     29              endif
+     30          @enduml
+     31          
+     32           *
+     33           *  @copyright  Copyright 2015-$Date: 2015/07/01 13:51:14EDT $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     34           */
+     35          //---------------------------------------------------------------------------------------------------------------------
+     36          //---------------------------------------------------------------------------------------------------------------------
+     37          
+     38          //-------------------------------------- Include Files ----------------------------------------------------------------
+     39          #include "SFUpdater.h"
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SettingFile\SettingFile.h",39  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater_defs.h",30  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Application\SFUpdater\SFUpdater.h",35  Remark[Pe082]: 
+          storage class is not first
+     40          #include "Win.h"
+     41          #include "Reveal.h"
+     42          #include "Flash.h"
+     43          #include "API007Data.h"
+     44          #include "Crc16.h"
+     45          #include "SystemTimers.h"
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SystemTimers\SystemTimers.h",48  Remark[Pe082]: 
+          storage class is not first
+
+  PACKED typedef struct
+         ^
+"C:\Data\Python\Self_Commissioning_Bpm\source\XCategory\Common\SystemTimers\SystemTimers.h",59  Remark[Pe082]: 
+          storage class is not first
+     46          #include "string.h"
+     47          
+     48          #if (SETTINGFILE_MASTER_FILE_FEATURE == ENABLED)
+     49              #define SFUPDATER_MANAGE_SF_ID_DATA                 DISABLED
+     50              #define SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH  DISABLED
+     51          #else
+     52              #if defined(SFUPDATER_ACU_SECTION_ID) || defined(SFUPDATER_HMI_SECTION_ID) || defined(SFUPDATER_MCU_SECTION_ID)
+     53                  #define SFUPDATER_MANAGE_SF_ID_DATA             ENABLED
+     54              #else
+     55                  #define SFUPDATER_MANAGE_SF_ID_DATA             DISABLED
+     56              #endif
+     57          
+     58              #ifdef SFUPDATER_DISPLACEMENT_LIST_DEF
+     59                  #define SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH      ENABLED
+     60              #else
+     61                  #define SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH      DISABLED
+     62              #endif
+     63          #endif
+     64          
+     65          #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+     66              #include "Mode.h"
+     67          #endif
+     68          
+     69          #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+     70              #include "Timer.h"
+     71          #endif
+     72          
+     73          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     74          
+     75          
+     76          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     77          #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+     78              typedef enum
+     79              {
+     80                  SFUPDATER_STATE_INITIALIZE = 0,
+     81                  SFUPDATER_STATE_ERASE_FLASH,
+     82                  SFUPDATER_STATE_WAIT_ACU_ALIVE,
+     83                  SFUPDATER_STATE_WAIT_MSG_SIZE,
+     84                  SFUPDATER_STATE_WAIT_SF_INFO,
+     85                  SFUPDATER_STATE_PROGRAMMING_DATA,
+     86                  SFUPDATER_STATE_DATA_END
+     87              }SFUPDATER_STATE_TYPE;
+     88          
+     89              static SFUPDATER_STATE_TYPE SFUpdater_State;
+     90              static uint8 SFUpdater_Section_Index;           //!< Index into the SFUPDATER_SECTIONS[] array.
+     91              //! The section address allows us to use the SFUpdater_Data_Index as the offset in requests for data from the ACU.
+     92              static FLASH_ADDRESS_TYPE SFUpdater_Section_Address;
+     93              static uint8 SFUpdater_Reveal_Max_Size;
+     94          
+     95              static uint16 SFUpdater_Data_Size;
+     96              static uint16 SFUpdater_Data_Index;
+     97          
+     98              static FLASH_ADDRESS_TYPE SFUpdater_Erase_Address;
+     99              static uint16 SFUpdater_Timer;
+    100          
+    101              //! A list of the setting file sections that are transferred from the ACU.
+
+   \                                 In section .text, align 4, keep-with-next
+    102              static const SF_ID_TYPE SFUPDATER_SECTIONS[] =
+   \                     SFUPDATER_SECTIONS:
+   \   00000000   0x02 0xFF          DC8 2, 255
+
+   \                                 In section .bss, align 4
+    103              {
+    104                  #ifdef SFUPDATER_ACU_SECTION_ID
+    105                      SFUPDATER_ACU_SECTION_ID,
+    106                  #endif
+    107                  #ifdef SFUPDATER_HMI_SECTION_ID
+    108                      SFUPDATER_HMI_SECTION_ID,
+    109                  #endif
+    110                  #ifdef SFUPDATER_MCU_SECTION_ID
+    111                      SFUPDATER_MCU_SECTION_ID,
+    112                  #endif
+    113                  SF_ID_END
+    114              };
+    115          
+    116              //un aligend section data issue is present only if we have more then one section of data in the setting file
+    117              #ifdef SFUPDATER_ACU_SECTION_ID
+    118                  #ifdef SFUPDATER_HMI_SECTION_ID
+    119                      #define SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    120                  #else
+    121                      #ifdef SFUPDATER_MCU_SECTION_ID
+    122                          #define SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    123                      #endif
+    124                  #endif
+    125              #else
+    126                  #ifdef SFUPDATER_HMI_SECTION_ID
+    127                      #ifdef SFUPDATER_MCU_SECTION_ID
+    128                          #define SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    129                      #endif
+    130                  #endif
+    131              #endif
+    132          
+    133              #ifdef SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    134                  typedef enum
+    135                  {
+    136                      SFUPDATER_UNALIGNED_DATA_NONE = 0,
+    137                      SFUPDATER_UNALIGNED_DATA_COPY1,
+    138                      SFUPDATER_UNALIGNED_DATA_COPY2,
+    139                  }SFUPDATER_UNALIGNED_DATA_STATE;
+    140          
+    141          
+    142                  //Handles the unaligned section data
+    143                  static uint8 SFUpdated_FlashBuffer[FLASH_ALIGNMENT];
+    144                  static uint8 SFUpdated_FlashBufferWriteIndex;
+    145                  static SFUPDATER_UNALIGNED_DATA_STATE SFUpdated_UnalignedDataState;
+    146              #endif
+    147          #endif      // #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    148          
+    149          
+    150          //! Below macros and variables are to manage the Displacement Data over RAM
+    151          #define SFUPDATER_RAM_DATA_ALIGNMENT                        1
+    152          #define SFUPDATER_DISPLACEMENT_RESPONSE_TIMEOUT             1000
+    153          #define SFUPDATER_DISPLACEMENT_DATA_READ_TIMEOUT            200
+    154          #define SFUPDATED_FLASH_DEFAULT_VALUE                       0xFF
+    155          
+    156          static SFUPDATER_DISPLACEMENT_INFO_TYPE SFUpdater_Requested_Displacement_Info;
+   \                     SFUpdater_Requested_Displacement_Info:
+   \   00000000                      DS8 12
+   \   0000000C                      DS8 12
+   \   00000018                      DS8 1
+   \   00000019                      DS8 1
+   \   0000001A                      DS8 1
+   \   0000001B                      DS8 1
+   \   0000001C                      DS8 1
+   \   0000001D                      DS8 1
+   \   0000001E                      DS8 2
+   \   00000020                      DS8 2
+   \   00000022                      DS8 2
+   \   00000024                      DS8 2
+   \   00000026                      DS8 2
+   \   00000028                      DS8 4
+   \   0000002C                      DS8 4
+   \   00000030                      DS8 4
+    157          static SFUPDATER_DISPLACEMENT_INFO_TYPE SFUpdater_Received_Displacement_Info;
+    158          static SFUPDATER_REQUESTER_STATUS_TYPE SFUpdater_Requester_Status;
+    159          static uint16 SFUpdater_Displacement_Data_Index;
+    160          static FLASH_ADDRESS_TYPE SFUpdater_Displacement_Address;
+    161          static uint8 SFUpdater_Displacement_Reveal_Max_Size;
+    162          static uint16 SFUpdater_Requester_Timer;
+    163          
+    164          
+    165          #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    166              //! Below macros and variables are to manage the Displacement Data over FLASH
+    167          
+    168              #define SFUPDATER_ONE_MILLISECOND_IN_MICROSECOND_UNIT       1000
+    169              #define SFUPDATER_FIVE_MILLISECOND_IN_MICROSECOND_UNIT      5000
+    170              #define SFUPDATER_ONE_SECOND_IN_MICROSECOND_UNIT            1000000
+    171              #define SFUPDATER_TEN_SECOND_IN_MICROSECOND_UNIT            10000000
+    172              #define SFUPDATER_NUM_DISPLACEMENT                          (sizeof(SFUPDATER_DISPLACEMENT_LIST) / sizeof(SFUPDATER_DISPLACEMENT_LIST_TYPE))
+    173          
+    174              typedef enum
+    175              {
+    176                  SFUPDATER_DISPLACEMENT_STATE_INITIALIZE = 0,             //!< SFUPDATER_DISPLACEMENT_STATE_INITIALIZE
+    177                  SFUPDATER_DISPLACEMENT_STATE_WAIT_ACU_ALIVE,             //!< SFUPDATER_DISPLACEMENT_STATE_WAIT_ACU_ALIVE
+    178                  SFUPDATER_DISPLACEMENT_STATE_WAIT_MSG_SIZE,              //!< SFUPDATER_DISPLACEMENT_STATE_WAIT_MSG_SIZE
+    179                  SFUPDATER_DISPLACEMENT_STATE_REQUEST_SFDISPLACEMENT_INFO,//!< SFUPDATER_DISPLACEMENT_STATE_REQUEST_SFDISPLACEMENT_INFO
+    180                  SFUPDATER_DISPLACEMENT_STATE_WAITE_SFDISPLACEMENT_INFO,  //!< SFUPDATER_DISPLACEMENT_STATE_WAITE_SFDISPLACEMENT_INFO
+    181                  SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_DATA,           //!< SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_DATA
+    182                  SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_END             //!< SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_END
+    183              }SFUPDATER_DISAPLACEMENT_STATE_TYPE;
+    184          
+    185              static SFUPDATER_DISAPLACEMENT_STATE_TYPE SFUpdater_Displacement_State;
+    186          
+    187              static const SFUPDATER_DISPLACEMENT_LIST_TYPE SFUPDATER_DISPLACEMENT_LIST[] = SFUPDATER_DISPLACEMENT_LIST_DEF;
+    188              extern uint16 __SFDisplacement_Start;
+    189              extern uint8 __SFDisplacement_Size;
+    190          
+    191          #endif
+    192          
+    193          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    194          #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    195              static BOOL_TYPE RequestSFData(void);
+    196              BOOL_TYPE ValidateSectionID(SF_ID_TYPE sf_id);
+    197          #endif
+    198          
+    199          static BOOL_TYPE RequestSFDisplacementData(uint8 data_alignmrnt);
+    200          static SFUPDATER_REQUESTER_STATUS_TYPE ProcessReadRequest(SFUPDATER_DISPLACEMENT_INFO_TYPE *sf_displacement_info, uint8 request_type);
+    201          
+    202          
+    203          //=====================================================================================================================
+    204          //-------------------------------------- Public Functions -------------------------------------------------------------
+    205          //=====================================================================================================================
+    206          
+    207          
+    208          //---------------------------------------------------------------------------------------------------------------------
+    209          /**
+    210           *  @brief      It Initializes the module SFUpdater and its variables
+    211           */
+
+   \                                 In section .text, align 2, keep-with-next
+    212          void SFUpdater__Initialize(void)
+    213          {
+   \                     SFUpdater__Initialize: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    214              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    215                  uint8 displacement_index;
+    216                  SFUPDATER_DISPLACEMENT_INFO_TYPE *displacement_ptr;
+    217                  BOOL_TYPE crc_mismatch;
+    218                  TIMER_PARAMETER_TYPE timer_parameter;
+    219                  uint8 communication_1ms_timer;
+    220                  uint8 communication_5ms_timer;
+    221                  uint8 displacement_updater_timer;
+    222          
+    223                  crc_mismatch        = FALSE;
+    224              #endif
+    225          
+    226              SFUpdater_Displacement_Reveal_Max_Size  = REVEAL_PAYLOAD_SIZE;
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable9
+   \   00000006   0x2041             MOVS     R0,#+65
+   \   00000008   0x7720             STRB     R0,[R4, #+28]
+    227              SFUpdater_Requester_Timer               = 0;
+    228              SFUpdater_Displacement_Address          = 0;
+    229              SFUpdater_Displacement_Data_Index       = 0;
+    230              SFUpdater_Requester_Status              = SFUPDATER_REQUESTER_IDLE;
+    231          
+    232              memset(&SFUpdater_Requested_Displacement_Info, sizeof(SFUpdater_Requested_Displacement_Info), 0);
+   \   0000000A   0x220C             MOVS     R2,#+12
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x6320             STR      R0,[R4, #+48]
+   \   00000010   0x6260             STR      R0,[R4, #+36]
+   \   00000012   0x76E0             STRB     R0,[R4, #+27]
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x4620             MOV      R0,R4
+   \   00000018   0x.... 0x....      BL       __aeabi_memset4
+    233          
+    234              #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    235                  SFUpdater_State             = SFUPDATER_STATE_INITIALIZE;
+   \   0000001C   0x2000             MOVS     R0,#+0
+   \   0000001E   0x8320             STRH     R0,[R4, #+24]
+    236                  SFUpdater_Section_Index     = 0;
+    237                  SFUpdater_Section_Address   = (FLASH_ADDRESS_TYPE)SettingFile__GetMemorySectionStart(); //lint !e923 cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   \   00000020   0x.... 0x....      BL       SettingFile__GetMemorySectionStart
+   \   00000024   0x62A0             STR      R0,[R4, #+40]
+    238                  SFUpdater_Reveal_Max_Size   = REVEAL_PAYLOAD_SIZE;
+   \   00000026   0x2041             MOVS     R0,#+65
+   \   00000028   0x76A0             STRB     R0,[R4, #+26]
+    239                  SFUpdater_Timer             = SystemTimers__GetHandle(SYSTEMTIMERS_TYPE_DOWN_COUNTER);
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0x.... 0x....      BL       SystemTimers__GetHandle
+   \   00000030   0x8460             STRH     R0,[R4, #+34]
+    240                  SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \   00000032   0xF44F 0x717A      MOV      R1,#+1000
+   \   00000036   0xE8BD 0x4010      POP      {R4,LR}
+   \   0000003A   0x.... 0x....      B.W      SystemTimers__SetMs
+    241          
+    242                  #ifdef SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    243                      SFUpdated_UnalignedDataState            = SFUPDATER_UNALIGNED_DATA_NONE;
+    244                      SFUpdated_FlashBufferWriteIndex         = 0;
+    245                      memset(SFUpdated_FlashBuffer, SFUPDATED_FLASH_DEFAULT_VALUE, sizeof(SFUpdated_FlashBuffer));
+    246                  #endif
+    247              #endif
+    248          
+    249              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    250                  SFUpdater_Displacement_State = SFUPDATER_DISPLACEMENT_STATE_INITIALIZE;
+    251          
+    252                  displacement_ptr               = (SFUPDATER_DISPLACEMENT_INFO_TYPE *)&__SFDisplacement_Start;
+    253                  SFUpdater_Displacement_Address  = (FLASH_ADDRESS_TYPE)&__SFDisplacement_Start;
+    254          
+    255                  //check for the existing Displacement Data integrity
+    256                  for (displacement_index = 0; displacement_index < SFUPDATER_NUM_DISPLACEMENT; displacement_index++)
+    257                  {
+    258                      //validate the header
+    259                      if ((displacement_ptr->SF_Pointer_ID == SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Pointer_ID) &&
+    260                          (displacement_ptr->SF_Displacement == SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Displacement))
+    261                      {
+    262                           if (displacement_ptr->Crc != Crc16__ConstRangeProcess((uint8 *)(&displacement_ptr->Data_Ptr), 0xFFFF , displacement_ptr->Size))
+    263                           {
+    264                               crc_mismatch = TRUE;
+    265                               break;
+    266                           }
+    267                      }
+    268                      else
+    269                      {
+    270                          crc_mismatch = TRUE;
+    271                          break;
+    272                      }
+    273          
+    274                      //point to the next displacement header
+    275                      displacement_ptr = (SFUPDATER_DISPLACEMENT_INFO_TYPE *)((uint8 *)&(displacement_ptr->Data_Ptr) + displacement_ptr->Size);
+    276                  }
+    277          
+    278                  //displacement data broken then engage in update
+    279                  if (crc_mismatch == TRUE)
+    280                  {
+    281                      //initialize the communication modules
+    282                      Gpio__Initialize();
+    283                      Timer__Initialize();        //TimerInterrupt can not be used as it triggers the application scheduler or thread
+    284                      Win__Initialize();
+    285                      Reveal__Initialize();
+    286                      Flash__Initialize();
+    287          
+    288                      ENABLE_INTERRUPTS();
+    289          
+    290                      //All the micros at least support for TIMER1. We are using this only for the purpose of timing
+    291                      // Cannot use SystemTimer as it based on TimerInterrupt which will excite the OS/Scheduler
+    292                      timer_parameter.Timer     = TIMER1;
+    293                      timer_parameter.Channel   = TIMER_CHANNEL1;
+    294                      timer_parameter.Mode      = TIMER_MODE_INPUT_CAPTURE;
+    295                      timer_parameter.Port      = PORT_NULL;
+    296                      timer_parameter.Pin       = 0;
+    297                      timer_parameter.Pin_ReMap = 0;
+    298                      timer_parameter.Polarity  = TIMER_POLARITY_ACTIVE_HIGH;
+    299          
+    300                      Timer__Config(&timer_parameter);
+    301          
+    302                      communication_1ms_timer     = Timer__StartCount(&timer_parameter);
+    303                      communication_5ms_timer     = Timer__StartCount(&timer_parameter);
+    304                      displacement_updater_timer  = Timer__StartCount(&timer_parameter);
+    305                      displacement_index          = 0;
+    306          
+    307                      //format the displacement region even though if one of the displacement is corrupted
+    308                      Flash__Format((FLASH_ADDRESS_TYPE)&__SFDisplacement_Start, (FLASH_ADDRESS_TYPE)((uint32)&__SFDisplacement_Start + (uint32)&__SFDisplacement_Size -1));
+    309          
+    310                      while (1)
+    311                      {
+    312                          if (Timer__GetCount(communication_1ms_timer) > SFUPDATER_ONE_MILLISECOND_IN_MICROSECOND_UNIT)
+    313                          {
+    314                              Timer__ReStartCount(communication_1ms_timer);
+    315                              Win__Handle1ms();
+    316                              Reveal__Handler1ms();
+    317                          }
+    318          
+    319                          if (Timer__GetCount(communication_5ms_timer) > SFUPDATER_FIVE_MILLISECOND_IN_MICROSECOND_UNIT)
+    320                          {
+    321                              Timer__ReStartCount(communication_5ms_timer);
+    322                              Reveal__Handler();
+    323                              SERVICE_WATCHDOG();
+    324                          }
+    325          
+    326                          //manage updating the displacement data
+    327                          switch (SFUpdater_Displacement_State)
+    328                          {
+    329                              case SFUPDATER_DISPLACEMENT_STATE_INITIALIZE:
+    330                                  SFUpdater_Displacement_State = SFUPDATER_DISPLACEMENT_STATE_WAIT_ACU_ALIVE;
+    331                                  break;
+    332          
+    333                              case SFUPDATER_DISPLACEMENT_STATE_WAIT_ACU_ALIVE:
+    334                                  if ((Reveal__GetNodestatus() & (1 << WIN_ACU_ADDRESS) ) != 0)
+    335                                  {
+    336                                      // ACU is alive
+    337                                      SFUpdater_Displacement_State = SFUPDATER_DISPLACEMENT_STATE_WAIT_MSG_SIZE;
+    338                                      Reveal__QueueMessageNoData(1,17,WIN_ACU_ADDRESS,TRUE,FALSE);
+    339                                      Timer__ReStartCount(displacement_updater_timer);
+    340                                  }
+    341                                  break;
+    342          
+    343                              case SFUPDATER_DISPLACEMENT_STATE_WAIT_MSG_SIZE:
+    344                                  // Wait for reply from ACU with message size; See SFUpdater__RxMaxPackage()
+    345                                  if (Timer__GetCount(displacement_updater_timer) > SFUPDATER_ONE_SECOND_IN_MICROSECOND_UNIT)
+    346                                  {
+    347                                      //Restart the process if  ACU did not replied
+    348                                      SYSTEM_RESET();
+    349                                  }
+    350                                  break;
+    351          
+    352                              case SFUPDATER_DISPLACEMENT_STATE_REQUEST_SFDISPLACEMENT_INFO:
+    353                                  if (displacement_index < SFUPDATER_NUM_DISPLACEMENT)
+    354                                  {
+    355                                      API007Data__RequestSettingFileDisplacementInfo(WIN_ACU_ADDRESS, SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Pointer_ID, SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Displacement);
+    356          
+    357                                      displacement_index++;
+    358                                      SFUpdater_Displacement_State = SFUPDATER_DISPLACEMENT_STATE_WAITE_SFDISPLACEMENT_INFO;
+    359                                      Timer__ReStartCount(displacement_updater_timer);
+    360                                  }
+    361                                  else
+    362                                  {
+    363                                      //Successful completed the update of Displacement region
+    364                                      SYSTEM_RESET();
+    365                                  }
+    366                                  break;
+    367          
+    368                              case SFUPDATER_DISPLACEMENT_STATE_WAITE_SFDISPLACEMENT_INFO:
+    369                                  // Wait for reply from ACU with message size; See SFUpdater__RxMaxPackage()
+    370                                  if (Timer__GetCount(displacement_updater_timer) > SFUPDATER_ONE_SECOND_IN_MICROSECOND_UNIT)
+    371                                  {
+    372                                      //Restart the process if  ACU did not replied
+    373                                      SYSTEM_RESET();
+    374                                  }
+    375                                  break;
+    376          
+    377                              case SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_DATA:
+    378                                  // shall not stuck in the programming
+    379                                  if (Timer__GetCount(displacement_updater_timer) > SFUPDATER_TEN_SECOND_IN_MICROSECOND_UNIT)
+    380                                  {
+    381                                      //Restart the process if  ACU did not replied
+    382                                      SYSTEM_RESET();
+    383                                  }
+    384                                  break;
+    385          
+    386                              case SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_END:
+    387                                  SFUpdater_Displacement_State = SFUPDATER_DISPLACEMENT_STATE_REQUEST_SFDISPLACEMENT_INFO;
+    388                                  break;
+    389          
+    390                              default:
+    391                                  break;
+    392                          }
+    393                      }
+    394                  }
+    395              #endif
+    396          }
+    397          
+    398          //---------------------------------------------------------------------------------------------------------------------
+    399          /**
+    400           * @brief This is the handler called while in programming mode to manage the settingfile download process.
+    401           * @return TRUE if a cold reset is required to continue; otherwise FALSE.
+    402           */
+
+   \                                 In section .text, align 4, keep-with-next
+    403          BOOL_TYPE SFUpdater__Handler(void)
+    404          {
+   \                     SFUpdater__Handler: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+    405              BOOL_TYPE retval;
+    406          
+    407              retval = FALSE;
+   \   00000004   0x2500             MOVS     R5,#+0
+    408          
+    409              #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    410                  if (Mode__IsProgrammingEngaged() == TRUE)
+   \   00000006   0x.... 0x....      BL       Mode__IsProgrammingEngaged
+   \   0000000A   0x2801             CMP      R0,#+1
+   \   0000000C   0xD13F             BNE.N    ??SFUpdater__Handler_1
+    411                  {
+    412                      if (SYSTEMTIMERS_FAIL != SFUpdater_Timer)
+   \   0000000E   0x.... 0x....      LDR.W    R4,??DataTable9
+   \   00000012   0x8C60             LDRH     R0,[R4, #+34]
+   \   00000014   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000018   0x4288             CMP      R0,R1
+   \   0000001A   0xD006             BEQ.N    ??SFUpdater__Handler_2
+    413                      {
+    414                          if (SystemTimers__GetState(SFUpdater_Timer) != SYSTEMTIMERS_STATE_RUNNING)
+   \   0000001C   0x.... 0x....      BL       SystemTimers__GetState
+   \   00000020   0x2801             CMP      R0,#+1
+   \   00000022   0xD002             BEQ.N    ??SFUpdater__Handler_2
+    415                          {
+    416                              // Time Out -> Restart
+    417                              if (SFUpdater_State > SFUPDATER_STATE_INITIALIZE)
+   \   00000024   0x7E20             LDRB     R0,[R4, #+24]
+   \   00000026   0xB148             CBZ.N    R0,??SFUpdater__Handler_3
+    418                              {
+    419                                  // Force a reset and restart the process
+    420                                  // Instead of just restart the state machine it is safer to reset and start over.
+    421                                  retval = TRUE;
+   \   00000028   0x2501             MOVS     R5,#+1
+    422                              }
+    423                          }
+    424                      }
+    425          
+    426                      switch (SFUpdater_State)
+   \                     ??SFUpdater__Handler_2: (+1)
+   \   0000002A   0x7E20             LDRB     R0,[R4, #+24]
+   \   0000002C   0x2806             CMP      R0,#+6
+   \   0000002E   0xD82F             BHI.N    ??SFUpdater__Handler_4
+   \   00000030   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??SFUpdater__Handler_0:
+   \   00000034   0x04 0x0C          DC8      0x4,0xC,0x17,0x2E
+   \              0x17 0x2E    
+   \   00000038   0x2E 0x2E          DC8      0x2E,0x2E,0x2D,0x0
+   \              0x2D 0x00    
+    427                      {
+    428                          case SFUPDATER_STATE_INITIALIZE:
+    429                              SFUpdater_State = SFUPDATER_STATE_ERASE_FLASH;
+   \                     ??SFUpdater__Handler_3: (+1)
+   \   0000003C   0x2001             MOVS     R0,#+1
+   \   0000003E   0x7620             STRB     R0,[R4, #+24]
+    430                              Flash__Initialize();
+   \   00000040   0x.... 0x....      BL       Flash__Initialize
+    431                              SFUpdater_Erase_Address = (FLASH_ADDRESS_TYPE)SettingFile__GetMemorySectionStart();     //lint !e923 cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   \   00000044   0x.... 0x....      BL       SettingFile__GetMemorySectionStart
+   \   00000048   0x62E0             STR      R0,[R4, #+44]
+    432                              SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \   0000004A   0xE018             B.N      ??SFUpdater__Handler_5
+    433                              break;
+    434          
+    435                          case SFUPDATER_STATE_ERASE_FLASH:
+    436                              Flash__Format(SFUpdater_Erase_Address,SFUpdater_Erase_Address + SettingFile__GetMemorySectionSize() -1);
+   \                     ??SFUpdater__Handler_6: (+1)
+   \   0000004C   0x.... 0x....      BL       SettingFile__GetMemorySectionSize
+   \   00000050   0x4601             MOV      R1,R0
+   \   00000052   0x6AE0             LDR      R0,[R4, #+44]
+   \   00000054   0x1809             ADDS     R1,R1,R0
+   \   00000056   0x1E49             SUBS     R1,R1,#+1
+   \   00000058   0x.... 0x....      BL       Flash__Format
+    437                              SFUpdater_State = SFUPDATER_STATE_WAIT_ACU_ALIVE;
+   \   0000005C   0x2002             MOVS     R0,#+2
+   \   0000005E   0x7620             STRB     R0,[R4, #+24]
+    438                              SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \   00000060   0xE00D             B.N      ??SFUpdater__Handler_5
+    439                              break;
+    440          
+    441                          case SFUPDATER_STATE_WAIT_ACU_ALIVE:
+    442                              if ((Reveal__GetNodestatus() & (1 << WIN_ACU_ADDRESS) ) != 0)
+   \                     ??SFUpdater__Handler_7: (+1)
+   \   00000062   0x.... 0x....      BL       Reveal__GetNodestatus
+   \   00000066   0x0780             LSLS     R0,R0,#+30
+   \   00000068   0xD512             BPL.N    ??SFUpdater__Handler_4
+    443                              {
+    444                                  // ACU is alive
+    445                                  SFUpdater_State = SFUPDATER_STATE_WAIT_MSG_SIZE;
+   \   0000006A   0x2003             MOVS     R0,#+3
+   \   0000006C   0x7620             STRB     R0,[R4, #+24]
+    446                                  Reveal__QueueMessageNoData(1,17,WIN_ACU_ADDRESS,TRUE,FALSE);
+   \   0000006E   0x2201             MOVS     R2,#+1
+   \   00000070   0x2000             MOVS     R0,#+0
+   \   00000072   0x9000             STR      R0,[SP, #+0]
+   \   00000074   0x2301             MOVS     R3,#+1
+   \   00000076   0x2111             MOVS     R1,#+17
+   \   00000078   0x4610             MOV      R0,R2
+   \   0000007A   0x.... 0x....      BL       Reveal__QueueMessageNoData
+    447                                  SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \                     ??SFUpdater__Handler_5: (+1)
+   \   0000007E   0x8C60             LDRH     R0,[R4, #+34]
+   \   00000080   0xF44F 0x717A      MOV      R1,#+1000
+   \   00000084   0x.... 0x....      BL       SystemTimers__SetMs
+    448                              }
+    449                              break;
+    450                          case SFUPDATER_STATE_WAIT_MSG_SIZE:
+    451                              // Wait for reply from ACU with message size; See SFUpdater__RxMaxPackage()
+    452                              break;
+    453                          case SFUPDATER_STATE_WAIT_SF_INFO:
+    454                              // Wait for reply from ACu with SettingFile info; See SFUpdater__RxSFInfo()
+    455                              break;
+    456                          case SFUPDATER_STATE_PROGRAMMING_DATA:
+    457                              break;
+    458                          case SFUPDATER_STATE_DATA_END:
+    459                              retval = TRUE;
+    460                              break;
+    461                          default:
+    462                              break;
+    463                      }
+    464                  }
+    465                  else
+    466                  {
+    467                      retval = TRUE;
+    468                  }
+    469              #endif
+    470          
+    471              return (retval);
+   \   00000088   0x4628             MOV      R0,R5
+   \   0000008A   0xB001             ADD      SP,SP,#+4
+   \   0000008C   0xBD30             POP      {R4,R5,PC}
+   \                     ??SFUpdater__Handler_1: (+1)
+   \   0000008E   0x2501             MOVS     R5,#+1
+   \                     ??SFUpdater__Handler_4: (+1)
+   \   00000090   0x4628             MOV      R0,R5
+   \   00000092   0xB001             ADD      SP,SP,#+4
+   \   00000094   0xBD30             POP      {R4,R5,PC}       ;; return
+    472          }
+    473          
+    474          
+    475          //---------------------------------------------------------------------------------------------------------------------
+    476          /**
+    477           *
+    478           * @param node
+    479           * @param max_payload
+    480           */
+
+   \                                 In section .text, align 2, keep-with-next
+    481          void SFUpdater__RxMaxPackage(uint8 node, uint8 max_payload)
+                                                    ^
+Remark[Pe826]: parameter "node" was never referenced
+    482          {
+   \                     SFUpdater__RxMaxPackage: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x460C             MOV      R4,R1
+    483              #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    484                  if ((Mode__IsProgrammingEngaged() == TRUE) &&
+    485                      (SFUpdater_State == SFUPDATER_STATE_WAIT_MSG_SIZE))
+   \   00000006   0x.... 0x....      BL       Mode__IsProgrammingEngaged
+   \   0000000A   0x2801             CMP      R0,#+1
+   \   0000000C   0xBF02             ITTT     EQ 
+   \   0000000E   0x.... 0x....      LDREQ.W  R5,??DataTable9
+   \   00000012   0x7E28             LDRBEQ   R0,[R5, #+24]
+   \   00000014   0x2803             CMPEQ    R0,#+3
+   \   00000016   0xD117             BNE.N    ??SFUpdater__RxMaxPackage_0
+    486                  {
+    487                      if (max_payload < SFUpdater_Reveal_Max_Size)
+   \   00000018   0x7EA8             LDRB     R0,[R5, #+26]
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xBF88             IT       HI 
+   \   0000001E   0x4604             MOVHI    R4,R0
+    488                      {
+    489                          SFUpdater_Reveal_Max_Size = max_payload;
+    490                      }
+    491          
+    492                      API007Data__RequestSettingFileIDInfo(WIN_ACU_ADDRESS, SFUPDATER_SECTIONS[SFUpdater_Section_Index]);
+   \   00000020   0x7E69             LDRB     R1,[R5, #+25]
+   \   00000022   0x.... 0x....      ADR.W    R0,SFUPDATER_SECTIONS
+   \   00000026   0x76AC             STRB     R4,[R5, #+26]
+   \   00000028   0x5C09             LDRB     R1,[R1, R0]
+   \   0000002A   0x2001             MOVS     R0,#+1
+   \   0000002C   0x.... 0x....      BL       API007Data__RequestSettingFileIDInfo
+    493          
+    494                      SFUpdater_State = SFUPDATER_STATE_WAIT_SF_INFO;
+   \   00000030   0x2004             MOVS     R0,#+4
+   \   00000032   0x7628             STRB     R0,[R5, #+24]
+    495                      SFUpdater_Data_Index = 0;
+    496          
+    497                      SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \   00000034   0xB001             ADD      SP,SP,#+4
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x8428             STRH     R0,[R5, #+32]
+   \   0000003A   0xF44F 0x717A      MOV      R1,#+1000
+   \   0000003E   0x8C68             LDRH     R0,[R5, #+34]
+   \   00000040   0xE8BD 0x4030      POP      {R4,R5,LR}
+   \   00000044   0x.... 0x....      B.W      SystemTimers__SetMs
+    498                  }
+    499              #endif
+    500          
+    501              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    502                  if (SFUpdater_Displacement_State == SFUPDATER_DISPLACEMENT_STATE_WAIT_MSG_SIZE)
+    503                  {
+    504                      if (max_payload < SFUpdater_Displacement_Reveal_Max_Size)
+    505                      {
+    506                          SFUpdater_Displacement_Reveal_Max_Size = max_payload;
+    507                      }
+    508          
+    509                      SFUpdater_Displacement_State  = SFUPDATER_DISPLACEMENT_STATE_REQUEST_SFDISPLACEMENT_INFO;
+    510                  }
+    511              #endif
+    512          }
+   \                     ??SFUpdater__RxMaxPackage_0: (+1)
+   \   00000048   0xB001             ADD      SP,SP,#+4
+   \   0000004A   0xBD30             POP      {R4,R5,PC}       ;; return
+    513          
+    514          //---------------------------------------------------------------------------------------------------------------------
+    515          /**
+    516           * @details -
+    517           * @param node
+    518           * @param section_crc
+    519           * @param section_size
+    520           */
+
+   \                                 In section .text, align 2, keep-with-next
+    521          void SFUpdater__RxSFInfo(uint8 node, SF_ID_TYPE sf_id, uint16 section_crc, uint16 section_size)
+                                                ^
+Remark[Pe826]: parameter "node" was never referenced
+    522          {
+   \                     SFUpdater__RxSFInfo: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    523              #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    524                  uint16 sf_crc;
+    525          
+    526                  if (ValidateSectionID(sf_id) != FALSE)
+   \   00000004   0x.... 0x....      ADR.W    R4,SFUPDATER_SECTIONS
+   \   00000008   0x460D             MOV      R5,R1
+   \   0000000A   0x4690             MOV      R8,R2
+   \   0000000C   0x461F             MOV      R7,R3
+   \   0000000E   0x4620             MOV      R0,R4
+   \                     ??SFUpdater__RxSFInfo_0: (+1)
+   \   00000010   0x7801             LDRB     R1,[R0, #+0]
+   \   00000012   0x29FF             CMP      R1,#+255
+   \   00000014   0xD05F             BEQ.N    ??SFUpdater__RxSFInfo_1
+   \   00000016   0xF810 0x1B01      LDRB     R1,[R0], #+1
+   \   0000001A   0x428D             CMP      R5,R1
+   \   0000001C   0xD014             BEQ.N    ??SFUpdater__RxSFInfo_2
+   \   0000001E   0x7801             LDRB     R1,[R0, #+0]
+   \   00000020   0x29FF             CMP      R1,#+255
+   \   00000022   0xD058             BEQ.N    ??SFUpdater__RxSFInfo_1
+   \   00000024   0xF810 0x1B01      LDRB     R1,[R0], #+1
+   \   00000028   0x428D             CMP      R5,R1
+   \   0000002A   0xD00D             BEQ.N    ??SFUpdater__RxSFInfo_2
+   \   0000002C   0x7801             LDRB     R1,[R0, #+0]
+   \   0000002E   0x29FF             CMP      R1,#+255
+   \   00000030   0xD051             BEQ.N    ??SFUpdater__RxSFInfo_1
+   \   00000032   0xF810 0x1B01      LDRB     R1,[R0], #+1
+   \   00000036   0x428D             CMP      R5,R1
+   \   00000038   0xD006             BEQ.N    ??SFUpdater__RxSFInfo_2
+   \   0000003A   0x7801             LDRB     R1,[R0, #+0]
+   \   0000003C   0x29FF             CMP      R1,#+255
+   \   0000003E   0xD04A             BEQ.N    ??SFUpdater__RxSFInfo_1
+   \   00000040   0xF810 0x1B01      LDRB     R1,[R0], #+1
+   \   00000044   0x428D             CMP      R5,R1
+   \   00000046   0xD1E3             BNE.N    ??SFUpdater__RxSFInfo_0
+    527                  {
+    528                      if ((Mode__IsProgrammingEngaged() == TRUE) &&
+    529                          (SFUpdater_State == SFUPDATER_STATE_WAIT_SF_INFO))
+   \                     ??SFUpdater__RxSFInfo_2: (+1)
+   \   00000048   0x.... 0x....      BL       Mode__IsProgrammingEngaged
+   \   0000004C   0x2801             CMP      R0,#+1
+   \   0000004E   0xBF02             ITTT     EQ 
+   \   00000050   0x.... 0x....      LDREQ.W  R6,??DataTable9
+   \   00000054   0x7E30             LDRBEQ   R0,[R6, #+24]
+   \   00000056   0x2804             CMPEQ    R0,#+4
+   \   00000058   0xD12A             BNE.N    ??SFUpdater__RxSFInfo_3
+    530                      {
+    531                          SFUpdater_Data_Size = section_size;
+   \   0000005A   0x83F7             STRH     R7,[R6, #+30]
+    532                          SFUpdater_Data_Index = 0;
+   \   0000005C   0x2000             MOVS     R0,#+0
+   \   0000005E   0x8430             STRH     R0,[R6, #+32]
+    533                          SFUpdater_State = SFUPDATER_STATE_PROGRAMMING_DATA;
+   \   00000060   0x2005             MOVS     R0,#+5
+   \   00000062   0x7630             STRB     R0,[R6, #+24]
+    534                          RequestSFData();
+   \   00000064   0x0038             MOVS     R0,R7
+   \   00000066   0xD02E             BEQ.N    ??SFUpdater__RxSFInfo_4
+   \   00000068   0x7EB1             LDRB     R1,[R6, #+26]
+   \   0000006A   0x1F0D             SUBS     R5,R1,#+4
+   \   0000006C   0xB2ED             UXTB     R5,R5
+   \   0000006E   0x2D04             CMP      R5,#+4
+   \   00000070   0xDB04             BLT.N    ??SFUpdater__RxSFInfo_5
+   \   00000072   0x0869             LSRS     R1,R5,#+1
+   \   00000074   0xEB05 0x7191      ADD      R1,R5,R1, LSR #+30
+   \   00000078   0x0889             LSRS     R1,R1,#+2
+   \   0000007A   0x008D             LSLS     R5,R1,#+2
+   \                     ??SFUpdater__RxSFInfo_5: (+1)
+   \   0000007C   0xB239             SXTH     R1,R7
+   \   0000007E   0x42A9             CMP      R1,R5
+   \   00000080   0xBFB4             ITE      LT 
+   \   00000082   0xB2FD             UXTBLT   R5,R7
+   \   00000084   0x2D04             CMPGE    R5,#+4
+   \   00000086   0xDB05             BLT.N    ??SFUpdater__RxSFInfo_6
+   \   00000088   0x1068             ASRS     R0,R5,#+1
+   \   0000008A   0xEB05 0x7090      ADD      R0,R5,R0, LSR #+30
+   \   0000008E   0x1080             ASRS     R0,R0,#+2
+   \   00000090   0x0085             LSLS     R5,R0,#+2
+   \   00000092   0xB2ED             UXTB     R5,R5
+   \                     ??SFUpdater__RxSFInfo_6: (+1)
+   \   00000094   0x7E70             LDRB     R0,[R6, #+25]
+   \   00000096   0x5D01             LDRB     R1,[R0, R4]
+   \   00000098   0x462B             MOV      R3,R5
+   \   0000009A   0x2200             MOVS     R2,#+0
+   \   0000009C   0x2001             MOVS     R0,#+1
+   \   0000009E   0x.... 0x....      BL       API007Data__RequestSettingFileIDData
+   \   000000A2   0x2801             CMP      R0,#+1
+   \   000000A4   0xD10F             BNE.N    ??SFUpdater__RxSFInfo_4
+   \   000000A6   0x8C30             LDRH     R0,[R6, #+32]
+   \   000000A8   0xFA50 0xF085      UXTAB    R0,R0,R5
+   \   000000AC   0x8430             STRH     R0,[R6, #+32]
+   \   000000AE   0xE00A             B.N      ??SFUpdater__RxSFInfo_4
+    535                      }
+    536                      else if (Mode__GetMode() == MODE_NORMAL)
+   \                     ??SFUpdater__RxSFInfo_3: (+1)
+   \   000000B0   0x.... 0x....      BL       Mode__GetMode
+   \   000000B4   0xB938             CBNZ.N   R0,??SFUpdater__RxSFInfo_4
+    537                      {
+    538                          // Check the CRC against its one CRC
+    539                          sf_crc = SettingFile__GetSettingFileCRC(sf_id);
+    540          
+    541                          if (section_crc != sf_crc)
+   \   000000B6   0x4628             MOV      R0,R5
+   \   000000B8   0x.... 0x....      BL       SettingFile__GetSettingFileCRC
+   \   000000BC   0x4580             CMP      R8,R0
+   \   000000BE   0xBF1C             ITT      NE 
+    542                          {
+    543                              // CRC Mismatch - force Node in programming mode.
+    544                              Mode__SetMode(MODE_PROGRAMMING);
+   \   000000C0   0x2001             MOVNE    R0,#+1
+   \   000000C2   0x.... 0x....      BLNE     Mode__SetMode
+    545                          }
+    546                      }
+    547                      SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \                     ??SFUpdater__RxSFInfo_4: (+1)
+   \   000000C6   0xF44F 0x717A      MOV      R1,#+1000
+   \   000000CA   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \   000000CE   0x....             LDR.N    R0,??DataTable9
+   \   000000D0   0x8C40             LDRH     R0,[R0, #+34]
+   \   000000D2   0x.... 0x....      B.W      SystemTimers__SetMs
+    548                  }
+    549              #endif
+    550          }
+   \                     ??SFUpdater__RxSFInfo_1: (+1)
+   \   000000D6   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    551          
+    552          //---------------------------------------------------------------------------------------------------------------------
+    553          /**
+    554           * @details -
+    555           * @param node
+    556           * @param sf_pointer_id
+    557           * @param sf_displacement
+    558           * @param sf_displacement_crc
+    559           * @param sf_displacement_size
+    560           */
+
+   \                                 In section .text, align 2, keep-with-next
+    561          void SFUpdater__RxSFDisplacementInfo(SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement, uint16 sf_displacement_crc, uint8 sf_displacement_size)
+    562          {
+   \                     SFUpdater__RxSFDisplacementInfo: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    563              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    564                  SFUPDATER_DISPLACEMENT_INFO_TYPE *displacement_ptr;
+    565                  uint8 displacement_index;
+    566                  uint8 index;
+    567              #endif
+    568          
+    569              SFUpdater_Received_Displacement_Info.SF_Pointer_ID     = sf_pointer_id;
+   \   00000002   0x....             LDR.N    R4,??DataTable9
+   \   00000004   0x81A0             STRH     R0,[R4, #+12]
+    570              SFUpdater_Received_Displacement_Info.SF_Displacement   = sf_displacement;
+    571              SFUpdater_Received_Displacement_Info.Crc               = sf_displacement_crc;
+    572              SFUpdater_Received_Displacement_Info.Size              = sf_displacement_size;
+    573              SFUpdater_Displacement_Data_Index                      = 0;
+   \   00000006   0x2500             MOVS     R5,#+0
+   \   00000008   0x84A5             STRH     R5,[R4, #+36]
+   \   0000000A   0xB081             SUB      SP,SP,#+4
+    574          
+    575              //check is its been requested by the application
+    576              if ((SFUpdater_Requested_Displacement_Info.SF_Pointer_ID  == sf_pointer_id) &&
+    577                  (SFUpdater_Requested_Displacement_Info.SF_Displacement == sf_displacement) &&
+    578                  (SFUpdater_Requester_Status == SFUPDATER_REQUESTER_PROCESSING))
+   \   0000000C   0x8825             LDRH     R5,[R4, #+0]
+   \   0000000E   0x81E1             STRH     R1,[R4, #+14]
+   \   00000010   0x8262             STRH     R2,[R4, #+18]
+   \   00000012   0x8223             STRH     R3,[R4, #+16]
+   \   00000014   0x4285             CMP      R5,R0
+   \   00000016   0xBF01             ITTTT    EQ 
+   \   00000018   0x8860             LDRHEQ   R0,[R4, #+2]
+   \   0000001A   0x4288             CMPEQ    R0,R1
+   \   0000001C   0x7EE0             LDRBEQ   R0,[R4, #+27]
+   \   0000001E   0x2801             CMPEQ    R0,#+1
+   \   00000020   0xD107             BNE.N    ??SFUpdater__RxSFDisplacementInfo_0
+    579              {
+    580                  SFUpdater_Requested_Displacement_Info.Crc   = sf_displacement_crc;
+    581                  SFUpdater_Requested_Displacement_Info.Size  = sf_displacement_size;
+    582          
+    583                  SystemTimers__SetMs(SFUpdater_Requester_Timer,200);
+   \   00000022   0x8CE0             LDRH     R0,[R4, #+38]
+   \   00000024   0x80E2             STRH     R2,[R4, #+6]
+   \   00000026   0x80A3             STRH     R3,[R4, #+4]
+   \   00000028   0x21C8             MOVS     R1,#+200
+   \   0000002A   0x.... 0x....      BL       SystemTimers__SetMs
+    584                  SFUpdater_Requester_Status = SFUPDATER_REQUESTER_DATA_READY;
+   \   0000002E   0x2004             MOVS     R0,#+4
+   \   00000030   0x76E0             STRB     R0,[R4, #+27]
+    585              }
+    586          
+    587              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    588                  if (SFUpdater_Displacement_State == SFUPDATER_DISPLACEMENT_STATE_WAITE_SFDISPLACEMENT_INFO)
+    589                  {
+    590                      //Create the displacement header and write in the flash
+    591                      if ((sf_pointer_id != SF_PTR_INVALID_VALUE) &&
+    592                          (sf_displacement != SF_DISPL_INVALID_VALUE))
+    593                      {
+    594                          SFUpdater_Displacement_State                  = SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_DATA;
+    595          
+    596                          // -4 is to exclude writing on Data_ptr structure.
+    597                          SFUpdater__RxSFDisplacementData(sf_pointer_id, sf_displacement, 0, sizeof(SFUPDATER_DISPLACEMENT_INFO_TYPE) - 4, (uint8 *)(&SFUpdater_Received_Displacement_Info));
+    598                      }
+    599                      else
+    600                      {
+    601                          //requested displacement does not present
+    602                          SYSTEM_RESET();
+    603                      }
+    604                  }
+    605              else
+    606              {
+    607                  //validate the received displacement info with the stored
+    608                  displacement_index = 0;
+    609          
+    610                  for (displacement_index = 0; displacement_index < SFUPDATER_NUM_DISPLACEMENT; displacement_index++)
+    611                  {
+    612                      //this needs to be compared with the SFUPDATER_DISPLACEMENT_LIST to make sure its existed in the list
+    613                      if ((sf_pointer_id == SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Pointer_ID) &&
+    614                          (sf_displacement == SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Displacement))
+    615                      {
+    616                          //search for the absolute address in the flash
+    617                          displacement_ptr = (SFUPDATER_DISPLACEMENT_INFO_TYPE *)&__SFDisplacement_Start;
+    618          
+    619                          for (index = 0; index < displacement_index; index++)
+    620                          {
+    621                              //point to the next displacement header
+    622                              displacement_ptr = (SFUPDATER_DISPLACEMENT_INFO_TYPE *)((uint8 *)&(displacement_ptr->Data_Ptr) + displacement_ptr->Size);
+    623                          }
+    624          
+    625                          if (sf_displacement_crc != displacement_ptr->Crc)
+    626                          {
+    627                              //format the displacement region even though if one of the displacement is updated
+    628                              Flash__Format((FLASH_ADDRESS_TYPE)&__SFDisplacement_Start, (FLASH_ADDRESS_TYPE)((uint32)&__SFDisplacement_Start + (uint32)&__SFDisplacement_Size -1));
+    629          
+    630                              SYSTEM_RESET();
+    631                          }
+    632                          break;
+    633                      }
+    634                  }
+    635              }
+    636              #endif
+    637          }
+   \                     ??SFUpdater__RxSFDisplacementInfo_0: (+1)
+   \   00000032   0xB001             ADD      SP,SP,#+4
+   \   00000034   0xBD30             POP      {R4,R5,PC}       ;; return
+    638          
+    639          //---------------------------------------------------------------------------------------------------------------------
+    640          /**
+    641           * @details
+    642           * @param node
+    643           * @param sf_pointer_id
+    644           * @param sf_displacement
+    645           * @param index
+    646           * @param data_ptr
+    647           */
+
+   \                                 In section .text, align 2, keep-with-next
+    648          void SFUpdater__RxSFDisplacementData(SETTINGFILE_OFFSET_TYPE sf_pointer_id, uint16 sf_displacement, uint16 data_index, uint8 sf_displacement_size, uint8 * data_ptr)
+                                                                                                                            ^
+Remark[Pe826]: parameter "data_index" was never referenced
+    649          {
+   \                     SFUpdater__RxSFDisplacementData: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    650              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    651                  if (SFUpdater_Displacement_State == SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_DATA)
+    652                  {
+    653                      //validate the
+    654                      Flash__Write(SFUpdater_Displacement_Address, data_ptr, (FLASH_SIZE_TYPE)sf_displacement_size);
+    655          
+    656                      SFUpdater_Displacement_Address += sf_displacement_size;
+    657          
+    658                      if (RequestSFDisplacementData(FLASH_ALIGNMENT) == TRUE)
+    659                      {
+    660                          SFUpdater_Displacement_State = SFUPDATER_DISPLACEMENT_STATE_PROGRAMMING_END;
+    661                      }
+    662                  }
+    663              #endif
+    664          
+    665              if ((SFUpdater_Requested_Displacement_Info.SF_Pointer_ID  == sf_pointer_id) &&
+    666                  (SFUpdater_Requested_Displacement_Info.SF_Displacement == sf_displacement) &&
+    667                  (SFUpdater_Requester_Status == SFUPDATER_REQUESTER_PROCESSING))
+   \   00000002   0x....             LDR.N    R4,??DataTable9
+   \   00000004   0x8822             LDRH     R2,[R4, #+0]
+   \   00000006   0xB081             SUB      SP,SP,#+4
+   \   00000008   0x461D             MOV      R5,R3
+   \   0000000A   0x4282             CMP      R2,R0
+   \   0000000C   0xBF01             ITTTT    EQ 
+   \   0000000E   0x8860             LDRHEQ   R0,[R4, #+2]
+   \   00000010   0x4288             CMPEQ    R0,R1
+   \   00000012   0x7EE0             LDRBEQ   R0,[R4, #+27]
+   \   00000014   0x2801             CMPEQ    R0,#+1
+   \   00000016   0xD128             BNE.N    ??SFUpdater__RxSFDisplacementData_0
+    668              {
+    669                  memcpy((void *)SFUpdater_Displacement_Address, data_ptr, sf_displacement_size); //lint !e923 cast from unsigned long to pointer [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   \   00000018   0x9904             LDR      R1,[SP, #+16]
+   \   0000001A   0x6B20             LDR      R0,[R4, #+48]
+   \   0000001C   0x462A             MOV      R2,R5
+   \   0000001E   0x.... 0x....      BL       __aeabi_memcpy
+    670          
+    671                  SFUpdater_Displacement_Address += sf_displacement_size;
+   \   00000022   0x6B20             LDR      R0,[R4, #+48]
+    672          
+    673                  if (RequestSFDisplacementData(SFUPDATER_RAM_DATA_ALIGNMENT) == TRUE)
+   \   00000024   0x8CA3             LDRH     R3,[R4, #+36]
+   \   00000026   0x1828             ADDS     R0,R5,R0
+   \   00000028   0x6320             STR      R0,[R4, #+48]
+   \   0000002A   0x8A20             LDRH     R0,[R4, #+16]
+   \   0000002C   0x4283             CMP      R3,R0
+   \   0000002E   0xD216             BCS.N    ??SFUpdater__RxSFDisplacementData_1
+   \   00000030   0x7F21             LDRB     R1,[R4, #+28]
+   \   00000032   0x1F8D             SUBS     R5,R1,#+6
+   \   00000034   0x1AC0             SUBS     R0,R0,R3
+   \   00000036   0xB280             UXTH     R0,R0
+   \   00000038   0xB2EA             UXTB     R2,R5
+   \   0000003A   0x4290             CMP      R0,R2
+   \   0000003C   0xBF38             IT       CC 
+   \   0000003E   0x4605             MOVCC    R5,R0
+   \   00000040   0xB2ED             UXTB     R5,R5
+   \   00000042   0x89E2             LDRH     R2,[R4, #+14]
+   \   00000044   0x89A1             LDRH     R1,[R4, #+12]
+   \   00000046   0x9500             STR      R5,[SP, #+0]
+   \   00000048   0x2001             MOVS     R0,#+1
+   \   0000004A   0x.... 0x....      BL       API007Data__RequestSettingFileDisplacementData
+   \   0000004E   0x2801             CMP      R0,#+1
+   \   00000050   0xD10B             BNE.N    ??SFUpdater__RxSFDisplacementData_0
+   \   00000052   0x8CA0             LDRH     R0,[R4, #+36]
+   \   00000054   0xFA50 0xF085      UXTAB    R0,R0,R5
+   \   00000058   0x84A0             STRH     R0,[R4, #+36]
+    674                  {
+    675                      SystemTimers__SetMs(SFUpdater_Requester_Timer,SFUPDATER_DISPLACEMENT_DATA_READ_TIMEOUT);
+    676                      SFUpdater_Requester_Status = SFUPDATER_REQUESTER_DATA_READY;
+    677                  }
+    678              }
+    679          }
+   \   0000005A   0xB001             ADD      SP,SP,#+4
+   \   0000005C   0xBD30             POP      {R4,R5,PC}
+   \                     ??SFUpdater__RxSFDisplacementData_1: (+1)
+   \   0000005E   0x8CE0             LDRH     R0,[R4, #+38]
+   \   00000060   0x21C8             MOVS     R1,#+200
+   \   00000062   0x.... 0x....      BL       SystemTimers__SetMs
+   \   00000066   0x2004             MOVS     R0,#+4
+   \   00000068   0x76E0             STRB     R0,[R4, #+27]
+   \                     ??SFUpdater__RxSFDisplacementData_0: (+1)
+   \   0000006A   0xB001             ADD      SP,SP,#+4
+   \   0000006C   0xBD30             POP      {R4,R5,PC}       ;; return
+    680          
+    681          //---------------------------------------------------------------------------------------------------------------------
+    682          /**
+    683           * @details Request setting file displacement information for each managed displacement
+    684           */
+
+   \                                 In section .text, align 2, keep-with-next
+    685          void SFUpdater__ValidateFlashDisplacementData(void)
+    686          {
+    687              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    688                  uint8 displacement_index;
+    689          
+    690                  displacement_index = 0;
+    691          
+    692                  for (displacement_index = 0; displacement_index < SFUPDATER_NUM_DISPLACEMENT; displacement_index++)
+    693                  {
+    694                      API007Data__RequestSettingFileDisplacementInfo(WIN_ACU_ADDRESS, SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Pointer_ID, SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Displacement);
+    695                  }
+    696              #endif
+    697          }
+   \                     SFUpdater__ValidateFlashDisplacementData: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    698          
+    699          //---------------------------------------------------------------------------------------------------------------------
+    700          /**
+    701           * @details Read the displacement information stored in the flash
+    702           *
+    703           * @param sf_displacement_info
+    704           * @return
+    705           */
+
+   \                                 In section .text, align 2, keep-with-next
+    706          BOOL_TYPE SFUpdater__ReadSFDisplacementInfoFLASH(SFUPDATER_DISPLACEMENT_INFO_TYPE *sf_displacement_info)
+                                                                                                    ^
+Remark[Pe826]: parameter "sf_displacement_info" was never referenced
+    707          {
+    708              #if (SFUPDATER_MANAGE_DISPLACEMENT_DATA_ONFLASH == ENABLED)
+    709                  BOOL_TYPE response;
+    710                  uint8 displacement_index;
+    711                  SFUPDATER_DISPLACEMENT_INFO_TYPE *displacement_ptr;
+    712                  uint8 index;
+    713          
+    714                  displacement_index  = 0;
+    715                  response            = FALSE;
+    716          
+    717                  //validate the received displacement info with the stored
+    718                  displacement_index = 0;
+    719          
+    720                  for (displacement_index = 0; displacement_index < SFUPDATER_NUM_DISPLACEMENT; displacement_index++)
+    721                  {
+    722                      //this needs to be compared with the SFUPDATER_DISPLACEMENT_LIST to make sure its existed in the list
+    723                      if ((sf_displacement_info->SF_Pointer_ID == SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Pointer_ID) &&
+    724                          (sf_displacement_info->SF_Displacement == SFUPDATER_DISPLACEMENT_LIST[displacement_index].SF_Displacement))
+    725                      {
+    726                          //search for the absolute address in the flash
+    727                          displacement_ptr = (SFUPDATER_DISPLACEMENT_INFO_TYPE *)&__SFDisplacement_Start;
+    728          
+    729                          for (index = 0; index < displacement_index; index++)
+    730                          {
+    731                              //point to the next displacement header
+    732                              displacement_ptr = (SFUPDATER_DISPLACEMENT_INFO_TYPE *)((uint8 *)&(displacement_ptr->Data_Ptr) + displacement_ptr->Size);
+    733                          }
+    734          
+    735                          sf_displacement_info->Size       = displacement_ptr->Size;
+    736                          sf_displacement_info->Crc        = displacement_ptr->Crc;
+    737                          sf_displacement_info->Data_Ptr   = displacement_ptr->Data_Ptr;
+    738          
+    739                          response = TRUE;
+    740                          break;
+    741                      }
+    742                  }
+    743          
+    744                  return(response);
+    745              #else
+    746                  return(FALSE);
+   \                     SFUpdater__ReadSFDisplacementInfoFLASH: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    747              #endif
+    748          }
+    749          
+    750          
+    751          //---------------------------------------------------------------------------------------------------------------------
+    752          /**
+    753           * @details Read the Displacement Info which are managed in RAM
+    754           *
+    755           * @param sf_displacement_info
+    756           * @return
+    757           */
+
+   \                                 In section .text, align 4, keep-with-next
+    758          SFUPDATER_REQUESTER_STATUS_TYPE SFUpdater__ReadSFDisplacementInfoRAM(SFUPDATER_DISPLACEMENT_INFO_TYPE *sf_displacement_info)
+    759          {
+   \                     SFUpdater__ReadSFDisplacementInfoRAM: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    760              return(ProcessReadRequest(sf_displacement_info, 0));
+   \   00000002   0x....             LDR.N    R5,??DataTable9
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x7EE8             LDRB     R0,[R5, #+27]
+   \   00000008   0x2804             CMP      R0,#+4
+   \   0000000A   0xD860             BHI.N    ??SFUpdater__ReadSFDisplacementInfoRAM_1
+   \   0000000C   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_0:
+   \   00000010   0x3F 0x2E          DC8      0x3F,0x2E,0x5F,0x5F
+   \              0x5F 0x5F    
+   \   00000014   0x03 0x00          DC8      0x3,0x0
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_2: (+1)
+   \   00000016   0x8828             LDRH     R0,[R5, #+0]
+   \   00000018   0x8821             LDRH     R1,[R4, #+0]
+   \   0000001A   0x4288             CMP      R0,R1
+   \   0000001C   0xBF02             ITTT     EQ 
+   \   0000001E   0x8868             LDRHEQ   R0,[R5, #+2]
+   \   00000020   0x8861             LDRHEQ   R1,[R4, #+2]
+   \   00000022   0x4288             CMPEQ    R0,R1
+   \   00000024   0xD108             BNE.N    ??SFUpdater__ReadSFDisplacementInfoRAM_3
+   \   00000026   0x88E8             LDRH     R0,[R5, #+6]
+   \   00000028   0x80E0             STRH     R0,[R4, #+6]
+   \   0000002A   0x2604             MOVS     R6,#+4
+   \   0000002C   0x88A8             LDRH     R0,[R5, #+4]
+   \   0000002E   0x80A0             STRH     R0,[R4, #+4]
+   \   00000030   0x2000             MOVS     R0,#+0
+   \   00000032   0x76E8             STRB     R0,[R5, #+27]
+   \   00000034   0x4630             MOV      R0,R6
+   \   00000036   0xBD70             POP      {R4-R6,PC}
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_3: (+1)
+   \   00000038   0x8CE8             LDRH     R0,[R5, #+38]
+   \   0000003A   0x.... 0x....      BL       SystemTimers__GetState
+   \   0000003E   0x2801             CMP      R0,#+1
+   \   00000040   0xBF1E             ITTT     NE 
+   \   00000042   0x8820             LDRHNE   R0,[R4, #+0]
+   \   00000044   0xF64F 0x71FF      MOVWNE   R1,#+65535
+   \   00000048   0x4288             CMPNE    R0,R1
+   \   0000004A   0xBF1C             ITT      NE 
+   \   0000004C   0x8860             LDRHNE   R0,[R4, #+2]
+   \   0000004E   0x28FF             CMPNE    R0,#+255
+   \   00000050   0xD03F             BEQ.N    ??SFUpdater__ReadSFDisplacementInfoRAM_4
+   \   00000052   0x8CE8             LDRH     R0,[R5, #+38]
+   \   00000054   0xF44F 0x717A      MOV      R1,#+1000
+   \   00000058   0x.... 0x....      BL       SystemTimers__SetMs
+   \   0000005C   0x2001             MOVS     R0,#+1
+   \   0000005E   0x76E8             STRB     R0,[R5, #+27]
+   \   00000060   0x2601             MOVS     R6,#+1
+   \   00000062   0x8820             LDRH     R0,[R4, #+0]
+   \   00000064   0x8028             STRH     R0,[R5, #+0]
+   \   00000066   0x8860             LDRH     R0,[R4, #+2]
+   \   00000068   0x8068             STRH     R0,[R5, #+2]
+   \   0000006A   0xE029             B.N      ??SFUpdater__ReadSFDisplacementInfoRAM_5
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_6: (+1)
+   \   0000006C   0x8CE8             LDRH     R0,[R5, #+38]
+   \   0000006E   0x.... 0x....      BL       SystemTimers__GetState
+   \   00000072   0x2801             CMP      R0,#+1
+   \   00000074   0xD12B             BNE.N    ??SFUpdater__ReadSFDisplacementInfoRAM_1
+   \   00000076   0x8828             LDRH     R0,[R5, #+0]
+   \   00000078   0x8821             LDRH     R1,[R4, #+0]
+   \   0000007A   0x4288             CMP      R0,R1
+   \   0000007C   0xBF02             ITTT     EQ 
+   \   0000007E   0x8868             LDRHEQ   R0,[R5, #+2]
+   \   00000080   0x8861             LDRHEQ   R1,[R4, #+2]
+   \   00000082   0x4288             CMPEQ    R0,R1
+   \   00000084   0xBF14             ITE      NE 
+   \   00000086   0x2602             MOVNE    R6,#+2
+   \   00000088   0x2601             MOVEQ    R6,#+1
+   \   0000008A   0x4630             MOV      R0,R6
+   \   0000008C   0xBD70             POP      {R4-R6,PC}
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_7: (+1)
+   \   0000008E   0x8820             LDRH     R0,[R4, #+0]
+   \   00000090   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000094   0x4288             CMP      R0,R1
+   \   00000096   0xBF1C             ITT      NE 
+   \   00000098   0x8860             LDRHNE   R0,[R4, #+2]
+   \   0000009A   0x28FF             CMPNE    R0,#+255
+   \   0000009C   0xD019             BEQ.N    ??SFUpdater__ReadSFDisplacementInfoRAM_4
+   \   0000009E   0x8CE8             LDRH     R0,[R5, #+38]
+   \   000000A0   0xB910             CBNZ.N   R0,??SFUpdater__ReadSFDisplacementInfoRAM_8
+   \   000000A2   0x.... 0x....      BL       SystemTimers__GetHandle
+   \   000000A6   0x84E8             STRH     R0,[R5, #+38]
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_8: (+1)
+   \   000000A8   0x2001             MOVS     R0,#+1
+   \   000000AA   0x76E8             STRB     R0,[R5, #+27]
+   \   000000AC   0x2601             MOVS     R6,#+1
+   \   000000AE   0x8820             LDRH     R0,[R4, #+0]
+   \   000000B0   0x8028             STRH     R0,[R5, #+0]
+   \   000000B2   0xF44F 0x717A      MOV      R1,#+1000
+   \   000000B6   0x8860             LDRH     R0,[R4, #+2]
+   \   000000B8   0x8068             STRH     R0,[R5, #+2]
+   \   000000BA   0x8CE8             LDRH     R0,[R5, #+38]
+   \   000000BC   0x.... 0x....      BL       SystemTimers__SetMs
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_5: (+1)
+   \   000000C0   0x886A             LDRH     R2,[R5, #+2]
+   \   000000C2   0x8829             LDRH     R1,[R5, #+0]
+   \   000000C4   0x2001             MOVS     R0,#+1
+   \   000000C6   0x.... 0x....      BL       API007Data__RequestSettingFileDisplacementInfo
+   \   000000CA   0x4630             MOV      R0,R6
+   \   000000CC   0xBD70             POP      {R4-R6,PC}
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_1: (+1)
+   \   000000CE   0x2000             MOVS     R0,#+0
+   \   000000D0   0x76E8             STRB     R0,[R5, #+27]
+   \                     ??SFUpdater__ReadSFDisplacementInfoRAM_4: (+1)
+   \   000000D2   0x2603             MOVS     R6,#+3
+   \   000000D4   0x4630             MOV      R0,R6
+   \   000000D6   0xBD70             POP      {R4-R6,PC}       ;; return
+    761          }
+    762          
+    763          //---------------------------------------------------------------------------------------------------------------------
+    764          /**
+    765           * @details Read the Displacement Data which are managed in RAM
+    766           *
+    767           * @param sf_displacement_info
+    768           * @return
+    769           */
+
+   \                                 In section .text, align 4, keep-with-next
+    770          SFUPDATER_REQUESTER_STATUS_TYPE SFUpdater__ReadSFDisplacementDataRAM(SFUPDATER_DISPLACEMENT_INFO_TYPE *sf_displacement_info)
+    771          {
+   \                     SFUpdater__ReadSFDisplacementDataRAM: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+    772              return(ProcessReadRequest(sf_displacement_info, 1));
+   \   00000002   0x....             LDR.N    R4,??DataTable9
+   \   00000004   0x4605             MOV      R5,R0
+   \   00000006   0x7EE0             LDRB     R0,[R4, #+27]
+   \   00000008   0xB081             SUB      SP,SP,#+4
+   \   0000000A   0x2804             CMP      R0,#+4
+   \   0000000C   0xF200 0x807E      BHI.W    ??SFUpdater__ReadSFDisplacementDataRAM_1
+   \   00000010   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_0:
+   \   00000014   0x41 0x2F          DC8      0x41,0x2F,0x7C,0x7C
+   \              0x7C 0x7C    
+   \   00000018   0x03 0x00          DC8      0x3,0x0
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_2: (+1)
+   \   0000001A   0x8820             LDRH     R0,[R4, #+0]
+   \   0000001C   0x8829             LDRH     R1,[R5, #+0]
+   \   0000001E   0x4288             CMP      R0,R1
+   \   00000020   0xBF02             ITTT     EQ 
+   \   00000022   0x8860             LDRHEQ   R0,[R4, #+2]
+   \   00000024   0x8869             LDRHEQ   R1,[R5, #+2]
+   \   00000026   0x4288             CMPEQ    R0,R1
+   \   00000028   0xD109             BNE.N    ??SFUpdater__ReadSFDisplacementDataRAM_3
+   \   0000002A   0x88E0             LDRH     R0,[R4, #+6]
+   \   0000002C   0x80E8             STRH     R0,[R5, #+6]
+   \   0000002E   0x2604             MOVS     R6,#+4
+   \   00000030   0x88A0             LDRH     R0,[R4, #+4]
+   \   00000032   0x80A8             STRH     R0,[R5, #+4]
+   \   00000034   0xB001             ADD      SP,SP,#+4
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x76E0             STRB     R0,[R4, #+27]
+   \   0000003A   0x4630             MOV      R0,R6
+   \   0000003C   0xBDF0             POP      {R4-R7,PC}
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_3: (+1)
+   \   0000003E   0x8CE0             LDRH     R0,[R4, #+38]
+   \   00000040   0x.... 0x....      BL       SystemTimers__GetState
+   \   00000044   0x2801             CMP      R0,#+1
+   \   00000046   0xBF1E             ITTT     NE 
+   \   00000048   0x8828             LDRHNE   R0,[R5, #+0]
+   \   0000004A   0xF64F 0x71FF      MOVWNE   R1,#+65535
+   \   0000004E   0x4288             CMPNE    R0,R1
+   \   00000050   0xBF1C             ITT      NE 
+   \   00000052   0x8868             LDRHNE   R0,[R5, #+2]
+   \   00000054   0x28FF             CMPNE    R0,#+255
+   \   00000056   0xD05B             BEQ.N    ??SFUpdater__ReadSFDisplacementDataRAM_4
+   \   00000058   0x8CE0             LDRH     R0,[R4, #+38]
+   \   0000005A   0xF44F 0x717A      MOV      R1,#+1000
+   \   0000005E   0x.... 0x....      BL       SystemTimers__SetMs
+   \   00000062   0x2001             MOVS     R0,#+1
+   \   00000064   0x76E0             STRB     R0,[R4, #+27]
+   \   00000066   0x2601             MOVS     R6,#+1
+   \   00000068   0x8828             LDRH     R0,[R5, #+0]
+   \   0000006A   0x8020             STRH     R0,[R4, #+0]
+   \   0000006C   0x8868             LDRH     R0,[R5, #+2]
+   \   0000006E   0x8060             STRH     R0,[R4, #+2]
+   \   00000070   0xE02A             B.N      ??SFUpdater__ReadSFDisplacementDataRAM_5
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_6: (+1)
+   \   00000072   0x8CE0             LDRH     R0,[R4, #+38]
+   \   00000074   0x.... 0x....      BL       SystemTimers__GetState
+   \   00000078   0x2801             CMP      R0,#+1
+   \   0000007A   0xD147             BNE.N    ??SFUpdater__ReadSFDisplacementDataRAM_1
+   \   0000007C   0x8820             LDRH     R0,[R4, #+0]
+   \   0000007E   0x8829             LDRH     R1,[R5, #+0]
+   \   00000080   0x4288             CMP      R0,R1
+   \   00000082   0xBF02             ITTT     EQ 
+   \   00000084   0x8860             LDRHEQ   R0,[R4, #+2]
+   \   00000086   0x8869             LDRHEQ   R1,[R5, #+2]
+   \   00000088   0x4288             CMPEQ    R0,R1
+   \   0000008A   0xBF14             ITE      NE 
+   \   0000008C   0x2602             MOVNE    R6,#+2
+   \   0000008E   0x2601             MOVEQ    R6,#+1
+   \   00000090   0x4630             MOV      R0,R6
+   \   00000092   0xB001             ADD      SP,SP,#+4
+   \   00000094   0xBDF0             POP      {R4-R7,PC}
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_7: (+1)
+   \   00000096   0x8828             LDRH     R0,[R5, #+0]
+   \   00000098   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   0000009C   0x4288             CMP      R0,R1
+   \   0000009E   0xBF1C             ITT      NE 
+   \   000000A0   0x8868             LDRHNE   R0,[R5, #+2]
+   \   000000A2   0x28FF             CMPNE    R0,#+255
+   \   000000A4   0xD034             BEQ.N    ??SFUpdater__ReadSFDisplacementDataRAM_4
+   \   000000A6   0x8CE0             LDRH     R0,[R4, #+38]
+   \   000000A8   0xB910             CBNZ.N   R0,??SFUpdater__ReadSFDisplacementDataRAM_8
+   \   000000AA   0x.... 0x....      BL       SystemTimers__GetHandle
+   \   000000AE   0x84E0             STRH     R0,[R4, #+38]
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_8: (+1)
+   \   000000B0   0x2001             MOVS     R0,#+1
+   \   000000B2   0x76E0             STRB     R0,[R4, #+27]
+   \   000000B4   0x2601             MOVS     R6,#+1
+   \   000000B6   0x8828             LDRH     R0,[R5, #+0]
+   \   000000B8   0x8020             STRH     R0,[R4, #+0]
+   \   000000BA   0xF44F 0x717A      MOV      R1,#+1000
+   \   000000BE   0x8868             LDRH     R0,[R5, #+2]
+   \   000000C0   0x8060             STRH     R0,[R4, #+2]
+   \   000000C2   0x8CE0             LDRH     R0,[R4, #+38]
+   \   000000C4   0x.... 0x....      BL       SystemTimers__SetMs
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_5: (+1)
+   \   000000C8   0x68A8             LDR      R0,[R5, #+8]
+   \   000000CA   0xB1F8             CBZ.N    R0,??SFUpdater__ReadSFDisplacementDataRAM_1
+   \   000000CC   0x8829             LDRH     R1,[R5, #+0]
+   \   000000CE   0x81A1             STRH     R1,[R4, #+12]
+   \   000000D0   0x886A             LDRH     R2,[R5, #+2]
+   \   000000D2   0x81E2             STRH     R2,[R4, #+14]
+   \   000000D4   0x88A8             LDRH     R0,[R5, #+4]
+   \   000000D6   0x8220             STRH     R0,[R4, #+16]
+   \   000000D8   0x68AB             LDR      R3,[R5, #+8]
+   \   000000DA   0x6323             STR      R3,[R4, #+48]
+   \   000000DC   0x2300             MOVS     R3,#+0
+   \   000000DE   0x84A3             STRH     R3,[R4, #+36]
+   \   000000E0   0xB1B8             CBZ.N    R0,??SFUpdater__ReadSFDisplacementDataRAM_9
+   \   000000E2   0x7F23             LDRB     R3,[R4, #+28]
+   \   000000E4   0x1F9D             SUBS     R5,R3,#+6
+   \   000000E6   0xB2EF             UXTB     R7,R5
+   \   000000E8   0x42B8             CMP      R0,R7
+   \   000000EA   0xBF38             IT       CC 
+   \   000000EC   0x4605             MOVCC    R5,R0
+   \   000000EE   0xB2ED             UXTB     R5,R5
+   \   000000F0   0x9500             STR      R5,[SP, #+0]
+   \   000000F2   0x2300             MOVS     R3,#+0
+   \   000000F4   0x2001             MOVS     R0,#+1
+   \   000000F6   0x.... 0x....      BL       API007Data__RequestSettingFileDisplacementData
+   \   000000FA   0x2801             CMP      R0,#+1
+   \   000000FC   0xD109             BNE.N    ??SFUpdater__ReadSFDisplacementDataRAM_9
+   \   000000FE   0x8CA0             LDRH     R0,[R4, #+36]
+   \   00000100   0xFA50 0xF085      UXTAB    R0,R0,R5
+   \   00000104   0x84A0             STRH     R0,[R4, #+36]
+   \   00000106   0xB001             ADD      SP,SP,#+4
+   \   00000108   0x4630             MOV      R0,R6
+   \   0000010A   0xBDF0             POP      {R4-R7,PC}
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_1: (+1)
+   \   0000010C   0x2000             MOVS     R0,#+0
+   \   0000010E   0x76E0             STRB     R0,[R4, #+27]
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_4: (+1)
+   \   00000110   0x2603             MOVS     R6,#+3
+   \                     ??SFUpdater__ReadSFDisplacementDataRAM_9: (+1)
+   \   00000112   0x4630             MOV      R0,R6
+   \   00000114   0xB001             ADD      SP,SP,#+4
+   \   00000116   0xBDF0             POP      {R4-R7,PC}       ;; return
+    773          }
+    774          
+    775          //---------------------------------------------------------------------------------------------------------------------
+    776          /**
+    777           * @details
+    778           * @brief
+    779           *
+    780           * @param node
+    781           * @param size
+    782           * @param index
+    783           * @param data_ptr
+    784           */
+
+   \                                 In section .text, align 2, keep-with-next
+    785          void SFUpdater__RxSFData(uint8 node, uint8 size, uint16 data_index, uint8 * data_ptr)
+    786          {
+   \                     SFUpdater__RxSFData: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+   \   00000004   0x4604             MOV      R4,R0
+   \   00000006   0x460E             MOV      R6,R1
+   \   00000008   0x4615             MOV      R5,R2
+   \   0000000A   0x461F             MOV      R7,R3
+    787              #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    788          		if ((Mode__IsProgrammingEngaged() == TRUE) &&
+    789          			(node == WIN_ACU_ADDRESS) &&                                  // checks if message is received from ACU
+    790          			((data_index + size) == SFUpdater_Data_Index) &&              // checks if next address to get is the expected one
+    791          			(SFUpdater_State == SFUPDATER_STATE_PROGRAMMING_DATA))
+   \   0000000C   0x.... 0x....      BL       Mode__IsProgrammingEngaged
+   \   00000010   0x2801             CMP      R0,#+1
+   \   00000012   0xBF08             IT       EQ 
+   \   00000014   0x2C01             CMPEQ    R4,#+1
+   \   00000016   0xD158             BNE.N    ??SFUpdater__RxSFData_0
+   \   00000018   0x....             LDR.N    R4,??DataTable9
+   \   0000001A   0x8C21             LDRH     R1,[R4, #+32]
+   \   0000001C   0xFA16 0xF085      UXTAH    R0,R6,R5
+   \   00000020   0x4288             CMP      R0,R1
+   \   00000022   0xBF04             ITT      EQ 
+   \   00000024   0x7E20             LDRBEQ   R0,[R4, #+24]
+   \   00000026   0x2805             CMPEQ    R0,#+5
+   \   00000028   0xD14F             BNE.N    ??SFUpdater__RxSFData_0
+    792                  {
+    793                      #ifdef SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    794                          //Skip writing the unaligned ending data to the Flash
+    795                          //Instead of that store in a temporary buffer and ask the next segment data and concatenate the data
+    796                          switch(SFUpdated_UnalignedDataState)
+    797                          {
+    798                              default:
+    799                              case SFUPDATER_UNALIGNED_DATA_NONE:
+    800                                  Flash__Write(SFUpdater_Section_Address + (FLASH_ADDRESS_TYPE)data_index,
+    801                                               data_ptr,
+    802                                               (FLASH_SIZE_TYPE)size);
+    803                                  break;
+    804          
+    805                              case SFUPDATER_UNALIGNED_DATA_COPY1:
+    806                                  memcpy(SFUpdated_FlashBuffer, data_ptr, size);
+    807                                  SFUpdated_FlashBufferWriteIndex = size;
+    808                                  break;
+    809          
+    810                              case SFUPDATER_UNALIGNED_DATA_COPY2:
+    811                                  memcpy(&SFUpdated_FlashBuffer[SFUpdated_FlashBufferWriteIndex], data_ptr, size);
+    812          
+    813                                  //Adjust the Flash Write Address
+    814                                  Flash__Write(SFUpdater_Section_Address + (FLASH_ADDRESS_TYPE)data_index - SFUpdated_FlashBufferWriteIndex, SFUpdated_FlashBuffer, (FLASH_SIZE_TYPE)FLASH_ALIGNMENT);
+    815          
+    816                                  SFUpdated_FlashBufferWriteIndex = 0;
+    817                                  SFUpdated_UnalignedDataState = SFUPDATER_UNALIGNED_DATA_NONE;
+    818                                  break;
+    819                          }
+    820          		    #else
+    821                          Flash__Write(SFUpdater_Section_Address + (FLASH_ADDRESS_TYPE)data_index,
+    822                                       data_ptr,
+    823                                       (FLASH_SIZE_TYPE)size);
+   \   0000002A   0x6AA0             LDR      R0,[R4, #+40]
+   \   0000002C   0x4632             MOV      R2,R6
+   \   0000002E   0x4639             MOV      R1,R7
+   \   00000030   0xFA10 0xF085      UXTAH    R0,R0,R5
+   \   00000034   0x.... 0x....      BL       Flash__Write
+    824                      #endif
+    825          
+    826          
+    827                      if (RequestSFData() == TRUE)
+   \   00000038   0x8BE0             LDRH     R0,[R4, #+30]
+   \   0000003A   0x8C22             LDRH     R2,[R4, #+32]
+   \   0000003C   0x4282             CMP      R2,R0
+   \   0000003E   0xD225             BCS.N    ??SFUpdater__RxSFData_1
+   \   00000040   0x7EA1             LDRB     R1,[R4, #+26]
+   \   00000042   0x1F0D             SUBS     R5,R1,#+4
+   \   00000044   0xB2ED             UXTB     R5,R5
+   \   00000046   0x1A80             SUBS     R0,R0,R2
+   \   00000048   0x2D04             CMP      R5,#+4
+   \   0000004A   0xDB04             BLT.N    ??SFUpdater__RxSFData_2
+   \   0000004C   0x0869             LSRS     R1,R5,#+1
+   \   0000004E   0xEB05 0x7191      ADD      R1,R5,R1, LSR #+30
+   \   00000052   0x0889             LSRS     R1,R1,#+2
+   \   00000054   0x008D             LSLS     R5,R1,#+2
+   \                     ??SFUpdater__RxSFData_2: (+1)
+   \   00000056   0xB201             SXTH     R1,R0
+   \   00000058   0x42A9             CMP      R1,R5
+   \   0000005A   0xBFB4             ITE      LT 
+   \   0000005C   0xB2C5             UXTBLT   R5,R0
+   \   0000005E   0x2D04             CMPGE    R5,#+4
+   \   00000060   0xDB05             BLT.N    ??SFUpdater__RxSFData_3
+   \   00000062   0x1068             ASRS     R0,R5,#+1
+   \   00000064   0xEB05 0x7090      ADD      R0,R5,R0, LSR #+30
+   \   00000068   0x1080             ASRS     R0,R0,#+2
+   \   0000006A   0x0085             LSLS     R5,R0,#+2
+   \   0000006C   0xB2ED             UXTB     R5,R5
+   \                     ??SFUpdater__RxSFData_3: (+1)
+   \   0000006E   0x7E61             LDRB     R1,[R4, #+25]
+   \   00000070   0x.... 0x....      ADR.W    R0,SFUPDATER_SECTIONS
+   \   00000074   0x5C09             LDRB     R1,[R1, R0]
+   \   00000076   0x462B             MOV      R3,R5
+   \   00000078   0x2001             MOVS     R0,#+1
+   \   0000007A   0x.... 0x....      BL       API007Data__RequestSettingFileIDData
+   \   0000007E   0x2801             CMP      R0,#+1
+   \   00000080   0xD11B             BNE.N    ??SFUpdater__RxSFData_4
+   \   00000082   0x8C20             LDRH     R0,[R4, #+32]
+   \   00000084   0xFA50 0xF085      UXTAB    R0,R0,R5
+   \   00000088   0x8420             STRH     R0,[R4, #+32]
+   \   0000008A   0xE016             B.N      ??SFUpdater__RxSFData_4
+   \                     ??SFUpdater__RxSFData_1: (+1)
+   \   0000008C   0x7E61             LDRB     R1,[R4, #+25]
+   \   0000008E   0x.... 0x....      ADR.W    R2,SFUPDATER_SECTIONS
+   \   00000092   0x1C49             ADDS     R1,R1,#+1
+   \   00000094   0x7661             STRB     R1,[R4, #+25]
+   \   00000096   0xB2C9             UXTB     R1,R1
+   \   00000098   0x5C89             LDRB     R1,[R1, R2]
+   \   0000009A   0x29FF             CMP      R1,#+255
+   \   0000009C   0xD00B             BEQ.N    ??SFUpdater__RxSFData_5
+    828                      {
+    829                          SFUpdater_Section_Index++;
+    830                          if (SFUPDATER_SECTIONS[SFUpdater_Section_Index] != SF_ID_END)
+    831                          {
+    832                              SFUpdater_Section_Address += SFUpdater_Data_Size;
+   \   0000009E   0x6AA2             LDR      R2,[R4, #+40]
+   \   000000A0   0xFA12 0xF080      UXTAH    R0,R2,R0
+   \   000000A4   0x62A0             STR      R0,[R4, #+40]
+    833                              API007Data__RequestSettingFileIDInfo(WIN_ACU_ADDRESS, SFUPDATER_SECTIONS[SFUpdater_Section_Index]);
+   \   000000A6   0x2001             MOVS     R0,#+1
+   \   000000A8   0x.... 0x....      BL       API007Data__RequestSettingFileIDInfo
+    834          
+    835                              SFUpdater_State = SFUPDATER_STATE_WAIT_SF_INFO;
+   \   000000AC   0x2004             MOVS     R0,#+4
+   \   000000AE   0x7620             STRB     R0,[R4, #+24]
+    836                              SFUpdater_Data_Index = 0;
+   \   000000B0   0x2000             MOVS     R0,#+0
+   \   000000B2   0x8420             STRH     R0,[R4, #+32]
+   \   000000B4   0xE001             B.N      ??SFUpdater__RxSFData_4
+    837                          }
+    838                          else
+    839                          {
+    840                              SFUpdater_State = SFUPDATER_STATE_DATA_END;
+   \                     ??SFUpdater__RxSFData_5: (+1)
+   \   000000B6   0x2006             MOVS     R0,#+6
+   \   000000B8   0x7620             STRB     R0,[R4, #+24]
+    841                          }
+    842                      }
+    843                      SystemTimers__SetMs(SFUpdater_Timer,1000);
+   \                     ??SFUpdater__RxSFData_4: (+1)
+   \   000000BA   0xF44F 0x717A      MOV      R1,#+1000
+   \   000000BE   0x8C60             LDRH     R0,[R4, #+34]
+   \   000000C0   0xB001             ADD      SP,SP,#+4
+   \   000000C2   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \   000000C6   0x.... 0x....      B.W      SystemTimers__SetMs
+    844                  }
+    845              #endif
+    846          }
+   \                     ??SFUpdater__RxSFData_0: (+1)
+   \   000000CA   0xB001             ADD      SP,SP,#+4
+   \   000000CC   0xBDF0             POP      {R4-R7,PC}       ;; return
+    847          
+    848          //=====================================================================================================================
+    849          //-------------------------------------- Private Functions ------------------------------------------------------------
+    850          //=====================================================================================================================
+    851          #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+    852          //---------------------------------------------------------------------------------------------------------------------
+    853          /**
+    854           * @details
+    855           *
+    856           * @return
+    857           */
+    858          static BOOL_TYPE RequestSFData(void)
+    859          {
+    860              sint16 remaining;
+    861              uint8 this_size;
+    862          
+    863              if (SFUpdater_Data_Index < SFUpdater_Data_Size)
+    864              {
+    865                  // -4 is because of the header of the API007_OP_REQ_PUB_SETTING_FILE_ID_DATA
+    866                  this_size = SFUpdater_Reveal_Max_Size - 4;
+    867          
+    868                  remaining = SFUpdater_Data_Size - SFUpdater_Data_Index;
+    869          
+    870                  if (this_size >= FLASH_ALIGNMENT)
+    871                  {
+    872                      //FLASH alignment adjust..
+    873                      this_size /= FLASH_ALIGNMENT;
+    874                      this_size *=  FLASH_ALIGNMENT;
+    875                  }
+    876          
+    877                  #ifdef SFUPDATER_ENABLE_UNALIGNED_MEMORY_HANDLING
+    878                      if (SFUpdated_UnalignedDataState == SFUPDATER_UNALIGNED_DATA_COPY1)
+    879                      {
+    880                          //This will make sure that if the remaining data is less then the FLASH_ALIGNMENT buffer
+    881                          if (remaining > FLASH_ALIGNMENT)
+    882                          {
+    883                              //Their is a Copy1 already present in the buffer. Find how many bytes needs to fit in the FLASH ALIGNMENT
+    884                              this_size = FLASH_ALIGNMENT - SFUpdated_FlashBufferWriteIndex;
+    885          
+    886                              SFUpdated_UnalignedDataState = SFUPDATER_UNALIGNED_DATA_COPY2;
+    887                          }
+    888                          else
+    889                          {
+    890                              //do not do anything
+    891                              SFUpdated_UnalignedDataState = SFUPDATER_UNALIGNED_DATA_COPY2;
+    892                          }
+    893                      }
+    894                      else if (remaining < this_size)
+    895                      {
+    896                          // Cross the boarder with the right step
+    897                          // End address does not match with the FLASH_ALIGNMENT and if their are more pending sections available
+    898                          uint8 next_section_index    = SFUpdater_Section_Index + 1;
+    899          
+    900                          if (SFUPDATER_SECTIONS[next_section_index] != SF_ID_END)
+    901                          {
+    902                              //Check is that the remaining data is FLASH_ALIGNMENT
+    903                              if ((remaining % FLASH_ALIGNMENT)!= 0)
+    904                              {
+    905                                  //Check are their more data which fits based on the FLASH_ALIGNMENT
+    906                                  if (remaining > FLASH_ALIGNMENT)
+    907                                  {
+    908                                      this_size = remaining/FLASH_ALIGNMENT;
+    909                                      this_size = this_size * FLASH_ALIGNMENT;
+    910                                  }
+    911                                  else
+    912                                  {
+    913                                      this_size = remaining;
+    914                                      SFUpdated_UnalignedDataState = SFUPDATER_UNALIGNED_DATA_COPY1;
+    915                                      SFUpdated_FlashBufferWriteIndex = 0;
+    916                                  }
+    917                              }
+    918                              else
+    919                              {
+    920                                  this_size = remaining;
+    921                              }
+    922                          }
+    923                          else
+    924                          {
+    925                              //If this is the last section then just request for the remaining data
+    926                              this_size = remaining;
+    927                          }
+    928                      }
+    929                  #else
+    930                      if (remaining < this_size)
+    931                      {
+    932                          this_size = remaining;
+    933                      }
+    934                      else if (this_size >= FLASH_ALIGNMENT)
+    935                      {
+    936                          //FLASH alignment adjust..
+    937                          this_size /= FLASH_ALIGNMENT;
+    938                          this_size *=  FLASH_ALIGNMENT;
+    939                      }
+    940                  #endif
+    941          
+    942                  if (API007Data__RequestSettingFileIDData(WIN_ACU_ADDRESS, SFUPDATER_SECTIONS[SFUpdater_Section_Index], SFUpdater_Data_Index, this_size) == TRUE)
+    943                  {
+    944                      SFUpdater_Data_Index += this_size;
+    945                  }
+    946          
+    947                  return (FALSE);
+    948          
+    949              }
+    950              else
+    951              {
+    952                  return (TRUE);
+    953              }
+    954          }
+    955          #endif
+    956          
+    957          //---------------------------------------------------------------------------------------------------------------------
+    958          /**
+    959           * @details
+    960           *
+    961           * @param data_alignmrnt
+    962           * @return
+    963           */
+    964          static BOOL_TYPE RequestSFDisplacementData(uint8 data_alignmrnt)
+    965          {
+    966              uint16 remaining;
+    967              uint8 this_size;
+    968          
+    969              if (SFUpdater_Displacement_Data_Index < SFUpdater_Received_Displacement_Info.Size)
+    970              {
+    971                  // -6 is because of the header of the API007Data__RequestSettingFileDisplacementData
+    972                  this_size = SFUpdater_Displacement_Reveal_Max_Size - 6;
+    973          
+    974                  remaining = SFUpdater_Received_Displacement_Info.Size - SFUpdater_Displacement_Data_Index;
+    975          
+    976                  if (remaining < this_size)
+    977                  {
+    978                      this_size = remaining;
+    979                  }
+    980          
+    981                  //FLASH alignment adjust..
+    982                  if (this_size >= data_alignmrnt)
+    983                  {
+    984                      this_size /= data_alignmrnt;
+    985                      this_size *=  data_alignmrnt;
+    986                  }
+    987          
+    988                  if (API007Data__RequestSettingFileDisplacementData(WIN_ACU_ADDRESS, SFUpdater_Received_Displacement_Info.SF_Pointer_ID, SFUpdater_Received_Displacement_Info.SF_Displacement, SFUpdater_Displacement_Data_Index, this_size) == TRUE)
+    989                  {
+    990                      SFUpdater_Displacement_Data_Index += this_size;
+    991                  }
+    992          
+    993                  return (FALSE);
+    994          
+    995              }
+    996              else
+    997              {
+    998                  return (TRUE);
+    999              }
+   1000          }
+   1001          
+   1002          //---------------------------------------------------------------------------------------------------------------------
+   1003          /**
+   1004           * @details
+   1005           *
+   1006           * @param sf_displacement_info
+   1007           * @param request_type
+   1008           * @return
+   1009           */
+   1010          static SFUPDATER_REQUESTER_STATUS_TYPE ProcessReadRequest(SFUPDATER_DISPLACEMENT_INFO_TYPE *sf_displacement_info, uint8 request_type)
+   1011          {
+   1012              SFUPDATER_REQUESTER_STATUS_TYPE response;
+   1013          
+   1014              switch(SFUpdater_Requester_Status)
+   1015              {
+   1016                  case SFUPDATER_REQUESTER_IDLE:
+   1017                      if ((sf_displacement_info->SF_Pointer_ID != SF_PTR_INVALID_VALUE) &&
+   1018                          (sf_displacement_info->SF_Displacement != SF_DISPL_INVALID_VALUE))
+   1019                      {
+   1020                          //Allocate the timer
+   1021                          if (SFUpdater_Requester_Timer == 0)
+   1022                          {
+   1023                              SFUpdater_Requester_Timer = SystemTimers__GetHandle(SYSTEMTIMERS_TYPE_DOWN_COUNTER);
+   1024                          }
+   1025          
+   1026                          SFUpdater_Requester_Status  = SFUPDATER_REQUESTER_PROCESSING;
+   1027                          response                    =  SFUPDATER_REQUESTER_PROCESSING;
+   1028          
+   1029                          SFUpdater_Requested_Displacement_Info.SF_Pointer_ID   = sf_displacement_info->SF_Pointer_ID;
+   1030                          SFUpdater_Requested_Displacement_Info.SF_Displacement = sf_displacement_info->SF_Displacement;
+   1031          
+   1032                          //Set the timer
+   1033                          SystemTimers__SetMs(SFUpdater_Requester_Timer, SFUPDATER_DISPLACEMENT_RESPONSE_TIMEOUT);
+   1034          
+   1035                          if (request_type == 0)
+   1036                          {
+   1037                              API007Data__RequestSettingFileDisplacementInfo(WIN_ACU_ADDRESS, SFUpdater_Requested_Displacement_Info.SF_Pointer_ID, SFUpdater_Requested_Displacement_Info.SF_Displacement);
+   1038                          }
+   1039                          else if (sf_displacement_info->Data_Ptr != NULL)
+   1040                          {
+   1041                              SFUpdater_Received_Displacement_Info.SF_Pointer_ID    = sf_displacement_info->SF_Pointer_ID;
+   1042                              SFUpdater_Received_Displacement_Info.SF_Displacement  = sf_displacement_info->SF_Displacement;
+   1043                              SFUpdater_Received_Displacement_Info.Size             = sf_displacement_info->Size;
+   1044                              SFUpdater_Displacement_Address                        = (FLASH_ADDRESS_TYPE)sf_displacement_info->Data_Ptr; //lint !e923 cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   1045                              SFUpdater_Displacement_Data_Index                     = 0;
+   1046          
+   1047                              RequestSFDisplacementData(SFUPDATER_RAM_DATA_ALIGNMENT);
+   1048                          }
+   1049                          else
+   1050                          {
+   1051                              SFUpdater_Requester_Status  = SFUPDATER_REQUESTER_IDLE;
+   1052                              response                    = SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1053                          }
+   1054                      }
+   1055                      else
+   1056                      {
+   1057                          response =  SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1058                      }
+   1059                      break;
+   1060          
+   1061                  case SFUPDATER_REQUESTER_PROCESSING:
+   1062                      if (SystemTimers__GetState(SFUpdater_Requester_Timer) != SYSTEMTIMERS_STATE_RUNNING)
+   1063                      {
+   1064                          SFUpdater_Requester_Status = SFUPDATER_REQUESTER_IDLE;
+   1065                          response =  SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1066                      }
+   1067                      else if ((SFUpdater_Requested_Displacement_Info.SF_Pointer_ID  == sf_displacement_info->SF_Pointer_ID) &&
+   1068                               (SFUpdater_Requested_Displacement_Info.SF_Displacement == sf_displacement_info->SF_Displacement))
+   1069                      {
+   1070                          response =  SFUPDATER_REQUESTER_PROCESSING;
+   1071                      }
+   1072                      else
+   1073                      {
+   1074                          response =  SFUPDATER_REQUESTER_BUSY;
+   1075                      }
+   1076                      break;
+   1077          
+   1078                  case SFUPDATER_REQUESTER_DATA_READY:
+   1079                      if ((SFUpdater_Requested_Displacement_Info.SF_Pointer_ID  == sf_displacement_info->SF_Pointer_ID) &&
+   1080                          (SFUpdater_Requested_Displacement_Info.SF_Displacement == sf_displacement_info->SF_Displacement))
+   1081                      {
+   1082                          sf_displacement_info->Crc  = SFUpdater_Requested_Displacement_Info.Crc;
+   1083                          sf_displacement_info->Size = SFUpdater_Requested_Displacement_Info.Size;
+   1084          
+   1085                          response =  SFUPDATER_REQUESTER_DATA_READY;
+   1086                          SFUpdater_Requester_Status = SFUPDATER_REQUESTER_IDLE;
+   1087                      }
+   1088                      else if (SystemTimers__GetState(SFUpdater_Requester_Timer) != SYSTEMTIMERS_STATE_RUNNING)
+   1089                      {
+   1090                          if ((sf_displacement_info->SF_Pointer_ID != SF_PTR_INVALID_VALUE) &&
+   1091                              (sf_displacement_info->SF_Displacement != SF_DISPL_INVALID_VALUE))
+   1092                          {
+   1093                              //Set the timer
+   1094                              SystemTimers__SetMs(SFUpdater_Requester_Timer, SFUPDATER_DISPLACEMENT_RESPONSE_TIMEOUT);
+   1095          
+   1096                              SFUpdater_Requester_Status  = SFUPDATER_REQUESTER_PROCESSING;
+   1097                              response                    =  SFUPDATER_REQUESTER_PROCESSING;
+   1098          
+   1099                              SFUpdater_Requested_Displacement_Info.SF_Pointer_ID   = sf_displacement_info->SF_Pointer_ID;
+   1100                              SFUpdater_Requested_Displacement_Info.SF_Displacement = sf_displacement_info->SF_Displacement;
+   1101          
+   1102                              if (request_type == 0)
+   1103                              {
+   1104                                  API007Data__RequestSettingFileDisplacementInfo(WIN_ACU_ADDRESS, SFUpdater_Requested_Displacement_Info.SF_Pointer_ID, SFUpdater_Requested_Displacement_Info.SF_Displacement);
+   1105                              }
+   1106                              else if (sf_displacement_info->Data_Ptr != NULL)
+   1107                              {
+   1108                                  SFUpdater_Received_Displacement_Info.SF_Pointer_ID    = sf_displacement_info->SF_Pointer_ID;;
+   1109                                  SFUpdater_Received_Displacement_Info.SF_Displacement  = sf_displacement_info->SF_Displacement;;
+   1110                                  SFUpdater_Received_Displacement_Info.Size             = sf_displacement_info->Size;
+   1111                                  SFUpdater_Displacement_Address                        = (FLASH_ADDRESS_TYPE)sf_displacement_info->Data_Ptr; //lint !e923 cast from pointer to unsigned long [Encompasses MISRA 2004 Rule 11.1], [MISRA 2004 Rule 11.3]
+   1112                                  SFUpdater_Displacement_Data_Index                     = 0;
+   1113          
+   1114                                  RequestSFDisplacementData(SFUPDATER_RAM_DATA_ALIGNMENT);
+   1115                              }
+   1116                              else
+   1117                              {
+   1118                                  SFUpdater_Requester_Status  = SFUPDATER_REQUESTER_IDLE;
+   1119                                  response                    = SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1120                              }
+   1121                          }
+   1122                          else
+   1123                          {
+   1124                              response =  SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1125                          }
+   1126                      }
+   1127                      else
+   1128                      {
+   1129                          response =  SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1130                      }
+   1131                      break;
+   1132          
+   1133                  default:
+   1134                      SFUpdater_Requester_Status = SFUPDATER_REQUESTER_IDLE;
+   1135                      response =  SFUPDATER_REQUESTER_REQUEST_DISCARDED;
+   1136                      break;
+   1137              }
+   1138          
+   1139              return(response);
+   1140          }
+   1141          
+   1142          //---------------------------------------------------------------------------------------------------------------------
+   1143          /**
+   1144           * @brief This function will return TRUE if the requested section ID is present in the list
+   1145           * @param sf_id
+   1146           *
+   1147           * @return BOOL_TYPE
+   1148           *  @retval TRUE(1)
+   1149           *  @retval FALSE(0)
+   1150           */
+   1151          #if (SFUPDATER_MANAGE_SF_ID_DATA == ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+   1152          BOOL_TYPE ValidateSectionID(SF_ID_TYPE sf_id)
+   1153          {
+   1154              BOOL_TYPE verification = FALSE;
+   \                     ValidateSectionID: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   1155          
+   1156              for (uint8 section_index = 0; SFUPDATER_SECTIONS[section_index] != SF_ID_END; section_index++)
+   \   00000002   0x.... 0x....      ADR.W    R2,SFUPDATER_SECTIONS
+   \                     ??ValidateSectionID_0: (+1)
+   \   00000006   0x7813             LDRB     R3,[R2, #+0]
+   \   00000008   0x2BFF             CMP      R3,#+255
+   \   0000000A   0xD004             BEQ.N    ??ValidateSectionID_1
+   1157              {
+   1158                  if (sf_id == SFUPDATER_SECTIONS[section_index])
+   \   0000000C   0xF812 0x3B01      LDRB     R3,[R2], #+1
+   \   00000010   0x4298             CMP      R0,R3
+   \   00000012   0xD102             BNE.N    ??ValidateSectionID_2
+   1159                  {
+   1160                      verification = TRUE;
+   \                     ??ValidateSectionID_3: (+1)
+   \   00000014   0x2101             MOVS     R1,#+1
+   1161                      break;
+   1162                  }
+   1163              }
+   1164          
+   1165              return verification;
+   \                     ??ValidateSectionID_1: (+1)
+   \   00000016   0x4608             MOV      R0,R1
+   \   00000018   0x4770             BX       LR               ;; return
+   \                     ??ValidateSectionID_2: (+1)
+   \   0000001A   0x7813             LDRB     R3,[R2, #+0]
+   \   0000001C   0x2BFF             CMP      R3,#+255
+   \   0000001E   0xD0FA             BEQ.N    ??ValidateSectionID_1
+   \   00000020   0xF812 0x3B01      LDRB     R3,[R2], #+1
+   \   00000024   0x4298             CMP      R0,R3
+   \   00000026   0xD0F5             BEQ.N    ??ValidateSectionID_3
+   \   00000028   0x7813             LDRB     R3,[R2, #+0]
+   \   0000002A   0x2BFF             CMP      R3,#+255
+   \   0000002C   0xD0F3             BEQ.N    ??ValidateSectionID_1
+   \   0000002E   0xF812 0x3B01      LDRB     R3,[R2], #+1
+   \   00000032   0x4298             CMP      R0,R3
+   \   00000034   0xD0EE             BEQ.N    ??ValidateSectionID_3
+   \   00000036   0x7813             LDRB     R3,[R2, #+0]
+   \   00000038   0x2BFF             CMP      R3,#+255
+   \   0000003A   0xD0EC             BEQ.N    ??ValidateSectionID_1
+   \   0000003C   0xF812 0x3B01      LDRB     R3,[R2], #+1
+   \   00000040   0x4298             CMP      R0,R3
+   \   00000042   0xD1E0             BNE.N    ??ValidateSectionID_0
+   \   00000044   0xE7E6             B.N      ??ValidateSectionID_3
+   1166          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \   00000000   0x........         DC32     SFUpdater_Requested_Displacement_Info
+   1167          
+   1168          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   SFUpdater__Handler
+        16   -> Flash__Format
+        16   -> Flash__Initialize
+        16   -> Mode__IsProgrammingEngaged
+        16   -> Reveal__GetNodestatus
+        16   -> Reveal__QueueMessageNoData
+        16   -> SettingFile__GetMemorySectionSize
+        16   -> SettingFile__GetMemorySectionStart
+        16   -> SystemTimers__GetState
+        16   -> SystemTimers__SetMs
+       8   SFUpdater__Initialize
+         8   -> SettingFile__GetMemorySectionStart
+         8   -> SystemTimers__GetHandle
+         0   -> SystemTimers__SetMs
+         8   -> __aeabi_memset4
+      24   SFUpdater__ReadSFDisplacementDataRAM
+        24   -> API007Data__RequestSettingFileDisplacementData
+        24   -> SystemTimers__GetHandle
+        24   -> SystemTimers__GetState
+        24   -> SystemTimers__SetMs
+       0   SFUpdater__ReadSFDisplacementInfoFLASH
+      16   SFUpdater__ReadSFDisplacementInfoRAM
+        16   -> API007Data__RequestSettingFileDisplacementInfo
+        16   -> SystemTimers__GetHandle
+        16   -> SystemTimers__GetState
+        16   -> SystemTimers__SetMs
+      16   SFUpdater__RxMaxPackage
+        16   -> API007Data__RequestSettingFileIDInfo
+        16   -> Mode__IsProgrammingEngaged
+         0   -> SystemTimers__SetMs
+      24   SFUpdater__RxSFData
+        24   -> API007Data__RequestSettingFileIDData
+        24   -> API007Data__RequestSettingFileIDInfo
+        24   -> Flash__Write
+        24   -> Mode__IsProgrammingEngaged
+         0   -> SystemTimers__SetMs
+      16   SFUpdater__RxSFDisplacementData
+        16   -> API007Data__RequestSettingFileDisplacementData
+        16   -> SystemTimers__SetMs
+        16   -> __aeabi_memcpy
+      16   SFUpdater__RxSFDisplacementInfo
+        16   -> SystemTimers__SetMs
+      24   SFUpdater__RxSFInfo
+        24   -> API007Data__RequestSettingFileIDData
+        24   -> Mode__GetMode
+        24   -> Mode__IsProgrammingEngaged
+        24   -> Mode__SetMode
+        24   -> SettingFile__GetSettingFileCRC
+         0   -> SystemTimers__SetMs
+       0   SFUpdater__ValidateFlashDisplacementData
+       0   ValidateSectionID
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       2  SFUPDATER_SECTIONS
+      52  SFUpdater_Requested_Displacement_Info
+          SFUpdater_Received_Displacement_Info
+          SFUpdater_State
+          SFUpdater_Section_Index
+          SFUpdater_Reveal_Max_Size
+          SFUpdater_Requester_Status
+          SFUpdater_Displacement_Reveal_Max_Size
+          SFUpdater_Data_Size
+          SFUpdater_Data_Index
+          SFUpdater_Timer
+          SFUpdater_Displacement_Data_Index
+          SFUpdater_Requester_Timer
+          SFUpdater_Section_Address
+          SFUpdater_Erase_Address
+          SFUpdater_Displacement_Address
+     150  SFUpdater__Handler
+      62  SFUpdater__Initialize
+     280  SFUpdater__ReadSFDisplacementDataRAM
+       4  SFUpdater__ReadSFDisplacementInfoFLASH
+     216  SFUpdater__ReadSFDisplacementInfoRAM
+      76  SFUpdater__RxMaxPackage
+     206  SFUpdater__RxSFData
+     110  SFUpdater__RxSFDisplacementData
+      54  SFUpdater__RxSFDisplacementInfo
+     218  SFUpdater__RxSFInfo
+       2  SFUpdater__ValidateFlashDisplacementData
+      70  ValidateSectionID
+
+ 
+    52 bytes in section .bss
+ 1 454 bytes in section .text
+ 
+ 1 454 bytes of CODE memory
+    52 bytes of DATA memory
+
+Errors: none
+Warnings: none

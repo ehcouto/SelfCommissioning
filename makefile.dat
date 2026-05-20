@@ -1,0 +1,63 @@
+
+.IF $(VERBOSE)
+#.SILENT
+.ELSE
+.SILENT=1
+.END
+
+# Include project specific settings
+
+.INCLUDE : project_specific_settings
+
+###### Definitions
+
+# set echo utility to SI's echo program so DOS built-in echo isn't used
+# use macro modifier to make sure that ROOTDIR expands to a PC style path
+
+ECHO := tools\echo.exe
+
+# Define source paths for required file types that aren't in current directory
+
+.SOURCE.hex : exe
+.SOURCE.obj : obj
+.SOURCE.lst : listings
+
+# Include file that contains the macro assignment for the list of object files
+# The macro set in this file is "OBJECTS"
+
+.IGNORE .INCLUDE : object_file_list
+
+###### Explicit rules
+
+# rule for building H08 file from obj's
+
+$(PROJ_NAME).HEX : $(OBJECTS)
+
+	@@ $(ECHO) \nLinking...
+# The following line was updated to use the -H and -h swithes. This is to stop an issue where when boot loading in the code
+# the .s37 file would have a short line in it. The PC based boot loader code would not transmit the code to the control causing
+# the control to be dead.
+	$(LINK)    -f source\lnkarm_flash.xcl --config source\config.icf --semihosting --entry Micro__BootTest -o exe\$(PROJ_NAME).out.tmp --map exe\$(PROJ_NAME).map --place_holder MICRO_FLASH_CRC,2,.MICRO_CRC_region,4 --keep=MICRO_FLASH_CRC
+	$(ELFTOOL) --fill 0xff;MICRO_FLASH_START-MICRO_FLASH_END --checksum MICRO_FLASH_CRC:2,crc16,0x00;MICRO_FLASH_START-MICRO_FLASH_END --verbose exe\$(PROJ_NAME).out.tmp exe\$(PROJ_NAME).out
+#	$(ELFTOOL) --fill 0xff;MICRO_FLASH_START-MICRO_FLASH_END --verbose exe\$(PROJ_NAME).out.tmp exe\$(PROJ_NAME).out
+	$(ELFTOOL) --bin exe\$(PROJ_NAME).out exe\$(PROJ_NAME).bin
+	$(ELFTOOL) --srec exe\$(PROJ_NAME).out exe\$(PROJ_NAME).s19
+
+	@@ $(ECHO) \nCompile successful.
+
+# rule for "linting" all of the .lob files
+
+LINTALL : $(LOBS)
+	@ $(ECHO) \nLinting...
+#	$(LINT) -os(lint.out) make.lnt $^
+	# save lint.out since mulitedit consumes it
+#	cp lint.out init.out
+#	lint make.lnt *.lob
+
+# rule for copying source code to floppy disk
+
+DUP :
+	@@ $(ECHO) \nCopying Source files to a:...
+	cp source\*.c source\*.h source\*.ha source\*.s a:
+	cp lib_src\*.c lib_src\*.h lib_src\*.ha lib_src\*.s a:
+	cp exe\*.695 a:

@@ -1,0 +1,2728 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.20.5.7591/W32 for ARM        06/Aug/2024  13:41:35
+# Copyright 1999-2014 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\SelfCommissioning\SelfCommissioning.c
+#    Command line =  
+#        -I./ -I../cx/ -I../cx/inc/ -ICategory/ -ICategory/Application/
+#        -ICategory/Application/ThermalModel/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_DD/
+#        -ICategory/Application/ThermalModel/ThermalModelCore_sBPM/
+#        -ICategory/Common/ -ICategory/Common/BoardDebugging/
+#        -ICategory/Common/MasterCommander/
+#        -ICategory/Common/MasterCommander/Source/
+#        -ICategory/Common/MasterCommander/Source/HAL/
+#        -ICategory/Common/SelfCommissioning/ -ICategory/Hbl/
+#        -IProjectSpecific/ -IProjectSpecific/Application/
+#        -IProjectSpecific/Application/API007App/
+#        -IProjectSpecific/Application/ModeManagement/
+#        -IProjectSpecific/Application/MotorSelector/
+#        -IProjectSpecific/Application/ProductInfo/
+#        -IProjectSpecific/Application/SRMcuSpeedMonitor/
+#        -IProjectSpecific/Application/ThermalModel/
+#        -IProjectSpecific/CommonCore/ -IProjectSpecific/Driver/
+#        -IProjectSpecific/MasterCommander/ -IProjectSpecific/Mci/
+#        -IProjectSpecific/Mci/Mcl/ -IProjectSpecific/Mci/Mcl/old_xls/
+#        -IXCategory/ -IXCategory/Application/
+#        -IXCategory/Application/MciParametersLoader/
+#        -IXCategory/Application/Mode/ -IXCategory/Application/Reveal_APIs/
+#        -IXCategory/Application/Reveal_APIs/API003Disc/
+#        -IXCategory/Application/Reveal_APIs/API004Debug/
+#        -IXCategory/Application/Reveal_APIs/API005LowLevel/
+#        -IXCategory/Application/Reveal_APIs/API007Data/
+#        -IXCategory/Application/Reveal_APIs/API009System/
+#        -IXCategory/Application/Reveal_APIs/API010PollVar/
+#        -IXCategory/Application/Reveal_APIs/API011AppCtr/
+#        -IXCategory/Application/Reveal_APIs/API013RemoteFunction/
+#        -IXCategory/Application/Reveal_APIs/API018Diagnostic/
+#        -IXCategory/Application/Reveal_APIs/API019ProductInfo/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/
+#        -IXCategory/Application/Reveal_APIs/API220MotorControl/API/
+#        -IXCategory/Application/Reveal_APIs/API221MotionCtrl/
+#        -IXCategory/Application/Reveal_APIs/SRAPI020Safety/
+#        -IXCategory/Application/SFUpdater/ -IXCategory/Common/
+#        -IXCategory/Common/Crc16/ -IXCategory/Common/Crc8/
+#        -IXCategory/Common/Log/ -IXCategory/Common/Millis/
+#        -IXCategory/Common/SettingFile/ -IXCategory/Common/SRClockMonitor/
+#        -IXCategory/Common/SRData/ -IXCategory/Common/SRException/
+#        -IXCategory/Common/SRFlow/ -IXCategory/Common/SRIsrMonitor/
+#        -IXCategory/Common/SRMain/ -IXCategory/Common/SRMcuSpeedMonitor/
+#        -IXCategory/Common/SRPowerMgr/ -IXCategory/Common/SRSignature/
+#        -IXCategory/Common/SRSystemConfig/
+#        -IXCategory/Common/SRTimerReference/ -IXCategory/Common/SystemConfig/
+#        -IXCategory/Common/SystemTimers/ -IXCategory/Common/Utilities/
+#        -IXCategory/Driver/ -IXCategory/Driver/API/
+#        -IXCategory/Driver/API/Comparator/ -IXCategory/Driver/API/DataFlash/
+#        -IXCategory/Driver/API/Dma/ -IXCategory/Driver/API/Flash/
+#        -IXCategory/Driver/API/Gpio/ -IXCategory/Driver/API/Micro/
+#        -IXCategory/Driver/API/Spi/ -IXCategory/Driver/API/SRMCAtod/
+#        -IXCategory/Driver/API/SRMCInputCapture/
+#        -IXCategory/Driver/API/SRMCPwm/ -IXCategory/Driver/API/TimerInterrupt/
+#        -IXCategory/Driver/API/Uart/ -IXCategory/Driver/Comparator/
+#        -IXCategory/Driver/DataFlash/ -IXCategory/Driver/Dma/
+#        -IXCategory/Driver/Flash/ -IXCategory/Driver/Gpio/
+#        -IXCategory/Driver/Micro/ -IXCategory/Driver/Spi/
+#        -IXCategory/Driver/SRMCAtod/ -IXCategory/Driver/SRMCInputCapture/
+#        -IXCategory/Driver/SRMCPwm/ -IXCategory/Driver/TimerInterrupt/
+#        -IXCategory/Driver/Uart/ -IXCategory/Hbl/ -IXCategory/Hbl/Mci/
+#        -IXCategory/Hbl/Mci/InverterTemp/ -IXCategory/Hbl/Mci/Mcl/
+#        -IXCategory/Hbl/Mci/Mcl/Braking/ -IXCategory/Hbl/Mci/Mcl/MacroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MclFvt/ -IXCategory/Hbl/Mci/Mcl/MicroBlocks/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ClrkPark/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Filters/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Math/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/ObserverPmsm/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/Pi/
+#        -IXCategory/Hbl/Mci/Mcl/MicroBlocks/PwmModulation/
+#        -IXCategory/Hbl/Mci/Mcl/ResistanceEstimation/
+#        -IXCategory/Hbl/Mci/PowerModuleManager/
+#        -IXCategory/Hbl/Mci/SpeedRefGen/ -IXCategory/Hbl/Mci/SurgeRelay/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/
+#        -IXCategory/Hbl/SRMotorSafetyMgr/API/ -IXCategory/Service/
+#        -IXCategory/Service/Reveal/ -IXCategory/Service/Win/ --remarks
+#        --no_tbaa --debug --use_c++_inline --only_stdout --dlib_config
+#        ..\cx\inc\DLib_Config_Normal.h -r -D
+#        ENABLE_JUMP_TO_APPLICATION_WITHOUT_IAP_FIRMWARE -D
+#        SET_FLASH_OPTION_CONFIGURATION -D ARM_MATH_CM4 -e --silent
+#        --endian=little --cpu Cortex-M4 --fpu=VFPv4_sp -Ohs -o
+#        SelfCommissioning.obj -l ..\listings\SelfCommissioning.lst
+#        C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\SelfCommissioning\SelfCommissioning.c
+#    List file    =  ..\listings\SelfCommissioning.lst
+#    Object file  =  SelfCommissioning.obj
+#
+###############################################################################
+
+C:\Data\Python\Self_Commissioning_Bpm\source\Category\Common\SelfCommissioning\SelfCommissioning.c
+      1          /**
+      2           *  @file       SelfCommission.c
+      3           *
+      4           *  @brief      Debugging features
+      5           *
+      6           *  @details
+      7           *
+      8           *  @section
+      9           *
+     10           *  @copyright  Copyright 2013-$Date: 2016/01/11 12:30:13CET $. Whirlpool Corporation. All rights reserved - CONFIDENTIAL
+     11           */
+     12          //---------------------------------------------------------------------------------------------------------------------
+     13          //---------------------------------------------------------------------------------------------------------------------
+     14          
+     15          
+     16          //-------------------------------------- Include Files ----------------------------------------------------------------
+     17          #include "SelfCommissioning.h"
+     18          #include "SelfCommissioning_prv.h"
+     19          #include "ClrkPark.h"
+     20          #include "Pi.h"
+     21          #include "PWMModulation.h"
+     22          #include "MathCalc.h"
+     23          #include "IQMath.h"
+     24          #include "Filters.h"
+     25          #include "ObserverPmsm.h"
+     26          #include "Mci.h"
+     27          #include "Mcl.h"
+     28          #include "MotorSafetyMgr.h"
+     29          
+     30          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     31          
+     32          typedef struct
+     33          {
+     34          	// input
+     35          	float32 Vdc;                                    //!< [V]             DC-Bus Voltage
+     36          	ABC_COOR_SYST_F_TYPE Is_ABC;                    //!< [A]             Motor Phase Currents
+     37          	float32 Speed_Rot_Ref;                          //!< [rad/s]         Speed Reference
+     38          
+     39          	// output
+     40          	ABC_COOR_SYST_F_TYPE  Vs_ABC;                   //!< [V]     motor phase reference voltage in abc system
+     41          	ABC_COOR_SYST_F_TYPE  Duty;                     //!< [%]     PWM Duties
+     42          	ABC_COOR_SYST_F_TYPE  Duty_bc;                  //!< [%]     PWM Duties after modulation and before compensation
+     43          	uint8 Lowers_On;                                //!< [n/a]   Turn on all lowers IGBTs
+     44          	float32 Speed_Rot_Est;                          //!< [rad/s]         Speed Reference
+     45          	float32 Torque;                           		//!< [Nm]    Motor Torque
+     46          
+     47          } SELFCOMMISSIONING_IO_TYPE;
+     48          
+     49          
+     50          
+     51          typedef enum SC_CONTROL_MODE
+     52          {
+     53              SC_OPEN_LOOP  = 0,             // [ 0 ]
+     54              SC_BEMF_OBSERVER = 1,              // [ 3 ]
+     55              SC_CM_DUMMY  = 256
+     56          } SC_CONTROL_MODE_ENUM_TYPE;
+     57          
+     58          
+     59          typedef struct
+     60          {
+     61          	float32 IsD_Ref;
+     62          	float32 IsQ_Ref;
+     63          	float32 Speed_Rot_Ref_El_Abs;
+     64          	float32 Speed_Rot_Est_El_Abs;
+     65          	float32 Speed_Rot_Ref_Mech_Abs;
+     66          	float32 Speed_Rot_Est_Mech_Abs;
+     67          	DQ_COOR_SYST_F_TYPE Vs_DQ;
+     68          	DQ_COOR_SYST_F_TYPE Is_DQ;
+     69          	SC_CONTROL_MODE_ENUM_TYPE Control_Mode;
+     70          }FOC_BPM_QUANTITIES_TYPE;
+     71          
+     72          
+     73          SELFCOMMISSIONING_IO_TYPE Sc_IO_Data;
+     74          FOC_BPM_QUANTITIES_TYPE Sc_Data; //! Field oriented control main quantities (current/Voltage on D/Q axis, speed, dc-bus Voltage)
+     75          
+     76          uint16 Sc_Master_Cmd_Force;  			// set the master commander speed command to mci
+     77          sint32 Sc_Master_Cmd_Speed;  			//mci speed command reference [rpm]
+     78          sint16 Sc_Master_Cmd_Acc;	  			//mci acceleration commnad reference [rpm/s]
+     79          sint16 Sc_Master_Cmd_Fdbk;  			//different from zero if there is a fault in mci command
+     80          
+     81          
+     82          #ifndef SQRT3_INV
+     83              #define SQRT3_INV    	(float32) (1.0f / 1.7320508075688772935274463415059f)
+     84          #endif
+     85          
+     86          #ifndef RPM_TO_RADS
+     87              #define RPM_TO_RADS     0.10471975511965977461542144610932f
+     88          #endif
+     89          
+     90          
+     91          #ifndef INV_3
+     92              #define INV_3          	(float32) (1.0f/3.0f)
+     93          #endif
+     94          
+     95          
+     96          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+     97          
+     98          //-------------------------------------- PRIVATE (Variables, Constants & Defines) -------------------------------------
+     99          
+    100          
+    101          // Foc Bpm parameters definition
+    102          typedef struct
+    103          {
+    104              //---------------- HARDWARE CONFIGURATION PARAMETERS - begin ------
+    105              uint16 IsrThr;          //!< ratio between fast control loop and slow control loop
+    106              float32 Ts;
+    107          
+    108          
+    109              float32 Pole_Pairs;
+    110              float32 Rs;
+    111              float32 Ld;
+    112              float32 Lq;
+    113              float32 Phim;           //!< Permanent Magnet Rotor Flux
+    114          
+    115           	//----------------- HARDWARE CONFIGURATION PARAMETERS - end -------
+    116          
+    117          	//------------- MOTOR TABLE PARAMETERS  - begin ------
+    118             // Startup
+    119              float32 Iq_Open_Loop;           //!< Initial value of Speed regulator integral state
+    120              float32 Speed_Close_Loop;      //!< Speed to switch from Injection to Bemf Observer control mode
+    121          
+    122          }SETTING_FILE_PARAMS_TYPE;
+    123          
+    124          uint16 Sc_Inverter_Compensation_Selector = SC_INVERTER_COMPENSATION;
+
+   \                                 In section .bss, align 2
+    125          uint16 Space_Vector_Mod_Selector = 0;
+   \                     Space_Vector_Mod_Selector:
+   \   00000000                      DS8 2
+    126          
+    127          
+    128          static ABC_COOR_SYST_F_TYPE	Sc_IsABC_Copy; //!< motor phase current in ABC reference used in FOC loop
+    129          static ABC_COOR_SYST_F_TYPE Sc_VsABC_bc;      //!< output pwm duties from space vector modulation
+    130          static ABC_COOR_SYST_F_TYPE Sc_VsABC;      //!< output pwm duties from space vector modulation
+    131          static ABC_COOR_SYST_F_TYPE Sc_VsABC_rec;      //!< output pwm duties from space vector modulation
+    132          static ALPHA_BETA_COOR_SYST_F_TYPE     Sc_VsAlphaBeta; //! motor phase Voltage in alpha-beta reference system
+    133          static ALPHA_BETA_COOR_SYST_F_TYPE     Sc_VsAlphaBeta_Rec; //! motor phase Voltage in alpha-beta reference system
+    134          static ALPHA_BETA_COOR_SYST_F_TYPE     Sc_IsAlphaBeta; //! motor phase current in alpha-beta reference system
+    135          
+    136          // Pi controller parameters structures
+    137          static PI_CONTROLLER_F_TYPE Sc_Current_Controller_D; //!< Current-D PI parameters
+    138          static PI_CONTROLLER_F_TYPE Sc_Current_Controller_Q; //!< Current-Q PI parameters
+    139          static PI_CONTROLLER_F_TYPE Sc_Speed_Controller; //!< Speed PI parameters
+    140          static PI_CONTROLLER_F_TYPE Sc_Voltage_Controller; //!< Voltage PI parameters
+    141          
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+    142          static float32 Sc_V_Err_Voltage;
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+    143          static float32 Sc_I_Err_Voltage;
+    144          
+    145          
+
+   \                                 In section .bss, align 1
+   \   00000000                      DS8 1
+    146          static uint8 Sc_Sector; //sector of space vector modulation
+                              ^
+Warning[Pe550]: variable "Sc_Sector" was set but never used
+    147          
+    148          // Injection & Observer
+    149          static BEMF_OBSERVER_PARAMS_F_TYPE          Sc_Bemf_Observer_Params;           //!< bemf observer parameters
+    150          static IIR1_F_TYPE                          Sc_IIR1_Filter_Dq_Obs;
+    151          static TRACKING_OBSERVER_PARAMS_F_TYPE    	Sc_Tracking_Observer_Params;       //!< tracking observer parameters
+    152          
+    153          
+    154          
+    155          static SIN_COS_F_TYPE 	  Sc_Sin_Cos_Rotor_Position;  		//!< sin/cos of rotor-flux position used in current park trasformation
+    156          static SIN_COS_F_TYPE 	  Sc_Sin_Cos_Rotor_Position_Voltage;  //!< sin/cos of rotor-flux position used in Voltage inverse park trasformation
+    157          
+
+   \                                 In section .bss, align 4
+   \   00000000                      DS8 4
+    158          static float32 Sc_Position_Flux_Est;                 //!<  rotor-flux position
+    159          static float32 Sc_Position_Flux_Est_Voltage;		    //!<  rotor-flux position compensated for Voltage transformation
+    160          
+    161          static float32   Sc_Speed_Flux_El_Est;                 	//!< estiamted rotor-flux speed
+    162          
+    163          static SETTING_FILE_PARAMS_TYPE Sc_Prm; //!< setting file FOC parameters
+    164          
+    165          // Counters
+    166          static uint16 Sc_Slow_Controloop_Cnt; //!< counter used to activate the slow-control loop (speed and Voltage control)
+    167          static uint16 Sc_Speed_Sign;
+    168          
+    169          
+    170          uint16 Sc_Injection_Flag; 			// High Sc_FrequencyInj injection is actived and foc control is by-passed
+    171          uint16 Sc_Injection_Flag_Old; 			// High Sc_FrequencyInj injection is actived and foc control is by-passed
+    172          
+    173          
+    174          //Voltage Injection Quantities and Parameters
+    175          SIN_COS_F_TYPE Sc_SinCosInj;                    // sinus and cosinus of the injected Voltage phase angle in  notation
+    176          ALPHA_BETA_COOR_SYST_F_TYPE Sc_VAphaBetaInj;    //!< injected Voltage in alpha-beta components
+    177          float32 Sc_FrequencyInj;                        //!< Sc_FrequencyInj of the injected Voltage [Hz]
+    178          float32 Sc_VoltageInj;                        	//!< Amplitude of the injected Voltage [V]
+    179          float32 Sc_VAmplCont;                           //!< Amplitude of the injected Voltage [V]
+    180          float32 Sc_Current_Inj_Ampl;
+    181          float32 Sc_PositionInj;                        //!< phase angle of the injected Voltage in Q2.30 notation
+    182          float32 Sc_PositionInjOld;
+    183          float32 Sc_PositionOpenLoop;
+    184          DQ_COOR_SYST_F_TYPE Is_DQ_Injection;
+    185          DQ_COOR_SYST_F_TYPE Vs_DQ_Injection;
+    186          
+    187          //Currents max min amplitude variables
+    188          float32 Sc_Sc_IAmpl_Min_Tmp;
+    189          float32 Sc_IAmpl_Max_Tmp;
+
+   \                                 In section .bss, align 4
+    190          float32 Sc_IAmpl_K_1;
+   \                     Sc_IAmpl_K_1:
+   \   00000000                      DS8 4
+    191          float32 Sc_IAmpl_K_2;
+    192          float32 Sc_IAmpl_Min;
+    193          float32 Sc_IAmpl_Max;
+    194          float32 Sc_VAmpl;
+    195          float32 Sc_IAmpl;
+    196          float32 Sc_Bemf_Ampl;
+    197          
+    198          float32 Sc_VAmpl_Min_Tmp;
+    199          float32 Sc_VAmpl_Max_Tmp;
+
+   \                                 In section .bss, align 4
+    200          float32 Sc_IAmpl_K_2;
+   \                     Sc_IAmpl_K_2:
+   \   00000000                      DS8 4
+
+   \                                 In section .data, align 4
+   \                     Sc_Bemf_Observer_Params:
+   \   00000000   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000010   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000020   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000030   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000040   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000050   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Sc_IO_Data:
+   \   0000005C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000006C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000007C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000008C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Sc_Data:
+   \   000000A0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000B0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000C0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000D4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000E4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000F4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000104   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000114   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000128   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000138   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000144   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000154   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000160   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000170   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000017C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   0000018C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000198   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001A4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001B0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001BC   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001C8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001D4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001E0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000001EC   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Sc_VAphaBetaInj:
+   \   00000200   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Is_DQ_Injection:
+   \   0000020C   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Vs_DQ_Injection:
+   \   00000218   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    201          float32 Sc_VAmpl_Min;
+    202          float32 Sc_VAmpl_Max;
+    203          
+    204          
+    205          
+    206          //Pwm Modulation Parameters
+    207          MATHCALC_LUT_EXT_F_TYPE   PwmModulationPrm;
+   \                     PwmModulationPrm:
+   \   00000224   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Sc_SinCosInj:
+   \   00000230   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \                     Sc_Master_Cmd_Force:
+   \   00000238   0x00 0x00          DC8 0, 0
+   \                     Sc_Master_Cmd_Acc:
+   \   0000023A   0x00 0x00          DC8 0, 0
+   \                     Sc_Master_Cmd_Fdbk:
+   \   0000023C   0x00 0x00          DC8 0, 0
+   \                     Sc_Inverter_Compensation_Selector:
+   \   0000023E   0x0001             DC16 1
+   \   00000240   0x00 0x00          DC8 0, 0
+   \   00000242   0x00 0x00          DC8 0, 0
+   \                     Sc_Injection_Flag:
+   \   00000244   0x00 0x00          DC8 0, 0
+   \                     Sc_Injection_Flag_Old:
+   \   00000246   0x00 0x00          DC8 0, 0
+   \                     Sc_Master_Cmd_Speed:
+   \   00000248   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   0000024C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   00000250   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_FrequencyInj:
+   \   00000254   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VoltageInj:
+   \   00000258   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VAmplCont:
+   \   0000025C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_Current_Inj_Ampl:
+   \   00000260   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_PositionInj:
+   \   00000264   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_PositionInjOld:
+   \   00000268   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_PositionOpenLoop:
+   \   0000026C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_Sc_IAmpl_Min_Tmp:
+   \   00000270   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_IAmpl_Max_Tmp:
+   \   00000274   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_IAmpl_Min:
+   \   00000278   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_IAmpl_Max:
+   \   0000027C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VAmpl:
+   \   00000280   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_IAmpl:
+   \   00000284   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_Bemf_Ampl:
+   \   00000288   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VAmpl_Min_Tmp:
+   \   0000028C   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VAmpl_Max_Tmp:
+   \   00000290   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VAmpl_Min:
+   \   00000294   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \                     Sc_VAmpl_Max:
+   \   00000298   0x00 0x00          DC8 0, 0, 0, 0
+   \              0x00 0x00    
+   \   __absolute struct <unnamed> Sc_Dutycycle_By_Current_LUT[65]
+   \                     Sc_Dutycycle_By_Current_LUT:
+   \   0000029C   0xC0800000         DC32 0C0800000H, 0BCBE36D0H, 0C0780000H, 0BCBE5287H, 0C0700000H
+   \              0xBCBE36D0   
+   \              0xC0780000   
+   \              0xBCBE5287   
+   \              0xC0700000   
+   \   000002B0   0xBCBDEB95         DC32 0BCBDEB95H, 0C0680000H, 0BCBD3F35H, 0C0600000H, 0BCBC78F8H
+   \              0xC0680000   
+   \              0xBCBD3F35   
+   \              0xC0600000   
+   \              0xBCBC78F8   
+   \   000002C4   0xC0580000         DC32 0C0580000H, 0BCBBB477H, 0C0500000H, 0BCBAFF00H, 0C0480000H
+   \              0xBCBBB477   
+   \              0xC0500000   
+   \              0xBCBAFF00   
+   \              0xC0480000   
+   \   000002D8   0xBCBA5945         DC32 0BCBA5945H, 0C0400000H, 0BCB9B909H, 0C0380000H, 0BCB90ACFH
+   \              0xC0400000   
+   \              0xBCB9B909   
+   \              0xC0380000   
+   \              0xBCB90ACF   
+   \   000002EC   0xC0300000         DC32 0C0300000H, 0BCB8338CH, 0C0280000H, 0BCB7124DH, 0C0200000H
+   \              0xBCB8338C   
+   \              0xC0280000   
+   \              0xBCB7124D   
+   \              0xC0200000   
+   \   00000300   0xBCB581EF         DC32 0BCB581EFH, 0C0180000H, 0BCB35AC7H, 0C0100000H, 0BCB07452H
+   \              0xC0180000   
+   \              0xBCB35AC7   
+   \              0xC0100000   
+   \              0xBCB07452   
+   \   00000314   0xC0080000         DC32 0C0080000H, 0BCACA6E4H, 0C0000000H, 0BCA7CD56H, 0BFF00000H
+   \              0xBCACA6E4   
+   \              0xC0000000   
+   \              0xBCA7CD56   
+   \              0xBFF00000   
+   \   00000328   0xBCA1C6B6         DC32 0BCA1C6B6H, 0BFE00000H, 0BC9A77F2H, 0BFD00000H, 0BC953D29H
+   \              0xBFE00000   
+   \              0xBC9A77F2   
+   \              0xBFD00000   
+   \              0xBC953D29   
+   \   0000033C   0xBFC00000         DC32 0BFC00000H, 0BC8F68F3H, 0BFB00000H, 0BC8AADAEH, 0BFA00000H
+   \              0xBC8F68F3   
+   \              0xBFB00000   
+   \              0xBC8AADAE   
+   \              0xBFA00000   
+   \   00000350   0xBC863EEF         DC32 0BC863EEFH, 0BF900000H, 0BC81504DH, 0BF800000H, 0BC762ABBH
+   \              0xBF900000   
+   \              0xBC81504D   
+   \              0xBF800000   
+   \              0xBC762ABB   
+   \   00000364   0xBF600000         DC32 0BF600000H, 0BC65F77CH, 0BF400000H, 0BC60B913H, 0BF200000H
+   \              0xBC65F77C   
+   \              0xBF400000   
+   \              0xBC60B913   
+   \              0xBF200000   
+   \   00000378   0xBC5D2F1B         DC32 0BC5D2F1BH, 0BF000000H, 0BC59A522H, 0BEC00000H, 0BC54562EH
+   \              0xBF000000   
+   \              0xBC59A522   
+   \              0xBEC00000   
+   \              0xBC54562E   
+   \   0000038C   0xBE800000         DC32 0BE800000H, 0BC42A455H, 0BE000000H, 0BC30F27CH, 0H, 0H, 3E000000H
+   \              0xBC42A455   
+   \              0xBE000000   
+   \              0xBC30F27C   
+   \              0x00000000   
+   \              0x00000000   
+   \              0x3E000000   
+   \   000003A8   0x3C30F27C         DC32 3C30F27CH, 3E800000H, 3C42A455H, 3EC00000H, 3C54562EH, 3F000000H
+   \              0x3E800000   
+   \              0x3C42A455   
+   \              0x3EC00000   
+   \              0x3C54562E   
+   \              0x3F000000   
+   \   000003C0   0x3C5B6A1F         DC32 3C5B6A1FH, 3F200000H, 3C5EF417H, 3F400000H, 3C775EF5H, 3F600000H
+   \              0x3F200000   
+   \              0x3C5EF417   
+   \              0x3F400000   
+   \              0x3C775EF5   
+   \              0x3F600000   
+   \   000003D8   0x3C850830         DC32 3C850830H, 3F800000H, 3C89B37CH, 3F900000H, 3C8F0A1AH, 3FA00000H
+   \              0x3F800000   
+   \              0x3C89B37C   
+   \              0x3F900000   
+   \              0x3C8F0A1A   
+   \              0x3FA00000   
+   \   000003F0   0x3C9583AE         DC32 3C9583AEH, 3FB00000H, 3C9CB423H, 3FC00000H, 3CA42F64H, 3FD00000H
+   \              0x3FB00000   
+   \              0x3C9CB423   
+   \              0x3FC00000   
+   \              0x3CA42F64   
+   \              0x3FD00000   
+   \   00000408   0x3CAB895F         DC32 3CAB895FH, 3FE00000H, 3CABDAF2H, 3FF00000H, 3CB3F2B5H, 40000000H
+   \              0x3FE00000   
+   \              0x3CABDAF2   
+   \              0x3FF00000   
+   \              0x3CB3F2B5   
+   \              0x40000000   
+   \   00000420   0x3CB8CFF5         DC32 3CB8CFF5H, 40080000H, 3CBB8F62H, 40100000H, 3CBD0BA5H, 40180000H
+   \              0x40080000   
+   \              0x3CBB8F62   
+   \              0x40100000   
+   \              0x3CBD0BA5   
+   \              0x40180000   
+   \   00000438   0x3CBDE533         DC32 3CBDE533H, 40200000H, 3CBE8A1DH, 40280000H, 3CBF3DE1H, 40300000H
+   \              0x40200000   
+   \              0x3CBE8A1D   
+   \              0x40280000   
+   \              0x3CBF3DE1   
+   \              0x40300000   
+   \   00000450   0x3CC02142         DC32 3CC02142H, 40380000H, 3CC13A11H, 40400000H, 3CC27B05H, 40480000H
+   \              0x40380000   
+   \              0x3CC13A11   
+   \              0x40400000   
+   \              0x3CC27B05   
+   \              0x40480000   
+   \   00000468   0x3CC3CB8A         DC32 3CC3CB8AH, 40500000H, 3CC50F95H, 40580000H, 3CC62F73H, 40600000H
+   \              0x40500000   
+   \              0x3CC50F95   
+   \              0x40580000   
+   \              0x3CC62F73   
+   \              0x40600000   
+   \   00000480   0x3CC71F9D         DC32 3CC71F9DH, 40680000H, 3CC7E888H, 40700000H, 3CC8AE78H, 40780000H
+   \              0x40680000   
+   \              0x3CC7E888   
+   \              0x40700000   
+   \              0x3CC8AE78   
+   \              0x40780000   
+   \   00000498   0x3CC9B954         DC32 3CC9B954H, 40800000H, 3CCB7C71H
+   \              0x40800000   
+   \              0x3CCB7C71   
+   \   __absolute float sc_step_inv_pwm_comp
+   \                     sc_step_inv_pwm_comp:
+   \   000004A4   0x41000000         DC32 41000000H
+   \   __absolute sint32 sc_sizeof_inv_comp_lut
+   \                     sc_sizeof_inv_comp_lut:
+   \   000004A8   0x00000041         DC32 65
+   \   000004AC   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000004B4   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+    208          //-------------------------------------- PUBLIC (Variables) -----------------------------------------------------------
+    209          
+    210          //-------------------------------------- PRIVATE (Function Prototypes) ------------------------------------------------
+    211          void ScBpm__Initialize(void);
+    212          void ScBpm__PwmHandler(void);
+    213          static void Parameter_Initialize(void);
+    214          static void ScBpm__ResetFocState(void);
+    215          //=====================================================================================================================
+    216          //-------------------------------------- Public Functions -------------------------------------------------------------
+    217          //=====================================================================================================================
+    218          
+    219          
+    220          //---------------------------------------------------------------------------------------------------------------------
+    221          /**
+    222           *  @brief      It Initializes the module SelfCommission and its variables
+    223           *
+    224           *  @details    The selected debugging features are initialized
+    225           *
+    226           */
+
+   \                                 In section .text, align 2, keep-with-next
+    227          void SelfCommissioning__Initialize(void)
+    228          {
+   \                     SelfCommissioning__Initialize: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+    229              ScBpm__Initialize();
+   \   00000004   0x.... 0x....      BL       Parameter_Initialize
+   \   00000008   0x.... 0x....      BL       ScBpm__ResetFocState
+    230          
+    231              Sc_IO_Data.Is_ABC.A = 0.0f;
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable6_3
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x6601             STR      R1,[R0, #+96]
+    232              Sc_IO_Data.Is_ABC.B = 0.0f;
+   \   00000014   0x6641             STR      R1,[R0, #+100]
+    233              Sc_IO_Data.Is_ABC.C = 0.0f;
+   \   00000016   0x6681             STR      R1,[R0, #+104]
+    234              Sc_IO_Data.Vdc      = 0.0f;
+   \   00000018   0x65C1             STR      R1,[R0, #+92]
+    235          
+    236          	Sc_Master_Cmd_Force = 0;
+   \   0000001A   0xF8A0 0x1238      STRH     R1,[R0, #+568]
+    237          	Sc_Master_Cmd_Speed = 0;
+   \   0000001E   0xF8C0 0x1248      STR      R1,[R0, #+584]
+    238          	Sc_Master_Cmd_Acc = SC_DEFAULT_ACCEL;
+    239          	Sc_Master_Cmd_Fdbk = 0;
+    240          
+    241          }
+   \   00000022   0xB001             ADD      SP,SP,#+4
+   \   00000024   0xF44F 0x71FA      MOV      R1,#+500
+   \   00000028   0xF8A0 0x123A      STRH     R1,[R0, #+570]
+   \   0000002C   0x2100             MOVS     R1,#+0
+   \   0000002E   0xF8A0 0x123C      STRH     R1,[R0, #+572]
+   \   00000032   0xBD00             POP      {PC}             ;; return
+    242          
+    243          
+    244          //---------------------------------------------------------------------------------------------------------------------
+    245          /**
+    246           *  @brief      Pwm handler for SelfCommissioning. Rate: every 62.5 us
+    247           *
+    248           */
+
+   \                                 In section .text, align 2, keep-with-next
+    249          void SelfCommissioning__RunningHandler(void)
+    250          {
+   \                     SelfCommissioning__RunningHandler: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+    251          
+    252              // Adc Reading
+    253          	Sc_IO_Data.Is_ABC.A =  Mcl_IO.Is_ABC.A;
+   \   00000002   0x.... 0x....      LDR.W    R5,??DataTable6_4
+   \   00000006   0x.... 0x....      LDR.W    R4,??DataTable6_3
+   \   0000000A   0x6868             LDR      R0,[R5, #+4]
+   \   0000000C   0x6620             STR      R0,[R4, #+96]
+   \   0000000E   0xB081             SUB      SP,SP,#+4
+    254          	Sc_IO_Data.Is_ABC.B =  Mcl_IO.Is_ABC.B;
+   \   00000010   0x68A8             LDR      R0,[R5, #+8]
+   \   00000012   0x6660             STR      R0,[R4, #+100]
+    255          	Sc_IO_Data.Is_ABC.C =  Mcl_IO.Is_ABC.C;
+   \   00000014   0x68E8             LDR      R0,[R5, #+12]
+   \   00000016   0x66A0             STR      R0,[R4, #+104]
+    256          	Sc_IO_Data.Vdc = Mcl_IO.Vdc;
+   \   00000018   0x6828             LDR      R0,[R5, #+0]
+   \   0000001A   0x65E0             STR      R0,[R4, #+92]
+    257          	Sc_IO_Data.Speed_Rot_Ref  = Mcl_IO.Speed_Rot_Ref;
+   \   0000001C   0x6928             LDR      R0,[R5, #+16]
+   \   0000001E   0x66E0             STR      R0,[R4, #+108]
+    258          
+    259          
+    260          	//FOC LOOP
+    261          	ScBpm__PwmHandler();
+   \   00000020   0x.... 0x....      BL       ScBpm__PwmHandler
+    262          
+    263          	Mcl_IO.Duty.A = Sc_IO_Data.Duty.A;
+    264          	Mcl_IO.Duty.B = Sc_IO_Data.Duty.B;
+    265          	Mcl_IO.Duty.C = Sc_IO_Data.Duty.C;
+    266          
+    267          }
+   \   00000024   0xB001             ADD      SP,SP,#+4
+   \   00000026   0x6FE0             LDR      R0,[R4, #+124]
+   \   00000028   0x6328             STR      R0,[R5, #+48]
+   \   0000002A   0xF8D4 0x0080      LDR      R0,[R4, #+128]
+   \   0000002E   0x6368             STR      R0,[R5, #+52]
+   \   00000030   0xF8D4 0x0084      LDR      R0,[R4, #+132]
+   \   00000034   0x63A8             STR      R0,[R5, #+56]
+   \   00000036   0xBD30             POP      {R4,R5,PC}       ;; return
+    268          
+    269          
+    270          
+    271          
+    272          
+    273          //---------------------------------------------------------------------------------------------------------------------
+    274          /**
+    275           *  @brief      Slow handler for SelfCommission. Rate: every 25 ms
+    276           *
+    277           */
+
+   \                                 In section .text, align 2, keep-with-next
+    278          void SelfCommissioning__25msHandler(void)
+    279          {
+   \                     SelfCommissioning__25msHandler: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    280          
+    281          	if(Sc_Injection_Flag != Sc_Injection_Flag_Old)
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable6_3
+   \   00000006   0xF8B4 0x0244      LDRH     R0,[R4, #+580]
+   \   0000000A   0xF8B4 0x1246      LDRH     R1,[R4, #+582]
+   \   0000000E   0x4288             CMP      R0,R1
+   \   00000010   0xD02A             BEQ.N    ??SelfCommissioning__25msHandler_0
+    282          	{
+    283          		if(Sc_Injection_Flag != 0)
+   \   00000012   0xB148             CBZ.N    R0,??SelfCommissioning__25msHandler_1
+    284          		{
+    285          			Sc_Master_Cmd_Force = 1;
+   \   00000014   0x2101             MOVS     R1,#+1
+   \   00000016   0xF8A4 0x1238      STRH     R1,[R4, #+568]
+    286          			Sc_Master_Cmd_Speed = SC_DEFAULT_SPEED;
+   \   0000001A   0xF8A4 0x0246      STRH     R0,[R4, #+582]
+   \   0000001E   0xF44F 0x71FA      MOV      R1,#+500
+   \   00000022   0xF8C4 0x1248      STR      R1,[R4, #+584]
+   \   00000026   0xE02B             B.N      ??SelfCommissioning__25msHandler_2
+    287          		}
+    288          		else if(MotorSafetyMgr__DoesClassAHaveAccessToPwm() == TRUE)
+   \                     ??SelfCommissioning__25msHandler_1: (+1)
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x.... 0x....      BL       SRMotorSafetyMgr__GetFlag
+   \   0000002E   0x2801             CMP      R0,#+1
+   \   00000030   0xD11A             BNE.N    ??SelfCommissioning__25msHandler_0
+    289          		{
+    290          			Sc_Master_Cmd_Force = 1;
+   \   00000032   0xF8A4 0x0238      STRH     R0,[R4, #+568]
+    291          			Sc_Master_Cmd_Speed = 0;
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0xF8C4 0x0248      STR      R0,[R4, #+584]
+   \   0000003C   0xF8B4 0x0244      LDRH     R0,[R4, #+580]
+   \   00000040   0xF8A4 0x0246      STRH     R0,[R4, #+582]
+    292          		}
+    293          	}
+    294          
+    295          	Sc_Injection_Flag_Old = Sc_Injection_Flag;
+    296          
+    297          
+    298          
+    299          	if(Sc_Master_Cmd_Force == 1)
+    300          	{
+    301          		if(Sc_Master_Cmd_Speed != 0)
+    302          		{
+    303          			Sc_Master_Cmd_Fdbk = Mci__Run(MOTOR0, Sc_Master_Cmd_Speed, Sc_Master_Cmd_Acc);
+    304          
+    305          			if(Sc_Master_Cmd_Fdbk == MCI_CMD_ACCEPTED)
+    306          			{
+    307          				Sc_Master_Cmd_Force = 0;
+    308          			}
+    309          		}
+    310          		else
+    311          		{
+    312          			Mci__Stop(MOTOR0, Sc_Master_Cmd_Acc);
+   \                     ??SelfCommissioning__25msHandler_3: (+1)
+   \   00000044   0x2000             MOVS     R0,#+0
+   \   00000046   0xF9B4 0x123A      LDRSH    R1,[R4, #+570]
+   \   0000004A   0x.... 0x....      BL       Mci__Stop
+    313          
+    314          			Sc_Master_Cmd_Force = 0;
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \                     ??SelfCommissioning__25msHandler_4: (+1)
+   \   00000050   0xF8A4 0x0238      STRH     R0,[R4, #+568]
+    315          		}
+    316          
+    317          	}
+    318          
+    319          	if(MotorSafetyMgr__DoesClassAHaveAccessToPwm() == FALSE)
+   \                     ??SelfCommissioning__25msHandler_5: (+1)
+   \   00000054   0x2001             MOVS     R0,#+1
+   \   00000056   0x.... 0x....      BL       SRMotorSafetyMgr__GetFlag
+   \   0000005A   0x2800             CMP      R0,#+0
+   \   0000005C   0xBF04             ITT      EQ 
+    320          	{
+    321          		ScBpm__ResetFocState();
+   \   0000005E   0xE8BD 0x4010      POPEQ    {R4,LR}
+   \   00000062   0x.... 0x....      BEQ.W    ScBpm__ResetFocState
+    322          	}
+    323          
+    324          }
+   \   00000066   0xBD10             POP      {R4,PC}          ;; return
+   \                     ??SelfCommissioning__25msHandler_0: (+1)
+   \   00000068   0xF8B4 0x0244      LDRH     R0,[R4, #+580]
+   \   0000006C   0xF8A4 0x0246      STRH     R0,[R4, #+582]
+   \   00000070   0xF8B4 0x0238      LDRH     R0,[R4, #+568]
+   \   00000074   0x2801             CMP      R0,#+1
+   \   00000076   0xD1ED             BNE.N    ??SelfCommissioning__25msHandler_5
+   \   00000078   0xF8D4 0x0248      LDR      R0,[R4, #+584]
+   \   0000007C   0x2800             CMP      R0,#+0
+   \   0000007E   0xD0E1             BEQ.N    ??SelfCommissioning__25msHandler_3
+   \                     ??SelfCommissioning__25msHandler_2: (+1)
+   \   00000080   0xF9B4 0x223A      LDRSH    R2,[R4, #+570]
+   \   00000084   0xF8D4 0x1248      LDR      R1,[R4, #+584]
+   \   00000088   0x2000             MOVS     R0,#+0
+   \   0000008A   0x.... 0x....      BL       Mci__Run
+   \   0000008E   0xF8A4 0x023C      STRH     R0,[R4, #+572]
+   \   00000092   0x2800             CMP      R0,#+0
+   \   00000094   0xD1DE             BNE.N    ??SelfCommissioning__25msHandler_5
+   \   00000096   0xE7DB             B.N      ??SelfCommissioning__25msHandler_4
+    325          
+    326          
+    327          //=====================================================================================================================
+    328          //-------------------------------------- Private Functions ------------------------------------------------------------
+    329          //=====================================================================================================================
+    330          
+    331          
+    332          
+    333          
+    334          
+    335          
+    336          
+    337          
+    338          //---------------------------------------------------------------------------------------------------------------------
+    339          /**
+    340           *  @brief      Initialization of Foc components parameters.
+    341           *  @details    This routine initialise the structures of FOC components parameters (Pi regulators, Flux estimator..)
+    342           *              with setting file values.
+    343           *
+    344           *  @param[in]
+    345           *  @param[out]
+    346           *  @return
+    347           */
+
+   \                                 In section .text, align 4, keep-with-next
+    348          static void Parameter_Initialize(void)
+    349          {
+   \                     Parameter_Initialize: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    350          
+    351          	Sc_Prm.IsrThr = 32;
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable6_3
+   \   00000006   0x2020             MOVS     R0,#+32
+   \   00000008   0xF8A4 0x0104      STRH     R0,[R4, #+260]
+    352          	Sc_Prm.Ts = SC_TS;
+    353          
+    354          	Sc_Prm.Pole_Pairs = SC_POLE_PAIRS;
+    355          	Sc_Prm.Rs = SC_RS;
+    356          	Sc_Prm.Ld = SC_LD/1000.0f;
+   \   0000000C   0xEDDF 0x....      VLDR.W   S1,??DataTable4  ;; 0x3ca3d70a
+   \   00000010   0xF04F 0x4081      MOV      R0,#+1082130432
+   \   00000014   0xF8C4 0x010C      STR      R0,[R4, #+268]
+   \   00000018   0xEDC4 0x0A45      VSTR     S1,[R4, #+276]
+   \   0000001C   0xED9F 0x....      VLDR.W   S0,??DataTable4_1  ;; 0x3883126f
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable6_5  ;; 0x40a00000
+   \   00000024   0xF8C4 0x0110      STR      R0,[R4, #+272]
+    357          	Sc_Prm.Lq = SC_LQ/1000.0f;
+   \   00000028   0xEDC4 0x0A46      VSTR     S1,[R4, #+280]
+   \   0000002C   0xED84 0x0A42      VSTR     S0,[R4, #+264]
+    358          	Sc_Prm.Phim = 0.0750f;
+    359          
+    360          
+    361              //-------bemf observer params init  - begin ------
+    362              Sc_Bemf_Observer_Params.Pi_D.Kp = 40.0f;
+   \   00000030   0xEDDF 0x....      VLDR.W   S1,??DataTable4_2  ;; 0x42200000
+   \   00000034   0x.... 0x....      LDR.W    R0,??DataTable6_6  ;; 0x3d99999a
+   \   00000038   0xF8C4 0x011C      STR      R0,[R4, #+284]
+   \   0000003C   0xEDC4 0x0A07      VSTR     S1,[R4, #+28]
+    363              Sc_Bemf_Observer_Params.Pi_D.Ki = 32000.0f*Sc_Prm.Ts;
+   \   00000040   0xEEB0 0x1A00      VMOV.F32 S2,#2.0
+    364              Sc_Bemf_Observer_Params.Pi_D.Upper_Limit = 500.0f;
+    365              Sc_Bemf_Observer_Params.Pi_D.Lower_Limit = -500.0f;
+    366          
+    367              Sc_Bemf_Observer_Params.Pi_Q.Kp = 40.0f;
+    368          	Sc_Bemf_Observer_Params.Pi_Q.Ki = 32000.0f*Sc_Prm.Ts;
+    369          	Sc_Bemf_Observer_Params.Pi_Q.Upper_Limit = 500.0f;
+    370          	Sc_Bemf_Observer_Params.Pi_Q.Lower_Limit = -500.0f;
+    371          
+    372              Sc_Bemf_Observer_Params.I_Coeff = (Sc_Prm.Ld/(Sc_Prm.Ld+Sc_Prm.Ts*Sc_Prm.Rs));
+   \   00000044   0x.... 0x....      LDR.W    R0,??DataTable6_7  ;; 0x3f7c0fc1
+   \   00000048   0x64E0             STR      R0,[R4, #+76]
+   \   0000004A   0xEDC4 0x0A0E      VSTR     S1,[R4, #+56]
+   \   0000004E   0xED84 0x1A08      VSTR     S2,[R4, #+32]
+   \   00000052   0xEDDF 0x....      VLDR.W   S3,??DataTable4_3  ;; 0x43fa0000
+    373              Sc_Bemf_Observer_Params.U_Coeff = (Sc_Prm.Ts/(Sc_Prm.Ld+Sc_Prm.Ts*Sc_Prm.Rs));
+    374              Sc_Bemf_Observer_Params.WI_Coeff = (Sc_Prm.Ts*Sc_Prm.Lq/(Sc_Prm.Ld+Sc_Prm.Ts*Sc_Prm.Rs));
+   \   00000056   0x.... 0x....      LDR.W    R0,??DataTable6_8  ;; 0x38810e37
+   \   0000005A   0x6560             STR      R0,[R4, #+84]
+    375              Sc_Bemf_Observer_Params.E_Coeff = (Sc_Prm.Ts/(Sc_Prm.Ld+Sc_Prm.Ts*Sc_Prm.Rs));
+    376              //-------bemf observer params init  - end ------
+    377          
+    378          
+    379              //-------tracking observer params init  - begin ------
+    380              Sc_Tracking_Observer_Params.Pi.Kp = SC_TRACKINGOBSERVER_KP;
+    381              Sc_Tracking_Observer_Params.Pi.Ki = SC_TRACKINGOBSERVER_KI*Sc_Prm.Ts;
+    382              Sc_Tracking_Observer_Params.Pi.Upper_Limit = 20000.0f;
+    383              Sc_Tracking_Observer_Params.Pi.Lower_Limit = -20000.0f;
+    384              Sc_Tracking_Observer_Params.Integ_Parameters.Ki = Sc_Prm.Ts;
+   \   0000005C   0xED84 0x0A3C      VSTR     S0,[R4, #+240]
+   \   00000060   0xEDC4 0x1A09      VSTR     S3,[R4, #+36]
+   \   00000064   0xED9F 0x....      VLDR.W   S4,??DataTable4_4  ;; 0xc3fa0000
+   \   00000068   0x.... 0x....      LDR.W    R0,??DataTable6_9  ;; 0x42c80000
+   \   0000006C   0xF8C4 0x00E0      STR      R0,[R4, #+224]
+   \   00000070   0xEDDF 0x....      VLDR.W   S1,??DataTable4_5  ;; 0x3b49a635
+   \   00000074   0xF04F 0x5078      MOV      R0,#+1040187392
+   \   00000078   0xF8C4 0x00E4      STR      R0,[R4, #+228]
+    385          
+    386              //-------IIR Filter ---------//
+    387              Sc_IIR1_Filter_Dq_Obs.coeff.b0 = 0.026733f;
+   \   0000007C   0xED9F 0x....      VLDR.W   S0,??DataTable4_6  ;; 0x3cdaff2a
+   \   00000080   0x.... 0x....      LDR.W    R0,??DataTable6_10  ;; 0x469c4000
+   \   00000084   0xF8C4 0x00E8      STR      R0,[R4, #+232]
+   \   00000088   0xED84 0x2A0A      VSTR     S4,[R4, #+40]
+   \   0000008C   0xED84 0x1A0F      VSTR     S2,[R4, #+60]
+   \   00000090   0xEDC4 0x1A10      VSTR     S3,[R4, #+64]
+   \   00000094   0xED84 0x2A11      VSTR     S4,[R4, #+68]
+   \   00000098   0xEDC4 0x0A14      VSTR     S1,[R4, #+80]
+   \   0000009C   0xEDC4 0x0A16      VSTR     S1,[R4, #+88]
+   \   000000A0   0xED84 0x0A7B      VSTR     S0,[R4, #+492]
+    388              Sc_IIR1_Filter_Dq_Obs.coeff.b1 = 0.026733f;
+   \   000000A4   0xED84 0x0A7C      VSTR     S0,[R4, #+496]
+   \   000000A8   0x.... 0x....      LDR.W    R0,??DataTable6_11  ;; 0xc69c4000
+   \   000000AC   0xF8C4 0x00EC      STR      R0,[R4, #+236]
+    389              Sc_IIR1_Filter_Dq_Obs.coeff.a1 = -0.946533f;
+   \   000000B0   0x.... 0x....      LDR.W    R0,??DataTable6_12  ;; 0xbf724ffd
+   \   000000B4   0xF8C4 0x01F4      STR      R0,[R4, #+500]
+    390              Filters__IIR1InitF(&Sc_IIR1_Filter_Dq_Obs);
+   \   000000B8   0xF504 0x70F6      ADD      R0,R4,#+492
+   \   000000BC   0x.... 0x....      BL       Filters__IIR1InitF
+    391              //-------tracking observer params init  - end ------
+    392          
+    393          
+    394              //-------D current control loop params init  - begin ------
+    395              Sc_Current_Controller_D.Kp = SC_CURRENTCONTROLLER_KP;
+    396              Sc_Current_Controller_D.Ki = SC_CURRENTCONTROLLER_KI*Sc_Prm.Ts;
+    397              Sc_Current_Controller_D.Upper_Limit = 256.0f;
+    398              Sc_Current_Controller_D.Lower_Limit = -256.0f;
+    399              //-------D current control loop params init  - end ------
+    400          
+    401          	//-------Q current control loop params init  - begin ------
+    402          	Sc_Current_Controller_Q.Kp = SC_CURRENTCONTROLLER_KP;
+    403          	Sc_Current_Controller_Q.Ki = SC_CURRENTCONTROLLER_KI*Sc_Prm.Ts;
+    404          	Sc_Current_Controller_Q.Upper_Limit = 256.0f;
+    405          	Sc_Current_Controller_Q.Lower_Limit = -256.0f;
+    406          	//-------Q current control loop params init  - end ------
+    407          
+    408          
+    409          
+    410              //-------Voltage control loop params init  - begin ------
+    411              Sc_Voltage_Controller.Kp = 2.0f/1000.0f;
+   \   000000C0   0x.... 0x....      LDR.W    R0,??DataTable6_13  ;; 0x3b03126f
+   \   000000C4   0xEDD4 0x0A42      VLDR     S1,[R4, #+264]
+   \   000000C8   0xF8C4 0x0188      STR      R0,[R4, #+392]
+   \   000000CC   0xED9F 0x....      VLDR.W   S0,??DataTable5  ;; 0x42780000
+   \   000000D0   0xF8B4 0x0104      LDRH     R0,[R4, #+260]
+   \   000000D4   0xED84 0x0A4D      VSTR     S0,[R4, #+308]
+   \   000000D8   0xED84 0x0A54      VSTR     S0,[R4, #+336]
+   \   000000DC   0xEE00 0x0A10      VMOV     S0,R0
+    412              Sc_Voltage_Controller.Ki = 8.0f/1000.0f*Sc_Prm.Ts*Sc_Prm.IsrThr;
+    413              Sc_Voltage_Controller.Upper_Limit = 0.0f;
+   \   000000E0   0x2000             MOVS     R0,#+0
+   \   000000E2   0xF8C4 0x0190      STR      R0,[R4, #+400]
+   \   000000E6   0xED9F 0x....      VLDR.W   S2,??DataTable5_1  ;; 0x46147000
+    414              Sc_Voltage_Controller.Lower_Limit = -5.0f;
+   \   000000EA   0x.... 0x....      LDR.W    R0,??DataTable6_14  ;; 0xc0a00000
+   \   000000EE   0xF8C4 0x0194      STR      R0,[R4, #+404]
+   \   000000F2   0xEE20 0x1A81      VMUL.F32 S2,S1,S2
+    415              //-------Voltage control loop params init  - end ------
+    416          
+    417          
+    418              //-------Speed control loop params init  - begin ------
+    419              Sc_Speed_Controller.Kp = SC_SPEEDCONTROLLER_KP*(60.0f/(2.0f*PI))/1000.0f;
+   \   000000F6   0x.... 0x....      LDR.W    R0,??DataTable6_15  ;; 0x3c1c74a7
+   \   000000FA   0xF8C4 0x016C      STR      R0,[R4, #+364]
+   \   000000FE   0xED84 0x1A4E      VSTR     S2,[R4, #+312]
+   \   00000102   0xEDDF 0x....      VLDR.W   S3,??DataTable5_2  ;; 0x43800000
+    420              Sc_Speed_Controller.Ki = SC_SPEEDCONTROLLER_KI*(60.0f/(2.0f*PI))*Sc_Prm.Ts*Sc_Prm.IsrThr/1000.0f;
+    421              Sc_Speed_Controller.Upper_Limit = SC_SPEEDCONTROLLER_LIMIT;
+   \   00000106   0x.... 0x....      LDR.W    R0,??DataTable6_16  ;; 0x40c00000
+   \   0000010A   0xF8C4 0x0174      STR      R0,[R4, #+372]
+   \   0000010E   0xED84 0x1A55      VSTR     S2,[R4, #+340]
+   \   00000112   0xEDC4 0x1A4F      VSTR     S3,[R4, #+316]
+   \   00000116   0xED9F 0x....      VLDR.W   S4,??DataTable5_3  ;; 0xc3800000
+    422              Sc_Speed_Controller.Lower_Limit = -SC_SPEEDCONTROLLER_LIMIT;
+   \   0000011A   0x.... 0x....      LDR.W    R0,??DataTable6_17  ;; 0xc0c00000
+   \   0000011E   0xF8C4 0x0178      STR      R0,[R4, #+376]
+   \   00000122   0xED9F 0x....      VLDR.W   S2,??DataTable5_4  ;; 0x3c03126f
+   \   00000126   0xEEB8 0x0A40      VCVT.F32.U32 S0,S0
+   \   0000012A   0xEE20 0x1A81      VMUL.F32 S2,S1,S2
+   \   0000012E   0xEE21 0x1A00      VMUL.F32 S2,S2,S0
+    423              //-------Speed control loop params init  - end ------
+    424          
+    425          
+    426              //Pwm Parameters
+    427              PwmModulationPrm.ptr_LUT      = Sc_Dutycycle_By_Current_LUT;
+   \   00000132   0xF504 0x7027      ADD      R0,R4,#+668
+   \   00000136   0xED84 0x1A63      VSTR     S2,[R4, #+396]
+   \   0000013A   0xF8C4 0x0224      STR      R0,[R4, #+548]
+   \   0000013E   0xED9F 0x....      VLDR.W   S2,??DataTable5_5  ;; 0x43eebb7f
+   \   00000142   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+    428              PwmModulationPrm.sizeof_lut   = &sc_sizeof_inv_comp_lut;
+   \   00000146   0xF504 0x6095      ADD      R0,R4,#+1192
+   \   0000014A   0xEE20 0x0A80      VMUL.F32 S0,S1,S0
+   \   0000014E   0xF8C4 0x022C      STR      R0,[R4, #+556]
+   \   00000152   0xEDDF 0x....      VLDR.W   S1,??DataTable5_6  ;; 0x447a0000
+   \   00000156   0xEE80 0x0A20      VDIV.F32 S0,S0,S1
+    429              PwmModulationPrm.step_inv     = &sc_step_inv_pwm_comp;
+   \   0000015A   0xF204 0x40A4      ADDW     R0,R4,#+1188
+   \   0000015E   0xED84 0x0A5C      VSTR     S0,[R4, #+368]
+   \   00000162   0xF8C4 0x0228      STR      R0,[R4, #+552]
+    430          
+    431          
+    432              //OpenLoop
+    433              Sc_Prm.Iq_Open_Loop = SC_OPENLOOP_CURRENT;
+    434              Sc_Prm.Speed_Close_Loop = SC_CLOSELOOP_SPEED*RPM_TO_RADS*Sc_Prm.Pole_Pairs;
+   \   00000166   0xEDDF 0x....      VLDR.W   S1,??DataTable5_7  ;; 0x41a78d36
+   \   0000016A   0xED94 0x0A43      VLDR     S0,[R4, #+268]
+   \   0000016E   0x.... 0x....      LDR.W    R0,??DataTable6_18  ;; 0x3dcccccd
+   \   00000172   0xED84 0x2A50      VSTR     S4,[R4, #+320]
+   \   00000176   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   0000017A   0xEDC4 0x1A56      VSTR     S3,[R4, #+344]
+   \   0000017E   0xED84 0x2A57      VSTR     S4,[R4, #+348]
+   \   00000182   0xF8C4 0x0120      STR      R0,[R4, #+288]
+   \   00000186   0xED84 0x0A49      VSTR     S0,[R4, #+292]
+    435          
+    436          }
+   \   0000018A   0xBD10             POP      {R4,PC}          ;; return
+    437          
+    438          
+    439          
+    440          //---------------------------------------------------------------------------------------------------------------------
+    441          /**
+    442           *  @brief      Reset all FOC quantities.
+    443           *  @details    This routine reset all FOC quantities, it has to be called at every time the pwm is switched off (motor stop or free down ramp).
+    444           *
+    445           *
+    446           *  @param[in]
+    447           *  @param[out]
+    448           *  @return
+    449           */
+
+   \                                 In section .text, align 2, keep-with-next
+    450          void ScBpm__ResetFocState(void)
+    451          {
+    452          
+    453              // Pi States Reset
+    454              Sc_Current_Controller_D.Integ_K_1 = 0;
+   \                     ScBpm__ResetFocState: (+1)
+   \   00000000   0x.... 0x....      LDR.W    R0,??DataTable6_3
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0xF8C0 0x112C      STR      R1,[R0, #+300]
+    455              Sc_Current_Controller_Q.Integ_K_1 = 0;
+   \   0000000A   0xF8C0 0x1148      STR      R1,[R0, #+328]
+    456              Sc_Speed_Controller.Integ_K_1 = 0;
+   \   0000000E   0xF8C0 0x1164      STR      R1,[R0, #+356]
+    457              Sc_Voltage_Controller.Integ_K_1 = 0;
+   \   00000012   0xF8C0 0x1180      STR      R1,[R0, #+384]
+    458          
+    459          
+    460          	// Foc quantities reset
+    461              Sc_Data.Is_DQ.D = 0;
+   \   00000016   0xF8C0 0x10C8      STR      R1,[R0, #+200]
+    462              Sc_Data.Is_DQ.Q = 0;
+   \   0000001A   0xF8C0 0x10CC      STR      R1,[R0, #+204]
+    463          	Sc_Data.IsD_Ref = 0;
+   \   0000001E   0xF8C0 0x10A0      STR      R1,[R0, #+160]
+    464          	Sc_Data.IsQ_Ref = 0;
+   \   00000022   0xF8C0 0x10A4      STR      R1,[R0, #+164]
+    465              Sc_Data.Vs_DQ.D = 0;
+   \   00000026   0xF8C0 0x10BC      STR      R1,[R0, #+188]
+    466          	Sc_Data.Speed_Rot_Ref_El_Abs = 0;
+   \   0000002A   0xF8C0 0x10A8      STR      R1,[R0, #+168]
+    467          	Sc_Data.Speed_Rot_Est_El_Abs = 0;
+   \   0000002E   0xF8C0 0x10AC      STR      R1,[R0, #+172]
+    468          	Sc_Data.Speed_Rot_Ref_Mech_Abs = 0;
+   \   00000032   0xF8C0 0x10B0      STR      R1,[R0, #+176]
+    469          	Sc_Data.Speed_Rot_Est_Mech_Abs = 0;
+   \   00000036   0xF8C0 0x10B4      STR      R1,[R0, #+180]
+    470          
+    471              //Voltage quantities reset
+    472          	Sc_VsAlphaBeta.Alpha = 0;
+   \   0000003A   0xF8C0 0x11CC      STR      R1,[R0, #+460]
+    473          	Sc_VsAlphaBeta.Beta = 0;
+   \   0000003E   0xF8C0 0x11D0      STR      R1,[R0, #+464]
+    474          
+    475          
+    476          	// Bemf Observer
+    477              Sc_Bemf_Observer_Params.Bemf_Est.D = 0;
+   \   00000042   0x6001             STR      R1,[R0, #+0]
+    478              Sc_Bemf_Observer_Params.Bemf_Est.Q = 0;
+   \   00000044   0x6041             STR      R1,[R0, #+4]
+    479              Sc_Bemf_Observer_Params.Current_Est.D = 0;
+   \   00000046   0x6081             STR      R1,[R0, #+8]
+    480              Sc_Bemf_Observer_Params.Current_Est.Q = 0;
+   \   00000048   0x60C1             STR      R1,[R0, #+12]
+    481              Sc_Bemf_Observer_Params.Pi_D.Integ_K_1 = 0;
+   \   0000004A   0x6141             STR      R1,[R0, #+20]
+    482              Sc_Bemf_Observer_Params.Pi_Q.Integ_K_1 = 0;
+   \   0000004C   0x6301             STR      R1,[R0, #+48]
+    483              Sc_Bemf_Observer_Params.Theta_Flux_Error = 0;
+   \   0000004E   0x6481             STR      R1,[R0, #+72]
+    484          
+    485          
+    486              // Tracking Observer
+    487              Sc_Tracking_Observer_Params.Pi.Integ_K_1  = 0;
+   \   00000050   0xF8C0 0x10D8      STR      R1,[R0, #+216]
+    488              Sc_Tracking_Observer_Params.Omega_Est = 0;
+   \   00000054   0xF8C0 0x10FC      STR      R1,[R0, #+252]
+    489              Sc_Tracking_Observer_Params.Theta_Est = 0;
+   \   00000058   0xF8C0 0x1100      STR      R1,[R0, #+256]
+    490          
+    491          
+    492              Sc_PositionOpenLoop = 0;
+   \   0000005C   0xF8C0 0x126C      STR      R1,[R0, #+620]
+    493          
+    494              // Duty reset
+    495              Sc_VsABC.A = 0;
+   \   00000060   0xF8C0 0x11B0      STR      R1,[R0, #+432]
+    496              Sc_VsABC.B = 0;
+   \   00000064   0xF8C0 0x11B4      STR      R1,[R0, #+436]
+    497              Sc_VsABC.C = 0;
+   \   00000068   0xF8C0 0x11B8      STR      R1,[R0, #+440]
+    498          
+    499          
+    500          	// Foc Interface output reset
+    501          	Sc_IO_Data.Duty.A = 0;
+   \   0000006C   0x67C1             STR      R1,[R0, #+124]
+    502          	Sc_IO_Data.Duty.B = 0;
+   \   0000006E   0xF8C0 0x1080      STR      R1,[R0, #+128]
+    503          	Sc_IO_Data.Duty.C = 0;
+   \   00000072   0xF8C0 0x1084      STR      R1,[R0, #+132]
+    504          	Sc_IO_Data.Torque = 0;
+   \   00000076   0xF8C0 0x109C      STR      R1,[R0, #+156]
+    505          	Sc_Data.Control_Mode = SC_OPEN_LOOP;
+   \   0000007A   0xF8A0 0x10D0      STRH     R1,[R0, #+208]
+    506          
+    507          	Sc_Slow_Controloop_Cnt = Sc_Prm.IsrThr;
+    508          
+    509          
+    510          	Sc_Sc_IAmpl_Min_Tmp  = 10.0f;
+   \   0000007E   0xEEB2 0x0A04      VMOV.F32 S0,#10.0
+   \   00000082   0xF8B0 0x1104      LDRH     R1,[R0, #+260]
+   \   00000086   0xF8A0 0x1240      STRH     R1,[R0, #+576]
+   \   0000008A   0xED80 0x0A9C      VSTR     S0,[R0, #+624]
+    511          	Sc_IAmpl_Max_Tmp  = 0;
+   \   0000008E   0x2100             MOVS     R1,#+0
+   \   00000090   0xF8C0 0x1274      STR      R1,[R0, #+628]
+    512          	Sc_IAmpl_Min      = 10.0f;
+   \   00000094   0xED80 0x0A9E      VSTR     S0,[R0, #+632]
+    513          	Sc_IAmpl_Max      = 0;
+   \   00000098   0xF8C0 0x127C      STR      R1,[R0, #+636]
+    514          	Sc_IAmpl          = 0;
+   \   0000009C   0xF8C0 0x1284      STR      R1,[R0, #+644]
+    515          	Sc_Bemf_Ampl      = 0;
+   \   000000A0   0xF8C0 0x1288      STR      R1,[R0, #+648]
+    516          }
+   \   000000A4   0x4770             BX       LR               ;; return
+    517          
+    518          
+    519          
+    520          
+    521          
+    522          
+    523          
+    524          //---------------------------------------------------------------------------------------------------------------------
+    525          /**
+    526           *  @brief     Speed and Position estimation for a PMSM motor.
+    527           *  @details   this routine estimates the position and the speed of rotor flux for a BPM motor, using high Sc_FrequencyInj injection for low speed and a
+    528           *             bemf observer for high speed.
+    529           *
+    530           *
+    531           *
+    532           *  @param[in]
+    533           *  @param[out]
+    534           *  @param[in]
+    535           *  @return
+    536           */
+
+   \                                 In section .text, align 4, keep-with-next
+    537          void Observer(void)
+    538          {
+   \                     Observer: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    539              float32 filter_out;                      // output of IIR filter of position estimation error
+    540          
+    541          
+    542              if(Sc_Data.Control_Mode != SC_BEMF_OBSERVER)
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable6_3
+   \   00000006   0xF9B4 0x00D0      LDRSH    R0,[R4, #+208]
+   \   0000000A   0x2801             CMP      R0,#+1
+   \   0000000C   0xD052             BEQ.N    ??Observer_0
+    543              {
+    544          
+    545                  if(Sc_Data.Speed_Rot_Ref_El_Abs >= Sc_Prm.Speed_Close_Loop)
+   \   0000000E   0xED94 0x0A2A      VLDR     S0,[R4, #+168]
+   \   00000012   0xEDD4 0x0A49      VLDR     S1,[R4, #+292]
+   \   00000016   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   0000001A   0xEEF1 0xFA10      FMSTAT   
+   \   0000001E   0xDB26             BLT.N    ??Observer_1
+    546                  {
+    547                      // Dq Observer state initialization
+    548                      Sc_Bemf_Observer_Params.Bemf_Est.D = 0;
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x6020             STR      R0,[R4, #+0]
+    549                      Sc_Bemf_Observer_Params.Bemf_Est.Q = -Sc_Speed_Flux_El_Est*Sc_Prm.Phim;
+   \   00000024   0xED94 0x0A94      VLDR     S0,[R4, #+592]
+    550                      Sc_Bemf_Observer_Params.Current_Est.D = Sc_Data.Is_DQ.D;
+   \   00000028   0xF8D4 0x00C8      LDR      R0,[R4, #+200]
+   \   0000002C   0xEDD4 0x0A47      VLDR     S1,[R4, #+284]
+   \   00000030   0x60A0             STR      R0,[R4, #+8]
+   \   00000032   0xEE20 0x0A60      VNMUL.F32 S0,S0,S1
+    551                      Sc_Bemf_Observer_Params.Current_Est.Q = Sc_Data.Is_DQ.Q;
+   \   00000036   0xF8D4 0x00CC      LDR      R0,[R4, #+204]
+   \   0000003A   0x60E0             STR      R0,[R4, #+12]
+   \   0000003C   0xED84 0x0A01      VSTR     S0,[R4, #+4]
+    552                      Sc_Bemf_Observer_Params.Pi_D.Integ_K_1 = 0;
+   \   00000040   0x2000             MOVS     R0,#+0
+   \   00000042   0x6160             STR      R0,[R4, #+20]
+    553                      Sc_Bemf_Observer_Params.Pi_Q.Integ_K_1 = Sc_Bemf_Observer_Params.Bemf_Est.Q;
+   \   00000044   0x6860             LDR      R0,[R4, #+4]
+   \   00000046   0x6320             STR      R0,[R4, #+48]
+    554                      Sc_Bemf_Observer_Params.Theta_Flux_Error = 0;
+   \   00000048   0x2000             MOVS     R0,#+0
+   \   0000004A   0x64A0             STR      R0,[R4, #+72]
+    555          
+    556          
+    557                      // Tracking Observer
+    558                      Sc_Tracking_Observer_Params.Pi.Integ_K_1  = Sc_Data.Speed_Rot_Ref_El_Abs;
+   \   0000004C   0xF8D4 0x00A8      LDR      R0,[R4, #+168]
+   \   00000050   0xF8C4 0x00D8      STR      R0,[R4, #+216]
+    559                      Sc_Tracking_Observer_Params.Omega_Est = Sc_Data.Speed_Rot_Ref_El_Abs;
+   \   00000054   0xF8C4 0x00FC      STR      R0,[R4, #+252]
+    560                      Sc_Tracking_Observer_Params.Theta_Est = Sc_PositionOpenLoop;
+   \   00000058   0xF8D4 0x026C      LDR      R0,[R4, #+620]
+   \   0000005C   0xF8C4 0x0100      STR      R0,[R4, #+256]
+    561          
+    562                      // IIR Filter
+    563                      Filters__IIR1InitF(&Sc_IIR1_Filter_Dq_Obs);
+   \   00000060   0xF504 0x70F6      ADD      R0,R4,#+492
+   \   00000064   0x.... 0x....      BL       Filters__IIR1InitF
+    564          
+    565                      Sc_Data.Control_Mode = SC_BEMF_OBSERVER;
+   \   00000068   0x2001             MOVS     R0,#+1
+   \   0000006A   0xF8A4 0x00D0      STRH     R0,[R4, #+208]
+    566                  }
+    567          
+    568                  Sc_PositionOpenLoop = Sc_PositionOpenLoop + Sc_Data.Speed_Rot_Ref_El_Abs*Sc_Prm.Ts;
+   \                     ??Observer_1: (+1)
+   \   0000006E   0xEDD4 0x0A2A      VLDR     S1,[R4, #+168]
+   \   00000072   0xED94 0x1A42      VLDR     S2,[R4, #+264]
+   \   00000076   0xED94 0x0A9B      VLDR     S0,[R4, #+620]
+   \   0000007A   0xEE00 0x0A81      VMLA.F32 S0,S1,S2
+    569          
+    570                  if(Sc_PositionOpenLoop > PI)
+   \   0000007E   0xEDDF 0x....      VLDR.W   S1,??DataTable5_8  ;; 0x40490fdc
+   \   00000082   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   00000086   0xEEF1 0xFA10      FMSTAT   
+   \   0000008A   0xBFA4             ITT      GE 
+    571          		{
+    572                  	Sc_PositionOpenLoop -= (2.0f * PI);
+   \   0000008C   0xEDDF 0x....      VLDRGE.W S1,??DataTable5_9  ;; 0xc0c90fdb
+   \   00000090   0xEE30 0x0A20      VADDGE.F32 S0,S0,S1
+    573          		}
+    574          
+    575          		if(Sc_PositionOpenLoop < (-PI))
+   \   00000094   0xEDDF 0x....      VLDR.W   S1,??DataTable5_10  ;; 0xc0490fdb
+   \   00000098   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   0000009C   0xEEF1 0xFA10      FMSTAT   
+   \   000000A0   0xBF44             ITT      MI 
+    576          		{
+    577          			Sc_PositionOpenLoop += (2.0f * PI);
+   \   000000A2   0xEDDF 0x....      VLDRMI.W S1,??DataTable5_11  ;; 0x40c90fdb
+   \   000000A6   0xEE30 0x0A20      VADDMI.F32 S0,S0,S1
+   \   000000AA   0xED84 0x0A9B      VSTR     S0,[R4, #+620]
+    578          		}
+    579          
+    580          		Sc_Position_Flux_Est = Sc_PositionOpenLoop;
+    581          		Sc_Speed_Flux_El_Est = Sc_Data.Speed_Rot_Ref_El_Abs;
+   \   000000AE   0xEDD4 0x0A2A      VLDR     S1,[R4, #+168]
+   \   000000B2   0xE020             B.N      ??Observer_2
+    582          
+    583          
+    584              }
+    585              else  // Observer Control Mode
+    586              {
+    587              	ObserverPmsm__BemfObsDQF(&Sc_Data.Is_DQ, &Sc_Data.Vs_DQ, Sc_Speed_Flux_El_Est, &Sc_Bemf_Observer_Params);
+   \                     ??Observer_0: (+1)
+   \   000000B4   0xED94 0x0A94      VLDR     S0,[R4, #+592]
+   \   000000B8   0x4622             MOV      R2,R4
+   \   000000BA   0xF104 0x01B8      ADD      R1,R4,#+184
+   \   000000BE   0xF104 0x00C4      ADD      R0,R4,#+196
+   \   000000C2   0x.... 0x....      BL       ObserverPmsm__BemfObsDQF
+    588          
+    589                  //Bemf amplitude calculation
+    590                  Sc_Bemf_Ampl = MathCalc__SqrtF((Sc_Bemf_Observer_Params.Bemf_Est.D * Sc_Bemf_Observer_Params.Bemf_Est.D)+ (Sc_Bemf_Observer_Params.Bemf_Est.Q*Sc_Bemf_Observer_Params.Bemf_Est.Q));
+   \   000000C6   0xED94 0x0A00      VLDR     S0,[R4, #0]
+   \   000000CA   0xEDD4 0x0A01      VLDR     S1,[R4, #+4]
+   \   000000CE   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   000000D2   0xEE00 0x0AA0      VMLA.F32 S0,S1,S1
+   \   000000D6   0x.... 0x....      BL       MathCalc__SqrtF
+   \   000000DA   0xED84 0x0AA2      VSTR     S0,[R4, #+648]
+    591          
+    592          
+    593                  // IIR Filter for output error
+    594                  filter_out = Filters__IIR1F(Sc_Bemf_Observer_Params.Theta_Flux_Error, &Sc_IIR1_Filter_Dq_Obs);
+   \   000000DE   0xF504 0x70F6      ADD      R0,R4,#+492
+   \   000000E2   0xED94 0x0A12      VLDR     S0,[R4, #+72]
+   \   000000E6   0x.... 0x....      BL       Filters__IIR1F
+    595          
+    596                  Sc_Position_Flux_Est  = ObserverPmsm__TrackingObsF(filter_out, &Sc_Tracking_Observer_Params);
+   \   000000EA   0xF104 0x00D4      ADD      R0,R4,#+212
+   \   000000EE   0x.... 0x....      BL       ObserverPmsm__TrackingObsF
+    597                  Sc_Speed_Flux_El_Est  = Sc_Tracking_Observer_Params.Omega_Est;
+   \   000000F2   0xEDD4 0x0A3F      VLDR     S1,[R4, #+252]
+    598              }
+    599          
+    600          
+    601              Sc_Data.Speed_Rot_Est_El_Abs = Sc_Speed_Flux_El_Est;
+    602              Sc_Data.Speed_Rot_Est_Mech_Abs = Sc_Data.Speed_Rot_Est_El_Abs/Sc_Prm.Pole_Pairs;
+   \                     ??Observer_2: (+1)
+   \   000000F6   0xED94 0x1A43      VLDR     S2,[R4, #+268]
+   \   000000FA   0xEDC4 0x0A94      VSTR     S1,[R4, #+592]
+   \   000000FE   0xEDC4 0x0A2B      VSTR     S1,[R4, #+172]
+   \   00000102   0xEEC0 0x0A81      VDIV.F32 S1,S1,S2
+   \   00000106   0xEDC4 0x0A2D      VSTR     S1,[R4, #+180]
+    603          
+    604              // angle compensation
+    605              Sc_Position_Flux_Est_Voltage = Sc_Position_Flux_Est +  Sc_Data.Speed_Rot_Est_El_Abs*Sc_Prm.Ts;
+   \   0000010A   0xEEF0 0x1A40      VMOV.F32 S3,S0
+   \   0000010E   0xEDD4 0x0A2B      VLDR     S1,[R4, #+172]
+   \   00000112   0xED94 0x1A42      VLDR     S2,[R4, #+264]
+   \   00000116   0xEE40 0x1A81      VMLA.F32 S3,S1,S2
+   \   0000011A   0xEDC4 0x1A93      VSTR     S3,[R4, #+588]
+    606          
+    607              // calculation of rotor flux position sinus and cosinus
+    608              MathCalc__SinCosF(Sc_Position_Flux_Est,&Sc_Sin_Cos_Rotor_Position);
+   \   0000011E   0xF204 0x40AC      ADDW     R0,R4,#+1196
+   \   00000122   0x.... 0x....      BL       MathCalc__SinCosF
+    609              MathCalc__SinCosF(Sc_Position_Flux_Est_Voltage,&Sc_Sin_Cos_Rotor_Position_Voltage);
+   \   00000126   0xF204 0x40B4      ADDW     R0,R4,#+1204
+   \   0000012A   0xED94 0x0A93      VLDR     S0,[R4, #+588]
+   \   0000012E   0xE8BD 0x4010      POP      {R4,LR}
+   \   00000132   0x.... 0x....      B.W      MathCalc__SinCosF
+    610          }
+    611          
+    612          
+    613          
+    614          //---------------------------------------------------------------------------------------------------------------------
+    615          /**
+    616           *  @brief      Fast Control Loop initialisation.
+    617           *  @details    In this routine are called all initialisation functions.
+    618           *
+    619           *
+    620           *  @param[in]
+    621           *  @param[out]
+    622           *  @param[in]
+    623           *  @return
+    624           */
+
+   \                                 In section .text, align 2, keep-with-next
+    625          void ScBpm__Initialize(void)
+    626          {
+   \                     ScBpm__Initialize: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+    627          
+    628          	// initialize FOC and WM variables with Setting File values
+    629          	Parameter_Initialize();
+   \   00000004   0x.... 0x....      BL       Parameter_Initialize
+    630          
+    631          
+    632          	// reset FOC quantities
+    633          	ScBpm__ResetFocState(); //ResetFocState();
+   \   00000008   0xB001             ADD      SP,SP,#+4
+   \   0000000A   0xF85D 0xEB04      POP      {LR}
+   \   0000000E   0x....             B.N      ScBpm__ResetFocState
+    634          
+    635          }
+    636          
+    637          
+    638          
+    639          //---------------------------------------------------------------------------------------------------------------------
+    640          /**
+    641           *  @brief     FOC Control Loop for Bpm.
+    642           *  @details   Field oriented control loop routine for Bpm:
+    643           *             - d axis: rotor flux position
+    644           *             - q axis: rotor flux quadrature axis
+    645           *
+    646           *             This routine is composed by three parts:
+    647           *             - Input processing: tachometer signal processing
+    648           *                                 motor speed reference absolute value
+    649           *                                 motor phase currents swapping in order to work with a positive speed reference.
+    650           *                                 dc Voltage filtering
+    651           *
+    652           *             - Slow Control Loop: slow dynamics controls (speed and Voltage) -> they generates current references
+    653           *                                          - Iq reference is set by speed control
+    654           *                                          - Id reference is set by Voltage control
+    655           *                                  slow quantities calculation (torque, mean torque and vibration index)
+    656           *                                  update of speed regulator gains/ fir filter taps/ flux estimator parameters
+    657           *
+    658           *             - Current Control Loop + Flux Position Estimation:                                        -
+    659           *                                  flux estimator
+    660           *                                  fast dynamics controls (currents) -> they generates Voltage references
+    661           *                                  space vector modulation: -> it generates the duties
+    662           *                                  duties swapping in accord to the speed sign.
+    663           *
+    664           *
+    665           *  @param[in]
+    666           *  @param[out]
+    667           *  @param[in]
+    668           *  @return
+    669           */
+
+   \                                 In section .text, align 4, keep-with-next
+    670          void ScBpm__PwmHandler(void)
+    671          {
+   \                     ScBpm__PwmHandler: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    672          
+    673          	float32 temp_common_mode;
+    674          
+    675              //---------------------------------------------------------------------------------------------------------------------
+    676              // Input Processing - begin
+    677              Sc_Data.Speed_Rot_Ref_Mech_Abs = MATHCALC__ABS(Sc_IO_Data.Speed_Rot_Ref);
+   \   00000002   0x.... 0x....      LDR.W    R4,??DataTable6_3
+   \   00000006   0xED94 0x0A1B      VLDR     S0,[R4, #+108]
+   \   0000000A   0xEEB5 0x0A40      VCMP.F32 S0,#0.0
+   \   0000000E   0xEEF1 0xFA10      FMSTAT   
+   \   00000012   0xBF48             IT       MI 
+   \   00000014   0xEEB1 0x0A40      VNEGMI.F32 S0,S0
+   \   00000018   0xED84 0x0A2C      VSTR     S0,[R4, #+176]
+    678              Sc_Data.Speed_Rot_Ref_El_Abs = Sc_Data.Speed_Rot_Ref_Mech_Abs*Sc_Prm.Pole_Pairs;
+   \   0000001C   0xEDD4 0x0A43      VLDR     S1,[R4, #+268]
+   \   00000020   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   00000024   0xED84 0x0A2A      VSTR     S0,[R4, #+168]
+    679          
+    680              if(Sc_IO_Data.Speed_Rot_Ref >= 0)
+   \   00000028   0xED94 0x0A1B      VLDR     S0,[R4, #+108]
+   \   0000002C   0xEEB5 0x0A40      VCMP.F32 S0,#0.0
+   \   00000030   0xEEF1 0xFA10      FMSTAT   
+   \   00000034   0xBFAC             ITE      GE 
+    681              {// positive speed reference
+    682          
+    683              	Sc_Speed_Sign = 0;
+   \   00000036   0x2000             MOVGE    R0,#+0
+    684              }
+    685              else
+    686              {// negative speed reference
+    687          
+    688              	Sc_Speed_Sign = 1;
+   \   00000038   0x2001             MOVLT    R0,#+1
+   \   0000003A   0xF8A4 0x0242      STRH     R0,[R4, #+578]
+    689              }
+    690          
+    691              // Speed Sign Current SWAP -begin
+    692              Sc_IsABC_Copy.B = Sc_IO_Data.Is_ABC.B;
+   \   0000003E   0x6E60             LDR      R0,[R4, #+100]
+   \   00000040   0xF8C4 0x019C      STR      R0,[R4, #+412]
+    693          
+    694              if (Sc_Speed_Sign != 0)
+   \   00000044   0xF8B4 0x0242      LDRH     R0,[R4, #+578]
+   \   00000048   0xB128             CBZ.N    R0,??ScBpm__PwmHandler_0
+    695              {
+    696                  Sc_IsABC_Copy.A = Sc_IO_Data.Is_ABC.C;
+   \   0000004A   0x6EA0             LDR      R0,[R4, #+104]
+    697                  Sc_IsABC_Copy.C = Sc_IO_Data.Is_ABC.A;
+   \   0000004C   0xED94 0x0A18      VLDR     S0,[R4, #+96]
+   \   00000050   0xF8C4 0x0198      STR      R0,[R4, #+408]
+   \   00000054   0xE004             B.N      ??ScBpm__PwmHandler_1
+    698              }
+    699              else
+    700              {
+    701                  Sc_IsABC_Copy.A = Sc_IO_Data.Is_ABC.A;
+   \                     ??ScBpm__PwmHandler_0: (+1)
+   \   00000056   0x6E20             LDR      R0,[R4, #+96]
+    702                  Sc_IsABC_Copy.C = Sc_IO_Data.Is_ABC.C;
+   \   00000058   0xED94 0x0A1A      VLDR     S0,[R4, #+104]
+   \   0000005C   0xF8C4 0x0198      STR      R0,[R4, #+408]
+   \                     ??ScBpm__PwmHandler_1: (+1)
+   \   00000060   0xED84 0x0A68      VSTR     S0,[R4, #+416]
+    703              }
+    704              // Speed Sign Current SWAP -end
+    705          
+    706          
+    707              // Input Processing - end
+    708              //---------------------------------------------------------------------------------------------------------------------
+    709          
+    710          
+    711          
+    712          
+    713          
+    714          
+    715          
+    716              //---------------------------------------------------------------------------------------------------------------------
+    717              // Slow Control Loop begin: Speed and Voltage Control - begin
+    718          
+    719              Sc_Slow_Controloop_Cnt++;
+   \   00000064   0xF8B4 0x0240      LDRH     R0,[R4, #+576]
+    720          
+    721              if((Sc_Slow_Controloop_Cnt >= Sc_Prm.IsrThr)&&(Sc_Injection_Flag == 0))
+   \   00000068   0xF8B4 0x1104      LDRH     R1,[R4, #+260]
+   \   0000006C   0x1C40             ADDS     R0,R0,#+1
+   \   0000006E   0xF8A4 0x0240      STRH     R0,[R4, #+576]
+   \   00000072   0xB280             UXTH     R0,R0
+   \   00000074   0x4288             CMP      R0,R1
+   \   00000076   0xD347             BCC.N    ??ScBpm__PwmHandler_2
+   \   00000078   0xF8B4 0x0244      LDRH     R0,[R4, #+580]
+   \   0000007C   0x2800             CMP      R0,#+0
+   \   0000007E   0xD143             BNE.N    ??ScBpm__PwmHandler_2
+    722              {
+    723                  Sc_Slow_Controloop_Cnt = 0;
+   \   00000080   0xF8A4 0x0240      STRH     R0,[R4, #+576]
+    724          
+    725          
+    726                  if (Sc_Data.Control_Mode == SC_OPEN_LOOP)
+   \   00000084   0xF9B4 0x00D0      LDRSH    R0,[R4, #+208]
+   \   00000088   0xB998             CBNZ.N   R0,??ScBpm__PwmHandler_3
+    727                  {// Injection Alignment or Initial Rotor Position Detection
+    728          
+    729                      Sc_Data.IsD_Ref = 0;
+    730          
+    731                      if(Sc_Data.IsQ_Ref <= Sc_Prm.Iq_Open_Loop)
+   \   0000008A   0xED94 0x0A48      VLDR     S0,[R4, #+288]
+   \   0000008E   0xEDD4 0x0A29      VLDR     S1,[R4, #+164]
+   \   00000092   0xF8C4 0x00A0      STR      R0,[R4, #+160]
+   \   00000096   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   0000009A   0xEEF1 0xFA10      FMSTAT   
+   \   0000009E   0xDB05             BLT.N    ??ScBpm__PwmHandler_4
+    732                      {
+    733                      	Sc_Data.IsQ_Ref = Sc_Prm.Iq_Open_Loop + 0.04f;
+   \   000000A0   0xEDDF 0x0AD0      VLDR.W   S1,??ScBpm__PwmHandler_5  ;; 0x3d23d70a
+   \   000000A4   0xEE70 0x0A20      VADD.F32 S1,S0,S1
+   \   000000A8   0xEDC4 0x0A29      VSTR     S1,[R4, #+164]
+    734                      }
+    735          
+    736                      Sc_Speed_Controller.Integ_K_1  = Sc_Prm.Iq_Open_Loop;
+   \                     ??ScBpm__PwmHandler_4: (+1)
+   \   000000AC   0xED84 0x0A59      VSTR     S0,[R4, #+356]
+   \   000000B0   0xE02A             B.N      ??ScBpm__PwmHandler_2
+    737                  }
+    738                  else
+    739                  {// Injection Startup or Bemf Observer
+    740          
+    741                      // speed regulator execution
+    742                  	Sc_Speed_Controller.Err = Sc_Data.Speed_Rot_Ref_Mech_Abs - Sc_Data.Speed_Rot_Est_Mech_Abs;
+   \                     ??ScBpm__PwmHandler_3: (+1)
+   \   000000B2   0xED94 0x0A2C      VLDR     S0,[R4, #+176]
+   \   000000B6   0xEDD4 0x0A2D      VLDR     S1,[R4, #+180]
+   \   000000BA   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   000000BE   0xED84 0x0A58      VSTR     S0,[R4, #+352]
+    743                  	Pi__CalcPiBackCalcF(&Sc_Speed_Controller);
+   \   000000C2   0xF504 0x70B0      ADD      R0,R4,#+352
+   \   000000C6   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    744                      Sc_Data.IsQ_Ref = Sc_Speed_Controller.Out;
+    745                      Sc_Data.IsD_Ref = 0;
+    746          
+    747                      //Flux Weakining
+    748                      // Voltage regulator execution
+    749          			Sc_V_Err_Voltage = Sc_Current_Controller_Q.Upper_Limit - Sc_Data.Vs_DQ.Q;
+    750          			Sc_I_Err_Voltage = (Sc_Data.IsQ_Ref - Sc_Data.Is_DQ.Q)*Sc_Prm.Rs;
+    751          			Sc_Voltage_Controller.Err = Sc_V_Err_Voltage - Sc_I_Err_Voltage;
+   \   000000CA   0xEDD4 0x0A56      VLDR     S1,[R4, #+344]
+   \   000000CE   0xED94 0x1A30      VLDR     S2,[R4, #+192]
+   \   000000D2   0xED94 0x0A5A      VLDR     S0,[R4, #+360]
+   \   000000D6   0xED84 0x0A29      VSTR     S0,[R4, #+164]
+   \   000000DA   0xEE70 0x0AC1      VSUB.F32 S1,S1,S2
+   \   000000DE   0xED94 0x1A33      VLDR     S2,[R4, #+204]
+   \   000000E2   0x2000             MOVS     R0,#+0
+   \   000000E4   0xEE31 0x0A40      VSUB.F32 S0,S2,S0
+   \   000000E8   0xF8C4 0x00A0      STR      R0,[R4, #+160]
+    752          
+    753          			Pi__CalcPiBackCalcF(&Sc_Voltage_Controller);
+   \   000000EC   0xF504 0x70BE      ADD      R0,R4,#+380
+   \   000000F0   0xED94 0x1A44      VLDR     S2,[R4, #+272]
+   \   000000F4   0xEE40 0x0A01      VMLA.F32 S1,S0,S2
+   \   000000F8   0xEDC4 0x0A5F      VSTR     S1,[R4, #+380]
+   \   000000FC   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    754          
+    755          			Sc_Data.IsD_Ref = Sc_Voltage_Controller.Out;
+   \   00000100   0xF8D4 0x0184      LDR      R0,[R4, #+388]
+   \   00000104   0xF8C4 0x00A0      STR      R0,[R4, #+160]
+    756                  }
+    757              }
+    758              // Slow Control Loop begin: Speed and Voltage Control - end
+    759              //---------------------------------------------------------------------------------------------------------------------
+    760          
+    761          
+    762          
+    763          
+    764              //---------------------------------------------------------------------------------------------------------------------
+    765              // Current Control Loop + Flux Position Estimation - begin
+    766          
+    767              // Forward Clarke Transform - transforms ABC currents to Alpha/Beta coordinate system
+    768              ClrkPark__DirectClarkeF(&Sc_IsABC_Copy,&Sc_IsAlphaBeta);
+   \                     ??ScBpm__PwmHandler_2: (+1)
+   \   00000108   0xF504 0x71F0      ADD      R1,R4,#+480
+   \   0000010C   0xF504 0x70CC      ADD      R0,R4,#+408
+   \   00000110   0x.... 0x....      BL       ClrkPark__DirectClarkeF
+    769          
+    770          
+    771              // Forward Park Transform - transforms stator currents to DQ coordinate system
+    772              ClrkPark__DirectParkF(&Sc_IsAlphaBeta, &Sc_Data.Is_DQ, &Sc_Sin_Cos_Rotor_Position);
+   \   00000114   0xF204 0x42AC      ADDW     R2,R4,#+1196
+   \   00000118   0xF104 0x01C4      ADD      R1,R4,#+196
+   \   0000011C   0xF504 0x70F0      ADD      R0,R4,#+480
+   \   00000120   0x.... 0x....      BL       ClrkPark__DirectParkF
+    773          
+    774              // Flux Speed and Position estimation
+    775              Observer();
+   \   00000124   0x.... 0x....      BL       Observer
+    776          
+    777          
+    778              // torque estimation
+    779              Sc_IO_Data.Torque = (3.0f/2.0f*Sc_Prm.Pole_Pairs)*( \
+    780              					Sc_Prm.Phim*Sc_Data.Is_DQ.Q  +\
+    781              					(Sc_Prm.Ld-Sc_Prm.Lq)*Sc_Data.Is_DQ.D*Sc_Data.Is_DQ.Q);
+   \   00000128   0xEDD4 0x0A43      VLDR     S1,[R4, #+268]
+   \   0000012C   0xEDD4 0x1A45      VLDR     S3,[R4, #+276]
+   \   00000130   0xED94 0x2A46      VLDR     S4,[R4, #+280]
+   \   00000134   0xED94 0x0A33      VLDR     S0,[R4, #+204]
+    782          
+    783          
+    784          
+    785              if(Sc_Injection_Flag)
+   \   00000138   0xF8B4 0x0244      LDRH     R0,[R4, #+580]
+   \   0000013C   0xEEB7 0x1A08      VMOV.F32 S2,#1.5
+   \   00000140   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   00000144   0xEE71 0x1AC2      VSUB.F32 S3,S3,S4
+   \   00000148   0xED94 0x1A47      VLDR     S2,[R4, #+284]
+   \   0000014C   0xED94 0x2A32      VLDR     S4,[R4, #+200]
+   \   00000150   0xEE21 0x1A00      VMUL.F32 S2,S2,S0
+   \   00000154   0xEE61 0x1A82      VMUL.F32 S3,S3,S4
+   \   00000158   0xEE01 0x1A80      VMLA.F32 S2,S3,S0
+   \   0000015C   0xEE20 0x0A81      VMUL.F32 S0,S1,S2
+   \   00000160   0xED84 0x0A27      VSTR     S0,[R4, #+156]
+   \   00000164   0x2800             CMP      R0,#+0
+   \   00000166   0xF000 0x8141      BEQ.W    ??ScBpm__PwmHandler_6
+    786              {// High Sc_FrequencyInj Injection is actived
+    787          
+    788          
+    789              	/////////////////// Injection angle calculation ////////////
+    790              	Sc_PositionInj = Sc_PositionInj + Sc_FrequencyInj*2.0f*PI*Sc_Prm.Ts;
+   \   0000016A   0xED9F 0x0A9F      VLDR.W   S0,??ScBpm__PwmHandler_5+0x4  ;; 0x40c90fdb
+   \   0000016E   0xEDD4 0x0A95      VLDR     S1,[R4, #+596]
+   \   00000172   0xEDD4 0x1A42      VLDR     S3,[R4, #+264]
+   \   00000176   0xEE20 0x1A80      VMUL.F32 S2,S1,S0
+   \   0000017A   0xEDD4 0x0A99      VLDR     S1,[R4, #+612]
+   \   0000017E   0xEE41 0x0A21      VMLA.F32 S1,S2,S3
+    791          
+    792          
+    793          		if(Sc_PositionInj > PI)
+   \   00000182   0xED9F 0x1AE7      VLDR.W   S2,??ScBpm__PwmHandler_7  ;; 0x40490fdc
+   \   00000186   0xEEF4 0x0A41      VCMP.F32 S1,S2
+   \   0000018A   0xEDC4 0x0A99      VSTR     S1,[R4, #+612]
+   \   0000018E   0xEEF1 0xFA10      FMSTAT   
+   \   00000192   0xBFA4             ITT      GE 
+    794          		{
+    795          			Sc_PositionInj -= (2.0f * PI);
+   \   00000194   0xED9F 0x1AE3      VLDRGE.W S2,??ScBpm__PwmHandler_7+0x4  ;; 0xc0c90fdb
+   \   00000198   0xEE70 0x0A81      VADDGE.F32 S1,S1,S2
+    796          		}
+    797          
+    798          		if(Sc_PositionInj < (-PI))
+   \   0000019C   0xED9F 0x1AE2      VLDR.W   S2,??ScBpm__PwmHandler_7+0x8  ;; 0xc0490fdb
+   \   000001A0   0xEEF4 0x0A41      VCMP.F32 S1,S2
+   \   000001A4   0xEEF1 0xFA10      FMSTAT   
+   \   000001A8   0xBF48             IT       MI 
+    799          		{
+    800          			Sc_PositionInj += (2.0f * PI);
+   \   000001AA   0xEE70 0x0A80      VADDMI.F32 S1,S1,S0
+   \   000001AE   0xEDC4 0x0A99      VSTR     S1,[R4, #+612]
+    801          		}
+    802          
+    803          		MathCalc__SinCosF(Sc_PositionInj,&Sc_SinCosInj);
+   \   000001B2   0xF504 0x700C      ADD      R0,R4,#+560
+   \   000001B6   0xED94 0x0A99      VLDR     S0,[R4, #+612]
+   \   000001BA   0x.... 0x....      BL       MathCalc__SinCosF
+   \   000001BE   0xF8B4 0x0244      LDRH     R0,[R4, #+580]
+   \   000001C2   0x2802             CMP      R0,#+2
+   \   000001C4   0xD123             BNE.N    ??ScBpm__PwmHandler_8
+    804          		/////////////////////////////////////////////////////////////
+    805          
+    806          
+    807          		if(Sc_Injection_Flag == 2)
+    808          		{
+    809          			/////////////////////////////////////////////////////////////
+    810          			/////////////////////////////////////////////////////////////
+    811          			///////// Voltage Injection----------------- -- start ///////
+    812          
+    813          			Sc_VAphaBetaInj.Alpha = Sc_VoltageInj*Sc_SinCosInj.Cos;
+   \   000001C6   0xED94 0x0A96      VLDR     S0,[R4, #+600]
+   \   000001CA   0xEDD4 0x0A8D      VLDR     S1,[R4, #+564]
+   \   000001CE   0xEE60 0x0A20      VMUL.F32 S1,S0,S1
+   \   000001D2   0xEDC4 0x0A81      VSTR     S1,[R4, #+516]
+    814          			Sc_VAphaBetaInj.Beta = Sc_VoltageInj*Sc_SinCosInj.Sin;
+    815          
+    816          
+    817          			Sc_VsAlphaBeta.Alpha = Sc_VAmplCont;
+    818          			Sc_VsAlphaBeta.Beta  = 0;
+   \   000001D6   0x2000             MOVS     R0,#+0
+   \   000001D8   0xEDD4 0x0A8C      VLDR     S1,[R4, #+560]
+   \   000001DC   0xF8C4 0x01D0      STR      R0,[R4, #+464]
+   \   000001E0   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000001E4   0xED84 0x0A82      VSTR     S0,[R4, #+520]
+   \   000001E8   0xED94 0x0A97      VLDR     S0,[R4, #+604]
+    819          
+    820          			Sc_VsAlphaBeta.Alpha += Sc_VAphaBetaInj.Alpha;
+   \   000001EC   0xEDD4 0x0A81      VLDR     S1,[R4, #+516]
+   \   000001F0   0xED84 0x0A73      VSTR     S0,[R4, #+460]
+   \   000001F4   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   000001F8   0xED84 0x0A73      VSTR     S0,[R4, #+460]
+    821          			Sc_VsAlphaBeta.Beta  += Sc_VAphaBetaInj.Beta;
+   \   000001FC   0xEDDF 0x....      VLDR.W   S1,??DataTable6  ;; 0x0
+   \   00000200   0xED94 0x0A82      VLDR     S0,[R4, #+520]
+   \   00000204   0xEE30 0x0A20      VADD.F32 S0,S0,S1
+   \   00000208   0xED84 0x0A74      VSTR     S0,[R4, #+464]
+   \   0000020C   0xE04D             B.N      ??ScBpm__PwmHandler_9
+    822          			/////////////////////////////////////////////////////////////
+    823          			/////////////////////////////////////////////////////////////
+    824          			/////////////////////////////////////////////////////////////
+    825          		}
+    826          		else if(Sc_Injection_Flag == 1)
+   \                     ??ScBpm__PwmHandler_8: (+1)
+   \   0000020E   0x2801             CMP      R0,#+1
+   \   00000210   0xD14B             BNE.N    ??ScBpm__PwmHandler_9
+    827          		{
+    828          			/////////////////////////////////////////////////////////////
+    829          			/////////////////////////////////////////////////////////////
+    830          			///////// Corrent Injection----------------- -- start ///////
+    831          			ClrkPark__DirectParkF(&Sc_IsAlphaBeta, &Is_DQ_Injection, &Sc_SinCosInj);
+   \   00000212   0xF504 0x720C      ADD      R2,R4,#+560
+   \   00000216   0xF504 0x7103      ADD      R1,R4,#+524
+   \   0000021A   0xF504 0x70F0      ADD      R0,R4,#+480
+   \   0000021E   0x.... 0x....      BL       ClrkPark__DirectParkF
+    832          
+    833          
+    834          			// D,Q-current regulators
+    835          			Sc_Current_Controller_D.Err = Sc_Current_Inj_Ampl - Is_DQ_Injection.D;
+   \   00000222   0xED94 0x0A98      VLDR     S0,[R4, #+608]
+   \   00000226   0xEDD4 0x0A84      VLDR     S1,[R4, #+528]
+   \   0000022A   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   0000022E   0xED84 0x0A4A      VSTR     S0,[R4, #+296]
+    836          			Sc_Current_Controller_Q.Err = 0.0f - Is_DQ_Injection.Q;
+    837          
+    838          			// D - current controller limit update
+    839          			Sc_Current_Controller_D.Upper_Limit = Sc_IO_Data.Vdc*SQRT3_INV;
+    840          			Sc_Current_Controller_D.Lower_Limit = -Sc_Current_Controller_D.Upper_Limit;
+    841          
+    842          			// D - current regulator
+    843          			Pi__CalcPiBackCalcF(&Sc_Current_Controller_D);
+   \   00000232   0xF504 0x7094      ADD      R0,R4,#+296
+   \   00000236   0xED94 0x0A85      VLDR     S0,[R4, #+532]
+   \   0000023A   0xEDD4 0x0A17      VLDR     S1,[R4, #+92]
+   \   0000023E   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000242   0xED84 0x0A51      VSTR     S0,[R4, #+324]
+   \   00000246   0xED9F 0x....      VLDR.W   S0,??DataTable6_1  ;; 0x3f13cd3a
+   \   0000024A   0xEE20 0x0A80      VMUL.F32 S0,S1,S0
+   \   0000024E   0xED84 0x0A4F      VSTR     S0,[R4, #+316]
+   \   00000252   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000256   0xED84 0x0A50      VSTR     S0,[R4, #+320]
+   \   0000025A   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    844          			Vs_DQ_Injection.D = Sc_Current_Controller_D.Out;
+    845          
+    846          			// Q - current controller limit update
+    847          			Sc_Current_Controller_Q.Upper_Limit = MathCalc__SqrtF((Sc_IO_Data.Vdc*Sc_IO_Data.Vdc)*(1.0f/3.0f) - (Vs_DQ_Injection.D*Vs_DQ_Injection.D)); // 2.30 = 17.15<<15
+   \   0000025E   0xED9F 0x....      VLDR.W   S2,??DataTable6_2  ;; 0x3eaaaaab
+   \   00000262   0xED94 0x0A17      VLDR     S0,[R4, #+92]
+   \   00000266   0xEDD4 0x0A4C      VLDR     S1,[R4, #+304]
+   \   0000026A   0xEDC4 0x0A87      VSTR     S1,[R4, #+540]
+   \   0000026E   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   00000272   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+   \   00000276   0xEE00 0x0AE0      VMLS.F32 S0,S1,S1
+   \   0000027A   0x.... 0x....      BL       MathCalc__SqrtF
+   \   0000027E   0xED84 0x0A56      VSTR     S0,[R4, #+344]
+    848          			Sc_Current_Controller_Q.Lower_Limit = -Sc_Current_Controller_Q.Upper_Limit;
+   \   00000282   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000286   0xED84 0x0A57      VSTR     S0,[R4, #+348]
+    849          
+    850          			// Q - current regulator
+    851          			Pi__CalcPiBackCalcF(&Sc_Current_Controller_Q);
+   \   0000028A   0xF504 0x70A2      ADD      R0,R4,#+324
+   \   0000028E   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    852          			Vs_DQ_Injection.Q = Sc_Current_Controller_Q.Out;
+   \   00000292   0xF8D4 0x014C      LDR      R0,[R4, #+332]
+   \   00000296   0xF8C4 0x0220      STR      R0,[R4, #+544]
+    853          
+    854          			// inverse Park transformation - transforms rotor Voltage D,Q --> Alpha,Beta
+    855          			ClrkPark__InverseParkF(&Vs_DQ_Injection, &Sc_VsAlphaBeta, &Sc_SinCosInj);
+   \   0000029A   0xF504 0x720C      ADD      R2,R4,#+560
+   \   0000029E   0xF504 0x71E4      ADD      R1,R4,#+456
+   \   000002A2   0xF504 0x7006      ADD      R0,R4,#+536
+   \   000002A6   0x.... 0x....      BL       ClrkPark__InverseParkF
+    856          
+    857          			/////////////////////////////////////////////////////////////
+    858          			/////////////////////////////////////////////////////////////
+    859          			/////////////////////////////////////////////////////////////
+    860          		}
+    861          
+    862          
+    863          
+    864                  /////////////////////////////////////////////////////////////
+    865                  /////////////////////////////////////////////////////////////
+    866                  ///////// Voltage Reconstraction--------------- start ///////
+    867                  Sc_VsABC_rec.A = (Sc_VsABC_bc.A * Sc_IO_Data.Vdc);
+   \                     ??ScBpm__PwmHandler_9: (+1)
+   \   000002AA   0xED94 0x0A69      VLDR     S0,[R4, #+420]
+   \   000002AE   0xEDD4 0x0A17      VLDR     S1,[R4, #+92]
+    868                  Sc_VsABC_rec.B = (Sc_VsABC_bc.B * Sc_IO_Data.Vdc);
+   \   000002B2   0xED94 0x1A17      VLDR     S2,[R4, #+92]
+    869                  Sc_VsABC_rec.C = (Sc_VsABC_bc.C * Sc_IO_Data.Vdc);
+   \   000002B6   0xEDD4 0x1A17      VLDR     S3,[R4, #+92]
+   \   000002BA   0xEE20 0x0A20      VMUL.F32 S0,S0,S1
+   \   000002BE   0xEDD4 0x0A6A      VLDR     S1,[R4, #+424]
+   \   000002C2   0xED84 0x0A6F      VSTR     S0,[R4, #+444]
+   \   000002C6   0xEE60 0x0A81      VMUL.F32 S1,S1,S2
+   \   000002CA   0xED94 0x1A6B      VLDR     S2,[R4, #+428]
+   \   000002CE   0xEDC4 0x0A70      VSTR     S1,[R4, #+448]
+   \   000002D2   0xEE21 0x1A21      VMUL.F32 S2,S2,S3
+    870          
+    871          
+    872                  temp_common_mode = (Sc_VsABC_rec.A) + (Sc_VsABC_rec.B) + (Sc_VsABC_rec.C);
+    873                  temp_common_mode = temp_common_mode * INV_3 ;
+   \   000002D6   0xEE70 0x1A20      VADD.F32 S3,S0,S1
+   \   000002DA   0xEE71 0x1A81      VADD.F32 S3,S3,S2
+   \   000002DE   0xED9F 0x....      VLDR.W   S4,??DataTable6_2  ;; 0x3eaaaaab
+   \   000002E2   0xEE61 0x1A82      VMUL.F32 S3,S3,S4
+    874          
+    875                  Sc_VsABC_rec.A -= temp_common_mode;
+   \   000002E6   0xEE30 0x0A61      VSUB.F32 S0,S0,S3
+   \   000002EA   0xED84 0x0A6F      VSTR     S0,[R4, #+444]
+    876                  Sc_VsABC_rec.B -= temp_common_mode;
+   \   000002EE   0xEE30 0x0AE1      VSUB.F32 S0,S1,S3
+   \   000002F2   0xED84 0x0A70      VSTR     S0,[R4, #+448]
+   \   000002F6   0xED84 0x1A71      VSTR     S2,[R4, #+452]
+    877                  Sc_VsABC_rec.C -= temp_common_mode;
+   \   000002FA   0xEE31 0x0A61      VSUB.F32 S0,S2,S3
+   \   000002FE   0xED84 0x0A71      VSTR     S0,[R4, #+452]
+    878          
+    879                  ClrkPark__DirectClarkeF(&Sc_VsABC_rec, &Sc_VsAlphaBeta_Rec);
+   \   00000302   0xF504 0x71EA      ADD      R1,R4,#+468
+   \   00000306   0xF504 0x70DE      ADD      R0,R4,#+444
+   \   0000030A   0x.... 0x....      BL       ClrkPark__DirectClarkeF
+    880          
+    881          
+    882                 //Voltage amplitude calculation
+    883                  Sc_VAmpl = MathCalc__SqrtF((Sc_VsAlphaBeta_Rec.Alpha*Sc_VsAlphaBeta_Rec.Alpha)+ (Sc_VsAlphaBeta_Rec.Beta*Sc_VsAlphaBeta_Rec.Beta));
+   \   0000030E   0xED94 0x0A76      VLDR     S0,[R4, #+472]
+   \   00000312   0xEDD4 0x0A77      VLDR     S1,[R4, #+476]
+   \   00000316   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   0000031A   0xEE00 0x0AA0      VMLA.F32 S0,S1,S1
+   \   0000031E   0x.... 0x....      BL       MathCalc__SqrtF
+   \   00000322   0xED84 0x0AA0      VSTR     S0,[R4, #+640]
+    884                  //////////////////////////////////////////////////////////////
+    885          		/////////////////////////////////////////////////////////////
+    886          		/////////////////////////////////////////////////////////////
+    887          
+    888          
+    889          
+    890          
+    891                  //Current amplitude calculation
+    892                  Sc_IAmpl = MathCalc__SqrtF((Sc_IsAlphaBeta.Alpha*Sc_IsAlphaBeta.Alpha) + (Sc_IsAlphaBeta.Beta*Sc_IsAlphaBeta.Beta));
+   \   00000326   0xED94 0x0A79      VLDR     S0,[R4, #+484]
+   \   0000032A   0xEDD4 0x0A7A      VLDR     S1,[R4, #+488]
+   \   0000032E   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   00000332   0xEE00 0x0AA0      VMLA.F32 S0,S1,S1
+   \   00000336   0x.... 0x....      BL       MathCalc__SqrtF
+    893          
+    894          
+    895          
+    896                  //Min Max Voltage amplitude calculation
+    897          		if(Sc_VAmpl_Max_Tmp < Sc_VAmpl)
+   \   0000033A   0xEDD4 0x0AA0      VLDR     S1,[R4, #+640]
+   \   0000033E   0xED94 0x1AA4      VLDR     S2,[R4, #+656]
+   \   00000342   0xED84 0x0AA1      VSTR     S0,[R4, #+644]
+   \   00000346   0xEEB4 0x1A60      VCMP.F32 S2,S1
+   \   0000034A   0xEEF1 0xFA10      FMSTAT   
+   \   0000034E   0xBF48             IT       MI 
+    898          		{
+    899          			Sc_VAmpl_Max_Tmp = Sc_VAmpl;
+   \   00000350   0xEDC4 0x0AA4      VSTRMI   S1,[R4, #+656]
+    900          		}
+    901          
+    902          		if(Sc_VAmpl_Min_Tmp > Sc_VAmpl)
+   \   00000354   0xED94 0x1AA3      VLDR     S2,[R4, #+652]
+   \   00000358   0xEEF4 0x0A41      VCMP.F32 S1,S2
+   \   0000035C   0xEEF1 0xFA10      FMSTAT   
+   \   00000360   0xBF48             IT       MI 
+    903          		{
+    904          			Sc_VAmpl_Min_Tmp = Sc_VAmpl;
+   \   00000362   0xEDC4 0x0AA3      VSTRMI   S1,[R4, #+652]
+    905          
+    906          		}
+    907          
+    908          
+    909          
+    910                  //Min Max Current amplitude calculation
+    911                  if(Sc_IAmpl_Max_Tmp < Sc_IAmpl)
+   \   00000366   0xEDD4 0x0A9D      VLDR     S1,[R4, #+628]
+   \   0000036A   0xEEF4 0x0A40      VCMP.F32 S1,S0
+   \   0000036E   0xEEF1 0xFA10      FMSTAT   
+   \   00000372   0xBF48             IT       MI 
+    912                  {
+    913                     Sc_IAmpl_Max_Tmp = Sc_IAmpl;
+   \   00000374   0xED84 0x0A9D      VSTRMI   S0,[R4, #+628]
+    914                  }
+    915          
+    916                  if(Sc_Sc_IAmpl_Min_Tmp > Sc_IAmpl)
+   \   00000378   0xEDD4 0x0A9C      VLDR     S1,[R4, #+624]
+   \   0000037C   0xEEB4 0x0A60      VCMP.F32 S0,S1
+   \   00000380   0xEEF1 0xFA10      FMSTAT   
+   \   00000384   0xBF48             IT       MI 
+    917                  {
+    918                      Sc_Sc_IAmpl_Min_Tmp = Sc_IAmpl;
+   \   00000386   0xED84 0x0A9C      VSTRMI   S0,[R4, #+624]
+    919          
+    920                  }
+    921          
+    922          
+    923                  if((Sc_PositionInjOld<0)&&(Sc_PositionInj>0))
+   \   0000038A   0xEDD4 0x0A9A      VLDR     S1,[R4, #+616]
+   \   0000038E   0xED94 0x0A99      VLDR     S0,[R4, #+612]
+   \   00000392   0xEEF5 0x0A40      VCMP.F32 S1,#0.0
+   \   00000396   0xEEF1 0xFA10      FMSTAT   
+   \   0000039A   0xD520             BPL.N    ??ScBpm__PwmHandler_10
+   \   0000039C   0xEEB5 0x0A40      VCMP.F32 S0,#0.0
+   \   000003A0   0xEEF1 0xFA10      FMSTAT   
+   \   000003A4   0xDD1B             BLE.N    ??ScBpm__PwmHandler_10
+    924                  {/* [ if different sign between speed reference and platform speed --> set inversion speed ] */
+    925          
+    926          
+    927                      Sc_IAmpl_Max = Sc_IAmpl_Max_Tmp;
+   \   000003A6   0xF8D4 0x0274      LDR      R0,[R4, #+628]
+   \   000003AA   0xF8C4 0x027C      STR      R0,[R4, #+636]
+    928                      Sc_IAmpl_Max_Tmp = 0.0f;
+   \   000003AE   0x2000             MOVS     R0,#+0
+   \   000003B0   0xF8C4 0x0274      STR      R0,[R4, #+628]
+    929                      Sc_IAmpl_Min = Sc_Sc_IAmpl_Min_Tmp;
+   \   000003B4   0xF8D4 0x0270      LDR      R0,[R4, #+624]
+   \   000003B8   0xF8C4 0x0278      STR      R0,[R4, #+632]
+    930          
+    931                      Sc_Sc_IAmpl_Min_Tmp = 10.0f;
+   \   000003BC   0x....             LDR.N    R0,??DataTable6_19  ;; 0x41200000
+   \   000003BE   0xF8C4 0x0270      STR      R0,[R4, #+624]
+    932          
+    933          
+    934                      Sc_VAmpl_Max = Sc_VAmpl_Max_Tmp;
+   \   000003C2   0xF8D4 0x0290      LDR      R0,[R4, #+656]
+   \   000003C6   0xF8C4 0x0298      STR      R0,[R4, #+664]
+    935          			Sc_VAmpl_Max_Tmp = 0.0f;
+   \   000003CA   0x2000             MOVS     R0,#+0
+   \   000003CC   0xF8C4 0x0290      STR      R0,[R4, #+656]
+    936          			Sc_VAmpl_Min = Sc_VAmpl_Min_Tmp;
+   \   000003D0   0xF8D4 0x028C      LDR      R0,[R4, #+652]
+   \   000003D4   0xF8C4 0x0294      STR      R0,[R4, #+660]
+    937          
+    938          			Sc_VAmpl_Min_Tmp = 200.0f;
+   \   000003D8   0x....             LDR.N    R0,??DataTable6_20  ;; 0x43480000
+   \   000003DA   0xF8C4 0x028C      STR      R0,[R4, #+652]
+    939                  }
+    940          
+    941                  Sc_PositionInjOld = Sc_PositionInj;
+   \                     ??ScBpm__PwmHandler_10: (+1)
+   \   000003DE   0xED84 0x0A9A      VSTR     S0,[R4, #+616]
+   \   000003E2   0xE049             B.N      ??ScBpm__PwmHandler_11
+   \                     ??ScBpm__PwmHandler_5:
+   \   000003E4   0x3D23D70A         DC32     0x3d23d70a
+   \   000003E8   0x40C90FDB         DC32     0x40c90fdb
+    942          
+    943          
+    944              }
+    945              else
+    946              {// Injection Startup or Bemf Observer
+    947                  // D,Q-current regulators
+    948              	Sc_Current_Controller_D.Err = Sc_Data.IsD_Ref - Sc_Data.Is_DQ.D;
+   \                     ??ScBpm__PwmHandler_6: (+1)
+   \   000003EC   0xED94 0x0A28      VLDR     S0,[R4, #+160]
+   \   000003F0   0xEDD4 0x0A32      VLDR     S1,[R4, #+200]
+   \   000003F4   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   000003F8   0xED84 0x0A4A      VSTR     S0,[R4, #+296]
+    949              	Sc_Current_Controller_Q.Err = Sc_Data.IsQ_Ref - Sc_Data.Is_DQ.Q;
+   \   000003FC   0xED94 0x0A29      VLDR     S0,[R4, #+164]
+   \   00000400   0xEDD4 0x0A33      VLDR     S1,[R4, #+204]
+   \   00000404   0xEE30 0x0A60      VSUB.F32 S0,S0,S1
+   \   00000408   0xED84 0x0A51      VSTR     S0,[R4, #+324]
+    950          
+    951                  // D - current controller limit update
+    952                  Sc_Current_Controller_D.Upper_Limit = Sc_IO_Data.Vdc*SQRT3_INV;
+   \   0000040C   0xED9F 0x....      VLDR.W   S0,??DataTable6_1  ;; 0x3f13cd3a
+   \   00000410   0xEDD4 0x0A17      VLDR     S1,[R4, #+92]
+   \   00000414   0xEE20 0x0A80      VMUL.F32 S0,S1,S0
+   \   00000418   0xED84 0x0A4F      VSTR     S0,[R4, #+316]
+    953                  Sc_Current_Controller_D.Lower_Limit = -Sc_Current_Controller_D.Upper_Limit;
+   \   0000041C   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000420   0xED84 0x0A50      VSTR     S0,[R4, #+320]
+    954          
+    955                  // D - current regulator
+    956                  Pi__CalcPiBackCalcF(&Sc_Current_Controller_D);
+   \   00000424   0xF504 0x7094      ADD      R0,R4,#+296
+   \   00000428   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    957                  Sc_Data.Vs_DQ.D = Sc_Current_Controller_D.Out;
+    958          
+    959                  // Q - current controller limit update
+    960                  Sc_Current_Controller_Q.Upper_Limit = MathCalc__SqrtF((Sc_IO_Data.Vdc*Sc_IO_Data.Vdc)*(1.0f/3.0f) - (Sc_Data.Vs_DQ.D*Sc_Data.Vs_DQ.D)); // 2.30 = 17.15<<15
+   \   0000042C   0xED94 0x0A17      VLDR     S0,[R4, #+92]
+   \   00000430   0xED9F 0x....      VLDR.W   S2,??DataTable6_2  ;; 0x3eaaaaab
+   \   00000434   0xEE20 0x0A00      VMUL.F32 S0,S0,S0
+   \   00000438   0xEDD4 0x0A4C      VLDR     S1,[R4, #+304]
+   \   0000043C   0xEDC4 0x0A2F      VSTR     S1,[R4, #+188]
+   \   00000440   0xEE20 0x0A01      VMUL.F32 S0,S0,S2
+   \   00000444   0xEE00 0x0AE0      VMLS.F32 S0,S1,S1
+   \   00000448   0x.... 0x....      BL       MathCalc__SqrtF
+   \   0000044C   0xED84 0x0A56      VSTR     S0,[R4, #+344]
+    961                  Sc_Current_Controller_Q.Lower_Limit = -Sc_Current_Controller_Q.Upper_Limit;
+   \   00000450   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   00000454   0xED84 0x0A57      VSTR     S0,[R4, #+348]
+    962          
+    963                  // Q - current regulator
+    964                  Pi__CalcPiBackCalcF(&Sc_Current_Controller_Q);
+   \   00000458   0xF504 0x70A2      ADD      R0,R4,#+324
+   \   0000045C   0x.... 0x....      BL       Pi__CalcPiBackCalcF
+    965                  Sc_Data.Vs_DQ.Q = Sc_Current_Controller_Q.Out;
+   \   00000460   0xF8D4 0x014C      LDR      R0,[R4, #+332]
+   \   00000464   0xF8C4 0x00C0      STR      R0,[R4, #+192]
+    966          
+    967                  // inverse Park transformation - transforms rotor Voltage D,Q --> Alpha,Beta
+    968                  ClrkPark__InverseParkF(&Sc_Data.Vs_DQ, &Sc_VsAlphaBeta, &Sc_Sin_Cos_Rotor_Position_Voltage);
+   \   00000468   0xF204 0x42B4      ADDW     R2,R4,#+1204
+   \   0000046C   0xF504 0x71E4      ADD      R1,R4,#+456
+   \   00000470   0xF104 0x00B8      ADD      R0,R4,#+184
+   \   00000474   0x.... 0x....      BL       ClrkPark__InverseParkF
+    969              }
+    970          
+    971          	//ReCalculate Vd Vq if injection is enabled
+    972              ClrkPark__DirectParkF( &Sc_VsAlphaBeta, &Sc_Data.Vs_DQ, &Sc_Sin_Cos_Rotor_Position_Voltage);
+   \                     ??ScBpm__PwmHandler_11: (+1)
+   \   00000478   0xF204 0x42B4      ADDW     R2,R4,#+1204
+   \   0000047C   0xF104 0x01B8      ADD      R1,R4,#+184
+   \   00000480   0xF504 0x70E4      ADD      R0,R4,#+456
+   \   00000484   0x.... 0x....      BL       ClrkPark__DirectParkF
+    973          
+    974          
+    975          	// space vector modulation (including ripple compensation)
+    976              Sc_Sector = PwmModulation__SpaceVectorModulationF(Sc_IO_Data.Vdc, &Sc_VsAlphaBeta, &Sc_VsABC_bc, FALSE);
+   \   00000488   0x2200             MOVS     R2,#+0
+   \   0000048A   0xF504 0x71D2      ADD      R1,R4,#+420
+   \   0000048E   0xF504 0x70E4      ADD      R0,R4,#+456
+   \   00000492   0xED94 0x0A17      VLDR     S0,[R4, #+92]
+   \   00000496   0x.... 0x....      BL       PwmModulation__SpaceVectorModulationF
+    977          
+    978          	Sc_VsABC.A = Sc_VsABC_bc.A;
+   \   0000049A   0xF8D4 0x01A4      LDR      R0,[R4, #+420]
+   \   0000049E   0xF8C4 0x01B0      STR      R0,[R4, #+432]
+    979          	Sc_VsABC.B = Sc_VsABC_bc.B;
+   \   000004A2   0xF8D4 0x01A8      LDR      R0,[R4, #+424]
+   \   000004A6   0xF8C4 0x01B4      STR      R0,[R4, #+436]
+    980          	Sc_VsABC.C = Sc_VsABC_bc.C;
+   \   000004AA   0xF8D4 0x01AC      LDR      R0,[R4, #+428]
+   \   000004AE   0xF8C4 0x01B8      STR      R0,[R4, #+440]
+   \   000004B2   0xF8B4 0x023E      LDRH     R0,[R4, #+574]
+   \   000004B6   0x2801             CMP      R0,#+1
+   \   000004B8   0xD108             BNE.N    ??ScBpm__PwmHandler_12
+    981          
+    982          
+    983          	// compensation strategy
+    984          	if(Sc_Inverter_Compensation_Selector == SC_INVERTER_LOSS_COMP)
+    985          	{
+    986          		PwmModulation__InverterLossCompF(&Sc_IO_Data.Is_ABC, &Sc_VsABC, &PwmModulationPrm);
+   \   000004BA   0xF504 0x7209      ADD      R2,R4,#+548
+   \   000004BE   0xF504 0x71D8      ADD      R1,R4,#+432
+   \   000004C2   0xF104 0x0060      ADD      R0,R4,#+96
+   \   000004C6   0x.... 0x....      BL       PwmModulation__InverterLossCompF
+   \   000004CA   0xE007             B.N      ??ScBpm__PwmHandler_13
+    987          	}
+    988          	else if(Sc_Inverter_Compensation_Selector == SC_DEADTIME_COMP)
+   \                     ??ScBpm__PwmHandler_12: (+1)
+   \   000004CC   0x2802             CMP      R0,#+2
+   \   000004CE   0xD105             BNE.N    ??ScBpm__PwmHandler_13
+    989          	{
+    990          		PwmModulation__DeadtimeCompensationGradientF(&Sc_IO_Data.Is_ABC, &Sc_VsABC);
+   \   000004D0   0xF504 0x71D8      ADD      R1,R4,#+432
+   \   000004D4   0xF104 0x0060      ADD      R0,R4,#+96
+   \   000004D8   0x.... 0x....      BL       PwmModulation__DeadtimeCompensationGradientF
+    991          	}
+    992          
+    993          
+    994              // Speed Sign Duties SWAP -begin
+    995              Sc_IO_Data.Duty.B = Sc_VsABC.B;
+   \                     ??ScBpm__PwmHandler_13: (+1)
+   \   000004DC   0xF8D4 0x01B4      LDR      R0,[R4, #+436]
+   \   000004E0   0xF8C4 0x0080      STR      R0,[R4, #+128]
+    996          
+    997              if (Sc_Speed_Sign != 0)
+   \   000004E4   0xF8B4 0x0242      LDRH     R0,[R4, #+578]
+   \   000004E8   0xB168             CBZ.N    R0,??ScBpm__PwmHandler_14
+    998              {
+    999                  Sc_IO_Data.Duty.A = Sc_VsABC.C;
+   \   000004EA   0xF8D4 0x01B8      LDR      R0,[R4, #+440]
+   1000                  Sc_IO_Data.Duty.C = Sc_VsABC.A;
+   1001          
+   1002                  Sc_IO_Data.Speed_Rot_Est = -Sc_Data.Speed_Rot_Est_Mech_Abs;
+   \   000004EE   0xED94 0x0A2D      VLDR     S0,[R4, #+180]
+   \   000004F2   0x67E0             STR      R0,[R4, #+124]
+   \   000004F4   0xEEB1 0x0A40      VNEG.F32 S0,S0
+   \   000004F8   0xF8D4 0x01B0      LDR      R0,[R4, #+432]
+   \   000004FC   0xF8C4 0x0084      STR      R0,[R4, #+132]
+   \   00000500   0xED84 0x0A26      VSTR     S0,[R4, #+152]
+   1003              }
+   1004              else
+   1005              {
+   1006                  Sc_IO_Data.Duty.A = Sc_VsABC.A;
+   1007                  Sc_IO_Data.Duty.C = Sc_VsABC.C;
+   1008          
+   1009                  Sc_IO_Data.Speed_Rot_Est = Sc_Data.Speed_Rot_Est_Mech_Abs;
+   1010              }
+   1011              // Speed Sign Duties SWAP -end
+   1012          
+   1013              // Current Control Loop + Flux Position Estimation - end
+   1014              //---------------------------------------------------------------------------------------------------------------------
+   1015          }
+   \   00000504   0xBD10             POP      {R4,PC}
+   \                     ??ScBpm__PwmHandler_14: (+1)
+   \   00000506   0xF8D4 0x01B0      LDR      R0,[R4, #+432]
+   \   0000050A   0xED94 0x0A2D      VLDR     S0,[R4, #+180]
+   \   0000050E   0x67E0             STR      R0,[R4, #+124]
+   \   00000510   0xED84 0x0A26      VSTR     S0,[R4, #+152]
+   \   00000514   0xF8D4 0x01B8      LDR      R0,[R4, #+440]
+   \   00000518   0xF8C4 0x0084      STR      R0,[R4, #+132]
+   \   0000051C   0xBD10             POP      {R4,PC}          ;; return
+   \   0000051E   0xBF00             Nop      
+   \                     ??ScBpm__PwmHandler_7:
+   \   00000520   0x40490FDC         DC32     0x40490fdc
+   \   00000524   0xC0C90FDB         DC32     0xc0c90fdb
+   \   00000528   0xC0490FDB         DC32     0xc0490fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x3CA3D70A         DC32     0x3ca3d70a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x3883126F         DC32     0x3883126f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x42200000         DC32     0x42200000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \   00000000   0x43FA0000         DC32     0x43fa0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \   00000000   0xC3FA0000         DC32     0xc3fa0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \   00000000   0x3B49A635         DC32     0x3b49a635
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \   00000000   0x3CDAFF2A         DC32     0x3cdaff2a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0x42780000         DC32     0x42780000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0x46147000         DC32     0x46147000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0x43800000         DC32     0x43800000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0xC3800000         DC32     0xc3800000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \   00000000   0x3C03126F         DC32     0x3c03126f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \   00000000   0x43EEBB7F         DC32     0x43eebb7f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \   00000000   0x447A0000         DC32     0x447a0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_7:
+   \   00000000   0x41A78D36         DC32     0x41a78d36
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_8:
+   \   00000000   0x40490FDC         DC32     0x40490fdc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_9:
+   \   00000000   0xC0C90FDB         DC32     0xc0c90fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_10:
+   \   00000000   0xC0490FDB         DC32     0xc0490fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_11:
+   \   00000000   0x40C90FDB         DC32     0x40c90fdb
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \   00000000   0x00000000         DC32     0x0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \   00000000   0x3F13CD3A         DC32     0x3f13cd3a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \   00000000   0x3EAAAAAB         DC32     0x3eaaaaab
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \   00000000   0x........         DC32     Sc_Bemf_Observer_Params
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \   00000000   0x........         DC32     Mcl_IO
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \   00000000   0x40A00000         DC32     0x40a00000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \   00000000   0x3D99999A         DC32     0x3d99999a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_7:
+   \   00000000   0x3F7C0FC1         DC32     0x3f7c0fc1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_8:
+   \   00000000   0x38810E37         DC32     0x38810e37
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_9:
+   \   00000000   0x42C80000         DC32     0x42c80000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_10:
+   \   00000000   0x469C4000         DC32     0x469c4000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_11:
+   \   00000000   0xC69C4000         DC32     0xc69c4000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_12:
+   \   00000000   0xBF724FFD         DC32     0xbf724ffd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_13:
+   \   00000000   0x3B03126F         DC32     0x3b03126f
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_14:
+   \   00000000   0xC0A00000         DC32     0xc0a00000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_15:
+   \   00000000   0x3C1C74A7         DC32     0x3c1c74a7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_16:
+   \   00000000   0x40C00000         DC32     0x40c00000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_17:
+   \   00000000   0xC0C00000         DC32     0xc0c00000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_18:
+   \   00000000   0x3DCCCCCD         DC32     0x3dcccccd
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_19:
+   \   00000000   0x41200000         DC32     0x41200000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_20:
+   \   00000000   0x43480000         DC32     0x43480000
+   1016          
+   1017          
+   1018          
+   1019          
+   1020          
+   1021          
+   1022          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   Observer
+         8   -> Filters__IIR1F
+         8   -> Filters__IIR1InitF
+         0   -> MathCalc__SinCosF
+         8   -> MathCalc__SinCosF
+         8   -> MathCalc__SqrtF
+         8   -> ObserverPmsm__BemfObsDQF
+         8   -> ObserverPmsm__TrackingObsF
+       8   Parameter_Initialize
+         8   -> Filters__IIR1InitF
+       8   ScBpm__Initialize
+         8   -> Parameter_Initialize
+         0   -> ScBpm__ResetFocState
+       8   ScBpm__PwmHandler
+         8   -> ClrkPark__DirectClarkeF
+         8   -> ClrkPark__DirectParkF
+         8   -> ClrkPark__InverseParkF
+         8   -> MathCalc__SinCosF
+         8   -> MathCalc__SqrtF
+         8   -> Observer
+         8   -> Pi__CalcPiBackCalcF
+         8   -> PwmModulation__DeadtimeCompensationGradientF
+         8   -> PwmModulation__InverterLossCompF
+         8   -> PwmModulation__SpaceVectorModulationF
+       0   ScBpm__ResetFocState
+       8   SelfCommissioning__25msHandler
+         8   -> Mci__Run
+         8   -> Mci__Stop
+         8   -> SRMotorSafetyMgr__GetFlag
+         8   -> ScBpm__ResetFocState
+       8   SelfCommissioning__Initialize
+         8   -> Parameter_Initialize
+         8   -> ScBpm__ResetFocState
+      16   SelfCommissioning__RunningHandler
+        16   -> ScBpm__PwmHandler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_10
+       4  ??DataTable5_11
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_10
+       4  ??DataTable6_11
+       4  ??DataTable6_12
+       4  ??DataTable6_13
+       4  ??DataTable6_14
+       4  ??DataTable6_15
+       4  ??DataTable6_16
+       4  ??DataTable6_17
+       4  ??DataTable6_18
+       4  ??DataTable6_19
+       4  ??DataTable6_2
+       4  ??DataTable6_20
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+       4  ??DataTable6_7
+       4  ??DataTable6_8
+       4  ??DataTable6_9
+     310  Observer
+     396  Parameter_Initialize
+      16  ScBpm__Initialize
+    1324  ScBpm__PwmHandler
+     166  ScBpm__ResetFocState
+    1212  Sc_Bemf_Observer_Params
+          Sc_IO_Data
+          Sc_Data
+          Sc_Tracking_Observer_Params
+          Sc_Prm
+          Sc_Current_Controller_D
+          Sc_Current_Controller_Q
+          Sc_Speed_Controller
+          Sc_Voltage_Controller
+          Sc_IsABC_Copy
+          Sc_VsABC_bc
+          Sc_VsABC
+          Sc_VsABC_rec
+          Sc_VsAlphaBeta
+          Sc_VsAlphaBeta_Rec
+          Sc_IsAlphaBeta
+          Sc_IIR1_Filter_Dq_Obs
+          Sc_VAphaBetaInj
+          Is_DQ_Injection
+          Vs_DQ_Injection
+          PwmModulationPrm
+          Sc_SinCosInj
+          Sc_Master_Cmd_Force
+          Sc_Master_Cmd_Acc
+          Sc_Master_Cmd_Fdbk
+          Sc_Inverter_Compensation_Selector
+          Sc_Slow_Controloop_Cnt
+          Sc_Speed_Sign
+          Sc_Injection_Flag
+          Sc_Injection_Flag_Old
+          Sc_Master_Cmd_Speed
+          Sc_Position_Flux_Est_Voltage
+          Sc_Speed_Flux_El_Est
+          Sc_FrequencyInj
+          Sc_VoltageInj
+          Sc_VAmplCont
+          Sc_Current_Inj_Ampl
+          Sc_PositionInj
+          Sc_PositionInjOld
+          Sc_PositionOpenLoop
+          Sc_Sc_IAmpl_Min_Tmp
+          Sc_IAmpl_Max_Tmp
+          Sc_IAmpl_Min
+          Sc_IAmpl_Max
+          Sc_VAmpl
+          Sc_IAmpl
+          Sc_Bemf_Ampl
+          Sc_VAmpl_Min_Tmp
+          Sc_VAmpl_Max_Tmp
+          Sc_VAmpl_Min
+          Sc_VAmpl_Max
+          Sc_Dutycycle_By_Current_LUT
+          sc_step_inv_pwm_comp
+          sc_sizeof_inv_comp_lut
+          Sc_Sin_Cos_Rotor_Position
+          Sc_Sin_Cos_Rotor_Position_Voltage
+       4  Sc_IAmpl_K_1
+       4  Sc_IAmpl_K_2
+       4  Sc_I_Err_Voltage
+       4  Sc_Position_Flux_Est
+       1  Sc_Sector
+       4  Sc_V_Err_Voltage
+     152  SelfCommissioning__25msHandler
+      52  SelfCommissioning__Initialize
+      56  SelfCommissioning__RunningHandler
+       2  Space_Vector_Mod_Selector
+
+ 
+    23 bytes in section .bss
+ 1 212 bytes in section .data
+ 2 632 bytes in section .text
+ 
+ 2 632 bytes of CODE memory
+ 1 235 bytes of DATA memory
+
+Errors: none
+Warnings: 1

@@ -1,0 +1,161 @@
++fce	// Continue on Error flag
+
+///////////////////////////////// disable all messages
+// until the volume of messages is reduced to a manageable level
+-e686
+-w0	// No messages (except for fatal errors) 
+
+///////////////////////////////// message enables
+// 19.1 C Syntax Errors (1-161)
+//+e?	// 1..9
+//+e??	// 10..99
+//+e1??	// 100..199
+
+// 19.2 Internal Errors (200-299)
+//+e2??	// 200..299
+
+// 19.3 Fatal Errors (301-328)
+//+e3??	// 300..399
+
+// 19.4 C Warning Messages (401-698)
+// 19.5 C Informational Messages (701-866)
+// 19.6 C Elective Notes (900-975)
+
+// Uninitialized variables
++e530	// An auto variable was used before it was initialized.
++e603	// The address of the named symbol is being passed to a function where the corresponding parameter is declared as pointer to const.
++e644	// An auto variable was not necessarily assigned a value before use.
++e645	// An auto variable was conditionally assigned a value before being passed to a function expecting a pointer to a const object.
++e727	// The named static variable (local to a function) was not explicitly initialized before use.
++e728	// The named intra-module variable (static variable with file scope) was not explicitly initialized.
++e729	// The named inter-module variable (external variable) was not explicitly initialized.
++e738	// The named static local variable was not initialized before being passed to a function whose corresponding parameter is declared as pointer to const.
++e771	// The named symbol was initialized in the main portion of a control loop (while, for, or do) and subsequently used outside the loop.
++e772	// The address of the named Symbol was passed to a function expecting to receive a pointer to a const item.
+
+// Array out of bounds and overflow
++e415	// access of out-of-bounds pointer ('Integer' beyond end of data) by operator 'String'
++e416	// creation of out-of-bounds pointer ('Integer' beyond end of data) by operator 'String'
++e420	// Apparent access beyond array for function 'Symbol', argument Integer exceeds Integer Reference
++e670	// Possible access beyond array for function 'Symbol', argument Integer exceeds Integer Reference
++e784	// Nul character truncated from string 
++e804	// Conceivable access beyond array for function 'Symbol', argument Integer exceeds Integer Reference
+
+// memory allocation
++e423	// Creation of memory leak in assignment to variable 'Symbol'
++e424	// Inappropriate deallocation (Name1) for 'Name2' data.
++e428	// negative subscript (Integer) in operator 'String'
++e429	// Custodial pointer 'Symbol' (Location) has not been freed or returned
++e432	// Suspicious argument to malloc
++e433	// Allocated area not large enough for pointer
++e449	// Pointer variable 'Symbol' previously deallocated
++e540	// Excessive size -- A string initializer required more space than what was allocated.
++e593	// Custodial pointer ’Symbol’ (Location) possibly not freed or returned
++e672	// Possible memory leak in assignment to pointer 'Symbol'
++e673	// Possibly inappropriate deallocation (Name1) for 'Name2' data
++e674	// Returning address of auto through variable 'Symbol'
++e676	// Possibly negative subscript (Integer) in operator 'String'
++e698	// Casual use of realloc can create a memory leak
++e809	// Possible return of address of auto through variable 'Symbol'
++e810	// Arithmetic modification of custodial variable 'Symbol'
++e811	// Possible deallocation of pointer alias
++e815	// Arithmetic modification of unsaved pointer
+
+// MISRA Rules
+/* Rule 11.1 (req) *********************************/
+
+    +esym(68,pointer)
+    +esym(922,pointer)
+    +e923                        /* cast pointer/non-pointer */
+    +elib(923)                   /* cast pointer/non-pointer */
+    -append(923,[Encompasses MISRA 2004 Rule 11.1])
+/* Rule 11.2 (req) *********************************/
+
+    +esym(68,pointer)            /* Cannot cast from pointer to float */
+    +e71                         /* Cannot cast between types */
+    +elib(71)                    /* Cannot cast between types */
+    -append(71,[MISRA 2004 Rule 11.2])
+/* Rule 11.3 (adv) *********************************/
+
+    +e923                        /* cast pointer/non-pointer */
+    +elib(923)                   /* cast pointer/non-pointer */
+    -append(923,[MISRA 2004 Rule 11.3])
+/* Rule 11.4 (adv) *********************************/
+
+    +e926   /* cast from pointer to pointer */
+    +elib(926)   /* cast from pointer to pointer */
+    +e927   /* cast from pointer to pointer */
+    +elib(927)   /* cast from pointer to pointer */
+    +e928   /* cast from pointer to pointer */
+    +elib(928)   /* cast from pointer to pointer */
+    +e929   /* cast from pointer to pointer */
+    +elib(929)   /* cast from pointer to pointer */
+    -append(926,[MISRA 2004 Rule 11.4])
+    -append(927,[MISRA 2004 Rule 11.4])
+    -append(928,[MISRA 2004 Rule 11.4])
+    -append(929,[MISRA 2004 Rule 11.4])
+	
+	// division by 0
++e54	// Division by 0 
++e414	// Possible division by 0 
++e795	// Conceivable division by 0 
+
+///////////////////////////////// message disables
+-e309	// error directives
+-e830	// Location cited in prior message
+-e831	// Location cited in prior message
+
+// unreachable code
++e527	// Unreachable code at token Name 
++e827	// Loop not reachable
+
+// unused code
++e438	// Last value assigned to variable 'Symbol' not used
++e766	// Include of header file ’FileName’ not used in module ’FileName’
++e768	// global struct member 'Symbol' (Location) not referenced
++e769	// global enumeration constant 'Symbol' (Location) not referenced
++e964	// Header file ’FileName’ not directly used in module ’String’
++e966	// Indirectly included header file 'FileName' not used in module 'String'
+
+// unintended use of = instead of ==
++e720	// Boolean test of assignment
+
+// switch statements without breaks between case statements
++e616	// control flows into case/default
++e825	// control flows into case/default without -fallthrough comment (use //lint -flowthrough between case statements to disable warning)
+
++e64    // Capture enum mis-matches when mixed with improper functions. 
+
+
+// Miscellaneous possibilities
++e18	// System redeclared conflicts
+-e964
+-e966
+//+e530	// Symbol not initialized
+//+e644	// Variable may not have been initialized
+//+e727	// Symbol not explicitly initialized
+//+e728	// Symbol not explicitly initialized
+// can we exclude the ..\cx directory and subs?
+//-e10	// Expecting '' or ')'
+//-e101	// Expected an identifier
+//-e102	// Illegal parameter specification
+//-e103	// Unexpected declaration
+//-e114	// Inconsistent structure declaration for tag '...'
+//-e116	// Inappropriate storage class
+//-e121	// Attempting to initialize an object of undefined type
+//-e129	// declaration expected
+//-e132	// Expected function definition
+//-e14	// Symbol previously defined
+//-e158	// Assignment to variable increases capability
+//-e17	// Unrecognized name
+//-e19	// Useless Declaration
+//-e27	// Illegal character
+//-e31	// Redefinition of symbol
+//-e38	// Offset of symbol inconsistent
+//-e40	// Undeclared identifier
+//-e46	// field type should be _Bool unsigned int or signed int
+//-e49	// Expected a type
+//-e52	// Expected an lvalue
+//-e527	// Unreachable code at token
+//-e63	// Expected an lvalue
+//-e78	// Symbol used in expression

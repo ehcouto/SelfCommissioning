@@ -1,0 +1,66 @@
+Waiting for reset...
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x20
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x0
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x600
+SR_Motor_Flags = 0x201
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Sc_IAmpl = 2.016913414001465
+Sc_VAmpl = 12.875324249267578
+Sc_IAmpl = 1.9928548336029053
+Sc_VAmpl = 12.90653133392334
+Sc_IAmpl = 2.0008745193481445
+Sc_VAmpl = 13.162851333618164
+Sc_IAmpl = 1.9968632459640503
+Sc_VAmpl = 12.951617240905762
+Sc_IAmpl = 2.016913414001465
+Sc_VAmpl = 12.441524505615234
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 13.213881492614746
+Sc_IAmpl = 1.9968632459640503
+Sc_VAmpl = 13.725724220275879
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 12.733023643493652
+Sc_IAmpl = 2.01290225982666
+Sc_VAmpl = 13.017937660217285
+Sc_IAmpl = 1.9728046655654907
+Sc_VAmpl = 13.484649658203125
+Rs[0] = 6.520190904187225
+Step 0
+Voltage: 30.000000
+Frequency: 300.000000
+Step 1
+Voltage: 37.777778
+Frequency: 300.000000
+Step 2
+Voltage: 45.555556
+Frequency: 300.000000
+Step 3
+Voltage: 53.333333
+Frequency: 300.000000
+Step 4
+Voltage: 61.111111
+Frequency: 300.000000
+Step 5
+Voltage: 68.888889
+Frequency: 300.000000
+Step 6
+Voltage: 76.666667
+Frequency: 300.000000
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 1
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 2
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 3
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 4
+Error while reading tuple: (Sc_IAmpl_Max, Sc_IAmpl_Min, Sc_VAmpl)
+Retries: 5

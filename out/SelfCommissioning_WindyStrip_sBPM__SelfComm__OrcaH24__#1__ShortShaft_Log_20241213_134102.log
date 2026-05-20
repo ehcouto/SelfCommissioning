@@ -1,0 +1,23 @@
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 1
+Error while reading tuple: (Sc_Prm.Ts, Sc_Prm.Pole_Pairs)
+Retries: 2
+Step 0
+Current: 2.000000
+Frequency: 0.000000
+Sc_IAmpl = 2.0129873752593994
+Sc_VAmpl = 12.45702838897705
+Sc_IAmpl = 1.9808242321014404
+Sc_VAmpl = 13.601738929748535
+Sc_IAmpl = 2.0048828125
+Sc_VAmpl = 14.880549430847168
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 1
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 2
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 3
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 4
+Error while reading tuple: (Sc_VAmpl, Sc_IAmpl)
+Retries: 5
